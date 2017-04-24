@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="CocoVendorApp.ScanPrenotazionePage"
+		Title="Check In" Icon="checkin.png" BackgroundColor="#EDEDF7">
+	<ContentPage.Content>
+
+		<StackLayout Orientation="Vertical" VerticalOptions="Center" HorizontalOptions="FillAndExpand">
+
+			<Image Aspect="AspectFit" Source="qrcode.png" Margin="50,10,50,50"/>
+
+			<Button Text="Scansiona QR" x:Name="btnScansiona" HorizontalOptions="FillAndExpand"
+					VerticalOptions="Center" Clicked="Handle_Clicked"
+				BackgroundColor="#3d83f5" TextColor="White" FontSize="17" HeightRequest="45"
+				BorderRadius="3" Margin="20,5,20,10" >
+			</Button>
+
+		</StackLayout>
+		
+	</ContentPage.Content>
+</ContentPage>

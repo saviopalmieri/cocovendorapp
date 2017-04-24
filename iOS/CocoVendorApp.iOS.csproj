@@ -65,7 +65,7 @@
     <DefineConstants>DEBUG;ENABLE_TEST_CLOUD;</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <CodesignKey>iPhone Distribution: Savino Palmieri (Z998NLU3P8)</CodesignKey>
+    <CodesignKey>iPhone Developer: Savino Palmieri (8N4LSK6UJL)</CodesignKey>
     <DeviceSpecificBuild>true</DeviceSpecificBuild>
     <MtouchDebug>true</MtouchDebug>
     <MtouchFastDev>true</MtouchFastDev>
@@ -76,7 +76,7 @@
     <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
     <MtouchTlsProvider>Default</MtouchTlsProvider>
     <PlatformTarget>x86</PlatformTarget>
-    <CodesignProvision>7e6acd8a-1d09-4d43-8829-3a74e897b576</CodesignProvision>
+    <CodesignProvision>com.coco.cocovendorapp</CodesignProvision>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />

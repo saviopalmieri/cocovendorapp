@@ -13,7 +13,7 @@ namespace CocoVendorApp
 		{
 			InitializeComponent();
 
-
+			ConnectionHelper.ClearUserInfo();
 
 			var userInfo = ConnectionHelper.RetrieveUserInfo();
 			if (userInfo != null && InfoLidoDAO.Instance.GetSlimInfoLido(ConnectionHelper.RetrieveUserInfo().mail, ConnectionHelper.RetrieveUserInfo().apiKey))
