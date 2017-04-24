@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="CocoVendorApp.SetupEndPage"
+		Title="Controlla i tuoi dati" BackgroundColor="#EDEDF7">
+	<ContentPage.Content>
+
+		<StackLayout Orientation="Vertical" VerticalOptions="FillAndExpand">
+
+			<Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition Width="*" />
+				</Grid.ColumnDefinitions>
+				<Grid.RowDefinitions>
+					<RowDefinition Height="6.2*" />
+					<RowDefinition Height="0.8*" />
+				</Grid.RowDefinitions>
+
+				<StackLayout Orientation="Vertical" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Grid.Row="0" Grid.Column="0">
+
+					<Image Source="gallery.jpg" HeightRequest="90" VerticalOptions="Start" HorizontalOptions="FillAndExpand" x:Name="imageLido" />
+			
+			<Button Text="  Aggiungi foto  " x:Name="btnAggiungiFoto" HorizontalOptions="Center"
+					VerticalOptions="Start" Clicked="Handle_Clicked1"
+				TextColor="White" BackgroundColor="#3d83f5" FontSize="13"
+				BorderRadius="3" Margin="50,5,50,10" >
+			</Button>
+
+			<Label TextColor="#717171" Text="Aggiungi una foto. Convinci i clienti a scegliere il tuo lido." FontSize="14" Margin="10,5,10,5"
+				HorizontalOptions="Center" HorizontalTextAlignment="Center" VerticalOptions="Start"/>
+			
+			<Label TextColor="#3d83f5" Text="Riepilogo" FontSize="22" Margin="10,5,10,5"
+				HorizontalOptions="Center" VerticalOptions="Start"/>
+
+			<Label TextColor="#717171" Text="Controlla i dati inseriti e pubblica subito il tuo lido/bagno su COCO." FontSize="14" Margin="10,5,10,5"
+				HorizontalOptions="Center" HorizontalTextAlignment="Center" VerticalOptions="Start"/>
+
+			<StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="Start" BackgroundColor="White" >
+					<Label Text="Nome Lido" HorizontalOptions="FillAndExpand"  
+						HorizontalTextAlignment="Start" VerticalTextAlignment="Center"
+						TextColor="Black" FontSize="Medium"
+						 Margin="10,5,10,5" >
+					</Label>
+
+							<Label Text="A" HorizontalOptions="StartAndExpand"  
+							HorizontalTextAlignment="Start" VerticalTextAlignment="Center"
+							TextColor="White" FontSize="Large"
+							 Margin="0,5,0,5" >
+						</Label>
+
+					<Label Text="" x:Name="lblNomeLido" HorizontalOptions="FillAndExpand"  
+						HorizontalTextAlignment="End" VerticalTextAlignment="Center"
+						TextColor="Black" FontSize="Medium"
+						 Margin="10,5,10,5" >
+					</Label>
+				</StackLayout>
+
+				<StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="Start" BackgroundColor="White">
+					<Label Text="Località" HorizontalOptions="FillAndExpand"  
+						HorizontalTextAlignment="Start" VerticalTextAlignment="Center"
+						TextColor="Black" FontSize="Medium"
+						 Margin="10,5,10,5" >
+					</Label>
+
+					<Label Text="A" HorizontalOptions="StartAndExpand"  
+							HorizontalTextAlignment="Start" VerticalTextAlignment="Center"
+							TextColor="White" FontSize="Large"
+							 Margin="0,5,0,5" >
+						</Label>
+							
+					<Label Text="" x:Name="lblCitta" HorizontalOptions="FillAndExpand"  
+						HorizontalTextAlignment="End" VerticalTextAlignment="Center"
+						TextColor="Black" FontSize="Medium"
+						 Margin="10,5,10,5" >
+					</Label>
+				</StackLayout>
+				
+				<StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="Start" BackgroundColor="White" >
+					<Label Text="Indirizzo" HorizontalOptions="FillAndExpand"  
+						HorizontalTextAlignment="Start" VerticalTextAlignment="Center"
+						TextColor="Black" FontSize="Medium"
+						 Margin="10,5,10,5" >
+					</Label>
+
+					<Label Text="A" HorizontalOptions="StartAndExpand"  
+							HorizontalTextAlignment="Start" VerticalTextAlignment="Center"
+							TextColor="White" FontSize="Large"
+							 Margin="0,5,0,5" >
+						</Label>
+							
+					<Label Text="" x:Name="lblIndirizzo" HorizontalOptions="FillAndExpand"  
+						HorizontalTextAlignment="End" VerticalTextAlignment="Center"
+						TextColor="Black" FontSize="Medium"
+						 Margin="10,5,10,5" >
+					</Label>
+				</StackLayout>
+
+				<StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="Start" BackgroundColor="White">
+					<Label Text="Data di Apertura" HorizontalOptions="FillAndExpand"  
+						HorizontalTextAlignment="Start" VerticalTextAlignment="Center"
+						TextColor="Black" FontSize="Medium"
+						 Margin="10,5,10,5" >
+					</Label>
+
+					<Label Text="A" HorizontalOptions="StartAndExpand"  
+							HorizontalTextAlignment="Start" VerticalTextAlignment="Center"
+							TextColor="White" FontSize="Large"
+							 Margin="0,5,0,5" >
+						</Label>
+							
+					<Label Text="" x:Name="lblDataApertura" HorizontalOptions="FillAndExpand"  
+						HorizontalTextAlignment="End" VerticalTextAlignment="Center"
+						TextColor="Black" FontSize="Medium"
+						 Margin="10,5,10,5" >
+					</Label>
+				</StackLayout>
+
+				<StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="Start" BackgroundColor="White">
+					<Label Text="Data di Chiusura" HorizontalOptions="FillAndExpand"  
+						HorizontalTextAlignment="Start" VerticalTextAlignment="Center"
+						TextColor="Black" FontSize="Medium"
+						 Margin="10,5,10,5" >
+					</Label>
+
+						<Label Text="A" HorizontalOptions="StartAndExpand"  
+							HorizontalTextAlignment="Start" VerticalTextAlignment="Center"
+							TextColor="White" FontSize="Large"
+							 Margin="0,5,0,5" >
+						</Label>
+
+					<Label Text="" x:Name="lblDataChiusura" HorizontalOptions="FillAndExpand"  
+						HorizontalTextAlignment="End" VerticalTextAlignment="Center"
+						TextColor="Black" FontSize="Medium"
+						 Margin="10,5,10,5" >
+					</Label>
+				</StackLayout>
+
+					
+				</StackLayout>
+
+				<BoxView Color="White" Grid.Row="1" Grid.Column="0" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" />
+				
+				<Button Text="Pubblica" x:Name="btnIniziaSetup" HorizontalOptions="FillAndExpand"
+					VerticalOptions="Center" Clicked="Handle_Clicked" HeightRequest="45" Grid.Row="1" Grid.Column="0"
+					TextColor="White" BackgroundColor="#3d83f5" FontSize="17"
+					BorderRadius="3" Margin="20,0,20,0" >
+				</Button>
+			</Grid>
+			
+		</StackLayout>
+		
+	</ContentPage.Content>
+</ContentPage>

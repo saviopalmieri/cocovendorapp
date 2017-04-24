@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+		xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+		xmlns:cv="clr-namespace:Xamarin.Forms;assembly=Xamarin.Forms.CarouselView"
+		xmlns:local="clr-namespace:CocoVendorApp"
+		x:Class="CocoVendorApp.CocoVendorAppPage" >
+
+	<StackLayout Orientation="Vertical" VerticalOptions="FillAndExpand">
+  
+
+	<cv:CarouselView ItemsSource="{Binding CarouselItems}" x:Name="CarouselCoco" ItemSelected="Handle_ItemSelected" VerticalOptions="FillAndExpand">
+		    <cv:CarouselView.ItemTemplate>
+		      <DataTemplate>
+		        <Grid>
+		          <Grid.RowDefinitions>
+		            <RowDefinition Height="*"/>
+		            <RowDefinition Height="Auto"/>
+		          </Grid.RowDefinitions>
+		          <Image Grid.Row="0" Aspect="AspectFit" Source="{Binding ImageUrl}"/>
+		          <StackLayout Grid.Row="1" BackgroundColor="#fff" Padding="12">
+		            <Label TextColor="#444" Text="{Binding Label}" FontSize="16" 
+						HorizontalOptions="Center" VerticalOptions="CenterAndExpand" HorizontalTextAlignment="Center" />
+
+					<Label TextColor="#3d83f5" Text="{Binding Label1}" FontSize="16" Margin="0,20,0,0"
+						HorizontalOptions="Center" VerticalOptions="CenterAndExpand" HorizontalTextAlignment="Center" />
+		          </StackLayout>
+		        </Grid>
+		      </DataTemplate>
+		    </cv:CarouselView.ItemTemplate>
+	    </cv:CarouselView>
+
+	<Grid x:Name="gridButtons" VerticalOptions="End">
+		<Grid.RowDefinitions>
+			<RowDefinition Height="1*" />
+		</Grid.RowDefinitions>
+	    <Grid.ColumnDefinitions>
+	        <ColumnDefinition Width="1*" />
+	        <ColumnDefinition Width="1*" />
+	    </Grid.ColumnDefinitions>
+			
+		<Button Text="Inizia il tour guidato" x:Name="btnRegistrati" HorizontalOptions="FillAndExpand"
+			Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2" VerticalOptions="Center"
+			BackgroundColor="#3d83f5" TextColor="White" FontSize="17"
+			BorderRadius="2" Margin="20,5,20,10" Clicked="Handle_Clicked" >
+		</Button>
+	    
+	</Grid>
+
+		</StackLayout>
+		
+
+
+</ContentPage>

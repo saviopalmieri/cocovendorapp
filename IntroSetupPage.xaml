@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="CocoVendorApp.IntroSetupPage" Title="Registrazione guidata"
+	BackgroundColor="#EDEDF7">
+	<ContentPage.Content>
+
+		<Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition Width="*" />
+				</Grid.ColumnDefinitions>
+				<Grid.RowDefinitions>
+					<RowDefinition Height="6.2*" />
+					<RowDefinition Height="0.8*" />
+				</Grid.RowDefinitions>
+
+			<StackLayout Orientation="Vertical" VerticalOptions="FillAndExpand" HorizontalOptions="Center" Grid.Row="0" Grid.Column="0">
+
+			<Image Aspect="AspectFit" Source="logo_coco.png" Margin="40,20,40,20" />
+
+			<Label TextColor="#3d83f5" Text="Benvenuto!" FontSize="22" Margin="20,5,20,10"
+				HorizontalOptions="Center" VerticalOptions="CenterAndExpand"/>
+
+			<Label TextColor="#717171" Text="Ti assisteremo nel processo di configurazione del tuo lido/bagno!" FontSize="16" Margin="20,5,20,10"
+				HorizontalOptions="Center" HorizontalTextAlignment="Center" VerticalOptions="CenterAndExpand"/>
+
+			<Label TextColor="#717171" Text="Sei pronto? Ti serviranno solo 5 minuti" FontSize="16" Margin="20,5,20,10"
+				HorizontalOptions="Center" VerticalOptions="End"/>
+			
+		</StackLayout>
+
+		<BoxView Color="White" Grid.Row="1" Grid.Column="0" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" />
+			
+			<Button Text="Inizia" x:Name="btnIniziaSetup" HorizontalOptions="FillAndExpand"
+					VerticalOptions="Center" Clicked="Handle_Clicked" HeightRequest="45" Grid.Row="1" Grid.Column="0"
+				TextColor="White" BackgroundColor="#3d83f5" FontSize="17"
+				BorderRadius="3" Margin="20,0,20,0" >
+			</Button>
+		</Grid>
+		
+	</ContentPage.Content>
+</ContentPage>
