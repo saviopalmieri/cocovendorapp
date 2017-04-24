@@ -49,7 +49,7 @@ namespace CocoVendorApp
 			{
 				//var byteArray = Encoding.UTF8.GetBytes(apikey);
 				//client.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue(" ", apikey);
-				client.DefaultRequestHeaders.Add("Authorization", apikey);
+				client.DefaultRequestHeaders.Add("api_key", apikey);
 			}
 
 			if (calltype == ConnectionHelper.WebServiceCallType.Post)
@@ -85,7 +85,7 @@ namespace CocoVendorApp
 			{
 				//var byteArray = Encoding.UTF8.GetBytes(apikey);
 				//client.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue(" ", apikey);
-				client.DefaultRequestHeaders.Add("Authorization", apikey);
+				client.DefaultRequestHeaders.Add("api_key", apikey);
 			}
 
 			//var byteArray = Encoding.UTF8.GetBytes(apikey);
@@ -105,7 +105,7 @@ namespace CocoVendorApp
 			{
 				//var byteArray = Encoding.UTF8.GetBytes(apikey);
 				//client.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue(" ", apikey);
-				client.DefaultRequestHeaders.Add("Authorization", apikey);
+				client.DefaultRequestHeaders.Add("api_key", apikey);
 			}
 
 			client.BaseAddress = new Uri(ConnectionHelper.AppUrl);
@@ -122,7 +122,7 @@ namespace CocoVendorApp
 			{
 				//var byteArray = Encoding.UTF8.GetBytes(apikey);
 				//client.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue(" ", apikey);
-				client.DefaultRequestHeaders.Add("Authorization", apikey);
+				client.DefaultRequestHeaders.Add("api_key", apikey);
 			}
 
 			if (calltype == ConnectionHelper.WebServiceCallType.Post)
