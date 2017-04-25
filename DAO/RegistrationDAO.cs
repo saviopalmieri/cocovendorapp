@@ -58,7 +58,7 @@ namespace CocoVendorApp
 		//	return client.PostAsync(uri, new System.Net.Http.FormUrlEncodedContent(paramList));
 		//}
 
-		public WebServiceResponseDTO RegisterUser(string mail, string passw)
+		public WebServiceResponseDTO<object> RegisterUser(string mail, string passw)
 		{
 			string url = "vendor/sign-up";
 
@@ -70,10 +70,13 @@ namespace CocoVendorApp
 			response = ExecuteRequest(ConnectionHelper.WebServiceCallType.Put,listParam, url);
 
 			var ctn = response.GetAwaiter().GetResult().Content.ReadAsStringAsync();
-			return JsonConvert.DeserializeObject<WebServiceResponseDTO>(ctn.Result);
+			return JsonConvert.DeserializeObject<WebServiceResponseDTO<object>>(ctn.Result, new JsonSerializerSettings
+			{
+				DateParseHandling = DateParseHandling.None
+			});
 		}
 
-		public WebServiceResponseDTO LoginUser(string mail, string passw)
+		public WebServiceResponseDTO<UserWebServiceDTO> LoginUser(string mail, string passw)
 		{ 
 			string url = "vendor/login";
 
@@ -85,10 +88,13 @@ namespace CocoVendorApp
 			response = ExecuteRequest(ConnectionHelper.WebServiceCallType.Post,listParam, url);
 
 			var ctn = response.GetAwaiter().GetResult().Content.ReadAsStringAsync();
-			return JsonConvert.DeserializeObject<WebServiceResponseDTO>(ctn.Result);
+			return JsonConvert.DeserializeObject<WebServiceResponseDTO<UserWebServiceDTO>>(ctn.Result, new JsonSerializerSettings
+			{
+				DateParseHandling = DateParseHandling.None
+			});
 		}
 
-		public WebServiceResponseDTO SetInfoLido(string mail, string nomelido, DateTime dataOpening, DateTime dateClosing, string telefono, string indirizzo, string citta)
+		public WebServiceResponseDTO<object> SetInfoLido(string mail, string nomelido, DateTime dataOpening, DateTime dateClosing, string telefono, string indirizzo, string citta)
 		{
 			//string url = "infolido";
 

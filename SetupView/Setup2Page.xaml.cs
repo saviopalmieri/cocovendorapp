@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -93,10 +93,13 @@ namespace CocoVendorApp
 					map.Pins.Add(new Pin
 					{
 						Address = address,
-						Label = InfoLido.NomeLido,
+						Label = InfoLido.name,
 						Position = new Position(pos.Latitude, pos.Longitude),
 						Type = PinType.Generic
 					});
+
+					InfoLido.lat = pos.Latitude.ToString();
+					InfoLido.lng = pos.Longitude.ToString();
 				}
 			};
 
@@ -113,8 +116,8 @@ namespace CocoVendorApp
 			if (!string.IsNullOrEmpty(address) && 
 			    !string.IsNullOrEmpty(city))
 			{
-				InfoLido.Indirizzo = address;
-				InfoLido.Citta = city;
+				InfoLido.address = address;
+				InfoLido.city = city;
 
 				await Navigation.PushAsync(new Setup3Page(InfoLido));	
 			}

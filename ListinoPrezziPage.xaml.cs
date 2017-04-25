@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 
 using Xamarin.Forms;
@@ -19,10 +19,10 @@ namespace CocoVendorApp
 
 			InfoLido = mInfoLido;
 
-			txtPrezzoSdraio.Text = mInfoLido.PrezzoSdraio.ToString();
-			txtPrezzoCabine.Text = mInfoLido.PrezzoCabine.ToString();
-			txtPrezzoLettini.Text = mInfoLido.PrezzoLettini.ToString();
-			txtPrezzoOmbrelloni.Text = mInfoLido.PrezzoOmbrelloni.ToString();
+			txtPrezzoSdraio.Text = mInfoLido.chair_price.ToString();
+			txtPrezzoCabine.Text = mInfoLido.cabana_price.ToString();
+			txtPrezzoLettini.Text = mInfoLido.sun_bed_price.ToString();
+			txtPrezzoOmbrelloni.Text = mInfoLido.umbrella_price.ToString();
 		}
 
 		async void Handle_Clicked(object sender, System.EventArgs e)
@@ -32,10 +32,10 @@ namespace CocoVendorApp
 			var prezzoSdraio = decimal.Parse(txtPrezzoSdraio.Text);
 			var prezzoCabine = decimal.Parse(txtPrezzoCabine.Text);
 
-			InfoLido.PrezzoOmbrelloni = prezzoOmbr;
-			InfoLido.PrezzoLettini = prezzoLett;
-			InfoLido.PrezzoSdraio = prezzoSdraio;
-			InfoLido.PrezzoCabine = prezzoCabine;
+			InfoLido.umbrella_price = prezzoOmbr;
+			InfoLido.sun_bed_price = prezzoLett;
+			InfoLido.chair_price = prezzoSdraio;
+			InfoLido.cabana_price = prezzoCabine;
 
 			var result = InfoLidoDAO.Instance.SetListinoPrezzi(ConnectionHelper.RetrieveUserInfo().apiKey, InfoLido);
 			if (result != null)

@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 
 using Xamarin.Forms;
@@ -19,7 +19,7 @@ namespace CocoVendorApp
 
 			InitializeComponent();
 
-			txtMailPayPal.Text = InfoLido.MailPaypal;
+			txtMailPayPal.Text = InfoLido.email_paypal;
 
 			var tapGesture = new TapGestureRecognizer
 			{
@@ -41,7 +41,7 @@ namespace CocoVendorApp
 			if (!string.IsNullOrEmpty(mailPaypal) &&
 				mailPaypal.Contains("@"))
 			{
-				InfoLido.MailPaypal = mailPaypal;
+				InfoLido.email_paypal = mailPaypal;
 
 				var result = InfoLidoDAO.Instance.SetMailPaypal(ConnectionHelper.RetrieveUserInfo().apiKey, 
 				                                                ConnectionHelper.RetrieveUserInfo().mail, InfoLido);

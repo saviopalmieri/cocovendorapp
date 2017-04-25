@@ -2,8 +2,10 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="CocoVendorApp.LoginPage"
 		Title="Accedi" BackgroundColor="#EDEDF7">
 	<ContentPage.Content>
-
+		
 		<StackLayout Orientation="Vertical">
+
+				<!--<ActivityIndicator IsRunning="false" x:Name="loadingPanel" Color="Black"/>-->
 			
 			<!--<Label Text="Accedi al tuo lido!" x:Name="lblTitle" HorizontalOptions="FillAndExpand"
 				Grid.Row="0" Grid.ColumnSpan="2" 

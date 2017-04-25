@@ -1,10 +1,11 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Maps;
 using Plugin.Geolocator;
+using System.Globalization;
 
 namespace CocoVendorApp
 {
@@ -30,14 +31,14 @@ namespace CocoVendorApp
 				HorizontalOptions = LayoutOptions.FillAndExpand,
 				VerticalOptions = LayoutOptions.CenterAndExpand,
 				Placeholder = "Indirizzo",
-				Text = InfoLido.Indirizzo
+				Text = InfoLido.address
 			};
 			entryCity = new Entry
 			{
 				HorizontalOptions = LayoutOptions.FillAndExpand,
 				VerticalOptions = LayoutOptions.CenterAndExpand,
 				Placeholder = "Città",
-				Text = InfoLido.Citta
+				Text = InfoLido.city
 			};
 			Button buttonGo = new Button
 			{
@@ -76,6 +77,8 @@ namespace CocoVendorApp
 				VerticalOptions = LayoutOptions.FillAndExpand
 			};
 
+			RenderInitialPosition();
+
 			buttonGo.Clicked += async(sender, e) =>
 			{
 				var address = entryAddress.Text + " " + entryCity.Text;
@@ -96,10 +99,13 @@ namespace CocoVendorApp
 					map.Pins.Add(new Pin
 					{
 						Address = address,
-						Label = InfoLido.NomeLido,
+						Label = InfoLido.name,
 						Position = new Position(pos.Latitude, pos.Longitude),
 						Type = PinType.Generic
 					});
+
+					InfoLido.lat = pos.Latitude.ToString();
+					InfoLido.lng = pos.Longitude.ToString();
 				}
 			};
 
@@ -112,14 +118,17 @@ namespace CocoVendorApp
 
 		async void RenderInitialPosition()
 		{ 
-			var initpos = await GetPositionFromAddress(InfoLido.Indirizzo + " " + InfoLido.Citta);
+			//var initpos = await GetPositionFromAddress(InfoLido.address + " " + InfoLido.city);
+
+			map.MoveToRegion(MapSpan.FromCenterAndRadius(new Position(double.Parse(InfoLido.lat, CultureInfo.InvariantCulture),double.Parse(InfoLido.lng,CultureInfo.InvariantCulture)),
+															 Distance.FromMiles(1)));
 
 			map.Pins.Clear();
 			map.Pins.Add(new Pin
 			{
-				Address = InfoLido.Indirizzo + " " + InfoLido.Citta,
-				Label = InfoLido.NomeLido,
-				Position = new Position(initpos.Latitude, initpos.Longitude),
+				Address = InfoLido.address + " " + InfoLido.city,
+				Label = InfoLido.name,
+				Position = new Position(double.Parse(InfoLido.lat, CultureInfo.InvariantCulture),double.Parse(InfoLido.lng,CultureInfo.InvariantCulture)),
 				Type = PinType.Generic
 			});
 		}
@@ -132,8 +141,8 @@ namespace CocoVendorApp
 			if (!string.IsNullOrEmpty(address) && 
 			    !string.IsNullOrEmpty(city))
 			{
-				InfoLido.Indirizzo = address;
-				InfoLido.Citta = city;
+				InfoLido.address = address;
+				InfoLido.city = city;
 
 				await Navigation.PopAsync();	
 			}

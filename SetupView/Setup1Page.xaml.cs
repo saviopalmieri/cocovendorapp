@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 
 using Xamarin.Forms;
@@ -21,7 +21,7 @@ namespace CocoVendorApp
 			if (!string.IsNullOrEmpty(nomeLido) && 
 			   dataApertura != DateTime.MinValue && dataChiusura != DateTime.MinValue)
 			{
-				await Navigation.PushAsync(new Setup2Page(new InfoLidoDTO { NomeLido = nomeLido, DataApertura = dataApertura, DataChiusura = dataChiusura }));	
+				await Navigation.PushAsync(new Setup2Page(new InfoLidoDTO { name = nomeLido, open_season_date = dataApertura, close_season_date = dataChiusura }));	
 			}
 			else
 			{

@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 
 using Xamarin.Forms;
@@ -27,10 +27,10 @@ namespace CocoVendorApp
 			var prezzoSdraio = decimal.Parse(txtPrezzoSdraio.Text);
 			var prezzoCabine = decimal.Parse(txtPrezzoCabine.Text);
 
-			InfoLido.PrezzoOmbrelloni = prezzoOmbr;
-			InfoLido.PrezzoLettini = prezzoLett;
-			InfoLido.PrezzoSdraio = prezzoSdraio;
-			InfoLido.PrezzoCabine = prezzoCabine;
+			InfoLido.umbrella_price = prezzoOmbr;
+			InfoLido.sun_bed_price = prezzoLett;
+			InfoLido.chair_price = prezzoSdraio;
+			InfoLido.cabana_price = prezzoCabine;
 
 			await Navigation.PushAsync(new Setup6Page(InfoLido));
 		}

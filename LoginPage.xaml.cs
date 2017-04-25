@@ -31,11 +31,11 @@ namespace CocoVendorApp
 			if (!string.IsNullOrEmpty(email)
 				&& email.Contains("@") && !string.IsNullOrEmpty(password))
 			{
-				var ind = new ActivityIndicator() { IsRunning = true, Color = Color.Blue };
+				//loadingPanel.IsRunning = true;
 
 				var response = RegistrationDAO.Instance.LoginUser(email, password);
 
-				ind.IsRunning = false;
+				//loadingPanel.IsRunning = false;
 
 				if (response == null)
 				{
@@ -47,16 +47,17 @@ namespace CocoVendorApp
 				}
 				else
 				{
-					ConnectionHelper.StoreUserInfo(new UserInfoDTO { mail = email, password = password, apiKey = response.apiKey });
+					ConnectionHelper.StoreUserInfo(new UserInfoDTO { mail = email, password = password, apiKey = response.data.api_key });
 
 					//foreach (var p in Navigation.NavigationStack)
 					//{
 					//	Navigation.RemovePage(p);
 					//}
 
-					if (InfoLidoDAO.Instance.GetSlimInfoLido(ConnectionHelper.RetrieveUserInfo().mail, ConnectionHelper.RetrieveUserInfo().apiKey))
+					if (response.data.lido != null)
+						//InfoLidoDAO.Instance.GetSlimInfoLido(ConnectionHelper.RetrieveUserInfo().mail, ConnectionHelper.RetrieveUserInfo().apiKey)
 					{
-						Application.Current.MainPage = new NavigationPage(new HomePage());
+						Application.Current.MainPage = new NavigationPage(new HomePage(response.data.lido));
 						//await Navigation.PushAsync(new HomePage());	
 					}
 					else

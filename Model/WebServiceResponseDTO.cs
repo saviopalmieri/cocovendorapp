@@ -3,14 +3,14 @@ namespace CocoVendorApp
 {
 	public class WebServiceResponseJsonDTO
 	{ 
-		public WebServiceResponseDTO WebServiceResponseDTO
+		public WebServiceResponseDTO<object> WebServiceResponseDTO
 		{
 			get;
 			set;
 		}
 	}
 
-	public class WebServiceResponseDTO
+	public class WebServiceResponseDTO<T>
 	{
 		public bool error
 		{
@@ -47,6 +47,8 @@ namespace CocoVendorApp
 			get;
 			set;
 		}
+
+		public T data { get; set; }
 
 		public WebServiceResponseDTO()
 		{

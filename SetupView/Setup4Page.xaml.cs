@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
@@ -37,7 +37,7 @@ namespace CocoVendorApp
 		{
 			InfoLido.ListaFile = (from x in FileItems select x).ToList();
 
-			InfoLido.NCabine = int.Parse(txtNCabine.Text);
+			InfoLido.cabana_qty = int.Parse(txtNCabine.Text);
 
 			await Navigation.PushAsync(new Setup5Page(InfoLido));
 		}
@@ -61,7 +61,8 @@ namespace CocoVendorApp
 			}
 
 			var nfila = "1";
-			var lastItem = (from f in FileItems where f.NomeFila.StartsWith("Fila") orderby f.NomeFila descending select f.NomeFila).FirstOrDefault();
+			//var lastItem = (from f in FileItems where f.NomeFila.StartsWith("Fila") orderby f.NomeFila descending select f.NomeFila).FirstOrDefault();
+			var lastItem = (from f in FileItems select f.NomeFila).LastOrDefault();
 
 			if (!string.IsNullOrEmpty(lastItem))
 			{

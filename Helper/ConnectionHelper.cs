@@ -10,7 +10,11 @@ namespace CocoVendorApp
 		{
 			get
 			{
-				return "https://cocoapp.it/api/v2/web/";
+				#if DEBUG
+					return "https://cocoapp.it/api/v2/web/app_dev.php/";
+				#else
+					return "https://cocoapp.it/api/v2/web/";
+				#endif
 			}
 		}
 

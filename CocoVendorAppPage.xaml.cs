@@ -15,9 +15,17 @@ namespace CocoVendorApp
 	{
 		public ObservableCollection<CarouselItem> CarouselItems { get; set; }
 
-		public CocoVendorAppPage()
+		public InfoLidoDTO InfoLido
+		{
+			get;
+			set;
+		}
+
+		public CocoVendorAppPage(InfoLidoDTO mInfoLido)
 		{
 			InitializeComponent();
+
+			InfoLido = mInfoLido;
 
 			CarouselItems = new ObservableCollection<CarouselItem>
 			{
@@ -55,9 +63,9 @@ namespace CocoVendorApp
 			var userInfo = ConnectionHelper.RetrieveUserInfo();
 			if (userInfo != null)
 			{
-				if (InfoLidoDAO.Instance.GetSlimInfoLido(ConnectionHelper.RetrieveUserInfo().mail, ConnectionHelper.RetrieveUserInfo().apiKey))
+				if (InfoLido != null)
 				{
-					Navigation.PushAsync(new HomePage());
+					Navigation.PushAsync(new HomePage(InfoLido));
 				}
 				else
 				{

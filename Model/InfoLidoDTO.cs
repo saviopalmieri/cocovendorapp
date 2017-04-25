@@ -39,14 +39,22 @@ namespace CocoVendorApp
 	public class ServicesItem
 	{
 		public string ImageUrl { get; set; }
-		public string Label { get; set; }
+		public string name { get; set; }
 		public bool Active { get; set; }
+		public int id { get; set; }
 		public string IdServizio
 		{
 			get 
 			{
-				var name = ImageUrl.Split('.')[0];
-				return name.Replace("servizio", string.Empty);
+				if (id > 0)
+				{
+					return id.ToString();
+				}
+				else
+				{
+					var _name = ImageUrl.Split('.')[0];
+					return _name.Replace("servizio", string.Empty);
+				}
 			}
 		}
 	}
@@ -80,24 +88,24 @@ namespace CocoVendorApp
 
 		public InfoLidoDTO(InfoLidoWebServiceDTO infoLidoWebSevice)
 		{
-			NomeLido = infoLidoWebSevice.nomelido;
-			Indirizzo = infoLidoWebSevice.indirizzolido;
-			Citta = infoLidoWebSevice.cittalido;
-			Telefono = infoLidoWebSevice.telefono;
-			MailPaypal = infoLidoWebSevice.email_paypal;
-			PrezzoLettini = decimal.Parse(infoLidoWebSevice.prezzo_lettini);
-			PrezzoSdraio = decimal.Parse(infoLidoWebSevice.prezzo_sdraio);
-			PrezzoOmbrelloni = decimal.Parse(infoLidoWebSevice.prezzo_ombrelloni);
-			PrezzoCabine = decimal.Parse(infoLidoWebSevice.prezzo_cabine);
-			DataApertura = DateTime.ParseExact(infoLidoWebSevice.data_apertura, "yyyy-MM-dd", null);
-			DataChiusura = DateTime.ParseExact(infoLidoWebSevice.data_chiusura, "yyyy-MM-dd", null);
+			name = infoLidoWebSevice.nomelido;
+			address = infoLidoWebSevice.indirizzolido;
+			city = infoLidoWebSevice.cittalido;
+			telephone = infoLidoWebSevice.telefono;
+			email_paypal = infoLidoWebSevice.email_paypal;
+			sun_bed_price = decimal.Parse(infoLidoWebSevice.prezzo_lettini);
+			chair_price = decimal.Parse(infoLidoWebSevice.prezzo_sdraio);
+			umbrella_price = decimal.Parse(infoLidoWebSevice.prezzo_ombrelloni);
+			cabana_price = decimal.Parse(infoLidoWebSevice.prezzo_cabine);
+			open_season_date = DateTime.ParseExact(infoLidoWebSevice.data_apertura, "yyyy-MM-dd", null);
+			close_season_date = DateTime.ParseExact(infoLidoWebSevice.data_chiusura, "yyyy-MM-dd", null);
 			ImgLidoPath = infoLidoWebSevice.url_immagine;
-			ListaServizi = new List<ServicesItem>();
+			lido_service_array = new List<ServicesItem>();
 			if (infoLidoWebSevice.nome_servizio != null)
 			{
 				foreach (var s in infoLidoWebSevice.nome_servizio)
 				{
-					ListaServizi.Add(new ServicesItem
+					lido_service_array.Add(new ServicesItem
 					{
 						ImageUrl = "servizio" + s.ToString() + ".png",
 						Active = true
@@ -106,23 +114,29 @@ namespace CocoVendorApp
 			}
 		}
 
-		public string NomeLido { get; set; }
-		public DateTime DataApertura { get; set; }
-		public DateTime DataChiusura { get; set; }
-		public string Indirizzo { get; set; }
-		public string Citta { get; set; }
-		public IList<ServicesItem> ListaServizi { get; set; }
+		public int review_rating_avg { get; set; }
+		public int id { get; set; }
+		public string name { get; set; }
+		public string email { get; set; }
+		public DateTime open_season_date { get; set; }
+		public DateTime close_season_date { get; set; }
+		public string address { get; set; }
+		public string city { get; set; }
+		public string lng { get; set; }
+		public string lat { get; set; }
+		public IList<ServicesItem> lido_service_array { get; set; }
 		public IList<InfoFilaDTO> ListaFile { get; set; }
+		public IList<RecensioneDTO> review_array { get; set; }
 
-		public int NCabine { get; set; }
+		public int cabana_qty { get; set; }
 
-		public decimal PrezzoOmbrelloni { get; set; }
-		public decimal PrezzoLettini { get; set; }
-		public decimal PrezzoSdraio { get; set; }
-		public decimal PrezzoCabine { get; set; }
+		public decimal umbrella_price { get; set; }
+		public decimal sun_bed_price { get; set; }
+		public decimal chair_price { get; set; }
+		public decimal cabana_price { get; set; }
 
-		public string MailPaypal { get; set; }
-		public string Telefono { get; set; }
+		public string email_paypal { get; set; }
+		public string telephone { get; set; }
 		public byte[] ImgLidoStream { get; set; }
 		public string ImgLidoPath { get; set; }
 	}
@@ -133,16 +147,16 @@ namespace CocoVendorApp
 
 		public int id_lido { get; set; }
 		public int id_utente { get; set; }
-		public int id_zona { get; set; }
-		public int n_ombrelloni { get; set; }
-		public int n_lettini { get; set; }
-		public int n_cabine { get; set; }
-		public int n_sdraio { get; set; }
+		public int zone_id { get; set; }
+		public int umbrella_qty { get; set; }
+		public int sun_bed_qty { get; set; }
+		public int cabana_qty { get; set; }
+		public int chair_qty { get; set; }
 	}
 
 	public class RecensioneDTO
 	{ 
-		//public int id_lido { get; set; }
+		public int id { get; set; }
 		public string rating { get; set; }
 		public string titolo { get; set; }
 		public string note_recensione { get; set; }

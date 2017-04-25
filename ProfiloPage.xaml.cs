@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 
 using Xamarin.Forms;
@@ -21,14 +21,24 @@ namespace CocoVendorApp
 
 			lblMail.Text = ConnectionHelper.RetrieveUserInfo().mail;
 			txtPassword.Text = ConnectionHelper.RetrieveUserInfo().password;
-			lblNomeCompleto.Text = InfoLido.NomeLido;
-			txtTelefono.Text = InfoLido.Telefono;
+			lblNomeCompleto.Text = InfoLido.name;
+			txtTelefono.Text = InfoLido.telephone;
 		}
 
-		void Handle_Clicked(object sender, System.EventArgs e)
+		async void Handle_Clicked(object sender, System.EventArgs e)
 		{
 			//txtPassword.Text = ConnectionHelper.RetrieveUserInfo().password;
-			InfoLido.Telefono = txtTelefono.Text;
+			InfoLido.telephone = txtTelefono.Text;
+
+			var result = InfoLidoDAO.Instance.SetInfoLido(ConnectionHelper.RetrieveUserInfo().apiKey, ConnectionHelper.RetrieveUserInfo().mail, InfoLido);
+			if (result.error)
+			{
+				await DisplayAlert("Errore", result.message, "Chiudi");
+			}
+			else
+			{
+				await Navigation.PopAsync();
+			}
 		}
 	}
 }

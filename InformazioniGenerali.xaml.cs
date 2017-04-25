@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 
 using Xamarin.Forms;
@@ -18,9 +18,9 @@ namespace CocoVendorApp
 
 			InfoLido = mInfoLido;
 
-			txtNomeLido.Text = InfoLido.NomeLido;
-			dateOpening.Date = InfoLido.DataApertura;
-			dateClosing.Date = InfoLido.DataChiusura;
+			txtNomeLido.Text = InfoLido.name;
+			dateOpening.Date = InfoLido.open_season_date;
+			dateClosing.Date = InfoLido.close_season_date;
 
 			var tapGesture = new TapGestureRecognizer
 			{
@@ -56,12 +56,16 @@ namespace CocoVendorApp
 			   dataApertura != DateTime.MinValue &&
 			   dataChiusura != DateTime.MinValue)
 			{
-				InfoLido.DataApertura = dataApertura;
-				InfoLido.DataChiusura = dataChiusura;
-				var result = InfoLidoDAO.Instance.UpdateInfoLido(ConnectionHelper.RetrieveUserInfo().apiKey, ConnectionHelper.RetrieveUserInfo().mail, InfoLido);
+				InfoLido.open_season_date = dataApertura;
+				InfoLido.close_season_date = dataChiusura;
+				var result = InfoLidoDAO.Instance.SetInfoLido(ConnectionHelper.RetrieveUserInfo().apiKey, ConnectionHelper.RetrieveUserInfo().mail, InfoLido);
 				if (result.error)
 				{
 					await DisplayAlert("Errore", result.message, "Chiudi");
+				}
+				else
+				{
+					await Navigation.PopAsync();
 				}
 				//RegistrationDAO.Instance.SetInfoLido(ConnectionHelper.RetrieveUserInfo().mail, nomelido, dataApertura, dataChiusura, string.Empty, string.Empty, string.Empty);
 			}

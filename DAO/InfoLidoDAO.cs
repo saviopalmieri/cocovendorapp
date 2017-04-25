@@ -49,7 +49,7 @@ namespace CocoVendorApp
 			{
 				//var byteArray = Encoding.UTF8.GetBytes(apikey);
 				//client.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue(" ", apikey);
-				client.DefaultRequestHeaders.Add("api_key", apikey);
+				client.DefaultRequestHeaders.Add("Autenticate", apikey);
 			}
 
 			if (calltype == ConnectionHelper.WebServiceCallType.Post)
@@ -85,7 +85,7 @@ namespace CocoVendorApp
 			{
 				//var byteArray = Encoding.UTF8.GetBytes(apikey);
 				//client.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue(" ", apikey);
-				client.DefaultRequestHeaders.Add("api_key", apikey);
+				client.DefaultRequestHeaders.Add("Autenticate", apikey);
 			}
 
 			//var byteArray = Encoding.UTF8.GetBytes(apikey);
@@ -105,7 +105,7 @@ namespace CocoVendorApp
 			{
 				//var byteArray = Encoding.UTF8.GetBytes(apikey);
 				//client.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue(" ", apikey);
-				client.DefaultRequestHeaders.Add("api_key", apikey);
+				client.DefaultRequestHeaders.Add("Autenticate", apikey);
 			}
 
 			client.BaseAddress = new Uri(ConnectionHelper.AppUrl);
@@ -122,7 +122,7 @@ namespace CocoVendorApp
 			{
 				//var byteArray = Encoding.UTF8.GetBytes(apikey);
 				//client.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue(" ", apikey);
-				client.DefaultRequestHeaders.Add("api_key", apikey);
+				client.DefaultRequestHeaders.Add("Autenticate", apikey);
 			}
 
 			if (calltype == ConnectionHelper.WebServiceCallType.Post)
@@ -139,81 +139,83 @@ namespace CocoVendorApp
 			}
 		}
 
-		public WebServiceResponseDTO SetInfoLido(string apiKey, string email, InfoLidoDTO mInfoLido)
+		public WebServiceResponseDTO<object> SetInfoLido(string apiKey, string email, InfoLidoDTO mInfoLido)
 		{
-			string url = "infolido";
+			string url = "vendor/lido/info";
 
-			long idLido = GetIdUtenteLido(apiKey);
+			//long idLido = GetIdUtenteLido(apiKey);
 
 			var listParam = new List<KeyValuePair<string, string>>();
-			listParam.Add(new KeyValuePair<string, string>("nomecompleto", mInfoLido.NomeLido));
-			listParam.Add(new KeyValuePair<string, string>("telefono", mInfoLido.Telefono));
-			listParam.Add(new KeyValuePair<string, string>("nomelido", mInfoLido.NomeLido));
-			listParam.Add(new KeyValuePair<string, string>("indirizzo", mInfoLido.Indirizzo));
-			listParam.Add(new KeyValuePair<string, string>("citta", mInfoLido.Citta));
-			listParam.Add(new KeyValuePair<string, string>("data-apertura", mInfoLido.DataApertura.ToString("yyyyMMdd")));
-			listParam.Add(new KeyValuePair<string, string>("data-chiusura", mInfoLido.DataChiusura.ToString("yyyyMMdd")));
-			listParam.Add(new KeyValuePair<string, string>("idutente", idLido.ToString()));
+			listParam.Add(new KeyValuePair<string, string>("name", mInfoLido.name));
+			listParam.Add(new KeyValuePair<string, string>("telephone", mInfoLido.telephone));
+			//listParam.Add(new KeyValuePair<string, string>("nomelido", mInfoLido.nomelido));
+			listParam.Add(new KeyValuePair<string, string>("address", mInfoLido.address));
+			listParam.Add(new KeyValuePair<string, string>("city", mInfoLido.city));
+			listParam.Add(new KeyValuePair<string, string>("lat", mInfoLido.lat));
+			listParam.Add(new KeyValuePair<string, string>("lng", mInfoLido.lng));
+			listParam.Add(new KeyValuePair<string, string>("open_season_date", mInfoLido.open_season_date.ToString("yyyyMMdd")));
+			listParam.Add(new KeyValuePair<string, string>("close_season_date", mInfoLido.close_season_date.ToString("yyyyMMdd")));
+			//listParam.Add(new KeyValuePair<string, string>("idutente", idLido.ToString()));
 
 			Task<HttpResponseMessage> response = null;
 			response = ExecuteRequest(ConnectionHelper.WebServiceCallType.Post, listParam, url, apiKey);
 
 			var ctn = response.GetAwaiter().GetResult().Content.ReadAsStringAsync();
-			return JsonConvert.DeserializeObject<WebServiceResponseDTO>(ctn.Result);
+			return JsonConvert.DeserializeObject<WebServiceResponseDTO<object>>(ctn.Result);
 		}
 
-		public WebServiceResponseDTO SetListinoPrezzi(string apikey, InfoLidoDTO mInfoLido)
+		public WebServiceResponseDTO<object> SetListinoPrezzi(string apikey, InfoLidoDTO mInfoLido)
 		{
-			string url = "listinoprezzi";
+			string url = "vendor/lido/prices";
 
 			var listParam = new List<KeyValuePair<string, string>>();
-			listParam.Add(new KeyValuePair<string, string>("prezzo-cabina", mInfoLido.PrezzoCabine.ToString()));
-			listParam.Add(new KeyValuePair<string, string>("prezzo-lettino", mInfoLido.PrezzoLettini.ToString()));
-			listParam.Add(new KeyValuePair<string, string>("prezzo-ombrellone", mInfoLido.PrezzoOmbrelloni.ToString()));
-			listParam.Add(new KeyValuePair<string, string>("prezzo-sdraio", mInfoLido.PrezzoSdraio.ToString()));
+			listParam.Add(new KeyValuePair<string, string>("cabana_price", mInfoLido.cabana_price.ToString()));
+			listParam.Add(new KeyValuePair<string, string>("sun_bed_price", mInfoLido.sun_bed_price.ToString()));
+			listParam.Add(new KeyValuePair<string, string>("umbrella_price", mInfoLido.umbrella_price.ToString()));
+			listParam.Add(new KeyValuePair<string, string>("chair_price", mInfoLido.chair_price.ToString()));
 
 			Task<HttpResponseMessage> response = null;
-			response = ExecuteRequest(ConnectionHelper.WebServiceCallType.Put, listParam, url, apikey);
+			response = ExecuteRequest(ConnectionHelper.WebServiceCallType.Post, listParam, url, apikey);
 
 			var ctn = response.GetAwaiter().GetResult().Content.ReadAsStringAsync();
-			return JsonConvert.DeserializeObject<WebServiceResponseDTO>(ctn.Result);
+			return JsonConvert.DeserializeObject<WebServiceResponseDTO<object>>(ctn.Result);
 		}
 
-		public WebServiceResponseDTO SetMailPaypal(string apikey, string email, InfoLidoDTO mInfoLido)
+		public WebServiceResponseDTO<object> SetMailPaypal(string apikey, string email, InfoLidoDTO mInfoLido)
 		{
-			string url = "emailpaypal";
+			string url = "vendor/lido/paypal";
 
-			long idLido = GetIdLido(email, apikey);
+			//long idLido = GetIdLido(email, apikey);
 
 			var listParam = new List<KeyValuePair<string, string>>();
-			listParam.Add(new KeyValuePair<string, string>("email-paypal", mInfoLido.MailPaypal));
-			listParam.Add(new KeyValuePair<string, string>("id_lido", idLido.ToString()));
+			listParam.Add(new KeyValuePair<string, string>("email_paypal", mInfoLido.email_paypal));
+			//listParam.Add(new KeyValuePair<string, string>("id_lido", idLido.ToString()));
 
 			Task<HttpResponseMessage> response = null;
-			response = ExecuteRequest(ConnectionHelper.WebServiceCallType.Put, listParam, url, apikey);
+			response = ExecuteRequest(ConnectionHelper.WebServiceCallType.Post, listParam, url, apikey);
 
 			var ctn = response.GetAwaiter().GetResult().Content.ReadAsStringAsync();
-			return JsonConvert.DeserializeObject<WebServiceResponseDTO>(ctn.Result);
+			return JsonConvert.DeserializeObject<WebServiceResponseDTO<object>>(ctn.Result);
 		}
 
-		public WebServiceResponseDTO SetServiziLido(string apikey, string email, InfoLidoDTO mInfoLido)
+		public WebServiceResponseDTO<object> SetServiziLido(string apikey, string email, InfoLidoDTO mInfoLido)
 		{
-			string url = "settaservizi";
+			string url = "vendor/lido/services";
 
 			long idLido = GetIdLido(email, apikey);
 
 			//PulisciServizi(apikey, email);
 
-			var json = JsonConvert.SerializeObject((from x in mInfoLido.ListaServizi select new { id_lido = idLido, id_servizio = int.Parse(x.IdServizio) }).ToList());
+			var json = JsonConvert.SerializeObject(new { lido_service_array = (from x in mInfoLido.lido_service_array select int.Parse(x.IdServizio)).ToList()});
 
 			Task<HttpResponseMessage> response = null;
 			response = ExecuteRequestJson(ConnectionHelper.WebServiceCallType.Post, json, url, apikey);
 
 			var ctn = response.GetAwaiter().GetResult().Content.ReadAsStringAsync();
-			return JsonConvert.DeserializeObject<WebServiceResponseDTO>(ctn.Result);
+			return JsonConvert.DeserializeObject<WebServiceResponseDTO<object>>(ctn.Result);
 		}
 
-		public WebServiceResponseDTO SetFileLido(string apikey, string email, InfoLidoDTO mInfoLido)
+		public WebServiceResponseDTO<object> SetFileLido(string apikey, string email, InfoLidoDTO mInfoLido)
 		{
 			string url = "settazone";
 
@@ -233,7 +235,7 @@ namespace CocoVendorApp
 			response = ExecuteRequestJson(ConnectionHelper.WebServiceCallType.Post, json, url, apikey);
 
 			var ctn = response.GetAwaiter().GetResult().Content.ReadAsStringAsync();
-			return JsonConvert.DeserializeObject<WebServiceResponseDTO>(ctn.Result);
+			return JsonConvert.DeserializeObject<WebServiceResponseDTO<object>>(ctn.Result);
 		}
 
 		private long GetIdLido(string email, string apikey)
@@ -268,7 +270,7 @@ namespace CocoVendorApp
 			if (response.GetAwaiter().GetResult().IsSuccessStatusCode)
 			{
 				var ctn = response.GetAwaiter().GetResult().Content.ReadAsStringAsync();
-				return JsonConvert.DeserializeObject<WebServiceResponseDTO>(ctn.Result).id_utente;
+				return JsonConvert.DeserializeObject<WebServiceResponseDTO<object>>(ctn.Result).id_utente;
 			}
 			else
 			{
@@ -294,7 +296,7 @@ namespace CocoVendorApp
 				var ctn = response.GetAwaiter().GetResult().Content.ReadAsStringAsync();
 				try
 				{
-					var resHttp = JsonConvert.DeserializeObject<WebServiceResponseDTO>(ctn.Result);
+					var resHttp = JsonConvert.DeserializeObject<WebServiceResponseDTO<object>>(ctn.Result);
 					if (!string.IsNullOrEmpty(resHttp.nome_lido))
 					{
 						result = true;
@@ -340,17 +342,17 @@ namespace CocoVendorApp
 
 				if (listZone != null && listZone.Count > 0)
 				{
-					result.NCabine = listZone.First().n_cabine;
+					result.cabana_qty = listZone.First().cabana_qty;
 				}
 
 				foreach (var zona in listZone)
 				{
 					result.ListaFile.Add(new InfoFilaDTO
 					{
-						QtaLettini = zona.n_lettini,
-						QtaOmbrelloni = zona.n_ombrelloni,
-						QtaSdraio = zona.n_sdraio,
-						NomeFila = (listZone.Count == 1 ? "Zona Unica" : "Fila " + zona.id_zona.ToString())
+						QtaLettini = zona.sun_bed_qty,
+						QtaOmbrelloni = zona.umbrella_qty,
+						QtaSdraio = zona.chair_qty,
+						NomeFila = (listZone.Count == 1 ? "Zona Unica" : "Fila " + zona.zone_id.ToString())
 					});
 				}
 
@@ -410,22 +412,22 @@ namespace CocoVendorApp
 			return result;
 		}
 
-		public WebServiceResponseDTO AggiornaDisponibilitaLido(string apikey, string email, IList<DisponibilitaDTO> disp, DateTime dataOccup)
+		public WebServiceResponseDTO<object> AggiornaDisponibilitaLido(string apikey, string email, IList<DisponibilitaDTO> disp, DateTime dataOccup)
 		{ 
-			string url = "aggiornadisponibilita";
-			long idLido = GetIdLido(email, apikey);
-			long idUtenteLido = GetIdUtenteLido(apikey);
+			string url = "vendor/booking/insert-fake";
+			//long idLido = GetIdLido(email, apikey);
+			//long idUtenteLido = GetIdUtenteLido(apikey);
 
 			var dispToParse = (from x in disp
 							   select new DisponibilitaDTO
 							   {
-								   id_lido = (int)idLido,
-								   id_utente = (int)idUtenteLido,
-								   id_zona = x.id_zona,
-									n_ombrelloni = x.n_ombrelloni,
-								   n_lettini = x.n_lettini,
-									n_cabine = x.n_cabine,
-								   n_sdraio = x.n_sdraio,
+								   //id_lido = (int)idLido,
+								   //id_utente = (int)idUtenteLido,
+								   zone_id = x.zone_id,
+									umbrella_qty = x.umbrella_qty,
+								   sun_bed_qty = x.sun_bed_qty,
+									cabana_qty = x.cabana_qty,
+								   chair_qty = x.chair_qty,
 									datainizio = dataOccup.ToString("yyyyMMdd")
 							   }).ToList();
 
@@ -435,7 +437,7 @@ namespace CocoVendorApp
 			response = ExecuteRequestJson(ConnectionHelper.WebServiceCallType.Post, json, url, apikey);
 
 			var ctn = response.GetAwaiter().GetResult().Content.ReadAsStringAsync();
-			return JsonConvert.DeserializeObject<WebServiceResponseDTO>(ctn.Result);
+			return JsonConvert.DeserializeObject<WebServiceResponseDTO<object>>(ctn.Result);
 		}
 
 		private void PulisciServizi(string apikey, string email)
@@ -492,7 +494,7 @@ namespace CocoVendorApp
 			return result;
 		}
 
-		public WebServiceResponseDTO SetNCabine(string apikey, string email, InfoLidoDTO mInfoLido)
+		public WebServiceResponseDTO<object> SetNCabine(string apikey, string email, InfoLidoDTO mInfoLido)
 		{
 			string url = "ncabine";
 
@@ -500,16 +502,16 @@ namespace CocoVendorApp
 
 			var listParam = new List<KeyValuePair<string, string>>();
 			listParam.Add(new KeyValuePair<string, string>("id_lido", idLido.ToString()));
-			listParam.Add(new KeyValuePair<string, string>("ncabine", mInfoLido.NCabine.ToString()));
+			listParam.Add(new KeyValuePair<string, string>("ncabine", mInfoLido.cabana_qty.ToString()));
 
 			Task<HttpResponseMessage> response = null;
 			response = ExecuteRequest(ConnectionHelper.WebServiceCallType.Put,listParam, url, apikey);
 
 			var ctn = response.GetAwaiter().GetResult().Content.ReadAsStringAsync();
-			return JsonConvert.DeserializeObject<WebServiceResponseDTO>(ctn.Result);
+			return JsonConvert.DeserializeObject<WebServiceResponseDTO<object>>(ctn.Result);
 		}
 
-		public WebServiceResponseDTO SetImageLido(string apikey, string mail, Stream imagestream)
+		public WebServiceResponseDTO<object> SetImageLido(string apikey, string mail, Stream imagestream)
 		{ 
 			string url = "uploadimage";
 
@@ -542,7 +544,7 @@ namespace CocoVendorApp
 			response = ExecuteRequestJson(ConnectionHelper.WebServiceCallType.Post, json, url, apikey);
 
 			var ctn = response.GetAwaiter().GetResult().Content.ReadAsStringAsync();
-			return JsonConvert.DeserializeObject<WebServiceResponseDTO>(ctn.Result);
+			return JsonConvert.DeserializeObject<WebServiceResponseDTO<object>>(ctn.Result);
 		}
 
 		public IList<RecensioneDTO> GetListRecensioni(string apikey, string mail)
@@ -585,7 +587,7 @@ namespace CocoVendorApp
 			return result;
 		}
 
-		public WebServiceResponseDTO UpdateInfoLido(string apiKey, string email, InfoLidoDTO mInfoLido)
+		public WebServiceResponseDTO<object> UpdateInfoLido(string apiKey, string email, InfoLidoDTO mInfoLido)
 		{
 			string url = "aggiornamentolido";
 
@@ -593,18 +595,18 @@ namespace CocoVendorApp
 
 			var listParam = new List<KeyValuePair<string, string>>();
 			listParam.Add(new KeyValuePair<string, string>("id_lido", idLido.ToString()));
-			listParam.Add(new KeyValuePair<string, string>("nomecompleto", mInfoLido.NomeLido));
-			listParam.Add(new KeyValuePair<string, string>("telefono", mInfoLido.Telefono));
-			listParam.Add(new KeyValuePair<string, string>("indirizzo", mInfoLido.Indirizzo));
-			listParam.Add(new KeyValuePair<string, string>("citta", mInfoLido.Citta));
-			listParam.Add(new KeyValuePair<string, string>("data-apertura", mInfoLido.DataApertura.ToString("yyyyMMdd")));
-			listParam.Add(new KeyValuePair<string, string>("data-chiusura", mInfoLido.DataChiusura.ToString("yyyyMMdd")));
+			listParam.Add(new KeyValuePair<string, string>("nomecompleto", mInfoLido.name));
+			listParam.Add(new KeyValuePair<string, string>("telefono", mInfoLido.telephone));
+			listParam.Add(new KeyValuePair<string, string>("indirizzo", mInfoLido.address));
+			listParam.Add(new KeyValuePair<string, string>("citta", mInfoLido.city));
+			listParam.Add(new KeyValuePair<string, string>("data-apertura", mInfoLido.open_season_date.ToString("yyyyMMdd")));
+			listParam.Add(new KeyValuePair<string, string>("data-chiusura", mInfoLido.close_season_date.ToString("yyyyMMdd")));
 
 			Task<HttpResponseMessage> response = null;
 			response = ExecuteRequest(ConnectionHelper.WebServiceCallType.Post, listParam, url, apiKey);
 
 			var ctn = response.GetAwaiter().GetResult().Content.ReadAsStringAsync();
-			return JsonConvert.DeserializeObject<WebServiceResponseDTO>(ctn.Result);
+			return JsonConvert.DeserializeObject<WebServiceResponseDTO<object>>(ctn.Result);
 		}
 	}
 }

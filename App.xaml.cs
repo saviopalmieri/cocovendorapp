@@ -13,16 +13,24 @@ namespace CocoVendorApp
 		{
 			InitializeComponent();
 
-			ConnectionHelper.ClearUserInfo();
+			//ConnectionHelper.ClearUserInfo();
 
 			var userInfo = ConnectionHelper.RetrieveUserInfo();
-			if (userInfo != null && InfoLidoDAO.Instance.GetSlimInfoLido(ConnectionHelper.RetrieveUserInfo().mail, ConnectionHelper.RetrieveUserInfo().apiKey))
+			if (userInfo != null)//InfoLidoDAO.Instance.GetSlimInfoLido(ConnectionHelper.RetrieveUserInfo().mail, ConnectionHelper.RetrieveUserInfo().apiKey))
 			{
-				MainPage = new NavigationPage(new HomePage());
+				var result = RegistrationDAO.Instance.LoginUser(userInfo.mail, userInfo.password);
+				if (result.data.lido != null)
+				{
+					MainPage = new NavigationPage(new HomePage(result.data.lido));	
+				}
+				else
+				{
+					MainPage = new NavigationPage(new CocoVendorAppPage(null));
+				}
 			}
 			else
 			{
-				MainPage = new NavigationPage(new CocoVendorAppPage());
+				MainPage = new NavigationPage(new CocoVendorAppPage(null));
 			}
 			//NavigationPage.SetTitleIcon(this, "logo_coco.png");
 		}

@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using Xamarin.Forms;
@@ -26,7 +26,7 @@ namespace CocoVendorApp
 
 			RecensioniListView.ItemsSource = RecensioniItems;
 
-			lblNomeLido.Text = InfoLido.NomeLido;
+			lblNomeLido.Text = InfoLido.name;
 			lblNRecensioni.Text = RecensioniItems.Count.ToString() + " recensioni";
 		}
 	}

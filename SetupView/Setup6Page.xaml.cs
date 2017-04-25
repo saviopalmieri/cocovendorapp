@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 
 using Xamarin.Forms;
@@ -39,7 +39,7 @@ namespace CocoVendorApp
 			if (!string.IsNullOrEmpty(mailPaypal) &&
 			    mailPaypal.Contains("@"))
 			{
-				InfoLido.MailPaypal = mailPaypal;
+				InfoLido.email_paypal = mailPaypal;
 
 				await Navigation.PushAsync(new SetupEndPage(InfoLido));
 			}

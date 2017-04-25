@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using Plugin.Media;
@@ -22,11 +22,11 @@ namespace CocoVendorApp
 
 			InitializeComponent();
 
-			lblNomeLido.Text = InfoLido.NomeLido;
-			lblCitta.Text = InfoLido.Citta;
-			lblIndirizzo.Text = InfoLido.Indirizzo;
-			lblDataApertura.Text = InfoLido.DataApertura.ToString("d");
-			lblDataChiusura.Text = InfoLido.DataChiusura.ToString("d");
+			lblNomeLido.Text = InfoLido.name;
+			lblCitta.Text = InfoLido.city;
+			lblIndirizzo.Text = InfoLido.address;
+			lblDataApertura.Text = InfoLido.open_season_date.ToString("d");
+			lblDataChiusura.Text = InfoLido.close_season_date.ToString("d");
 		}
 
 		async void Handle_Clicked(object sender, System.EventArgs e)
@@ -43,7 +43,7 @@ namespace CocoVendorApp
 				else
 				{
 					result = InfoLidoDAO.Instance.SetFileLido(ConnectionHelper.RetrieveUserInfo().apiKey, ConnectionHelper.RetrieveUserInfo().mail, InfoLido);
-					if (InfoLido.NCabine > 0)
+					if (InfoLido.cabana_qty > 0)
 					{
 						result = InfoLidoDAO.Instance.SetNCabine(ConnectionHelper.RetrieveUserInfo().apiKey, ConnectionHelper.RetrieveUserInfo().mail, InfoLido);
 					}
@@ -63,7 +63,7 @@ namespace CocoVendorApp
 						else
 						{
 							await DisplayAlert("Complimenti!", "Pubblicazione avvenuta con successo!", "Chiudi");
-							Application.Current.MainPage = new NavigationPage(new HomePage());
+							Application.Current.MainPage = new NavigationPage(new HomePage(InfoLido));
 						}
 					}
 					else

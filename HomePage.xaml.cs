@@ -15,11 +15,11 @@ namespace CocoVendorApp
 			set;
 		}
 
-		public HomePage()
+		public HomePage(InfoLidoDTO mInfoLido)
 		{
 			InitializeComponent();
 
-			InfoLido = InfoLidoDAO.Instance.GetInfoLido(ConnectionHelper.RetrieveUserInfo().mail, ConnectionHelper.RetrieveUserInfo().apiKey);
+			InfoLido = mInfoLido; //InfoLidoDAO.Instance.GetInfoLido(ConnectionHelper.RetrieveUserInfo().mail, ConnectionHelper.RetrieveUserInfo().apiKey);
 
 			this.Children.Add(new RiepilogoPage(this));
 			this.Children.Add(new ScanPrenotazionePage(this));

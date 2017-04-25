@@ -83,47 +83,48 @@
 							HorizontalOptions="Center" HorizontalTextAlignment="Start" VerticalOptions="Start"/>
 					</StackLayout>
 
-					<StackLayout Grid.Row="1" Grid.ColumnSpan="4" Orientation="Vertical" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
-						<ListView x:Name="FileListView" ItemsSource="{Binding FileItems}" VerticalOptions="StartAndExpand" RowHeight="45" >
-						    <ListView.ItemTemplate>
-						      <DataTemplate>
-									<ViewCell>
-								        <Grid>
-								          <Grid.RowDefinitions>
-								            <RowDefinition Height="*"/>
-								          </Grid.RowDefinitions>
-											<Grid.ColumnDefinitions>
-												<ColumnDefinition Width="1.2*" />
-												<ColumnDefinition Width="1*" />
-												<ColumnDefinition Width="1*" />
-												<ColumnDefinition Width="1*" />
-											</Grid.ColumnDefinitions>
-								          	<Label Grid.Row="0" Grid.Column="0" TextColor="Black" Text="{Binding NomeFila}" FontSize="14" Margin="20,0,0,0"
-												VerticalTextAlignment="Center" HorizontalTextAlignment="Start" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand"/>
-										  	<Entry Grid.Row="0" Grid.Column="1" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" Keyboard="Numeric"
-												HorizontalTextAlignment="Center" TextColor="Black" 
-												Text="{Binding QtaOmbrelloni}" />
-											<Entry Grid.Row="0" Grid.Column="2" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" Keyboard="Numeric"
-												HorizontalTextAlignment="Center" TextColor="Black" 
-												Text="{Binding QtaLettini}" />
-											<Entry Grid.Row="0" Grid.Column="3" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" Keyboard="Numeric"
-												HorizontalTextAlignment="Center" TextColor="Black" 
-												Text="{Binding QtaSdraio}" />
-								        </Grid>
-									</ViewCell>
-						      </DataTemplate>
-						    </ListView.ItemTemplate>
-					  	</ListView>
+					<StackLayout Grid.Row="1" Grid.ColumnSpan="4" Orientation="Vertical">
+					<ListView x:Name="FileListView" ItemsSource="{Binding FileItems}" BackgroundColor="White" RowHeight="45" >
+					    <ListView.ItemTemplate>
+					      <DataTemplate>
+								<ViewCell>
+							        <Grid>
+							          <Grid.RowDefinitions>
+							            <RowDefinition Height="*"/>
+							          </Grid.RowDefinitions>
+										<Grid.ColumnDefinitions>
+											<ColumnDefinition Width="1.5*" />
+											<ColumnDefinition Width="1*" />
+											<ColumnDefinition Width="1*" />
+											<ColumnDefinition Width="1*" />
+											<ColumnDefinition Width="0.1*" />
+										</Grid.ColumnDefinitions>
+							          	<Label Grid.Row="0" Grid.Column="0" TextColor="Black" Text="{Binding NomeFila}" FontSize="14" Margin="20,0,0,0"
+											VerticalTextAlignment="Center" HorizontalTextAlignment="Start" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand"/>
+									  	<Entry Grid.Row="0" Grid.Column="1" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" Keyboard="Numeric"
+											HorizontalTextAlignment="Center" TextColor="Black" 
+											Text="{Binding QtaOmbrelloni}" />
+										<Entry Grid.Row="0" Grid.Column="2" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" Keyboard="Numeric"
+											HorizontalTextAlignment="Center" TextColor="Black" 
+											Text="{Binding QtaLettini}" />
+										<Entry Grid.Row="0" Grid.Column="3" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" Keyboard="Numeric"
+											HorizontalTextAlignment="Center" TextColor="Black" 
+											Text="{Binding QtaSdraio}" />
+							        </Grid>
+								</ViewCell>
+					      </DataTemplate>
+					    </ListView.ItemTemplate>
+				  	</ListView>
 
-						<StackLayout x:Name="lblDescription" Orientation="Vertical" VerticalOptions="EndAndExpand" Margin="10,5,10,5">
-							<Label Text="Le File indicano la posizione di Lettini e Ombrelloni in spiaggia." HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Start" VerticalTextAlignment="Center"
-								TextColor="#717171" FontSize="14"></Label>
-							<Label Text="Dai la possibilità ai tuoi clienti di poter scegliere la propria fila." HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Start" VerticalTextAlignment="Center"
-								TextColor="#717171" FontSize="14"></Label>
-							<Label Text="Qualora non indicata il posizionamento in spiaggia sarà a tua discrezione." HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Start" VerticalTextAlignment="Center"
-								TextColor="#717171" FontSize="14"></Label>
-						</StackLayout>
+					<StackLayout x:Name="lblDescription" Orientation="Vertical" VerticalOptions="EndAndExpand" Margin="10,5,10,5">
+						<Label Text="Le File indicano la posizione di Lettini e Ombrelloni in spiaggia." HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Start" VerticalTextAlignment="Center"
+							TextColor="#717171" FontSize="14"></Label>
+						<Label Text="Dai la possibilità ai tuoi clienti di poter scegliere la propria fila." HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Start" VerticalTextAlignment="Center"
+							TextColor="#717171" FontSize="14"></Label>
+						<Label Text="Qualora non indicata il1posizionamento in spiaggia sarà a tua discrezione." HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Start" VerticalTextAlignment="Center"
+							TextColor="#717171" FontSize="14"></Label>
 					</StackLayout>
+				</StackLayout>
 
 					<Button Text="  Aggiungi Fila  " x:Name="btnAggiungiFila" HorizontalOptions="Center"
 							VerticalOptions="Center" Clicked="Handle_Clicked_Fila" 

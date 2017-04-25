@@ -1,28 +1,25 @@
-﻿<Properties StartupConfiguration="{2B68B9E6-9DE3-4C2E-9C00-E33A6FD6782B}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="App.xaml.cs">
+﻿<Properties StartupConfiguration="{A86A4C2B-F32F-4BC8-A1F3-3BE57438120F}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Droid/Properties/AndroidManifest.xml">
     <Files>
-      <File FileName="DAO/RegistrationDAO.cs" Line="20" Column="27" />
-      <File FileName="DAO/InfoLidoDAO.cs" Line="67" Column="5" />
-      <File FileName="Helper/ConnectionHelper.cs" Line="17" Column="31" />
-      <File FileName="App.xaml.cs" Line="16" Column="34" />
+      <File FileName="RiepilogoPage.xaml" Line="139" Column="53" />
+      <File FileName="ImpostaDisponibilitaPage.xaml.cs" Line="118" Column="4" />
+      <File FileName="DAO/InfoLidoDAO.cs" Line="181" Column="1" />
+      <File FileName="SetupView/Setup4Page.xaml.cs" Line="63" Column="20" />
+      <File FileName="Droid/Properties/AndroidManifest.xml" Line="2" Column="151" />
     </Files>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" />
-  <MonoDevelop.Ide.ItemProperties.CocoVendorApp.Droid AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.Android_Accelerated_x86" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.CocoVendorApp.Droid AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.81HEBMC25D5N" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint file="/Users/saviopalmieri/OneDrive/Documenti/Lavoro/SavioPalmieriTeam/Coco/Vendor/CocoVendorApp/iOS/DatePickerCenterRenderer.cs" relfile="iOS/DatePickerCenterRenderer.cs" line="15" column="12" />
-      <Breakpoint file="/Users/saviopalmieri/OneDrive/Documenti/Lavoro/SavioPalmieriTeam/Coco/Vendor/CocoVendorApp/DAO/InfoLidoDAO.cs" relfile="DAO/InfoLidoDAO.cs" line="162" column="1" />
-      <Breakpoint file="/Users/saviopalmieri/OneDrive/Documenti/Lavoro/SavioPalmieriTeam/Coco/Vendor/CocoVendorApp/DAO/InfoLidoDAO.cs" relfile="DAO/InfoLidoDAO.cs" line="509" column="1" />
-      <Breakpoint file="/Users/saviopalmieri/OneDrive/Documenti/Lavoro/SavioPalmieriTeam/Coco/Vendor/CocoVendorApp/DAO/InfoLidoDAO.cs" relfile="DAO/InfoLidoDAO.cs" line="179" column="1" />
-      <Breakpoint file="/Users/saviopalmieri/OneDrive/Documenti/Lavoro/SavioPalmieriTeam/Coco/Vendor/CocoVendorApp/DAO/InfoLidoDAO.cs" relfile="DAO/InfoLidoDAO.cs" line="196" column="1" />
+      <Breakpoint file="/Users/saviopalmieri/OneDrive/Documenti/Lavoro/SavioPalmieriTeam/Coco/Vendor/CocoVendorApp/DAO/InfoLidoDAO.cs" relfile="DAO/InfoLidoDAO.cs" line="164" column="1" />
+      <Breakpoint file="/Users/saviopalmieri/OneDrive/Documenti/Lavoro/SavioPalmieriTeam/Coco/Vendor/CocoVendorApp/DAO/InfoLidoDAO.cs" relfile="DAO/InfoLidoDAO.cs" line="511" column="1" />
       <Breakpoint file="/Users/saviopalmieri/OneDrive/Documenti/Lavoro/SavioPalmieriTeam/Coco/Vendor/CocoVendorApp/SetupView/SetupEndPage.xaml.cs" relfile="SetupView/SetupEndPage.xaml.cs" line="121" column="1" />
       <Breakpoint file="/Users/saviopalmieri/OneDrive/Documenti/Lavoro/SavioPalmieriTeam/Coco/Vendor/CocoVendorApp/SetupView/SetupEndPage.xaml.cs" relfile="SetupView/SetupEndPage.xaml.cs" line="116" column="1" />
-      <Breakpoint file="/Users/saviopalmieri/OneDrive/Documenti/Lavoro/SavioPalmieriTeam/Coco/Vendor/CocoVendorApp/DAO/RegistrationDAO.cs" relfile="DAO/RegistrationDAO.cs" line="73" column="1" />
-      <Breakpoint file="/Users/saviopalmieri/OneDrive/Documenti/Lavoro/SavioPalmieriTeam/Coco/Vendor/CocoVendorApp/DAO/RegistrationDAO.cs" relfile="DAO/RegistrationDAO.cs" line="88" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.CocoVendorApp.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.0df9b9062d5ab0f4941c25d1c473d832d632f235" />
+  <MonoDevelop.Ide.ItemProperties.CocoVendorApp.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.DC2A6E3F-2101-4294-9C15-4499A8303184" />
   <MultiItemStartupConfigurations />
 </Properties>

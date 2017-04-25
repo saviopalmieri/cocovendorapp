@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
@@ -78,10 +78,10 @@ namespace CocoVendorApp
 		{ 
 			var disponibilita = InfoLidoDAO.Instance.GetDisponibilitaLido(ConnectionHelper.RetrieveUserInfo().apiKey, ConnectionHelper.RetrieveUserInfo().mail, dateChoosen.Date, dateChoosen.Date);
 
-			lblDispOmbrelloni.Text = disponibilita.n_ombrelloni.ToString();
-			lblDispSdraio.Text = disponibilita.n_sdraio.ToString();
-			lblDispLettini.Text = disponibilita.n_lettini.ToString();
-			lblDispCabine.Text = disponibilita.n_cabine.ToString();
+			lblDispOmbrelloni.Text = disponibilita.umbrella_qty.ToString();
+			lblDispSdraio.Text = disponibilita.chair_qty.ToString();
+			lblDispLettini.Text = disponibilita.sun_bed_qty.ToString();
+			lblDispCabine.Text = disponibilita.cabana_qty.ToString();
 		}
 
 		void Handle_DateSelected(object sender, Xamarin.Forms.DateChangedEventArgs e)
@@ -103,11 +103,11 @@ namespace CocoVendorApp
 			var listDisp = (from x in FileItems
 							select new DisponibilitaDTO
 							{
-								id_zona = x.IdFila,
-								n_cabine = 0,
-								n_lettini = x.QtaLettini,
-								n_ombrelloni = x.QtaOmbrelloni,
-								n_sdraio = x.QtaSdraio
+								zone_id = x.IdFila,
+								cabana_qty = 0,
+								sun_bed_qty = x.QtaLettini,
+								umbrella_qty = x.QtaOmbrelloni,
+								chair_qty = x.QtaSdraio
 							}).ToList();
 
 			var result = InfoLidoDAO.Instance.AggiornaDisponibilitaLido(ConnectionHelper.RetrieveUserInfo().apiKey, ConnectionHelper.RetrieveUserInfo().mail, listDisp, dateChoosen.Date);

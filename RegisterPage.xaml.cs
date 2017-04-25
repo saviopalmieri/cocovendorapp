@@ -50,7 +50,7 @@ namespace CocoVendorApp
 
 							if (!result.error)
 							{
-								ConnectionHelper.StoreUserInfo(new UserInfoDTO { mail = email, password = password, apiKey = result.apiKey });
+								ConnectionHelper.StoreUserInfo(new UserInfoDTO { mail = email, password = password, apiKey = result.data.api_key });
 							}
 						}
 						catch (Exception ex)

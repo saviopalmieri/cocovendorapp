@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
@@ -49,11 +49,11 @@ namespace CocoVendorApp
 
 			FileListView.ItemsSource = FileItems;
 
-			if (InfoLido.NCabine > 0)
+			if (InfoLido.cabana_qty > 0)
 			{
 				switchCabine.IsToggled = true;
 				layoutCabine.IsVisible = true;
-				txtNCabine.Text = InfoLido.NCabine.ToString();
+				txtNCabine.Text = InfoLido.cabana_qty.ToString();
 			}
 			else
 			{
@@ -72,7 +72,7 @@ namespace CocoVendorApp
 			var result = InfoLidoDAO.Instance.SetFileLido(ConnectionHelper.RetrieveUserInfo().apiKey, ConnectionHelper.RetrieveUserInfo().mail, InfoLido);
 			if (switchCabine.IsToggled && !string.IsNullOrEmpty(txtNCabine.Text) && txtNCabine.Text != "0")
 			{
-				InfoLido.NCabine = int.Parse(txtNCabine.Text);
+				InfoLido.cabana_qty = int.Parse(txtNCabine.Text);
 
 				result = InfoLidoDAO.Instance.SetNCabine(ConnectionHelper.RetrieveUserInfo().apiKey, ConnectionHelper.RetrieveUserInfo().mail, InfoLido);
 			}
@@ -114,7 +114,8 @@ namespace CocoVendorApp
 			}
 
 			var nfila = "1";
-			var lastItem = (from f in FileItems where f.NomeFila.StartsWith("Fila") orderby f.NomeFila descending select f.NomeFila).FirstOrDefault();
+			//var lastItem = (from f in FileItems where f.NomeFila.StartsWith("Fila") orderby f.NomeFila descending select f.NomeFila).FirstOrDefault();
+			var lastItem = (from f in FileItems select f.NomeFila).LastOrDefault();
 
 			if (!string.IsNullOrEmpty(lastItem))
 			{

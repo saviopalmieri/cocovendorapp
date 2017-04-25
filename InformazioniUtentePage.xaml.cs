@@ -114,7 +114,7 @@ namespace CocoVendorApp
 						break;
 					case 9:
 						ConnectionHelper.ClearUserInfo();
-						Application.Current.MainPage = new NavigationPage(new CocoVendorAppPage());
+						Application.Current.MainPage = new NavigationPage(new CocoVendorAppPage(null));
 						break;
 					default:
 						break;
@@ -125,7 +125,7 @@ namespace CocoVendorApp
 		async void Handle_Clicked(object sender, System.EventArgs e)
 		{
 			ConnectionHelper.ClearUserInfo();
-			Application.Current.MainPage = new NavigationPage(new CocoVendorAppPage());
+			Application.Current.MainPage = new NavigationPage(new CocoVendorAppPage(null));
 		}
 
 		async void Handle_Clicked1(object sender, System.EventArgs e)
