@@ -175,12 +175,12 @@
 										Margin="2,0,2,0">
 										<Entry HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" Keyboard="Numeric"
 											HorizontalTextAlignment="Center" TextColor="#3d83f5" 
-											Text="{Binding QtaOmbrelloni}" />
+											Text="{Binding umbrella_qty}" />
 
 										<Label TextColor="Black" Text="/" FontSize="12" Margin="1,0,1,0"
 											VerticalTextAlignment="Center" HorizontalTextAlignment="Start" HorizontalOptions="Start" VerticalOptions="CenterAndExpand"/>
 
-										<Label TextColor="Black" Text="{Binding QtaOmbrelloni}" FontSize="12" Margin="0,0,1,0"
+										<Label TextColor="Black" Text="{Binding umbrella_qty}" FontSize="12" Margin="0,0,1,0"
 											VerticalTextAlignment="Center" HorizontalTextAlignment="Start" HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand"/>
 									</StackLayout>
 
@@ -188,12 +188,12 @@
 										Margin="2,0,2,0">
 										<Entry HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" Keyboard="Numeric"
 											HorizontalTextAlignment="Center" TextColor="#3d83f5" 
-											Text="{Binding QtaLettini}" />
+											Text="{Binding sun_bed_qty}" />
 
 										<Label TextColor="Black" Text="/" FontSize="12" Margin="1,0,1,0"
 											VerticalTextAlignment="Center" HorizontalTextAlignment="Start" HorizontalOptions="Start" VerticalOptions="CenterAndExpand"/>
 
-										<Label TextColor="Black" Text="{Binding QtaLettini}" FontSize="12" Margin="0,0,1,0"
+										<Label TextColor="Black" Text="{Binding sun_bed_qty}" FontSize="12" Margin="0,0,1,0"
 											VerticalTextAlignment="Center" HorizontalTextAlignment="Start" HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand"/>
 									</StackLayout>
 
@@ -201,12 +201,12 @@
 										Margin="2,0,2,0">
 										<Entry  HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" Keyboard="Numeric"
 											HorizontalTextAlignment="Center" TextColor="#3d83f5" 
-											Text="{Binding QtaSdraio}" />
+											Text="{Binding chair_qty}" />
 
 										<Label TextColor="Black" Text="/" FontSize="12" Margin="1,0,1,0"
 											VerticalTextAlignment="Center" HorizontalTextAlignment="Start" HorizontalOptions="Start" VerticalOptions="CenterAndExpand"/>
 
-										<Label TextColor="Black" Text="{Binding QtaSdraio}" FontSize="12" Margin="0,0,1,0"
+										<Label TextColor="Black" Text="{Binding chair_qty}" FontSize="12" Margin="0,0,1,0"
 											VerticalTextAlignment="Center" HorizontalTextAlignment="Start" HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand"/>
 									</StackLayout>
 

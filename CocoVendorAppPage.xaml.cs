@@ -11,7 +11,7 @@ namespace CocoVendorApp
 	}
 
 
-	public partial class CocoVendorAppPage : ContentPage
+	public partial class CocoVendorAppPage : CarouselPage
 	{
 		public ObservableCollection<CarouselItem> CarouselItems { get; set; }
 
@@ -25,37 +25,39 @@ namespace CocoVendorApp
 		{
 			InitializeComponent();
 
+			NavigationPage.SetHasNavigationBar(this, false);
+
 			InfoLido = mInfoLido;
 
-			CarouselItems = new ObservableCollection<CarouselItem>
-			{
-				new CarouselItem
-				{
-					ImageUrl = "logo_coco.png",
-					Label = "Sei pronto a registrare il tutto esaurito?",
-					Label1 = "Scorri per continuare"
-				},
-				new CarouselItem
-				{
-					ImageUrl = "carousel1.png",
-					Label = "Visualizza il riepilogo della giornata selezionando la data",
-					Label1 = string.Empty
-				},
-				new CarouselItem
-				{
-					ImageUrl = "carousel2.png",
-					Label = "Gestisci la disponibilità in tempo reale e registra eventuali vendite fisiche all'ingresso",
-					Label1 = string.Empty
-				},
-				new CarouselItem
-				{
-					ImageUrl = "carousel3.png",
-					Label = "Offri ai tuoi ospiti un'esperienza impeccabile all'ingresso",
-					Label1 = string.Empty
-				}
-			};
+			//CarouselItems = new ObservableCollection<CarouselItem>
+			//{
+			//	new CarouselItem
+			//	{
+			//		ImageUrl = "logo_coco.png",
+			//		Label = "Sei pronto a registrare il tutto esaurito?",
+			//		Label1 = "Scorri per continuare"
+			//	},
+			//	new CarouselItem
+			//	{
+			//		ImageUrl = "carousel1.png",
+			//		Label = "Visualizza il riepilogo della giornata selezionando la data",
+			//		Label1 = string.Empty
+			//	},
+			//	new CarouselItem
+			//	{
+			//		ImageUrl = "carousel2.png",
+			//		Label = "Gestisci la disponibilità in tempo reale e registra eventuali vendite fisiche all'ingresso",
+			//		Label1 = string.Empty
+			//	},
+			//	new CarouselItem
+			//	{
+			//		ImageUrl = "carousel3.png",
+			//		Label = "Offri ai tuoi ospiti un'esperienza impeccabile all'ingresso",
+			//		Label1 = string.Empty
+			//	}
+			//};
 
-			CarouselCoco.ItemsSource = CarouselItems;
+			//CarouselCoco.ItemsSource = CarouselItems;
 		}
 
 		void Handle_Clicked(object sender, System.EventArgs e)
@@ -78,39 +80,39 @@ namespace CocoVendorApp
 			}
 		}
 
-		void Handle_ItemSelected(object sender, Xamarin.Forms.SelectedItemChangedEventArgs e)
-		{
-			if (e.SelectedItem != null)
-			{
-				var menuItem = (CarouselItem)e.SelectedItem;
+		//void Handle_ItemSelected(object sender, Xamarin.Forms.SelectedItemChangedEventArgs e)
+		//{
+		//	if (e.SelectedItem != null)
+		//	{
+		//		var menuItem = (CarouselItem)e.SelectedItem;
 
-				if (CarouselItems.IndexOf(menuItem) <= 2)
-				{
-					gridButtons.IsVisible = false;
-				}
-				else
-				{
-					gridButtons.IsVisible = true;
-				}
+		//		if (CarouselItems.IndexOf(menuItem) <= 2)
+		//		{
+		//			gridButtons.IsVisible = false;
+		//		}
+		//		else
+		//		{
+		//			gridButtons.IsVisible = true;
+		//		}
 
-				switch (CarouselItems.IndexOf(menuItem))
-				{
-					case 0:
-						Title = "COCO";
-						break;
-					case 1:
-						Title = "Riepilogo";
-						break;
-					case 2:
-						Title = "Aggiorna disponibilità";
-						break;
-					case 3:
-						Title = "Check in";
-						break;
-					default:
-						break;
-				}
-			}
-		}
+		//		switch (CarouselItems.IndexOf(menuItem))
+		//		{
+		//			case 0:
+		//				Title = "COCO";
+		//				break;
+		//			case 1:
+		//				Title = "Riepilogo";
+		//				break;
+		//			case 2:
+		//				Title = "Aggiorna disponibilità";
+		//				break;
+		//			case 3:
+		//				Title = "Check in";
+		//				break;
+		//			default:
+		//				break;
+		//		}
+		//	}
+		//}
 	}
 }

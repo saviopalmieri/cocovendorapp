@@ -19,7 +19,10 @@
   <uses-feature android:glEsVersion="0x00020000" android:required="true" />
   <application android:label="COCO" android:icon="@drawable/icon" android:largeHeap="true" android:name="md53d14697664c5ed2e073af541edb2dd41.MainApplication" android:allowBackup="true" android:debuggable="true">
     <!--		<meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyC5r9SWtv0_TvyOkGvzH1_GMN3jMeoXqdw" />-->
+    <!--DEBUG-->
     <meta-data android:name="com.google.android.geo.API_KEY" android:value="AIzaSyC5r9SWtv0_TvyOkGvzH1_GMN3jMeoXqdw" />
+    <!--RELEASE-->
+    <!--<meta-data android:name="com.google.android.geo.API_KEY" android:value="AIzaSyBrTGZOznFd6gAdOiruvP1hMCTKG9jzhvk" />-->
     <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
     <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
     <activity android:configChanges="orientation|screenSize" android:icon="@drawable/icon" android:label="COCO" android:theme="@style/MyTheme" android:name="md53d14697664c5ed2e073af541edb2dd41.MainActivity">

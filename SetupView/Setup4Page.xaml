@@ -103,13 +103,13 @@
 											VerticalTextAlignment="Center" HorizontalTextAlignment="Start" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand"/>
 									  	<Entry Grid.Row="0" Grid.Column="1" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" Keyboard="Numeric"
 											HorizontalTextAlignment="Center" TextColor="Black" 
-											Text="{Binding QtaOmbrelloni}" />
+											Text="{Binding umbrella_qty}" />
 										<Entry Grid.Row="0" Grid.Column="2" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" Keyboard="Numeric"
 											HorizontalTextAlignment="Center" TextColor="Black" 
-											Text="{Binding QtaLettini}" />
+											Text="{Binding sun_bed_qty}" />
 										<Entry Grid.Row="0" Grid.Column="3" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" Keyboard="Numeric"
 											HorizontalTextAlignment="Center" TextColor="Black" 
-											Text="{Binding QtaSdraio}" />
+											Text="{Binding chair_qty}" />
 							        </Grid>
 								</ViewCell>
 					      </DataTemplate>

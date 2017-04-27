@@ -22,30 +22,30 @@ namespace CocoVendorApp
 
 			InitializeComponent();
 
-			if (InfoLido.ListaFile == null || InfoLido.ListaFile.Count == 0)
+			if (InfoLido.lido_zone_array == null || InfoLido.lido_zone_array.Count == 0)
 			{
-				InfoLido.ListaFile = new List<InfoFilaDTO> {
+				InfoLido.lido_zone_array = new List<InfoFilaDTO> {
 					new InfoFilaDTO {
 						NomeFila = "Zona Unica",
-						QtaLettini = 0,
-						QtaOmbrelloni = 0,
-						QtaSdraio = 0
+						sun_bed_qty = 0,
+						umbrella_qty = 0,
+						chair_qty = 0
 					}
 				};
 			}
-			else if (InfoLido.ListaFile.Count == 1)
+			else if (InfoLido.lido_zone_array.Count == 1)
 			{
-				InfoLido.ListaFile.First().NomeFila = "Zona Unica";
+				InfoLido.lido_zone_array.First().NomeFila = "Zona Unica";
 			}
 			else
 			{
-				foreach (var item in InfoLido.ListaFile)
+				foreach (var item in InfoLido.lido_zone_array)
 				{
 					item.NomeFila = "Fila " + item.IdFila.ToString();
 				}
 			}
 
-			FileItems = new ObservableCollection<InfoFilaDTO>(InfoLido.ListaFile);
+			FileItems = new ObservableCollection<InfoFilaDTO>(InfoLido.lido_zone_array);
 
 			FileListView.ItemsSource = FileItems;
 
@@ -67,15 +67,16 @@ namespace CocoVendorApp
 
 		async void Handle_Clicked(object sender, System.EventArgs e)
 		{
-			InfoLido.ListaFile = (from x in FileItems select x).ToList();
+			InfoLido.lido_zone_array = (from x in FileItems select x).ToList();
 
-			var result = InfoLidoDAO.Instance.SetFileLido(ConnectionHelper.RetrieveUserInfo().apiKey, ConnectionHelper.RetrieveUserInfo().mail, InfoLido);
 			if (switchCabine.IsToggled && !string.IsNullOrEmpty(txtNCabine.Text) && txtNCabine.Text != "0")
 			{
 				InfoLido.cabana_qty = int.Parse(txtNCabine.Text);
-
-				result = InfoLidoDAO.Instance.SetNCabine(ConnectionHelper.RetrieveUserInfo().apiKey, ConnectionHelper.RetrieveUserInfo().mail, InfoLido);
+				//result = InfoLidoDAO.Instance.SetNCabine(ConnectionHelper.RetrieveUserInfo().apiKey, ConnectionHelper.RetrieveUserInfo().mail, InfoLido);
 			}
+
+			var result = InfoLidoDAO.Instance.SetFileLido(ConnectionHelper.RetrieveUserInfo().apiKey, ConnectionHelper.RetrieveUserInfo().mail, InfoLido);
+
 			if (result != null)
 			{
 				if (result.error)
@@ -105,9 +106,9 @@ namespace CocoVendorApp
 				{
 					new InfoFilaDTO {
 						NomeFila = "Fila 1",
-						QtaLettini = FileItems.First().QtaLettini,
-						QtaOmbrelloni = FileItems.First().QtaOmbrelloni,
-						QtaSdraio = FileItems.First().QtaSdraio
+						sun_bed_qty = FileItems.First().sun_bed_qty,
+						umbrella_qty = FileItems.First().umbrella_qty,
+						chair_qty = FileItems.First().chair_qty
 					}
 				});
 				FileListView.ItemsSource = FileItems;

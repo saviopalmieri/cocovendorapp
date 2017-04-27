@@ -11,6 +11,8 @@ namespace CocoVendorApp
 		{
 			InitializeComponent();
 
+			NavigationPage.SetHasNavigationBar(this, false);
+
 			var tapGesture = new TapGestureRecognizer
 			{
 				Command = new Command(() =>

@@ -1,4 +1,6 @@
 using System;
+using System.Collections.Generic;
+
 namespace CocoVendorApp
 {
 	public class UserInfoDTO
@@ -24,7 +26,8 @@ namespace CocoVendorApp
 
 	public class UserWebServiceDTO
 	{
-		public InfoLidoDTO lido { get; set;}
+		public InfoLidoDTO lido { get; set; }
+		public IList<BookingDTO> booking_array { get; set;}
 
 		public int id { get; set; }
 		public string email { get; set; }

@@ -26,7 +26,7 @@ namespace CocoVendorApp
 			{
 				new InfoFilaDTO {
 					NomeFila = "Zona Unica",
-					QtaOmbrelloni = 0, QtaLettini = 0, QtaSdraio = 0
+					umbrella_qty = 0, sun_bed_qty = 0, chair_qty = 0
 				}
 			};
 
@@ -35,7 +35,7 @@ namespace CocoVendorApp
 
 		async void Handle_Clicked(object sender, System.EventArgs e)
 		{
-			InfoLido.ListaFile = (from x in FileItems select x).ToList();
+			InfoLido.lido_zone_array = (from x in FileItems select x).ToList();
 
 			InfoLido.cabana_qty = int.Parse(txtNCabine.Text);
 
@@ -52,9 +52,9 @@ namespace CocoVendorApp
 				{
 					new InfoFilaDTO {
 						NomeFila = "Fila 1",
-						QtaLettini = FileItems.First().QtaLettini,
-						QtaOmbrelloni = FileItems.First().QtaOmbrelloni,
-						QtaSdraio = FileItems.First().QtaSdraio
+						sun_bed_qty = FileItems.First().sun_bed_qty,
+						umbrella_qty = FileItems.First().umbrella_qty,
+						chair_qty = FileItems.First().chair_qty
 					}
 				});
 				FileListView.ItemsSource = FileItems;

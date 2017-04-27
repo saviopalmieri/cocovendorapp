@@ -1,11 +1,11 @@
-﻿<Properties StartupConfiguration="{A86A4C2B-F32F-4BC8-A1F3-3BE57438120F}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Droid/Properties/AndroidManifest.xml">
+﻿<Properties StartupConfiguration="{2B68B9E6-9DE3-4C2E-9C00-E33A6FD6782B}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Droid/Resources/values/styles.xml">
     <Files>
-      <File FileName="RiepilogoPage.xaml" Line="139" Column="53" />
-      <File FileName="ImpostaDisponibilitaPage.xaml.cs" Line="118" Column="4" />
-      <File FileName="DAO/InfoLidoDAO.cs" Line="181" Column="1" />
-      <File FileName="SetupView/Setup4Page.xaml.cs" Line="63" Column="20" />
-      <File FileName="Droid/Properties/AndroidManifest.xml" Line="2" Column="151" />
+      <File FileName="CocoVendorAppPage.xaml" Line="89" Column="52" />
+      <File FileName="CocoVendorAppPage.xaml.cs" Line="28" Column="52" />
+      <File FileName="Droid/Properties/AndroidManifest.xml" Line="16" Column="90" />
+      <File FileName="Droid/MainActivity.cs" Line="33" Column="4" />
+      <File FileName="Droid/Resources/values/styles.xml" Line="13" Column="5" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
@@ -13,10 +13,12 @@
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint file="/Users/saviopalmieri/OneDrive/Documenti/Lavoro/SavioPalmieriTeam/Coco/Vendor/CocoVendorApp/iOS/DatePickerCenterRenderer.cs" relfile="iOS/DatePickerCenterRenderer.cs" line="15" column="12" />
-      <Breakpoint file="/Users/saviopalmieri/OneDrive/Documenti/Lavoro/SavioPalmieriTeam/Coco/Vendor/CocoVendorApp/DAO/InfoLidoDAO.cs" relfile="DAO/InfoLidoDAO.cs" line="164" column="1" />
-      <Breakpoint file="/Users/saviopalmieri/OneDrive/Documenti/Lavoro/SavioPalmieriTeam/Coco/Vendor/CocoVendorApp/DAO/InfoLidoDAO.cs" relfile="DAO/InfoLidoDAO.cs" line="511" column="1" />
-      <Breakpoint file="/Users/saviopalmieri/OneDrive/Documenti/Lavoro/SavioPalmieriTeam/Coco/Vendor/CocoVendorApp/SetupView/SetupEndPage.xaml.cs" relfile="SetupView/SetupEndPage.xaml.cs" line="121" column="1" />
-      <Breakpoint file="/Users/saviopalmieri/OneDrive/Documenti/Lavoro/SavioPalmieriTeam/Coco/Vendor/CocoVendorApp/SetupView/SetupEndPage.xaml.cs" relfile="SetupView/SetupEndPage.xaml.cs" line="116" column="1" />
+      <Breakpoint file="/Users/saviopalmieri/OneDrive/Documenti/Lavoro/SavioPalmieriTeam/Coco/Vendor/CocoVendorApp/DAO/InfoLidoDAO.cs" relfile="DAO/InfoLidoDAO.cs" line="193" column="1" />
+      <Breakpoint file="/Users/saviopalmieri/OneDrive/Documenti/Lavoro/SavioPalmieriTeam/Coco/Vendor/CocoVendorApp/DAO/InfoLidoDAO.cs" relfile="DAO/InfoLidoDAO.cs" line="547" column="1" />
+      <Breakpoint file="/Users/saviopalmieri/OneDrive/Documenti/Lavoro/SavioPalmieriTeam/Coco/Vendor/CocoVendorApp/SetupView/SetupEndPage.xaml.cs" relfile="SetupView/SetupEndPage.xaml.cs" line="125" column="1" />
+      <Breakpoint file="/Users/saviopalmieri/OneDrive/Documenti/Lavoro/SavioPalmieriTeam/Coco/Vendor/CocoVendorApp/SetupView/SetupEndPage.xaml.cs" relfile="SetupView/SetupEndPage.xaml.cs" line="120" column="1" />
+      <Breakpoint file="/Users/saviopalmieri/OneDrive/Documenti/Lavoro/SavioPalmieriTeam/Coco/Vendor/CocoVendorApp/DAO/InfoLidoDAO.cs" relfile="DAO/InfoLidoDAO.cs" line="583" column="1" />
+      <Breakpoint file="/Users/saviopalmieri/OneDrive/Documenti/Lavoro/SavioPalmieriTeam/Coco/Vendor/CocoVendorApp/ImpostaDisponibilitaPage.xaml.cs" relfile="ImpostaDisponibilitaPage.xaml.cs" line="25" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />

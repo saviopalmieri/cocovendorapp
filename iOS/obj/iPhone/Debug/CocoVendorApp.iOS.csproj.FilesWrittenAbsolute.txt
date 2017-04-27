@@ -102,3 +102,5 @@
 /Users/saviopalmieri/OneDrive/Documenti/Lavoro/SavioPalmieriTeam/Coco/Vendor/CocoVendorApp/iOS/bin/iPhone/Debug/Plugin.Messaging.dll
 /Users/saviopalmieri/OneDrive/Documenti/Lavoro/SavioPalmieriTeam/Coco/Vendor/CocoVendorApp/iOS/bin/iPhone/Debug/CocoVendorApp.dll
 /Users/saviopalmieri/OneDrive/Documenti/Lavoro/SavioPalmieriTeam/Coco/Vendor/CocoVendorApp/iOS/bin/iPhone/Debug/CocoVendorApp.dll.mdb
+/Users/saviopalmieri/OneDrive/Documenti/Lavoro/SavioPalmieriTeam/Coco/Vendor/CocoVendorApp/iOS/obj/iPhone/Debug/device-builds/iphone8.1-10.3.1/optimized/circlefull.png
+/Users/saviopalmieri/OneDrive/Documenti/Lavoro/SavioPalmieriTeam/Coco/Vendor/CocoVendorApp/iOS/obj/iPhone/Debug/device-builds/iphone8.1-10.3.1/optimized/circlewhite.png

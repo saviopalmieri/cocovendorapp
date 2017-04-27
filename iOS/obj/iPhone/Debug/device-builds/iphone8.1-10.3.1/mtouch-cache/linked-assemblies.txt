@@ -35,7 +35,6 @@
 /Users/saviopalmieri/OneDrive/Documenti/Lavoro/SavioPalmieriTeam/Coco/Vendor/CocoVendorApp/iOS/obj/iPhone/Debug/device-builds/iphone8.1-10.3.1/mtouch-cache/Link/zxing.portable.dll
 /Users/saviopalmieri/OneDrive/Documenti/Lavoro/SavioPalmieriTeam/Coco/Vendor/CocoVendorApp/iOS/obj/iPhone/Debug/device-builds/iphone8.1-10.3.1/mtouch-cache/Link/PInvoke.Windows.Core.dll
 /Users/saviopalmieri/OneDrive/Documenti/Lavoro/SavioPalmieriTeam/Coco/Vendor/CocoVendorApp/iOS/obj/iPhone/Debug/device-builds/iphone8.1-10.3.1/mtouch-cache/Link/PInvoke.Kernel32.dll
-/Users/saviopalmieri/OneDrive/Documenti/Lavoro/SavioPalmieriTeam/Coco/Vendor/CocoVendorApp/iOS/obj/iPhone/Debug/device-builds/iphone8.1-10.3.1/mtouch-cache/Link/Xamarin.Forms.CarouselView.dll
 /Users/saviopalmieri/OneDrive/Documenti/Lavoro/SavioPalmieriTeam/Coco/Vendor/CocoVendorApp/iOS/obj/iPhone/Debug/device-builds/iphone8.1-10.3.1/mtouch-cache/Link/System.Core.dll
 /Users/saviopalmieri/OneDrive/Documenti/Lavoro/SavioPalmieriTeam/Coco/Vendor/CocoVendorApp/iOS/obj/iPhone/Debug/device-builds/iphone8.1-10.3.1/mtouch-cache/Link/Xamarin.Forms.Platform.iOS.dll
 /Users/saviopalmieri/OneDrive/Documenti/Lavoro/SavioPalmieriTeam/Coco/Vendor/CocoVendorApp/iOS/obj/iPhone/Debug/device-builds/iphone8.1-10.3.1/mtouch-cache/Link/System.Numerics.dll

@@ -240,6 +240,8 @@
     <AndroidResource Include="Resources\drawable\servizio23.png" />
     <AndroidResource Include="Resources\drawable\arrow.png" />
     <AndroidResource Include="Resources\drawable\cabinaicon.png" />
+    <AndroidResource Include="Resources\drawable\circlefull.png" />
+    <AndroidResource Include="Resources\drawable\circlewhite.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\layout\" />

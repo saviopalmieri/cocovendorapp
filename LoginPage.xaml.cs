@@ -57,6 +57,8 @@ namespace CocoVendorApp
 					if (response.data.lido != null)
 						//InfoLidoDAO.Instance.GetSlimInfoLido(ConnectionHelper.RetrieveUserInfo().mail, ConnectionHelper.RetrieveUserInfo().apiKey)
 					{
+						response.data.lido.booking_array = response.data.booking_array;
+
 						Application.Current.MainPage = new NavigationPage(new HomePage(response.data.lido));
 						//await Navigation.PushAsync(new HomePage());	
 					}

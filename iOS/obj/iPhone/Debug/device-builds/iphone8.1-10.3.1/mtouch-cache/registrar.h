@@ -24,7 +24,6 @@
 #import <CoreGraphics/CoreGraphics.h>
 
 @protocol CALayerDelegate;
-@protocol UICollectionViewSource;
 @class Foundation_InternalNSNotificationHandler;
 @class __MonoMac_NSActionDispatcher;
 @class __Xamarin_NSTimerActionDispatcher;
@@ -141,10 +140,6 @@
 @class ZXing_Mobile_ZXingDefaultOverlayView;
 @class ZXing_Mobile_ZXingScannerView_OutputRecorder;
 @class ZXing_Mobile_ZXingScannerView;
-@class Xamarin_Forms_Platform_CarouselViewRenderer;
-@class Xamarin_Forms_Platform_CarouselViewController_Layout;
-@class Xamarin_Forms_Platform_CarouselViewController_Cell;
-@class Xamarin_Forms_Platform_CarouselViewController;
 @class Xamarin_Controls_ProgressLabel;
 @class Xamarin_Auth_NativeAuthSafariViewControllerDelegate;
 @class Xamarin_Auth_FormAuthenticatorController_FormDelegate;

@@ -21,8 +21,8 @@ namespace CocoVendorApp
 
 			InfoLido = mInfoLido;
 
-			RecensioniItems = new ObservableCollection<RecensioneDTO>(
-				InfoLidoDAO.Instance.GetListRecensioni(ConnectionHelper.RetrieveUserInfo().apiKey, ConnectionHelper.RetrieveUserInfo().mail));
+			RecensioniItems = new ObservableCollection<RecensioneDTO>(InfoLido.review_array);
+				//InfoLidoDAO.Instance.GetListRecensioni(ConnectionHelper.RetrieveUserInfo().apiKey, ConnectionHelper.RetrieveUserInfo().mail));
 
 			RecensioniListView.ItemsSource = RecensioniItems;
 

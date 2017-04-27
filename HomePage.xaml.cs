@@ -35,6 +35,7 @@ namespace CocoVendorApp
 				{
 					this.Title = "COCO";
 					((RiepilogoPage)CurrentPage).EnableDateNavbar();
+					((RiepilogoPage)CurrentPage).RebindListFile();
 				}
 				else if (this.CurrentPage is ScanPrenotazionePage)
 				{

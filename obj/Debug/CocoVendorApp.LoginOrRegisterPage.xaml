@@ -5,7 +5,7 @@
 
 		<StackLayout Orientation="Vertical" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
 
-			<Image Grid.RowSpan="2" Aspect="AspectFit" Source="logo_coco" Margin="50,10,50,10"/>
+			<Image Grid.RowSpan="2" Aspect="AspectFit" Source="logo_coco" Margin="50,50,50,10"/>
 
 			<!--<Button Text="Accedi con Facebook" x:Name="btnAccediFb" HorizontalOptions="FillAndExpand"
 					VerticalOptions="Center" Clicked="Handle_Clicked"

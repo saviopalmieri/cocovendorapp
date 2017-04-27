@@ -30,30 +30,30 @@ namespace CocoVendorApp
 
 			ParentPage = p;
 
-			if (InfoLido.ListaFile == null || InfoLido.ListaFile.Count == 0)
+			if (InfoLido.lido_zone_array == null || InfoLido.lido_zone_array.Count == 0)
 			{
-				InfoLido.ListaFile = new List<InfoFilaDTO> {
+				InfoLido.lido_zone_array = new List<InfoFilaDTO> {
 					new InfoFilaDTO {
 						NomeFila = "Zona Unica",
-						QtaLettini = 0,
-						QtaOmbrelloni = 0,
-						QtaSdraio = 0
+						sun_bed_qty = 0,
+						umbrella_qty = 0,
+						chair_qty = 0
 					}
 				};
 			}
-			else if (InfoLido.ListaFile.Count == 1)
+			else if (InfoLido.lido_zone_array.Count == 1)
 			{
-				InfoLido.ListaFile.First().NomeFila = "Zona Unica";
+				InfoLido.lido_zone_array.First().NomeFila = "Zona Unica";
 			}
 			else
 			{
-				foreach (var item in InfoLido.ListaFile)
+				foreach (var item in InfoLido.lido_zone_array)
 				{
 					item.NomeFila = "Fila " + item.IdFila.ToString();
 				}
 			}
 
-			FileItems = new ObservableCollection<InfoFilaDTO>(InfoLido.ListaFile);
+			FileItems = new ObservableCollection<InfoFilaDTO>(InfoLido.lido_zone_array);
 
 			FileListView.ItemsSource = FileItems;
 
@@ -74,14 +74,38 @@ namespace CocoVendorApp
 			lblDispOmbrelloni.GestureRecognizers.Add(tapGesture);
 		}
 
-		private void RefhreshDisponibilita()
+		public void RebindListFile()
 		{ 
-			var disponibilita = InfoLidoDAO.Instance.GetDisponibilitaLido(ConnectionHelper.RetrieveUserInfo().apiKey, ConnectionHelper.RetrieveUserInfo().mail, dateChoosen.Date, dateChoosen.Date);
+			FileItems = new ObservableCollection<InfoFilaDTO>(InfoLido.lido_zone_array);
 
-			lblDispOmbrelloni.Text = disponibilita.umbrella_qty.ToString();
-			lblDispSdraio.Text = disponibilita.chair_qty.ToString();
-			lblDispLettini.Text = disponibilita.sun_bed_qty.ToString();
-			lblDispCabine.Text = disponibilita.cabana_qty.ToString();
+			FileListView.ItemsSource = FileItems;
+		}
+
+		private void RefhreshDisponibilita()
+		{
+			//var disponibilita = InfoLidoDAO.Instance.GetDisponibilitaLido(ConnectionHelper.RetrieveUserInfo().apiKey, ConnectionHelper.RetrieveUserInfo().mail, dateChoosen.Date, dateChoosen.Date);
+
+			//lblDispOmbrelloni.Text = disponibilita.umbrella_qty.ToString();
+			//lblDispSdraio.Text = disponibilita.chair_qty.ToString();
+			//lblDispLettini.Text = disponibilita.sun_bed_qty.ToString();
+			//lblDispCabine.Text = disponibilita.cabana_qty.ToString();
+
+			if (InfoLido.booking_array != null && InfoLido.booking_array.Count > 0)
+			{
+				var listBooking = (from x in InfoLido.booking_array where dateChoosen.Date >= x.start_date && dateChoosen.Date <= x.end_date select x).ToList();
+
+				lblDispOmbrelloni.Text = listBooking.Select(x => x.umbrella_qty).Sum().ToString();
+				lblDispSdraio.Text = listBooking.Select(x => x.chair_qty).Sum().ToString();
+				lblDispLettini.Text = listBooking.Select(x => x.sun_bed_qty).Sum().ToString();
+				lblDispCabine.Text = listBooking.Select(x => x.cabana_qty).Sum().ToString();
+			}
+			else
+			{
+				lblDispOmbrelloni.Text = "0";
+				lblDispSdraio.Text = "0";
+				lblDispLettini.Text = "0";
+				lblDispCabine.Text = "0";
+			}
 		}
 
 		void Handle_DateSelected(object sender, Xamarin.Forms.DateChangedEventArgs e)
@@ -101,31 +125,35 @@ namespace CocoVendorApp
 		async void Handle_Clicked(object sender, System.EventArgs e)
 		{
 			var listDisp = (from x in FileItems
+			                where x.chair_qty > 0 && x.sun_bed_qty > 0 && x.umbrella_qty > 0
 							select new DisponibilitaDTO
 							{
 								zone_id = x.IdFila,
 								cabana_qty = 0,
-								sun_bed_qty = x.QtaLettini,
-								umbrella_qty = x.QtaOmbrelloni,
-								chair_qty = x.QtaSdraio
+								sun_bed_qty = x.sun_bed_qty,
+								umbrella_qty = x.umbrella_qty,
+								chair_qty = x.chair_qty
 							}).ToList();
 
-			var result = InfoLidoDAO.Instance.AggiornaDisponibilitaLido(ConnectionHelper.RetrieveUserInfo().apiKey, ConnectionHelper.RetrieveUserInfo().mail, listDisp, dateChoosen.Date);
-			if (result != null)
+			if (listDisp != null && listDisp.Count > 0)
 			{
-				if (result.error)
+				var result = InfoLidoDAO.Instance.AggiornaDisponibilitaLido(ConnectionHelper.RetrieveUserInfo().apiKey, ConnectionHelper.RetrieveUserInfo().mail, listDisp, dateChoosen.Date);
+				if (result != null)
 				{
-					await DisplayAlert("Errore", result.message, "Chiudi");
+					if (result.error)
+					{
+						await DisplayAlert("Errore", result.message, "Chiudi");
+					}
+					else
+					{
+						await DisplayAlert("Aggiornamento disponibilità avvenuto con successo!", result.message, "Chiudi");
+						//await Navigation.PopAsync();
+					}
 				}
 				else
 				{
-					await DisplayAlert("Aggiornamento disponibilità avvenuto con successo!", result.message, "Chiudi");
-					await Navigation.PopAsync();
-				}
-			}
-			else
-			{
-				await DisplayAlert("Errore", "Errore contattando il servizio!", "Chiudi");
+					await DisplayAlert("Errore", "Errore contattando il servizio!", "Chiudi");
+				}	
 			}
 		}
 

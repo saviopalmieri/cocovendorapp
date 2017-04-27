@@ -12,13 +12,16 @@ namespace CocoVendorApp
 			set;
 		}
 
+		public int id { get; set; }
+		public int name { get; set; }
+
 		public int IdFila
 		{
 			get 
 			{
-				if (string.IsNullOrEmpty(NomeFila))
+				if (name > 0)
 				{
-					return 0;
+					return name;
 				}
 				else if (NomeFila.ToUpper() == "ZONA UNICA")
 				{
@@ -31,9 +34,9 @@ namespace CocoVendorApp
 			}
 		}
 
-		public int QtaOmbrelloni { get; set; }
-		public int QtaLettini { get; set; }
-		public int QtaSdraio { get; set; }
+		public int umbrella_qty { get; set; }
+		public int sun_bed_qty { get; set; }
+		public int chair_qty { get; set; }
 	}
 
 	public class ServicesItem
@@ -114,19 +117,42 @@ namespace CocoVendorApp
 			}
 		}
 
-		public int review_rating_avg { get; set; }
+		public double review_rating_avg { get; set; }
 		public int id { get; set; }
 		public string name { get; set; }
 		public string email { get; set; }
-		public DateTime open_season_date { get; set; }
-		public DateTime close_season_date { get; set; }
+		private DateTime _open_season_date;
+		public DateTime open_season_date
+		{
+			get
+			{
+				return _open_season_date.AddHours(-7);
+			}
+			set
+			{
+				_open_season_date = value;
+			}
+		}
+		private DateTime _close_season_date;
+		public DateTime close_season_date
+		{
+			get
+			{
+				return _close_season_date.AddHours(-7);
+			}
+			set
+			{
+				_close_season_date = value;
+			}
+		}
 		public string address { get; set; }
 		public string city { get; set; }
 		public string lng { get; set; }
 		public string lat { get; set; }
 		public IList<ServicesItem> lido_service_array { get; set; }
-		public IList<InfoFilaDTO> ListaFile { get; set; }
+		public IList<InfoFilaDTO> lido_zone_array { get; set; }
 		public IList<RecensioneDTO> review_array { get; set; }
+		public IList<BookingDTO> booking_array { get; set;}
 
 		public int cabana_qty { get; set; }
 
@@ -143,7 +169,7 @@ namespace CocoVendorApp
 
 	public class DisponibilitaDTO
 	{
-		public string datainizio { get; set; }
+		public string date { get; set; }
 
 		public int id_lido { get; set; }
 		public int id_utente { get; set; }
@@ -154,15 +180,88 @@ namespace CocoVendorApp
 		public int chair_qty { get; set; }
 	}
 
+	public class PrenotazioneDTO
+	{ 
+		public int id { get; set; }
+		public DateTime start_date { get; set; }
+		public DateTime end_date { get; set; }
+		public object user { get; set; }
+		public InfoFilaDTO lido_zone { get; set; }
+		public int umbrella_qty { get; set; }
+		public int sun_bed_qty { get; set; }
+		public int cabana_qty { get; set; }
+		public int chair_qty { get; set; }
+		public bool fake_booking { get; set; }
+	}
+
 	public class RecensioneDTO
 	{ 
 		public int id { get; set; }
 		public string rating { get; set; }
-		public string titolo { get; set; }
-		public string note_recensione { get; set; }
+		public string title { get; set; }
+		public string note { get; set; }
 		public string nome_utente { get; set; }
 		public string cognome_utente { get; set; }
 		public string img_utente { get; set; }
-		public string data_recensione { get; set; }
+		public string created { get; set; }
+		public DateTime data_recensione
+		{
+			get
+			{
+				try
+				{
+					if (!string.IsNullOrEmpty(created))
+					{
+						return DateTime.Parse(created);
+					}
+					else
+					{
+						return DateTime.Now;
+					}
+				}
+				catch (Exception)
+				{
+					return DateTime.Now;
+				}
+			}
+		}
+	}
+
+	public class BookingDTO
+	{ 
+		public int id { get; set; }
+		private DateTime _start_date;
+		public DateTime start_date
+		{
+			get
+			{
+				return _start_date.AddHours(-7);
+			}
+			set
+			{
+				_start_date = value;
+			}
+		}
+		private DateTime _end_date;
+		public DateTime end_date
+		{
+			get
+			{
+				return _end_date.AddHours(-7);
+			}
+			set
+			{
+				_end_date = value;
+			}
+		}
+		public object user { get; set; }
+		public InfoFilaDTO lido_zone { get; set; }
+		public int umbrella_qty { get; set; }
+		public int sun_bed_qty { get; set; }
+		public int cabana_qty { get; set; }
+		public int chair_qty { get; set; }
+		public bool fake_booking { get; set; }
+		public string created { get; set; }
+		public object updated { get; set; }
 	}
 }

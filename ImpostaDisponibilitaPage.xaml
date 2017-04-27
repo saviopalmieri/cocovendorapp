@@ -24,7 +24,7 @@
 
 			<Grid HorizontalOptions="FillAndExpand" VerticalOptions="Start" ColumnSpacing="0">
 				<Grid.ColumnDefinitions>
-					<ColumnDefinition Width="1.5*" />
+					<ColumnDefinition Width="1.4*" />
 					<ColumnDefinition Width="1*" />
 					<ColumnDefinition Width="1*" />
 					<ColumnDefinition Width="1*" />
@@ -76,7 +76,7 @@
 							            <RowDefinition Height="*"/>
 							          </Grid.RowDefinitions>
 										<Grid.ColumnDefinitions>
-											<ColumnDefinition Width="1.5*" />
+											<ColumnDefinition Width="1.4*" />
 											<ColumnDefinition Width="1*" />
 											<ColumnDefinition Width="1*" />
 											<ColumnDefinition Width="1*" />
@@ -86,13 +86,13 @@
 											VerticalTextAlignment="Center" HorizontalTextAlignment="Start" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand"/>
 									  	<Entry Grid.Row="0" Grid.Column="1" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" Keyboard="Numeric"
 											HorizontalTextAlignment="Center" TextColor="Black" 
-											Text="{Binding QtaOmbrelloni}" />
+											Text="{Binding umbrella_qty}" />
 										<Entry Grid.Row="0" Grid.Column="2" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" Keyboard="Numeric"
 											HorizontalTextAlignment="Center" TextColor="Black" 
-											Text="{Binding QtaLettini}" />
+											Text="{Binding sun_bed_qty}" />
 										<Entry Grid.Row="0" Grid.Column="3" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" Keyboard="Numeric"
 											HorizontalTextAlignment="Center" TextColor="Black" 
-											Text="{Binding QtaSdraio}" />
+											Text="{Binding chair_qty}" />
 							        </Grid>
 								</ViewCell>
 					      </DataTemplate>

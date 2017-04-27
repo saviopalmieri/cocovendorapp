@@ -21,6 +21,8 @@ namespace CocoVendorApp
 				var result = RegistrationDAO.Instance.LoginUser(userInfo.mail, userInfo.password);
 				if (result.data.lido != null)
 				{
+					result.data.lido.booking_array = result.data.booking_array;
+
 					MainPage = new NavigationPage(new HomePage(result.data.lido));	
 				}
 				else

@@ -43,10 +43,10 @@ namespace CocoVendorApp
 				else
 				{
 					result = InfoLidoDAO.Instance.SetFileLido(ConnectionHelper.RetrieveUserInfo().apiKey, ConnectionHelper.RetrieveUserInfo().mail, InfoLido);
-					if (InfoLido.cabana_qty > 0)
-					{
-						result = InfoLidoDAO.Instance.SetNCabine(ConnectionHelper.RetrieveUserInfo().apiKey, ConnectionHelper.RetrieveUserInfo().mail, InfoLido);
-					}
+					//if (InfoLido.cabana_qty > 0)
+					//{
+					//	result = InfoLidoDAO.Instance.SetNCabine(ConnectionHelper.RetrieveUserInfo().apiKey, ConnectionHelper.RetrieveUserInfo().mail, InfoLido);
+					//}
 					result = InfoLidoDAO.Instance.SetListinoPrezzi(ConnectionHelper.RetrieveUserInfo().apiKey, InfoLido);
 					result = InfoLidoDAO.Instance.SetMailPaypal(ConnectionHelper.RetrieveUserInfo().apiKey, ConnectionHelper.RetrieveUserInfo().mail, InfoLido);
 					if (imagestream != null)
@@ -62,6 +62,10 @@ namespace CocoVendorApp
 						}
 						else
 						{
+							result.data.lido.booking_array = result.data.booking_array;
+
+							InfoLido = result.data.lido;
+
 							await DisplayAlert("Complimenti!", "Pubblicazione avvenuta con successo!", "Chiudi");
 							Application.Current.MainPage = new NavigationPage(new HomePage(InfoLido));
 						}

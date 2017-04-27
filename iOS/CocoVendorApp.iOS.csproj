@@ -278,6 +278,8 @@
     <BundleResource Include="Resources\servizio21.png" />
     <BundleResource Include="Resources\servizio22.png" />
     <BundleResource Include="Resources\servizio23.png" />
+    <BundleResource Include="Resources\circlefull.png" />
+    <BundleResource Include="Resources\circlewhite.png" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="LaunchScreen.storyboard" />
