@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="2" android:versionName="1.0" package="com.coco.cocovendorapp">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="3" android:versionName="1.1" package="com.coco.cocovendorapp">
 	<uses-sdk android:minSdkVersion="16" />
 	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
@@ -14,11 +14,11 @@
 	<uses-permission android:name="android.permission.FLASHLIGHT" />
 	<uses-permission android:name="android.permission.MAPS_RECEIVE" />
 	<application android:label="COCO" android:icon="@drawable/icon" android:largeHeap="true">
-<!--		<meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyC5r9SWtv0_TvyOkGvzH1_GMN3jMeoXqdw" />-->
+		<!--		<meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyC5r9SWtv0_TvyOkGvzH1_GMN3jMeoXqdw" />-->
 		<!--DEBUG-->
-		<meta-data android:name="com.google.android.geo.API_KEY" android:value="AIzaSyC5r9SWtv0_TvyOkGvzH1_GMN3jMeoXqdw" />
+		<!--<meta-data android:name="com.google.android.geo.API_KEY" android:value="AIzaSyC5r9SWtv0_TvyOkGvzH1_GMN3jMeoXqdw" />-->
 		<!--RELEASE-->
-		<!--<meta-data android:name="com.google.android.geo.API_KEY" android:value="AIzaSyBrTGZOznFd6gAdOiruvP1hMCTKG9jzhvk" />-->
+		<meta-data android:name="com.google.android.geo.API_KEY" android:value="AIzaSyBrTGZOznFd6gAdOiruvP1hMCTKG9jzhvk" />
 		<meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
 	</application>
 </manifest>

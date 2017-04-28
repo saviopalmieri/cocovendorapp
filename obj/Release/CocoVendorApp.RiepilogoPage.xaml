@@ -56,7 +56,7 @@
 				<Label Text="VENDITE" HorizontalOptions="StartAndExpand"
 					Grid.Row="0"  Grid.Column="0"
 					HorizontalTextAlignment="Center" VerticalTextAlignment="End"
-					TextColor="#383838" FontSize="12" Margin="10,5,20,10" >
+					TextColor="#383838" FontSize="12" Margin="2,5,20,10" >
 				</Label>
 
 				<Image Source="ombrellone.png" Margin="5,5,5,5" Aspect="AspectFit" HeightRequest="30"
@@ -123,10 +123,10 @@
 			<Grid Grid.Row="2" Grid.ColumnSpan="2" ColumnSpacing="10" RowSpacing="5"
 					Margin="5,5,5,5" >
 				<Grid.ColumnDefinitions>
-					<ColumnDefinition Width="1.8*" />
-					<ColumnDefinition Width="1*" />
-					<ColumnDefinition Width="1*" />
-					<ColumnDefinition Width="1*" />
+					<ColumnDefinition Width="1.5*" />
+					<ColumnDefinition Width="1.1*" />
+					<ColumnDefinition Width="1.1*" />
+					<ColumnDefinition Width="1.1*" />
 				</Grid.ColumnDefinitions>
 				<Grid.RowDefinitions>
 					<RowDefinition Height="0.8*" />
@@ -136,7 +136,7 @@
 				<Label Text="DISPONIBILITA'" HorizontalOptions="StartAndExpand"
 					Grid.Row="0"  Grid.Column="0"
 					HorizontalTextAlignment="Center" VerticalTextAlignment="End"
-					TextColor="#383838" FontSize="12" Margin="10,5,20,10" >
+					TextColor="#383838" FontSize="12" Margin="2,5,5,10" >
 				</Label>
 
 				<Image Source="ombrellone.png" Margin="5,5,5,5" Aspect="AspectFit" HeightRequest="30"
@@ -163,10 +163,10 @@
 						            <RowDefinition Height="*"/>
 						          </Grid.RowDefinitions>
 									<Grid.ColumnDefinitions>
-										<ColumnDefinition Width="1.8*" />
-										<ColumnDefinition Width="1*" />
-										<ColumnDefinition Width="1*" />
-										<ColumnDefinition Width="1*" />
+										<ColumnDefinition Width="1.5*" />
+										<ColumnDefinition Width="1.1*" />
+										<ColumnDefinition Width="1.1*" />
+										<ColumnDefinition Width="1.1*" />
 									</Grid.ColumnDefinitions>
 						          	<Label Grid.Row="0" Grid.Column="0" TextColor="#383838" Text="{Binding NomeFila}" FontSize="14" Margin="10,0,0,0"
 										VerticalTextAlignment="Center" HorizontalTextAlignment="Start" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand"/>
@@ -175,12 +175,12 @@
 										Margin="2,0,2,0">
 										<Entry HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" Keyboard="Numeric"
 											HorizontalTextAlignment="Center" TextColor="#3d83f5" 
-											Text="{Binding QtaOmbrelloni}" />
+											Text="{Binding umbrella_qty}" />
 
 										<Label TextColor="Black" Text="/" FontSize="12" Margin="1,0,1,0"
 											VerticalTextAlignment="Center" HorizontalTextAlignment="Start" HorizontalOptions="Start" VerticalOptions="CenterAndExpand"/>
 
-										<Label TextColor="Black" Text="{Binding QtaOmbrelloni}" FontSize="12" Margin="0,0,1,0"
+										<Label TextColor="Black" Text="{Binding max_umbrella_qty}" FontSize="12" Margin="0,0,1,0"
 											VerticalTextAlignment="Center" HorizontalTextAlignment="Start" HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand"/>
 									</StackLayout>
 
@@ -188,12 +188,12 @@
 										Margin="2,0,2,0">
 										<Entry HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" Keyboard="Numeric"
 											HorizontalTextAlignment="Center" TextColor="#3d83f5" 
-											Text="{Binding QtaLettini}" />
+											Text="{Binding sun_bed_qty}" />
 
 										<Label TextColor="Black" Text="/" FontSize="12" Margin="1,0,1,0"
 											VerticalTextAlignment="Center" HorizontalTextAlignment="Start" HorizontalOptions="Start" VerticalOptions="CenterAndExpand"/>
 
-										<Label TextColor="Black" Text="{Binding QtaLettini}" FontSize="12" Margin="0,0,1,0"
+										<Label TextColor="Black" Text="{Binding max_sun_bed_qty}" FontSize="12" Margin="0,0,1,0"
 											VerticalTextAlignment="Center" HorizontalTextAlignment="Start" HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand"/>
 									</StackLayout>
 
@@ -201,12 +201,12 @@
 										Margin="2,0,2,0">
 										<Entry  HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" Keyboard="Numeric"
 											HorizontalTextAlignment="Center" TextColor="#3d83f5" 
-											Text="{Binding QtaSdraio}" />
+											Text="{Binding chair_qty}" />
 
 										<Label TextColor="Black" Text="/" FontSize="12" Margin="1,0,1,0"
 											VerticalTextAlignment="Center" HorizontalTextAlignment="Start" HorizontalOptions="Start" VerticalOptions="CenterAndExpand"/>
 
-										<Label TextColor="Black" Text="{Binding QtaSdraio}" FontSize="12" Margin="0,0,1,0"
+										<Label TextColor="Black" Text="{Binding max_chair_qty}" FontSize="12" Margin="0,0,1,0"
 											VerticalTextAlignment="Center" HorizontalTextAlignment="Start" HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand"/>
 									</StackLayout>
 

@@ -12,13 +12,19 @@ namespace CocoVendorApp {
     
     
     [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("/Users/saviopalmieri/OneDrive/Documenti/Lavoro/SavioPalmieriTeam/Coco/Vendor/CocoVendorApp/CocoVendorAppPage.xaml")]
-    public partial class CocoVendorAppPage : global::Xamarin.Forms.ContentPage {
+    public partial class CocoVendorAppPage : global::Xamarin.Forms.CarouselPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
-        private global::Xamarin.Forms.CarouselView CarouselCoco;
+        private global::Xamarin.Forms.ContentPage PageHelp1;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
-        private global::Xamarin.Forms.Grid gridButtons;
+        private global::Xamarin.Forms.ContentPage PageHelp2;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Xamarin.Forms.ContentPage PageHelp3;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Xamarin.Forms.ContentPage PageHelp4;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private global::Xamarin.Forms.Button btnRegistrati;
@@ -26,8 +32,10 @@ namespace CocoVendorApp {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
             global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(CocoVendorAppPage));
-            CarouselCoco = global::Xamarin.Forms.NameScopeExtensions.FindByName <global::Xamarin.Forms.CarouselView>(this, "CarouselCoco");
-            gridButtons = global::Xamarin.Forms.NameScopeExtensions.FindByName <global::Xamarin.Forms.Grid>(this, "gridButtons");
+            PageHelp1 = global::Xamarin.Forms.NameScopeExtensions.FindByName <global::Xamarin.Forms.ContentPage>(this, "PageHelp1");
+            PageHelp2 = global::Xamarin.Forms.NameScopeExtensions.FindByName <global::Xamarin.Forms.ContentPage>(this, "PageHelp2");
+            PageHelp3 = global::Xamarin.Forms.NameScopeExtensions.FindByName <global::Xamarin.Forms.ContentPage>(this, "PageHelp3");
+            PageHelp4 = global::Xamarin.Forms.NameScopeExtensions.FindByName <global::Xamarin.Forms.ContentPage>(this, "PageHelp4");
             btnRegistrati = global::Xamarin.Forms.NameScopeExtensions.FindByName <global::Xamarin.Forms.Button>(this, "btnRegistrati");
         }
     }

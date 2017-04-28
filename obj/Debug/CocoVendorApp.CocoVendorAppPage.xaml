@@ -55,7 +55,7 @@
 		          </StackLayout>
 					<StackLayout Grid.Row="3" BackgroundColor="White" Padding="10" Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="FillAndExpand">
 
-						<Image Aspect="AspectFit" Source="circlefull.png" Margin="10,10,5,10" HeightRequest="10" />
+						<Image Aspect="AspectFit" Source="circlewhite.png" Margin="10,10,5,10" HeightRequest="10" />
 						<Image Aspect="AspectFit" Source="circlefull.png" Margin="5,10,5,10" HeightRequest="10" />
 						<Image Aspect="AspectFit" Source="circlewhite.png" Margin="5,10,5,10" HeightRequest="10" />
 						<Image Aspect="AspectFit" Source="circlewhite.png" Margin="5,10,10,10" HeightRequest="10" />
@@ -85,8 +85,8 @@
 		          </StackLayout>
 					<StackLayout Grid.Row="3" BackgroundColor="White" Padding="10" Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="FillAndExpand">
 
-						<Image Aspect="AspectFit" Source="circlefull.png" Margin="10,10,5,10" HeightRequest="10" />
-						<Image Aspect="AspectFit" Source="circlefull.png" Margin="5,10,5,10" HeightRequest="10" />
+						<Image Aspect="AspectFit" Source="circlewhite.png" Margin="10,10,5,10" HeightRequest="10" />
+						<Image Aspect="AspectFit" Source="circlewhite.png" Margin="5,10,5,10" HeightRequest="10" />
 						<Image Aspect="AspectFit" Source="circlefull.png" Margin="5,10,5,10" HeightRequest="10" />
 						<Image Aspect="AspectFit" Source="circlewhite.png" Margin="5,10,10,10" HeightRequest="10" />
 						

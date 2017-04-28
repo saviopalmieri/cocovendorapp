@@ -16,7 +16,7 @@ namespace CocoVendorApp
 
 		public InfoLidoDTO InfoLido
 		{
-			get 
+			get
 			{
 				return this.ParentPage.InfoLido;
 			}
@@ -61,7 +61,8 @@ namespace CocoVendorApp
 
 			var tapGesture = new TapGestureRecognizer
 			{
-				Command = new Command(async () => {
+				Command = new Command(async () =>
+				{
 					await Navigation.PushAsync(new RiepilogoOrdiniPage(dateChoosen.Date, InfoLido));
 				}),
 				NumberOfTapsRequired = 1
@@ -75,10 +76,47 @@ namespace CocoVendorApp
 		}
 
 		public void RebindListFile()
-		{ 
-			FileItems = new ObservableCollection<InfoFilaDTO>(InfoLido.lido_zone_array);
+		{
+			var result = InfoLidoDAO.Instance.GetDisponibilitaLido(ConnectionHelper.RetrieveUserInfo().apiKey, ConnectionHelper.RetrieveUserInfo().mail, dateChoosen.Date, dateChoosen.Date);
 
-			FileListView.ItemsSource = FileItems;
+			if (result != null)
+			{
+				var listDisponibilita = new List<InfoFilaDTO>();
+				foreach (var item in result.data)
+				{
+					foreach (var zone in item.lido_zone_availability_array)
+					{
+						var currZone = listDisponibilita.FirstOrDefault(x => x.IdFila == zone.lido_zone.name);
+						if (currZone == null)
+						{
+							listDisponibilita.Add(new InfoFilaDTO
+							{
+								id = zone.lido_zone.id,
+								name = zone.lido_zone.name,
+								NomeFila = (InfoLido.lido_zone_array.Count > 1 ? "Fila " + zone.lido_zone.name : "Zona Unica"),
+								chair_qty = zone.chair_availability,
+								max_chair_qty = zone.chair_availability,
+								sun_bed_qty = zone.sun_bed_availability,
+								max_sun_bed_qty = zone.sun_bed_availability,
+								umbrella_qty = zone.umbrella_availability,
+								max_umbrella_qty = zone.umbrella_availability
+							});
+						}
+            	        else
+						{
+							currZone.chair_qty += zone.chair_availability;
+							currZone.max_chair_qty += zone.chair_availability;
+							currZone.sun_bed_qty += zone.sun_bed_availability;
+							currZone.max_sun_bed_qty += zone.chair_availability;
+							currZone.umbrella_qty += zone.umbrella_availability;
+							currZone.max_umbrella_qty += zone.umbrella_availability;
+						}
+					}
+				}
+				FileItems = new ObservableCollection<InfoFilaDTO>(listDisponibilita);
+
+				FileListView.ItemsSource = FileItems;
+			}
 		}
 
 		private void RefhreshDisponibilita()
@@ -106,6 +144,8 @@ namespace CocoVendorApp
 				lblDispLettini.Text = "0";
 				lblDispCabine.Text = "0";
 			}
+
+			RebindListFile();
 		}
 
 		void Handle_DateSelected(object sender, Xamarin.Forms.DateChangedEventArgs e)
@@ -119,25 +159,32 @@ namespace CocoVendorApp
 				lblDay.Text = e.NewDate.ToString("d");
 			}
 
-            RefhreshDisponibilita();
+			RefhreshDisponibilita();
 		}
 
 		async void Handle_Clicked(object sender, System.EventArgs e)
 		{
-			var listDisp = (from x in FileItems
-			                where x.chair_qty > 0 && x.sun_bed_qty > 0 && x.umbrella_qty > 0
-							select new DisponibilitaDTO
-							{
-								zone_id = x.IdFila,
-								cabana_qty = 0,
-								sun_bed_qty = x.sun_bed_qty,
-								umbrella_qty = x.umbrella_qty,
-								chair_qty = x.chair_qty
-							}).ToList();
-
-			if (listDisp != null && listDisp.Count > 0)
+			var listDisp = new DisponibilitaDTO
 			{
-				var result = InfoLidoDAO.Instance.AggiornaDisponibilitaLido(ConnectionHelper.RetrieveUserInfo().apiKey, ConnectionHelper.RetrieveUserInfo().mail, listDisp, dateChoosen.Date);
+				start_date = dateChoosen.Date.ToString("yyyyMMdd"),
+				end_date = dateChoosen.Date.ToString("yyyyMMdd"),
+				cabana_availability = 0,
+				lido_zone_availability_array = (from x in FileItems
+												where x.chair_qty > 0 && x.sun_bed_qty > 0 && x.umbrella_qty > 0
+												select new LidoZoneAvailabilityDTO
+												{
+													sun_bed_availability = x.sun_bed_qty,
+													umbrella_availability = x.umbrella_qty,
+													chair_availability = x.chair_qty,
+													lido_zone = x,
+													start_date = dateChoosen.Date.ToString("yyyyMMdd"),
+													end_date = dateChoosen.Date.ToString("yyyyMMdd")
+												}).ToList()
+			};
+
+			if (listDisp != null && listDisp.lido_zone_availability_array.Count > 0)
+			{
+				var result = InfoLidoDAO.Instance.AggiornaDisponibilitaLido(ConnectionHelper.RetrieveUserInfo().apiKey, ConnectionHelper.RetrieveUserInfo().mail, listDisp);
 				if (result != null)
 				{
 					if (result.error)
@@ -148,19 +195,21 @@ namespace CocoVendorApp
 					{
 						await DisplayAlert("Aggiornamento disponibilità avvenuto con successo!", result.message, "Chiudi");
 						//await Navigation.PopAsync();
+						RefhreshDisponibilita();
+						RebindListFile();
 					}
 				}
 				else
 				{
 					await DisplayAlert("Errore", "Errore contattando il servizio!", "Chiudi");
-				}	
+				}
 			}
 		}
 
 		public void EnableDateNavbar()
 		{
 			this.ToolbarItems.Clear();
-            this.ToolbarItems.Add(new ToolbarItem("Seleziona data", "calendario.png", () =>
+			this.ToolbarItems.Add(new ToolbarItem("Seleziona data", "calendario.png", () =>
 			{
 				dateChoosen.Focus();
 			}));

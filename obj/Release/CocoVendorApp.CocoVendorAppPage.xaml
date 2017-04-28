@@ -1,11 +1,134 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+<CarouselPage xmlns="http://xamarin.com/schemas/2014/forms" 
 		xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
 		xmlns:cv="clr-namespace:Xamarin.Forms;assembly=Xamarin.Forms.CarouselView"
 		xmlns:local="clr-namespace:CocoVendorApp"
-		x:Class="CocoVendorApp.CocoVendorAppPage" >
+		x:Class="CocoVendorApp.CocoVendorAppPage" BackgroundColor="White" >
+	<CarouselPage.Children>
 
-	<StackLayout Orientation="Vertical" VerticalOptions="FillAndExpand">
+		<ContentPage BackgroundColor="White" Title="COCO" x:Name="PageHelp1" >
+			<ContentPage.Content>
+
+				<Grid>
+		          <Grid.RowDefinitions>
+		            <RowDefinition Height="*"/>
+		            <RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto" />
+		          </Grid.RowDefinitions>
+		          <Image Grid.Row="0" Aspect="AspectFit" Source="logo_coco.png"/>
+		          <StackLayout Grid.Row="1" BackgroundColor="#fff" Padding="12">
+		            <Label TextColor="#444" Text="Sei pronto a registrare il tutto esaurito?" FontSize="16" 
+						HorizontalOptions="Center" VerticalOptions="CenterAndExpand" HorizontalTextAlignment="Center" />
+
+					<Label TextColor="#3d83f5" Text="Scorri per continuare" FontSize="16" Margin="0,20,0,0"
+						HorizontalOptions="Center" VerticalOptions="CenterAndExpand" HorizontalTextAlignment="Center" />
+		          </StackLayout>
+					<StackLayout Grid.Row="2" BackgroundColor="White" Padding="10" Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="FillAndExpand">
+
+						<Image Aspect="AspectFit" Source="circlefull.png" Margin="10,10,5,10" HeightRequest="10" />
+						<Image Aspect="AspectFit" Source="circlewhite.png" Margin="5,10,5,10" HeightRequest="10" />
+						<Image Aspect="AspectFit" Source="circlewhite.png" Margin="5,10,5,10" HeightRequest="10" />
+						<Image Aspect="AspectFit" Source="circlewhite.png" Margin="5,10,10,10" HeightRequest="10" />
+						
+					</StackLayout>
+		        </Grid>
+				
+			</ContentPage.Content>
+		</ContentPage>
+
+		<ContentPage BackgroundColor="White" Title="Riepilogo" x:Name="PageHelp2" >
+			<ContentPage.Content>
+
+				<Grid>
+		          <Grid.RowDefinitions>
+					<RowDefinition Height="Auto"/>	
+		            <RowDefinition Height="*"/>
+		            <RowDefinition Height="Auto"/>
+						<RowDefinition Height="Auto" />
+		          </Grid.RowDefinitions>
+					<Label TextColor="#3d83f5" Grid.Row="0" Text="Riepilogo" FontSize="22" Margin="0,30,0,0"
+						HorizontalOptions="Center" VerticalOptions="CenterAndExpand" HorizontalTextAlignment="Center" />
+		          <Image Grid.Row="1" Aspect="AspectFit" Source="carousel1.png"/>
+		          <StackLayout Grid.Row="2" BackgroundColor="#fff" Padding="12">
+		            <Label TextColor="#444" Text="Visualizza il riepilogo della giornata selezionando la data" FontSize="16" 
+						HorizontalOptions="Center" VerticalOptions="CenterAndExpand" HorizontalTextAlignment="Center" />
+		          </StackLayout>
+					<StackLayout Grid.Row="3" BackgroundColor="White" Padding="10" Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="FillAndExpand">
+
+						<Image Aspect="AspectFit" Source="circlewhite.png" Margin="10,10,5,10" HeightRequest="10" />
+						<Image Aspect="AspectFit" Source="circlefull.png" Margin="5,10,5,10" HeightRequest="10" />
+						<Image Aspect="AspectFit" Source="circlewhite.png" Margin="5,10,5,10" HeightRequest="10" />
+						<Image Aspect="AspectFit" Source="circlewhite.png" Margin="5,10,10,10" HeightRequest="10" />
+						
+					</StackLayout>
+		        </Grid>
+				
+			</ContentPage.Content>
+		</ContentPage>
+
+		<ContentPage BackgroundColor="White" Title="Aggiorna disponibilità" x:Name="PageHelp3" >
+			<ContentPage.Content>
+
+				<Grid>
+		          <Grid.RowDefinitions>
+						<RowDefinition Height="Auto" />
+		            <RowDefinition Height="*"/>
+		            <RowDefinition Height="Auto"/>
+						<RowDefinition Height="Auto" />
+		          </Grid.RowDefinitions>
+					<Label TextColor="#3d83f5" Grid.Row="0" Text="Aggiorna disponibilità" FontSize="22" Margin="0,30,0,0"
+						HorizontalOptions="Center" VerticalOptions="CenterAndExpand" HorizontalTextAlignment="Center" />
+		          <Image Grid.Row="1" Aspect="AspectFit" Source="carousel2.png"/>
+		          <StackLayout Grid.Row="2" BackgroundColor="#fff" Padding="12">
+		            <Label TextColor="#444" Text="Gestisci la disponibilità in tempo reale e registra eventuali vendite fisiche all'ingresso" FontSize="16" 
+						HorizontalOptions="Center" VerticalOptions="CenterAndExpand" HorizontalTextAlignment="Center" />
+		          </StackLayout>
+					<StackLayout Grid.Row="3" BackgroundColor="White" Padding="10" Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="FillAndExpand">
+
+						<Image Aspect="AspectFit" Source="circlewhite.png" Margin="10,10,5,10" HeightRequest="10" />
+						<Image Aspect="AspectFit" Source="circlewhite.png" Margin="5,10,5,10" HeightRequest="10" />
+						<Image Aspect="AspectFit" Source="circlefull.png" Margin="5,10,5,10" HeightRequest="10" />
+						<Image Aspect="AspectFit" Source="circlewhite.png" Margin="5,10,10,10" HeightRequest="10" />
+						
+					</StackLayout>
+		        </Grid>
+				
+			</ContentPage.Content>
+		</ContentPage>
+
+		<ContentPage BackgroundColor="White" Title="Check in" x:Name="PageHelp4" >
+			<ContentPage.Content>
+
+				<Grid>
+		          <Grid.RowDefinitions>
+						<RowDefinition Height="Auto"/>
+		            <RowDefinition Height="*"/>
+		            <RowDefinition Height="Auto"/>
+					<RowDefinition Height="Auto" />
+		          </Grid.RowDefinitions>
+					<Label TextColor="#3d83f5" Grid.Row="0" Text="Check in" FontSize="22" Margin="0,30,0,0"
+						HorizontalOptions="Center" VerticalOptions="CenterAndExpand" HorizontalTextAlignment="Center" />
+		          <Image Grid.Row="1" Aspect="AspectFit" Source="carousel3.png"/>
+		          <StackLayout Grid.Row="2" BackgroundColor="#fff" Padding="12">
+		            <Label TextColor="#444" Text="Offri ai tuoi ospiti un'esperienza impeccabile all'ingresso" FontSize="16" 
+						HorizontalOptions="Center" VerticalOptions="CenterAndExpand" HorizontalTextAlignment="Center" />
+		          </StackLayout>
+
+					<Button Text="Inizia il setup guidato" x:Name="btnRegistrati" HorizontalOptions="FillAndExpand"
+						Grid.Row="3" VerticalOptions="Center"
+						BackgroundColor="#3d83f5" TextColor="White" FontSize="17"
+						BorderRadius="2" Margin="20,5,20,10" Clicked="Handle_Clicked" >
+					</Button>
+		        </Grid>
+				
+			</ContentPage.Content>
+		</ContentPage>
+		
+
+	</CarouselPage.Children>
+
+	
+	<!--<StackLayout Orientation="Vertical" VerticalOptions="FillAndExpand">
   
 
 	<cv:CarouselView ItemsSource="{Binding CarouselItems}" x:Name="CarouselCoco" ItemSelected="Handle_ItemSelected" VerticalOptions="FillAndExpand">
@@ -29,7 +152,7 @@
 		    </cv:CarouselView.ItemTemplate>
 	    </cv:CarouselView>
 
-	<Grid x:Name="gridButtons" VerticalOptions="End">
+	<Grid x:Name="gridButtons" VerticalOptions="End" BackgroundColor="White">
 		<Grid.RowDefinitions>
 			<RowDefinition Height="1*" />
 		</Grid.RowDefinitions>
@@ -38,7 +161,7 @@
 	        <ColumnDefinition Width="1*" />
 	    </Grid.ColumnDefinitions>
 			
-		<Button Text="Inizia il tour guidato" x:Name="btnRegistrati" HorizontalOptions="FillAndExpand"
+		<Button Text="Inizia il setup guidato" x:Name="btnRegistrati" HorizontalOptions="FillAndExpand"
 			Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2" VerticalOptions="Center"
 			BackgroundColor="#3d83f5" TextColor="White" FontSize="17"
 			BorderRadius="2" Margin="20,5,20,10" Clicked="Handle_Clicked" >
@@ -46,8 +169,8 @@
 	    
 	</Grid>
 
-		</StackLayout>
+		</StackLayout>-->
 		
 
 
-</ContentPage>
+</CarouselPage>

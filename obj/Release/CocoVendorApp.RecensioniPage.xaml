@@ -16,9 +16,9 @@
 			    <ListView.ItemTemplate>
 			      <DataTemplate>
 						<ViewCell>
-					        <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+					        <StackLayout Orientation="Vertical" BackgroundColor="White" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
 
-					        	<Label TextColor="Black" Text="{Binding titolo}" FontSize="18" Margin="10,10,10,0"
+					        	<Label TextColor="Black" Text="{Binding title}" FontSize="18" Margin="10,10,10,0"
 									VerticalTextAlignment="Center" HorizontalTextAlignment="Start" HorizontalOptions="FillAndExpand" VerticalOptions="Start"/>
 
 								<Label TextColor="Black" Text="{Binding data_recensione}" FontSize="14" Margin="10,0,10,0"
@@ -35,7 +35,7 @@
 										VerticalTextAlignment="Center" HorizontalTextAlignment="Center" HorizontalOptions="Start" VerticalOptions="CenterAndExpand"/>
 								</StackLayout>
 
-								<Label TextColor="Black" Text="{Binding note_recensione}" FontSize="12" Margin="10,0,10,10"
+								<Label TextColor="Black" Text="{Binding note}" FontSize="12" Margin="10,0,10,10"
 										VerticalTextAlignment="Center" HorizontalTextAlignment="Start" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand"/>
 								
 							</StackLayout>

@@ -21,7 +21,6 @@ extern void *mono_aot_module_zxing_portable_info;
 extern void *mono_aot_module_ZXing_Net_Mobile_Core_info;
 extern void *mono_aot_module_ZXingNetMobile_info;
 extern void *mono_aot_module_CocoVendorApp_info;
-extern void *mono_aot_module_Xamarin_Forms_CarouselView_info;
 extern void *mono_aot_module_Xamarin_Forms_Xaml_info;
 extern void *mono_aot_module_Xamarin_Auth_info;
 extern void *mono_aot_module_PCLCrypto_info;
@@ -65,7 +64,6 @@ void xamarin_register_modules_impl ()
 	mono_aot_register_module (mono_aot_module_ZXing_Net_Mobile_Core_info);
 	mono_aot_register_module (mono_aot_module_ZXingNetMobile_info);
 	mono_aot_register_module (mono_aot_module_CocoVendorApp_info);
-	mono_aot_register_module (mono_aot_module_Xamarin_Forms_CarouselView_info);
 	mono_aot_register_module (mono_aot_module_Xamarin_Forms_Xaml_info);
 	mono_aot_register_module (mono_aot_module_Xamarin_Auth_info);
 	mono_aot_register_module (mono_aot_module_PCLCrypto_info);
@@ -98,8 +96,6 @@ void xamarin_register_assemblies_impl ()
 	xamarin_open_and_register ("ZXing.Net.Mobile.Forms.iOS.dll", &exception_gchandle);
 	xamarin_process_managed_exception_gchandle (exception_gchandle);
 	xamarin_open_and_register ("ZXingNetMobile.dll", &exception_gchandle);
-	xamarin_process_managed_exception_gchandle (exception_gchandle);
-	xamarin_open_and_register ("Xamarin.Forms.CarouselView.dll", &exception_gchandle);
 	xamarin_process_managed_exception_gchandle (exception_gchandle);
 	xamarin_open_and_register ("Xamarin.Auth.dll", &exception_gchandle);
 	xamarin_process_managed_exception_gchandle (exception_gchandle);

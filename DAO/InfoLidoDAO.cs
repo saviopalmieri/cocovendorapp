@@ -81,7 +81,7 @@ namespace CocoVendorApp
 
 			var client = new HttpClient();
 
-			//var content = new System.Net.Http.StringContent("image/jpeg;base64," + filebase64);
+			var content = new MultipartFormDataContent("UPLOADAPP");
 
 			var bytes = new byte[filestream.Length];
 			using (var memoryStream = new MemoryStream())
@@ -91,13 +91,12 @@ namespace CocoVendorApp
 			}
 
 			var fileContent = new ByteArrayContent(bytes);
-			//content.Add(new StreamContent(filestream), "file");
 
 			//var imageContent = new ByteArrayContent(bytes);
 			//imageContent.Headers.ContentType = 
 			//        MediaTypeHeaderValue.Parse("image/jpeg");
 
-		 //   content.Add(imageContent, "image", "image.jpg");
+			//   content.Add(imageContent, "image", "image.jpg");
 
 			fileContent.Headers.ContentType = MediaTypeHeaderValue.Parse ("application/octet-stream");
 			fileContent.Headers.ContentDisposition = new ContentDispositionHeaderValue("form-data")
@@ -110,6 +109,8 @@ namespace CocoVendorApp
 			//MultipartFormDataContent multipartContent = new MultipartFormDataContent(boundary);
 			//multipartContent.Add (fileContent);
 
+			//content.Add(new StreamContent(filestream), "file");
+
 			if (!string.IsNullOrEmpty(apikey))
 			{
 				//var byteArray = Encoding.UTF8.GetBytes(apikey);
@@ -117,10 +118,12 @@ namespace CocoVendorApp
 				client.DefaultRequestHeaders.Add("Autenticate", apikey);
 			}
 
+			content.Add(fileContent, "file");
+
 			//var byteArray = Encoding.UTF8.GetBytes(apikey);
 			//content.Headers.Add("Authorization", Convert.ToBase64String(byteArray));
 
-			return client.PostAsync(uri, fileContent);
+			return client.PostAsync(uri, content);
 		}
 
 		private Task<HttpResponseMessage> ExecuteDelete(string url, string apikey = "")
@@ -397,55 +400,55 @@ namespace CocoVendorApp
 			//}
 		}
 
-		public DisponibilitaDTO GetDisponibilitaLido(string apikey, string email, DateTime startdate, DateTime enddate)
+		public WebServiceResponseDTO<IList<DisponibilitaDTO>> GetDisponibilitaLido(string apikey, string email, DateTime startdate, DateTime enddate)
 		{
-			string url = "verificadisponibilitalido";
-			long idLido = GetIdLido(email, apikey);
+			string url = "vendor/availability";
+			//long idLido = GetIdLido(email, apikey);
 
 			var listParam = new List<KeyValuePair<string, string>>();
-			listParam.Add(new KeyValuePair<string, string>("id_lido", idLido.ToString()));
-			listParam.Add(new KeyValuePair<string, string>("data_inizio", startdate.ToString("yyyyMMdd")));
-			listParam.Add(new KeyValuePair<string, string>("data_fine", enddate.ToString("yyyyMMdd")));
+			//listParam.Add(new KeyValuePair<string, string>("id_lido", idLido.ToString()));
+			listParam.Add(new KeyValuePair<string, string>("start_date", startdate.ToString("yyyyMMdd")));
+			listParam.Add(new KeyValuePair<string, string>("end_date", enddate.ToString("yyyyMMdd")));
 
 			Task<HttpResponseMessage> response = null;
 			response = ExecuteRequest(ConnectionHelper.WebServiceCallType.Post, listParam, url, apikey);
 
 			var ctn = response.GetAwaiter().GetResult().Content.ReadAsStringAsync();
-			DisponibilitaDTO result = new DisponibilitaDTO();
-			try
-			{
-				JArray array = JArray.Parse(ctn.Result);
+			//DisponibilitaDTO result = new DisponibilitaDTO();
+			//try
+			//{
+			//	JArray array = JArray.Parse(ctn.Result);
 
-				foreach (var o in array.Children<JObject>())
-				{
-					foreach (JProperty p in o.Properties())
-					{
-						string name = p.Name;
-						string value = (string)p.Value;
+			//	foreach (var o in array.Children<JObject>())
+			//	{
+			//		foreach (JProperty p in o.Properties())
+			//		{
+			//			string name = p.Name;
+			//			string value = (string)p.Value;
 
-						if (name.Contains("n_cabine"))
-						{
-							result.GetType().GetRuntimeProperty(name).SetValue(result, int.Parse(value));
-						}
-						else
-						{
-							int oldValue = (int)(result.GetType().GetRuntimeProperty(name).GetValue(result));
+			//			if (name.Contains("n_cabine"))
+			//			{
+			//				result.GetType().GetRuntimeProperty(name).SetValue(result, int.Parse(value));
+			//			}
+			//			else
+			//			{
+			//				int oldValue = (int)(result.GetType().GetRuntimeProperty(name).GetValue(result));
 
-							result.GetType().GetRuntimeProperty(name).SetValue(result, oldValue + int.Parse(value));
-						}
-					}
+			//				result.GetType().GetRuntimeProperty(name).SetValue(result, oldValue + int.Parse(value));
+			//			}
+			//		}
 
-				}
-			}
-			catch (Exception ex)
-			{
+			//	}
+			//}
+			//catch (Exception ex)
+			//{
 
-			}
+			//}
 
-			return result;
+			return JsonConvert.DeserializeObject<WebServiceResponseDTO<IList<DisponibilitaDTO>>>(ctn.Result);
 		}
 
-		public WebServiceResponseDTO<object> AggiornaDisponibilitaLido(string apikey, string email, IList<DisponibilitaDTO> disp, DateTime dataOccup)
+		public WebServiceResponseDTO<object> AggiornaDisponibilitaLido(string apikey, string email, DisponibilitaDTO disp)
 		{
 			string url = "vendor/booking/insert-fake";
 			//long idLido = GetIdLido(email, apikey);
@@ -453,17 +456,17 @@ namespace CocoVendorApp
 
 			var dispToParse = (new
 			{
-				booking_array = (from x in disp
+				booking_array = (from x in disp.lido_zone_availability_array
 								 select new 
 								 {
 									 //id_lido = (int)idLido,
 									 //id_utente = (int)idUtenteLido,
-									 zone_id = x.zone_id,
-									 umbrella_qty = x.umbrella_qty,
-									 sun_bed_qty = x.sun_bed_qty,
-									 cabana_qty = x.cabana_qty,
-									 chair_qty = x.chair_qty,
-									 date = dataOccup.ToString("yyyyMMdd")
+									 zone_id = x.lido_zone.id,
+									 umbrella_qty = x.umbrella_availability,
+									 sun_bed_qty = x.sun_bed_availability,
+									 cabana_qty = 0,
+									 chair_qty = x.chair_availability,
+									 date = x.start_date
 								 }).ToList()
 			});
 
@@ -547,7 +550,7 @@ namespace CocoVendorApp
 			return JsonConvert.DeserializeObject<WebServiceResponseDTO<UserWebServiceDTO>>(ctn.Result);
 		}
 
-		public WebServiceResponseDTO<UserWebServiceDTO> SetImageLido(string apikey, string mail, Stream imagestream)
+		public WebServiceResponseDTO<InfoLidoDTO> SetImageLido(string apikey, string mail, Stream imagestream)
 		{
 			string url = "vendor/upload-photo";
 
@@ -580,7 +583,7 @@ namespace CocoVendorApp
 			response = ExecuteRequestImage(imagestream, url, apikey);
 
 			var ctn = response.GetAwaiter().GetResult().Content.ReadAsStringAsync();
-			return JsonConvert.DeserializeObject<WebServiceResponseDTO<UserWebServiceDTO>>(ctn.Result);
+			return JsonConvert.DeserializeObject<WebServiceResponseDTO<InfoLidoDTO>>(ctn.Result);
 		}
 
 		public IList<RecensioneDTO> GetListRecensioni(string apikey, string mail)

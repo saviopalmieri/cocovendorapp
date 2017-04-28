@@ -69,6 +69,8 @@
 /Users/saviopalmieri/OneDrive/Documenti/Lavoro/SavioPalmieriTeam/Coco/Vendor/CocoVendorApp/iOS/obj/iPhone/Release/optimized/servizio21.png
 /Users/saviopalmieri/OneDrive/Documenti/Lavoro/SavioPalmieriTeam/Coco/Vendor/CocoVendorApp/iOS/obj/iPhone/Release/optimized/servizio22.png
 /Users/saviopalmieri/OneDrive/Documenti/Lavoro/SavioPalmieriTeam/Coco/Vendor/CocoVendorApp/iOS/obj/iPhone/Release/optimized/servizio23.png
+/Users/saviopalmieri/OneDrive/Documenti/Lavoro/SavioPalmieriTeam/Coco/Vendor/CocoVendorApp/iOS/obj/iPhone/Release/optimized/circlefull.png
+/Users/saviopalmieri/OneDrive/Documenti/Lavoro/SavioPalmieriTeam/Coco/Vendor/CocoVendorApp/iOS/obj/iPhone/Release/optimized/circlewhite.png
 /Users/saviopalmieri/OneDrive/Documenti/Lavoro/SavioPalmieriTeam/Coco/Vendor/CocoVendorApp/iOS/obj/iPhone/Release/optimized/
 /Users/saviopalmieri/OneDrive/Documenti/Lavoro/SavioPalmieriTeam/Coco/Vendor/CocoVendorApp/iOS/bin/iPhone/Release/CocoVendorApp.iOS.exe.mdb
 /Users/saviopalmieri/OneDrive/Documenti/Lavoro/SavioPalmieriTeam/Coco/Vendor/CocoVendorApp/iOS/bin/iPhone/Release/CocoVendorApp.iOS.exe

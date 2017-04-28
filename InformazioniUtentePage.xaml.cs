@@ -146,7 +146,7 @@ namespace CocoVendorApp
 
 			if (file != null)
 			{
-				InfoLido.ImgLidoPath = file.Path;
+				//InfoLido.ImgLidoPath = file.Path;
 
 				var stream = file.GetStream();
 
@@ -155,9 +155,11 @@ namespace CocoVendorApp
 				//file.Dispose();
 				if (result != null && !result.error)
 				{
+					this.ParentPage.InfoLido = result.data;
+
 					imageLido.Source = new UriImageSource
 					{
-						Uri = new Uri(result.message),
+						Uri = new Uri(InfoLido.ImgLidoPath),
 						CachingEnabled = false
 					};
 				}

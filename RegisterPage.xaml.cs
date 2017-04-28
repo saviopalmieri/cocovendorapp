@@ -29,11 +29,36 @@ namespace CocoVendorApp
 			var email = txtEmail.Text;
 			var password = txtPassword1.Text;
 
-			if (!string.IsNullOrEmpty(email) && email.Contains("@") && !string.IsNullOrEmpty(password)
-			    && txtEmail.Text == txtEmail2.Text
-			    && txtPassword1.Text == txtPassword2.Text &&
-			   switchPrivacy.IsToggled)
+			if (string.IsNullOrEmpty(email) || !email.Contains("@"))
 			{
+				await DisplayAlert("Errore", "Email non valida! Controlla i dati e riprova.", "Chiudi");
+				return;
+			}
+
+			if (string.IsNullOrEmpty(password))
+			{
+				await DisplayAlert("Errore", "Inserire una password valida.", "Chiudi");
+				return;	
+			}
+
+			if (txtEmail.Text != txtEmail2.Text)
+			{
+				await DisplayAlert("Errore", "La mail inserita non combacia. Controlla i dati e riprova.", "Chiudi");
+				return;	
+			}
+
+			if (txtPassword1.Text != txtPassword2.Text)
+			{
+				await DisplayAlert("Errore", "La password inserita non combacia. Controlla i dati e riprova.", "Chiudi");
+				return;	
+			}
+
+			if (!switchPrivacy.IsToggled)
+			{
+				await DisplayAlert("Errore", "Accetta i termini e condizioni per registrarti a COCO.", "Chiudi");
+				return;	
+			}
+
 				var response = RegistrationDAO.Instance.RegisterUser(email, password);
 
 				if (response == null)
@@ -64,11 +89,6 @@ namespace CocoVendorApp
 						await DisplayAlert("Errore", response.message, "Chiudi");
 					}
 				}
-			}
-			else
-			{
-				await DisplayAlert("Errore", "Errore inserimento!", "Chiudi");
-			}
 		}
 	}
 }

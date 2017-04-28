@@ -180,7 +180,7 @@
 										<Label TextColor="Black" Text="/" FontSize="12" Margin="1,0,1,0"
 											VerticalTextAlignment="Center" HorizontalTextAlignment="Start" HorizontalOptions="Start" VerticalOptions="CenterAndExpand"/>
 
-										<Label TextColor="Black" Text="{Binding umbrella_qty}" FontSize="12" Margin="0,0,1,0"
+										<Label TextColor="Black" Text="{Binding max_umbrella_qty}" FontSize="12" Margin="0,0,1,0"
 											VerticalTextAlignment="Center" HorizontalTextAlignment="Start" HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand"/>
 									</StackLayout>
 
@@ -193,7 +193,7 @@
 										<Label TextColor="Black" Text="/" FontSize="12" Margin="1,0,1,0"
 											VerticalTextAlignment="Center" HorizontalTextAlignment="Start" HorizontalOptions="Start" VerticalOptions="CenterAndExpand"/>
 
-										<Label TextColor="Black" Text="{Binding sun_bed_qty}" FontSize="12" Margin="0,0,1,0"
+										<Label TextColor="Black" Text="{Binding max_sun_bed_qty}" FontSize="12" Margin="0,0,1,0"
 											VerticalTextAlignment="Center" HorizontalTextAlignment="Start" HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand"/>
 									</StackLayout>
 
@@ -206,7 +206,7 @@
 										<Label TextColor="Black" Text="/" FontSize="12" Margin="1,0,1,0"
 											VerticalTextAlignment="Center" HorizontalTextAlignment="Start" HorizontalOptions="Start" VerticalOptions="CenterAndExpand"/>
 
-										<Label TextColor="Black" Text="{Binding chair_qty}" FontSize="12" Margin="0,0,1,0"
+										<Label TextColor="Black" Text="{Binding max_chair_qty}" FontSize="12" Margin="0,0,1,0"
 											VerticalTextAlignment="Center" HorizontalTextAlignment="Start" HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand"/>
 									</StackLayout>
 

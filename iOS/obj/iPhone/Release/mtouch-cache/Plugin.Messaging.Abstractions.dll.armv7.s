@@ -167,7 +167,7 @@ _mono_aot_file_info:
 	.long 48,0,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0
-	.byte 184,240,169,224,167,110,5,63,53,124,172,227,73,168,151,178
+	.byte 208,104,48,230,138,171,120,109,0,2,57,182,86,120,143,24
 	.globl _mono_aot_module_Plugin_Messaging_Abstractions_info
 	.align 2
 _mono_aot_module_Plugin_Messaging_Abstractions_info:

@@ -37,6 +37,9 @@ namespace CocoVendorApp
 		public int umbrella_qty { get; set; }
 		public int sun_bed_qty { get; set; }
 		public int chair_qty { get; set; }
+		public int max_umbrella_qty { get; set; }
+		public int max_sun_bed_qty { get; set; }
+		public int max_chair_qty { get; set; }
 	}
 
 	public class ServicesItem
@@ -102,7 +105,7 @@ namespace CocoVendorApp
 			cabana_price = decimal.Parse(infoLidoWebSevice.prezzo_cabine);
 			open_season_date = DateTime.ParseExact(infoLidoWebSevice.data_apertura, "yyyy-MM-dd", null);
 			close_season_date = DateTime.ParseExact(infoLidoWebSevice.data_chiusura, "yyyy-MM-dd", null);
-			ImgLidoPath = infoLidoWebSevice.url_immagine;
+			//ImgLidoPath = infoLidoWebSevice.url_immagine;
 			lido_service_array = new List<ServicesItem>();
 			if (infoLidoWebSevice.nome_servizio != null)
 			{
@@ -164,20 +167,33 @@ namespace CocoVendorApp
 		public string email_paypal { get; set; }
 		public string telephone { get; set; }
 		public byte[] ImgLidoStream { get; set; }
-		public string ImgLidoPath { get; set; }
+		public string ImgLidoPath
+		{
+			get
+			{
+				return ConnectionHelper.AppUrl + image.relative_file_url;
+			}
+		}
+
+		public ImageDTO image { get; set; }
+	}
+
+	public class LidoZoneAvailabilityDTO
+	{
+		public InfoFilaDTO lido_zone { get; set; }
+		public string start_date { get; set; }
+		public string end_date { get; set; }
+		public int sun_bed_availability { get; set; }
+		public int umbrella_availability { get; set; }
+		public int chair_availability { get; set; }
 	}
 
 	public class DisponibilitaDTO
 	{
-		public string date { get; set; }
-
-		public int id_lido { get; set; }
-		public int id_utente { get; set; }
-		public int zone_id { get; set; }
-		public int umbrella_qty { get; set; }
-		public int sun_bed_qty { get; set; }
-		public int cabana_qty { get; set; }
-		public int chair_qty { get; set; }
+		public string start_date { get; set; }
+		public string end_date { get; set; }
+		public int cabana_availability { get; set; }
+		public IList<LidoZoneAvailabilityDTO> lido_zone_availability_array { get; set; }
 	}
 
 	public class PrenotazioneDTO
@@ -263,5 +279,22 @@ namespace CocoVendorApp
 		public bool fake_booking { get; set; }
 		public string created { get; set; }
 		public object updated { get; set; }
+	}
+
+	public class ImageDTO
+	{
+		public int id { get; set; }
+		public int image_width { get; set; }
+		public string relative_file_url { get; set; }
+		public int image_height { get; set; }
+		public string human_readable_size { get; set; }
+		public string mime_type { get; set; }
+		public string file_name_with_extension { get; set; }
+		public string slug { get; set; }
+		public string original_name { get; set; }
+		public string file_name { get; set; }
+		public string file_extension { get; set; }
+		public object title { get; set; }
+		public object alt { get; set; }
 	}
 }
