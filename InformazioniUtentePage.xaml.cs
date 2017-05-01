@@ -69,6 +69,10 @@ namespace CocoVendorApp
 				};
 				//imageLido.Source = ImageSource.FromUri();
 			}
+			else
+			{
+				imageLido.Source = "gallery.jpg";
+			}
 
 
 		}

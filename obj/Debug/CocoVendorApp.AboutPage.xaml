@@ -7,7 +7,7 @@
 
 			<Image Aspect="AspectFit" Source="logo_coco.png" Margin="40,20,40,20" />
 
-			<Label TextColor="Black" Text="v1.0" FontSize="16" Margin="20,10,20,10"
+			<Label TextColor="Black" Text="v1.1" FontSize="16" Margin="20,10,20,10"
 				HorizontalOptions="Center" VerticalOptions="Start"/>
 
 			<Button Text="Termini e condizioni" x:Name="btnIniziaSetup" HorizontalOptions="FillAndExpand"

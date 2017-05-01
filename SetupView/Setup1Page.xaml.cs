@@ -21,7 +21,7 @@ namespace CocoVendorApp
 			if (!string.IsNullOrEmpty(nomeLido) && 
 			   dataApertura != DateTime.MinValue && dataChiusura != DateTime.MinValue)
 			{
-				await Navigation.PushAsync(new Setup2Page(new InfoLidoDTO { name = nomeLido, open_season_date = dataApertura, close_season_date = dataChiusura }));	
+				await Navigation.PushAsync(new Setup2Page(new InfoLidoDTO { name = nomeLido, open_season_date = dataApertura.AddHours(7), close_season_date = dataChiusura.AddHours(7) }));	
 			}
 			else
 			{

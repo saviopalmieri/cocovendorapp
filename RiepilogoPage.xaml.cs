@@ -30,6 +30,9 @@ namespace CocoVendorApp
 
 			ParentPage = p;
 
+			dateChoosen.MinimumDate = InfoLido.open_season_date;
+			dateChoosen.MaximumDate = InfoLido.close_season_date;
+
 			if (InfoLido.lido_zone_array == null || InfoLido.lido_zone_array.Count == 0)
 			{
 				InfoLido.lido_zone_array = new List<InfoFilaDTO> {
@@ -94,21 +97,21 @@ namespace CocoVendorApp
 								id = zone.lido_zone.id,
 								name = zone.lido_zone.name,
 								NomeFila = (InfoLido.lido_zone_array.Count > 1 ? "Fila " + zone.lido_zone.name : "Zona Unica"),
-								chair_qty = zone.chair_availability,
+								chair_qty = 0,
 								max_chair_qty = zone.chair_availability,
-								sun_bed_qty = zone.sun_bed_availability,
+								sun_bed_qty = 0,
 								max_sun_bed_qty = zone.sun_bed_availability,
-								umbrella_qty = zone.umbrella_availability,
+								umbrella_qty = 0,
 								max_umbrella_qty = zone.umbrella_availability
 							});
 						}
             	        else
 						{
-							currZone.chair_qty += zone.chair_availability;
+							//currZone.chair_qty += zone.chair_availability;
 							currZone.max_chair_qty += zone.chair_availability;
-							currZone.sun_bed_qty += zone.sun_bed_availability;
+							//currZone.sun_bed_qty += zone.sun_bed_availability;
 							currZone.max_sun_bed_qty += zone.chair_availability;
-							currZone.umbrella_qty += zone.umbrella_availability;
+							//currZone.umbrella_qty += zone.umbrella_availability;
 							currZone.max_umbrella_qty += zone.umbrella_availability;
 						}
 					}
@@ -130,7 +133,7 @@ namespace CocoVendorApp
 
 			if (InfoLido.booking_array != null && InfoLido.booking_array.Count > 0)
 			{
-				var listBooking = (from x in InfoLido.booking_array where dateChoosen.Date >= x.start_date && dateChoosen.Date <= x.end_date select x).ToList();
+				var listBooking = (from x in InfoLido.booking_array where dateChoosen.Date >= x.start_date && dateChoosen.Date <= x.end_date && !x.fake_booking select x).ToList();
 
 				lblDispOmbrelloni.Text = listBooking.Select(x => x.umbrella_qty).Sum().ToString();
 				lblDispSdraio.Text = listBooking.Select(x => x.chair_qty).Sum().ToString();
@@ -170,7 +173,8 @@ namespace CocoVendorApp
 				end_date = dateChoosen.Date.ToString("yyyyMMdd"),
 				cabana_availability = 0,
 				lido_zone_availability_array = (from x in FileItems
-												where x.chair_qty > 0 && x.sun_bed_qty > 0 && x.umbrella_qty > 0
+												where (x.chair_qty > 0 || x.sun_bed_qty > 0 || x.umbrella_qty > 0) &&
+												(x.chair_qty <= x.max_chair_qty && x.sun_bed_qty <= x.max_sun_bed_qty && x.umbrella_qty <= x.max_umbrella_qty)
 												select new LidoZoneAvailabilityDTO
 												{
 													sun_bed_availability = x.sun_bed_qty,
@@ -196,13 +200,17 @@ namespace CocoVendorApp
 						await DisplayAlert("Aggiornamento disponibilità avvenuto con successo!", result.message, "Chiudi");
 						//await Navigation.PopAsync();
 						RefhreshDisponibilita();
-						RebindListFile();
+						//RebindListFile();
 					}
 				}
 				else
 				{
 					await DisplayAlert("Errore", "Errore contattando il servizio!", "Chiudi");
 				}
+			}
+			else
+			{
+				await DisplayAlert("Errore", "Hai tentato di ridurre di un numero superiore alle disponibilità o il lido è già pieno per la data selezionata!", "Chiudi");
 			}
 		}
 

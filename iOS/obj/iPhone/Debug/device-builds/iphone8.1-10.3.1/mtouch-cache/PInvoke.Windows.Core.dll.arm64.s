@@ -7025,7 +7025,7 @@ _mono_aot_file_info:
 	.long 144,0,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0
-	.byte 174,0,85,15,215,19,92,47,42,47,64,120,103,248,196,37
+	.byte 136,182,218,51,133,33,93,151,231,179,32,88,241,20,44,109
 	.globl _mono_aot_module_PInvoke_Windows_Core_info
 	.align 3
 _mono_aot_module_PInvoke_Windows_Core_info:

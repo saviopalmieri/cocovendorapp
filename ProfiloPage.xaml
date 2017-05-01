@@ -68,7 +68,7 @@
 				
 				<StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="Start"
 					BackgroundColor="White">
-					<Label Text="Nome Completo" HorizontalOptions="StartAndExpand"  
+					<Label Text="Nome Lido" HorizontalOptions="StartAndExpand"  
 						HorizontalTextAlignment="Start" VerticalTextAlignment="Center"
 						TextColor="Black" FontSize="Medium"
 						 Margin="20,5,20,5" >

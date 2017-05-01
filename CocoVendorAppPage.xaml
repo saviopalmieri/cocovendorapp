@@ -114,7 +114,7 @@
 						HorizontalOptions="Center" VerticalOptions="CenterAndExpand" HorizontalTextAlignment="Center" />
 		          </StackLayout>
 
-					<Button Text="Inizia il setup guidato" x:Name="btnRegistrati" HorizontalOptions="FillAndExpand"
+					<Button Text="Inizia" x:Name="btnRegistrati" HorizontalOptions="FillAndExpand"
 						Grid.Row="3" VerticalOptions="Center"
 						BackgroundColor="#3d83f5" TextColor="White" FontSize="17"
 						BorderRadius="2" Margin="20,5,20,10" Clicked="Handle_Clicked" >

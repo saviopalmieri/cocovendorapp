@@ -10,11 +10,18 @@ namespace CocoVendorApp
 		{
 			get
 			{
-				//#if DEBUG
-				//	return "https://cocoapp.it/api/v2/web/app_dev.php/";
-				//#else
-				//	return "https://cocoapp.it/api/v2/web/";
-				//#endif
+				#if DEBUG
+					return "https://cocoapp.it/api/v2/web/app_dev.php/";
+				#else
+					return "https://cocoapp.it/api/v2/web/";
+				#endif
+			}
+		}
+
+		public static string AppRealUrl
+		{ 
+			get
+			{
 				return "https://cocoapp.it/api/v2/web/";
 			}
 		}

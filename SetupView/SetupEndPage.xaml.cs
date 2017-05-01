@@ -33,63 +33,68 @@ namespace CocoVendorApp
 		{
 			InfoLido.telephone = "0";
 
-			var result = InfoLidoDAO.Instance.SetInfoLido(ConnectionHelper.RetrieveUserInfo().apiKey, ConnectionHelper.RetrieveUserInfo().mail, InfoLido);
+			loadingPanel.IsVisible = true;
+			loadingPanel.IsEnabled = true;
+			btnIniziaSetup.Text = "Pubblicazione in corso....";
+			btnIniziaSetup.IsEnabled = false;
+
+			var result = InfoLidoDAO.Instance.SetupCompletoLido(ConnectionHelper.RetrieveUserInfo().apiKey, ConnectionHelper.RetrieveUserInfo().mail, InfoLido);
+			//var result = InfoLidoDAO.Instance.SetInfoLido(ConnectionHelper.RetrieveUserInfo().apiKey, ConnectionHelper.RetrieveUserInfo().mail, InfoLido);
 			//var result = InfoLidoDAO.Instance.GetInfoLido(ConnectionHelper.RetrieveUserInfo().mail, ConnectionHelper.RetrieveUserInfo().apiKey);
 
 			if (result != null)
 			{
 				if (result.error)
 				{
+					loadingPanel.IsVisible = false;
+					loadingPanel.IsEnabled = false;
+					btnIniziaSetup.Text = "Pubblica";
+					btnIniziaSetup.IsEnabled = true;
 					await DisplayAlert("Errore", result.message, "Chiudi");
 				}
 				else
 				{
-					result = InfoLidoDAO.Instance.SetFileLido(ConnectionHelper.RetrieveUserInfo().apiKey, ConnectionHelper.RetrieveUserInfo().mail, InfoLido);
+					//result = InfoLidoDAO.Instance.SetServiziLido(ConnectionHelper.RetrieveUserInfo().apiKey, ConnectionHelper.RetrieveUserInfo().mail,InfoLido);
+					//result = InfoLidoDAO.Instance.SetFileLido(ConnectionHelper.RetrieveUserInfo().apiKey, ConnectionHelper.RetrieveUserInfo().mail, InfoLido);
 					//if (InfoLido.cabana_qty > 0)
 					//{
 					//	result = InfoLidoDAO.Instance.SetNCabine(ConnectionHelper.RetrieveUserInfo().apiKey, ConnectionHelper.RetrieveUserInfo().mail, InfoLido);
 					//}
-					result = InfoLidoDAO.Instance.SetListinoPrezzi(ConnectionHelper.RetrieveUserInfo().apiKey, InfoLido);
-					result = InfoLidoDAO.Instance.SetMailPaypal(ConnectionHelper.RetrieveUserInfo().apiKey, ConnectionHelper.RetrieveUserInfo().mail, InfoLido);
+					//result = InfoLidoDAO.Instance.SetListinoPrezzi(ConnectionHelper.RetrieveUserInfo().apiKey, InfoLido);
+					//result = InfoLidoDAO.Instance.SetMailPaypal(ConnectionHelper.RetrieveUserInfo().apiKey, ConnectionHelper.RetrieveUserInfo().mail, InfoLido);
 					if (imagestream != null)
 					{
+						btnIniziaSetup.Text = "Upload immagine in corso...";
 						var response = InfoLidoDAO.Instance.SetImageLido(ConnectionHelper.RetrieveUserInfo().apiKey, ConnectionHelper.RetrieveUserInfo().mail, imagestream);
 						if (response != null && response.data != null && response.data.image != null)
 						{
 							InfoLido.image = response.data.image;
 						}
 					}
-					//result = InfoLidoDAO.Instance.SetServiziLido(ConnectionHelper.RetrieveUserInfo().apiKey, ConnectionHelper.RetrieveUserInfo().mail,InfoLido);
-					if (result != null)
+
+					//result.data.lido.booking_array = result.data.booking_array;
+
+					if (InfoLido.image != null)
 					{
-						if (result.error)
-						{
-							await DisplayAlert("Errore", result.message, "Chiudi");
-						}
-						else
-						{
-							result.data.lido.booking_array = result.data.booking_array;
-
-							if (InfoLido.image != null)
-							{
-								result.data.lido.image = InfoLido.image;
-							}
-
-							InfoLido = result.data.lido;
-
-
-							await DisplayAlert("Complimenti!", "Pubblicazione avvenuta con successo!", "Chiudi");
-							Application.Current.MainPage = new NavigationPage(new HomePage(InfoLido));
-						}
+						result.data.image = InfoLido.image;
 					}
-					else
-					{
-						await DisplayAlert("Errore", "Errore contattando il servizio!", "Chiudi");
-					}
+
+					InfoLido = result.data;
+
+					loadingPanel.IsVisible = false;
+					loadingPanel.IsEnabled = false;
+					btnIniziaSetup.Text = "Pubblica";
+					btnIniziaSetup.IsEnabled = true;
+					await DisplayAlert("Complimenti!", "Pubblicazione avvenuta con successo!", "Chiudi");
+					Application.Current.MainPage = new NavigationPage(new HomePage(InfoLido));
 				}
 			}
 			else
 			{
+				loadingPanel.IsVisible = false;
+				loadingPanel.IsEnabled = false;
+				btnIniziaSetup.Text = "Pubblica";
+				btnIniziaSetup.IsEnabled = true;
 				await DisplayAlert("Errore", "Errore contattando il servizio!", "Chiudi");
 			}
 		}

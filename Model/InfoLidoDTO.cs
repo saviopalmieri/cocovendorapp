@@ -171,7 +171,14 @@ namespace CocoVendorApp
 		{
 			get
 			{
-				return ConnectionHelper.AppUrl + image.relative_file_url;
+				if (image != null)
+				{
+					return ConnectionHelper.AppRealUrl + image.relative_file_url;	
+				}
+				else
+				{
+					return string.Empty;
+				}
 			}
 		}
 

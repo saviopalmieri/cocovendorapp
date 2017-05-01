@@ -49,8 +49,8 @@ namespace CocoVendorApp
 		async void Handle_Clicked(object sender, System.EventArgs e)
 		{
 			var nomelido = txtNomeLido.Text;
-			var dataApertura = dateOpening.Date;
-			var dataChiusura = dateClosing.Date;
+			var dataApertura = dateOpening.Date.AddHours(7);
+			var dataChiusura = dateClosing.Date.AddHours(7);
 
 			if (!string.IsNullOrEmpty(nomelido) && 
 			   dataApertura != DateTime.MinValue &&

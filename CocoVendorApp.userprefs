@@ -1,33 +1,22 @@
 ﻿<Properties StartupConfiguration="{2B68B9E6-9DE3-4C2E-9C00-E33A6FD6782B}|Default">
   <MonoDevelop.Ide.Workbench>
     <Files>
-      <File FileName="DAO/InfoLidoDAO.cs" Line="198" Column="3" />
-      <File FileName="Model/InfoLidoDTO.cs" Line="144" Column="1" />
-      <File FileName="RiepilogoPage.xaml.cs" Line="96" Column="55" />
-      <File FileName="RiepilogoPage.xaml" Line="1" Column="1" />
-      <File FileName="HomePage.xaml.cs" Line="38" Column="49" />
-      <File FileName="Model/UserInfoDTO.cs" Line="1" Column="1" />
-      <File FileName="RecensioniPage.xaml" Line="1" Column="1" />
-      <File FileName="RecensioniPage.xaml.cs" Line="1" Column="1" />
-      <File FileName="RegisterPage.xaml.cs" Line="50" Column="27" />
-      <File FileName="SetupView/SetupEndPage.xaml.cs" Line="78" Column="36" />
-      <File FileName="SetupView/Setup2Page.xaml.cs" Line="1" Column="1" />
-      <File FileName="ImpostaDisponibilitaPage.xaml.cs" Line="25" Column="1" />
-      <File FileName="LoginPage.xaml.cs" Line="60" Column="35" />
-      <File FileName="App.xaml.cs" Line="24" Column="1" />
-      <File FileName="AboutPage.xaml" Line="1" Column="1" />
+      <File FileName="DAO/InfoLidoDAO.cs" Line="241" Column="73" />
+      <File FileName="iOS/Main.cs" Line="17" Column="1" />
+      <File FileName="SetupView/SetupEndPage.xaml.cs" Line="78" Column="7" />
     </Files>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release|iPhoneSimulator" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
   <MonoDevelop.Ide.ItemProperties.CocoVendorApp.Droid AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.Android_Accelerated_x86" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint file="/Users/saviopalmieri/OneDrive/Documenti/Lavoro/SavioPalmieriTeam/Coco/Vendor/CocoVendorApp/iOS/DatePickerCenterRenderer.cs" relfile="iOS/DatePickerCenterRenderer.cs" line="15" column="12" />
-      <Breakpoint file="/Users/saviopalmieri/OneDrive/Documenti/Lavoro/SavioPalmieriTeam/Coco/Vendor/CocoVendorApp/DAO/InfoLidoDAO.cs" relfile="DAO/InfoLidoDAO.cs" line="550" column="1" />
+      <Breakpoint file="/Users/saviopalmieri/OneDrive/Documenti/Lavoro/SavioPalmieriTeam/Coco/Vendor/CocoVendorApp/DAO/InfoLidoDAO.cs" relfile="DAO/InfoLidoDAO.cs" line="620" column="1" />
       <Breakpoint file="/Users/saviopalmieri/OneDrive/Documenti/Lavoro/SavioPalmieriTeam/Coco/Vendor/CocoVendorApp/LoginPage.xaml.cs" relfile="LoginPage.xaml.cs" line="60" column="1" />
+      <Breakpoint file="/Users/saviopalmieri/OneDrive/Documenti/Lavoro/SavioPalmieriTeam/Coco/Vendor/CocoVendorApp/DAO/InfoLidoDAO.cs" relfile="DAO/InfoLidoDAO.cs" line="343" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.CocoVendorApp.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.DC2A6E3F-2101-4294-9C15-4499A8303184" />
+  <MonoDevelop.Ide.ItemProperties.CocoVendorApp.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.0df9b9062d5ab0f4941c25d1c473d832d632f235" />
   <MultiItemStartupConfigurations />
 </Properties>
