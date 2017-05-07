@@ -228,7 +228,9 @@ namespace CocoVendorApp
 				mInfoLido.umbrella_price,
 				mInfoLido.chair_price,
 				mInfoLido.email_paypal,
-				lido_service_array = (from x in mInfoLido.lido_service_array select int.Parse(x.IdServizio)).ToList()
+				lido_service_array = (from x in mInfoLido.lido_service_array select int.Parse(x.IdServizio)).ToList(),
+				mInfoLido.user_name,
+				mInfoLido.user_surname
 			});
 
 		//listParam.Add(new KeyValuePair<string, string>("idutente", idLido.ToString()));
@@ -524,21 +526,36 @@ namespace CocoVendorApp
 			//long idLido = GetIdLido(email, apikey);
 			//long idUtenteLido = GetIdUtenteLido(apikey);
 
-			var dispToParse = (new
+			var dispToParse = (disp.lido_zone_availability_array.Count > 0 ? (new
 			{
 				booking_array = (from x in disp.lido_zone_availability_array
-								 select new 
+								 select new
 								 {
 									 //id_lido = (int)idLido,
 									 //id_utente = (int)idUtenteLido,
 									 zone_id = x.lido_zone.id,
 									 umbrella_qty = x.umbrella_availability,
 									 sun_bed_qty = x.sun_bed_availability,
-									 cabana_qty = 0,
+									 cabana_qty = disp.cabana_availability,
 									 chair_qty = x.chair_availability,
 									 date = x.start_date
 								 }).ToList()
-			});
+			}) : (new
+			{
+				booking_array = (new[] {
+				new
+				{
+					//id_lido = (int)idLido,
+					//id_utente = (int)idUtenteLido,
+					zone_id = 0,
+					umbrella_qty = 0,
+					sun_bed_qty = 0,
+					cabana_qty = disp.cabana_availability,
+					chair_qty = 0,
+					date = disp.start_date
+				}
+				}).ToList()
+			}));
 
 			var json = JsonConvert.SerializeObject(dispToParse);
 

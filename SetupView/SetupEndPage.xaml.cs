@@ -31,7 +31,7 @@ namespace CocoVendorApp
 
 		async void Handle_Clicked(object sender, System.EventArgs e)
 		{
-			InfoLido.telephone = "0";
+			//InfoLido.telephone = "0";
 
 			loadingPanel.IsVisible = true;
 			loadingPanel.IsEnabled = true;

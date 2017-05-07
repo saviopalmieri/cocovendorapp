@@ -85,8 +85,11 @@ namespace CocoVendorApp
 			if (result != null)
 			{
 				var listDisponibilita = new List<InfoFilaDTO>();
+				var cabanaDisp = 0;
+
 				foreach (var item in result.data)
 				{
+					cabanaDisp += item.cabana_availability;
 					foreach (var zone in item.lido_zone_availability_array)
 					{
 						var currZone = listDisponibilita.FirstOrDefault(x => x.IdFila == zone.lido_zone.name);
@@ -119,6 +122,9 @@ namespace CocoVendorApp
 				FileItems = new ObservableCollection<InfoFilaDTO>(listDisponibilita);
 
 				FileListView.ItemsSource = FileItems;
+
+				txtDispCabana.Text = "0";
+				lblDisponibCabine.Text = cabanaDisp.ToString();
 			}
 		}
 
@@ -171,7 +177,7 @@ namespace CocoVendorApp
 			{
 				start_date = dateChoosen.Date.ToString("yyyyMMdd"),
 				end_date = dateChoosen.Date.ToString("yyyyMMdd"),
-				cabana_availability = 0,
+				cabana_availability = int.Parse(txtDispCabana.Text),
 				lido_zone_availability_array = (from x in FileItems
 												where (x.chair_qty > 0 || x.sun_bed_qty > 0 || x.umbrella_qty > 0) &&
 												(x.chair_qty <= x.max_chair_qty && x.sun_bed_qty <= x.max_sun_bed_qty && x.umbrella_qty <= x.max_umbrella_qty)
@@ -186,7 +192,7 @@ namespace CocoVendorApp
 												}).ToList()
 			};
 
-			if (listDisp != null && listDisp.lido_zone_availability_array.Count > 0)
+			if ((listDisp != null && listDisp.lido_zone_availability_array.Count > 0) || int.Parse(txtDispCabana.Text) <= int.Parse(lblDisponibCabine.Text))
 			{
 				var result = InfoLidoDAO.Instance.AggiornaDisponibilitaLido(ConnectionHelper.RetrieveUserInfo().apiKey, ConnectionHelper.RetrieveUserInfo().mail, listDisp);
 				if (result != null)

@@ -16027,7 +16027,7 @@ _mono_aot_file_info:
 	.long 344,0,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0
-	.byte 132,39,248,165,73,181,149,0,193,38,210,235,219,241,92,167
+	.byte 191,109,15,69,169,64,178,224,122,239,100,192,229,141,157,174
 	.globl _mono_aot_module_System_Json_info
 	.align 3
 _mono_aot_module_System_Json_info:

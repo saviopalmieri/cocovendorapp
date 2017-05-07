@@ -121,21 +121,21 @@
 
 			<StackLayout Grid.Row="1" Grid.Column="0" Orientation="Vertical" VerticalOptions="Start" HorizontalOptions="FillAndExpand">
 
-				<Label Text="Inserisci il Numero di Cabine disponibili" HorizontalOptions="FillAndExpand"  
+				<Label Text="Inserisci il Numero di Pacchetti disponibili" HorizontalOptions="FillAndExpand"  
 					HorizontalTextAlignment="Center" VerticalTextAlignment="Center"
 					TextColor="#717171" FontSize="14"
 					 Margin="20,5,20,5" >
 				</Label>
 				
 				<StackLayout Orientation="Horizontal" BackgroundColor="White" VerticalOptions="Start" HorizontalOptions="FillAndExpand" >
-					<Label TextColor="#000" Text="Servizio Cabine" FontSize="14" Margin="20,5,5,5"
+					<Label TextColor="#000" Text="Vendita con Pacchetti" FontSize="14" Margin="20,5,5,5"
 					HorizontalOptions="StartAndExpand" HorizontalTextAlignment="Start" VerticalOptions="Center"/>
 				
 					<Switch x:Name="switchCabine" HorizontalOptions="EndAndExpand" VerticalOptions="CenterAndExpand" Margin="5,5,20,5" Toggled="Handle_Toggled"></Switch>
 				</StackLayout>
 
 				<StackLayout Orientation="Horizontal" VerticalOptions="Start" BackgroundColor="White" HorizontalOptions="FillAndExpand" x:Name="layoutCabine" >
-					<Label TextColor="#000" Text="Numero Cabine" FontSize="14" Margin="20,5,5,5"
+					<Label TextColor="#000" Text="Numero Pacchetti" FontSize="14" Margin="20,5,5,5"
 						HorizontalOptions="StartAndExpand" HorizontalTextAlignment="Start" VerticalOptions="Center"/>
 
 					<Entry HorizontalOptions="EndAndExpand" VerticalOptions="CenterAndExpand" Keyboard="Numeric" Margin="5,5,20,5"

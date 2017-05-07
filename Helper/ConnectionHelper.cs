@@ -30,6 +30,14 @@ namespace CocoVendorApp
 		{
 			get
 			{
+				return "CocoAppVendor1";
+			}
+		}
+
+		public static string AppNameOld
+		{
+			get
+			{
 				return "CocoAppVendor";
 			}
 		}
@@ -51,6 +59,18 @@ namespace CocoVendorApp
 			var acc = AccountStore.Create();
 
 			acc.Delete(acc.FindAccountsForService(ConnectionHelper.AppName).FirstOrDefault(), ConnectionHelper.AppName);
+		}
+
+		public static void ClearOldUserInfo()
+		{ 
+			var acc = AccountStore.Create();
+
+			var infos = acc.FindAccountsForService(ConnectionHelper.AppNameOld).FirstOrDefault();
+
+			if (infos != null)
+			{
+				acc.Delete(infos, ConnectionHelper.AppNameOld);	
+			}
 		}
 
 		public static UserInfoDTO RetrieveUserInfo()

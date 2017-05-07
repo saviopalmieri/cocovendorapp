@@ -13431,7 +13431,7 @@ _mono_aot_file_info:
 	.long 360,0,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0
-	.byte 16,128,56,189,19,98,222,206,172,248,217,224,178,180,88,189
+	.byte 194,200,131,155,189,213,124,226,227,78,132,105,245,159,75,201
 	.globl _mono_aot_module_PInvoke_BCrypt_info
 	.align 3
 _mono_aot_module_PInvoke_BCrypt_info:

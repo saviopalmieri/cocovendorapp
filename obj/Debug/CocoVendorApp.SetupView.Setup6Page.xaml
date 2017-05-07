@@ -44,7 +44,7 @@
 						HorizontalOptions="Center" HorizontalTextAlignment="Center" VerticalOptions="Start"/>
 
 					<StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" BackgroundColor="White" VerticalOptions="Start" >
-						<Label Text="Indirizzo email" HorizontalOptions="FillAndExpand"  
+						<Label Text="Indirizzo PayPal" HorizontalOptions="FillAndExpand"  
 							HorizontalTextAlignment="Start" VerticalTextAlignment="Center"
 							TextColor="Black" FontSize="Medium"
 							 Margin="20,5,20,5" >

@@ -38,14 +38,14 @@
 					HorizontalOptions="Center" VerticalOptions="Start"/>
 
 					<StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" BackgroundColor="White" VerticalOptions="Start" >
-						<Label Text="Nome Lido *" HorizontalOptions="End"  
+						<Label Text="Nome Lido *" HorizontalOptions="FillAndExpand"  
 							HorizontalTextAlignment="Start" VerticalTextAlignment="Center"
 							TextColor="Black" FontSize="Medium"
 							 Margin="20,5,20,5" >
 						</Label>
 
-						<Entry Placeholder="Obbligatorio" HorizontalOptions="FillAndExpand"
-							x:Name="txtNomeLido" WidthRequest="150"
+						<Entry Placeholder="Obbligatorio" HorizontalOptions="End"
+							x:Name="txtNomeLido" WidthRequest="180"
 							HorizontalTextAlignment="Center" 
 							TextColor="Black" FontSize="Medium"
 							Margin="20,5,20,5"  >
@@ -57,6 +57,36 @@
 					
 					<Label TextColor="#717171" Text="ATTENZIONE: una volta inserito il nome, non sarà possibile modificarlo. Assicurati che sia corretto." FontSize="16" Margin="20,5,5,10"
 						HorizontalOptions="Center" HorizontalTextAlignment="Start" VerticalOptions="Start"/>
+
+					<StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" BackgroundColor="White" VerticalOptions="Start" >
+						<Label Text="Nome Utente *" HorizontalOptions="FillAndExpand"  
+							HorizontalTextAlignment="Start" VerticalTextAlignment="Center"
+							TextColor="Black" FontSize="Medium"
+							 Margin="20,5,5,5" >
+						</Label>
+
+						<Entry Placeholder="Nome e Cognome" HorizontalOptions="End"
+							x:Name="txtNome" WidthRequest="180"
+							HorizontalTextAlignment="Center" 
+							TextColor="Black" FontSize="Medium"
+							Margin="5,5,20,5"  >
+						</Entry>
+					</StackLayout>
+
+					<StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" BackgroundColor="White" VerticalOptions="Start" Margin="0,0,0,20" >
+						<Label Text="Telefono *" HorizontalOptions="FillAndExpand"  
+							HorizontalTextAlignment="Start" VerticalTextAlignment="Center"
+							TextColor="Black" FontSize="Medium"
+							 Margin="20,5,20,5" >
+						</Label>
+
+						<Entry Placeholder="Telefono" HorizontalOptions="End"
+							x:Name="txtTelefono" WidthRequest="180" Keyboard="Telephone"
+							HorizontalTextAlignment="Center" 
+							TextColor="Black" FontSize="Medium"
+							Margin="20,5,20,5"  >
+						</Entry>
+					</StackLayout>
 
 					<StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" BackgroundColor="White" VerticalOptions="Start" >
 						<Label Text="Data di Apertura" HorizontalOptions="FillAndExpand"  

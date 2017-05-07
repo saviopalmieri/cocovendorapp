@@ -21,6 +21,11 @@ namespace CocoVendorApp
 
 			InfoLido = mInfoLido; //InfoLidoDAO.Instance.GetInfoLido(ConnectionHelper.RetrieveUserInfo().mail, ConnectionHelper.RetrieveUserInfo().apiKey);
 
+            this.Title = "COCO";
+			#if __IOS__
+				NavigationPage.SetTitleIcon (this, "apptitle.png");
+			#endif
+
 			this.Children.Add(new RiepilogoPage(this));
 			this.Children.Add(new ScanPrenotazionePage(this));
 			this.Children.Add(new InformazioniUtentePage(this));
@@ -34,12 +39,16 @@ namespace CocoVendorApp
 				if (this.CurrentPage is RiepilogoPage)
 				{
 					this.Title = "COCO";
+					#if __IOS__
+						NavigationPage.SetTitleIcon (this, "apptitle.png");
+					#endif
 					((RiepilogoPage)CurrentPage).EnableDateNavbar();
 					((RiepilogoPage)CurrentPage).RebindListFile();
 				}
 				else if (this.CurrentPage is ScanPrenotazionePage)
 				{
 					this.Title = "Check In";
+					NavigationPage.SetTitleIcon(this, null);
 
 					var options = new MobileBarcodeScanningOptions
 					{
@@ -76,6 +85,7 @@ namespace CocoVendorApp
 				else if (this.CurrentPage is InformazioniUtentePage)
 				{
 					this.Title = "Impostazioni";
+					NavigationPage.SetTitleIcon(this, null);
 					((InformazioniUtentePage)CurrentPage).EnableUserNavbar();
 				}
 			}

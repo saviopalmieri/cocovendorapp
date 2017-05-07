@@ -148,6 +148,7 @@ namespace CocoVendorApp
 				_close_season_date = value;
 			}
 		}
+		public UserWebServiceDTO user { get; set; }
 		public string address { get; set; }
 		public string city { get; set; }
 		public string lng { get; set; }
@@ -165,6 +166,24 @@ namespace CocoVendorApp
 		public decimal cabana_price { get; set; }
 
 		public string email_paypal { get; set; }
+		public string user_name { get; set; }
+		public string user_surname { get; set; }
+
+		public string user_name_surname
+		{
+			get
+			{
+				if (this.user != null)
+				{
+					return user.name + " " + user.surname;
+				}
+				else
+				{
+					return user_name + " " + user_surname;
+				}
+			}
+		}
+
 		public string telephone { get; set; }
 		public byte[] ImgLidoStream { get; set; }
 		public string ImgLidoPath

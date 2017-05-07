@@ -37,5 +37,7 @@ namespace CocoVendorApp
 		public bool vendor { get; set; }
 		//public InfoLidoDTO lido { get; set; }
 		public string avatar { get; set; }
+		public string name { get; set; }
+		public string surname { get; set; }
 	}
 }

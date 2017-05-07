@@ -13,7 +13,7 @@ namespace CocoVendorApp
 		{
 			InitializeComponent();
 
-			//ConnectionHelper.ClearUserInfo();
+			ConnectionHelper.ClearOldUserInfo();
 
 			var userInfo = ConnectionHelper.RetrieveUserInfo();
 			if (userInfo != null)//InfoLidoDAO.Instance.GetSlimInfoLido(ConnectionHelper.RetrieveUserInfo().mail, ConnectionHelper.RetrieveUserInfo().apiKey))
@@ -21,6 +21,19 @@ namespace CocoVendorApp
 				var result = RegistrationDAO.Instance.LoginUser(userInfo.mail, userInfo.password);
 				if (result.data.lido != null)
 				{
+					result.data.lido.user = new UserWebServiceDTO()
+					{
+						api_key = result.data.api_key,
+						avatar = result.data.avatar,
+						email = result.data.email,
+						id = result.data.id,
+						from_facebook = result.data.from_facebook,
+						name = result.data.name,
+						surname = result.data.surname,
+						telephone = result.data.telephone,
+						vendor = result.data.vendor
+					};
+
 					result.data.lido.booking_array = result.data.booking_array;
 
 					MainPage = new NavigationPage(new HomePage(result.data.lido));	

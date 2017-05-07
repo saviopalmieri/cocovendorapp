@@ -11260,7 +11260,7 @@ _mono_aot_file_info:
 	.long 400,0,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0
-	.byte 6,106,227,233,102,73,223,124,125,179,207,5,229,49,141,96
+	.byte 39,43,131,163,43,70,190,102,194,107,21,135,220,166,92,180
 	.globl _mono_aot_module_Plugin_Media_info
 	.align 2
 _mono_aot_module_Plugin_Media_info:

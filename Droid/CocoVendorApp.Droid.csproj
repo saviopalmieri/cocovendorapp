@@ -24,7 +24,7 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>bin\Debug</OutputPath>
-    <DefineConstants>DEBUG;</DefineConstants>
+    <DefineConstants>DEBUG;__IOS__;__ANDROID__;</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <AndroidLinkMode>None</AndroidLinkMode>
@@ -242,6 +242,7 @@
     <AndroidResource Include="Resources\drawable\cabinaicon.png" />
     <AndroidResource Include="Resources\drawable\circlefull.png" />
     <AndroidResource Include="Resources\drawable\circlewhite.png" />
+    <AndroidResource Include="Resources\drawable\apptitle.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\layout\" />
