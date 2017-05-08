@@ -14366,8 +14366,9 @@ Xamarin_Auth_WebAuthenticatorController_WebViewDelegate_ShouldStartLoad_UIKit_UI
 .word 0xf9001fa3
 .word 0xf90023bf
 .word 0xaa1a03e0
-.word 0xf940035e
-bl _p_300
+.word 0xf9400341
+.word 0xf940c030
+.word 0xd63f0200
 .word 0xaa0003fa
 .word 0xf9401720
 .word 0xf9401818
@@ -14386,7 +14387,7 @@ ldr x1, [x16, #2880]
 .word 0xaa1803f7
 .word 0xaa1a03e0
 .word 0xd2800001
-bl _p_301
+bl _p_300
 .word 0x53001c00
 .word 0x34000880
 .word 0xf9401720
@@ -14397,10 +14398,10 @@ bl _p_301
 .word 0x350007c0
 .word 0xaa1a03e0
 .word 0xf940035e
-bl _p_302
+bl _p_301
 .word 0x910103a2
 .word 0xd2800021
-bl _p_303
+bl _p_302
 .word 0x53001c00
 .word 0x340006c0
 .word 0xf94023a1
@@ -14410,12 +14411,12 @@ bl _p_89
 .word 0xaa0003e1
 .word 0xaa0103e0
 .word 0xf940003e
-bl _p_304
+bl _p_303
 .word 0xaa0003fa
 .word 0xf94023a1
 .word 0xaa0103e0
 .word 0xf940003e
-bl _p_305
+bl _p_304
 .word 0xaa0003f8
 
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+0
@@ -14490,7 +14491,7 @@ bl _p_273
 .word 0xd2800001
 .word 0xf9400fa2
 .word 0xf940005e
-bl _p_306
+bl _p_305
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
@@ -14509,7 +14510,7 @@ Xamarin_Auth_WebAuthenticatorController_WebViewDelegate_LoadFailed_UIKit_UIWebVi
 .word 0xaa0203fa
 .word 0xaa1a03e0
 .word 0xf940035e
-bl _p_307
+bl _p_306
 
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
@@ -14519,7 +14520,7 @@ bl _p_17
 .word 0x34000140
 .word 0xaa1a03e0
 .word 0xf940035e
-bl _p_308
+bl _p_307
 .word 0xd2800cc1
 .word 0x93407c21
 .word 0xeb01001f
@@ -14528,7 +14529,7 @@ bl _p_308
 .word 0x1400002b
 .word 0xaa1a03e0
 .word 0xf940035e
-bl _p_307
+bl _p_306
 
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
@@ -14538,7 +14539,7 @@ bl _p_17
 .word 0x34000160
 .word 0xaa1a03e0
 .word 0xf940035e
-bl _p_308
+bl _p_307
 .word 0x92807cc1
 .word 0xf2bfffe1
 .word 0x93407c21
@@ -14556,14 +14557,14 @@ bl _p_274
 .word 0xd2800021
 .word 0xf94013a2
 .word 0xf940005e
-bl _p_306
+bl _p_305
 .word 0xf9400fa0
 .word 0xf9401400
 .word 0xf9401800
 .word 0xf9001ba0
 .word 0xaa1a03e0
 .word 0xf940035e
-bl _p_309
+bl _p_308
 .word 0xaa0003e1
 .word 0xf9401ba2
 .word 0xaa0203e0
@@ -14593,18 +14594,19 @@ bl _p_274
 .word 0xaa1a03e0
 .word 0xd2800021
 .word 0xf940035e
-bl _p_306
+bl _p_305
 .word 0xaa1a03e0
 .word 0xf940035e
-bl _p_310
+bl _p_309
+.word 0xaa0003e1
+.word 0xaa0103e0
+.word 0xf9400021
+.word 0xf940c030
+.word 0xd63f0200
 .word 0xaa0003e1
 .word 0xaa0103e0
 .word 0xf940003e
-bl _p_300
-.word 0xaa0003e1
-.word 0xaa0103e0
-.word 0xf940003e
-bl _p_302
+bl _p_301
 .word 0xf90017a0
 
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+0
@@ -14681,14 +14683,14 @@ ldr x0, [x16, #2928]
 bl _p_56
 .word 0xf9006fa0
 .word 0xd2800021
-bl _p_311
+bl _p_310
 .word 0xf9406fa0
 .word 0xaa0003f8
 .word 0xaa1803e2
 .word 0xaa0203e0
 .word 0xaa1a03e1
 .word 0xf940005e
-bl _p_312
+bl _p_311
 
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
@@ -14696,7 +14698,7 @@ ldr x0, [x16, #2936]
 .word 0xf9400001
 .word 0xaa0103e0
 .word 0xf940003e
-bl _p_313
+bl _p_312
 .word 0xf9006ba0
 
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+0
@@ -14709,7 +14711,7 @@ bl _p_14
 .word 0xaa0303e0
 .word 0xaa1803e1
 .word 0xf940007e
-bl _p_314
+bl _p_313
 .word 0xaa0003fa
 .word 0xaa1a03f7
 .word 0xeb1f035f
@@ -14734,7 +14736,7 @@ ldr x0, [x16, #2960]
 .word 0xf9400001
 .word 0xaa0103e0
 .word 0xf940003e
-bl _p_315
+bl _p_314
 .word 0xaa0003e1
 .word 0xaa0103e0
 .word 0xf9400021
@@ -14754,16 +14756,16 @@ ldr x0, [x16, #2976]
 .word 0xf9400001
 .word 0xaa0103e0
 .word 0xf940003e
-bl _p_316
+bl _p_315
 .word 0xaa0003e2
 .word 0xf9406ba1
 .word 0xaa1703e0
 .word 0xf94002fe
-bl _p_317
+bl _p_316
 .word 0x9100c3a2
 .word 0xaa1803e0
 .word 0xd2807d01
-bl _p_318
+bl _p_317
 .word 0xaa0003fa
 .word 0x14000021
 .word 0xf90037a0
@@ -14797,7 +14799,7 @@ bl _p_2
 .word 0xf9406fa1
 .word 0xf94073a2
 .word 0xf9006ba0
-bl _p_319
+bl _p_318
 .word 0xf9406ba0
 bl _p_61
 .word 0xf90027bf
@@ -14842,14 +14844,14 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x15, [x16, #3024]
 .word 0xaa1a03e0
-bl _p_320
+bl _p_319
 .word 0xaa0003fa
 
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x15, [x16, #3032]
 .word 0xaa1a03e0
-bl _p_321
+bl _p_320
 .word 0x93407c00
 .word 0x6b1f001f
 .word 0x540001ed
@@ -14858,7 +14860,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x15, [x16, #3040]
 .word 0xaa1a03e0
-bl _p_322
+bl _p_321
 .word 0xeb1f001f
 .word 0x5400010d
 
@@ -14866,7 +14868,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x15, [x16, #3048]
 .word 0xaa1a03e0
-bl _p_323
+bl _p_322
 .word 0xf90027a0
 .word 0x14000011
 
@@ -14897,7 +14899,7 @@ bl _p_5
 .word 0xf9404c30
 .word 0xd63f0200
 .word 0xf9002fa0
-bl _p_324
+bl _p_323
 .word 0xf90063a0
 .word 0xf94063a0
 .word 0xb4000060
@@ -14931,7 +14933,7 @@ ldr x0, [x16, #3056]
 bl _p_2
 .word 0xf9406fa1
 .word 0xf9006ba0
-bl _p_325
+bl _p_324
 .word 0xf9406ba0
 .word 0xf90033a0
 .word 0xf94033a0
@@ -14939,7 +14941,7 @@ bl _p_325
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x15, [x16, #3072]
-bl _p_326
+bl _p_325
 .word 0xa94163b7
 .word 0xf94013ba
 .word 0x910003bf
@@ -14965,11 +14967,11 @@ Xamarin_Auth_KeyChainAccountStore_GetAccountFromRecord_Security_SecRecord:
 .word 0xf9001fbf
 .word 0xaa1a03e0
 .word 0xf940035e
-bl _p_327
+bl _p_326
 .word 0xaa0003f9
 .word 0xaa1a03e0
 .word 0xf940035e
-bl _p_328
+bl _p_327
 .word 0xaa0003fa
 .word 0xd2800018
 .word 0xb4000079
@@ -14979,11 +14981,11 @@ bl _p_328
 .word 0xaa1a03f8
 .word 0xaa1803e0
 .word 0xd2800081
-bl _p_329
+bl _p_328
 .word 0xaa0003fa
 .word 0xaa1a03e0
+bl _p_329
 bl _p_330
-bl _p_331
 .word 0xaa0003fa
 .word 0x1400001e
 .word 0xf90023a0
@@ -15014,7 +15016,7 @@ ldr x0, [x16, #2984]
 bl _p_2
 .word 0xf94047a1
 .word 0xf90043a0
-bl _p_332
+bl _p_331
 .word 0xf94043a0
 bl _p_61
 .word 0xaa1a03e0
@@ -15047,27 +15049,27 @@ ldr x0, [x16, #2928]
 bl _p_56
 .word 0xf9004ba0
 .word 0xd2800021
-bl _p_311
+bl _p_310
 .word 0xf9404ba0
 .word 0xaa0003f7
 .word 0xaa1703e2
 .word 0xaa0203e0
 .word 0xaa1a03e1
 .word 0xf940005e
-bl _p_312
+bl _p_311
 .word 0xaa1703e0
 .word 0xf9401ba1
 .word 0xf94002fe
-bl _p_333
+bl _p_332
 .word 0x9100e3a1
 .word 0xaa1703e0
-bl _p_334
+bl _p_333
 .word 0xaa0003fa
 .word 0xaa1a03e0
 .word 0xb40000c0
 .word 0xf94017a0
 .word 0xaa1a03e1
-bl _p_335
+bl _p_334
 .word 0xaa0003fa
 .word 0x14000002
 .word 0xd280001a
@@ -15101,7 +15103,7 @@ ldr x0, [x16, #2984]
 bl _p_2
 .word 0xf9404fa1
 .word 0xf9004ba0
-bl _p_332
+bl _p_331
 .word 0xf9404ba0
 bl _p_61
 .word 0xaa1903e0
@@ -15132,7 +15134,7 @@ bl _p_28
 .word 0xaa0003f7
 .word 0xaa1703e0
 .word 0xd2800081
-bl _p_336
+bl _p_335
 .word 0xaa0003f7
 .word 0xaa1903e0
 .word 0xf9400321
@@ -15141,7 +15143,7 @@ bl _p_336
 .word 0xaa0003e1
 .word 0xaa1803e0
 .word 0xaa1a03e2
-bl _p_337
+bl _p_336
 .word 0xaa0003f8
 .word 0xaa1803e0
 .word 0xb40006a0
@@ -15152,14 +15154,14 @@ ldr x0, [x16, #2928]
 bl _p_56
 .word 0xf90043a0
 .word 0xd2800021
-bl _p_311
+bl _p_310
 .word 0xf94043a0
 .word 0xaa0003f8
 .word 0xaa1803e2
 .word 0xaa0203e0
 .word 0xaa1a03e1
 .word 0xf940005e
-bl _p_312
+bl _p_311
 .word 0xaa1903e0
 .word 0xf9400321
 .word 0xf9403c30
@@ -15167,9 +15169,9 @@ bl _p_312
 .word 0xaa0003e1
 .word 0xaa1803e0
 .word 0xf940031e
-bl _p_333
+bl _p_332
 .word 0xaa1803e0
-bl _p_338
+bl _p_337
 .word 0x93407c00
 .word 0xaa0003f8
 .word 0xaa1803e0
@@ -15189,7 +15191,7 @@ bl _p_2
 .word 0xaa0003e1
 .word 0xf9404ba0
 .word 0xb9001038
-bl _p_339
+bl _p_338
 .word 0xf90047a0
 
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+0
@@ -15208,14 +15210,14 @@ ldr x0, [x16, #2928]
 bl _p_56
 .word 0xf90043a0
 .word 0xd2800021
-bl _p_311
+bl _p_310
 .word 0xf94043a0
 .word 0xaa0003f8
 .word 0xaa1803e2
 .word 0xaa0203e0
 .word 0xaa1a03e1
 .word 0xf940005e
-bl _p_312
+bl _p_311
 .word 0xaa1903e0
 .word 0xf9400321
 .word 0xf9403c30
@@ -15223,18 +15225,18 @@ bl _p_312
 .word 0xaa0003e1
 .word 0xaa1803e0
 .word 0xf940031e
-bl _p_333
+bl _p_332
 .word 0xaa1803e0
 .word 0xaa1703e1
 .word 0xf940031e
-bl _p_340
+bl _p_339
 .word 0xaa1803fa
 .word 0xaa1803e0
 .word 0xd2800021
 .word 0xf940031e
-bl _p_341
+bl _p_340
 .word 0xaa1803e0
-bl _p_342
+bl _p_341
 .word 0x93407c00
 .word 0xaa0003f8
 .word 0xaa1803e0
@@ -15251,7 +15253,7 @@ ldr x0, [x16, #144]
 bl _p_2
 .word 0xf9404fa1
 .word 0xf9004ba0
-bl _p_343
+bl _p_342
 .word 0xf9404ba0
 .word 0xaa0003fa
 .word 0xaa1a03e0
@@ -15269,26 +15271,26 @@ bl _p_2
 .word 0xaa0003e1
 .word 0xf94047a0
 .word 0xb9001038
-bl _p_339
+bl _p_338
 .word 0xaa0003e1
 .word 0xf94043a2
 .word 0xaa0203e0
 .word 0xf940005e
-bl _p_344
+bl _p_343
 
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x1, [x16, #3112]
 .word 0xaa1a03e0
 .word 0xf940035e
-bl _p_344
+bl _p_343
 
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x1, [x16, #3120]
 .word 0xaa1a03e0
 .word 0xf940035e
-bl _p_344
+bl _p_343
 .word 0x92909c3e
 .word 0xf2bffffe
 .word 0x6b1e031f
@@ -15306,25 +15308,25 @@ bl _p_2
 .word 0xaa0003e1
 .word 0xf94043a0
 .word 0xb9001038
-bl _p_339
+bl _p_338
 .word 0xaa0003e1
 .word 0xaa1a03e0
 .word 0xf940035e
-bl _p_344
+bl _p_343
 
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x1, [x16, #3136]
 .word 0xaa1a03e0
 .word 0xf940035e
-bl _p_344
+bl _p_343
 
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x1, [x16, #3144]
 .word 0xaa1a03e0
 .word 0xf940035e
-bl _p_344
+bl _p_343
 .word 0x14000001
 .word 0xaa1a03e0
 .word 0xf9400341
@@ -15372,7 +15374,7 @@ ldr x0, [x16, #2984]
 bl _p_2
 .word 0xf94047a1
 .word 0xf90043a0
-bl _p_332
+bl _p_331
 .word 0xf94043a0
 bl _p_61
 
@@ -15380,7 +15382,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x15, [x16, #3152]
 .word 0xd2800020
-bl _p_345
+bl _p_344
 .word 0x14000001
 .word 0xa94163b7
 .word 0xa9426bb9
@@ -15410,14 +15412,14 @@ ldr x0, [x16, #2928]
 bl _p_56
 .word 0xf90043a0
 .word 0xd2800021
-bl _p_311
+bl _p_310
 .word 0xf94043a0
 .word 0xaa0003f8
 .word 0xaa1803e2
 .word 0xaa0203e0
 .word 0xaa1a03e1
 .word 0xf940005e
-bl _p_312
+bl _p_311
 .word 0xf94017a0
 .word 0xf94017a1
 .word 0xf9400021
@@ -15426,9 +15428,9 @@ bl _p_312
 .word 0xaa0003e1
 .word 0xaa1803e0
 .word 0xf940031e
-bl _p_333
+bl _p_332
 .word 0xaa1803e0
-bl _p_338
+bl _p_337
 .word 0x93407c00
 .word 0xaa0003fa
 .word 0xaa1a03e0
@@ -15448,7 +15450,7 @@ bl _p_2
 .word 0xaa0003e1
 .word 0xf9404ba0
 .word 0xb900103a
-bl _p_339
+bl _p_338
 .word 0xf90047a0
 
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+0
@@ -15489,7 +15491,7 @@ ldr x0, [x16, #2984]
 bl _p_2
 .word 0xf94047a1
 .word 0xf90043a0
-bl _p_332
+bl _p_331
 .word 0xf94043a0
 bl _p_61
 
@@ -15497,7 +15499,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x15, [x16, #3152]
 .word 0xd2800020
-bl _p_345
+bl _p_344
 .word 0x14000001
 .word 0xf9400bb8
 .word 0xf9400fba
@@ -15524,7 +15526,7 @@ Xamarin_Auth_KeyChainAccountStore_FindAccountsForService_string:
 .word 0xaa0003e1
 .word 0xaa0103e0
 .word 0xf940003e
-bl _p_346
+bl _p_345
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
@@ -15613,7 +15615,7 @@ ldr x0, [x16, #3192]
 bl _p_2
 .word 0xf9401fa1
 .word 0xf9001ba0
-bl _p_347
+bl _p_346
 .word 0xf9401ba1
 
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+0
@@ -15652,7 +15654,7 @@ ldr x0, [x16, #3232]
 bl _p_2
 .word 0xf94017a1
 .word 0xf90013a0
-bl _p_348
+bl _p_347
 .word 0xf94013a1
 
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+0
@@ -15691,7 +15693,7 @@ ldr x0, [x16, #3272]
 bl _p_2
 .word 0xf9400fa1
 .word 0xf9000ba0
-bl _p_349
+bl _p_348
 .word 0xf9400ba1
 
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+0
@@ -15721,11 +15723,11 @@ ldr x1, [x16, #3288]
 .word 0xaa0303e0
 .word 0xd2800482
 .word 0xf940007e
-bl _p_350
+bl _p_349
 .word 0xaa0003e1
 .word 0xaa0103e0
 .word 0xf940003e
-bl _p_351
+bl _p_350
 .word 0x910003bf
 .word 0xa8c17bfd
 .word 0xd65f03c0
@@ -15749,7 +15751,7 @@ ldr x1, [x16, #3280]
 .word 0xaa0003e1
 .word 0xaa0103e0
 .word 0xf940003e
-bl _p_352
+bl _p_351
 .word 0xaa0003e1
 
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+0
@@ -15798,7 +15800,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x15, [x16, #3336]
 .word 0xf9400ba0
-bl _p_353
+bl _p_352
 .word 0xaa0003e2
 
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+0
@@ -15806,11 +15808,11 @@ add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x1, [x16, #3344]
 .word 0xaa0203e0
 .word 0xf940005e
-bl _p_354
+bl _p_353
 .word 0xaa0003e1
 .word 0xaa0103e0
 .word 0xf940003e
-bl _p_351
+bl _p_350
 .word 0xf90013a0
 
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+0
@@ -15823,7 +15825,7 @@ bl _p_14
 .word 0xaa0303e0
 .word 0xd2800001
 .word 0xf940007e
-bl _p_314
+bl _p_313
 .word 0xf9400001
 .word 0x3940a822
 .word 0xeb1f005f
@@ -15867,7 +15869,7 @@ ldr x1, [x16, #3280]
 .word 0xaa0003e1
 .word 0xaa0103e0
 .word 0xf940003e
-bl _p_352
+bl _p_351
 .word 0xaa0003e1
 
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+0
@@ -15916,7 +15918,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x15, [x16, #3336]
 .word 0xaa1a03e0
-bl _p_353
+bl _p_352
 .word 0xaa0003e2
 
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+0
@@ -15924,7 +15926,7 @@ add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x1, [x16, #3392]
 .word 0xaa0203e0
 .word 0xf940005e
-bl _p_355
+bl _p_354
 .word 0xaa0003e2
 .word 0xaa0203e0
 .word 0xd2800001
@@ -16140,7 +16142,7 @@ ldr x0, [x16, #3456]
 .word 0x3901803f
 .word 0xaa0203e0
 .word 0xf940005e
-bl _p_356
+bl _p_355
 .word 0x910003bf
 .word 0xa8c57bfd
 .word 0xd65f03c0
@@ -16220,7 +16222,7 @@ Xamarin_Auth_NativeAuthSafariViewControllerDelegate__ctor_Xamarin_Auth_WebAuthen
 .word 0xf9000ba0
 .word 0xf9000fa1
 .word 0xf9400ba0
-bl _p_357
+bl _p_356
 .word 0xf9400fa1
 .word 0xf9400ba0
 .word 0xf9001401
@@ -16619,7 +16621,7 @@ ldr x0, [x16, #3488]
 bl _p_2
 .word 0xf94087a1
 .word 0xf90083a0
-bl _p_358
+bl _p_357
 .word 0xf9407fa0
 .word 0xf94083a1
 .word 0xf9007ba1
@@ -16635,7 +16637,7 @@ add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x0, [x16, #3496]
 bl _p_2
 .word 0xf90077a0
-bl _p_359
+bl _p_358
 .word 0xf94073a0
 .word 0xf94077a1
 .word 0xf9006fa1
@@ -16654,14 +16656,14 @@ bl _p_5
 .word 0xf9400402
 .word 0xaa0303e0
 .word 0xf940007e
-bl _p_360
+bl _p_359
 .word 0xaa0003e2
 .word 0x910163a0
 .word 0xf9003ba0
 .word 0xaa0203e0
 .word 0xd2800001
 .word 0xf940005e
-bl _p_361
+bl _p_360
 .word 0xf9403bbe
 .word 0xf90003c0
 .word 0xf90007c1
@@ -16716,7 +16718,7 @@ ldr x1, [x16, #3512]
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x15, [x16, #3520]
-bl _p_362
+bl _p_361
 .word 0x14000107
 .word 0xf94013a0
 .word 0xf90073a0
@@ -16726,7 +16728,7 @@ bl _p_362
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x15, [x16, #3512]
-bl _p_363
+bl _p_362
 .word 0xaa0003e1
 .word 0xf94073a0
 .word 0xf9006fa1
@@ -16750,7 +16752,7 @@ bl _p_156
 .word 0xaa0203e0
 .word 0xd2800001
 .word 0xf940005e
-bl _p_364
+bl _p_363
 .word 0xf9403bbe
 .word 0xf90003c0
 .word 0xf90007c1
@@ -16805,7 +16807,7 @@ ldr x1, [x16, #3536]
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x15, [x16, #3544]
-bl _p_365
+bl _p_364
 .word 0x140000b2
 .word 0xf94013a0
 .word 0xf9006ba0
@@ -16815,7 +16817,7 @@ bl _p_365
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x15, [x16, #3536]
-bl _p_366
+bl _p_365
 .word 0xaa0003e1
 .word 0xf9406ba0
 .word 0xf90067a1
@@ -16840,7 +16842,7 @@ bl _p_135
 .word 0x340000c0
 .word 0xf94013a0
 .word 0xf9401000
-bl _p_367
+bl _p_366
 .word 0xaa0003f9
 .word 0x14000005
 .word 0xf94013a0
@@ -16978,8 +16980,8 @@ bl _p_61
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x15, [x16, #1456]
-bl _p_368
-bl _p_324
+bl _p_367
+bl _p_323
 .word 0xf9005fa0
 .word 0xf9405fa0
 .word 0xb4000060
@@ -16997,7 +16999,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x15, [x16, #1456]
 .word 0xaa1a03e1
-bl _p_369
+bl _p_368
 .word 0xa9416bb9
 .word 0x910003bf
 .word 0xa8d17bfd
@@ -17024,7 +17026,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x15, [x16, #1456]
 .word 0xf9400fa1
-bl _p_370
+bl _p_369
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
@@ -17135,7 +17137,7 @@ add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x0, [x16, #3496]
 bl _p_2
 .word 0xf9007fa0
-bl _p_359
+bl _p_358
 .word 0xf9407ba0
 .word 0xf9407fa1
 .word 0xf90077a1
@@ -17171,7 +17173,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x15, [x16, #3568]
 .word 0xd2800001
-bl _p_371
+bl _p_370
 .word 0xf9406ba2
 .word 0x398143a0
 .word 0x390123a0
@@ -17180,7 +17182,7 @@ bl _p_371
 .word 0xaa0203e0
 .word 0xf94027a1
 .word 0xf940005e
-bl _p_372
+bl _p_371
 .word 0xf94017a0
 .word 0xf9401000
 .word 0xf9401c00
@@ -17216,7 +17218,7 @@ bl _p_2
 .word 0xf94073a0
 .word 0xf94077a2
 .word 0xb9001022
-bl _p_339
+bl _p_338
 .word 0xaa0003fa
 .word 0xaa1a03e0
 .word 0xf9006fa0
@@ -17227,7 +17229,7 @@ ldr x0, [x16, #3592]
 bl _p_2
 .word 0xf9406fa1
 .word 0xf9006ba0
-bl _p_373
+bl _p_372
 .word 0xf9406ba0
 .word 0xaa0003fa
 .word 0xf94017a0
@@ -17253,13 +17255,13 @@ ldr x0, [x16, #3600]
 bl _p_2
 .word 0xf94087a1
 .word 0xf90083a0
-bl _p_374
+bl _p_373
 .word 0xf94083a0
 .word 0xaa0003f8
 .word 0xaa1803e1
 .word 0xaa0103e0
 .word 0xf940003e
-bl _p_375
+bl _p_374
 .word 0xf9007ba0
 
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+0
@@ -17273,27 +17275,27 @@ ldr x0, [x16, #3616]
 bl _p_2
 .word 0xf9407fa1
 .word 0xf90077a0
-bl _p_376
+bl _p_375
 .word 0xf94077a1
 .word 0xf9407ba2
 .word 0xaa0203e0
 .word 0xf940005e
-bl _p_377
+bl _p_376
 .word 0xaa1803e0
 .word 0xf940031e
-bl _p_375
+bl _p_374
 .word 0xaa0003e1
 .word 0xaa0103e0
 .word 0xf940003e
-bl _p_378
+bl _p_377
 .word 0xaa0003e2
 .word 0xf9401b21
 .word 0xaa0203e0
 .word 0xf940005e
-bl _p_379
+bl _p_378
 .word 0xaa1803e0
 .word 0xf940031e
-bl _p_375
+bl _p_374
 .word 0xf9006fa0
 .word 0xf9401720
 .word 0xf90073a0
@@ -17304,12 +17306,12 @@ ldr x0, [x16, #3624]
 bl _p_2
 .word 0xf94073a1
 .word 0xf9006ba0
-bl _p_380
+bl _p_379
 .word 0xf9406ba1
 .word 0xf9406fa2
 .word 0xaa0203e0
 .word 0xf940005e
-bl _p_381
+bl _p_380
 .word 0xaa1a03e0
 .word 0xaa1803e1
 .word 0xf9400342
@@ -17381,7 +17383,7 @@ ldr x0, [x16, #3488]
 bl _p_2
 .word 0xf94077a1
 .word 0xf90073a0
-bl _p_358
+bl _p_357
 .word 0xf9406fa1
 .word 0xf94073a2
 .word 0xaa0103e0
@@ -17412,7 +17414,7 @@ bl _p_5
 .word 0xaa0203e0
 .word 0xd2800001
 .word 0xf940005e
-bl _p_361
+bl _p_360
 .word 0xf94047be
 .word 0xf90003c0
 .word 0xf90007c1
@@ -17467,7 +17469,7 @@ ldr x1, [x16, #3512]
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x15, [x16, #3632]
-bl _p_382
+bl _p_381
 .word 0x1400003e
 .word 0xf94017a0
 .word 0xf90077a0
@@ -17477,7 +17479,7 @@ bl _p_382
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x15, [x16, #3512]
-bl _p_363
+bl _p_362
 .word 0xaa0003e1
 .word 0xf94077a0
 .word 0xf90073a1
@@ -17495,7 +17497,7 @@ ldr x0, [x16, #3640]
 bl _p_56
 .word 0xf9406fa1
 .word 0xf9006ba0
-bl _p_383
+bl _p_382
 .word 0xf9406ba0
 .word 0xaa0003fa
 .word 0x14000001
@@ -17514,8 +17516,8 @@ bl _p_383
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x15, [x16, #1544]
-bl _p_384
-bl _p_324
+bl _p_383
+bl _p_323
 .word 0xf90067a0
 .word 0xf94067a0
 .word 0xb4000060
@@ -17533,7 +17535,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x15, [x16, #1544]
 .word 0xaa1a03e1
-bl _p_385
+bl _p_384
 .word 0xa94167b8
 .word 0xf94013ba
 .word 0x910003bf
@@ -17561,7 +17563,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x15, [x16, #1544]
 .word 0xf9400fa1
-bl _p_386
+bl _p_385
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
@@ -17689,7 +17691,7 @@ Xamarin_Auth_FormAuthenticatorController_FieldCell__FieldCellc__AnonStorey0__m__
 .word 0xf9401801
 .word 0xaa0103e0
 .word 0xf940003e
-bl _p_387
+bl _p_386
 .word 0xaa0003e2
 .word 0xf9401fa1
 .word 0xaa0103e0
@@ -17777,7 +17779,7 @@ bl _p_56
 .word 0xfd401ba0
 .word 0xf90013a0
 .word 0xf9400fa1
-bl _p_388
+bl _p_387
 .word 0xf94013a0
 .word 0x910003bf
 .word 0xa8c57bfd
@@ -17925,7 +17927,7 @@ ldr x0, [x16, #3680]
 .word 0xd65f03c0
 .word 0xaa1703e0
 bl _p_61
-bl _p_389
+bl _p_388
 .word 0xaa0003f7
 .word 0xb5ffff80
 .word 0x17ffffcb
@@ -18004,7 +18006,7 @@ ldr x0, [x16, #3680]
 .word 0xd65f03c0
 .word 0xaa1703e0
 bl _p_61
-bl _p_389
+bl _p_388
 .word 0xaa0003f7
 .word 0xb5ffff80
 .word 0x17ffffcb
@@ -18149,7 +18151,7 @@ System_Array_InternalEnumerator_1_T_INST_get_Current:
 .word 0x4b010000
 .word 0xf90027a0
 .word 0xf94017a0
-bl _p_390
+bl _p_389
 .word 0xaa0003e1
 .word 0xf9402fa0
 .word 0xf9002ba1
@@ -18157,7 +18159,7 @@ bl _p_390
 .word 0xf940001e
 .word 0xf90023a0
 .word 0xf94017a0
-bl _p_391
+bl _p_390
 .word 0xaa0003e2
 .word 0xf94023a0
 .word 0xf94027a1
@@ -18230,12 +18232,12 @@ System_Array_InternalEnumerator_1_T_INST_System_Collections_IEnumerator_get_Curr
 .word 0xf90017af
 .word 0xf9000ba0
 .word 0xf94017a0
-bl _p_392
+bl _p_391
 .word 0xf90033a0
 .word 0xf9400ba0
 .word 0xf940001e
 .word 0xf94017a0
-bl _p_393
+bl _p_392
 .word 0xaa0003e1
 .word 0xf94033af
 .word 0x910063a0
@@ -18246,7 +18248,7 @@ bl _p_393
 .word 0xf90003c0
 .word 0xf90007c1
 .word 0xf94017a0
-bl _p_394
+bl _p_393
 bl _p_56
 .word 0xf90023a0
 .word 0x91004001
@@ -18285,10 +18287,10 @@ System_Array_InternalArray__IEnumerable_GetEnumerator_T_INST:
 .word 0x9100a3a0
 .word 0xf9002fa0
 .word 0xf9401fa0
-bl _p_395
+bl _p_394
 .word 0xf90033a0
 .word 0xf9401fa0
-bl _p_396
+bl _p_395
 .word 0xaa0003e2
 .word 0xf9402fa0
 .word 0xf94033af
@@ -18299,7 +18301,7 @@ bl _p_396
 .word 0xf9401ba0
 .word 0xf90013a0
 .word 0xf9401fa0
-bl _p_395
+bl _p_394
 bl _p_56
 .word 0xf90023a0
 .word 0x91004001
@@ -18384,7 +18386,7 @@ ldr x0, [x16, #3680]
 .word 0xd65f03c0
 .word 0xaa1903e0
 bl _p_61
-bl _p_389
+bl _p_388
 .word 0xaa0003f9
 .word 0xb5ffff80
 .word 0x17ffffce
@@ -18463,7 +18465,7 @@ ldr x0, [x16, #3680]
 .word 0xd65f03c0
 .word 0xaa1803e0
 bl _p_61
-bl _p_389
+bl _p_388
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffca
@@ -18538,7 +18540,7 @@ ldr x0, [x16, #3680]
 .word 0xd65f03c0
 .word 0xaa1803e0
 bl _p_61
-bl _p_389
+bl _p_388
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffce
@@ -18562,17 +18564,17 @@ System_Array_InternalArray__IEnumerable_GetEnumerator_T_REF:
 .word 0x9100a3a0
 .word 0xf9002fa0
 .word 0xf9401fa0
-bl _p_397
+bl _p_396
 .word 0xaa0003ef
 .word 0xf9402fa0
 .word 0xf9400ba1
-bl _p_398
+bl _p_397
 .word 0xf94017a0
 .word 0xf9000fa0
 .word 0xf9401ba0
 .word 0xf90013a0
 .word 0xf9401fa0
-bl _p_397
+bl _p_396
 bl _p_56
 .word 0xf90023a0
 .word 0x91004001
@@ -18714,7 +18716,7 @@ System_Array_InternalArray__ICollection_Contains_T_REF_T_REF:
 .word 0x14000016
 .loc 2 104 0
 .word 0xf9401fa0
-bl _p_399
+bl _p_398
 .word 0x93407ee0
 .word 0xd37df000
 .word 0x8b000320
@@ -18754,7 +18756,7 @@ bl _p_399
 .word 0xd2874b00
 .word 0xf2a00040
 bl _p_211
-bl _p_400
+bl _p_399
 .word 0xaa0003e1
 .word 0xd2803240
 .word 0xf2a04000
@@ -18861,7 +18863,7 @@ bl _p_61
 .word 0xd2874b00
 .word 0xf2a00040
 bl _p_211
-bl _p_400
+bl _p_399
 .word 0xaa0003e1
 .word 0xd2803240
 .word 0xf2a04000
@@ -18880,7 +18882,7 @@ bl _p_61
 .word 0xd2874b00
 .word 0xf2a00040
 bl _p_211
-bl _p_400
+bl _p_399
 .word 0xaa0003e1
 .word 0xd2803240
 .word 0xf2a04000
@@ -18893,7 +18895,7 @@ bl _p_211
 .word 0xd2876e60
 .word 0xf2a00040
 bl _p_211
-bl _p_400
+bl _p_399
 .word 0xaa0003e2
 .word 0xf9402ba1
 .word 0xd2800b60
@@ -18972,7 +18974,7 @@ ldr x0, [x16, #3680]
 .word 0xd65f03c0
 .word 0xaa1803e0
 bl _p_61
-bl _p_389
+bl _p_388
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffca
@@ -19047,7 +19049,7 @@ ldr x0, [x16, #3680]
 .word 0xd65f03c0
 .word 0xaa1803e0
 bl _p_61
-bl _p_389
+bl _p_388
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffce
@@ -19131,7 +19133,7 @@ ldr x0, [x16, #3680]
 .word 0xd65f03c0
 .word 0xaa1703e0
 bl _p_61
-bl _p_389
+bl _p_388
 .word 0xaa0003f7
 .word 0xb5ffff80
 .word 0x17ffffc6
@@ -19210,7 +19212,7 @@ ldr x0, [x16, #3680]
 .word 0xd65f03c0
 .word 0xaa1803e0
 bl _p_61
-bl _p_389
+bl _p_388
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffca
@@ -19287,7 +19289,7 @@ ldr x0, [x16, #3680]
 .word 0xd65f03c0
 .word 0xaa1803e0
 bl _p_61
-bl _p_389
+bl _p_388
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffcc
@@ -19358,7 +19360,7 @@ ldr x0, [x16, #3680]
 .word 0xd65f03c0
 .word 0xaa1903e0
 bl _p_61
-bl _p_389
+bl _p_388
 .word 0xaa0003f9
 .word 0xb5ffff80
 .word 0x17ffffd0
@@ -19435,7 +19437,7 @@ ldr x0, [x16, #3680]
 .word 0xd65f03c0
 .word 0xaa1803e0
 bl _p_61
-bl _p_389
+bl _p_388
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffcc
@@ -19510,7 +19512,7 @@ ldr x0, [x16, #3680]
 .word 0xd65f03c0
 .word 0xaa1803e0
 bl _p_61
-bl _p_389
+bl _p_388
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffce
@@ -19581,7 +19583,7 @@ ldr x0, [x16, #3680]
 .word 0xd65f03c0
 .word 0xaa1903e0
 bl _p_61
-bl _p_389
+bl _p_388
 .word 0xaa0003f9
 .word 0xb5ffff80
 .word 0x17ffffd0
@@ -19658,7 +19660,7 @@ ldr x0, [x16, #3680]
 .word 0xd65f03c0
 .word 0xaa1803e0
 bl _p_61
-bl _p_389
+bl _p_388
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffcc
@@ -19733,7 +19735,7 @@ ldr x0, [x16, #3680]
 .word 0xd65f03c0
 .word 0xaa1803e0
 bl _p_61
-bl _p_389
+bl _p_388
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffce
@@ -19810,7 +19812,7 @@ ldr x0, [x16, #3680]
 .word 0xd65f03c0
 .word 0xaa1803e0
 bl _p_61
-bl _p_389
+bl _p_388
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffcc
@@ -19885,7 +19887,7 @@ ldr x0, [x16, #3680]
 .word 0xd65f03c0
 .word 0xaa1803e0
 bl _p_61
-bl _p_389
+bl _p_388
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffce
@@ -19966,7 +19968,7 @@ ldr x0, [x16, #3680]
 .word 0xd65f03c0
 .word 0xaa1703e0
 bl _p_61
-bl _p_389
+bl _p_388
 .word 0xaa0003f7
 .word 0xb5ffff80
 .word 0x17ffffc9
@@ -20043,7 +20045,7 @@ ldr x0, [x16, #3680]
 .word 0xd65f03c0
 .word 0xaa1803e0
 bl _p_61
-bl _p_389
+bl _p_388
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffcc
@@ -20120,7 +20122,7 @@ ldr x0, [x16, #3680]
 .word 0xd65f03c0
 .word 0xaa1803e0
 bl _p_61
-bl _p_389
+bl _p_388
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffcc
@@ -20197,7 +20199,7 @@ ldr x0, [x16, #3680]
 .word 0xd65f03c0
 .word 0xaa1803e0
 bl _p_61
-bl _p_389
+bl _p_388
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffcc
@@ -20274,7 +20276,7 @@ ldr x0, [x16, #3680]
 .word 0xd65f03c0
 .word 0xaa1803e0
 bl _p_61
-bl _p_389
+bl _p_388
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffcc
@@ -20349,7 +20351,7 @@ ldr x0, [x16, #3680]
 .word 0xd65f03c0
 .word 0xaa1803e0
 bl _p_61
-bl _p_389
+bl _p_388
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffce
@@ -20420,7 +20422,7 @@ ldr x0, [x16, #3680]
 .word 0xd65f03c0
 .word 0xaa1903e0
 bl _p_61
-bl _p_389
+bl _p_388
 .word 0xaa0003f9
 .word 0xb5ffff80
 .word 0x17ffffd0
@@ -20497,7 +20499,7 @@ ldr x0, [x16, #3680]
 .word 0xd65f03c0
 .word 0xaa1803e0
 bl _p_61
-bl _p_389
+bl _p_388
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffcc
@@ -20574,7 +20576,7 @@ ldr x0, [x16, #3680]
 .word 0xd65f03c0
 .word 0xaa1803e0
 bl _p_61
-bl _p_389
+bl _p_388
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffcc
@@ -20651,7 +20653,7 @@ ldr x0, [x16, #3680]
 .word 0xd65f03c0
 .word 0xaa1803e0
 bl _p_61
-bl _p_389
+bl _p_388
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffcc
@@ -20726,7 +20728,7 @@ ldr x0, [x16, #3680]
 .word 0xd65f03c0
 .word 0xaa1803e0
 bl _p_61
-bl _p_389
+bl _p_388
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffce
@@ -20805,7 +20807,7 @@ ldr x0, [x16, #3680]
 .word 0xd65f03c0
 .word 0xaa1803e0
 bl _p_61
-bl _p_389
+bl _p_388
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffca
@@ -20880,7 +20882,7 @@ ldr x0, [x16, #3680]
 .word 0xd65f03c0
 .word 0xaa1803e0
 bl _p_61
-bl _p_389
+bl _p_388
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffce
@@ -20964,7 +20966,7 @@ ldr x0, [x16, #3680]
 .word 0xd65f03c0
 .word 0xaa1703e0
 bl _p_61
-bl _p_389
+bl _p_388
 .word 0xaa0003f7
 .word 0xb5ffff80
 .word 0x17ffffc6
@@ -21043,7 +21045,7 @@ ldr x0, [x16, #3680]
 .word 0xd65f03c0
 .word 0xaa1903e0
 bl _p_61
-bl _p_389
+bl _p_388
 .word 0xaa0003f9
 .word 0xb5ffff80
 .word 0x17ffffca
@@ -21114,7 +21116,7 @@ ldr x0, [x16, #3680]
 .word 0xd65f03c0
 .word 0xaa1903e0
 bl _p_61
-bl _p_389
+bl _p_388
 .word 0xaa0003f9
 .word 0xb5ffff80
 .word 0x17ffffd0
@@ -21191,7 +21193,7 @@ ldr x0, [x16, #3680]
 .word 0xd65f03c0
 .word 0xaa1803e0
 bl _p_61
-bl _p_389
+bl _p_388
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffcc
@@ -21268,7 +21270,7 @@ ldr x0, [x16, #3680]
 .word 0xd65f03c0
 .word 0xaa1803e0
 bl _p_61
-bl _p_389
+bl _p_388
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffcc
@@ -21345,7 +21347,7 @@ ldr x0, [x16, #3680]
 .word 0xd65f03c0
 .word 0xaa1803e0
 bl _p_61
-bl _p_389
+bl _p_388
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffcc
@@ -21420,7 +21422,7 @@ ldr x0, [x16, #3680]
 .word 0xd65f03c0
 .word 0xaa1803e0
 bl _p_61
-bl _p_389
+bl _p_388
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffce
@@ -21439,7 +21441,7 @@ System_Threading_Tasks_Task_1_TResult_BOOL__ctor:
 .word 0x910003fd
 .word 0xf9000ba0
 .word 0xf9400ba0
-bl _p_401
+bl _p_400
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
@@ -21459,7 +21461,7 @@ System_Threading_Tasks_Task_1_TResult_BOOL__ctor_object_System_Threading_Tasks_T
 .word 0xf9400fa1
 .word 0xb98023a2
 .word 0xd2800023
-bl _p_402
+bl _p_401
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
@@ -21479,7 +21481,7 @@ System_Threading_Tasks_Task_1_TResult_BOOL__ctor_TResult_BOOL:
 .word 0xd2800001
 .word 0xd2800002
 .word 0xf94013a3
-bl _p_403
+bl _p_402
 .loc 3 106 0
 .word 0xf9400ba0
 .word 0x394063a1
@@ -21505,7 +21507,7 @@ System_Threading_Tasks_Task_1_TResult_BOOL__ctor_bool_TResult_BOOL_System_Thread
 .word 0x394063a1
 .word 0xb9802ba2
 .word 0xf9401ba3
-bl _p_403
+bl _p_402
 .loc 3 112 0
 .word 0x394063a0
 .word 0x35000080
@@ -21534,7 +21536,7 @@ System_Threading_Tasks_Task_1_TResult_BOOL__ctor_System_Func_1_TResult_BOOL_Syst
 .word 0xf90023a0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_404
+bl _p_403
 .word 0xaa0003e7
 .word 0xf94023a0
 .word 0xf9400fa1
@@ -21550,7 +21552,7 @@ bl _p_404
 .loc 3 165 0
 .word 0xf9400ba0
 .word 0x9100c3a1
-bl _p_405
+bl _p_404
 .word 0x910003bf
 .word 0xa8c57bfd
 .word 0xd65f03c0
@@ -21572,7 +21574,7 @@ System_Threading_Tasks_Task_1_TResult_BOOL__ctor_System_Func_2_object_TResult_BO
 .word 0xf9400ba0
 .word 0xf90033a0
 .word 0xb9803ba0
-bl _p_406
+bl _p_405
 .word 0xaa0003e1
 .word 0xf94033a0
 .word 0xf9002fa1
@@ -21580,7 +21582,7 @@ bl _p_406
 .word 0xf9002ba0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_407
+bl _p_406
 .word 0xaa0003e9
 .word 0xf9402ba0
 .word 0xf9402fa3
@@ -21597,7 +21599,7 @@ bl _p_407
 .loc 3 326 0
 .word 0xf9400ba0
 .word 0x910103a1
-bl _p_405
+bl _p_404
 .word 0x910003bf
 .word 0xa8c77bfd
 .word 0xd65f03c0
@@ -21623,7 +21625,7 @@ System_Threading_Tasks_Task_1_TResult_BOOL__ctor_System_Func_1_TResult_BOOL_Syst
 .word 0xf90033a0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_408
+bl _p_407
 .word 0xaa0003e7
 .word 0xf94033a0
 .word 0xf9400fa1
@@ -21636,7 +21638,7 @@ bl _p_408
 .loc 3 336 0
 .word 0xf9400ba0
 .word 0xf9402ba1
-bl _p_405
+bl _p_404
 .word 0x910003bf
 .word 0xa8c77bfd
 .word 0xd65f03c0
@@ -21664,7 +21666,7 @@ System_Threading_Tasks_Task_1_TResult_BOOL__ctor_System_Func_1_TResult_BOOL_Syst
 .word 0xb9803ba5
 .word 0xb98043a6
 .word 0xf94027a7
-bl _p_409
+bl _p_408
 .loc 3 354 0
 .word 0xb98043a0
 .word 0xd281001e
@@ -21681,7 +21683,7 @@ bl _p_211
 .word 0xd28990c0
 .word 0xf2a00020
 bl _p_211
-bl _p_410
+bl _p_409
 .word 0xaa0003e2
 .word 0xf9402ba1
 .word 0xd2800b60
@@ -21712,7 +21714,7 @@ System_Threading_Tasks_Task_1_TResult_BOOL__ctor_System_Func_2_object_TResult_BO
 .word 0xf90033a0
 .word 0xf9400fa0
 .word 0xf9400000
-bl _p_411
+bl _p_410
 .word 0xaa0003e9
 .word 0xf94033a0
 .word 0xf94013a1
@@ -21726,7 +21728,7 @@ bl _p_411
 .loc 3 365 0
 .word 0xf9400fa0
 .word 0xf9400381
-bl _p_405
+bl _p_404
 .word 0xf9400bbc
 .word 0x910003bf
 .word 0xa8c77bfd
@@ -21756,7 +21758,7 @@ System_Threading_Tasks_Task_1_TResult_BOOL__ctor_System_Delegate_object_System_T
 .word 0xb98043a5
 .word 0xb9804ba6
 .word 0xf9402ba7
-bl _p_409
+bl _p_408
 .loc 3 384 0
 .word 0xb9804ba0
 .word 0xd281001e
@@ -21773,7 +21775,7 @@ bl _p_211
 .word 0xd28990c0
 .word 0xf2a00020
 bl _p_211
-bl _p_410
+bl _p_409
 .word 0xaa0003e2
 .word 0xf94033a1
 .word 0xd2800b60
@@ -21814,11 +21816,11 @@ System_Threading_Tasks_Task_1_TResult_BOOL_StartNew_System_Threading_Tasks_Task_
 .word 0x2a1e0000
 .word 0xf9003ba0
 .word 0xf9402ba0
-bl _p_412
+bl _p_411
 bl _p_56
 .word 0xf90037a0
 .word 0xf9402ba0
-bl _p_413
+bl _p_412
 .word 0xaa0003e9
 .word 0xf94037a0
 .word 0xf9403ba5
@@ -21837,7 +21839,7 @@ bl _p_413
 .word 0xaa0203e0
 .word 0xd2800001
 .word 0xf940005e
-bl _p_414
+bl _p_413
 .loc 3 413 0
 .word 0xaa1a03e0
 .word 0xf9400bba
@@ -21861,7 +21863,7 @@ bl _p_211
 .word 0xd28990c0
 .word 0xf2a00020
 bl _p_211
-bl _p_410
+bl _p_409
 .word 0xaa0003e2
 .word 0xf94033a1
 .word 0xd2800b60
@@ -21916,11 +21918,11 @@ System_Threading_Tasks_Task_1_TResult_BOOL_StartNew_System_Threading_Tasks_Task_
 .word 0x2a1e0000
 .word 0xf9003ba0
 .word 0xf9402fa0
-bl _p_415
+bl _p_414
 bl _p_56
 .word 0xf90037a0
 .word 0xf9402fa0
-bl _p_416
+bl _p_415
 .word 0xaa0003e9
 .word 0xf94037a0
 .word 0xf9403ba6
@@ -21940,7 +21942,7 @@ bl _p_416
 .word 0xaa0203e0
 .word 0xd2800001
 .word 0xf940005e
-bl _p_414
+bl _p_413
 .loc 3 437 0
 .word 0xaa1a03e0
 .word 0xf9400bba
@@ -21964,7 +21966,7 @@ bl _p_211
 .word 0xd28990c0
 .word 0xf2a00020
 bl _p_211
-bl _p_410
+bl _p_409
 .word 0xaa0003e2
 .word 0xf94033a1
 .word 0xd2800b60
@@ -21993,7 +21995,7 @@ System_Threading_Tasks_Task_1_TResult_BOOL_TrySetResult_TResult_BOOL:
 .word 0xf9000fa0
 .word 0xaa0103fa
 .word 0xf9400fa0
-bl _p_417
+bl _p_416
 .word 0x53001c00
 .word 0x34000060
 .word 0xd2800000
@@ -22004,7 +22006,7 @@ bl _p_417
 .word 0xf2a08001
 .word 0xd2800002
 .word 0xf2a0ac02
-bl _p_418
+bl _p_417
 .word 0x53001c00
 .word 0x340003a0
 .loc 3 474 0
@@ -22034,10 +22036,10 @@ bl _p_418
 .word 0xb4000080
 .word 0xaa1a03e0
 .word 0xf940035e
-bl _p_419
+bl _p_418
 .loc 3 488 0
 .word 0xf9400fa0
-bl _p_420
+bl _p_419
 .loc 3 490 0
 .word 0xd2800020
 .word 0x14000002
@@ -22071,7 +22073,7 @@ System_Threading_Tasks_Task_1_TResult_BOOL_DangerousSetResult_TResult_BOOL:
 .word 0xf9001ba0
 .word 0xf9400fa0
 .word 0xf9400000
-bl _p_421
+bl _p_420
 .word 0xaa0003e2
 .word 0xf9401ba0
 .word 0x394083a1
@@ -22109,7 +22111,7 @@ System_Threading_Tasks_Task_1_TResult_BOOL_get_Result:
 .word 0xf9000bba
 .word 0xf9000fa0
 .word 0xf9400fa0
-bl _p_422
+bl _p_421
 .word 0x53001c00
 .word 0x340001a0
 .word 0xf9400fa0
@@ -22117,7 +22119,7 @@ bl _p_422
 .word 0xf90013a0
 .word 0xf9400fa0
 .word 0xf9400000
-bl _p_423
+bl _p_422
 .word 0xaa0003e2
 .word 0xf94013a0
 .word 0xd2800021
@@ -22159,7 +22161,7 @@ System_Threading_Tasks_Task_1_TResult_BOOL_GetResultCore_bool:
 .word 0xf9000fa1
 .word 0xf90017bf
 .word 0xf9400ba0
-bl _p_417
+bl _p_416
 .word 0x53001c00
 .word 0x35000120
 .word 0xf9400ba0
@@ -22169,20 +22171,20 @@ bl _p_417
 .word 0x92800001
 .word 0xf2bfffe1
 .word 0xf94013a2
-bl _p_424
+bl _p_423
 .loc 3 559 0
 .word 0x394063a0
 .word 0x34000060
 .word 0xf9400ba0
-bl _p_425
+bl _p_424
 .loc 3 562 0
 .word 0xf9400ba0
-bl _p_426
+bl _p_425
 .word 0x53001c00
 .word 0x35000080
 .word 0xf9400ba0
 .word 0xd2800021
-bl _p_427
+bl _p_426
 .loc 3 567 0
 .word 0xf9400ba0
 .word 0x39412000
@@ -22205,24 +22207,24 @@ System_Threading_Tasks_Task_1_TResult_BOOL_TrySetException_object:
 .loc 3 600 0
 .word 0xf9400fa0
 .word 0xd2800021
-bl _p_428
+bl _p_427
 .loc 3 601 0
 .word 0xf9400fa0
 .word 0xd2800001
 .word 0xf2a08001
 .word 0xd2800002
 .word 0xf2a0ac02
-bl _p_418
+bl _p_417
 .word 0x53001c00
 .word 0x34000100
 .loc 3 604 0
 .word 0xf9400fa0
 .word 0xf94013a1
-bl _p_429
+bl _p_428
 .loc 3 605 0
 .word 0xf9400fa0
 .word 0xd2800001
-bl _p_430
+bl _p_429
 .loc 3 606 0
 .word 0xd2800039
 .loc 3 609 0
@@ -22247,7 +22249,7 @@ System_Threading_Tasks_Task_1_TResult_BOOL_TrySetCanceled_System_Threading_Cance
 .word 0xf9001ba0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_431
+bl _p_430
 .word 0xaa0003e3
 .word 0xf9401ba0
 .word 0xf9400fa1
@@ -22277,17 +22279,17 @@ System_Threading_Tasks_Task_1_TResult_BOOL_TrySetCanceled_System_Threading_Cance
 .word 0xf2a08001
 .word 0xd2800002
 .word 0xf2a0ac02
-bl _p_418
+bl _p_417
 .word 0x53001c00
 .word 0x34000100
 .loc 3 652 0
 .word 0xf9400fa0
 .word 0xf94013a1
 .word 0xf9401ba2
-bl _p_432
+bl _p_431
 .loc 3 653 0
 .word 0xf9400fa0
-bl _p_433
+bl _p_432
 .loc 3 654 0
 .word 0xd2800039
 .loc 3 657 0
@@ -22307,12 +22309,12 @@ System_Threading_Tasks_Task_1_TResult_BOOL_get_Factory:
 .word 0x910003fd
 .word 0xf9000baf
 .word 0xf9400ba0
-bl _p_434
+bl _p_433
 .word 0x3980ac10
 .word 0xb5000050
 bl _p_39
 .word 0xf9400ba0
-bl _p_435
+bl _p_434
 .word 0xf9400000
 .word 0x910003bf
 .word 0xa8c27bfd
@@ -22333,11 +22335,11 @@ System_Threading_Tasks_Task_1_TResult_BOOL_InnerInvoke:
 .word 0xf90013a0
 .word 0xf9400fa0
 .word 0xf9400000
-bl _p_436
+bl _p_435
 .word 0xaa0003e2
 .word 0xf94013a0
 .word 0xf9400441
-bl _p_437
+bl _p_436
 .word 0xaa0003fa
 .loc 3 678 0
 .word 0xaa1a03e0
@@ -22359,11 +22361,11 @@ bl _p_437
 .word 0xf90013a0
 .word 0xf9400fa0
 .word 0xf9400000
-bl _p_438
+bl _p_437
 .word 0xaa0003e2
 .word 0xf94013a0
 .word 0xf9400441
-bl _p_437
+bl _p_436
 .word 0xaa0003fa
 .loc 3 684 0
 .word 0xaa1a03e0
@@ -22401,11 +22403,11 @@ System_Threading_Tasks_Task_1_TResult_BOOL_GetAwaiter:
 .word 0xf9001ba0
 .word 0xf94013a0
 .word 0xf9400000
-bl _p_439
+bl _p_438
 .word 0xf90023a0
 .word 0xf94013a0
 .word 0xf9400000
-bl _p_440
+bl _p_439
 .word 0xaa0003e2
 .word 0xf9401ba0
 .word 0xf9401fa1
@@ -22437,11 +22439,11 @@ System_Threading_Tasks_Task_1_TResult_BOOL_ConfigureAwait_bool:
 .word 0xf90023a0
 .word 0xf94013a0
 .word 0xf9400000
-bl _p_441
+bl _p_440
 .word 0xf9002ba0
 .word 0xf94013a0
 .word 0xf9400000
-bl _p_442
+bl _p_441
 .word 0xaa0003e3
 .word 0xf94023a0
 .word 0xf94027a1
@@ -22474,7 +22476,7 @@ System_Threading_Tasks_Task_1_TResult_BOOL_ContinueWith_System_Action_1_System_T
 .loc 3 738 0
 .word 0xf9400ba0
 .word 0xf90027a0
-bl _p_443
+bl _p_442
 .word 0xaa0003e1
 .word 0xf94027a0
 .word 0xf9001fa1
@@ -22485,7 +22487,7 @@ bl _p_443
 .word 0xf9001ba0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_444
+bl _p_443
 .word 0xaa0003e6
 .word 0xf9401ba0
 .word 0xf9401fa2
@@ -22521,7 +22523,7 @@ System_Threading_Tasks_Task_1_TResult_BOOL_ContinueWith_System_Action_1_System_T
 .word 0xf90023a0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_445
+bl _p_444
 .word 0xaa0003e6
 .word 0xf94023a0
 .word 0xf94027a5
@@ -22558,7 +22560,7 @@ System_Threading_Tasks_Task_1_TResult_BOOL_ContinueWith_System_Action_1_System_T
 .word 0xf9002ba0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_446
+bl _p_445
 .word 0xaa0003e6
 .word 0xf9402ba0
 .word 0xf9402fa5
@@ -22597,7 +22599,7 @@ System_Threading_Tasks_Task_1_TResult_BOOL_ContinueWith_System_Action_1_System_T
 .word 0x910123a1
 .word 0x910143a2
 .word 0xb98043a0
-bl _p_447
+bl _p_446
 .loc 3 901 0
 .word 0xf9400fa0
 .word 0xf9003ba0
@@ -22607,12 +22609,12 @@ bl _p_447
 .word 0xf90043a0
 .word 0xf9400fa0
 .word 0xf9400000
-bl _p_448
+bl _p_447
 bl _p_56
 .word 0xf90037a0
 .word 0xf9400fa0
 .word 0xf9400000
-bl _p_449
+bl _p_448
 .word 0xaa0003e7
 .word 0xf94037a0
 .word 0xf9403ba1
@@ -22631,7 +22633,7 @@ bl _p_449
 .word 0xf94017a2
 .word 0xf9401ba3
 .word 0xb98043a4
-bl _p_450
+bl _p_449
 .loc 3 911 0
 .word 0xaa1a03e0
 .word 0xf9400bba
@@ -22667,33 +22669,33 @@ System_Threading_Tasks_Task_1_TResult_BOOL__cctor:
 .word 0x910003fd
 .word 0xf9000baf
 .word 0xf9400ba0
-bl _p_451
+bl _p_450
 bl _p_56
 .word 0xf9001fa0
 .word 0xf9400ba0
-bl _p_452
+bl _p_451
 .word 0xaa0003e1
 .word 0xf9401fa0
 .word 0xf9001ba0
 .word 0xd63f0020
 .word 0xf9400ba0
-bl _p_453
+bl _p_452
 .word 0xf9401ba1
 .word 0xf9000001
 .loc 3 87 0
 .word 0xf9400ba0
+bl _p_453
 bl _p_454
-bl _p_455
 .word 0xf90017a0
 .word 0xf9400ba0
-bl _p_456
+bl _p_455
 bl _p_56
 .word 0xf94017a2
 .word 0xf90013a0
 .word 0xd2800001
-bl _p_457
+bl _p_456
 .word 0xf9400ba0
-bl _p_453
+bl _p_452
 .word 0xf94013a1
 .word 0x91002000
 .word 0xf9000001
@@ -22721,10 +22723,10 @@ ldr x0, [x16, #3688]
 bl _p_39
 .word 0xaa1a03e0
 .word 0xf940035e
-bl _p_458
+bl _p_457
 .word 0xaa0003fa
 .word 0xf9400fa0
-bl _p_459
+bl _p_458
 .word 0xf90013a0
 .word 0xb400013a
 .word 0xf9400340
@@ -22760,7 +22762,7 @@ System_Threading_Tasks_TaskFactory_1_TResult_BOOL__ctor:
 .word 0xf90013a0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_460
+bl _p_459
 .word 0xaa0003e5
 .word 0xf94013a0
 .word 0xf9400fa1
@@ -22786,10 +22788,10 @@ System_Threading_Tasks_TaskFactory_1_TResult_BOOL__ctor_System_Threading_Cancell
 .word 0xf9001ba3
 .word 0xf9001fa4
 .word 0xb98033a0
-bl _p_461
+bl _p_460
 .loc 4 211 0
 .word 0xb9802ba0
-bl _p_462
+bl _p_461
 .loc 4 213 0
 .word 0xf9400ba0
 .word 0x91004001
@@ -22836,23 +22838,23 @@ System_Threading_Tasks_TaskFactory_1_TResult_BOOL_StartNew_System_Func_1_TResult
 .word 0xb90043be
 .loc 4 389 0
 .word 0xb98033a0
-bl _p_406
+bl _p_405
 .word 0xf9002ba0
 .word 0x910103a0
 .word 0xf9002fa0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_463
+bl _p_462
 .word 0x3980ac10
 .word 0xb5000050
 bl _p_39
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_463
+bl _p_462
 .word 0xf90033a0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_464
+bl _p_463
 .word 0xaa0003e7
 .word 0xf9402ba0
 .word 0xf9402fa6
@@ -22886,23 +22888,23 @@ System_Threading_Tasks_TaskFactory_1_TResult_BOOL_StartNew_System_Func_2_object_
 .word 0xb9004bbe
 .loc 4 524 0
 .word 0xb9803ba0
-bl _p_406
+bl _p_405
 .word 0xf9002ba0
 .word 0x910123a0
 .word 0xf9002fa0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_465
+bl _p_464
 .word 0x3980ac10
 .word 0xb5000050
 bl _p_39
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_465
+bl _p_464
 .word 0xf90033a0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_466
+bl _p_465
 .word 0xaa0003e9
 .word 0xf9402ba0
 .word 0xf9402fa7
@@ -22969,7 +22971,7 @@ System_Threading_Tasks_TaskFactory_1_TResult_BOOL_FromAsyncCoreLogic_System_IAsy
 .word 0xf94033a0
 .word 0xf9002ba0
 .loc 4 558 0
-bl _p_324
+bl _p_323
 .word 0xf90067a0
 .word 0xf94067a0
 .word 0xb4000060
@@ -22982,7 +22984,7 @@ bl _p_61
 .word 0xf90037a0
 .word 0xf94037a0
 .word 0xf90027a0
-bl _p_324
+bl _p_323
 .word 0xf9006ba0
 .word 0xf9406ba0
 .word 0xb4000060
@@ -23002,13 +23004,13 @@ bl _p_61
 .word 0xf90047a0
 .word 0xaa0103e0
 .word 0xf940003e
-bl _p_467
+bl _p_466
 .word 0xf94047be
 .word 0xf90003c0
 .word 0xf9402ba0
 .word 0xf90077a0
 .word 0xf94023a0
-bl _p_468
+bl _p_467
 .word 0x3980ac10
 .word 0xb5000050
 bl _p_39
@@ -23016,7 +23018,7 @@ bl _p_39
 .word 0xf940001e
 .word 0xf90073a0
 .word 0xf94023a0
-bl _p_469
+bl _p_468
 .word 0xaa0003e3
 .word 0xf94073a0
 .word 0xf94077a2
@@ -23032,7 +23034,7 @@ bl _p_469
 .word 0xf94027a0
 .word 0xf90077a0
 .word 0xf94023a0
-bl _p_468
+bl _p_467
 .word 0x3980ac10
 .word 0xb5000050
 bl _p_39
@@ -23040,7 +23042,7 @@ bl _p_39
 .word 0xf940001e
 .word 0xf90073a0
 .word 0xf94023a0
-bl _p_470
+bl _p_469
 .word 0xaa0003e2
 .word 0xf94073a0
 .word 0xf94077a1
@@ -23078,22 +23080,22 @@ ldr x1, [x16, #3696]
 .word 0xaa0203e0
 .word 0xd2800001
 .word 0xf940005e
-bl _p_471
+bl _p_470
 .word 0x1400003f
 .loc 4 575 0
-bl _p_472
+bl _p_471
 .word 0x53001c00
 .word 0x34000140
 .loc 4 576 0
 .word 0xf94017a1
 .word 0xaa0103e0
 .word 0xf940003e
-bl _p_473
+bl _p_472
 .word 0x93407c00
 .word 0xaa0003e1
 .word 0xd2800000
 .word 0xd2800022
-bl _p_474
+bl _p_473
 .loc 4 578 0
 
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+0
@@ -23105,9 +23107,9 @@ ldr x0, [x16, #3704]
 .word 0xf94017a1
 .word 0xaa0103e0
 .word 0xf940003e
-bl _p_473
+bl _p_472
 .word 0x93407c00
-bl _p_475
+bl _p_474
 .loc 4 582 0
 .word 0x3940c3a0
 .word 0x34000280
@@ -23117,7 +23119,7 @@ bl _p_475
 .word 0x394163a0
 .word 0xf90077a0
 .word 0xf94023a0
-bl _p_468
+bl _p_467
 .word 0x3980ac10
 .word 0xb5000050
 bl _p_39
@@ -23125,7 +23127,7 @@ bl _p_39
 .word 0xf940001e
 .word 0xf90073a0
 .word 0xf94023a0
-bl _p_476
+bl _p_475
 .word 0xaa0003e2
 .word 0xf94073a0
 .word 0xf94077a1
@@ -23137,7 +23139,7 @@ bl _p_476
 .word 0x394163a0
 .word 0xf90077a0
 .word 0xf94023a0
-bl _p_468
+bl _p_467
 .word 0x3980ac10
 .word 0xb5000050
 bl _p_39
@@ -23145,7 +23147,7 @@ bl _p_39
 .word 0xf940001e
 .word 0xf90073a0
 .word 0xf94023a0
-bl _p_477
+bl _p_476
 .word 0xaa0003e2
 .word 0xf94073a0
 .word 0xf94077a1
@@ -23174,11 +23176,11 @@ System_Threading_Tasks_TaskFactory_1_TResult_BOOL_FromAsync_System_Func_3_System
 .word 0xf9001ba0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_478
+bl _p_477
 .word 0xf9001fa0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_479
+bl _p_478
 .word 0xaa0003e5
 .word 0xf9401ba4
 .word 0xf9401faf
@@ -23210,11 +23212,11 @@ System_Threading_Tasks_TaskFactory_1_TResult_BOOL_FromAsyncImpl_System_Func_3_Sy
 .word 0xf90023bf
 .word 0x390123bf
 .word 0xf9401fa0
-bl _p_480
+bl _p_479
 bl _p_56
 .word 0xf9003fa0
 .word 0xf9401fa0
-bl _p_481
+bl _p_480
 .word 0xaa0003e1
 .word 0xf9403fa0
 .word 0xf9003ba0
@@ -23244,21 +23246,21 @@ bl _p_5
 .loc 4 824 0
 .word 0xaa1a03e0
 .word 0xd2800021
-bl _p_482
+bl _p_481
 .loc 4 826 0
 .word 0xf94023a0
 .word 0xf9003fa0
 .word 0xf9401fa0
-bl _p_483
+bl _p_482
 .word 0x3980ac10
 .word 0xb5000050
 bl _p_39
 .word 0xf9401fa0
-bl _p_483
+bl _p_482
 bl _p_56
 .word 0xf90047a0
 .word 0xf9401fa0
-bl _p_484
+bl _p_483
 .word 0xaa0003e3
 .word 0xf94047a0
 .word 0xf90043a0
@@ -23273,7 +23275,7 @@ bl _p_484
 bl _p_5
 .word 0xf9403ba0
 .loc 4 828 0
-bl _p_472
+bl _p_471
 .word 0x53001c00
 .word 0x34000380
 .loc 4 829 0
@@ -23281,7 +23283,7 @@ bl _p_472
 .word 0xf9401001
 .word 0xaa0103e0
 .word 0xf940003e
-bl _p_473
+bl _p_472
 .word 0x93407c00
 .word 0xf9003ba0
 
@@ -23291,7 +23293,7 @@ ldr x0, [x16, #3712]
 .word 0xf9003fa0
 .word 0xaa1603e0
 .word 0xf94002de
-bl _p_485
+bl _p_484
 .word 0xaa0003e1
 .word 0xaa0103e0
 .word 0xf9400021
@@ -23304,7 +23306,7 @@ bl _p_137
 .word 0xf9403ba1
 .word 0xd2800000
 .word 0xd2800003
-bl _p_486
+bl _p_485
 .loc 4 831 0
 
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+0
@@ -23315,16 +23317,16 @@ ldr x0, [x16, #3704]
 .loc 4 833 0
 .word 0xf94023a0
 .word 0xf9401000
-bl _p_487
+bl _p_486
 .loc 4 842 0
 .word 0xd2800020
 .word 0x34000da0
 .word 0xf9401fa0
-bl _p_488
+bl _p_487
 bl _p_56
 .word 0xf90057a0
 .word 0xf9401fa0
-bl _p_489
+bl _p_488
 .word 0xaa0003e1
 .word 0xf94057a0
 .word 0xf90053a0
@@ -23346,7 +23348,7 @@ add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x0, [x16, #3720]
 bl _p_2
 .word 0xf9004ba0
-bl _p_490
+bl _p_489
 .word 0xf94047a0
 .word 0xf9404ba1
 .word 0xf90043a1
@@ -23368,13 +23370,13 @@ bl _p_2
 .word 0x91008000
 bl _p_5
 .word 0xf9401fa0
-bl _p_491
+bl _p_490
 .word 0xaa0003e1
 .word 0xf9403fa0
 .word 0xf9001401
 .word 0xf9003ba0
 .word 0xf9401fa0
-bl _p_492
+bl _p_491
 .word 0xf9403ba1
 .word 0xf9002020
 
@@ -23408,7 +23410,7 @@ ldr x15, [x16, #3744]
 .word 0xf9400b41
 .word 0xaa0103e0
 .word 0xf940003e
-bl _p_493
+bl _p_492
 .word 0x53001c00
 .word 0x340002e0
 .loc 4 855 0
@@ -23422,10 +23424,10 @@ bl _p_493
 .word 0xf9401000
 .word 0xf90043a0
 .word 0xf9401fa0
-bl _p_494
+bl _p_493
 .word 0xf90047a0
 .word 0xf9401fa0
-bl _p_495
+bl _p_494
 .word 0xaa0003e5
 .word 0xf9403ba1
 .word 0xf9403fa2
@@ -23454,13 +23456,13 @@ bl _p_2
 bl _p_5
 .word 0xf94043a0
 .word 0xf9401fa0
-bl _p_496
+bl _p_495
 .word 0xaa0003e1
 .word 0xf9403fa0
 .word 0xf9001401
 .word 0xf9003ba0
 .word 0xf9401fa0
-bl _p_497
+bl _p_496
 .word 0xf9403ba1
 .word 0xf9002020
 
@@ -23481,7 +23483,7 @@ ldr x0, [x16, #3736]
 .word 0x14000031
 .word 0xf9002ba0
 .loc 4 869 0
-bl _p_472
+bl _p_471
 .word 0x53001c00
 .word 0x34000160
 .loc 4 870 0
@@ -23489,12 +23491,12 @@ bl _p_472
 .word 0xf9401001
 .word 0xaa0103e0
 .word 0xf940003e
-bl _p_473
+bl _p_472
 .word 0x93407c00
 .word 0xaa0003e1
 .word 0xd2800000
 .word 0xd2800062
-bl _p_474
+bl _p_473
 .loc 4 872 0
 
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+0
@@ -23507,9 +23509,9 @@ ldr x0, [x16, #3704]
 .word 0xf9401001
 .word 0xaa0103e0
 .word 0xf940003e
-bl _p_473
+bl _p_472
 .word 0x93407c00
-bl _p_475
+bl _p_474
 .loc 4 878 0
 .word 0xf94023a0
 .word 0xf9401000
@@ -23518,7 +23520,7 @@ bl _p_475
 .word 0x394123a0
 .word 0xf9003fa0
 .word 0xf9401fa0
-bl _p_483
+bl _p_482
 .word 0x3980ac10
 .word 0xb5000050
 bl _p_39
@@ -23526,14 +23528,14 @@ bl _p_39
 .word 0xf940001e
 .word 0xf9003ba0
 .word 0xf9401fa0
-bl _p_498
+bl _p_497
 .word 0xaa0003e2
 .word 0xf9403ba0
 .word 0xf9403fa1
 .word 0xd63f0040
 .loc 4 879 0
 .word 0xf9402ba0
-bl _p_499
+bl _p_498
 .loc 4 882 0
 .word 0xf94023a0
 .word 0xf9401000
@@ -23633,7 +23635,7 @@ ldr x0, [x16, #3680]
 .word 0xd65f03c0
 .word 0xaa1803e0
 bl _p_61
-bl _p_389
+bl _p_388
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffcc
@@ -23651,7 +23653,7 @@ System_Threading_Tasks_Task_1_TResult_INT__ctor:
 .word 0x910003fd
 .word 0xf9000ba0
 .word 0xf9400ba0
-bl _p_401
+bl _p_400
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
@@ -23671,7 +23673,7 @@ System_Threading_Tasks_Task_1_TResult_INT__ctor_object_System_Threading_Tasks_Ta
 .word 0xf9400fa1
 .word 0xb98023a2
 .word 0xd2800023
-bl _p_402
+bl _p_401
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
@@ -23691,7 +23693,7 @@ System_Threading_Tasks_Task_1_TResult_INT__ctor_TResult_INT:
 .word 0xd2800001
 .word 0xd2800002
 .word 0xf94013a3
-bl _p_403
+bl _p_402
 .loc 3 106 0
 .word 0xf9400ba0
 .word 0xb9801ba1
@@ -23717,7 +23719,7 @@ System_Threading_Tasks_Task_1_TResult_INT__ctor_bool_TResult_INT_System_Threadin
 .word 0x394063a1
 .word 0xb9802ba2
 .word 0xf9401ba3
-bl _p_403
+bl _p_402
 .loc 3 112 0
 .word 0x394063a0
 .word 0x35000080
@@ -23746,7 +23748,7 @@ System_Threading_Tasks_Task_1_TResult_INT__ctor_System_Func_1_TResult_INT_System
 .word 0xf90023a0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_500
+bl _p_499
 .word 0xaa0003e7
 .word 0xf94023a0
 .word 0xf9400fa1
@@ -23762,7 +23764,7 @@ bl _p_500
 .loc 3 165 0
 .word 0xf9400ba0
 .word 0x9100c3a1
-bl _p_405
+bl _p_404
 .word 0x910003bf
 .word 0xa8c57bfd
 .word 0xd65f03c0
@@ -23784,7 +23786,7 @@ System_Threading_Tasks_Task_1_TResult_INT__ctor_System_Func_2_object_TResult_INT
 .word 0xf9400ba0
 .word 0xf90033a0
 .word 0xb9803ba0
-bl _p_406
+bl _p_405
 .word 0xaa0003e1
 .word 0xf94033a0
 .word 0xf9002fa1
@@ -23792,7 +23794,7 @@ bl _p_406
 .word 0xf9002ba0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_501
+bl _p_500
 .word 0xaa0003e9
 .word 0xf9402ba0
 .word 0xf9402fa3
@@ -23809,7 +23811,7 @@ bl _p_501
 .loc 3 326 0
 .word 0xf9400ba0
 .word 0x910103a1
-bl _p_405
+bl _p_404
 .word 0x910003bf
 .word 0xa8c77bfd
 .word 0xd65f03c0
@@ -23835,7 +23837,7 @@ System_Threading_Tasks_Task_1_TResult_INT__ctor_System_Func_1_TResult_INT_System
 .word 0xf90033a0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_502
+bl _p_501
 .word 0xaa0003e7
 .word 0xf94033a0
 .word 0xf9400fa1
@@ -23848,7 +23850,7 @@ bl _p_502
 .loc 3 336 0
 .word 0xf9400ba0
 .word 0xf9402ba1
-bl _p_405
+bl _p_404
 .word 0x910003bf
 .word 0xa8c77bfd
 .word 0xd65f03c0
@@ -23876,7 +23878,7 @@ System_Threading_Tasks_Task_1_TResult_INT__ctor_System_Func_1_TResult_INT_System
 .word 0xb9803ba5
 .word 0xb98043a6
 .word 0xf94027a7
-bl _p_409
+bl _p_408
 .loc 3 354 0
 .word 0xb98043a0
 .word 0xd281001e
@@ -23893,7 +23895,7 @@ bl _p_211
 .word 0xd28990c0
 .word 0xf2a00020
 bl _p_211
-bl _p_410
+bl _p_409
 .word 0xaa0003e2
 .word 0xf9402ba1
 .word 0xd2800b60
@@ -23924,7 +23926,7 @@ System_Threading_Tasks_Task_1_TResult_INT__ctor_System_Func_2_object_TResult_INT
 .word 0xf90033a0
 .word 0xf9400fa0
 .word 0xf9400000
-bl _p_503
+bl _p_502
 .word 0xaa0003e9
 .word 0xf94033a0
 .word 0xf94013a1
@@ -23938,7 +23940,7 @@ bl _p_503
 .loc 3 365 0
 .word 0xf9400fa0
 .word 0xf9400381
-bl _p_405
+bl _p_404
 .word 0xf9400bbc
 .word 0x910003bf
 .word 0xa8c77bfd
@@ -23968,7 +23970,7 @@ System_Threading_Tasks_Task_1_TResult_INT__ctor_System_Delegate_object_System_Th
 .word 0xb98043a5
 .word 0xb9804ba6
 .word 0xf9402ba7
-bl _p_409
+bl _p_408
 .loc 3 384 0
 .word 0xb9804ba0
 .word 0xd281001e
@@ -23985,7 +23987,7 @@ bl _p_211
 .word 0xd28990c0
 .word 0xf2a00020
 bl _p_211
-bl _p_410
+bl _p_409
 .word 0xaa0003e2
 .word 0xf94033a1
 .word 0xd2800b60
@@ -24026,11 +24028,11 @@ System_Threading_Tasks_Task_1_TResult_INT_StartNew_System_Threading_Tasks_Task_S
 .word 0x2a1e0000
 .word 0xf9003ba0
 .word 0xf9402ba0
-bl _p_504
+bl _p_503
 bl _p_56
 .word 0xf90037a0
 .word 0xf9402ba0
-bl _p_505
+bl _p_504
 .word 0xaa0003e9
 .word 0xf94037a0
 .word 0xf9403ba5
@@ -24049,7 +24051,7 @@ bl _p_505
 .word 0xaa0203e0
 .word 0xd2800001
 .word 0xf940005e
-bl _p_414
+bl _p_413
 .loc 3 413 0
 .word 0xaa1a03e0
 .word 0xf9400bba
@@ -24073,7 +24075,7 @@ bl _p_211
 .word 0xd28990c0
 .word 0xf2a00020
 bl _p_211
-bl _p_410
+bl _p_409
 .word 0xaa0003e2
 .word 0xf94033a1
 .word 0xd2800b60
@@ -24128,11 +24130,11 @@ System_Threading_Tasks_Task_1_TResult_INT_StartNew_System_Threading_Tasks_Task_S
 .word 0x2a1e0000
 .word 0xf9003ba0
 .word 0xf9402fa0
-bl _p_506
+bl _p_505
 bl _p_56
 .word 0xf90037a0
 .word 0xf9402fa0
-bl _p_507
+bl _p_506
 .word 0xaa0003e9
 .word 0xf94037a0
 .word 0xf9403ba6
@@ -24152,7 +24154,7 @@ bl _p_507
 .word 0xaa0203e0
 .word 0xd2800001
 .word 0xf940005e
-bl _p_414
+bl _p_413
 .loc 3 437 0
 .word 0xaa1a03e0
 .word 0xf9400bba
@@ -24176,7 +24178,7 @@ bl _p_211
 .word 0xd28990c0
 .word 0xf2a00020
 bl _p_211
-bl _p_410
+bl _p_409
 .word 0xaa0003e2
 .word 0xf94033a1
 .word 0xd2800b60
@@ -24205,7 +24207,7 @@ System_Threading_Tasks_Task_1_TResult_INT_TrySetResult_TResult_INT:
 .word 0xf9000fa0
 .word 0xaa0103fa
 .word 0xf9400fa0
-bl _p_417
+bl _p_416
 .word 0x53001c00
 .word 0x34000060
 .word 0xd2800000
@@ -24216,7 +24218,7 @@ bl _p_417
 .word 0xf2a08001
 .word 0xd2800002
 .word 0xf2a0ac02
-bl _p_418
+bl _p_417
 .word 0x53001c00
 .word 0x340003a0
 .loc 3 474 0
@@ -24246,10 +24248,10 @@ bl _p_418
 .word 0xb4000080
 .word 0xaa1a03e0
 .word 0xf940035e
-bl _p_419
+bl _p_418
 .loc 3 488 0
 .word 0xf9400fa0
-bl _p_420
+bl _p_419
 .loc 3 490 0
 .word 0xd2800020
 .word 0x14000002
@@ -24283,7 +24285,7 @@ System_Threading_Tasks_Task_1_TResult_INT_DangerousSetResult_TResult_INT:
 .word 0xf9001ba0
 .word 0xf9400fa0
 .word 0xf9400000
-bl _p_508
+bl _p_507
 .word 0xaa0003e2
 .word 0xf9401ba0
 .word 0xb98023a1
@@ -24321,7 +24323,7 @@ System_Threading_Tasks_Task_1_TResult_INT_get_Result:
 .word 0xf9000bba
 .word 0xf9000fa0
 .word 0xf9400fa0
-bl _p_422
+bl _p_421
 .word 0x53001c00
 .word 0x340001c0
 .word 0xf9400fa0
@@ -24329,7 +24331,7 @@ bl _p_422
 .word 0xf90013a0
 .word 0xf9400fa0
 .word 0xf9400000
-bl _p_509
+bl _p_508
 .word 0xaa0003e2
 .word 0xf94013a0
 .word 0xd2800021
@@ -24372,7 +24374,7 @@ System_Threading_Tasks_Task_1_TResult_INT_GetResultCore_bool:
 .word 0xf9000fa1
 .word 0xf90017bf
 .word 0xf9400ba0
-bl _p_417
+bl _p_416
 .word 0x53001c00
 .word 0x35000120
 .word 0xf9400ba0
@@ -24382,20 +24384,20 @@ bl _p_417
 .word 0x92800001
 .word 0xf2bfffe1
 .word 0xf94013a2
-bl _p_424
+bl _p_423
 .loc 3 559 0
 .word 0x394063a0
 .word 0x34000060
 .word 0xf9400ba0
-bl _p_425
+bl _p_424
 .loc 3 562 0
 .word 0xf9400ba0
-bl _p_426
+bl _p_425
 .word 0x53001c00
 .word 0x35000080
 .word 0xf9400ba0
 .word 0xd2800021
-bl _p_427
+bl _p_426
 .loc 3 567 0
 .word 0xf9400ba0
 .word 0xb9804800
@@ -24418,24 +24420,24 @@ System_Threading_Tasks_Task_1_TResult_INT_TrySetException_object:
 .loc 3 600 0
 .word 0xf9400fa0
 .word 0xd2800021
-bl _p_428
+bl _p_427
 .loc 3 601 0
 .word 0xf9400fa0
 .word 0xd2800001
 .word 0xf2a08001
 .word 0xd2800002
 .word 0xf2a0ac02
-bl _p_418
+bl _p_417
 .word 0x53001c00
 .word 0x34000100
 .loc 3 604 0
 .word 0xf9400fa0
 .word 0xf94013a1
-bl _p_429
+bl _p_428
 .loc 3 605 0
 .word 0xf9400fa0
 .word 0xd2800001
-bl _p_430
+bl _p_429
 .loc 3 606 0
 .word 0xd2800039
 .loc 3 609 0
@@ -24460,7 +24462,7 @@ System_Threading_Tasks_Task_1_TResult_INT_TrySetCanceled_System_Threading_Cancel
 .word 0xf9001ba0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_510
+bl _p_509
 .word 0xaa0003e3
 .word 0xf9401ba0
 .word 0xf9400fa1
@@ -24490,17 +24492,17 @@ System_Threading_Tasks_Task_1_TResult_INT_TrySetCanceled_System_Threading_Cancel
 .word 0xf2a08001
 .word 0xd2800002
 .word 0xf2a0ac02
-bl _p_418
+bl _p_417
 .word 0x53001c00
 .word 0x34000100
 .loc 3 652 0
 .word 0xf9400fa0
 .word 0xf94013a1
 .word 0xf9401ba2
-bl _p_432
+bl _p_431
 .loc 3 653 0
 .word 0xf9400fa0
-bl _p_433
+bl _p_432
 .loc 3 654 0
 .word 0xd2800039
 .loc 3 657 0
@@ -24520,12 +24522,12 @@ System_Threading_Tasks_Task_1_TResult_INT_get_Factory:
 .word 0x910003fd
 .word 0xf9000baf
 .word 0xf9400ba0
-bl _p_511
+bl _p_510
 .word 0x3980ac10
 .word 0xb5000050
 bl _p_39
 .word 0xf9400ba0
-bl _p_512
+bl _p_511
 .word 0xf9400000
 .word 0x910003bf
 .word 0xa8c27bfd
@@ -24546,11 +24548,11 @@ System_Threading_Tasks_Task_1_TResult_INT_InnerInvoke:
 .word 0xf90013a0
 .word 0xf9400fa0
 .word 0xf9400000
-bl _p_513
+bl _p_512
 .word 0xaa0003e2
 .word 0xf94013a0
 .word 0xf9400441
-bl _p_437
+bl _p_436
 .word 0xaa0003fa
 .loc 3 678 0
 .word 0xaa1a03e0
@@ -24573,11 +24575,11 @@ bl _p_437
 .word 0xf90013a0
 .word 0xf9400fa0
 .word 0xf9400000
-bl _p_514
+bl _p_513
 .word 0xaa0003e2
 .word 0xf94013a0
 .word 0xf9400441
-bl _p_437
+bl _p_436
 .word 0xaa0003fa
 .loc 3 684 0
 .word 0xaa1a03e0
@@ -24616,11 +24618,11 @@ System_Threading_Tasks_Task_1_TResult_INT_GetAwaiter:
 .word 0xf9001ba0
 .word 0xf94013a0
 .word 0xf9400000
-bl _p_515
+bl _p_514
 .word 0xf90023a0
 .word 0xf94013a0
 .word 0xf9400000
-bl _p_516
+bl _p_515
 .word 0xaa0003e2
 .word 0xf9401ba0
 .word 0xf9401fa1
@@ -24652,11 +24654,11 @@ System_Threading_Tasks_Task_1_TResult_INT_ConfigureAwait_bool:
 .word 0xf90023a0
 .word 0xf94013a0
 .word 0xf9400000
-bl _p_517
+bl _p_516
 .word 0xf9002ba0
 .word 0xf94013a0
 .word 0xf9400000
-bl _p_518
+bl _p_517
 .word 0xaa0003e3
 .word 0xf94023a0
 .word 0xf94027a1
@@ -24689,7 +24691,7 @@ System_Threading_Tasks_Task_1_TResult_INT_ContinueWith_System_Action_1_System_Th
 .loc 3 738 0
 .word 0xf9400ba0
 .word 0xf90027a0
-bl _p_443
+bl _p_442
 .word 0xaa0003e1
 .word 0xf94027a0
 .word 0xf9001fa1
@@ -24700,7 +24702,7 @@ bl _p_443
 .word 0xf9001ba0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_519
+bl _p_518
 .word 0xaa0003e6
 .word 0xf9401ba0
 .word 0xf9401fa2
@@ -24736,7 +24738,7 @@ System_Threading_Tasks_Task_1_TResult_INT_ContinueWith_System_Action_1_System_Th
 .word 0xf90023a0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_520
+bl _p_519
 .word 0xaa0003e6
 .word 0xf94023a0
 .word 0xf94027a5
@@ -24773,7 +24775,7 @@ System_Threading_Tasks_Task_1_TResult_INT_ContinueWith_System_Action_1_System_Th
 .word 0xf9002ba0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_521
+bl _p_520
 .word 0xaa0003e6
 .word 0xf9402ba0
 .word 0xf9402fa5
@@ -24812,7 +24814,7 @@ System_Threading_Tasks_Task_1_TResult_INT_ContinueWith_System_Action_1_System_Th
 .word 0x910123a1
 .word 0x910143a2
 .word 0xb98043a0
-bl _p_447
+bl _p_446
 .loc 3 901 0
 .word 0xf9400fa0
 .word 0xf9003ba0
@@ -24822,12 +24824,12 @@ bl _p_447
 .word 0xf90043a0
 .word 0xf9400fa0
 .word 0xf9400000
-bl _p_522
+bl _p_521
 bl _p_56
 .word 0xf90037a0
 .word 0xf9400fa0
 .word 0xf9400000
-bl _p_523
+bl _p_522
 .word 0xaa0003e7
 .word 0xf94037a0
 .word 0xf9403ba1
@@ -24846,7 +24848,7 @@ bl _p_523
 .word 0xf94017a2
 .word 0xf9401ba3
 .word 0xb98043a4
-bl _p_450
+bl _p_449
 .loc 3 911 0
 .word 0xaa1a03e0
 .word 0xf9400bba
@@ -24882,33 +24884,33 @@ System_Threading_Tasks_Task_1_TResult_INT__cctor:
 .word 0x910003fd
 .word 0xf9000baf
 .word 0xf9400ba0
-bl _p_524
+bl _p_523
 bl _p_56
 .word 0xf9001fa0
 .word 0xf9400ba0
-bl _p_525
+bl _p_524
 .word 0xaa0003e1
 .word 0xf9401fa0
 .word 0xf9001ba0
 .word 0xd63f0020
 .word 0xf9400ba0
-bl _p_526
+bl _p_525
 .word 0xf9401ba1
 .word 0xf9000001
 .loc 3 87 0
 .word 0xf9400ba0
-bl _p_527
-bl _p_455
+bl _p_526
+bl _p_454
 .word 0xf90017a0
 .word 0xf9400ba0
-bl _p_528
+bl _p_527
 bl _p_56
 .word 0xf94017a2
 .word 0xf90013a0
 .word 0xd2800001
-bl _p_529
+bl _p_528
 .word 0xf9400ba0
-bl _p_526
+bl _p_525
 .word 0xf94013a1
 .word 0x91002000
 .word 0xf9000001
@@ -24936,10 +24938,10 @@ ldr x0, [x16, #3688]
 bl _p_39
 .word 0xaa1a03e0
 .word 0xf940035e
-bl _p_458
+bl _p_457
 .word 0xaa0003fa
 .word 0xf9400fa0
-bl _p_530
+bl _p_529
 .word 0xf90013a0
 .word 0xb400013a
 .word 0xf9400340
@@ -24974,7 +24976,7 @@ System_Threading_Tasks_TaskFactory_1_TResult_INT__ctor:
 .word 0xf90013a0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_531
+bl _p_530
 .word 0xaa0003e5
 .word 0xf94013a0
 .word 0xf9400fa1
@@ -25000,10 +25002,10 @@ System_Threading_Tasks_TaskFactory_1_TResult_INT__ctor_System_Threading_Cancella
 .word 0xf9001ba3
 .word 0xf9001fa4
 .word 0xb98033a0
-bl _p_461
+bl _p_460
 .loc 4 211 0
 .word 0xb9802ba0
-bl _p_462
+bl _p_461
 .loc 4 213 0
 .word 0xf9400ba0
 .word 0x91004001
@@ -25050,23 +25052,23 @@ System_Threading_Tasks_TaskFactory_1_TResult_INT_StartNew_System_Func_1_TResult_
 .word 0xb90043be
 .loc 4 389 0
 .word 0xb98033a0
-bl _p_406
+bl _p_405
 .word 0xf9002ba0
 .word 0x910103a0
 .word 0xf9002fa0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_532
+bl _p_531
 .word 0x3980ac10
 .word 0xb5000050
 bl _p_39
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_532
+bl _p_531
 .word 0xf90033a0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_533
+bl _p_532
 .word 0xaa0003e7
 .word 0xf9402ba0
 .word 0xf9402fa6
@@ -25100,23 +25102,23 @@ System_Threading_Tasks_TaskFactory_1_TResult_INT_StartNew_System_Func_2_object_T
 .word 0xb9004bbe
 .loc 4 524 0
 .word 0xb9803ba0
-bl _p_406
+bl _p_405
 .word 0xf9002ba0
 .word 0x910123a0
 .word 0xf9002fa0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_534
+bl _p_533
 .word 0x3980ac10
 .word 0xb5000050
 bl _p_39
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_534
+bl _p_533
 .word 0xf90033a0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_535
+bl _p_534
 .word 0xaa0003e9
 .word 0xf9402ba0
 .word 0xf9402fa7
@@ -25184,7 +25186,7 @@ System_Threading_Tasks_TaskFactory_1_TResult_INT_FromAsyncCoreLogic_System_IAsyn
 .word 0xf94033a0
 .word 0xf9002ba0
 .loc 4 558 0
-bl _p_324
+bl _p_323
 .word 0xf90067a0
 .word 0xf94067a0
 .word 0xb4000060
@@ -25197,7 +25199,7 @@ bl _p_61
 .word 0xf90037a0
 .word 0xf94037a0
 .word 0xf90027a0
-bl _p_324
+bl _p_323
 .word 0xf9006ba0
 .word 0xf9406ba0
 .word 0xb4000060
@@ -25217,13 +25219,13 @@ bl _p_61
 .word 0xf90047a0
 .word 0xaa0103e0
 .word 0xf940003e
-bl _p_467
+bl _p_466
 .word 0xf94047be
 .word 0xf90003c0
 .word 0xf9402ba0
 .word 0xf90077a0
 .word 0xf94023a0
-bl _p_536
+bl _p_535
 .word 0x3980ac10
 .word 0xb5000050
 bl _p_39
@@ -25231,7 +25233,7 @@ bl _p_39
 .word 0xf940001e
 .word 0xf90073a0
 .word 0xf94023a0
-bl _p_537
+bl _p_536
 .word 0xaa0003e3
 .word 0xf94073a0
 .word 0xf94077a2
@@ -25247,7 +25249,7 @@ bl _p_537
 .word 0xf94027a0
 .word 0xf90077a0
 .word 0xf94023a0
-bl _p_536
+bl _p_535
 .word 0x3980ac10
 .word 0xb5000050
 bl _p_39
@@ -25255,7 +25257,7 @@ bl _p_39
 .word 0xf940001e
 .word 0xf90073a0
 .word 0xf94023a0
-bl _p_538
+bl _p_537
 .word 0xaa0003e2
 .word 0xf94073a0
 .word 0xf94077a1
@@ -25293,22 +25295,22 @@ ldr x1, [x16, #3696]
 .word 0xaa0203e0
 .word 0xd2800001
 .word 0xf940005e
-bl _p_471
+bl _p_470
 .word 0x1400003f
 .loc 4 575 0
-bl _p_472
+bl _p_471
 .word 0x53001c00
 .word 0x34000140
 .loc 4 576 0
 .word 0xf94017a1
 .word 0xaa0103e0
 .word 0xf940003e
-bl _p_473
+bl _p_472
 .word 0x93407c00
 .word 0xaa0003e1
 .word 0xd2800000
 .word 0xd2800022
-bl _p_474
+bl _p_473
 .loc 4 578 0
 
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+0
@@ -25320,9 +25322,9 @@ ldr x0, [x16, #3704]
 .word 0xf94017a1
 .word 0xaa0103e0
 .word 0xf940003e
-bl _p_473
+bl _p_472
 .word 0x93407c00
-bl _p_475
+bl _p_474
 .loc 4 582 0
 .word 0x3940c3a0
 .word 0x34000280
@@ -25332,7 +25334,7 @@ bl _p_475
 .word 0xb9805ba0
 .word 0xf90077a0
 .word 0xf94023a0
-bl _p_536
+bl _p_535
 .word 0x3980ac10
 .word 0xb5000050
 bl _p_39
@@ -25340,7 +25342,7 @@ bl _p_39
 .word 0xf940001e
 .word 0xf90073a0
 .word 0xf94023a0
-bl _p_539
+bl _p_538
 .word 0xaa0003e2
 .word 0xf94073a0
 .word 0xf94077a1
@@ -25352,7 +25354,7 @@ bl _p_539
 .word 0xb9805ba0
 .word 0xf90077a0
 .word 0xf94023a0
-bl _p_536
+bl _p_535
 .word 0x3980ac10
 .word 0xb5000050
 bl _p_39
@@ -25360,7 +25362,7 @@ bl _p_39
 .word 0xf940001e
 .word 0xf90073a0
 .word 0xf94023a0
-bl _p_540
+bl _p_539
 .word 0xaa0003e2
 .word 0xf94073a0
 .word 0xf94077a1
@@ -25389,11 +25391,11 @@ System_Threading_Tasks_TaskFactory_1_TResult_INT_FromAsync_System_Func_3_System_
 .word 0xf9001ba0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_541
+bl _p_540
 .word 0xf9001fa0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_542
+bl _p_541
 .word 0xaa0003e5
 .word 0xf9401ba4
 .word 0xf9401faf
@@ -25425,11 +25427,11 @@ System_Threading_Tasks_TaskFactory_1_TResult_INT_FromAsyncImpl_System_Func_3_Sys
 .word 0xf90023bf
 .word 0xb9004bbf
 .word 0xf9401fa0
-bl _p_543
+bl _p_542
 bl _p_56
 .word 0xf9003fa0
 .word 0xf9401fa0
-bl _p_544
+bl _p_543
 .word 0xaa0003e1
 .word 0xf9403fa0
 .word 0xf9003ba0
@@ -25459,21 +25461,21 @@ bl _p_5
 .loc 4 824 0
 .word 0xaa1a03e0
 .word 0xd2800021
-bl _p_482
+bl _p_481
 .loc 4 826 0
 .word 0xf94023a0
 .word 0xf9003fa0
 .word 0xf9401fa0
-bl _p_545
+bl _p_544
 .word 0x3980ac10
 .word 0xb5000050
 bl _p_39
 .word 0xf9401fa0
-bl _p_545
+bl _p_544
 bl _p_56
 .word 0xf90047a0
 .word 0xf9401fa0
-bl _p_546
+bl _p_545
 .word 0xaa0003e3
 .word 0xf94047a0
 .word 0xf90043a0
@@ -25488,7 +25490,7 @@ bl _p_546
 bl _p_5
 .word 0xf9403ba0
 .loc 4 828 0
-bl _p_472
+bl _p_471
 .word 0x53001c00
 .word 0x34000380
 .loc 4 829 0
@@ -25496,7 +25498,7 @@ bl _p_472
 .word 0xf9401001
 .word 0xaa0103e0
 .word 0xf940003e
-bl _p_473
+bl _p_472
 .word 0x93407c00
 .word 0xf9003ba0
 
@@ -25506,7 +25508,7 @@ ldr x0, [x16, #3712]
 .word 0xf9003fa0
 .word 0xaa1603e0
 .word 0xf94002de
-bl _p_485
+bl _p_484
 .word 0xaa0003e1
 .word 0xaa0103e0
 .word 0xf9400021
@@ -25519,7 +25521,7 @@ bl _p_137
 .word 0xf9403ba1
 .word 0xd2800000
 .word 0xd2800003
-bl _p_486
+bl _p_485
 .loc 4 831 0
 
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+0
@@ -25530,16 +25532,16 @@ ldr x0, [x16, #3704]
 .loc 4 833 0
 .word 0xf94023a0
 .word 0xf9401000
-bl _p_487
+bl _p_486
 .loc 4 842 0
 .word 0xd2800020
 .word 0x34000da0
 .word 0xf9401fa0
-bl _p_547
+bl _p_546
 bl _p_56
 .word 0xf90057a0
 .word 0xf9401fa0
-bl _p_548
+bl _p_547
 .word 0xaa0003e1
 .word 0xf94057a0
 .word 0xf90053a0
@@ -25561,7 +25563,7 @@ add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x0, [x16, #3720]
 bl _p_2
 .word 0xf9004ba0
-bl _p_490
+bl _p_489
 .word 0xf94047a0
 .word 0xf9404ba1
 .word 0xf90043a1
@@ -25583,13 +25585,13 @@ bl _p_2
 .word 0x91008000
 bl _p_5
 .word 0xf9401fa0
-bl _p_549
+bl _p_548
 .word 0xaa0003e1
 .word 0xf9403fa0
 .word 0xf9001401
 .word 0xf9003ba0
 .word 0xf9401fa0
-bl _p_550
+bl _p_549
 .word 0xf9403ba1
 .word 0xf9002020
 
@@ -25623,7 +25625,7 @@ ldr x15, [x16, #3744]
 .word 0xf9400b41
 .word 0xaa0103e0
 .word 0xf940003e
-bl _p_493
+bl _p_492
 .word 0x53001c00
 .word 0x340002e0
 .loc 4 855 0
@@ -25637,10 +25639,10 @@ bl _p_493
 .word 0xf9401000
 .word 0xf90043a0
 .word 0xf9401fa0
-bl _p_551
+bl _p_550
 .word 0xf90047a0
 .word 0xf9401fa0
-bl _p_552
+bl _p_551
 .word 0xaa0003e5
 .word 0xf9403ba1
 .word 0xf9403fa2
@@ -25669,13 +25671,13 @@ bl _p_2
 bl _p_5
 .word 0xf94043a0
 .word 0xf9401fa0
-bl _p_553
+bl _p_552
 .word 0xaa0003e1
 .word 0xf9403fa0
 .word 0xf9001401
 .word 0xf9003ba0
 .word 0xf9401fa0
-bl _p_554
+bl _p_553
 .word 0xf9403ba1
 .word 0xf9002020
 
@@ -25696,7 +25698,7 @@ ldr x0, [x16, #3736]
 .word 0x14000031
 .word 0xf9002ba0
 .loc 4 869 0
-bl _p_472
+bl _p_471
 .word 0x53001c00
 .word 0x34000160
 .loc 4 870 0
@@ -25704,12 +25706,12 @@ bl _p_472
 .word 0xf9401001
 .word 0xaa0103e0
 .word 0xf940003e
-bl _p_473
+bl _p_472
 .word 0x93407c00
 .word 0xaa0003e1
 .word 0xd2800000
 .word 0xd2800062
-bl _p_474
+bl _p_473
 .loc 4 872 0
 
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+0
@@ -25722,9 +25724,9 @@ ldr x0, [x16, #3704]
 .word 0xf9401001
 .word 0xaa0103e0
 .word 0xf940003e
-bl _p_473
+bl _p_472
 .word 0x93407c00
-bl _p_475
+bl _p_474
 .loc 4 878 0
 .word 0xf94023a0
 .word 0xf9401000
@@ -25733,7 +25735,7 @@ bl _p_475
 .word 0xb9804ba0
 .word 0xf9003fa0
 .word 0xf9401fa0
-bl _p_545
+bl _p_544
 .word 0x3980ac10
 .word 0xb5000050
 bl _p_39
@@ -25741,14 +25743,14 @@ bl _p_39
 .word 0xf940001e
 .word 0xf9003ba0
 .word 0xf9401fa0
-bl _p_555
+bl _p_554
 .word 0xaa0003e2
 .word 0xf9403ba0
 .word 0xf9403fa1
 .word 0xd63f0040
 .loc 4 879 0
 .word 0xf9402ba0
-bl _p_499
+bl _p_498
 .loc 4 882 0
 .word 0xf94023a0
 .word 0xf9401000
@@ -25848,7 +25850,7 @@ ldr x0, [x16, #3680]
 .word 0xd65f03c0
 .word 0xaa1803e0
 bl _p_61
-bl _p_389
+bl _p_388
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffcc
@@ -25919,7 +25921,7 @@ ldr x0, [x16, #3680]
 .word 0xd65f03c0
 .word 0xaa1903e0
 bl _p_61
-bl _p_389
+bl _p_388
 .word 0xaa0003f9
 .word 0xb5ffff80
 .word 0x17ffffd0
@@ -25996,7 +25998,7 @@ ldr x0, [x16, #3680]
 .word 0xd65f03c0
 .word 0xaa1803e0
 bl _p_61
-bl _p_389
+bl _p_388
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffcc
@@ -26071,7 +26073,7 @@ ldr x0, [x16, #3680]
 .word 0xd65f03c0
 .word 0xaa1803e0
 bl _p_61
-bl _p_389
+bl _p_388
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffce
@@ -26148,7 +26150,7 @@ ldr x0, [x16, #3680]
 .word 0xd65f03c0
 .word 0xaa1803e0
 bl _p_61
-bl _p_389
+bl _p_388
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffcc
@@ -26225,7 +26227,7 @@ ldr x0, [x16, #3680]
 .word 0xd65f03c0
 .word 0xaa1803e0
 bl _p_61
-bl _p_389
+bl _p_388
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffcc
@@ -26296,7 +26298,7 @@ ldr x0, [x16, #3680]
 .word 0xd65f03c0
 .word 0xaa1903e0
 bl _p_61
-bl _p_389
+bl _p_388
 .word 0xaa0003f9
 .word 0xb5ffff80
 .word 0x17ffffd0
@@ -26373,7 +26375,7 @@ ldr x0, [x16, #3680]
 .word 0xd65f03c0
 .word 0xaa1803e0
 bl _p_61
-bl _p_389
+bl _p_388
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffcc
@@ -26448,7 +26450,7 @@ ldr x0, [x16, #3680]
 .word 0xd65f03c0
 .word 0xaa1803e0
 bl _p_61
-bl _p_389
+bl _p_388
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffce
@@ -26525,7 +26527,7 @@ ldr x0, [x16, #3680]
 .word 0xd65f03c0
 .word 0xaa1803e0
 bl _p_61
-bl _p_389
+bl _p_388
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffcc
@@ -26602,7 +26604,7 @@ ldr x0, [x16, #3680]
 .word 0xd65f03c0
 .word 0xaa1803e0
 bl _p_61
-bl _p_389
+bl _p_388
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffcc
@@ -26690,7 +26692,7 @@ System_Array_InternalArray__ICollection_Contains_T_INST_T_INST:
 .word 0x910223a0
 .word 0xf9005fa0
 .word 0xf94043a0
-bl _p_556
+bl _p_555
 .word 0xf9405fa1
 .word 0x93407f00
 .word 0xd37cec00
@@ -26728,7 +26730,7 @@ bl _p_5
 .word 0xf9404ba0
 .word 0xf90037a0
 .word 0xf94043a0
-bl _p_557
+bl _p_556
 bl _p_56
 .word 0xaa0003f6
 .word 0x910042c1
@@ -26747,10 +26749,10 @@ bl _p_5
 bl _p_5
 .word 0xf94053a0
 .word 0xf94043a0
-bl _p_558
+bl _p_557
 .word 0xaa0003f5
 .word 0xf94043a0
-bl _p_559
+bl _p_558
 .word 0xd280005e
 .word 0xeb1e001f
 .word 0x540000c0
@@ -26764,7 +26766,7 @@ bl _p_559
 .word 0xf94006e0
 .word 0xf9002fa0
 .word 0xf94043a0
-bl _p_557
+bl _p_556
 bl _p_56
 .word 0xf90053a0
 .word 0x91004001
@@ -26807,7 +26809,7 @@ bl _p_5
 .word 0xd2874b00
 .word 0xf2a00040
 bl _p_211
-bl _p_400
+bl _p_399
 .word 0xaa0003e1
 .word 0xd2803240
 .word 0xf2a04000
@@ -26914,7 +26916,7 @@ bl _p_61
 .word 0xd2874b00
 .word 0xf2a00040
 bl _p_211
-bl _p_400
+bl _p_399
 .word 0xaa0003e1
 .word 0xd2803240
 .word 0xf2a04000
@@ -26933,7 +26935,7 @@ bl _p_61
 .word 0xd2874b00
 .word 0xf2a00040
 bl _p_211
-bl _p_400
+bl _p_399
 .word 0xaa0003e1
 .word 0xd2803240
 .word 0xf2a04000
@@ -26946,7 +26948,7 @@ bl _p_211
 .word 0xd2876e60
 .word 0xf2a00040
 bl _p_211
-bl _p_400
+bl _p_399
 .word 0xaa0003e2
 .word 0xf9402ba1
 .word 0xd2800b60
@@ -26969,7 +26971,7 @@ System_Collections_Generic_Dictionary_2_TKey_REF_TValue_INT__ctor:
 .word 0xf90013a0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_560
+bl _p_559
 .word 0xaa0003e3
 .word 0xf94013a0
 .word 0xd2800001
@@ -26994,7 +26996,7 @@ System_Collections_Generic_Dictionary_2_TKey_REF_TValue_INT__ctor_int:
 .word 0xf90013a0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_561
+bl _p_560
 .word 0xaa0003e3
 .word 0xf94013a0
 .word 0xb9801ba1
@@ -27019,7 +27021,7 @@ System_Collections_Generic_Dictionary_2_TKey_REF_TValue_INT__ctor_System_Collect
 .word 0xf90013a0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_562
+bl _p_561
 .word 0xaa0003e3
 .word 0xf94013a0
 .word 0xd2800001
@@ -27044,7 +27046,7 @@ System_Collections_Generic_Dictionary_2_TKey_REF_TValue_INT__ctor_int_System_Col
 .word 0x6b1f033f
 .word 0x5400006a
 .word 0xd2800180
-bl _p_563
+bl _p_562
 .loc 5 93 0
 .word 0x6b1f033f
 .word 0x5400016d
@@ -27053,7 +27055,7 @@ bl _p_563
 .word 0xf9001ba0
 .word 0xf94013a0
 .word 0xf9400000
-bl _p_564
+bl _p_563
 .word 0xaa0003e2
 .word 0xf9401ba0
 .word 0xaa1903e1
@@ -27065,9 +27067,9 @@ bl _p_564
 .word 0xb50000e0
 .word 0xf94013a0
 .word 0xf9400000
-bl _p_565
+bl _p_564
 .word 0xaa0003ef
-bl _p_566
+bl _p_565
 .word 0xaa0003f8
 .word 0xf9001338
 .word 0x91008320
@@ -27092,7 +27094,7 @@ System_Collections_Generic_Dictionary_2_TKey_REF_TValue_INT__ctor_System_Collect
 .word 0xf90013a0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_567
+bl _p_566
 .word 0xaa0003e3
 .word 0xf94013a0
 .word 0xf9400fa1
@@ -27123,7 +27125,7 @@ System_Collections_Generic_Dictionary_2_TKey_REF_TValue_INT__ctor_System_Collect
 .word 0xb40001d9
 .word 0xf94017a0
 .word 0xf9400000
-bl _p_568
+bl _p_567
 .word 0xaa0003ef
 .word 0xaa1903e0
 .word 0xf9400321
@@ -27138,7 +27140,7 @@ bl _p_568
 .word 0xf940031e
 .word 0xf94017a0
 .word 0xf9400000
-bl _p_569
+bl _p_568
 .word 0xaa0003e3
 .word 0xaa1803e0
 .word 0xaa1703e1
@@ -27148,11 +27150,11 @@ bl _p_569
 .word 0xb5000079
 .loc 5 110 0
 .word 0xd2800020
-bl _p_570
+bl _p_569
 .loc 5 113 0
 .word 0xf94017a0
 .word 0xf9400000
-bl _p_571
+bl _p_570
 .word 0xaa0003ef
 .word 0xaa1903e0
 .word 0xf9400321
@@ -27166,7 +27168,7 @@ bl _p_571
 .word 0xf9005ba0
 .word 0xf94017a0
 .word 0xf9400000
-bl _p_572
+bl _p_571
 .word 0xaa0003ef
 .word 0xf9405ba1
 .word 0x9100e3a0
@@ -27187,11 +27189,11 @@ bl _p_572
 .word 0xf90053a0
 .word 0xf94017a0
 .word 0xf9400000
-bl _p_573
+bl _p_572
 .word 0xf90057a0
 .word 0xf94017a0
 .word 0xf9400000
-bl _p_574
+bl _p_573
 .word 0xaa0003e1
 .word 0xf94053a0
 .word 0xf94057af
@@ -27201,11 +27203,11 @@ bl _p_574
 .word 0xf9004ba0
 .word 0xf94017a0
 .word 0xf9400000
-bl _p_573
+bl _p_572
 .word 0xf9004fa0
 .word 0xf94017a0
 .word 0xf9400000
-bl _p_575
+bl _p_574
 .word 0xaa0003e1
 .word 0xf9404ba0
 .word 0xf9404faf
@@ -27218,7 +27220,7 @@ bl _p_575
 .word 0xf9003ba0
 .word 0xf94017a0
 .word 0xf9400000
-bl _p_576
+bl _p_575
 .word 0xaa0003e3
 .word 0xf9403ba0
 .word 0xf9403fa1
@@ -27273,13 +27275,13 @@ System_Collections_Generic_Dictionary_2_TKey_REF_TValue_INT__ctor_System_Runtime
 .word 0xf9000fa1
 .word 0xf90013a2
 .word 0xf90017a3
-bl _p_577
+bl _p_576
 .word 0xaa0003e3
 .word 0xf9400ba1
 .word 0xaa0303e0
 .word 0xf9400fa2
 .word 0xf940007e
-bl _p_578
+bl _p_577
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
@@ -27335,12 +27337,12 @@ System_Collections_Generic_Dictionary_2_TKey_REF_TValue_INT_get_Keys:
 .word 0xf90023a0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_579
+bl _p_578
 bl _p_56
 .word 0xf9001fa0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_580
+bl _p_579
 .word 0xaa0003e2
 .word 0xf9401fa0
 .word 0xf94023a1
@@ -27378,12 +27380,12 @@ System_Collections_Generic_Dictionary_2_TKey_REF_TValue_INT_System_Collections_G
 .word 0xf90023a0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_581
+bl _p_580
 bl _p_56
 .word 0xf9001fa0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_582
+bl _p_581
 .word 0xaa0003e2
 .word 0xf9401fa0
 .word 0xf94023a1
@@ -27421,12 +27423,12 @@ System_Collections_Generic_Dictionary_2_TKey_REF_TValue_INT_System_Collections_G
 .word 0xf90023a0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_583
+bl _p_582
 bl _p_56
 .word 0xf9001fa0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_584
+bl _p_583
 .word 0xaa0003e2
 .word 0xf9401fa0
 .word 0xf94023a1
@@ -27464,12 +27466,12 @@ System_Collections_Generic_Dictionary_2_TKey_REF_TValue_INT_get_Values:
 .word 0xf90023a0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_585
+bl _p_584
 bl _p_56
 .word 0xf9001fa0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_586
+bl _p_585
 .word 0xaa0003e2
 .word 0xf9401fa0
 .word 0xf94023a1
@@ -27507,12 +27509,12 @@ System_Collections_Generic_Dictionary_2_TKey_REF_TValue_INT_System_Collections_G
 .word 0xf90023a0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_587
+bl _p_586
 bl _p_56
 .word 0xf9001fa0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_588
+bl _p_587
 .word 0xaa0003e2
 .word 0xf9401fa0
 .word 0xf94023a1
@@ -27550,12 +27552,12 @@ System_Collections_Generic_Dictionary_2_TKey_REF_TValue_INT_System_Collections_G
 .word 0xf90023a0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_589
+bl _p_588
 bl _p_56
 .word 0xf9001fa0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_590
+bl _p_589
 .word 0xaa0003e2
 .word 0xf9401fa0
 .word 0xf94023a1
@@ -27591,7 +27593,7 @@ System_Collections_Generic_Dictionary_2_TKey_REF_TValue_INT_get_Item_TKey_REF:
 .word 0xf90013a0
 .word 0xf9400fa0
 .word 0xf9400000
-bl _p_591
+bl _p_590
 .word 0xaa0003e2
 .word 0xf94013a0
 .word 0xaa1a03e1
@@ -27616,7 +27618,7 @@ bl _p_591
 .word 0xb9801000
 .word 0x14000003
 .loc 5 183 0
-bl _p_592
+bl _p_591
 .loc 5 184 0
 .word 0xd2800000
 .word 0xf9400bba
@@ -27643,7 +27645,7 @@ System_Collections_Generic_Dictionary_2_TKey_REF_TValue_INT_set_Item_TKey_REF_TV
 .word 0xf9001ba0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_593
+bl _p_592
 .word 0xaa0003e4
 .word 0xf9401ba0
 .word 0xf9400fa1
@@ -27670,7 +27672,7 @@ System_Collections_Generic_Dictionary_2_TKey_REF_TValue_INT_Add_TKey_REF_TValue_
 .word 0xf9001ba0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_594
+bl _p_593
 .word 0xaa0003e4
 .word 0xf9401ba0
 .word 0xf9400fa1
@@ -27698,11 +27700,11 @@ System_Collections_Generic_Dictionary_2_TKey_REF_TValue_INT_System_Collections_G
 .word 0xf90033a0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_595
+bl _p_594
 .word 0xf90037a0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_596
+bl _p_595
 .word 0xaa0003e1
 .word 0xf94033a0
 .word 0xf94037af
@@ -27712,11 +27714,11 @@ bl _p_596
 .word 0xf9002ba0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_595
+bl _p_594
 .word 0xf9002fa0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_597
+bl _p_596
 .word 0xaa0003e1
 .word 0xf9402ba0
 .word 0xf9402faf
@@ -27729,7 +27731,7 @@ bl _p_597
 .word 0xf9001ba0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_598
+bl _p_597
 .word 0xaa0003e3
 .word 0xf9401ba0
 .word 0xf9401fa1
@@ -27757,11 +27759,11 @@ System_Collections_Generic_Dictionary_2_TKey_REF_TValue_INT_System_Collections_G
 .word 0xf90027a0
 .word 0xf9400fa0
 .word 0xf9400000
-bl _p_599
+bl _p_598
 .word 0xf9002ba0
 .word 0xf9400fa0
 .word 0xf9400000
-bl _p_600
+bl _p_599
 .word 0xaa0003e1
 .word 0xf94027a0
 .word 0xf9402baf
@@ -27773,7 +27775,7 @@ bl _p_600
 .word 0xf9001ba0
 .word 0xf9400fa0
 .word 0xf9400000
-bl _p_601
+bl _p_600
 .word 0xaa0003e2
 .word 0xf9401ba0
 .word 0xf9401fa1
@@ -27786,11 +27788,11 @@ bl _p_601
 .word 0x5400062b
 .word 0xf9400fa0
 .word 0xf9400000
-bl _p_602
+bl _p_601
 .word 0xf9002ba0
 .word 0xf9400fa0
 .word 0xf9400000
-bl _p_603
+bl _p_602
 .word 0xf9402baf
 .word 0xd63f0000
 .word 0xf9001fa0
@@ -27811,11 +27813,11 @@ bl _p_603
 .word 0xf90023a0
 .word 0xf9400fa0
 .word 0xf9400000
-bl _p_599
+bl _p_598
 .word 0xf90027a0
 .word 0xf9400fa0
 .word 0xf9400000
-bl _p_604
+bl _p_603
 .word 0xaa0003e1
 .word 0xf94023a0
 .word 0xf94027af
@@ -27861,11 +27863,11 @@ System_Collections_Generic_Dictionary_2_TKey_REF_TValue_INT_System_Collections_G
 .word 0xf90027a0
 .word 0xf9400fa0
 .word 0xf9400000
-bl _p_605
+bl _p_604
 .word 0xf9002ba0
 .word 0xf9400fa0
 .word 0xf9400000
-bl _p_606
+bl _p_605
 .word 0xaa0003e1
 .word 0xf94027a0
 .word 0xf9402baf
@@ -27877,7 +27879,7 @@ bl _p_606
 .word 0xf9001ba0
 .word 0xf9400fa0
 .word 0xf9400000
-bl _p_607
+bl _p_606
 .word 0xaa0003e2
 .word 0xf9401ba0
 .word 0xf9401fa1
@@ -27890,11 +27892,11 @@ bl _p_607
 .word 0x5400098b
 .word 0xf9400fa0
 .word 0xf9400000
-bl _p_608
+bl _p_607
 .word 0xf9002ba0
 .word 0xf9400fa0
 .word 0xf9400000
-bl _p_609
+bl _p_608
 .word 0xf9402baf
 .word 0xd63f0000
 .word 0xf9001fa0
@@ -27915,11 +27917,11 @@ bl _p_609
 .word 0xf90023a0
 .word 0xf9400fa0
 .word 0xf9400000
-bl _p_605
+bl _p_604
 .word 0xf90027a0
 .word 0xf9400fa0
 .word 0xf9400000
-bl _p_610
+bl _p_609
 .word 0xaa0003e1
 .word 0xf94023a0
 .word 0xf94027af
@@ -27941,11 +27943,11 @@ bl _p_610
 .word 0xf90027a0
 .word 0xf9400fa0
 .word 0xf9400000
-bl _p_605
+bl _p_604
 .word 0xf9002ba0
 .word 0xf9400fa0
 .word 0xf9400000
-bl _p_606
+bl _p_605
 .word 0xaa0003e1
 .word 0xf94027a0
 .word 0xf9402baf
@@ -27957,7 +27959,7 @@ bl _p_606
 .word 0xf9001ba0
 .word 0xf9400fa0
 .word 0xf9400000
-bl _p_611
+bl _p_610
 .word 0xaa0003e2
 .word 0xf9401ba0
 .word 0xf9401fa1
@@ -28017,7 +28019,7 @@ System_Collections_Generic_Dictionary_2_TKey_REF_TValue_INT_Clear:
 .word 0xf9400fa1
 .word 0xb9804022
 .word 0xd2800001
-bl _p_612
+bl _p_611
 .loc 5 220 0
 .word 0xf9400fa0
 .word 0x9280001e
@@ -28057,7 +28059,7 @@ System_Collections_Generic_Dictionary_2_TKey_REF_TValue_INT_ContainsKey_TKey_REF
 .word 0xf90013a0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_613
+bl _p_612
 .word 0xaa0003e2
 .word 0xf94013a0
 .word 0xf9400fa1
@@ -28127,11 +28129,11 @@ System_Collections_Generic_Dictionary_2_TKey_REF_TValue_INT_ContainsValue_TValue
 .loc 5 238 0
 .word 0xf94017a0
 .word 0xf9400000
-bl _p_614
+bl _p_613
 .word 0xf9001ba0
 .word 0xf94017a0
 .word 0xf9400000
-bl _p_615
+bl _p_614
 .word 0xf9401baf
 .word 0xd63f0000
 .word 0xaa0003f9
@@ -28208,7 +28210,7 @@ System_Collections_Generic_Dictionary_2_TKey_REF_TValue_INT_CopyTo_System_Collec
 .word 0xb5000079
 .loc 5 248 0
 .word 0xd2800060
-bl _p_570
+bl _p_569
 .loc 5 251 0
 .word 0x6b1f035f
 .word 0x5400008b
@@ -28218,7 +28220,7 @@ bl _p_570
 .loc 5 252 0
 .word 0xd28001a0
 .word 0xd2800081
-bl _p_616
+bl _p_615
 .loc 5 255 0
 .word 0xb9801b20
 .word 0x4b1a0000
@@ -28228,7 +28230,7 @@ bl _p_616
 .word 0xf90037a0
 .word 0xf9401fa0
 .word 0xf9400000
-bl _p_617
+bl _p_616
 .word 0xaa0003e1
 .word 0xf94037a0
 .word 0xd63f0020
@@ -28239,7 +28241,7 @@ bl _p_617
 .word 0x5400006a
 .loc 5 256 0
 .word 0xd28000a0
-bl _p_618
+bl _p_617
 .loc 5 259 0
 .word 0xf9401fa0
 .word 0xb9804018
@@ -28303,11 +28305,11 @@ bl _p_618
 .word 0xf9003fa0
 .word 0xf9401fa0
 .word 0xf9400000
-bl _p_619
+bl _p_618
 .word 0xf9004ba0
 .word 0xf9401fa0
 .word 0xf9400000
-bl _p_620
+bl _p_619
 .word 0xaa0003e3
 .word 0xf9403fa0
 .word 0xf94043a1
@@ -28366,11 +28368,11 @@ System_Collections_Generic_Dictionary_2_TKey_REF_TValue_INT_GetEnumerator:
 .word 0xf9004ba0
 .word 0xf9400fa0
 .word 0xf9400000
-bl _p_621
+bl _p_620
 .word 0xf90053a0
 .word 0xf9400fa0
 .word 0xf9400000
-bl _p_622
+bl _p_621
 .word 0xaa0003e3
 .word 0xf9404ba0
 .word 0xf9404fa1
@@ -28438,11 +28440,11 @@ System_Collections_Generic_Dictionary_2_TKey_REF_TValue_INT_System_Collections_G
 .word 0xf9004fa0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_623
+bl _p_622
 .word 0xf90057a0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_624
+bl _p_623
 .word 0xaa0003e3
 .word 0xf9404fa0
 .word 0xf94053a1
@@ -28461,7 +28463,7 @@ bl _p_624
 .word 0xf9001fa0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_623
+bl _p_622
 bl _p_56
 .word 0xf9003ba0
 .word 0x91004001
@@ -28512,7 +28514,7 @@ System_Collections_Generic_Dictionary_2_TKey_REF_TValue_INT_GetObjectData_System
 .word 0xb500007a
 .loc 5 279 0
 .word 0xd2800080
-bl _p_570
+bl _p_569
 .loc 5 281 0
 
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+0
@@ -28522,7 +28524,7 @@ ldr x1, [x16, #3752]
 .word 0xb9804402
 .word 0xaa1a03e0
 .word 0xf940035e
-bl _p_625
+bl _p_624
 .loc 5 286 0
 
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+0
@@ -28534,13 +28536,13 @@ ldr x0, [x16, #3760]
 .word 0xf9002fa0
 .word 0xf94017a0
 .word 0xf9400000
-bl _p_626
+bl _p_625
 .word 0xaa0003e3
 .word 0xf9402ba1
 .word 0xf9402fa2
 .word 0xaa1a03e0
 .word 0xf940035e
-bl _p_627
+bl _p_626
 .loc 5 289 0
 
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+0
@@ -28560,7 +28562,7 @@ ldr x1, [x16, #3768]
 .word 0xf94023a1
 .word 0xaa1703e2
 .word 0xf940033e
-bl _p_625
+bl _p_624
 .loc 5 290 0
 .word 0xf94017a0
 .word 0xf9400800
@@ -28571,7 +28573,7 @@ bl _p_625
 .word 0xf90037a0
 .word 0xf94017a0
 .word 0xf9400000
-bl _p_628
+bl _p_627
 .word 0xaa0003e1
 .word 0xf94037a0
 .word 0xd63f0020
@@ -28579,7 +28581,7 @@ bl _p_628
 .word 0xf90033a0
 .word 0xf94017a0
 .word 0xf9400000
-bl _p_629
+bl _p_628
 .word 0xf94033a1
 bl _p_14
 .word 0xaa0003f9
@@ -28589,7 +28591,7 @@ bl _p_14
 .word 0xf9002fa0
 .word 0xf94017a0
 .word 0xf9400000
-bl _p_630
+bl _p_629
 .word 0xaa0003e3
 .word 0xf9402fa0
 .word 0xaa1903e1
@@ -28603,13 +28605,13 @@ ldr x0, [x16, #3776]
 .word 0xf9002ba0
 .word 0xf94017a0
 .word 0xf9400000
-bl _p_631
+bl _p_630
 .word 0xaa0003e3
 .word 0xf9402ba1
 .word 0xaa1a03e0
 .word 0xaa1903e2
 .word 0xf940035e
-bl _p_627
+bl _p_626
 .word 0xf9400bb7
 .word 0xa941ebb9
 .word 0x910003bf
@@ -28631,7 +28633,7 @@ System_Collections_Generic_Dictionary_2_TKey_REF_TValue_INT_FindEntry_TKey_REF:
 .word 0xb500007a
 .loc 5 299 0
 .word 0xd28000a0
-bl _p_570
+bl _p_569
 .loc 5 302 0
 .word 0xf94017a0
 .word 0xf9400800
@@ -28642,7 +28644,7 @@ bl _p_570
 .word 0xf9001ba0
 .word 0xf94017a0
 .word 0xf9400000
-bl _p_632
+bl _p_631
 .word 0xaa0003ef
 .word 0xf9401ba2
 .word 0xaa0203e0
@@ -28738,7 +28740,7 @@ bl _p_632
 .word 0xf9001ba0
 .word 0xf94017a0
 .word 0xf9400000
-bl _p_633
+bl _p_632
 .word 0xaa0003ef
 .word 0xf9401ba1
 .word 0xf9401fa3
@@ -28798,7 +28800,7 @@ System_Collections_Generic_Dictionary_2_TKey_REF_TValue_INT_Initialize_int:
 .word 0xf90013a0
 .word 0xaa0103fa
 .word 0xaa1a03e0
-bl _p_634
+bl _p_633
 .word 0x93407c00
 .word 0xaa0003fa
 .loc 5 313 0
@@ -28844,7 +28846,7 @@ bl _p_5
 .word 0xf9001fa0
 .word 0xf94013a0
 .word 0xf9400000
-bl _p_635
+bl _p_634
 .word 0xaa1a03e1
 bl _p_14
 .word 0xaa0003e1
@@ -28885,7 +28887,7 @@ System_Collections_Generic_Dictionary_2_TKey_REF_TValue_INT_Insert_TKey_REF_TVal
 .word 0xb5000078
 .loc 5 322 0
 .word 0xd28000a0
-bl _p_570
+bl _p_569
 .loc 5 325 0
 .word 0xf9401fa0
 .word 0xf9400800
@@ -28895,7 +28897,7 @@ bl _p_570
 .word 0xf9002ba0
 .word 0xf9401fa0
 .word 0xf9400000
-bl _p_636
+bl _p_635
 .word 0xaa0003e2
 .word 0xf9402ba0
 .word 0xd2800001
@@ -28906,7 +28908,7 @@ bl _p_636
 .word 0xf9002ba0
 .word 0xf9401fa0
 .word 0xf9400000
-bl _p_637
+bl _p_636
 .word 0xaa0003ef
 .word 0xf9402ba2
 .word 0xaa0203e0
@@ -29004,7 +29006,7 @@ bl _p_637
 .word 0xf9002ba0
 .word 0xf9401fa0
 .word 0xf9400000
-bl _p_638
+bl _p_637
 .word 0xaa0003ef
 .word 0xf9402ba1
 .word 0xf9402fa3
@@ -29021,7 +29023,7 @@ bl _p_638
 .word 0x3400007a
 .loc 5 336 0
 .word 0xd28001c0
-bl _p_618
+bl _p_617
 .loc 5 338 0
 .word 0xf9401fa0
 .word 0xf9400c00
@@ -29101,7 +29103,7 @@ bl _p_618
 .word 0xf9002ba0
 .word 0xf9401fa0
 .word 0xf9400000
-bl _p_639
+bl _p_638
 .word 0xaa0003e1
 .word 0xf9402ba0
 .word 0xd63f0020
@@ -29261,13 +29263,13 @@ System_Collections_Generic_Dictionary_2_TKey_REF_TValue_INT_OnDeserialization_ob
 .word 0xf90013a0
 .word 0xf90017a1
 .word 0xf9001bbf
-bl _p_577
+bl _p_576
 .word 0xaa0003e3
 .word 0xf94013a1
 .word 0x9100c3a2
 .word 0xaa0303e0
 .word 0xf940007e
-bl _p_640
+bl _p_639
 .loc 5 399 0
 .word 0xf9401ba0
 .word 0xb4001e80
@@ -29279,7 +29281,7 @@ add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x1, [x16, #3752]
 .word 0xaa0203e0
 .word 0xf940005e
-bl _p_641
+bl _p_640
 .word 0x93407c00
 .word 0xb9003ba0
 .loc 5 408 0
@@ -29290,7 +29292,7 @@ add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x1, [x16, #3768]
 .word 0xaa0203e0
 .word 0xf940005e
-bl _p_641
+bl _p_640
 .word 0x93407c00
 .word 0xaa0003f9
 .loc 5 409 0
@@ -29305,21 +29307,21 @@ ldr x0, [x16, #3760]
 .word 0xf9002fa0
 .word 0xf94013a0
 .word 0xf9400000
-bl _p_642
+bl _p_641
 .word 0xaa0003e2
 .word 0xf9402fa1
 .word 0xf94033a3
 .word 0xaa0303e0
 .word 0xf940007e
-bl _p_643
+bl _p_642
 .word 0xf9002ba0
 .word 0xf94013a0
 .word 0xf9400000
-bl _p_644
+bl _p_643
 .word 0xaa0003e2
 .word 0xf9402ba0
 .word 0xf9400441
-bl _p_645
+bl _p_644
 .word 0xaa0003e1
 .word 0xf94027a0
 .word 0xf90023a1
@@ -29372,7 +29374,7 @@ bl _p_5
 .word 0xf90033a0
 .word 0xf94013a0
 .word 0xf9400000
-bl _p_646
+bl _p_645
 .word 0xaa1903e1
 bl _p_14
 .word 0xaa0003e1
@@ -29397,28 +29399,28 @@ ldr x0, [x16, #3776]
 .word 0xf90027a0
 .word 0xf94013a0
 .word 0xf9400000
-bl _p_647
+bl _p_646
 .word 0xaa0003e2
 .word 0xf94027a1
 .word 0xf9402ba3
 .word 0xaa0303e0
 .word 0xf940007e
-bl _p_643
+bl _p_642
 .word 0xf90023a0
 .word 0xf94013a0
 .word 0xf9400000
-bl _p_648
+bl _p_647
 .word 0xaa0003e2
 .word 0xf94023a0
 .word 0xf9400441
-bl _p_645
+bl _p_644
 .word 0xaa0003f9
 .loc 5 420 0
 .word 0xaa1903e0
 .word 0xb5000060
 .loc 5 421 0
 .word 0xd2800200
-bl _p_649
+bl _p_648
 .loc 5 424 0
 .word 0xd2800018
 .word 0x1400005f
@@ -29434,7 +29436,7 @@ bl _p_649
 .word 0xf9002ba0
 .word 0xf94013a0
 .word 0xf9400000
-bl _p_650
+bl _p_649
 .word 0xaa0003e1
 .word 0xf9402ba0
 .word 0xf90027a1
@@ -29442,7 +29444,7 @@ bl _p_650
 .word 0xf90023a0
 .word 0xf94013a0
 .word 0xf9400000
-bl _p_651
+bl _p_650
 .word 0xaa0003e1
 .word 0xf94023a0
 .word 0xf94027af
@@ -29450,7 +29452,7 @@ bl _p_651
 .word 0xb5000060
 .loc 5 426 0
 .word 0xd2800220
-bl _p_649
+bl _p_648
 .loc 5 428 0
 .word 0xf94013a0
 .word 0xf9002fa0
@@ -29465,7 +29467,7 @@ bl _p_649
 .word 0xf90047a0
 .word 0xf94013a0
 .word 0xf9400000
-bl _p_650
+bl _p_649
 .word 0xaa0003e1
 .word 0xf94047a0
 .word 0xf90043a1
@@ -29473,7 +29475,7 @@ bl _p_650
 .word 0xf9003fa0
 .word 0xf94013a0
 .word 0xf9400000
-bl _p_651
+bl _p_650
 .word 0xaa0003e1
 .word 0xf9403fa0
 .word 0xf94043af
@@ -29490,7 +29492,7 @@ bl _p_651
 .word 0xf9003ba0
 .word 0xf94013a0
 .word 0xf9400000
-bl _p_650
+bl _p_649
 .word 0xaa0003e1
 .word 0xf9403ba0
 .word 0xf90037a1
@@ -29498,7 +29500,7 @@ bl _p_650
 .word 0xf90033a0
 .word 0xf94013a0
 .word 0xf9400000
-bl _p_652
+bl _p_651
 .word 0xaa0003e1
 .word 0xf94033a0
 .word 0xf94037af
@@ -29511,7 +29513,7 @@ bl _p_652
 .word 0xf90023a0
 .word 0xf94013a0
 .word 0xf9400000
-bl _p_653
+bl _p_652
 .word 0xaa0003e4
 .word 0xf94023a0
 .word 0xf94027a1
@@ -29532,12 +29534,12 @@ bl _p_653
 .word 0xb9803ba1
 .word 0xb9004401
 .loc 5 436 0
-bl _p_577
+bl _p_576
 .word 0xaa0003e2
 .word 0xf94013a1
 .word 0xaa0203e0
 .word 0xf940005e
-bl _p_654
+bl _p_653
 .word 0xa94167b8
 .word 0x910003bf
 .word 0xa8c97bfd
@@ -29559,7 +29561,7 @@ System_Collections_Generic_Dictionary_2_TKey_REF_TValue_INT_Resize:
 .word 0xf9001ba0
 .word 0xf9400ba0
 .word 0xb9804000
-bl _p_655
+bl _p_654
 .word 0x93407c00
 .word 0xaa0003e1
 .word 0xf9401ba0
@@ -29568,7 +29570,7 @@ bl _p_655
 .word 0xf90013a0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_656
+bl _p_655
 .word 0xaa0003e3
 .word 0xf94013a0
 .word 0xf94017a1
@@ -29620,7 +29622,7 @@ bl _p_14
 .loc 5 447 0
 .word 0xf9401fa0
 .word 0xf9400000
-bl _p_657
+bl _p_656
 .word 0xaa1903e1
 bl _p_14
 .word 0xaa0003f7
@@ -29680,7 +29682,7 @@ bl _p_51
 .word 0xf90027a0
 .word 0xf9401fa0
 .word 0xf9400000
-bl _p_658
+bl _p_657
 .word 0xaa0003ef
 .word 0xf94027a1
 .word 0xf9402ba2
@@ -29841,7 +29843,7 @@ System_Collections_Generic_Dictionary_2_TKey_REF_TValue_INT_Remove_TKey_REF:
 .word 0xb500007a
 .loc 5 469 0
 .word 0xd28000a0
-bl _p_570
+bl _p_569
 .loc 5 472 0
 .word 0xf9401fa0
 .word 0xf9400800
@@ -29852,7 +29854,7 @@ bl _p_570
 .word 0xf90023a0
 .word 0xf9401fa0
 .word 0xf9400000
-bl _p_659
+bl _p_658
 .word 0xaa0003ef
 .word 0xf94023a2
 .word 0xaa0203e0
@@ -29953,7 +29955,7 @@ bl _p_659
 .word 0xf90023a0
 .word 0xf9401fa0
 .word 0xf9400000
-bl _p_660
+bl _p_659
 .word 0xaa0003ef
 .word 0xf94023a1
 .word 0xf94027a3
@@ -30147,7 +30149,7 @@ System_Collections_Generic_Dictionary_2_TKey_REF_TValue_INT_TryGetValue_TKey_REF
 .word 0xf9001ba0
 .word 0xf9400fa0
 .word 0xf9400000
-bl _p_661
+bl _p_660
 .word 0xaa0003e2
 .word 0xf9401ba0
 .word 0xaa1903e1
@@ -30219,7 +30221,7 @@ System_Collections_Generic_Dictionary_2_TKey_REF_TValue_INT_System_Collections_G
 .word 0xf9001ba0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_662
+bl _p_661
 .word 0xaa0003e3
 .word 0xf9401ba0
 .word 0xf9400fa1
@@ -30246,7 +30248,7 @@ System_Collections_Generic_Dictionary_2_TKey_REF_TValue_INT_System_Collections_I
 .word 0xb5000079
 .loc 5 530 0
 .word 0xd2800060
-bl _p_570
+bl _p_569
 .loc 5 533 0
 .word 0xf9400320
 .word 0x3940a800
@@ -30255,7 +30257,7 @@ bl _p_570
 .word 0x54000060
 .loc 5 534 0
 .word 0xd28000e0
-bl _p_618
+bl _p_617
 .loc 5 537 0
 .word 0xf9400b38
 .word 0xeb1f031f
@@ -30266,7 +30268,7 @@ bl _p_618
 .word 0x34000078
 .loc 5 538 0
 .word 0xd28000c0
-bl _p_618
+bl _p_617
 .loc 5 541 0
 .word 0x6b1f035f
 .word 0x5400008b
@@ -30276,7 +30278,7 @@ bl _p_618
 .loc 5 542 0
 .word 0xd28001a0
 .word 0xd2800081
-bl _p_616
+bl _p_615
 .loc 5 545 0
 .word 0xb9801b20
 .word 0x4b1a0000
@@ -30286,7 +30288,7 @@ bl _p_616
 .word 0xf9005fa0
 .word 0xf9401fa0
 .word 0xf9400000
-bl _p_663
+bl _p_662
 .word 0xaa0003e1
 .word 0xf9405fa0
 .word 0xd63f0020
@@ -30297,15 +30299,15 @@ bl _p_663
 .word 0x5400006a
 .loc 5 546 0
 .word 0xd28000a0
-bl _p_618
+bl _p_617
 .loc 5 549 0
 .word 0xf9401fa0
 .word 0xf9400000
-bl _p_664
+bl _p_663
 .word 0xaa0003e2
 .word 0xf9400441
 .word 0xaa1903e0
-bl _p_437
+bl _p_436
 .word 0xaa0003f8
 .loc 5 550 0
 .word 0xaa1803e0
@@ -30316,7 +30318,7 @@ bl _p_437
 .word 0xf9005ba0
 .word 0xf9401fa0
 .word 0xf9400000
-bl _p_665
+bl _p_664
 .word 0xaa0003e3
 .word 0xf9405ba0
 .word 0xaa1803e1
@@ -30424,7 +30426,7 @@ ldr x1, [x16, #3792]
 .word 0xf9006ba0
 .word 0xf9401fa0
 .word 0xf9400000
-bl _p_666
+bl _p_665
 bl _p_56
 .word 0xaa0003e2
 .word 0xf9406ba0
@@ -30434,7 +30436,7 @@ bl _p_56
 .word 0xf9003ba0
 .word 0xf9003fa0
 .word 0x9101c3a0
-bl _p_667
+bl _p_666
 .word 0xf94067a1
 .word 0xf9403ba0
 .word 0xf9002ba0
@@ -30491,7 +30493,7 @@ ldr x0, [x16, #3808]
 .word 0xb5000078
 .loc 5 565 0
 .word 0xd2800240
-bl _p_618
+bl _p_617
 .loc 5 569 0
 .word 0xf9401fa0
 .word 0xb9804018
@@ -30547,11 +30549,11 @@ bl _p_618
 .word 0xf9006ba0
 .word 0xf9401fa0
 .word 0xf9400000
-bl _p_668
+bl _p_667
 .word 0xf90077a0
 .word 0xf9401fa0
 .word 0xf9400000
-bl _p_669
+bl _p_668
 .word 0xaa0003e3
 .word 0xf9406ba0
 .word 0xf9406fa1
@@ -30564,7 +30566,7 @@ bl _p_669
 .word 0xf90027a0
 .word 0xf9401fa0
 .word 0xf9400000
-bl _p_668
+bl _p_667
 bl _p_56
 .word 0xf90063a0
 .word 0x91004001
@@ -30594,8 +30596,8 @@ bl _p_5
 .word 0xf90043a0
 .loc 5 578 0
 .word 0xd2800240
-bl _p_618
-bl _p_324
+bl _p_617
+bl _p_323
 .word 0xf90053a0
 .word 0xf94053a0
 .word 0xb4000060
@@ -30633,11 +30635,11 @@ System_Collections_Generic_Dictionary_2_TKey_REF_TValue_INT_System_Collections_I
 .word 0xf9004fa0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_670
+bl _p_669
 .word 0xf90057a0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_671
+bl _p_670
 .word 0xaa0003e3
 .word 0xf9404fa0
 .word 0xf94053a1
@@ -30656,7 +30658,7 @@ bl _p_671
 .word 0xf9001fa0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_670
+bl _p_669
 bl _p_56
 .word 0xf9003ba0
 .word 0x91004001
@@ -30729,7 +30731,7 @@ add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x0, [x16, #3816]
 bl _p_2
 .word 0xf9001ba0
-bl _p_672
+bl _p_671
 .word 0xf94017a0
 .word 0xf9401ba1
 .word 0xd2800002
@@ -30799,7 +30801,7 @@ System_Collections_Generic_Dictionary_2_TKey_REF_TValue_INT_System_Collections_I
 .word 0xf90013a0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_673
+bl _p_672
 .word 0xaa0003e1
 .word 0xf94013a0
 .word 0xd63f0020
@@ -30821,7 +30823,7 @@ System_Collections_Generic_Dictionary_2_TKey_REF_TValue_INT_System_Collections_I
 .word 0xf90013a0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_674
+bl _p_673
 .word 0xaa0003e1
 .word 0xf94013a0
 .word 0xd63f0020
@@ -30842,11 +30844,11 @@ System_Collections_Generic_Dictionary_2_TKey_REF_TValue_INT_System_Collections_I
 .word 0xaa0103fa
 .word 0xf9400fa0
 .word 0xf9400000
-bl _p_675
+bl _p_674
 .word 0xf90013a0
 .word 0xf9400fa0
 .word 0xf9400000
-bl _p_676
+bl _p_675
 .word 0xaa0003e1
 .word 0xf94013af
 .word 0xaa1a03e0
@@ -30858,11 +30860,11 @@ bl _p_676
 .word 0xf9001ba0
 .word 0xf9400fa0
 .word 0xf9400000
-bl _p_677
+bl _p_676
 .word 0xaa0003e2
 .word 0xf9400441
 .word 0xaa1a03e0
-bl _p_645
+bl _p_644
 .word 0xaa0003e1
 .word 0xf9401ba0
 .word 0xf90017a1
@@ -30870,7 +30872,7 @@ bl _p_645
 .word 0xf90013a0
 .word 0xf9400fa0
 .word 0xf9400000
-bl _p_678
+bl _p_677
 .word 0xaa0003e2
 .word 0xf94013a0
 .word 0xf94017a1
@@ -30897,7 +30899,7 @@ bl _p_678
 .word 0xf90013a0
 .word 0xf9400fa0
 .word 0xf9400000
-bl _p_679
+bl _p_678
 bl _p_56
 .word 0xf94013a1
 .word 0xb9001001
@@ -30927,17 +30929,17 @@ System_Collections_Generic_Dictionary_2_TKey_REF_TValue_INT_System_Collections_I
 .word 0xb5000060
 .loc 5 629 0
 .word 0xd28000a0
-bl _p_570
+bl _p_569
 .loc 5 631 0
 .word 0xf94013a0
 .word 0xf90043a0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_680
+bl _p_679
 .word 0xf90047a0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_681
+bl _p_680
 .word 0xaa0003e2
 .word 0xf94043a0
 .word 0xf94047af
@@ -30948,11 +30950,11 @@ bl _p_681
 .word 0xf90043a0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_682
+bl _p_681
 .word 0xaa0003e2
 .word 0xf94043a0
 .word 0xf9400441
-bl _p_645
+bl _p_644
 .word 0xf90017a0
 .loc 5 636 0
 .word 0xf9400ba0
@@ -30969,7 +30971,7 @@ bl _p_645
 .word 0xf90053a0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_683
+bl _p_682
 .word 0xaa0003e3
 .word 0xf9404ba0
 .word 0xf9404fa1
@@ -30983,7 +30985,7 @@ bl _p_683
 .word 0xf90043a0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_684
+bl _p_683
 .word 0xaa0003e3
 .word 0xf94043a0
 .word 0xf94047a2
@@ -30997,11 +30999,11 @@ bl _p_684
 .word 0xf90043a0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_685
+bl _p_684
 .word 0xaa0003e1
 .word 0xf94043a0
-bl _p_686
-bl _p_324
+bl _p_685
+bl _p_323
 .word 0xf90037a0
 .word 0xf94037a0
 .word 0xb4000060
@@ -31016,11 +31018,11 @@ bl _p_61
 .word 0xf90043a0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_687
+bl _p_686
 .word 0xaa0003e1
 .word 0xf94043a0
-bl _p_688
-bl _p_324
+bl _p_687
+bl _p_323
 .word 0xf9003ba0
 .word 0xf9403ba0
 .word 0xb4000060
@@ -31048,14 +31050,14 @@ System_Collections_Generic_Dictionary_2_TKey_REF_TValue_INT_IsCompatibleKey_obje
 .word 0xb5000060
 .loc 5 650 0
 .word 0xd28000a0
-bl _p_570
+bl _p_569
 .loc 5 652 0
 .word 0xf9400fa0
-bl _p_689
+bl _p_688
 .word 0xaa0003e2
 .word 0xf9400441
 .word 0xf9400ba0
-bl _p_437
+bl _p_436
 .word 0xeb1f001f
 .word 0x9a9f97e0
 .word 0x910003bf
@@ -31077,17 +31079,17 @@ System_Collections_Generic_Dictionary_2_TKey_REF_TValue_INT_System_Collections_I
 .word 0xb5000060
 .loc 5 658 0
 .word 0xd28000a0
-bl _p_570
+bl _p_569
 .loc 5 660 0
 .word 0xf94013a0
 .word 0xf90043a0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_690
+bl _p_689
 .word 0xf90047a0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_691
+bl _p_690
 .word 0xaa0003e2
 .word 0xf94043a0
 .word 0xf94047af
@@ -31098,11 +31100,11 @@ bl _p_691
 .word 0xf90043a0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_692
+bl _p_691
 .word 0xaa0003e2
 .word 0xf94043a0
 .word 0xf9400441
-bl _p_645
+bl _p_644
 .word 0xf90017a0
 .loc 5 666 0
 .word 0xf9400ba0
@@ -31119,7 +31121,7 @@ bl _p_645
 .word 0xf90053a0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_693
+bl _p_692
 .word 0xaa0003e3
 .word 0xf9404ba0
 .word 0xf9404fa1
@@ -31133,7 +31135,7 @@ bl _p_693
 .word 0xf90043a0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_694
+bl _p_693
 .word 0xaa0003e3
 .word 0xf94043a0
 .word 0xf94047a2
@@ -31147,11 +31149,11 @@ bl _p_694
 .word 0xf90043a0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_695
+bl _p_694
 .word 0xaa0003e1
 .word 0xf94043a0
-bl _p_686
-bl _p_324
+bl _p_685
+bl _p_323
 .word 0xf90037a0
 .word 0xf94037a0
 .word 0xb4000060
@@ -31166,11 +31168,11 @@ bl _p_61
 .word 0xf90043a0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_696
+bl _p_695
 .word 0xaa0003e1
 .word 0xf94043a0
-bl _p_688
-bl _p_324
+bl _p_687
+bl _p_323
 .word 0xf9003ba0
 .word 0xf9403ba0
 .word 0xb4000060
@@ -31196,11 +31198,11 @@ System_Collections_Generic_Dictionary_2_TKey_REF_TValue_INT_System_Collections_I
 .word 0xf9000fa1
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_697
+bl _p_696
 .word 0xf90013a0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_698
+bl _p_697
 .word 0xaa0003e1
 .word 0xf94013af
 .word 0xf9400fa0
@@ -31212,11 +31214,11 @@ bl _p_698
 .word 0xf9001ba0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_699
+bl _p_698
 .word 0xaa0003e2
 .word 0xf9400441
 .word 0xf9400fa0
-bl _p_645
+bl _p_644
 .word 0xaa0003e1
 .word 0xf9401ba0
 .word 0xf90017a1
@@ -31224,7 +31226,7 @@ bl _p_645
 .word 0xf90013a0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_700
+bl _p_699
 .word 0xaa0003e2
 .word 0xf94013a0
 .word 0xf94017a1
@@ -31258,11 +31260,11 @@ System_Collections_Generic_Dictionary_2_TKey_REF_TValue_INT_System_Collections_I
 .word 0xf9004fa0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_701
+bl _p_700
 .word 0xf90057a0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_702
+bl _p_701
 .word 0xaa0003e3
 .word 0xf9404fa0
 .word 0xf94053a1
@@ -31281,7 +31283,7 @@ bl _p_702
 .word 0xf9001fa0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_701
+bl _p_700
 bl _p_56
 .word 0xf9003ba0
 .word 0x91004001
@@ -31327,11 +31329,11 @@ System_Collections_Generic_Dictionary_2_TKey_REF_TValue_INT_System_Collections_I
 .word 0xf9000fa1
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_703
+bl _p_702
 .word 0xf90013a0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_704
+bl _p_703
 .word 0xaa0003e1
 .word 0xf94013af
 .word 0xf9400fa0
@@ -31343,11 +31345,11 @@ bl _p_704
 .word 0xf9001ba0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_705
+bl _p_704
 .word 0xaa0003e2
 .word 0xf9400441
 .word 0xf9400fa0
-bl _p_645
+bl _p_644
 .word 0xaa0003e1
 .word 0xf9401ba0
 .word 0xf90017a1
@@ -31355,7 +31357,7 @@ bl _p_645
 .word 0xf90013a0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_706
+bl _p_705
 .word 0xaa0003e2
 .word 0xf94013a0
 .word 0xf94017a1
@@ -31378,7 +31380,7 @@ System_Collections_Generic_Dictionary_2_KeyCollection_TKey_REF_TValue_INT__ctor_
 .word 0xb5000060
 .loc 5 807 0
 .word 0xd2800020
-bl _p_570
+bl _p_569
 .loc 5 809 0
 .word 0xf9400ba0
 .word 0xf9400fa1
@@ -31411,11 +31413,11 @@ System_Collections_Generic_Dictionary_2_KeyCollection_TKey_REF_TValue_INT_GetEnu
 .word 0xf90037a0
 .word 0xf9400fa0
 .word 0xf9400000
-bl _p_707
+bl _p_706
 .word 0xf9003fa0
 .word 0xf9400fa0
 .word 0xf9400000
-bl _p_708
+bl _p_707
 .word 0xaa0003e2
 .word 0xf94037a0
 .word 0xf9403ba1
@@ -31466,7 +31468,7 @@ System_Collections_Generic_Dictionary_2_KeyCollection_TKey_REF_TValue_INT_CopyTo
 .word 0xb5000079
 .loc 5 818 0
 .word 0xd2800060
-bl _p_570
+bl _p_569
 .loc 5 821 0
 .word 0x6b1f035f
 .word 0x5400008b
@@ -31476,7 +31478,7 @@ bl _p_570
 .loc 5 822 0
 .word 0xd28001a0
 .word 0xd2800081
-bl _p_616
+bl _p_615
 .loc 5 825 0
 .word 0xb9801b20
 .word 0x4b1a0000
@@ -31487,7 +31489,7 @@ bl _p_616
 .word 0xf90027a0
 .word 0xf9401fa0
 .word 0xf9400000
-bl _p_709
+bl _p_708
 .word 0xaa0003e1
 .word 0xf94027a0
 .word 0xd63f0020
@@ -31498,7 +31500,7 @@ bl _p_709
 .word 0x5400006a
 .loc 5 826 0
 .word 0xd28000a0
-bl _p_618
+bl _p_617
 .loc 5 829 0
 .word 0xf9401fa0
 .word 0xf9400800
@@ -31568,7 +31570,7 @@ System_Collections_Generic_Dictionary_2_KeyCollection_TKey_REF_TValue_INT_get_Co
 .word 0xf90013a0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_710
+bl _p_709
 .word 0xaa0003e1
 .word 0xf94013a0
 .word 0xd63f0020
@@ -31602,7 +31604,7 @@ System_Collections_Generic_Dictionary_2_KeyCollection_TKey_REF_TValue_INT_System
 .word 0xf9000ba0
 .word 0xf9000fa1
 .word 0xd2800260
-bl _p_711
+bl _p_710
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
@@ -31617,7 +31619,7 @@ System_Collections_Generic_Dictionary_2_KeyCollection_TKey_REF_TValue_INT_System
 .word 0x910003fd
 .word 0xf9000ba0
 .word 0xd2800260
-bl _p_711
+bl _p_710
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
@@ -31638,7 +31640,7 @@ System_Collections_Generic_Dictionary_2_KeyCollection_TKey_REF_TValue_INT_System
 .word 0xf90013a0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_712
+bl _p_711
 .word 0xaa0003e2
 .word 0xf94013a0
 .word 0xf9400fa1
@@ -31659,7 +31661,7 @@ System_Collections_Generic_Dictionary_2_KeyCollection_TKey_REF_TValue_INT_System
 .word 0xf9000ba0
 .word 0xf9000fa1
 .word 0xd2800260
-bl _p_711
+bl _p_710
 .loc 5 858 0
 .word 0xd2800000
 .word 0x910003bf
@@ -31686,11 +31688,11 @@ System_Collections_Generic_Dictionary_2_KeyCollection_TKey_REF_TValue_INT_System
 .word 0xf9003ba0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_713
+bl _p_712
 .word 0xf90043a0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_714
+bl _p_713
 .word 0xaa0003e2
 .word 0xf9403ba0
 .word 0xf9403fa1
@@ -31704,7 +31706,7 @@ bl _p_714
 .word 0xf90017a0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_713
+bl _p_712
 bl _p_56
 .word 0xf9002ba0
 .word 0x91004001
@@ -31750,11 +31752,11 @@ System_Collections_Generic_Dictionary_2_KeyCollection_TKey_REF_TValue_INT_System
 .word 0xf9003ba0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_715
+bl _p_714
 .word 0xf90043a0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_716
+bl _p_715
 .word 0xaa0003e2
 .word 0xf9403ba0
 .word 0xf9403fa1
@@ -31768,7 +31770,7 @@ bl _p_716
 .word 0xf90017a0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_715
+bl _p_714
 bl _p_56
 .word 0xf9002ba0
 .word 0x91004001
@@ -31811,7 +31813,7 @@ System_Collections_Generic_Dictionary_2_KeyCollection_TKey_REF_TValue_INT_System
 .word 0xb5000079
 .loc 5 871 0
 .word 0xd2800060
-bl _p_570
+bl _p_569
 .loc 5 874 0
 .word 0xf9400320
 .word 0x3940a800
@@ -31820,7 +31822,7 @@ bl _p_570
 .word 0x54000060
 .loc 5 875 0
 .word 0xd28000e0
-bl _p_618
+bl _p_617
 .loc 5 878 0
 .word 0xf9400b38
 .word 0xeb1f031f
@@ -31831,7 +31833,7 @@ bl _p_618
 .word 0x34000078
 .loc 5 879 0
 .word 0xd28000c0
-bl _p_618
+bl _p_617
 .loc 5 882 0
 .word 0x6b1f035f
 .word 0x5400008b
@@ -31841,7 +31843,7 @@ bl _p_618
 .loc 5 883 0
 .word 0xd28001a0
 .word 0xd2800081
-bl _p_616
+bl _p_615
 .loc 5 886 0
 .word 0xb9801b20
 .word 0x4b1a0000
@@ -31852,7 +31854,7 @@ bl _p_616
 .word 0xf9003fa0
 .word 0xf9401fa0
 .word 0xf9400000
-bl _p_717
+bl _p_716
 .word 0xaa0003e1
 .word 0xf9403fa0
 .word 0xd63f0020
@@ -31863,15 +31865,15 @@ bl _p_717
 .word 0x5400006a
 .loc 5 887 0
 .word 0xd28000a0
-bl _p_618
+bl _p_617
 .loc 5 890 0
 .word 0xf9401fa0
 .word 0xf9400000
-bl _p_718
+bl _p_717
 .word 0xaa0003e2
 .word 0xf9400441
 .word 0xaa1903e0
-bl _p_437
+bl _p_436
 .word 0xaa0003f8
 .loc 5 891 0
 .word 0xaa1803e0
@@ -31882,7 +31884,7 @@ bl _p_437
 .word 0xf9003ba0
 .word 0xf9401fa0
 .word 0xf9400000
-bl _p_719
+bl _p_718
 .word 0xaa0003e3
 .word 0xf9403ba0
 .word 0xaa1803e1
@@ -31919,7 +31921,7 @@ ldr x0, [x16, #3808]
 .word 0xb5000078
 .loc 5 897 0
 .word 0xd2800240
-bl _p_618
+bl _p_617
 .loc 5 900 0
 .word 0xf9401fa0
 .word 0xf9400800
@@ -31969,8 +31971,8 @@ bl _p_618
 .word 0xf90023a0
 .loc 5 908 0
 .word 0xd2800240
-bl _p_618
-bl _p_324
+bl _p_617
+bl _p_323
 .word 0xf90033a0
 .word 0xf94033a0
 .word 0xb4000060
@@ -32040,7 +32042,7 @@ System_Collections_Generic_Dictionary_2_ValueCollection_TKey_REF_TValue_INT__cto
 .word 0xb5000060
 .loc 5 994 0
 .word 0xd2800020
-bl _p_570
+bl _p_569
 .loc 5 996 0
 .word 0xf9400ba0
 .word 0xf9400fa1
@@ -32073,11 +32075,11 @@ System_Collections_Generic_Dictionary_2_ValueCollection_TKey_REF_TValue_INT_GetE
 .word 0xf90033a0
 .word 0xf9400fa0
 .word 0xf9400000
-bl _p_720
+bl _p_719
 .word 0xf9003ba0
 .word 0xf9400fa0
 .word 0xf9400000
-bl _p_721
+bl _p_720
 .word 0xaa0003e2
 .word 0xf94033a0
 .word 0xf94037a1
@@ -32125,7 +32127,7 @@ System_Collections_Generic_Dictionary_2_ValueCollection_TKey_REF_TValue_INT_Copy
 .word 0xb5000079
 .loc 5 1005 0
 .word 0xd2800060
-bl _p_570
+bl _p_569
 .loc 5 1008 0
 .word 0x6b1f035f
 .word 0x5400008b
@@ -32135,7 +32137,7 @@ bl _p_570
 .loc 5 1009 0
 .word 0xd28001a0
 .word 0xd2800081
-bl _p_616
+bl _p_615
 .loc 5 1012 0
 .word 0xb9801b20
 .word 0x4b1a0000
@@ -32146,7 +32148,7 @@ bl _p_616
 .word 0xf90027a0
 .word 0xf9401fa0
 .word 0xf9400000
-bl _p_722
+bl _p_721
 .word 0xaa0003e1
 .word 0xf94027a0
 .word 0xd63f0020
@@ -32157,7 +32159,7 @@ bl _p_722
 .word 0x5400006a
 .loc 5 1013 0
 .word 0xd28000a0
-bl _p_618
+bl _p_617
 .loc 5 1016 0
 .word 0xf9401fa0
 .word 0xf9400800
@@ -32232,7 +32234,7 @@ System_Collections_Generic_Dictionary_2_ValueCollection_TKey_REF_TValue_INT_get_
 .word 0xf90013a0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_723
+bl _p_722
 .word 0xaa0003e1
 .word 0xf94013a0
 .word 0xd63f0020
@@ -32266,7 +32268,7 @@ System_Collections_Generic_Dictionary_2_ValueCollection_TKey_REF_TValue_INT_Syst
 .word 0xf9000ba0
 .word 0xf9000fa1
 .word 0xd2800280
-bl _p_711
+bl _p_710
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
@@ -32282,7 +32284,7 @@ System_Collections_Generic_Dictionary_2_ValueCollection_TKey_REF_TValue_INT_Syst
 .word 0xf9000ba0
 .word 0xf9000fa1
 .word 0xd2800280
-bl _p_711
+bl _p_710
 .loc 5 1037 0
 .word 0xd2800000
 .word 0x910003bf
@@ -32299,7 +32301,7 @@ System_Collections_Generic_Dictionary_2_ValueCollection_TKey_REF_TValue_INT_Syst
 .word 0x910003fd
 .word 0xf9000ba0
 .word 0xd2800280
-bl _p_711
+bl _p_710
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
@@ -32320,7 +32322,7 @@ System_Collections_Generic_Dictionary_2_ValueCollection_TKey_REF_TValue_INT_Syst
 .word 0xf90013a0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_724
+bl _p_723
 .word 0xaa0003e2
 .word 0xf94013a0
 .word 0xb9801ba1
@@ -32350,11 +32352,11 @@ System_Collections_Generic_Dictionary_2_ValueCollection_TKey_REF_TValue_INT_Syst
 .word 0xf90037a0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_725
+bl _p_724
 .word 0xf9003fa0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_726
+bl _p_725
 .word 0xaa0003e2
 .word 0xf94037a0
 .word 0xf9403ba1
@@ -32368,7 +32370,7 @@ bl _p_726
 .word 0xf90017a0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_725
+bl _p_724
 bl _p_56
 .word 0xf9002ba0
 .word 0x91004001
@@ -32411,11 +32413,11 @@ System_Collections_Generic_Dictionary_2_ValueCollection_TKey_REF_TValue_INT_Syst
 .word 0xf90037a0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_727
+bl _p_726
 .word 0xf9003fa0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_728
+bl _p_727
 .word 0xaa0003e2
 .word 0xf94037a0
 .word 0xf9403ba1
@@ -32429,7 +32431,7 @@ bl _p_728
 .word 0xf90017a0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_727
+bl _p_726
 bl _p_56
 .word 0xf9002ba0
 .word 0x91004001
@@ -32469,7 +32471,7 @@ System_Collections_Generic_Dictionary_2_ValueCollection_TKey_REF_TValue_INT_Syst
 .word 0xb5000079
 .loc 5 1058 0
 .word 0xd2800060
-bl _p_570
+bl _p_569
 .loc 5 1061 0
 .word 0xf9400320
 .word 0x3940a800
@@ -32478,7 +32480,7 @@ bl _p_570
 .word 0x54000060
 .loc 5 1062 0
 .word 0xd28000e0
-bl _p_618
+bl _p_617
 .loc 5 1065 0
 .word 0xf9400b38
 .word 0xeb1f031f
@@ -32489,7 +32491,7 @@ bl _p_618
 .word 0x34000078
 .loc 5 1066 0
 .word 0xd28000c0
-bl _p_618
+bl _p_617
 .loc 5 1069 0
 .word 0x6b1f035f
 .word 0x5400008b
@@ -32499,7 +32501,7 @@ bl _p_618
 .loc 5 1070 0
 .word 0xd28001a0
 .word 0xd2800081
-bl _p_616
+bl _p_615
 .loc 5 1073 0
 .word 0xb9801b20
 .word 0x4b1a0000
@@ -32510,7 +32512,7 @@ bl _p_616
 .word 0xf9003fa0
 .word 0xf9401fa0
 .word 0xf9400000
-bl _p_729
+bl _p_728
 .word 0xaa0003e1
 .word 0xf9403fa0
 .word 0xd63f0020
@@ -32521,15 +32523,15 @@ bl _p_729
 .word 0x5400006a
 .loc 5 1074 0
 .word 0xd28000a0
-bl _p_618
+bl _p_617
 .loc 5 1076 0
 .word 0xf9401fa0
 .word 0xf9400000
-bl _p_730
+bl _p_729
 .word 0xaa0003e2
 .word 0xf9400441
 .word 0xaa1903e0
-bl _p_437
+bl _p_436
 .word 0xaa0003f8
 .loc 5 1077 0
 .word 0xaa1803e0
@@ -32540,7 +32542,7 @@ bl _p_437
 .word 0xf9003ba0
 .word 0xf9401fa0
 .word 0xf9400000
-bl _p_731
+bl _p_730
 .word 0xaa0003e3
 .word 0xf9403ba0
 .word 0xaa1803e1
@@ -32577,7 +32579,7 @@ ldr x0, [x16, #3808]
 .word 0xb5000078
 .loc 5 1083 0
 .word 0xd2800240
-bl _p_618
+bl _p_617
 .loc 5 1086 0
 .word 0xf9401fa0
 .word 0xf9400800
@@ -32618,7 +32620,7 @@ bl _p_618
 .word 0xf9003ba0
 .word 0xf9401fa0
 .word 0xf9400000
-bl _p_732
+bl _p_731
 bl _p_56
 .word 0xaa0003e2
 .word 0xf9403ba0
@@ -32637,8 +32639,8 @@ bl _p_56
 .word 0xf90023a0
 .loc 5 1094 0
 .word 0xd2800240
-bl _p_618
-bl _p_324
+bl _p_617
+bl _p_323
 .word 0xf90033a0
 .word 0xf94033a0
 .word 0xb4000060
@@ -32820,7 +32822,7 @@ ldr x15, [x16, #3568]
 .word 0x9100a3a0
 .word 0xf9001ba0
 .word 0xaa1a03e0
-bl _p_733
+bl _p_732
 .word 0xf9401bbe
 .word 0xf90003c0
 
@@ -32829,7 +32831,7 @@ add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x15, [x16, #3568]
 .word 0xf94013a0
 .word 0xf94017a1
-bl _p_734
+bl _p_733
 .word 0x53001c00
 .word 0xf9400bb8
 .word 0xf9400fba
@@ -32881,7 +32883,7 @@ bl _p_2
 .word 0xf9401ba0
 .word 0xf9401fa2
 .word 0x39004022
-bl _p_735
+bl _p_734
 .word 0x53001c00
 .word 0x910003bf
 .word 0xa8c47bfd
@@ -33087,7 +33089,7 @@ ldr x2, [x16, #3840]
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x15, [x16, #3568]
-bl _p_371
+bl _p_370
 .word 0x3980a3a0
 .word 0x390043a0
 .word 0x3980a7a0
@@ -33163,7 +33165,7 @@ ldr x0, [x16, #3680]
 .word 0xd65f03c0
 .word 0xaa1903e0
 bl _p_61
-bl _p_389
+bl _p_388
 .word 0xaa0003f9
 .word 0xb5ffff80
 .word 0x17ffffd0
@@ -33240,7 +33242,7 @@ ldr x0, [x16, #3680]
 .word 0xd65f03c0
 .word 0xaa1803e0
 bl _p_61
-bl _p_389
+bl _p_388
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffcc
@@ -33315,7 +33317,7 @@ ldr x0, [x16, #3680]
 .word 0xd65f03c0
 .word 0xaa1803e0
 bl _p_61
-bl _p_389
+bl _p_388
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffce
@@ -33392,7 +33394,7 @@ ldr x0, [x16, #3680]
 .word 0xd65f03c0
 .word 0xaa1803e0
 bl _p_61
-bl _p_389
+bl _p_388
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffcc
@@ -33469,7 +33471,7 @@ ldr x0, [x16, #3680]
 .word 0xd65f03c0
 .word 0xaa1803e0
 bl _p_61
-bl _p_389
+bl _p_388
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffcc
@@ -33540,7 +33542,7 @@ ldr x0, [x16, #3680]
 .word 0xd65f03c0
 .word 0xaa1903e0
 bl _p_61
-bl _p_389
+bl _p_388
 .word 0xaa0003f9
 .word 0xb5ffff80
 .word 0x17ffffd0
@@ -33617,7 +33619,7 @@ ldr x0, [x16, #3680]
 .word 0xd65f03c0
 .word 0xaa1803e0
 bl _p_61
-bl _p_389
+bl _p_388
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffcc
@@ -33692,7 +33694,7 @@ ldr x0, [x16, #3680]
 .word 0xd65f03c0
 .word 0xaa1803e0
 bl _p_61
-bl _p_389
+bl _p_388
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffce
@@ -33769,7 +33771,7 @@ ldr x0, [x16, #3680]
 .word 0xd65f03c0
 .word 0xaa1803e0
 bl _p_61
-bl _p_389
+bl _p_388
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffcc
@@ -33846,7 +33848,7 @@ ldr x0, [x16, #3680]
 .word 0xd65f03c0
 .word 0xaa1803e0
 bl _p_61
-bl _p_389
+bl _p_388
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffcc
@@ -33925,7 +33927,7 @@ ldr x0, [x16, #3680]
 .word 0xd65f03c0
 .word 0xaa1803e0
 bl _p_61
-bl _p_389
+bl _p_388
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffca
@@ -33996,7 +33998,7 @@ ldr x0, [x16, #3680]
 .word 0xd65f03c0
 .word 0xaa1903e0
 bl _p_61
-bl _p_389
+bl _p_388
 .word 0xaa0003f9
 .word 0xb5ffff80
 .word 0x17ffffd0
@@ -34073,7 +34075,7 @@ ldr x0, [x16, #3680]
 .word 0xd65f03c0
 .word 0xaa1803e0
 bl _p_61
-bl _p_389
+bl _p_388
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffcc
@@ -34150,7 +34152,7 @@ ldr x0, [x16, #3680]
 .word 0xd65f03c0
 .word 0xaa1803e0
 bl _p_61
-bl _p_389
+bl _p_388
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffcc
@@ -34227,7 +34229,7 @@ ldr x0, [x16, #3680]
 .word 0xd65f03c0
 .word 0xaa1803e0
 bl _p_61
-bl _p_389
+bl _p_388
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffcc
@@ -34302,7 +34304,7 @@ ldr x0, [x16, #3680]
 .word 0xd65f03c0
 .word 0xaa1803e0
 bl _p_61
-bl _p_389
+bl _p_388
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffce
@@ -34379,7 +34381,7 @@ ldr x0, [x16, #3680]
 .word 0xd65f03c0
 .word 0xaa1803e0
 bl _p_61
-bl _p_389
+bl _p_388
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffcc
@@ -34456,7 +34458,7 @@ ldr x0, [x16, #3680]
 .word 0xd65f03c0
 .word 0xaa1803e0
 bl _p_61
-bl _p_389
+bl _p_388
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffcc
@@ -34535,7 +34537,7 @@ ldr x0, [x16, #3680]
 .word 0xd65f03c0
 .word 0xaa1703e0
 bl _p_61
-bl _p_389
+bl _p_388
 .word 0xaa0003f7
 .word 0xb5ffff80
 .word 0x17ffffcb
@@ -34606,7 +34608,7 @@ ldr x0, [x16, #3680]
 .word 0xd65f03c0
 .word 0xaa1903e0
 bl _p_61
-bl _p_389
+bl _p_388
 .word 0xaa0003f9
 .word 0xb5ffff80
 .word 0x17ffffd0
@@ -34677,7 +34679,7 @@ ldr x0, [x16, #3680]
 .word 0xd65f03c0
 .word 0xaa1903e0
 bl _p_61
-bl _p_389
+bl _p_388
 .word 0xaa0003f9
 .word 0xb5ffff80
 .word 0x17ffffd0
@@ -34700,7 +34702,7 @@ System_Lazy_1_T_INTPTR__ctor:
 .word 0xf90013a0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_736
+bl _p_735
 .word 0xaa0003e2
 .word 0xf94013a0
 .word 0xd2800041
@@ -34724,7 +34726,7 @@ System_Lazy_1_T_INTPTR__ctor_System_Func_1_T_INTPTR:
 .word 0xf90013a0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_737
+bl _p_736
 .word 0xaa0003e3
 .word 0xf94013a0
 .word 0xf9400fa1
@@ -34748,11 +34750,11 @@ System_Lazy_1_T_INTPTR__ctor_System_Threading_LazyThreadSafetyMode:
 .word 0xf90017a0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_738
+bl _p_737
 .word 0xf9001ba0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_739
+bl _p_738
 .word 0xaa0003e1
 .word 0xf9401baf
 .word 0xb9801ba0
@@ -34786,11 +34788,11 @@ System_Lazy_1_T_INTPTR__ctor_System_Func_1_T_INTPTR_System_Threading_LazyThreadS
 .word 0xf9001fa0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_740
+bl _p_739
 .word 0xf90023a0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_741
+bl _p_740
 .word 0xaa0003e1
 .word 0xf94023af
 .word 0xb98023a0
@@ -34842,7 +34844,7 @@ add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x0, [x16, #3816]
 bl _p_2
 .word 0xf90013a0
-bl _p_672
+bl _p_671
 .word 0xf94013a0
 .word 0x1400000d
 .loc 7 213 0
@@ -34871,7 +34873,7 @@ bl _p_211
 .word 0xf90013a0
 .word 0xd28415e0
 bl _p_211
-bl _p_410
+bl _p_409
 .word 0xaa0003e2
 .word 0xf94013a1
 .word 0xd2800b60
@@ -34895,7 +34897,7 @@ System_Lazy_1_T_INTPTR_OnSerializing_System_Runtime_Serialization_StreamingConte
 .word 0xf9001ba0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_742
+bl _p_741
 .word 0xaa0003e1
 .word 0xf9401ba0
 .word 0xd63f0020
@@ -34919,7 +34921,7 @@ System_Lazy_1_T_INTPTR_ToString:
 .word 0xf9001ba0
 .word 0xf94013a0
 .word 0xf9400000
-bl _p_743
+bl _p_742
 .word 0xaa0003e1
 .word 0xf9401ba0
 .word 0xd63f0020
@@ -34930,7 +34932,7 @@ bl _p_743
 .word 0xf9001ba0
 .word 0xf94013a0
 .word 0xf9400000
-bl _p_744
+bl _p_743
 .word 0xaa0003e1
 .word 0xf9401ba0
 .word 0xd63f0020
@@ -34938,11 +34940,11 @@ bl _p_744
 .word 0x9100a3ba
 .word 0xf94013a0
 .word 0xf9400000
-bl _p_745
+bl _p_744
 .word 0xaa0003f9
 .word 0xf94013a0
 .word 0xf9400000
-bl _p_746
+bl _p_745
 .word 0xd280005e
 .word 0xeb1e001f
 .word 0x540000a0
@@ -34954,7 +34956,7 @@ bl _p_746
 .word 0xf9001ba0
 .word 0xf94013a0
 .word 0xf9400000
-bl _p_747
+bl _p_746
 bl _p_56
 .word 0xf9401ba1
 .word 0xf9000801
@@ -34965,7 +34967,7 @@ bl _p_56
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x0, [x16, #3880]
-bl _p_410
+bl _p_409
 .word 0xaa0003fa
 .word 0xaa1a03e0
 .word 0xa9416bb9
@@ -35023,11 +35025,11 @@ System_Lazy_1_T_INTPTR_get_IsValueCreated:
 .word 0xf90013a0
 .word 0xf9400fa0
 .word 0xf9400000
-bl _p_748
+bl _p_747
 .word 0xaa0003e2
 .word 0xf94013a0
 .word 0xf9400441
-bl _p_437
+bl _p_436
 .word 0xeb1f001f
 .word 0x9a9f97fa
 .word 0x14000002
@@ -35057,11 +35059,11 @@ System_Lazy_1_T_INTPTR_get_Value:
 .word 0xf90013a0
 .word 0xf9400fa0
 .word 0xf9400000
-bl _p_749
+bl _p_748
 .word 0xaa0003e2
 .word 0xf94013a0
 .word 0xf9400441
-bl _p_437
+bl _p_436
 .word 0xaa0003fa
 .loc 7 323 0
 .word 0xaa1a03e0
@@ -35075,27 +35077,27 @@ bl _p_437
 .word 0xf90013a0
 .word 0xf9400fa0
 .word 0xf9400000
-bl _p_750
+bl _p_749
 .word 0xaa0003e2
 .word 0xf94013a0
 .word 0xf9400441
-bl _p_437
+bl _p_436
 .word 0xaa0003fa
 .loc 7 330 0
 .word 0xaa1a03e0
 .word 0xf9400801
 .word 0xaa0103e0
 .word 0xf940003e
-bl _p_751
+bl _p_750
 .loc 7 337 0
-bl _p_752
+bl _p_751
 .loc 7 339 0
 .word 0xf9400fa0
 .word 0xf940001e
 .word 0xf90013a0
 .word 0xf9400fa0
 .word 0xf9400000
-bl _p_753
+bl _p_752
 .word 0xaa0003e1
 .word 0xf94013a0
 .word 0xd63f0020
@@ -35121,7 +35123,7 @@ System_Lazy_1_T_INTPTR_LazyInitValue:
 .word 0xf9003ba0
 .word 0xf94013a0
 .word 0xf9400000
-bl _p_754
+bl _p_753
 .word 0xaa0003e1
 .word 0xf9403ba0
 .word 0xd63f0020
@@ -35136,7 +35138,7 @@ bl _p_754
 .word 0xf9003ba0
 .word 0xf94013a0
 .word 0xf9400000
-bl _p_755
+bl _p_754
 .word 0xaa0003e1
 .word 0xf9403ba0
 .word 0xd63f0020
@@ -35157,7 +35159,7 @@ bl _p_5
 .word 0xf9003ba0
 .word 0xf94013a0
 .word 0xf9400000
-bl _p_755
+bl _p_754
 .word 0xaa0003e1
 .word 0xf9403ba0
 .word 0xd63f0020
@@ -35188,11 +35190,11 @@ bl _p_5
 .word 0xf9003ba0
 .word 0xf94013a0
 .word 0xf9400000
-bl _p_756
+bl _p_755
 .word 0xaa0003e2
 .word 0xf9403ba0
 .word 0xf9400441
-bl _p_645
+bl _p_644
 .word 0xaa0003fa
 .word 0x1400009d
 .loc 7 372 0
@@ -35200,13 +35202,13 @@ bl _p_645
 .word 0xf9003fa0
 .word 0xf94013a0
 .word 0xf9400000
-bl _p_757
+bl _p_756
 .word 0x3980ac10
 .word 0xb5000050
 bl _p_39
 .word 0xf94013a0
 .word 0xf9400000
-bl _p_758
+bl _p_757
 .word 0xaa0003e1
 .word 0xf9403fa0
 .word 0xf9400021
@@ -35236,13 +35238,13 @@ ldr x1, [x16, #3888]
 .word 0xf9003ba0
 .word 0xf94013a0
 .word 0xf9400000
-bl _p_757
+bl _p_756
 .word 0x3980ac10
 .word 0xb5000050
 bl _p_39
 .word 0xf94013a0
 .word 0xf9400000
-bl _p_758
+bl _p_757
 .word 0xaa0003e1
 .word 0xf9403ba0
 .word 0xf9400021
@@ -35257,7 +35259,7 @@ bl _mono_monitor_enter_v4_fast
 .word 0x35000080
 .word 0xaa1a03e0
 .word 0xaa1903e1
-bl _p_759
+bl _p_758
 .word 0x14000001
 .loc 7 386 0
 .word 0xf94013a0
@@ -35269,7 +35271,7 @@ bl _p_759
 .word 0xf90043a0
 .word 0xf94013a0
 .word 0xf9400000
-bl _p_755
+bl _p_754
 .word 0xaa0003e1
 .word 0xf94043a0
 .word 0xd63f0020
@@ -35288,13 +35290,13 @@ bl _p_5
 .word 0xf9003fa0
 .word 0xf94013a0
 .word 0xf9400000
-bl _p_757
+bl _p_756
 .word 0x3980ac10
 .word 0xb5000050
 bl _p_39
 .word 0xf94013a0
 .word 0xf9400000
-bl _p_758
+bl _p_757
 .word 0xaa0003e1
 .word 0xf9403fa0
 .word 0xf9400021
@@ -35314,11 +35316,11 @@ bl _p_5
 .word 0xf9003ba0
 .word 0xf94013a0
 .word 0xf9400000
-bl _p_756
+bl _p_755
 .word 0xaa0003e2
 .word 0xf9403ba0
 .word 0xf9400441
-bl _p_437
+bl _p_436
 .word 0xaa0003fa
 .loc 7 395 0
 .word 0xaa1a03e0
@@ -35329,18 +35331,18 @@ bl _p_437
 .word 0xf9003ba0
 .word 0xf94013a0
 .word 0xf9400000
-bl _p_760
+bl _p_759
 .word 0xaa0003e2
 .word 0xf9403ba0
 .word 0xf9400441
-bl _p_437
+bl _p_436
 .word 0xaa0003f9
 .loc 7 399 0
 .word 0xaa1903e0
 .word 0xf9400801
 .word 0xaa0103e0
 .word 0xf940003e
-bl _p_751
+bl _p_750
 .word 0x94000002
 .word 0x14000018
 .word 0xf90033be
@@ -35358,7 +35360,7 @@ add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x0, [x16, #3680]
 .word 0xb9400000
 .word 0x34000120
-bl _p_389
+bl _p_388
 .word 0xf90023a0
 .word 0xf94023a1
 .word 0xf94023a0
@@ -35397,7 +35399,7 @@ System_Lazy_1_T_INTPTR_CreateValue:
 .word 0xf9003ba0
 .word 0xf9400fa0
 .word 0xf9400000
-bl _p_761
+bl _p_760
 .word 0xaa0003e1
 .word 0xf9403ba0
 .word 0xd63f0020
@@ -35417,23 +35419,23 @@ bl _p_761
 .word 0xf9003ba0
 .word 0xf9400fa0
 .word 0xf9400000
-bl _p_762
+bl _p_761
 .word 0x3980ac10
 .word 0xb5000050
 bl _p_39
 .word 0xf9400fa0
 .word 0xf9400000
-bl _p_763
+bl _p_762
 .word 0xaa0003e1
 .word 0xf9403ba0
 .word 0xf9400021
-bl _p_764
+bl _p_763
 .word 0x53001c00
 .word 0x34000120
 .loc 7 425 0
 .word 0xd28426e0
 bl _p_211
-bl _p_410
+bl _p_409
 .word 0xaa0003e1
 .word 0xd2802a20
 .word 0xf2a04000
@@ -35452,13 +35454,13 @@ bl _p_61
 .word 0xf9003fa0
 .word 0xf9400fa0
 .word 0xf9400000
-bl _p_762
+bl _p_761
 .word 0x3980ac10
 .word 0xb5000050
 bl _p_39
 .word 0xf9400fa0
 .word 0xf9400000
-bl _p_763
+bl _p_762
 .word 0xaa0003e1
 .word 0xf9403fa0
 .word 0xf9400021
@@ -35471,16 +35473,16 @@ bl _p_5
 .loc 7 432 0
 .word 0xf9400fa0
 .word 0xf9400000
-bl _p_762
+bl _p_761
 .word 0x3980ac10
 .word 0xb5000050
 bl _p_39
 .word 0xf9400fa0
 .word 0xf9400000
-bl _p_763
+bl _p_762
 .word 0xf9400001
 .word 0xaa1a03e0
-bl _p_764
+bl _p_763
 .word 0x53001c00
 .word 0x34000060
 .loc 7 435 0
@@ -35493,12 +35495,12 @@ bl _p_764
 .word 0xf90043a0
 .word 0xf9400fa0
 .word 0xf9400000
-bl _p_765
+bl _p_764
 bl _p_56
 .word 0xf9003fa0
 .word 0xf9400fa0
 .word 0xf9400000
-bl _p_766
+bl _p_765
 .word 0xaa0003e2
 .word 0xf9403fa0
 .word 0xf94043a1
@@ -35523,12 +35525,12 @@ bl _p_766
 .word 0xf9004ba0
 .word 0xf9400fa0
 .word 0xf9400000
-bl _p_767
+bl _p_766
 bl _p_56
 .word 0xf90047a0
 .word 0xf9400fa0
 .word 0xf9400000
-bl _p_768
+bl _p_767
 .word 0xaa0003e2
 .word 0xf94047a0
 .word 0xf9404ba1
@@ -35543,12 +35545,12 @@ bl _p_5
 .word 0xf9403ba0
 .loc 7 443 0
 .word 0xf9401fa0
-bl _p_499
+bl _p_498
 .loc 7 450 0
 .word 0xf9400fa0
 .word 0xf9400000
+bl _p_768
 bl _p_769
-bl _p_770
 .word 0xf90047a0
 .word 0xf9400000
 .word 0x3940a801
@@ -35560,7 +35562,7 @@ bl _p_770
 .word 0xf9004ba0
 .word 0xf9400fa0
 .word 0xf9400000
-bl _p_771
+bl _p_770
 .word 0xaa0003e2
 .word 0xf94047a0
 .word 0xf9404ba1
@@ -35571,12 +35573,12 @@ bl _p_771
 .word 0xf90043a0
 .word 0xf9400fa0
 .word 0xf9400000
-bl _p_765
+bl _p_764
 bl _p_56
 .word 0xf9003fa0
 .word 0xf9400fa0
 .word 0xf9400000
-bl _p_766
+bl _p_765
 .word 0xaa0003e2
 .word 0xf9403fa0
 .word 0xf94043a1
@@ -35592,7 +35594,7 @@ bl _p_766
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x0, [x16, #3904]
-bl _p_410
+bl _p_409
 .word 0xf9003fa0
 
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+0
@@ -35601,7 +35603,7 @@ ldr x0, [x16, #3912]
 bl _p_2
 .word 0xf9403fa1
 .word 0xf9003ba0
-bl _p_772
+bl _p_771
 .word 0xf9403ba0
 .word 0xf9001ba0
 .loc 7 456 0
@@ -35616,12 +35618,12 @@ bl _p_772
 .word 0xf9004ba0
 .word 0xf9400fa0
 .word 0xf9400000
-bl _p_767
+bl _p_766
 bl _p_56
 .word 0xf90047a0
 .word 0xf9400fa0
 .word 0xf9400000
-bl _p_768
+bl _p_767
 .word 0xaa0003e2
 .word 0xf94047a0
 .word 0xf9404ba1
@@ -35660,15 +35662,15 @@ System_Lazy_1_T_INTPTR__cctor:
 .word 0x910003fd
 .word 0xf9000baf
 .word 0xf9400ba0
-bl _p_773
-bl _p_455
+bl _p_772
+bl _p_454
 .word 0xf9001ba0
 .word 0xf9400ba0
-bl _p_774
+bl _p_773
 bl _p_56
 .word 0xf90017a0
 .word 0xf9400ba0
-bl _p_775
+bl _p_774
 .word 0xaa0003e3
 .word 0xf94017a0
 .word 0xf9401ba2
@@ -35676,7 +35678,7 @@ bl _p_775
 .word 0xd2800001
 .word 0xd63f0060
 .word 0xf9400ba0
-bl _p_776
+bl _p_775
 .word 0xf94013a1
 .word 0xf9000001
 .word 0x910003bf
@@ -35760,7 +35762,7 @@ ldr x0, [x16, #3680]
 .word 0xd65f03c0
 .word 0xaa1903e0
 bl _p_61
-bl _p_389
+bl _p_388
 .word 0xaa0003f9
 .word 0xb5ffff80
 .word 0x17ffffd0
@@ -35837,7 +35839,7 @@ ldr x0, [x16, #3680]
 .word 0xd65f03c0
 .word 0xaa1803e0
 bl _p_61
-bl _p_389
+bl _p_388
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffcc
@@ -35916,7 +35918,7 @@ ldr x0, [x16, #3680]
 .word 0xd65f03c0
 .word 0xaa1803e0
 bl _p_61
-bl _p_389
+bl _p_388
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffca
@@ -35991,7 +35993,7 @@ ldr x0, [x16, #3680]
 .word 0xd65f03c0
 .word 0xaa1803e0
 bl _p_61
-bl _p_389
+bl _p_388
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffce
@@ -36075,7 +36077,7 @@ ldr x0, [x16, #3680]
 .word 0xd65f03c0
 .word 0xaa1703e0
 bl _p_61
-bl _p_389
+bl _p_388
 .word 0xaa0003f7
 .word 0xb5ffff80
 .word 0x17ffffc6
@@ -36146,7 +36148,7 @@ ldr x0, [x16, #3680]
 .word 0xd65f03c0
 .word 0xaa1903e0
 bl _p_61
-bl _p_389
+bl _p_388
 .word 0xaa0003f9
 .word 0xb5ffff80
 .word 0x17ffffd0
@@ -36223,7 +36225,7 @@ ldr x0, [x16, #3680]
 .word 0xd65f03c0
 .word 0xaa1803e0
 bl _p_61
-bl _p_389
+bl _p_388
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffcc
@@ -36298,7 +36300,7 @@ ldr x0, [x16, #3680]
 .word 0xd65f03c0
 .word 0xaa1803e0
 bl _p_61
-bl _p_389
+bl _p_388
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffce
@@ -36375,7 +36377,7 @@ ldr x0, [x16, #3680]
 .word 0xd65f03c0
 .word 0xaa1803e0
 bl _p_61
-bl _p_389
+bl _p_388
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffcc
@@ -36452,7 +36454,7 @@ ldr x0, [x16, #3680]
 .word 0xd65f03c0
 .word 0xaa1803e0
 bl _p_61
-bl _p_389
+bl _p_388
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffcc
@@ -36531,7 +36533,7 @@ ldr x0, [x16, #3680]
 .word 0xd65f03c0
 .word 0xaa1803e0
 bl _p_61
-bl _p_389
+bl _p_388
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffca
@@ -36608,7 +36610,7 @@ ldr x0, [x16, #3680]
 .word 0xd65f03c0
 .word 0xaa1803e0
 bl _p_61
-bl _p_389
+bl _p_388
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffcc
@@ -36688,7 +36690,7 @@ System_Array_InternalArray__IndexOf_T_REF_T_REF:
 .word 0x14000024
 .loc 2 176 0
 .word 0xf9401fa0
-bl _p_777
+bl _p_776
 .word 0x93407ee0
 .word 0xd37df000
 .word 0x8b000320
@@ -36748,7 +36750,7 @@ bl _p_777
 .word 0xd2874b00
 .word 0xf2a00040
 bl _p_211
-bl _p_400
+bl _p_399
 .word 0xaa0003e1
 .word 0xd2803240
 .word 0xf2a04000
@@ -36773,7 +36775,7 @@ System_Array_InternalArray__get_Item_T_REF_int:
 .word 0x540001c2
 .loc 2 201 0
 .word 0xf94013a0
-bl _p_778
+bl _p_777
 .word 0x93407f40
 .word 0xd37df001
 .word 0xf9400fa0
@@ -36852,7 +36854,7 @@ ldr x0, [x16, #3808]
 .word 0x1400000d
 .loc 2 215 0
 .word 0xf9401fa0
-bl _p_779
+bl _p_778
 .word 0xb9802ba0
 .word 0x93407c00
 .word 0xd37df000
@@ -36940,7 +36942,7 @@ ldr x0, [x16, #3680]
 .word 0xd65f03c0
 .word 0xaa1903e0
 bl _p_61
-bl _p_389
+bl _p_388
 .word 0xaa0003f9
 .word 0xb5ffff80
 .word 0x17ffffd0
@@ -37017,7 +37019,7 @@ ldr x0, [x16, #3680]
 .word 0xd65f03c0
 .word 0xaa1803e0
 bl _p_61
-bl _p_389
+bl _p_388
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffcc
@@ -37067,7 +37069,7 @@ wrapper_delegate_begin_invoke__Module_begin_invoke_IAsyncResult__this___IDiction
 .word 0xf9000320
 .word 0xf94013a0
 .word 0xaa1803e1
-bl _p_780
+bl _p_779
 .word 0xa94167b8
 .word 0x910003bf
 .word 0xa8c47bfd
@@ -37108,7 +37110,7 @@ wrapper_delegate_end_invoke__Module_end_invoke_Task_1_string__this___IAsyncResul
 .word 0xf9000300
 .word 0xf94013a0
 .word 0xaa1803e1
-bl _p_781
+bl _p_780
 .word 0xa94167b8
 .word 0x910003bf
 .word 0xa8c47bfd
@@ -37133,7 +37135,7 @@ System_Linq_Enumerable_Select_TSource_INST_TResult_REF_System_Collections_Generi
 .word 0xb4000f3a
 .loc 8 41 0
 .word 0xf9401ba0
-bl _p_782
+bl _p_781
 .word 0xaa0003f8
 .word 0xaa1903f7
 .word 0xeb1f033f
@@ -37147,7 +37149,7 @@ bl _p_782
 .word 0xd2800017
 .word 0xb40002f7
 .word 0xf9401ba0
-bl _p_782
+bl _p_781
 .word 0xaa0003f8
 .word 0xb4000119
 .word 0xf9400320
@@ -37158,9 +37160,9 @@ bl _p_782
 .word 0x10000011
 .word 0x54000ce1
 .word 0xf9401ba0
-bl _p_783
+bl _p_782
 .word 0xf9401ba0
-bl _p_784
+bl _p_783
 .word 0xaa0003ef
 .word 0xaa1903e0
 .word 0xaa1a03e1
@@ -37170,25 +37172,25 @@ bl _p_784
 .word 0x14000049
 .loc 8 42 0
 .word 0xf9401ba0
-bl _p_785
+bl _p_784
 .word 0xaa0003e2
 .word 0xf9400441
 .word 0xaa1903e0
-bl _p_437
+bl _p_436
 .word 0xb40002e0
 .word 0xf9401ba0
-bl _p_785
+bl _p_784
 .word 0xaa0003e2
 .word 0xf9400441
 .word 0xaa1903e0
-bl _p_645
+bl _p_644
 .word 0xf9002ba0
 .word 0xf9401ba0
-bl _p_786
+bl _p_785
 bl _p_56
 .word 0xf90027a0
 .word 0xf9401ba0
-bl _p_787
+bl _p_786
 .word 0xaa0003e4
 .word 0xf94027a0
 .word 0xf9402ba1
@@ -37200,25 +37202,25 @@ bl _p_787
 .word 0x1400002c
 .loc 8 43 0
 .word 0xf9401ba0
-bl _p_788
+bl _p_787
 .word 0xaa0003e2
 .word 0xf9400441
 .word 0xaa1903e0
-bl _p_437
+bl _p_436
 .word 0xb40002e0
 .word 0xf9401ba0
-bl _p_788
+bl _p_787
 .word 0xaa0003e2
 .word 0xf9400441
 .word 0xaa1903e0
-bl _p_645
+bl _p_644
 .word 0xf9002ba0
 .word 0xf9401ba0
-bl _p_789
+bl _p_788
 bl _p_56
 .word 0xf90027a0
 .word 0xf9401ba0
-bl _p_790
+bl _p_789
 .word 0xaa0003e4
 .word 0xf94027a0
 .word 0xf9402ba1
@@ -37230,11 +37232,11 @@ bl _p_790
 .word 0x1400000f
 .loc 8 44 0
 .word 0xf9401ba0
-bl _p_791
+bl _p_790
 bl _p_56
 .word 0xf90027a0
 .word 0xf9401ba0
-bl _p_792
+bl _p_791
 .word 0xaa0003e4
 .word 0xf94027a0
 .word 0xf90023a0
@@ -37255,7 +37257,7 @@ add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x0, [x16, #3920]
 .word 0xd289e581
 bl _p_60
-bl _p_793
+bl _p_792
 bl _p_61
 .loc 8 40 0
 
@@ -37264,7 +37266,7 @@ add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x0, [x16, #3920]
 .word 0xd289e9c1
 bl _p_60
-bl _p_793
+bl _p_792
 bl _p_61
 .word 0xd2802a00
 .word 0xaa1103e1
@@ -37298,7 +37300,7 @@ System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Collections_Gene
 .word 0xf9400fa1
 .word 0x910083a0
 .word 0xd2800f02
-bl _p_794
+bl _p_793
 .word 0x14000008
 .word 0xd29d1d60
 bl _p_211
@@ -37323,16 +37325,16 @@ bl _p_61
 .word 0xf9006ba0
 .loc 9 470 0
 .word 0x9102e3a0
-bl _p_795
+bl _p_794
 .loc 9 471 0
 .word 0xf9400fa0
-bl _p_796
+bl _p_795
 .word 0x94000002
 .word 0x14000006
 .word 0xf90077be
 .loc 9 475 0
 .word 0x9102e3a0
-bl _p_797
+bl _p_796
 .word 0xf94077be
 .word 0xd61f03c0
 .word 0x910003bf
@@ -37366,7 +37368,7 @@ System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_Xamarin_Auth_Response_S
 .word 0xf9400fa1
 .word 0x910083a0
 .word 0xd2800b02
-bl _p_794
+bl _p_793
 .word 0x14000008
 .word 0xd29d1d60
 bl _p_211
@@ -37391,16 +37393,16 @@ bl _p_61
 .word 0xf9005ba0
 .loc 9 470 0
 .word 0x910263a0
-bl _p_795
+bl _p_794
 .loc 9 471 0
 .word 0xf9400fa0
-bl _p_798
+bl _p_797
 .word 0x94000002
 .word 0x14000006
 .word 0xf90067be
 .loc 9 475 0
 .word 0x910263a0
-bl _p_797
+bl _p_796
 .word 0xf94067be
 .word 0xd61f03c0
 .word 0x910003bf
@@ -37420,17 +37422,17 @@ System_Linq_Enumerable_Contains_TSource_CHAR_System_Collections_Generic_IEnumera
 .word 0xf9000fa0
 .word 0xf90013a1
 .word 0xf94017a0
-bl _p_799
+bl _p_798
 .word 0xaa0003e2
 .word 0xf9400441
 .word 0xf9400fa0
-bl _p_437
+bl _p_436
 .word 0xaa0003f8
 .loc 8 1269 0
 .word 0xaa1803e0
 .word 0xb40001a0
 .word 0xf94017a0
-bl _p_800
+bl _p_799
 .word 0xaa0003ef
 .word 0xaa1803e0
 .word 0x794043a1
@@ -37443,10 +37445,10 @@ bl _p_800
 .word 0x1400000d
 .loc 8 1270 0
 .word 0xf94017a0
-bl _p_801
+bl _p_800
 .word 0xf9001ba0
 .word 0xf94017a0
-bl _p_802
+bl _p_801
 .word 0xaa0003e3
 .word 0xf9401baf
 .word 0xf9400fa0
@@ -37595,7 +37597,7 @@ System_Array_InternalEnumerator_1_T_CHAR_get_Current:
 .word 0x4b010000
 .word 0xf90017a0
 .word 0xf9400fa0
-bl _p_803
+bl _p_802
 .word 0xaa0003e1
 .word 0xf9401fa0
 .word 0xf9001ba1
@@ -37603,7 +37605,7 @@ bl _p_803
 .word 0xf940001e
 .word 0xf90013a0
 .word 0xf9400fa0
-bl _p_804
+bl _p_803
 .word 0xaa0003e2
 .word 0xf94013a0
 .word 0xf94017a1
@@ -37670,19 +37672,19 @@ System_Array_InternalEnumerator_1_T_CHAR_System_Collections_IEnumerator_get_Curr
 .word 0xf9000faf
 .word 0xf9000ba0
 .word 0xf9400fa0
-bl _p_805
+bl _p_804
 .word 0xf90017a0
 .word 0xf9400ba0
 .word 0xf940001e
 .word 0xf9400fa0
-bl _p_806
+bl _p_805
 .word 0xaa0003e1
 .word 0xf94017af
 .word 0xf9400ba0
 .word 0xd63f0020
 .word 0xf90013a0
 .word 0xf9400fa0
-bl _p_807
+bl _p_806
 bl _p_56
 .word 0xf94013a1
 .word 0x79002001
@@ -37706,10 +37708,10 @@ System_Array_InternalArray__IEnumerable_GetEnumerator_T_CHAR:
 .word 0x9100a3a0
 .word 0xf9002fa0
 .word 0xf9401fa0
-bl _p_808
+bl _p_807
 .word 0xf90033a0
 .word 0xf9401fa0
-bl _p_809
+bl _p_808
 .word 0xaa0003e2
 .word 0xf9402fa0
 .word 0xf94033af
@@ -37720,7 +37722,7 @@ bl _p_809
 .word 0xf9401ba0
 .word 0xf90013a0
 .word 0xf9401fa0
-bl _p_808
+bl _p_807
 bl _p_56
 .word 0xf90023a0
 .word 0x91004001
@@ -37812,7 +37814,7 @@ System_Array_InternalArray__ICollection_Contains_T_CHAR_T_CHAR:
 .word 0x14000031
 .loc 2 104 0
 .word 0xf94027a0
-bl _p_810
+bl _p_809
 .word 0x93407f00
 .word 0xd37ff800
 .word 0x8b000340
@@ -37830,16 +37832,16 @@ bl _p_810
 .word 0xaa1703e0
 .word 0xf9002ba0
 .word 0xf94027a0
-bl _p_811
+bl _p_810
 bl _p_56
 .word 0xaa0003f7
 .word 0xf9402ba0
 .word 0x790022e0
 .word 0xf94027a0
-bl _p_812
+bl _p_811
 .word 0xaa0003f5
 .word 0xf94027a0
-bl _p_813
+bl _p_812
 .word 0xd280005e
 .word 0xeb1e001f
 .word 0x540000c0
@@ -37851,7 +37853,7 @@ bl _p_813
 .word 0x794002c0
 .word 0xf9002ba0
 .word 0xf94027a0
-bl _p_811
+bl _p_810
 bl _p_56
 .word 0xf9402ba1
 .word 0x79002001
@@ -37879,7 +37881,7 @@ bl _p_56
 .word 0xd2874b00
 .word 0xf2a00040
 bl _p_211
-bl _p_400
+bl _p_399
 .word 0xaa0003e1
 .word 0xd2803240
 .word 0xf2a04000
@@ -37986,7 +37988,7 @@ bl _p_61
 .word 0xd2874b00
 .word 0xf2a00040
 bl _p_211
-bl _p_400
+bl _p_399
 .word 0xaa0003e1
 .word 0xd2803240
 .word 0xf2a04000
@@ -38005,7 +38007,7 @@ bl _p_61
 .word 0xd2874b00
 .word 0xf2a00040
 bl _p_211
-bl _p_400
+bl _p_399
 .word 0xaa0003e1
 .word 0xd2803240
 .word 0xf2a04000
@@ -38018,7 +38020,7 @@ bl _p_211
 .word 0xd2876e60
 .word 0xf2a00040
 bl _p_211
-bl _p_400
+bl _p_399
 .word 0xaa0003e2
 .word 0xf9402ba1
 .word 0xd2800b60
@@ -38045,7 +38047,7 @@ System_Linq_Enumerable_Max_System_nfloat_System_Collections_Generic_IEnumerable_
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x15, [x16, #3928]
-bl _p_814
+bl _p_813
 .word 0xaa0003f9
 .loc 8 1785 0
 .word 0x9e6703e0
@@ -38210,7 +38212,7 @@ ldr x15, [x16, #248]
 .word 0xfd401fa0
 .word 0x14000003
 .loc 8 1806 0
-bl _p_815
+bl _p_814
 bl _p_61
 .word 0xa94167b8
 .word 0xf94013ba
@@ -38224,7 +38226,7 @@ add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x0, [x16, #3920]
 .word 0xd289e581
 bl _p_60
-bl _p_793
+bl _p_792
 bl _p_61
 
 Lme_2b4:
@@ -38361,7 +38363,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x15, [x16, #3952]
 .word 0xf940001e
-bl _p_816
+bl _p_815
 .word 0xf9400bba
 .word 0x910003bf
 .word 0xa8c27bfd
@@ -38424,7 +38426,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x15, [x16, #3960]
 .word 0xf9400ba0
-bl _p_817
+bl _p_816
 .word 0xfd0013a0
 
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+0
@@ -38455,7 +38457,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x15, [x16, #3960]
 .word 0xf9400ba1
-bl _p_818
+bl _p_817
 .word 0xf94017a0
 .word 0xf9000fa0
 .word 0xf9401ba0
@@ -38519,7 +38521,7 @@ ldr x0, [x16, #3976]
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x15, [x16, #3928]
-bl _p_819
+bl _p_818
 .word 0xaa0003fa
 .loc 10 31 0
 .word 0xaa1a03e1
@@ -38582,7 +38584,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x0, [x16, #4008]
 .word 0xaa1903e1
-bl _p_820
+bl _p_819
 .word 0xaa0003fa
 .word 0xb400017a
 .word 0xf9400340
@@ -38680,7 +38682,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+0
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x0, [x16, #4048]
 .word 0xaa1903e1
-bl _p_820
+bl _p_819
 .word 0xaa0003fa
 .word 0xb400017a
 .word 0xf9400340
@@ -38808,7 +38810,7 @@ ldr x1, [x16, #4064]
 .word 0x14000004
 .loc 10 94 0
 .word 0xd2800040
-bl _p_618
+bl _p_617
 .loc 10 95 0
 .word 0xd2800000
 .word 0xf9400bb7
@@ -38849,7 +38851,7 @@ System_Collections_Generic_GenericComparer_1_System_nfloat_Compare_System_nfloat
 .word 0x14000001
 .word 0x910063a0
 .word 0xfd4013a0
-bl _p_821
+bl _p_820
 .word 0x93407c00
 .word 0x14000008
 .loc 10 105 0
@@ -39039,7 +39041,7 @@ bl _p_2
 .word 0xaa1903e1
 .word 0xd2800002
 .word 0xaa1a03e3
-bl _p_822
+bl _p_821
 .word 0xf9401ba0
 .word 0x1400002f
 .loc 8 43 0
@@ -39079,7 +39081,7 @@ bl _p_2
 .word 0xaa1903e1
 .word 0xd2800002
 .word 0xaa1a03e3
-bl _p_823
+bl _p_822
 .word 0xf9401ba0
 .word 0x1400000b
 .loc 8 44 0
@@ -39092,7 +39094,7 @@ bl _p_2
 .word 0xaa1903e1
 .word 0xd2800002
 .word 0xaa1a03e3
-bl _p_824
+bl _p_823
 .word 0xf9401ba0
 .word 0xa94163b7
 .word 0xa9426bb9
@@ -39106,7 +39108,7 @@ add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x0, [x16, #3920]
 .word 0xd289e581
 bl _p_60
-bl _p_793
+bl _p_792
 bl _p_61
 .loc 8 40 0
 
@@ -39115,7 +39117,7 @@ add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x0, [x16, #3920]
 .word 0xd289e9c1
 bl _p_60
-bl _p_793
+bl _p_792
 bl _p_61
 .word 0xd2802a00
 .word 0xaa1103e1
@@ -39151,7 +39153,7 @@ System_Lazy_1_LazyInternalExceptionHolder_T_INTPTR__ctor_System_Exception:
 .word 0xf9400ba0
 .word 0xf90017a0
 .word 0xf9400fa0
-bl _p_825
+bl _p_824
 .word 0xaa0003e1
 .word 0xf94017a0
 .word 0xf90013a1
@@ -39175,16 +39177,16 @@ System_Threading_Tasks_Task_FromResult_TResult_BOOL_TResult_BOOL:
 .word 0xf9000faf
 .word 0xf9000ba0
 .word 0xf9400fa0
-bl _p_826
+bl _p_825
 .word 0x3980ac10
 .word 0xb5000050
 bl _p_39
 .word 0xf9400fa0
-bl _p_826
+bl _p_825
 bl _p_56
 .word 0xf90017a0
 .word 0xf9400fa0
-bl _p_827
+bl _p_826
 .word 0xaa0003e2
 .word 0xf94017a0
 .word 0xf90013a0
@@ -39233,7 +39235,7 @@ bl _p_130
 .word 0x9102c3a2
 .word 0xaa1603e0
 .word 0xaa1703e1
-bl _p_828
+bl _p_827
 .word 0xaa0003f7
 .loc 9 547 0
 .word 0xf9400300
@@ -39250,7 +39252,7 @@ bl _p_130
 .word 0xf9401ba1
 .word 0x9100e3a0
 .word 0xd2800f02
-bl _p_794
+bl _p_793
 
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
@@ -39261,12 +39263,12 @@ bl _p_2
 .word 0x91004000
 .word 0xd2800f02
 .word 0xd2857fe3
-bl _p_829
+bl _p_828
 .word 0xf9407ba1
 .word 0xf9405ba2
 .word 0xaa1803e0
 .word 0xaa1603e3
-bl _p_830
+bl _p_829
 .loc 9 559 0
 
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+0
@@ -39274,7 +39276,7 @@ add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x15, [x16, #3536]
 .word 0xf94017a0
 .word 0xaa1703e1
-bl _p_831
+bl _p_830
 .loc 9 561 0
 .word 0x1400000e
 .word 0xf90063a0
@@ -39283,8 +39285,8 @@ bl _p_831
 .loc 9 563 0
 .word 0xf9405fa0
 .word 0xd2800001
-bl _p_832
-bl _p_324
+bl _p_831
+bl _p_323
 .word 0xf90073a0
 .word 0xf94073a0
 .word 0xb4000060
@@ -39335,7 +39337,7 @@ bl _p_130
 .word 0x9102c3a2
 .word 0xaa1603e0
 .word 0xaa1703e1
-bl _p_828
+bl _p_827
 .word 0xaa0003f7
 .loc 9 547 0
 .word 0xf9400300
@@ -39352,7 +39354,7 @@ bl _p_130
 .word 0xf9401ba1
 .word 0x9100e3a0
 .word 0xd2800f02
-bl _p_794
+bl _p_793
 
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
@@ -39363,12 +39365,12 @@ bl _p_2
 .word 0x91004000
 .word 0xd2800f02
 .word 0xd2857fe3
-bl _p_829
+bl _p_828
 .word 0xf9407ba1
 .word 0xf9405ba2
 .word 0xaa1803e0
 .word 0xaa1603e3
-bl _p_830
+bl _p_829
 .loc 9 559 0
 
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+0
@@ -39376,7 +39378,7 @@ add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x15, [x16, #3512]
 .word 0xf94017a0
 .word 0xaa1703e1
-bl _p_833
+bl _p_832
 .loc 9 561 0
 .word 0x1400000e
 .word 0xf90063a0
@@ -39385,8 +39387,8 @@ bl _p_833
 .loc 9 563 0
 .word 0xf9405fa0
 .word 0xd2800001
-bl _p_832
-bl _p_324
+bl _p_831
+bl _p_323
 .word 0xf90073a0
 .word 0xf94073a0
 .word 0xb4000060
@@ -39437,7 +39439,7 @@ bl _p_140
 .word 0x910243a2
 .word 0xaa1603e0
 .word 0xaa1703e1
-bl _p_828
+bl _p_827
 .word 0xaa0003f7
 .loc 9 547 0
 .word 0xf9400300
@@ -39454,7 +39456,7 @@ bl _p_140
 .word 0xf9401ba1
 .word 0x9100e3a0
 .word 0xd2800b02
-bl _p_794
+bl _p_793
 
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
@@ -39465,12 +39467,12 @@ bl _p_2
 .word 0x91004000
 .word 0xd2800b02
 .word 0xd2805fe3
-bl _p_829
+bl _p_828
 .word 0xf9406ba1
 .word 0xf9404ba2
 .word 0xaa1803e0
 .word 0xaa1603e3
-bl _p_830
+bl _p_829
 .loc 9 559 0
 
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+0
@@ -39478,7 +39480,7 @@ add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x15, [x16, #3512]
 .word 0xf94017a0
 .word 0xaa1703e1
-bl _p_833
+bl _p_832
 .loc 9 561 0
 .word 0x1400000e
 .word 0xf90053a0
@@ -39487,8 +39489,8 @@ bl _p_833
 .loc 9 563 0
 .word 0xf9404fa0
 .word 0xd2800001
-bl _p_832
-bl _p_324
+bl _p_831
+bl _p_323
 .word 0xf90063a0
 .word 0xf94063a0
 .word 0xb4000060
@@ -39524,7 +39526,7 @@ System_Array_InternalArray__get_Item_T_INST_int:
 .word 0x910123a0
 .word 0xf9003fa0
 .word 0xf94023a0
-bl _p_834
+bl _p_833
 .word 0xf9403fa1
 .word 0xb9802ba0
 .word 0x93407c00
@@ -39645,10 +39647,10 @@ System_Runtime_CompilerServices_ConfiguredTaskAwaitable_1_TResult_BOOL__ctor_Sys
 .word 0x9100e3a0
 .word 0xf90033a0
 .word 0xf94027a0
-bl _p_835
+bl _p_834
 .word 0xf90037a0
 .word 0xf94027a0
-bl _p_836
+bl _p_835
 .word 0xaa0003e3
 .word 0xf94033a0
 .word 0xf94037af
@@ -39694,7 +39696,7 @@ System_Threading_Tasks_ContinuationTaskFromResultTask_1_TAntecedentResult_BOOL__
 .word 0xf9400ba0
 .word 0xf9002ba0
 .word 0xb98033a0
-bl _p_406
+bl _p_405
 .word 0xaa0003e3
 .word 0xf9402ba0
 .word 0xf90027bf
@@ -39704,7 +39706,7 @@ bl _p_406
 .word 0xb98033a5
 .word 0xb9803ba6
 .word 0xd2800007
-bl _p_409
+bl _p_408
 .loc 13 135 0
 .word 0xf9400ba0
 .word 0xf9400fa1
@@ -39715,7 +39717,7 @@ bl _p_5
 .loc 13 136 0
 .word 0xf9400ba0
 .word 0xf94023a1
-bl _p_405
+bl _p_404
 .word 0x910003bf
 .word 0xa8c67bfd
 .word 0xd65f03c0
@@ -39792,10 +39794,10 @@ System_Runtime_CompilerServices_ConfiguredTaskAwaitable_1_TResult_INT__ctor_Syst
 .word 0x9100e3a0
 .word 0xf90033a0
 .word 0xf94027a0
-bl _p_837
+bl _p_836
 .word 0xf90037a0
 .word 0xf94027a0
-bl _p_838
+bl _p_837
 .word 0xaa0003e3
 .word 0xf94033a0
 .word 0xf94037af
@@ -39840,7 +39842,7 @@ System_Threading_Tasks_ContinuationTaskFromResultTask_1_TAntecedentResult_INT__c
 .word 0xf9400ba0
 .word 0xf9002ba0
 .word 0xb98033a0
-bl _p_406
+bl _p_405
 .word 0xaa0003e3
 .word 0xf9402ba0
 .word 0xf90027bf
@@ -39850,7 +39852,7 @@ bl _p_406
 .word 0xb98033a5
 .word 0xb9803ba6
 .word 0xd2800007
-bl _p_409
+bl _p_408
 .loc 13 135 0
 .word 0xf9400ba0
 .word 0xf9400fa1
@@ -39861,7 +39863,7 @@ bl _p_5
 .loc 13 136 0
 .word 0xf9400ba0
 .word 0xf94023a1
-bl _p_405
+bl _p_404
 .word 0x910003bf
 .word 0xa8c67bfd
 .word 0xd65f03c0
@@ -39904,22 +39906,22 @@ System_Collections_Generic_EqualityComparer_1_T_REF_get_Default:
 .word 0xf9000bba
 .word 0xf9000faf
 .word 0xf9400fa0
-bl _p_839
+bl _p_838
 .word 0xf940001a
 .loc 14 33 0
 .word 0xaa1a03e0
 .word 0xb50001e0
 .loc 14 34 0
 .word 0xf9400fa0
-bl _p_840
+bl _p_839
 .word 0xaa0003ef
-bl _p_841
+bl _p_840
 .word 0xaa0003fa
 .loc 14 35 0
 .word 0xaa1a03e0
 .word 0xf90017a0
 .word 0xf9400fa0
-bl _p_839
+bl _p_838
 .word 0xf90013a0
 .word 0xf94017a1
 .word 0xd50330bf
@@ -40042,7 +40044,7 @@ ldr x0, [x16, #3680]
 .word 0xd65f03c0
 .word 0xaa1803e0
 bl _p_61
-bl _p_389
+bl _p_388
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffcc
@@ -40061,17 +40063,17 @@ System_Collections_Generic_EqualityComparer_1_T_INT_get_Default:
 .word 0xf9000bba
 .word 0xf9000faf
 .word 0xf9400fa0
-bl _p_842
+bl _p_841
 .word 0xf940001a
 .loc 14 33 0
 .word 0xaa1a03e0
 .word 0xb5000240
 .loc 14 34 0
 .word 0xf9400fa0
-bl _p_843
+bl _p_842
 .word 0xf9001ba0
 .word 0xf9400fa0
-bl _p_844
+bl _p_843
 .word 0xf9401baf
 .word 0xd63f0000
 .word 0xaa0003fa
@@ -40079,7 +40081,7 @@ bl _p_844
 .word 0xaa1a03e0
 .word 0xf90017a0
 .word 0xf9400fa0
-bl _p_842
+bl _p_841
 .word 0xf90013a0
 .word 0xf94017a1
 .word 0xd50330bf
@@ -40189,7 +40191,7 @@ System_ThrowHelper_IfNullAndNullsAreIllegalThenThrow_T_INT_object_System_Excepti
 .word 0x14000001
 .loc 16 126 0
 .word 0xb9801ba0
-bl _p_570
+bl _p_569
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
@@ -40278,7 +40280,7 @@ System_Linq_Enumerable_WhereSelectEnumerableIterator_2_TSource_INST_TResult_REF_
 .word 0xf90013a2
 .word 0xf90017a3
 .word 0xf9400ba0
-bl _p_845
+bl _p_844
 .loc 8 260 0
 .word 0xf9400ba0
 .word 0xf9400fa1
@@ -40317,7 +40319,7 @@ System_Linq_Enumerable_WhereSelectListIterator_2_TSource_INST_TResult_REF__ctor_
 .word 0xf90013a2
 .word 0xf90017a3
 .word 0xf9400ba0
-bl _p_846
+bl _p_845
 .loc 8 353 0
 .word 0xf9400ba0
 .word 0xf9400fa1
@@ -40356,7 +40358,7 @@ System_Linq_Enumerable_WhereSelectArrayIterator_2_TSource_INST_TResult_REF__ctor
 .word 0xf90013a2
 .word 0xf90017a3
 .word 0xf9400ba0
-bl _p_847
+bl _p_846
 .loc 8 312 0
 .word 0xf9400ba0
 .word 0xf9400fa1
@@ -40399,10 +40401,10 @@ System_Linq_Enumerable_Contains_TSource_CHAR_System_Collections_Generic_IEnumera
 .word 0xf9001bbf
 .word 0xb500013a
 .word 0xf94017a0
-bl _p_848
+bl _p_847
 .word 0xf9002ba0
 .word 0xf94017a0
-bl _p_849
+bl _p_848
 .word 0xf9402baf
 .word 0xd63f0000
 .word 0xaa0003fa
@@ -40410,7 +40412,7 @@ bl _p_849
 .word 0xb40009d8
 .loc 8 1277 0
 .word 0xf94017a0
-bl _p_850
+bl _p_849
 .word 0xaa0003ef
 .word 0xaa1803e0
 .word 0xf9400301
@@ -40423,7 +40425,7 @@ bl _p_850
 .word 0xf9401ba0
 .word 0xf9002ba0
 .word 0xf94017a0
-bl _p_851
+bl _p_850
 .word 0xaa0003ef
 .word 0xf9402ba1
 .word 0xaa0103e0
@@ -40435,7 +40437,7 @@ bl _p_851
 .word 0x53003c18
 .loc 8 1278 0
 .word 0xf94017a0
-bl _p_852
+bl _p_851
 .word 0xaa0003ef
 .word 0xaa1a03e0
 .word 0xaa1803e1
@@ -40497,7 +40499,7 @@ add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x0, [x16, #3920]
 .word 0xd289e581
 bl _p_60
-bl _p_793
+bl _p_792
 bl _p_61
 
 Lme_2e7:
@@ -40518,7 +40520,7 @@ System_Array_InternalArray__get_Item_T_CHAR_int:
 .word 0x540001c2
 .loc 2 201 0
 .word 0xf94013a0
-bl _p_853
+bl _p_852
 .word 0x93407f40
 .word 0xd37ff801
 .word 0xf9400fa0
@@ -40636,7 +40638,7 @@ bl _p_2
 .word 0xfd000840
 .word 0xaa0303e0
 .word 0xf940007e
-bl _p_854
+bl _p_853
 .word 0x93407c00
 .word 0x910003bf
 .word 0xa8c57bfd
@@ -40718,7 +40720,7 @@ System_Linq_Enumerable_WhereSelectEnumerableIterator_2_Xamarin_Auth_FormAuthenti
 .word 0xf90013a2
 .word 0xf90017a3
 .word 0xaa1703e0
-bl _p_855
+bl _p_854
 .loc 8 260 0
 .word 0xf9400fa0
 .word 0xf90012e0
@@ -40767,7 +40769,7 @@ bl _p_2
 .word 0xf9401ba2
 .word 0xf9401fa3
 .word 0xf90013a0
-bl _p_824
+bl _p_823
 .word 0xf94013a0
 .word 0x910003bf
 .word 0xa8c47bfd
@@ -40800,7 +40802,7 @@ ldr x15, [x16, #248]
 .word 0xf9001f5f
 .loc 8 272 0
 .word 0xaa1a03e0
-bl _p_856
+bl _p_855
 .word 0xf9400bba
 .word 0x910003bf
 .word 0xa8c27bfd
@@ -40928,7 +40930,7 @@ bl _p_2
 .word 0xf90013a0
 .word 0xf9400ba1
 .word 0xf9400fa2
-bl _p_857
+bl _p_856
 .word 0xf94013a0
 .word 0x910003bf
 .word 0xa8c37bfd
@@ -40943,11 +40945,11 @@ System_Linq_Enumerable_Iterator_1_System_nfloat__ctor:
 .word 0xa9be7bfd
 .word 0x910003fd
 .word 0xf9000ba0
-bl _p_858
+bl _p_857
 .word 0xaa0003e1
 .word 0xaa0103e0
 .word 0xf940003e
-bl _p_859
+bl _p_858
 .word 0x93407c00
 .word 0xaa0003e1
 .word 0xf9400ba0
@@ -41003,11 +41005,11 @@ System_Linq_Enumerable_Iterator_1_System_nfloat_GetEnumerator:
 .word 0xaa0003fa
 .word 0xb9801340
 .word 0xf90013a0
-bl _p_858
+bl _p_857
 .word 0xaa0003e1
 .word 0xaa0103e0
 .word 0xf940003e
-bl _p_859
+bl _p_858
 .word 0x93407c00
 .word 0xaa0003e1
 .word 0xf94013a0
@@ -41070,7 +41072,7 @@ System_Linq_Enumerable_Iterator_1_System_nfloat_System_Collections_IEnumerable_G
 .word 0x910003fd
 .word 0xf9000ba0
 .word 0xf9400ba0
-bl _p_860
+bl _p_859
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
@@ -41106,7 +41108,7 @@ System_Linq_Enumerable_WhereSelectListIterator_2_Xamarin_Auth_FormAuthenticatorF
 .word 0xf90013a2
 .word 0xf90017a3
 .word 0xaa1703e0
-bl _p_855
+bl _p_854
 .loc 8 353 0
 .word 0xf9400fa0
 .word 0xf90012e0
@@ -41155,7 +41157,7 @@ bl _p_2
 .word 0xf9401ba2
 .word 0xf9401fa3
 .word 0xf90013a0
-bl _p_823
+bl _p_822
 .word 0xf94013a0
 .word 0x910003bf
 .word 0xa8c47bfd
@@ -41185,7 +41187,7 @@ System_Linq_Enumerable_WhereSelectListIterator_2_Xamarin_Auth_FormAuthenticatorF
 .word 0x910083a8
 .word 0xaa0103e0
 .word 0xf940003e
-bl _p_861
+bl _p_860
 .word 0x9100e341
 .word 0xaa0103e0
 .word 0xf94013a2
@@ -41252,7 +41254,7 @@ ldr x1, [x16, #112]
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x15, [x16, #112]
-bl _p_862
+bl _p_861
 .word 0x53001c00
 .word 0x35fffb40
 .loc 8 376 0
@@ -41288,7 +41290,7 @@ bl _p_2
 .word 0xf90013a0
 .word 0xf9400ba1
 .word 0xf9400fa2
-bl _p_857
+bl _p_856
 .word 0xf94013a0
 .word 0x910003bf
 .word 0xa8c37bfd
@@ -41308,7 +41310,7 @@ System_Linq_Enumerable_WhereSelectArrayIterator_2_Xamarin_Auth_FormAuthenticator
 .word 0xf90013a2
 .word 0xf90017a3
 .word 0xaa1703e0
-bl _p_855
+bl _p_854
 .loc 8 312 0
 .word 0xf9400fa0
 .word 0xf90012e0
@@ -41357,7 +41359,7 @@ bl _p_2
 .word 0xf9401ba2
 .word 0xf9401fa3
 .word 0xf90013a0
-bl _p_822
+bl _p_821
 .word 0xf94013a0
 .word 0x910003bf
 .word 0xa8c47bfd
@@ -41457,7 +41459,7 @@ bl _p_2
 .word 0xf90013a0
 .word 0xf9400ba1
 .word 0xf9400fa2
-bl _p_857
+bl _p_856
 .word 0xf94013a0
 .word 0x910003bf
 .word 0xa8c37bfd
@@ -41533,7 +41535,7 @@ System_Collections_Generic_EqualityComparer_1_T_REF_CreateComparer:
 .word 0xf90013ba
 .word 0xf90017af
 .word 0xf94017a0
-bl _p_863
+bl _p_862
 .word 0xaa0003fa
 .word 0xb400017a
 .word 0xf9400340
@@ -41554,7 +41556,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x1, [x16, #120]
 .word 0xaa1a03e0
-bl _p_864
+bl _p_863
 .word 0x53001c00
 .word 0x340002a0
 .loc 14 52 0
@@ -41565,9 +41567,9 @@ ldr x0, [x16, #128]
 bl _p_2
 .word 0xaa0003fa
 .word 0xaa1a03e0
-bl _p_865
+bl _p_864
 .word 0xf94017a0
-bl _p_866
+bl _p_865
 .word 0xaa0003f9
 .word 0xb400011a
 .word 0xf9400340
@@ -41585,7 +41587,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x1, [x16, #136]
 .word 0xaa1903e0
-bl _p_864
+bl _p_863
 .word 0x53001c00
 .word 0x340002a0
 .loc 14 58 0
@@ -41596,9 +41598,9 @@ ldr x0, [x16, #144]
 bl _p_2
 .word 0xaa0003fa
 .word 0xaa1a03e0
-bl _p_867
-.word 0xf94017a0
 bl _p_866
+.word 0xf94017a0
+bl _p_865
 .word 0xaa0003f9
 .word 0xb400011a
 .word 0xf9400340
@@ -41612,7 +41614,7 @@ bl _p_866
 .word 0x140000e0
 .loc 14 62 0
 .word 0xf94017a0
-bl _p_868
+bl _p_867
 .word 0xaa0003e2
 .word 0xaa0203e0
 .word 0xaa1903e1
@@ -41627,10 +41629,10 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x0, [x16, #152]
 .word 0xaa1903e1
-bl _p_820
+bl _p_819
 .word 0xaa0003fa
 .word 0xf94017a0
-bl _p_866
+bl _p_865
 .word 0xaa0003f9
 .word 0xb400011a
 .word 0xf9400340
@@ -41657,7 +41659,7 @@ bl _p_866
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x1, [x16, #160]
-bl _p_864
+bl _p_863
 .word 0x53001c00
 .word 0x34000920
 .loc 14 71 0
@@ -41724,10 +41726,10 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x0, [x16, #176]
 .word 0xaa1803e1
-bl _p_820
+bl _p_819
 .word 0xaa0003fa
 .word 0xf94017a0
-bl _p_866
+bl _p_865
 .word 0xaa0003f9
 .word 0xb400011a
 .word 0xf9400340
@@ -41748,8 +41750,8 @@ bl _p_866
 .word 0x34000be0
 .loc 14 83 0
 .word 0xaa1903e0
+bl _p_868
 bl _p_869
-bl _p_870
 .word 0x93407c00
 .word 0xaa0003fa
 .loc 14 88 0
@@ -41773,10 +41775,10 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x0, [x16, #192]
 .word 0xaa1903e1
-bl _p_820
+bl _p_819
 .word 0xaa0003fa
 .word 0xf94017a0
-bl _p_866
+bl _p_865
 .word 0xaa0003f9
 .word 0xb400011a
 .word 0xf9400340
@@ -41794,10 +41796,10 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x0, [x16, #200]
 .word 0xaa1903e1
-bl _p_820
+bl _p_819
 .word 0xaa0003fa
 .word 0xf94017a0
-bl _p_866
+bl _p_865
 .word 0xaa0003f9
 .word 0xb400011a
 .word 0xf9400340
@@ -41815,10 +41817,10 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x0, [x16, #208]
 .word 0xaa1903e1
-bl _p_820
+bl _p_819
 .word 0xaa0003fa
 .word 0xf94017a0
-bl _p_866
+bl _p_865
 .word 0xaa0003f9
 .word 0xb400011a
 .word 0xf9400340
@@ -41836,10 +41838,10 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x0, [x16, #216]
 .word 0xaa1903e1
-bl _p_820
+bl _p_819
 .word 0xaa0003fa
 .word 0xf94017a0
-bl _p_866
+bl _p_865
 .word 0xaa0003f9
 .word 0xb400011a
 .word 0xf9400340
@@ -41853,10 +41855,10 @@ bl _p_866
 .word 0x14000007
 .loc 14 120 0
 .word 0xf94017a0
-bl _p_871
+bl _p_870
 bl _p_56
 .word 0xf9001ba0
-bl _p_872
+bl _p_871
 .word 0xf9401ba0
 .word 0xa94167b8
 .word 0xf94013ba
@@ -41882,7 +41884,7 @@ System_Collections_Generic_EqualityComparer_1_T_INT_CreateComparer:
 .word 0xf90013ba
 .word 0xf90017af
 .word 0xf94017a0
-bl _p_873
+bl _p_872
 .word 0xaa0003fa
 .word 0xb400017a
 .word 0xf9400340
@@ -41903,7 +41905,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x1, [x16, #224]
 .word 0xaa1a03e0
-bl _p_864
+bl _p_863
 .word 0x53001c00
 .word 0x340002a0
 .loc 14 52 0
@@ -41914,9 +41916,9 @@ ldr x0, [x16, #128]
 bl _p_2
 .word 0xaa0003fa
 .word 0xaa1a03e0
-bl _p_865
+bl _p_864
 .word 0xf94017a0
-bl _p_874
+bl _p_873
 .word 0xaa0003f9
 .word 0xb400011a
 .word 0xf9400340
@@ -41934,7 +41936,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x1, [x16, #232]
 .word 0xaa1903e0
-bl _p_864
+bl _p_863
 .word 0x53001c00
 .word 0x340002a0
 .loc 14 58 0
@@ -41945,9 +41947,9 @@ ldr x0, [x16, #144]
 bl _p_2
 .word 0xaa0003fa
 .word 0xaa1a03e0
-bl _p_867
+bl _p_866
 .word 0xf94017a0
-bl _p_874
+bl _p_873
 .word 0xaa0003f9
 .word 0xb400011a
 .word 0xf9400340
@@ -41961,7 +41963,7 @@ bl _p_874
 .word 0x140000e5
 .loc 14 62 0
 .word 0xf94017a0
-bl _p_875
+bl _p_874
 .word 0xaa0003e2
 .word 0xaa0203e0
 .word 0xaa1903e1
@@ -41976,10 +41978,10 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x0, [x16, #240]
 .word 0xaa1903e1
-bl _p_820
+bl _p_819
 .word 0xaa0003fa
 .word 0xf94017a0
-bl _p_874
+bl _p_873
 .word 0xaa0003f9
 .word 0xb400011a
 .word 0xf9400340
@@ -42006,7 +42008,7 @@ bl _p_874
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x1, [x16, #248]
-bl _p_864
+bl _p_863
 .word 0x53001c00
 .word 0x34000920
 .loc 14 71 0
@@ -42073,10 +42075,10 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x0, [x16, #264]
 .word 0xaa1803e1
-bl _p_820
+bl _p_819
 .word 0xaa0003fa
 .word 0xf94017a0
-bl _p_874
+bl _p_873
 .word 0xaa0003f9
 .word 0xb400011a
 .word 0xf9400340
@@ -42097,8 +42099,8 @@ bl _p_874
 .word 0x34000be0
 .loc 14 83 0
 .word 0xaa1903e0
+bl _p_868
 bl _p_869
-bl _p_870
 .word 0x93407c00
 .word 0xaa0003fa
 .loc 14 88 0
@@ -42122,10 +42124,10 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x0, [x16, #280]
 .word 0xaa1903e1
-bl _p_820
+bl _p_819
 .word 0xaa0003fa
 .word 0xf94017a0
-bl _p_874
+bl _p_873
 .word 0xaa0003f9
 .word 0xb400011a
 .word 0xf9400340
@@ -42143,10 +42145,10 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x0, [x16, #288]
 .word 0xaa1903e1
-bl _p_820
+bl _p_819
 .word 0xaa0003fa
 .word 0xf94017a0
-bl _p_874
+bl _p_873
 .word 0xaa0003f9
 .word 0xb400011a
 .word 0xf9400340
@@ -42164,10 +42166,10 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x0, [x16, #296]
 .word 0xaa1903e1
-bl _p_820
+bl _p_819
 .word 0xaa0003fa
 .word 0xf94017a0
-bl _p_874
+bl _p_873
 .word 0xaa0003f9
 .word 0xb400011a
 .word 0xf9400340
@@ -42185,10 +42187,10 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x0, [x16, #304]
 .word 0xaa1903e1
-bl _p_820
+bl _p_819
 .word 0xaa0003fa
 .word 0xf94017a0
-bl _p_874
+bl _p_873
 .word 0xaa0003f9
 .word 0xb400011a
 .word 0xf9400340
@@ -42202,11 +42204,11 @@ bl _p_874
 .word 0x1400000c
 .loc 14 120 0
 .word 0xf94017a0
-bl _p_876
+bl _p_875
 bl _p_56
 .word 0xf9001fa0
 .word 0xf94017a0
-bl _p_877
+bl _p_876
 .word 0xaa0003e1
 .word 0xf9401fa0
 .word 0xf9001ba0
@@ -42235,11 +42237,11 @@ System_Linq_Enumerable_Iterator_1_TSource_REF__ctor:
 .word 0xf9000ba0
 .word 0xf9400ba0
 .word 0xf90013a0
-bl _p_858
+bl _p_857
 .word 0xaa0003e1
 .word 0xaa0103e0
 .word 0xf940003e
-bl _p_859
+bl _p_858
 .word 0x93407c00
 .word 0xaa0003e1
 .word 0xf94013a0
@@ -42259,17 +42261,17 @@ System_Collections_Generic_EqualityComparer_1_T_CHAR_get_Default:
 .word 0xf9000bba
 .word 0xf9000faf
 .word 0xf9400fa0
-bl _p_878
+bl _p_877
 .word 0xf940001a
 .loc 14 33 0
 .word 0xaa1a03e0
 .word 0xb5000240
 .loc 14 34 0
 .word 0xf9400fa0
-bl _p_879
+bl _p_878
 .word 0xf9001ba0
 .word 0xf9400fa0
-bl _p_880
+bl _p_879
 .word 0xf9401baf
 .word 0xd63f0000
 .word 0xaa0003fa
@@ -42277,7 +42279,7 @@ bl _p_880
 .word 0xaa1a03e0
 .word 0xf90017a0
 .word 0xf9400fa0
-bl _p_878
+bl _p_877
 .word 0xf90013a0
 .word 0xf94017a1
 .word 0xd50330bf
@@ -42303,7 +42305,7 @@ System_Linq_Enumerable_WhereEnumerableIterator_1_System_nfloat__ctor_System_Coll
 .word 0xf9000fa1
 .word 0xf90013a2
 .word 0xaa1803e0
-bl _p_855
+bl _p_854
 .loc 8 126 0
 .word 0xf9400fa0
 .word 0xf9001300
@@ -42390,7 +42392,7 @@ ldr x0, [x16, #3680]
 .word 0xd65f03c0
 .word 0xaa1903e0
 bl _p_61
-bl _p_389
+bl _p_388
 .word 0xaa0003f9
 .word 0xb5ffff80
 .word 0x17ffffcb
@@ -42420,7 +42422,7 @@ bl _p_2
 .word 0xf94017a1
 .word 0xf9401ba2
 .word 0xf90013a0
-bl _p_857
+bl _p_856
 .word 0xf94013a0
 .word 0x910003bf
 .word 0xa8c47bfd
@@ -42453,7 +42455,7 @@ ldr x15, [x16, #248]
 .word 0xf9001b5f
 .loc 8 137 0
 .word 0xaa1a03e0
-bl _p_856
+bl _p_855
 .word 0xf9400bba
 .word 0x910003bf
 .word 0xa8c27bfd
@@ -42574,7 +42576,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x15, [x16, #312]
 .word 0xf9400fa1
-bl _p_881
+bl _p_880
 .word 0xf9001ba0
 
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
@@ -42584,7 +42586,7 @@ bl _p_2
 .word 0xf94017a1
 .word 0xf9401ba2
 .word 0xf90013a0
-bl _p_857
+bl _p_856
 .word 0xf94013a0
 .word 0x910003bf
 .word 0xa8c47bfd
@@ -42600,7 +42602,7 @@ System_Collections_Generic_ObjectEqualityComparer_1_T_REF__ctor:
 .word 0x910003fd
 .word 0xf9000ba0
 .word 0xf9400ba0
-bl _p_882
+bl _p_881
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
@@ -42619,7 +42621,7 @@ System_Collections_Generic_ObjectEqualityComparer_1_T_INT__ctor:
 .word 0xf90013a0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_883
+bl _p_882
 .word 0xaa0003e1
 .word 0xf94013a0
 .word 0xd63f0020
@@ -42639,7 +42641,7 @@ System_Collections_Generic_EqualityComparer_1_T_CHAR_CreateComparer:
 .word 0xf90013ba
 .word 0xf90017af
 .word 0xf94017a0
-bl _p_884
+bl _p_883
 .word 0xaa0003fa
 .word 0xb400017a
 .word 0xf9400340
@@ -42660,7 +42662,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x1, [x16, #320]
 .word 0xaa1a03e0
-bl _p_864
+bl _p_863
 .word 0x53001c00
 .word 0x340002a0
 .loc 14 52 0
@@ -42671,9 +42673,9 @@ ldr x0, [x16, #128]
 bl _p_2
 .word 0xaa0003fa
 .word 0xaa1a03e0
-bl _p_865
+bl _p_864
 .word 0xf94017a0
-bl _p_885
+bl _p_884
 .word 0xaa0003f9
 .word 0xb400011a
 .word 0xf9400340
@@ -42691,7 +42693,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x1, [x16, #328]
 .word 0xaa1903e0
-bl _p_864
+bl _p_863
 .word 0x53001c00
 .word 0x340002a0
 .loc 14 58 0
@@ -42702,9 +42704,9 @@ ldr x0, [x16, #144]
 bl _p_2
 .word 0xaa0003fa
 .word 0xaa1a03e0
-bl _p_867
+bl _p_866
 .word 0xf94017a0
-bl _p_885
+bl _p_884
 .word 0xaa0003f9
 .word 0xb400011a
 .word 0xf9400340
@@ -42718,7 +42720,7 @@ bl _p_885
 .word 0x140000e5
 .loc 14 62 0
 .word 0xf94017a0
-bl _p_886
+bl _p_885
 .word 0xaa0003e2
 .word 0xaa0203e0
 .word 0xaa1903e1
@@ -42733,10 +42735,10 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x0, [x16, #336]
 .word 0xaa1903e1
-bl _p_820
+bl _p_819
 .word 0xaa0003fa
 .word 0xf94017a0
-bl _p_885
+bl _p_884
 .word 0xaa0003f9
 .word 0xb400011a
 .word 0xf9400340
@@ -42763,7 +42765,7 @@ bl _p_885
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x1, [x16, #344]
-bl _p_864
+bl _p_863
 .word 0x53001c00
 .word 0x34000920
 .loc 14 71 0
@@ -42830,10 +42832,10 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x0, [x16, #360]
 .word 0xaa1803e1
-bl _p_820
+bl _p_819
 .word 0xaa0003fa
 .word 0xf94017a0
-bl _p_885
+bl _p_884
 .word 0xaa0003f9
 .word 0xb400011a
 .word 0xf9400340
@@ -42854,8 +42856,8 @@ bl _p_885
 .word 0x34000be0
 .loc 14 83 0
 .word 0xaa1903e0
+bl _p_868
 bl _p_869
-bl _p_870
 .word 0x93407c00
 .word 0xaa0003fa
 .loc 14 88 0
@@ -42879,10 +42881,10 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x0, [x16, #376]
 .word 0xaa1903e1
-bl _p_820
+bl _p_819
 .word 0xaa0003fa
 .word 0xf94017a0
-bl _p_885
+bl _p_884
 .word 0xaa0003f9
 .word 0xb400011a
 .word 0xf9400340
@@ -42900,10 +42902,10 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x0, [x16, #384]
 .word 0xaa1903e1
-bl _p_820
+bl _p_819
 .word 0xaa0003fa
 .word 0xf94017a0
-bl _p_885
+bl _p_884
 .word 0xaa0003f9
 .word 0xb400011a
 .word 0xf9400340
@@ -42921,10 +42923,10 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x0, [x16, #392]
 .word 0xaa1903e1
-bl _p_820
+bl _p_819
 .word 0xaa0003fa
 .word 0xf94017a0
-bl _p_885
+bl _p_884
 .word 0xaa0003f9
 .word 0xb400011a
 .word 0xf9400340
@@ -42942,10 +42944,10 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x0, [x16, #400]
 .word 0xaa1903e1
-bl _p_820
+bl _p_819
 .word 0xaa0003fa
 .word 0xf94017a0
-bl _p_885
+bl _p_884
 .word 0xaa0003f9
 .word 0xb400011a
 .word 0xf9400340
@@ -42959,11 +42961,11 @@ bl _p_885
 .word 0x1400000c
 .loc 14 120 0
 .word 0xf94017a0
-bl _p_887
+bl _p_886
 bl _p_56
 .word 0xf9001fa0
 .word 0xf94017a0
-bl _p_888
+bl _p_887
 .word 0xaa0003e1
 .word 0xf9401fa0
 .word 0xf9001ba0
@@ -43145,7 +43147,7 @@ System_Collections_Generic_ObjectEqualityComparer_1_T_CHAR__ctor:
 .word 0xf90013a0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_889
+bl _p_888
 .word 0xaa0003e1
 .word 0xf94013a0
 .word 0xd63f0020
@@ -44127,7 +44129,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #456]
 br x16
-.word 16574
+.word 16581
 	.no_dead_strip plt__jit_icall_ves_icall_object_new_fast
 plt__jit_icall_ves_icall_object_new_fast:
 _p_2:
@@ -44135,7 +44137,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #464]
 br x16
-.word 16576
+.word 16583
 	.no_dead_strip plt_System_Collections_Generic_Dictionary_2_string_string__ctor
 plt_System_Collections_Generic_Dictionary_2_string_string__ctor:
 _p_3:
@@ -44143,7 +44145,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #472]
 br x16
-.word 16604
+.word 16611
 	.no_dead_strip plt_System_Collections_Generic_Dictionary_2_string_string__ctor_System_Collections_Generic_IDictionary_2_string_string
 plt_System_Collections_Generic_Dictionary_2_string_string__ctor_System_Collections_Generic_IDictionary_2_string_string:
 _p_4:
@@ -44151,7 +44153,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #480]
 br x16
-.word 16615
+.word 16622
 	.no_dead_strip plt_wrapper_write_barrier_object_wbarrier_conc_intptr
 plt_wrapper_write_barrier_object_wbarrier_conc_intptr:
 _p_5:
@@ -44159,7 +44161,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #488]
 br x16
-.word 16626
+.word 16633
 	.no_dead_strip plt_System_Net_CookieContainer__ctor
 plt_System_Net_CookieContainer__ctor:
 _p_6:
@@ -44167,7 +44169,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #496]
 br x16
-.word 16633
+.word 16640
 	.no_dead_strip plt_System_Text_StringBuilder__ctor
 plt_System_Text_StringBuilder__ctor:
 _p_7:
@@ -44175,7 +44177,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #504]
 br x16
-.word 16638
+.word 16645
 	.no_dead_strip plt_System_Text_StringBuilder_Append_string
 plt_System_Text_StringBuilder_Append_string:
 _p_8:
@@ -44183,7 +44185,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #512]
 br x16
-.word 16643
+.word 16650
 	.no_dead_strip plt_System_Uri_EscapeDataString_string
 plt_System_Uri_EscapeDataString_string:
 _p_9:
@@ -44191,7 +44193,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #520]
 br x16
-.word 16648
+.word 16655
 	.no_dead_strip plt_System_Collections_Generic_Dictionary_2_string_string_GetEnumerator
 plt_System_Collections_Generic_Dictionary_2_string_string_GetEnumerator:
 _p_10:
@@ -44199,7 +44201,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #528]
 br x16
-.word 16653
+.word 16660
 	.no_dead_strip plt_System_Collections_Generic_Dictionary_2_Enumerator_string_string_MoveNext
 plt_System_Collections_Generic_Dictionary_2_Enumerator_string_string_MoveNext:
 _p_11:
@@ -44207,7 +44209,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #536]
 br x16
-.word 16664
+.word 16671
 	.no_dead_strip plt_Xamarin_Auth_Account_SerializeCookies
 plt_Xamarin_Auth_Account_SerializeCookies:
 _p_12:
@@ -44215,7 +44217,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #544]
 br x16
-.word 16675
+.word 16682
 	.no_dead_strip plt_Xamarin_Auth_Account__ctor
 plt_Xamarin_Auth_Account__ctor:
 _p_13:
@@ -44223,7 +44225,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #552]
 br x16
-.word 16677
+.word 16684
 	.no_dead_strip plt__jit_icall_ves_icall_array_new_specific
 plt__jit_icall_ves_icall_array_new_specific:
 _p_14:
@@ -44231,7 +44233,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #560]
 br x16
-.word 16679
+.word 16686
 	.no_dead_strip plt_string_Split_char__
 plt_string_Split_char__:
 _p_15:
@@ -44239,7 +44241,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #568]
 br x16
-.word 16710
+.word 16717
 	.no_dead_strip plt_System_Uri_UnescapeDataString_string
 plt_System_Uri_UnescapeDataString_string:
 _p_16:
@@ -44247,7 +44249,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #576]
 br x16
-.word 16715
+.word 16722
 	.no_dead_strip plt_string_op_Equality_string_string
 plt_string_op_Equality_string_string:
 _p_17:
@@ -44255,7 +44257,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #584]
 br x16
-.word 16720
+.word 16727
 	.no_dead_strip plt_Xamarin_Auth_Account_DeserializeCookies_string
 plt_Xamarin_Auth_Account_DeserializeCookies_string:
 _p_18:
@@ -44263,7 +44265,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #592]
 br x16
-.word 16725
+.word 16732
 	.no_dead_strip plt_System_Collections_Generic_Dictionary_2_string_string_set_Item_string_string
 plt_System_Collections_Generic_Dictionary_2_string_string_set_Item_string_string:
 _p_19:
@@ -44271,7 +44273,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #600]
 br x16
-.word 16727
+.word 16734
 	.no_dead_strip plt__jit_icall_mono_arch_throw_corlib_exception
 plt__jit_icall_mono_arch_throw_corlib_exception:
 _p_20:
@@ -44279,7 +44281,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #608]
 br x16
-.word 16738
+.word 16745
 	.no_dead_strip plt_System_Runtime_Serialization_Formatters_Binary_BinaryFormatter__ctor
 plt_System_Runtime_Serialization_Formatters_Binary_BinaryFormatter__ctor:
 _p_21:
@@ -44287,7 +44289,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #616]
 br x16
-.word 16773
+.word 16780
 	.no_dead_strip plt_System_IO_MemoryStream__ctor
 plt_System_IO_MemoryStream__ctor:
 _p_22:
@@ -44295,7 +44297,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #624]
 br x16
-.word 16778
+.word 16785
 	.no_dead_strip plt_System_Runtime_Serialization_Formatters_Binary_BinaryFormatter_Serialize_System_IO_Stream_object
 plt_System_Runtime_Serialization_Formatters_Binary_BinaryFormatter_Serialize_System_IO_Stream_object:
 _p_23:
@@ -44303,7 +44305,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #632]
 br x16
-.word 16783
+.word 16790
 	.no_dead_strip plt_System_Convert_ToBase64String_byte___int_int
 plt_System_Convert_ToBase64String_byte___int_int:
 _p_24:
@@ -44311,7 +44313,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #640]
 br x16
-.word 16788
+.word 16795
 	.no_dead_strip plt_System_Convert_FromBase64String_string
 plt_System_Convert_FromBase64String_string:
 _p_25:
@@ -44319,7 +44321,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #648]
 br x16
-.word 16793
+.word 16800
 	.no_dead_strip plt_System_IO_MemoryStream__ctor_byte__
 plt_System_IO_MemoryStream__ctor_byte__:
 _p_26:
@@ -44327,7 +44329,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #656]
 br x16
-.word 16798
+.word 16805
 	.no_dead_strip plt_System_Runtime_Serialization_Formatters_Binary_BinaryFormatter_Deserialize_System_IO_Stream
 plt_System_Runtime_Serialization_Formatters_Binary_BinaryFormatter_Deserialize_System_IO_Stream:
 _p_27:
@@ -44335,7 +44337,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #664]
 br x16
-.word 16803
+.word 16810
 	.no_dead_strip plt_Xamarin_Auth_Account_Serialize
 plt_Xamarin_Auth_Account_Serialize:
 _p_28:
@@ -44343,7 +44345,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #672]
 br x16
-.word 16808
+.word 16815
 	.no_dead_strip plt_System_Delegate_Combine_System_Delegate_System_Delegate
 plt_System_Delegate_Combine_System_Delegate_System_Delegate:
 _p_29:
@@ -44351,7 +44353,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #680]
 br x16
-.word 16810
+.word 16817
 	.no_dead_strip plt_System_Delegate_Remove_System_Delegate_System_Delegate
 plt_System_Delegate_Remove_System_Delegate_System_Delegate:
 _p_30:
@@ -44359,7 +44361,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #688]
 br x16
-.word 16815
+.word 16822
 	.no_dead_strip plt_Plugin_Threading_UIThreadRunInvoker_BeginInvokeOnUIThread_System_Action
 plt_Plugin_Threading_UIThreadRunInvoker_BeginInvokeOnUIThread_System_Action:
 _p_31:
@@ -44367,7 +44369,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #696]
 br x16
-.word 16820
+.word 16827
 	.no_dead_strip plt_Xamarin_Auth_Authenticator_OnSucceeded_Xamarin_Auth_Account
 plt_Xamarin_Auth_Authenticator_OnSucceeded_Xamarin_Auth_Account:
 _p_32:
@@ -44375,7 +44377,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #704]
 br x16
-.word 16823
+.word 16830
 	.no_dead_strip plt_Xamarin_Auth_Authenticator_RaiseErrorEvent_Xamarin_Auth_AuthenticatorErrorEventArgs
 plt_Xamarin_Auth_Authenticator_RaiseErrorEvent_Xamarin_Auth_AuthenticatorErrorEventArgs:
 _p_33:
@@ -44383,7 +44385,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #712]
 br x16
-.word 16825
+.word 16832
 	.no_dead_strip plt_System_Exception__ctor
 plt_System_Exception__ctor:
 _p_34:
@@ -44391,7 +44393,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #720]
 br x16
-.word 16827
+.word 16834
 	.no_dead_strip plt_System_Exception__ctor_string
 plt_System_Exception__ctor_string:
 _p_35:
@@ -44399,7 +44401,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #728]
 br x16
-.word 16832
+.word 16839
 	.no_dead_strip plt_System_Exception__ctor_string_System_Exception
 plt_System_Exception__ctor_string_System_Exception:
 _p_36:
@@ -44407,7 +44409,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #736]
 br x16
-.word 16837
+.word 16844
 	.no_dead_strip plt_Xamarin_Auth_Cryptography_CryptoUtilities_Get256BitSalt
 plt_Xamarin_Auth_Cryptography_CryptoUtilities_Get256BitSalt:
 _p_37:
@@ -44415,7 +44417,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #744]
 br x16
-.word 16842
+.word 16849
 	.no_dead_strip plt_Xamarin_Auth_Cryptography_CryptoUtilities_GetHash_byte___byte__
 plt_Xamarin_Auth_Cryptography_CryptoUtilities_GetHash_byte___byte__:
 _p_38:
@@ -44423,7 +44425,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #752]
 br x16
-.word 16844
+.word 16851
 	.no_dead_strip plt__jit_icall_mono_generic_class_init
 plt__jit_icall_mono_generic_class_init:
 _p_39:
@@ -44431,7 +44433,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #760]
 br x16
-.word 16846
+.word 16853
 	.no_dead_strip plt_Xamarin_Auth_AccountUtilities_AccountManager_GetAccountFromStore_Xamarin_Auth_AccountStore_string
 plt_Xamarin_Auth_AccountUtilities_AccountManager_GetAccountFromStore_Xamarin_Auth_AccountStore_string:
 _p_40:
@@ -44439,7 +44441,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #768]
 br x16
-.word 16872
+.word 16879
 	.no_dead_strip plt_System_Convert_ToBase64String_byte__
 plt_System_Convert_ToBase64String_byte__:
 _p_41:
@@ -44447,7 +44449,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #776]
 br x16
-.word 16874
+.word 16881
 	.no_dead_strip plt_System_Collections_Generic_Dictionary_2_string_string_Add_string_string
 plt_System_Collections_Generic_Dictionary_2_string_string_Add_string_string:
 _p_42:
@@ -44455,7 +44457,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #784]
 br x16
-.word 16879
+.word 16886
 	.no_dead_strip plt_Xamarin_Auth_Cryptography_CryptoUtilities_GetAES256KeyMaterial
 plt_Xamarin_Auth_Cryptography_CryptoUtilities_GetAES256KeyMaterial:
 _p_43:
@@ -44463,7 +44465,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #792]
 br x16
-.word 16890
+.word 16897
 	.no_dead_strip plt_System_Collections_Generic_Dictionary_2_string_string_ContainsKey_string
 plt_System_Collections_Generic_Dictionary_2_string_string_ContainsKey_string:
 _p_44:
@@ -44471,7 +44473,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #800]
 br x16
-.word 16892
+.word 16899
 	.no_dead_strip plt_System_Collections_Generic_Dictionary_2_string_string_get_Item_string
 plt_System_Collections_Generic_Dictionary_2_string_string_get_Item_string:
 _p_45:
@@ -44479,7 +44481,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #808]
 br x16
-.word 16903
+.word 16910
 	.no_dead_strip plt_System_Linq_Enumerable_FirstOrDefault_Xamarin_Auth_Account_System_Collections_Generic_IEnumerable_1_Xamarin_Auth_Account_System_Func_2_Xamarin_Auth_Account_bool
 plt_System_Linq_Enumerable_FirstOrDefault_Xamarin_Auth_Account_System_Collections_Generic_IEnumerable_1_Xamarin_Auth_Account_System_Func_2_Xamarin_Auth_Account_bool:
 _p_46:
@@ -44487,7 +44489,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #816]
 br x16
-.word 16914
+.word 16921
 	.no_dead_strip plt_Xamarin_Auth_Authenticator_add_Completed_System_EventHandler_1_Xamarin_Auth_AuthenticatorCompletedEventArgs
 plt_Xamarin_Auth_Authenticator_add_Completed_System_EventHandler_1_Xamarin_Auth_AuthenticatorCompletedEventArgs:
 _p_47:
@@ -44495,7 +44497,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #824]
 br x16
-.word 16926
+.word 16933
 	.no_dead_strip plt_Xamarin_Auth_Authenticator_remove_Completed_System_EventHandler_1_Xamarin_Auth_AuthenticatorCompletedEventArgs
 plt_Xamarin_Auth_Authenticator_remove_Completed_System_EventHandler_1_Xamarin_Auth_AuthenticatorCompletedEventArgs:
 _p_48:
@@ -44503,7 +44505,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #832]
 br x16
-.word 16928
+.word 16935
 	.no_dead_strip plt_PCLCrypto_WinRTCrypto_get_CryptographicBuffer
 plt_PCLCrypto_WinRTCrypto_get_CryptographicBuffer:
 _p_49:
@@ -44511,7 +44513,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #840]
 br x16
-.word 16930
+.word 16937
 	.no_dead_strip plt_System_Array_Copy_System_Array_System_Array_int
 plt_System_Array_Copy_System_Array_System_Array_int:
 _p_50:
@@ -44519,7 +44521,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #848]
 br x16
-.word 16935
+.word 16942
 	.no_dead_strip plt_System_Array_Copy_System_Array_int_System_Array_int_int
 plt_System_Array_Copy_System_Array_int_System_Array_int_int:
 _p_51:
@@ -44527,7 +44529,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #856]
 br x16
-.word 16940
+.word 16947
 	.no_dead_strip plt_PCLCrypto_WinRTCrypto_get_HashAlgorithmProvider
 plt_PCLCrypto_WinRTCrypto_get_HashAlgorithmProvider:
 _p_52:
@@ -44535,7 +44537,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #864]
 br x16
-.word 16945
+.word 16952
 	.no_dead_strip plt_System_Text_Encoding_get_UTF8
 plt_System_Text_Encoding_get_UTF8:
 _p_53:
@@ -44543,7 +44545,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #872]
 br x16
-.word 16950
+.word 16957
 	.no_dead_strip plt_Xamarin_Auth_Authenticator__ctor
 plt_Xamarin_Auth_Authenticator__ctor:
 _p_54:
@@ -44551,7 +44553,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #880]
 br x16
-.word 16955
+.word 16962
 	.no_dead_strip plt_System_Linq_Enumerable_FirstOrDefault_Xamarin_Auth_FormAuthenticatorField_System_Collections_Generic_IEnumerable_1_Xamarin_Auth_FormAuthenticatorField_System_Func_2_Xamarin_Auth_FormAuthenticatorField_bool
 plt_System_Linq_Enumerable_FirstOrDefault_Xamarin_Auth_FormAuthenticatorField_System_Collections_Generic_IEnumerable_1_Xamarin_Auth_FormAuthenticatorField_System_Func_2_Xamarin_Auth_FormAuthenticatorField_bool:
 _p_55:
@@ -44559,7 +44561,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #888]
 br x16
-.word 16957
+.word 16964
 	.no_dead_strip plt__jit_icall_ves_icall_object_new_specific
 plt__jit_icall_ves_icall_object_new_specific:
 _p_56:
@@ -44567,7 +44569,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #896]
 br x16
-.word 16969
+.word 16976
 	.no_dead_strip plt_Xamarin_Auth_FormAuthenticatorController__ctor_Xamarin_Auth_FormAuthenticator
 plt_Xamarin_Auth_FormAuthenticatorController__ctor_Xamarin_Auth_FormAuthenticator:
 _p_57:
@@ -44575,7 +44577,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #904]
 br x16
-.word 17001
+.word 17008
 	.no_dead_strip plt_UIKit_UINavigationController__ctor_UIKit_UIViewController
 plt_UIKit_UINavigationController__ctor_UIKit_UIViewController:
 _p_58:
@@ -44583,7 +44585,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #912]
 br x16
-.word 17004
+.word 17011
 	.no_dead_strip plt_string_IsNullOrWhiteSpace_string
 plt_string_IsNullOrWhiteSpace_string:
 _p_59:
@@ -44591,7 +44593,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #920]
 br x16
-.word 17009
+.word 17016
 	.no_dead_strip plt__jit_icall_mono_helper_ldstr
 plt__jit_icall_mono_helper_ldstr:
 _p_60:
@@ -44599,7 +44601,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #928]
 br x16
-.word 17014
+.word 17021
 	.no_dead_strip plt__jit_icall_mono_arch_throw_exception
 plt__jit_icall_mono_arch_throw_exception:
 _p_61:
@@ -44607,7 +44609,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #936]
 br x16
-.word 17034
+.word 17041
 	.no_dead_strip plt_System_Text_StringBuilder_Append_char
 plt_System_Text_StringBuilder_Append_char:
 _p_62:
@@ -44615,7 +44617,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #944]
 br x16
-.word 17062
+.word 17069
 	.no_dead_strip plt_System_Text_StringBuilder_AppendFormat_System_IFormatProvider_string_object
 plt_System_Text_StringBuilder_AppendFormat_System_IFormatProvider_string_object:
 _p_63:
@@ -44623,7 +44625,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #952]
 br x16
-.word 17067
+.word 17074
 	.no_dead_strip plt_System_Uri_get_AbsoluteUri
 plt_System_Uri_get_AbsoluteUri:
 _p_64:
@@ -44631,7 +44633,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #960]
 br x16
-.word 17072
+.word 17079
 	.no_dead_strip plt_Xamarin_Auth_OAuth1_EncodeString_string
 plt_Xamarin_Auth_OAuth1_EncodeString_string:
 _p_65:
@@ -44639,7 +44641,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #968]
 br x16
-.word 17077
+.word 17084
 	.no_dead_strip plt_System_Linq_Enumerable_OrderBy_string_string_System_Collections_Generic_IEnumerable_1_string_System_Func_2_string_string
 plt_System_Linq_Enumerable_OrderBy_string_string_System_Collections_Generic_IEnumerable_1_string_System_Func_2_string_string:
 _p_66:
@@ -44647,7 +44649,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #976]
 br x16
-.word 17079
+.word 17086
 	.no_dead_strip plt_string_Concat_string_string_string_string
 plt_string_Concat_string_string_string_string:
 _p_67:
@@ -44655,7 +44657,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #984]
 br x16
-.word 17091
+.word 17098
 	.no_dead_strip plt_Xamarin_Auth_OAuth1_GetBaseString_string_System_Uri_System_Collections_Generic_IDictionary_2_string_string
 plt_Xamarin_Auth_OAuth1_GetBaseString_string_System_Uri_System_Collections_Generic_IDictionary_2_string_string:
 _p_68:
@@ -44663,7 +44665,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #992]
 br x16
-.word 17096
+.word 17103
 	.no_dead_strip plt_string_Concat_string_string_string
 plt_string_Concat_string_string_string:
 _p_69:
@@ -44671,7 +44673,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1000]
 br x16
-.word 17098
+.word 17105
 	.no_dead_strip plt_System_Security_Cryptography_HMACSHA1__ctor_byte__
 plt_System_Security_Cryptography_HMACSHA1__ctor_byte__:
 _p_70:
@@ -44679,7 +44681,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1008]
 br x16
-.word 17103
+.word 17110
 	.no_dead_strip plt_System_Security_Cryptography_HashAlgorithm_ComputeHash_byte__
 plt_System_Security_Cryptography_HashAlgorithm_ComputeHash_byte__:
 _p_71:
@@ -44687,7 +44689,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1016]
 br x16
-.word 17108
+.word 17115
 	.no_dead_strip plt_System_Random__ctor
 plt_System_Random__ctor:
 _p_72:
@@ -44695,7 +44697,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1024]
 br x16
-.word 17113
+.word 17120
 	.no_dead_strip plt_System_Random_Next
 plt_System_Random_Next:
 _p_73:
@@ -44703,7 +44705,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1032]
 br x16
-.word 17118
+.word 17125
 	.no_dead_strip plt_int_ToString
 plt_int_ToString:
 _p_74:
@@ -44711,7 +44713,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1040]
 br x16
-.word 17123
+.word 17130
 	.no_dead_strip plt_System_DateTime_get_UtcNow
 plt_System_DateTime_get_UtcNow:
 _p_75:
@@ -44719,7 +44721,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1048]
 br x16
-.word 17128
+.word 17135
 	.no_dead_strip plt_System_DateTime__ctor_int_int_int
 plt_System_DateTime__ctor_int_int_int:
 _p_76:
@@ -44727,7 +44729,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1056]
 br x16
-.word 17133
+.word 17140
 	.no_dead_strip plt_System_DateTime_op_Subtraction_System_DateTime_System_DateTime
 plt_System_DateTime_op_Subtraction_System_DateTime_System_DateTime:
 _p_77:
@@ -44735,7 +44737,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1064]
 br x16
-.word 17138
+.word 17145
 	.no_dead_strip plt_Xamarin_Auth_OAuth1_GetSignature_string_System_Uri_System_Collections_Generic_IDictionary_2_string_string_string_string
 plt_Xamarin_Auth_OAuth1_GetSignature_string_System_Uri_System_Collections_Generic_IDictionary_2_string_string_string_string:
 _p_78:
@@ -44743,7 +44745,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1072]
 br x16
-.word 17143
+.word 17150
 	.no_dead_strip plt_Xamarin_Auth_OAuth1_MixInOAuthParameters_string_System_Uri_System_Collections_Generic_IDictionary_2_string_string_string_string_string
 plt_Xamarin_Auth_OAuth1_MixInOAuthParameters_string_System_Uri_System_Collections_Generic_IDictionary_2_string_string_string_string_string:
 _p_79:
@@ -44751,7 +44753,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1080]
 br x16
-.word 17145
+.word 17152
 	.no_dead_strip plt_Xamarin_Auth_WebUtilities_FormEncode_System_Collections_Generic_IDictionary_2_string_string
 plt_Xamarin_Auth_WebUtilities_FormEncode_System_Collections_Generic_IDictionary_2_string_string:
 _p_80:
@@ -44759,7 +44761,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1088]
 br x16
-.word 17147
+.word 17154
 	.no_dead_strip plt_System_Net_WebRequest_Create_string
 plt_System_Net_WebRequest_Create_string:
 _p_81:
@@ -44767,7 +44769,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1096]
 br x16
-.word 17150
+.word 17157
 	.no_dead_strip plt_string_StartsWith_string
 plt_string_StartsWith_string:
 _p_82:
@@ -44775,7 +44777,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1104]
 br x16
-.word 17155
+.word 17162
 	.no_dead_strip plt_System_Text_StringBuilder_AppendFormat_string_object_object
 plt_System_Text_StringBuilder_AppendFormat_string_object_object:
 _p_83:
@@ -44783,7 +44785,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1112]
 br x16
-.word 17160
+.word 17167
 	.no_dead_strip plt_System_Uri_op_Equality_System_Uri_System_Uri
 plt_System_Uri_op_Equality_System_Uri_System_Uri:
 _p_84:
@@ -44791,7 +44793,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1120]
 br x16
-.word 17165
+.word 17172
 	.no_dead_strip plt_System_Uri_get_OriginalString
 plt_System_Uri_get_OriginalString:
 _p_85:
@@ -44799,7 +44801,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1128]
 br x16
-.word 17170
+.word 17177
 	.no_dead_strip plt_Xamarin_Auth_OAuth1_CreateRequest_string_System_Uri_System_Collections_Generic_IDictionary_2_string_string_string_string_string
 plt_Xamarin_Auth_OAuth1_CreateRequest_string_System_Uri_System_Collections_Generic_IDictionary_2_string_string_string_string_string:
 _p_86:
@@ -44807,7 +44809,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1136]
 br x16
-.word 17175
+.word 17182
 	.no_dead_strip plt_System_Net_WebRequest_GetResponseAsync
 plt_System_Net_WebRequest_GetResponseAsync:
 _p_87:
@@ -44815,7 +44817,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1144]
 br x16
-.word 17177
+.word 17184
 	.no_dead_strip plt_System_Threading_Tasks_Task_1_System_Net_WebResponse_ContinueWith_System_Uri_System_Func_2_System_Threading_Tasks_Task_1_System_Net_WebResponse_System_Uri
 plt_System_Threading_Tasks_Task_1_System_Net_WebResponse_ContinueWith_System_Uri_System_Func_2_System_Threading_Tasks_Task_1_System_Net_WebResponse_System_Uri:
 _p_88:
@@ -44823,7 +44825,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1152]
 br x16
-.word 17182
+.word 17189
 	.no_dead_strip plt_System_Uri_get_Host
 plt_System_Uri_get_Host:
 _p_89:
@@ -44831,7 +44833,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1160]
 br x16
-.word 17194
+.word 17201
 	.no_dead_strip plt_System_Uri_get_AbsolutePath
 plt_System_Uri_get_AbsolutePath:
 _p_90:
@@ -44839,7 +44841,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1168]
 br x16
-.word 17199
+.word 17206
 	.no_dead_strip plt_System_Uri_get_Query
 plt_System_Uri_get_Query:
 _p_91:
@@ -44847,7 +44849,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1176]
 br x16
-.word 17204
+.word 17211
 	.no_dead_strip plt_Xamarin_Utilities_WebEx_FormDecode_string
 plt_Xamarin_Utilities_WebEx_FormDecode_string:
 _p_92:
@@ -44855,7 +44857,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1184]
 br x16
-.word 17209
+.word 17216
 	.no_dead_strip plt_Xamarin_Auth_OAuth1Authenticator_GetAccessTokenAsync
 plt_Xamarin_Auth_OAuth1Authenticator_GetAccessTokenAsync:
 _p_93:
@@ -44863,7 +44865,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1192]
 br x16
-.word 17212
+.word 17219
 	.no_dead_strip plt_System_Threading_Tasks_Task_ContinueWith_System_Action_1_System_Threading_Tasks_Task_System_Threading_Tasks_TaskContinuationOptions
 plt_System_Threading_Tasks_Task_ContinueWith_System_Action_1_System_Threading_Tasks_Task_System_Threading_Tasks_TaskContinuationOptions:
 _p_94:
@@ -44871,7 +44873,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1200]
 br x16
-.word 17215
+.word 17222
 	.no_dead_strip plt_System_Threading_Tasks_Task_1_System_Net_WebResponse_ContinueWith_System_Action_1_System_Threading_Tasks_Task_1_System_Net_WebResponse
 plt_System_Threading_Tasks_Task_1_System_Net_WebResponse_ContinueWith_System_Action_1_System_Threading_Tasks_Task_1_System_Net_WebResponse:
 _p_95:
@@ -44879,7 +44881,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1208]
 br x16
-.word 17220
+.word 17227
 	.no_dead_strip plt_System_Threading_Tasks_Task_1_System_Net_WebResponse_get_Result
 plt_System_Threading_Tasks_Task_1_System_Net_WebResponse_get_Result:
 _p_96:
@@ -44887,7 +44889,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1216]
 br x16
-.word 17231
+.word 17238
 	.no_dead_strip plt_Xamarin_Utilities_WebEx_GetResponseText_System_Net_WebResponse
 plt_Xamarin_Utilities_WebEx_GetResponseText_System_Net_WebResponse:
 _p_97:
@@ -44895,7 +44897,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1224]
 br x16
-.word 17242
+.word 17249
 	.no_dead_strip plt_string_IndexOf_string
 plt_string_IndexOf_string:
 _p_98:
@@ -44903,7 +44905,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1232]
 br x16
-.word 17245
+.word 17252
 	.no_dead_strip plt_System_Uri__ctor_string
 plt_System_Uri__ctor_string:
 _p_99:
@@ -44911,7 +44913,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1240]
 br x16
-.word 17250
+.word 17257
 	.no_dead_strip plt_System_Threading_Tasks_Task_get_IsCanceled
 plt_System_Threading_Tasks_Task_get_IsCanceled:
 _p_100:
@@ -44919,7 +44921,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1248]
 br x16
-.word 17255
+.word 17262
 	.no_dead_strip plt_Xamarin_Auth_Authenticator_OnCancelled
 plt_Xamarin_Auth_Authenticator_OnCancelled:
 _p_101:
@@ -44927,7 +44929,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1256]
 br x16
-.word 17260
+.word 17267
 	.no_dead_strip plt_System_Threading_Tasks_Task_get_IsFaulted
 plt_System_Threading_Tasks_Task_get_IsFaulted:
 _p_102:
@@ -44935,7 +44937,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1264]
 br x16
-.word 17262
+.word 17269
 	.no_dead_strip plt_System_Threading_Tasks_Task_get_Exception
 plt_System_Threading_Tasks_Task_get_Exception:
 _p_103:
@@ -44943,7 +44945,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1272]
 br x16
-.word 17267
+.word 17274
 	.no_dead_strip plt_Xamarin_Auth_Authenticator_OnError_System_Exception
 plt_Xamarin_Auth_Authenticator_OnError_System_Exception:
 _p_104:
@@ -44951,7 +44953,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1280]
 br x16
-.word 17272
+.word 17279
 	.no_dead_strip plt_System_Threading_Tasks_Task_1_string_ContinueWith_System_Action_1_System_Threading_Tasks_Task_1_string
 plt_System_Threading_Tasks_Task_1_string_ContinueWith_System_Action_1_System_Threading_Tasks_Task_1_string:
 _p_105:
@@ -44959,7 +44961,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1288]
 br x16
-.word 17274
+.word 17281
 	.no_dead_strip plt_Xamarin_Auth_Authenticator_OnSucceeded_string_System_Collections_Generic_IDictionary_2_string_string
 plt_Xamarin_Auth_Authenticator_OnSucceeded_string_System_Collections_Generic_IDictionary_2_string_string:
 _p_106:
@@ -44967,7 +44969,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1296]
 br x16
-.word 17285
+.word 17292
 	.no_dead_strip plt_Xamarin_Auth_Request__ctor_string_System_Uri_System_Collections_Generic_IDictionary_2_string_string_Xamarin_Auth_Account
 plt_Xamarin_Auth_Request__ctor_string_System_Uri_System_Collections_Generic_IDictionary_2_string_string_Xamarin_Auth_Account:
 _p_107:
@@ -44975,7 +44977,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1304]
 br x16
-.word 17287
+.word 17294
 	.no_dead_strip plt_System_Net_Http_HttpRequestMessage_get_Headers
 plt_System_Net_Http_HttpRequestMessage_get_Headers:
 _p_108:
@@ -44983,7 +44985,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1312]
 br x16
-.word 17290
+.word 17297
 	.no_dead_strip plt_System_Net_Http_Headers_AuthenticationHeaderValue__ctor_string_string
 plt_System_Net_Http_Headers_AuthenticationHeaderValue__ctor_string_string:
 _p_109:
@@ -44991,7 +44993,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1320]
 br x16
-.word 17295
+.word 17302
 	.no_dead_strip plt_System_Net_Http_Headers_HttpRequestHeaders_set_Authorization_System_Net_Http_Headers_AuthenticationHeaderValue
 plt_System_Net_Http_Headers_HttpRequestHeaders_set_Authorization_System_Net_Http_Headers_AuthenticationHeaderValue:
 _p_110:
@@ -44999,7 +45001,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1328]
 br x16
-.word 17300
+.word 17307
 	.no_dead_strip plt_Xamarin_Auth_Request_GetResponseAsync_System_Threading_CancellationToken
 plt_Xamarin_Auth_Request_GetResponseAsync_System_Threading_CancellationToken:
 _p_111:
@@ -45007,7 +45009,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1336]
 br x16
-.word 17305
+.word 17312
 	.no_dead_strip plt_System_Collections_Generic_List_1_Xamarin_Auth_Request_Part_GetEnumerator
 plt_System_Collections_Generic_List_1_Xamarin_Auth_Request_Part_GetEnumerator:
 _p_112:
@@ -45015,7 +45017,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1344]
 br x16
-.word 17308
+.word 17315
 	.no_dead_strip plt_System_Collections_Generic_List_1_Enumerator_Xamarin_Auth_Request_Part_MoveNext
 plt_System_Collections_Generic_List_1_Enumerator_Xamarin_Auth_Request_Part_MoveNext:
 _p_113:
@@ -45023,7 +45025,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1352]
 br x16
-.word 17319
+.word 17326
 	.no_dead_strip plt_Xamarin_Auth_OAuth1_GetAuthorizationHeader_string_System_Uri_System_Collections_Generic_IDictionary_2_string_string_string_string_string_string
 plt_Xamarin_Auth_OAuth1_GetAuthorizationHeader_string_System_Uri_System_Collections_Generic_IDictionary_2_string_string_string_string_string_string:
 _p_114:
@@ -45031,7 +45033,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1360]
 br x16
-.word 17330
+.word 17337
 	.no_dead_strip plt_Xamarin_Auth_OAuth2Authenticator__ctor_System_Uri_string_System_Uri_bool
 plt_Xamarin_Auth_OAuth2Authenticator__ctor_System_Uri_string_System_Uri_bool:
 _p_115:
@@ -45039,7 +45041,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1368]
 br x16
-.word 17332
+.word 17339
 	.no_dead_strip plt_System_Random_Next_int_int
 plt_System_Random_Next_int_int:
 _p_116:
@@ -45047,7 +45049,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1376]
 br x16
-.word 17335
+.word 17342
 	.no_dead_strip plt_string__ctor_char__
 plt_string__ctor_char__:
 _p_117:
@@ -45055,7 +45057,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1384]
 br x16
-.word 17340
+.word 17347
 	.no_dead_strip plt_System_Linq_Enumerable_Select_System_Collections_Generic_KeyValuePair_2_string_string_string_System_Collections_Generic_IEnumerable_1_System_Collections_Generic_KeyValuePair_2_string_string_System_Func_2_System_Collections_Generic_KeyValuePair_2_string_string_string
 plt_System_Linq_Enumerable_Select_System_Collections_Generic_KeyValuePair_2_string_string_string_System_Collections_Generic_IEnumerable_1_System_Collections_Generic_KeyValuePair_2_string_string_System_Func_2_System_Collections_Generic_KeyValuePair_2_string_string_string:
 _p_118:
@@ -45063,7 +45065,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1392]
 br x16
-.word 17345
+.word 17352
 	.no_dead_strip plt_string_Join_string_System_Collections_Generic_IEnumerable_1_string
 plt_string_Join_string_System_Collections_Generic_IEnumerable_1_string:
 _p_119:
@@ -45071,7 +45073,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1400]
 br x16
-.word 17357
+.word 17364
 	.no_dead_strip plt_System_Threading_Tasks_Task_FromResult_System_Uri_System_Uri
 plt_System_Threading_Tasks_Task_FromResult_System_Uri_System_Uri:
 _p_120:
@@ -45079,7 +45081,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1408]
 br x16
-.word 17362
+.word 17369
 	.no_dead_strip plt_string_op_Inequality_string_string
 plt_string_op_Inequality_string_string:
 _p_121:
@@ -45087,7 +45089,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1416]
 br x16
-.word 17374
+.word 17381
 	.no_dead_strip plt_Xamarin_Auth_Authenticator_OnError_string
 plt_Xamarin_Auth_Authenticator_OnError_string:
 _p_122:
@@ -45095,7 +45097,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1424]
 br x16
-.word 17379
+.word 17386
 	.no_dead_strip plt_Xamarin_Auth_WebRedirectAuthenticator_OnPageEncountered_System_Uri_System_Collections_Generic_IDictionary_2_string_string_System_Collections_Generic_IDictionary_2_string_string
 plt_Xamarin_Auth_WebRedirectAuthenticator_OnPageEncountered_System_Uri_System_Collections_Generic_IDictionary_2_string_string_System_Collections_Generic_IDictionary_2_string_string:
 _p_123:
@@ -45103,7 +45105,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1432]
 br x16
-.word 17381
+.word 17388
 	.no_dead_strip plt_Xamarin_Auth_OAuth2Authenticator_RequestAccessTokenAsync_string
 plt_Xamarin_Auth_OAuth2Authenticator_RequestAccessTokenAsync_string:
 _p_124:
@@ -45111,7 +45113,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1440]
 br x16
-.word 17384
+.word 17391
 	.no_dead_strip plt_System_Threading_Tasks_TaskScheduler_FromCurrentSynchronizationContext
 plt_System_Threading_Tasks_TaskScheduler_FromCurrentSynchronizationContext:
 _p_125:
@@ -45119,7 +45121,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1448]
 br x16
-.word 17387
+.word 17394
 	.no_dead_strip plt_System_Threading_Tasks_Task_1_System_Collections_Generic_IDictionary_2_string_string_ContinueWith_System_Action_1_System_Threading_Tasks_Task_1_System_Collections_Generic_IDictionary_2_string_string_System_Threading_Tasks_TaskScheduler
 plt_System_Threading_Tasks_Task_1_System_Collections_Generic_IDictionary_2_string_string_ContinueWith_System_Action_1_System_Threading_Tasks_Task_1_System_Collections_Generic_IDictionary_2_string_string_System_Threading_Tasks_TaskScheduler:
 _p_126:
@@ -45127,7 +45129,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1456]
 br x16
-.word 17392
+.word 17399
 	.no_dead_strip plt_Xamarin_Auth_OAuth2Authenticator_RequestAccessTokenAsync_System_Collections_Generic_IDictionary_2_string_string
 plt_Xamarin_Auth_OAuth2Authenticator_RequestAccessTokenAsync_System_Collections_Generic_IDictionary_2_string_string:
 _p_127:
@@ -45135,7 +45137,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1464]
 br x16
-.word 17403
+.word 17410
 	.no_dead_strip plt_string_memset_byte__int_int
 plt_string_memset_byte__int_int:
 _p_128:
@@ -45143,7 +45145,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1472]
 br x16
-.word 17406
+.word 17413
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Collections_Generic_IDictionary_2_string_string_Start_Xamarin_Auth_OAuth2Authenticator__RequestAccessTokenAsyncc__async0_Xamarin_Auth_OAuth2Authenticator__RequestAccessTokenAsyncc__async0_
 plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Collections_Generic_IDictionary_2_string_string_Start_Xamarin_Auth_OAuth2Authenticator__RequestAccessTokenAsyncc__async0_Xamarin_Auth_OAuth2Authenticator__RequestAccessTokenAsyncc__async0_:
 _p_129:
@@ -45151,7 +45153,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1480]
 br x16
-.word 17411
+.word 17418
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Collections_Generic_IDictionary_2_string_string_get_Task
 plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Collections_Generic_IDictionary_2_string_string_get_Task:
 _p_130:
@@ -45159,7 +45161,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1488]
 br x16
-.word 17423
+.word 17430
 	.no_dead_strip plt_System_Threading_Tasks_Task_1_string_ContinueWith_System_Action_1_System_Threading_Tasks_Task_1_string_System_Threading_Tasks_TaskScheduler
 plt_System_Threading_Tasks_Task_1_string_ContinueWith_System_Action_1_System_Threading_Tasks_Task_1_string_System_Threading_Tasks_TaskScheduler:
 _p_131:
@@ -45167,7 +45169,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1496]
 br x16
-.word 17434
+.word 17441
 	.no_dead_strip plt_System_Threading_Tasks_Task_1_System_Collections_Generic_IDictionary_2_string_string_get_Result
 plt_System_Threading_Tasks_Task_1_System_Collections_Generic_IDictionary_2_string_string_get_Result:
 _p_132:
@@ -45175,7 +45177,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1504]
 br x16
-.word 17445
+.word 17452
 	.no_dead_strip plt_Xamarin_Auth_Request_GetPreparedUrl
 plt_Xamarin_Auth_Request_GetPreparedUrl:
 _p_133:
@@ -45183,7 +45185,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1512]
 br x16
-.word 17456
+.word 17463
 	.no_dead_strip plt_Xamarin_Auth_OAuth2Request_GetAuthenticatedUrl_Xamarin_Auth_Account_System_Uri_string
 plt_Xamarin_Auth_OAuth2Request_GetAuthenticatedUrl_Xamarin_Auth_Account_System_Uri_string:
 _p_134:
@@ -45191,7 +45193,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1520]
 br x16
-.word 17459
+.word 17466
 	.no_dead_strip plt_string_Contains_string
 plt_string_Contains_string:
 _p_135:
@@ -45199,7 +45201,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1528]
 br x16
-.word 17462
+.word 17469
 	.no_dead_strip plt_string_Concat_string__
 plt_string_Concat_string__:
 _p_136:
@@ -45207,7 +45209,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1536]
 br x16
-.word 17467
+.word 17474
 	.no_dead_strip plt_string_Concat_string_string
 plt_string_Concat_string_string:
 _p_137:
@@ -45215,7 +45217,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1544]
 br x16
-.word 17472
+.word 17479
 	.no_dead_strip plt_System_Collections_Generic_List_1_Xamarin_Auth_Request_Part_Add_Xamarin_Auth_Request_Part
 plt_System_Collections_Generic_List_1_Xamarin_Auth_Request_Part_Add_Xamarin_Auth_Request_Part:
 _p_138:
@@ -45223,7 +45225,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1552]
 br x16
-.word 17477
+.word 17484
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_Xamarin_Auth_Response_Start_Xamarin_Auth_Request__GetResponseAsyncc__async0_Xamarin_Auth_Request__GetResponseAsyncc__async0_
 plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_Xamarin_Auth_Response_Start_Xamarin_Auth_Request__GetResponseAsyncc__async0_Xamarin_Auth_Request__GetResponseAsyncc__async0_:
 _p_139:
@@ -45231,7 +45233,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1560]
 br x16
-.word 17488
+.word 17495
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_Xamarin_Auth_Response_get_Task
 plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_Xamarin_Auth_Response_get_Task:
 _p_140:
@@ -45239,7 +45241,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1568]
 br x16
-.word 17500
+.word 17507
 	.no_dead_strip plt_System_Linq_Enumerable_Contains_char_System_Collections_Generic_IEnumerable_1_char_char
 plt_System_Linq_Enumerable_Contains_char_System_Collections_Generic_IEnumerable_1_char_char:
 _p_141:
@@ -45247,7 +45249,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1576]
 br x16
-.word 17511
+.word 17518
 	.no_dead_strip plt_Xamarin_Auth_Request_GetMethod_string
 plt_Xamarin_Auth_Request_GetMethod_string:
 _p_142:
@@ -45255,7 +45257,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1584]
 br x16
-.word 17523
+.word 17530
 	.no_dead_strip plt_System_Net_Http_HttpRequestMessage__ctor_System_Net_Http_HttpMethod_System_Uri
 plt_System_Net_Http_HttpRequestMessage__ctor_System_Net_Http_HttpMethod_System_Uri:
 _p_143:
@@ -45263,7 +45265,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1592]
 br x16
-.word 17526
+.word 17533
 	.no_dead_strip plt_System_Net_Http_Headers_HttpHeaders_Contains_string
 plt_System_Net_Http_Headers_HttpHeaders_Contains_string:
 _p_144:
@@ -45271,7 +45273,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1600]
 br x16
-.word 17531
+.word 17538
 	.no_dead_strip plt_System_Net_CookieContainer_GetCookies_System_Uri
 plt_System_Net_CookieContainer_GetCookies_System_Uri:
 _p_145:
@@ -45279,7 +45281,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1608]
 br x16
-.word 17536
+.word 17543
 	.no_dead_strip plt_System_Net_CookieCollection_get_Count
 plt_System_Net_CookieCollection_get_Count:
 _p_146:
@@ -45287,7 +45289,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1616]
 br x16
-.word 17541
+.word 17548
 	.no_dead_strip plt_System_Net_CookieContainer_GetCookieHeader_System_Uri
 plt_System_Net_CookieContainer_GetCookieHeader_System_Uri:
 _p_147:
@@ -45295,7 +45297,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1624]
 br x16
-.word 17546
+.word 17553
 	.no_dead_strip plt_System_Net_Http_Headers_HttpHeaders_Add_string_string
 plt_System_Net_Http_Headers_HttpHeaders_Add_string_string:
 _p_148:
@@ -45303,7 +45305,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1632]
 br x16
-.word 17551
+.word 17558
 	.no_dead_strip plt_string_ToUpper
 plt_string_ToUpper:
 _p_149:
@@ -45311,7 +45313,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1640]
 br x16
-.word 17556
+.word 17563
 	.no_dead_strip plt_System_Collections_Generic_Dictionary_2_string_int__ctor_int
 plt_System_Collections_Generic_Dictionary_2_string_int__ctor_int:
 _p_150:
@@ -45319,7 +45321,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1648]
 br x16
-.word 17561
+.word 17568
 	.no_dead_strip plt_System_Collections_Generic_Dictionary_2_string_int_Add_string_int
 plt_System_Collections_Generic_Dictionary_2_string_int_Add_string_int:
 _p_151:
@@ -45327,7 +45329,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1656]
 br x16
-.word 17572
+.word 17579
 	.no_dead_strip plt_System_Collections_Generic_Dictionary_2_string_int_TryGetValue_string_int_
 plt_System_Collections_Generic_Dictionary_2_string_int_TryGetValue_string_int_:
 _p_152:
@@ -45335,7 +45337,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1664]
 br x16
-.word 17583
+.word 17590
 	.no_dead_strip plt_System_Net_Http_HttpResponseMessage_get_Headers
 plt_System_Net_Http_HttpResponseMessage_get_Headers:
 _p_153:
@@ -45343,7 +45345,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1672]
 br x16
-.word 17594
+.word 17601
 	.no_dead_strip plt_System_Net_Http_Headers_HttpHeaders_GetEnumerator
 plt_System_Net_Http_Headers_HttpHeaders_GetEnumerator:
 _p_154:
@@ -45351,7 +45353,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1680]
 br x16
-.word 17599
+.word 17606
 	.no_dead_strip plt_System_Linq_Enumerable_First_string_System_Collections_Generic_IEnumerable_1_string
 plt_System_Linq_Enumerable_First_string_System_Collections_Generic_IEnumerable_1_string:
 _p_155:
@@ -45359,7 +45361,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1688]
 br x16
-.word 17604
+.word 17611
 	.no_dead_strip plt_System_Net_Http_HttpContent_ReadAsStringAsync
 plt_System_Net_Http_HttpContent_ReadAsStringAsync:
 _p_156:
@@ -45367,7 +45369,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1696]
 br x16
-.word 17616
+.word 17623
 	.no_dead_strip plt_System_Threading_Tasks_Task_1_string_get_Result
 plt_System_Threading_Tasks_Task_1_string_get_Result:
 _p_157:
@@ -45375,7 +45377,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1704]
 br x16
-.word 17621
+.word 17628
 	.no_dead_strip plt_System_Net_Http_HttpContent_ReadAsStreamAsync
 plt_System_Net_Http_HttpContent_ReadAsStreamAsync:
 _p_158:
@@ -45383,7 +45385,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1712]
 br x16
-.word 17632
+.word 17639
 	.no_dead_strip plt_System_Threading_Tasks_Task_1_System_IO_Stream_get_Result
 plt_System_Threading_Tasks_Task_1_System_IO_Stream_get_Result:
 _p_159:
@@ -45391,7 +45393,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1720]
 br x16
-.word 17637
+.word 17644
 	.no_dead_strip plt_string_Format_string_object_object
 plt_string_Format_string_object_object:
 _p_160:
@@ -45399,7 +45401,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1728]
 br x16
-.word 17648
+.word 17655
 	.no_dead_strip plt_System_GC_SuppressFinalize_object
 plt_System_GC_SuppressFinalize_object:
 _p_161:
@@ -45407,7 +45409,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1736]
 br x16
-.word 17653
+.word 17660
 	.no_dead_strip plt_System_Net_Http_HttpResponseMessage_Dispose
 plt_System_Net_Http_HttpResponseMessage_Dispose:
 _p_162:
@@ -45415,7 +45417,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1744]
 br x16
-.word 17658
+.word 17665
 	.no_dead_strip plt_Foundation_NSHttpCookieStorage_get_SharedStorage
 plt_Foundation_NSHttpCookieStorage_get_SharedStorage:
 _p_163:
@@ -45423,7 +45425,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1752]
 br x16
-.word 17663
+.word 17670
 	.no_dead_strip plt_Foundation_NSHttpCookieStorage_get_Cookies
 plt_Foundation_NSHttpCookieStorage_get_Cookies:
 _p_164:
@@ -45431,7 +45433,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1760]
 br x16
-.word 17668
+.word 17675
 	.no_dead_strip plt_Foundation_NSHttpCookieStorage_DeleteCookie_Foundation_NSHttpCookie
 plt_Foundation_NSHttpCookieStorage_DeleteCookie_Foundation_NSHttpCookie:
 _p_165:
@@ -45439,7 +45441,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1768]
 br x16
-.word 17673
+.word 17680
 	.no_dead_strip plt_Xamarin_Auth_WebAuthenticator_GetPlatformUINative
 plt_Xamarin_Auth_WebAuthenticator_GetPlatformUINative:
 _p_166:
@@ -45447,7 +45449,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1776]
 br x16
-.word 17678
+.word 17685
 	.no_dead_strip plt_Xamarin_Auth_WebAuthenticator_GetPlatformUIEmbeddedBrowser
 plt_Xamarin_Auth_WebAuthenticator_GetPlatformUIEmbeddedBrowser:
 _p_167:
@@ -45455,7 +45457,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1784]
 br x16
-.word 17681
+.word 17688
 	.no_dead_strip plt_Xamarin_Auth_WebAuthenticatorController__ctor_Xamarin_Auth_WebAuthenticator
 plt_Xamarin_Auth_WebAuthenticatorController__ctor_Xamarin_Auth_WebAuthenticator:
 _p_168:
@@ -45463,7 +45465,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1792]
 br x16
-.word 17684
+.word 17691
 	.no_dead_strip plt_System_Threading_Tasks_Task_1_System_Uri_get_Result
 plt_System_Threading_Tasks_Task_1_System_Uri_get_Result:
 _p_169:
@@ -45471,7 +45473,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1800]
 br x16
-.word 17687
+.word 17694
 	.no_dead_strip plt_Foundation_NSUrl__ctor_string
 plt_Foundation_NSUrl__ctor_string:
 _p_170:
@@ -45479,7 +45481,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1808]
 br x16
-.word 17698
+.word 17705
 	.no_dead_strip plt_SafariServices_SFSafariViewController__ctor_Foundation_NSUrl_bool
 plt_SafariServices_SFSafariViewController__ctor_Foundation_NSUrl_bool:
 _p_171:
@@ -45487,7 +45489,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1816]
 br x16
-.word 17703
+.word 17710
 	.no_dead_strip plt_SafariServices_SFSafariViewController_set_Delegate_SafariServices_ISFSafariViewControllerDelegate
 plt_SafariServices_SFSafariViewController_set_Delegate_SafariServices_ISFSafariViewControllerDelegate:
 _p_172:
@@ -45495,7 +45497,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1824]
 br x16
-.word 17708
+.word 17715
 	.no_dead_strip plt_System_Linq_Enumerable_Cast_System_Net_Cookie_System_Collections_IEnumerable
 plt_System_Linq_Enumerable_Cast_System_Net_Cookie_System_Collections_IEnumerable:
 _p_173:
@@ -45503,7 +45505,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1832]
 br x16
-.word 17713
+.word 17720
 	.no_dead_strip plt_System_Linq_Enumerable_FirstOrDefault_System_Net_Cookie_System_Collections_Generic_IEnumerable_1_System_Net_Cookie_System_Func_2_System_Net_Cookie_bool
 plt_System_Linq_Enumerable_FirstOrDefault_System_Net_Cookie_System_Collections_Generic_IEnumerable_1_System_Net_Cookie_System_Func_2_System_Net_Cookie_bool:
 _p_174:
@@ -45511,7 +45513,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1840]
 br x16
-.word 17725
+.word 17732
 	.no_dead_strip plt_System_IO_StreamReader__ctor_System_IO_Stream_System_Text_Encoding
 plt_System_IO_StreamReader__ctor_System_IO_Stream_System_Text_Encoding:
 _p_175:
@@ -45519,7 +45521,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1848]
 br x16
-.word 17737
+.word 17744
 	.no_dead_strip plt__jit_icall_mono_ldvirtfn
 plt__jit_icall_mono_ldvirtfn:
 _p_176:
@@ -45527,7 +45529,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1856]
 br x16
-.word 17742
+.word 17749
 	.no_dead_strip plt_System_Func_3_System_AsyncCallback_object_System_IAsyncResult__ctor_object_intptr
 plt_System_Func_3_System_AsyncCallback_object_System_IAsyncResult__ctor_object_intptr:
 _p_177:
@@ -45535,7 +45537,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1864]
 br x16
-.word 17758
+.word 17765
 	.no_dead_strip plt_System_Func_2_System_IAsyncResult_System_Net_WebResponse__ctor_object_intptr
 plt_System_Func_2_System_IAsyncResult_System_Net_WebResponse__ctor_object_intptr:
 _p_178:
@@ -45543,7 +45545,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1872]
 br x16
-.word 17769
+.word 17776
 	.no_dead_strip plt_System_Threading_Tasks_TaskFactory_FromAsync_System_Net_WebResponse_System_Func_3_System_AsyncCallback_object_System_IAsyncResult_System_Func_2_System_IAsyncResult_System_Net_WebResponse_object
 plt_System_Threading_Tasks_TaskFactory_FromAsync_System_Net_WebResponse_System_Func_3_System_AsyncCallback_object_System_IAsyncResult_System_Func_2_System_IAsyncResult_System_Net_WebResponse_object:
 _p_179:
@@ -45551,7 +45553,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1880]
 br x16
-.word 17780
+.word 17787
 	.no_dead_strip plt_string_Substring_int
 plt_string_Substring_int:
 _p_180:
@@ -45559,7 +45561,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1888]
 br x16
-.word 17792
+.word 17799
 	.no_dead_strip plt_string_Split_char___System_StringSplitOptions
 plt_string_Split_char___System_StringSplitOptions:
 _p_181:
@@ -45567,7 +45569,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1896]
 br x16
-.word 17797
+.word 17804
 	.no_dead_strip plt_string_IndexOf_char
 plt_string_IndexOf_char:
 _p_182:
@@ -45575,7 +45577,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1904]
 br x16
-.word 17802
+.word 17809
 	.no_dead_strip plt_string_Substring_int_int
 plt_string_Substring_int_int:
 _p_183:
@@ -45583,7 +45585,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1912]
 br x16
-.word 17807
+.word 17814
 	.no_dead_strip plt_System_Json_JsonValue_Parse_string
 plt_System_Json_JsonValue_Parse_string:
 _p_184:
@@ -45591,7 +45593,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1920]
 br x16
-.word 17812
+.word 17819
 	.no_dead_strip plt_System_Json_JsonObject_GetEnumerator
 plt_System_Json_JsonObject_GetEnumerator:
 _p_185:
@@ -45599,7 +45601,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1928]
 br x16
-.word 17817
+.word 17824
 	.no_dead_strip plt_System_Json_JsonValue_op_Implicit_System_Json_JsonValue
 plt_System_Json_JsonValue_op_Implicit_System_Json_JsonValue:
 _p_186:
@@ -45607,7 +45609,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1936]
 br x16
-.word 17822
+.word 17829
 	.no_dead_strip plt_System_Text_StringBuilder__ctor_int
 plt_System_Text_StringBuilder__ctor_int:
 _p_187:
@@ -45615,7 +45617,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1944]
 br x16
-.word 17827
+.word 17834
 	.no_dead_strip plt_int_ToString_System_IFormatProvider
 plt_int_ToString_System_IFormatProvider:
 _p_188:
@@ -45623,7 +45625,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1952]
 br x16
-.word 17832
+.word 17839
 	.no_dead_strip plt_string_IndexOf_string_int
 plt_string_IndexOf_string_int:
 _p_189:
@@ -45631,7 +45633,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1960]
 br x16
-.word 17837
+.word 17844
 	.no_dead_strip plt_System_Uri_get_Fragment
 plt_System_Uri_get_Fragment:
 _p_190:
@@ -45639,7 +45641,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1968]
 br x16
-.word 17842
+.word 17849
 	.no_dead_strip plt_string_Format_string_object
 plt_string_Format_string_object:
 _p_191:
@@ -45647,7 +45649,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1976]
 br x16
-.word 17847
+.word 17854
 	.no_dead_strip plt_System_Uri_get_LocalPath
 plt_System_Uri_get_LocalPath:
 _p_192:
@@ -45655,7 +45657,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1984]
 br x16
-.word 17852
+.word 17859
 	.no_dead_strip plt_Xamarin_Auth_WebUtilities_EncodeString_string
 plt_Xamarin_Auth_WebUtilities_EncodeString_string:
 _p_193:
@@ -45663,7 +45665,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1992]
 br x16
-.word 17857
+.word 17864
 	.no_dead_strip plt_Accounts_ACAccount_get_Username
 plt_Accounts_ACAccount_get_Username:
 _p_194:
@@ -45671,7 +45673,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2000]
 br x16
-.word 17860
+.word 17867
 	.no_dead_strip plt_System_Environment_GetFolderPath_System_Environment_SpecialFolder
 plt_System_Environment_GetFolderPath_System_Environment_SpecialFolder:
 _p_195:
@@ -45679,7 +45681,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2008]
 br x16
-.word 17865
+.word 17872
 	.no_dead_strip plt_System_IO_Path_Combine_string_string_string_string
 plt_System_IO_Path_Combine_string_string_string_string:
 _p_196:
@@ -45687,7 +45689,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2016]
 br x16
-.word 17870
+.word 17877
 	.no_dead_strip plt_System_IO_Directory_Exists_string
 plt_System_IO_Directory_Exists_string:
 _p_197:
@@ -45695,7 +45697,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2024]
 br x16
-.word 17875
+.word 17882
 	.no_dead_strip plt_System_IO_Directory_CreateDirectory_string
 plt_System_IO_Directory_CreateDirectory_string:
 _p_198:
@@ -45703,7 +45705,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2032]
 br x16
-.word 17880
+.word 17887
 	.no_dead_strip plt_UIKit_UITableViewController__ctor_UIKit_UITableViewStyle
 plt_UIKit_UITableViewController__ctor_UIKit_UITableViewStyle:
 _p_199:
@@ -45711,7 +45713,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2040]
 br x16
-.word 17885
+.word 17892
 	.no_dead_strip plt_UIKit_UITableViewController_get_TableView
 plt_UIKit_UITableViewController_get_TableView:
 _p_200:
@@ -45719,7 +45721,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2048]
 br x16
-.word 17890
+.word 17897
 	.no_dead_strip plt_UIKit_UITableView_set_DataSource_UIKit_IUITableViewDataSource
 plt_UIKit_UITableView_set_DataSource_UIKit_IUITableViewDataSource:
 _p_201:
@@ -45727,7 +45729,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2056]
 br x16
-.word 17895
+.word 17902
 	.no_dead_strip plt_UIKit_UITableView_set_Delegate_UIKit_IUITableViewDelegate
 plt_UIKit_UITableView_set_Delegate_UIKit_IUITableViewDelegate:
 _p_202:
@@ -45735,7 +45737,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2064]
 br x16
-.word 17900
+.word 17907
 	.no_dead_strip plt_UIKit_UIViewController_get_NavigationItem
 plt_UIKit_UIViewController_get_NavigationItem:
 _p_203:
@@ -45743,7 +45745,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2072]
 br x16
-.word 17905
+.word 17912
 	.no_dead_strip plt_UIKit_UIBarButtonItem__ctor_UIKit_UIBarButtonSystemItem_System_EventHandler
 plt_UIKit_UIBarButtonItem__ctor_UIKit_UIBarButtonSystemItem_System_EventHandler:
 _p_204:
@@ -45751,7 +45753,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2080]
 br x16
-.word 17910
+.word 17917
 	.no_dead_strip plt_UIKit_UINavigationItem_set_LeftBarButtonItem_UIKit_UIBarButtonItem
 plt_UIKit_UINavigationItem_set_LeftBarButtonItem_UIKit_UIBarButtonItem:
 _p_205:
@@ -45759,7 +45761,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2088]
 br x16
-.word 17915
+.word 17922
 	.no_dead_strip plt_Foundation_NSBundle_get_MainBundle
 plt_Foundation_NSBundle_get_MainBundle:
 _p_206:
@@ -45767,7 +45769,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2096]
 br x16
-.word 17920
+.word 17927
 	.no_dead_strip plt_Foundation_NSBundle_LocalizedString_string_string
 plt_Foundation_NSBundle_LocalizedString_string_string:
 _p_207:
@@ -45775,7 +45777,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2104]
 br x16
-.word 17925
+.word 17932
 	.no_dead_strip plt_Xamarin_Controls_ProgressLabel__ctor_string
 plt_Xamarin_Controls_ProgressLabel__ctor_string:
 _p_208:
@@ -45783,7 +45785,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2112]
 br x16
-.word 17930
+.word 17937
 	.no_dead_strip plt_UIKit_UINavigationItem_set_TitleView_UIKit_UIView
 plt_UIKit_UINavigationItem_set_TitleView_UIKit_UIView:
 _p_209:
@@ -45791,7 +45793,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2120]
 br x16
-.word 17933
+.word 17940
 	.no_dead_strip plt_System_Threading_CancellationTokenSource__ctor
 plt_System_Threading_CancellationTokenSource__ctor:
 _p_210:
@@ -45799,7 +45801,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2128]
 br x16
-.word 17938
+.word 17945
 	.no_dead_strip plt__jit_icall_mono_helper_ldstr_mscorlib
 plt__jit_icall_mono_helper_ldstr_mscorlib:
 _p_211:
@@ -45807,7 +45809,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2136]
 br x16
-.word 17943
+.word 17950
 	.no_dead_strip plt_System_Threading_Tasks_Task_1_Xamarin_Auth_Account_ContinueWith_System_Action_1_System_Threading_Tasks_Task_1_Xamarin_Auth_Account_System_Threading_Tasks_TaskScheduler
 plt_System_Threading_Tasks_Task_1_Xamarin_Auth_Account_ContinueWith_System_Action_1_System_Threading_Tasks_Task_1_Xamarin_Auth_Account_System_Threading_Tasks_TaskScheduler:
 _p_212:
@@ -45815,7 +45817,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2144]
 br x16
-.word 17972
+.word 17979
 	.no_dead_strip plt_UIKit_UIViewController_ViewDidAppear_bool
 plt_UIKit_UIViewController_ViewDidAppear_bool:
 _p_213:
@@ -45823,7 +45825,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2152]
 br x16
-.word 17983
+.word 17990
 	.no_dead_strip plt_System_Threading_Tasks_Task_1_Xamarin_Auth_Account_get_Result
 plt_System_Threading_Tasks_Task_1_Xamarin_Auth_Account_get_Result:
 _p_214:
@@ -45831,7 +45833,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2160]
 br x16
-.word 17988
+.word 17995
 	.no_dead_strip plt_UIKit_UITableViewDelegate__ctor
 plt_UIKit_UITableViewDelegate__ctor:
 _p_215:
@@ -45839,7 +45841,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2168]
 br x16
-.word 17999
+.word 18006
 	.no_dead_strip plt_UIKit_UIResponder_ResignFirstResponder
 plt_UIKit_UIResponder_ResignFirstResponder:
 _p_216:
@@ -45847,7 +45849,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2176]
 br x16
-.word 18004
+.word 18011
 	.no_dead_strip plt_Foundation_NSIndexPath_get_Section
 plt_Foundation_NSIndexPath_get_Section:
 _p_217:
@@ -45855,7 +45857,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2184]
 br x16
-.word 18009
+.word 18016
 	.no_dead_strip plt_UIKit_UITableView_DeselectRow_Foundation_NSIndexPath_bool
 plt_UIKit_UITableView_DeselectRow_Foundation_NSIndexPath_bool:
 _p_218:
@@ -45863,7 +45865,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2192]
 br x16
-.word 18014
+.word 18021
 	.no_dead_strip plt_UIKit_UITableView_get_DataSource
 plt_UIKit_UITableView_get_DataSource:
 _p_219:
@@ -45871,7 +45873,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2200]
 br x16
-.word 18019
+.word 18026
 	.no_dead_strip plt_Xamarin_Auth_FormAuthenticatorController_HandleSubmit
 plt_Xamarin_Auth_FormAuthenticatorController_HandleSubmit:
 _p_220:
@@ -45879,7 +45881,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2208]
 br x16
-.word 18024
+.word 18031
 	.no_dead_strip plt_UIKit_UIApplication_get_SharedApplication
 plt_UIKit_UIApplication_get_SharedApplication:
 _p_221:
@@ -45887,7 +45889,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2216]
 br x16
-.word 18027
+.word 18034
 	.no_dead_strip plt_UIKit_UIApplication_OpenUrl_Foundation_NSUrl
 plt_UIKit_UIApplication_OpenUrl_Foundation_NSUrl:
 _p_222:
@@ -45895,7 +45897,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2224]
 br x16
-.word 18032
+.word 18039
 	.no_dead_strip plt_UIKit_UITableViewCell__ctor_UIKit_UITableViewCellStyle_string
 plt_UIKit_UITableViewCell__ctor_UIKit_UITableViewCellStyle_string:
 _p_223:
@@ -45903,7 +45905,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2232]
 br x16
-.word 18037
+.word 18044
 	.no_dead_strip plt_UIKit_UITableViewCell_set_SelectionStyle_UIKit_UITableViewCellSelectionStyle
 plt_UIKit_UITableViewCell_set_SelectionStyle_UIKit_UITableViewCellSelectionStyle:
 _p_224:
@@ -45911,7 +45913,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2240]
 br x16
-.word 18042
+.word 18049
 	.no_dead_strip plt_UIKit_UITableViewCell_get_TextLabel
 plt_UIKit_UITableViewCell_get_TextLabel:
 _p_225:
@@ -45919,7 +45921,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2248]
 br x16
-.word 18047
+.word 18054
 	.no_dead_strip plt_UIKit_UILabel_set_Text_string
 plt_UIKit_UILabel_set_Text_string:
 _p_226:
@@ -45927,7 +45929,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2256]
 br x16
-.word 18052
+.word 18059
 	.no_dead_strip plt_UIKit_UIFont_get_PointSize
 plt_UIKit_UIFont_get_PointSize:
 _p_227:
@@ -45935,7 +45937,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2264]
 br x16
-.word 18057
+.word 18064
 	.no_dead_strip plt_UIKit_UIView_get_Frame
 plt_UIKit_UIView_get_Frame:
 _p_228:
@@ -45943,7 +45945,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2272]
 br x16
-.word 18062
+.word 18069
 	.no_dead_strip plt_CoreGraphics_CGRect__ctor_System_nfloat_System_nfloat_System_nfloat_System_nfloat
 plt_CoreGraphics_CGRect__ctor_System_nfloat_System_nfloat_System_nfloat_System_nfloat:
 _p_229:
@@ -45951,7 +45953,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2280]
 br x16
-.word 18067
+.word 18074
 	.no_dead_strip plt_UIKit_UITextField__ctor_CoreGraphics_CGRect
 plt_UIKit_UITextField__ctor_CoreGraphics_CGRect:
 _p_230:
@@ -45959,7 +45961,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2288]
 br x16
-.word 18072
+.word 18079
 	.no_dead_strip plt_UIKit_UITextField_set_Font_UIKit_UIFont
 plt_UIKit_UITextField_set_Font_UIKit_UIFont:
 _p_231:
@@ -45967,7 +45969,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2296]
 br x16
-.word 18077
+.word 18084
 	.no_dead_strip plt_UIKit_UITextField_set_Placeholder_string
 plt_UIKit_UITextField_set_Placeholder_string:
 _p_232:
@@ -45975,7 +45977,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2304]
 br x16
-.word 18082
+.word 18089
 	.no_dead_strip plt_UIKit_UITextField_set_Text_string
 plt_UIKit_UITextField_set_Text_string:
 _p_233:
@@ -45983,7 +45985,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2312]
 br x16
-.word 18087
+.word 18094
 	.no_dead_strip plt_UIKit_UITextField_set_TextColor_UIKit_UIColor
 plt_UIKit_UITextField_set_TextColor_UIKit_UIColor:
 _p_234:
@@ -45991,7 +45993,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2320]
 br x16
-.word 18092
+.word 18099
 	.no_dead_strip plt_UIKit_UIView_set_AutoresizingMask_UIKit_UIViewAutoresizing
 plt_UIKit_UIView_set_AutoresizingMask_UIKit_UIViewAutoresizing:
 _p_235:
@@ -45999,7 +46001,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2328]
 br x16
-.word 18097
+.word 18104
 	.no_dead_strip plt_UIKit_UITextField_set_SecureTextEntry_bool
 plt_UIKit_UITextField_set_SecureTextEntry_bool:
 _p_236:
@@ -46007,7 +46009,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2336]
 br x16
-.word 18102
+.word 18109
 	.no_dead_strip plt_UIKit_UITextField_set_KeyboardType_UIKit_UIKeyboardType
 plt_UIKit_UITextField_set_KeyboardType_UIKit_UIKeyboardType:
 _p_237:
@@ -46015,7 +46017,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2344]
 br x16
-.word 18107
+.word 18114
 	.no_dead_strip plt_UIKit_UITextField_set_AutocorrectionType_UIKit_UITextAutocorrectionType
 plt_UIKit_UITextField_set_AutocorrectionType_UIKit_UITextAutocorrectionType:
 _p_238:
@@ -46023,7 +46025,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2352]
 br x16
-.word 18112
+.word 18119
 	.no_dead_strip plt_UIKit_UITextField_set_AutocapitalizationType_UIKit_UITextAutocapitalizationType
 plt_UIKit_UITextField_set_AutocapitalizationType_UIKit_UITextAutocapitalizationType:
 _p_239:
@@ -46031,7 +46033,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2360]
 br x16
-.word 18117
+.word 18124
 	.no_dead_strip plt_UIKit_UITextField_set_ShouldReturn_UIKit_UITextFieldCondition
 plt_UIKit_UITextField_set_ShouldReturn_UIKit_UITextFieldCondition:
 _p_240:
@@ -46039,7 +46041,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2368]
 br x16
-.word 18122
+.word 18129
 	.no_dead_strip plt_UIKit_UIControl_add_EditingDidEnd_System_EventHandler
 plt_UIKit_UIControl_add_EditingDidEnd_System_EventHandler:
 _p_241:
@@ -46047,7 +46049,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2376]
 br x16
-.word 18127
+.word 18134
 	.no_dead_strip plt_UIKit_UITableViewCell_get_ContentView
 plt_UIKit_UITableViewCell_get_ContentView:
 _p_242:
@@ -46055,7 +46057,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2384]
 br x16
-.word 18132
+.word 18139
 	.no_dead_strip plt_UIKit_UIView_AddSubview_UIKit_UIView
 plt_UIKit_UIView_AddSubview_UIKit_UIView:
 _p_243:
@@ -46063,7 +46065,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2392]
 br x16
-.word 18137
+.word 18144
 	.no_dead_strip plt_UIKit_UIFont_BoldSystemFontOfSize_System_nfloat
 plt_UIKit_UIFont_BoldSystemFontOfSize_System_nfloat:
 _p_244:
@@ -46071,7 +46073,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2400]
 br x16
-.word 18142
+.word 18149
 	.no_dead_strip plt_UIKit_UIFont_SystemFontOfSize_System_nfloat
 plt_UIKit_UIFont_SystemFontOfSize_System_nfloat:
 _p_245:
@@ -46079,7 +46081,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2408]
 br x16
-.word 18147
+.word 18154
 	.no_dead_strip plt_UIKit_UIColor_FromRGB_int_int_int
 plt_UIKit_UIColor_FromRGB_int_int_int:
 _p_246:
@@ -46087,7 +46089,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2416]
 br x16
-.word 18152
+.word 18159
 	.no_dead_strip plt_UIKit_UITableViewDataSource__ctor
 plt_UIKit_UITableViewDataSource__ctor:
 _p_247:
@@ -46095,7 +46097,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2424]
 br x16
-.word 18157
+.word 18164
 	.no_dead_strip plt_System_Uri_op_Inequality_System_Uri_System_Uri
 plt_System_Uri_op_Inequality_System_Uri_System_Uri:
 _p_248:
@@ -46103,7 +46105,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2432]
 br x16
-.word 18162
+.word 18169
 	.no_dead_strip plt_UIKit_UIResponder_get_IsFirstResponder
 plt_UIKit_UIResponder_get_IsFirstResponder:
 _p_249:
@@ -46111,7 +46113,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2440]
 br x16
-.word 18167
+.word 18174
 	.no_dead_strip plt_UIKit_UIResponder_BecomeFirstResponder
 plt_UIKit_UIResponder_BecomeFirstResponder:
 _p_250:
@@ -46119,7 +46121,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2448]
 br x16
-.word 18172
+.word 18179
 	.no_dead_strip plt_System_Linq_Enumerable_Select_Xamarin_Auth_FormAuthenticatorField_System_nfloat_System_Collections_Generic_IEnumerable_1_Xamarin_Auth_FormAuthenticatorField_System_Func_2_Xamarin_Auth_FormAuthenticatorField_System_nfloat
 plt_System_Linq_Enumerable_Select_Xamarin_Auth_FormAuthenticatorField_System_nfloat_System_Collections_Generic_IEnumerable_1_Xamarin_Auth_FormAuthenticatorField_System_Func_2_Xamarin_Auth_FormAuthenticatorField_System_nfloat:
 _p_251:
@@ -46127,7 +46129,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2456]
 br x16
-.word 18177
+.word 18184
 	.no_dead_strip plt_System_Linq_Enumerable_Max_System_nfloat_System_Collections_Generic_IEnumerable_1_System_nfloat
 plt_System_Linq_Enumerable_Max_System_nfloat_System_Collections_Generic_IEnumerable_1_System_nfloat:
 _p_252:
@@ -46135,7 +46137,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2464]
 br x16
-.word 18189
+.word 18196
 	.no_dead_strip plt_System_Linq_Enumerable_Select_Xamarin_Auth_FormAuthenticatorField_Xamarin_Auth_FormAuthenticatorController_FieldCell_System_Collections_Generic_IEnumerable_1_Xamarin_Auth_FormAuthenticatorField_System_Func_2_Xamarin_Auth_FormAuthenticatorField_Xamarin_Auth_FormAuthenticatorController_FieldCell
 plt_System_Linq_Enumerable_Select_Xamarin_Auth_FormAuthenticatorField_Xamarin_Auth_FormAuthenticatorController_FieldCell_System_Collections_Generic_IEnumerable_1_Xamarin_Auth_FormAuthenticatorField_System_Func_2_Xamarin_Auth_FormAuthenticatorField_Xamarin_Auth_FormAuthenticatorController_FieldCell:
 _p_253:
@@ -46143,7 +46145,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2472]
 br x16
-.word 18201
+.word 18208
 	.no_dead_strip plt_System_Linq_Enumerable_ToArray_Xamarin_Auth_FormAuthenticatorController_FieldCell_System_Collections_Generic_IEnumerable_1_Xamarin_Auth_FormAuthenticatorController_FieldCell
 plt_System_Linq_Enumerable_ToArray_Xamarin_Auth_FormAuthenticatorController_FieldCell_System_Collections_Generic_IEnumerable_1_Xamarin_Auth_FormAuthenticatorController_FieldCell:
 _p_254:
@@ -46151,7 +46153,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2480]
 br x16
-.word 18213
+.word 18220
 	.no_dead_strip plt_Foundation_NSIndexPath_get_Row
 plt_Foundation_NSIndexPath_get_Row:
 _p_255:
@@ -46159,7 +46161,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2488]
 br x16
-.word 18225
+.word 18232
 	.no_dead_strip plt_UIKit_UITableView_DequeueReusableCell_string
 plt_UIKit_UITableView_DequeueReusableCell_string:
 _p_256:
@@ -46167,7 +46169,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2496]
 br x16
-.word 18230
+.word 18237
 	.no_dead_strip plt_UIKit_UILabel_set_TextAlignment_UIKit_UITextAlignment
 plt_UIKit_UILabel_set_TextAlignment_UIKit_UITextAlignment:
 _p_257:
@@ -46175,7 +46177,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2504]
 br x16
-.word 18235
+.word 18242
 	.no_dead_strip plt_UIKit_UIStringDrawing_StringSize_string_UIKit_UIFont
 plt_UIKit_UIStringDrawing_StringSize_string_UIKit_UIFont:
 _p_258:
@@ -46183,7 +46185,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2512]
 br x16
-.word 18240
+.word 18247
 	.no_dead_strip plt_System_Drawing_RectangleF__ctor_single_single_single_single
 plt_System_Drawing_RectangleF__ctor_single_single_single_single:
 _p_259:
@@ -46191,7 +46193,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2520]
 br x16
-.word 18245
+.word 18252
 	.no_dead_strip plt_CoreGraphics_CGRect_op_Implicit_System_Drawing_RectangleF
 plt_CoreGraphics_CGRect_op_Implicit_System_Drawing_RectangleF:
 _p_260:
@@ -46199,7 +46201,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2528]
 br x16
-.word 18250
+.word 18257
 	.no_dead_strip plt_UIKit_UIView__ctor_CoreGraphics_CGRect
 plt_UIKit_UIView__ctor_CoreGraphics_CGRect:
 _p_261:
@@ -46207,7 +46209,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2536]
 br x16
-.word 18255
+.word 18262
 	.no_dead_strip plt_UIKit_UIColor_get_Clear
 plt_UIKit_UIColor_get_Clear:
 _p_262:
@@ -46215,7 +46217,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2544]
 br x16
-.word 18260
+.word 18267
 	.no_dead_strip plt_UIKit_UIActivityIndicatorView__ctor_UIKit_UIActivityIndicatorViewStyle
 plt_UIKit_UIActivityIndicatorView__ctor_UIKit_UIActivityIndicatorViewStyle:
 _p_263:
@@ -46223,7 +46225,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2552]
 br x16
-.word 18265
+.word 18272
 	.no_dead_strip plt_UIKit_UIView_set_Frame_CoreGraphics_CGRect
 plt_UIKit_UIView_set_Frame_CoreGraphics_CGRect:
 _p_264:
@@ -46231,7 +46233,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2560]
 br x16
-.word 18270
+.word 18277
 	.no_dead_strip plt_UIKit_UIActivityIndicatorView_set_HidesWhenStopped_bool
 plt_UIKit_UIActivityIndicatorView_set_HidesWhenStopped_bool:
 _p_265:
@@ -46239,7 +46241,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2568]
 br x16
-.word 18275
+.word 18282
 	.no_dead_strip plt_UIKit_UIView_set_Hidden_bool
 plt_UIKit_UIView_set_Hidden_bool:
 _p_266:
@@ -46247,7 +46249,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2576]
 br x16
-.word 18280
+.word 18287
 	.no_dead_strip plt_UIKit_UILabel__ctor
 plt_UIKit_UILabel__ctor:
 _p_267:
@@ -46255,7 +46257,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2584]
 br x16
-.word 18285
+.word 18292
 	.no_dead_strip plt_UIKit_UIColor_get_White
 plt_UIKit_UIColor_get_White:
 _p_268:
@@ -46263,7 +46265,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2592]
 br x16
-.word 18290
+.word 18297
 	.no_dead_strip plt_UIKit_UILabel_set_TextColor_UIKit_UIColor
 plt_UIKit_UILabel_set_TextColor_UIKit_UIColor:
 _p_269:
@@ -46271,7 +46273,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2600]
 br x16
-.word 18295
+.word 18302
 	.no_dead_strip plt_UIKit_UILabel_set_Font_UIKit_UIFont
 plt_UIKit_UILabel_set_Font_UIKit_UIFont:
 _p_270:
@@ -46279,7 +46281,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2608]
 br x16
-.word 18300
+.word 18307
 	.no_dead_strip plt_UIKit_UILabel_get_Text
 plt_UIKit_UILabel_get_Text:
 _p_271:
@@ -46287,7 +46289,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2616]
 br x16
-.word 18305
+.word 18312
 	.no_dead_strip plt_UIKit_UILabel_get_Font
 plt_UIKit_UILabel_get_Font:
 _p_272:
@@ -46295,7 +46297,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2624]
 br x16
-.word 18310
+.word 18317
 	.no_dead_strip plt_UIKit_UIActivityIndicatorView_StartAnimating
 plt_UIKit_UIActivityIndicatorView_StartAnimating:
 _p_273:
@@ -46303,7 +46305,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2632]
 br x16
-.word 18315
+.word 18322
 	.no_dead_strip plt_UIKit_UIActivityIndicatorView_StopAnimating
 plt_UIKit_UIActivityIndicatorView_StopAnimating:
 _p_274:
@@ -46311,7 +46313,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2640]
 br x16
-.word 18320
+.word 18327
 	.no_dead_strip plt_Xamarin_Utilities_iOS_UIViewControllerEx_ShowError_UIKit_UIViewController_string_string_System_Action
 plt_Xamarin_Utilities_iOS_UIViewControllerEx_ShowError_UIKit_UIViewController_string_string_System_Action:
 _p_275:
@@ -46319,7 +46321,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2648]
 br x16
-.word 18325
+.word 18332
 	.no_dead_strip plt_UIKit_UIAlertView__ctor_string_string_UIKit_UIAlertViewDelegate_string_string__
 plt_UIKit_UIAlertView__ctor_string_string_UIKit_UIAlertViewDelegate_string_string__:
 _p_276:
@@ -46327,7 +46329,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2656]
 br x16
-.word 18328
+.word 18335
 	.no_dead_strip plt_UIKit_UIAlertView_add_Dismissed_System_EventHandler_1_UIKit_UIButtonEventArgs
 plt_UIKit_UIAlertView_add_Dismissed_System_EventHandler_1_UIKit_UIButtonEventArgs:
 _p_277:
@@ -46335,7 +46337,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2664]
 br x16
-.word 18333
+.word 18340
 	.no_dead_strip plt_UIKit_UIAlertView_Show
 plt_UIKit_UIAlertView_Show:
 _p_278:
@@ -46343,7 +46345,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2672]
 br x16
-.word 18338
+.word 18345
 	.no_dead_strip plt_UIKit_UIViewController__ctor
 plt_UIKit_UIViewController__ctor:
 _p_279:
@@ -46351,7 +46353,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2680]
 br x16
-.word 18343
+.word 18350
 	.no_dead_strip plt_Xamarin_Auth_Authenticator_add_Error_System_EventHandler_1_Xamarin_Auth_AuthenticatorErrorEventArgs
 plt_Xamarin_Auth_Authenticator_add_Error_System_EventHandler_1_Xamarin_Auth_AuthenticatorErrorEventArgs:
 _p_280:
@@ -46359,7 +46361,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2688]
 br x16
-.word 18348
+.word 18355
 	.no_dead_strip plt_Xamarin_Auth_WebAuthenticator_add_BrowsingCompleted_System_EventHandler
 plt_Xamarin_Auth_WebAuthenticator_add_BrowsingCompleted_System_EventHandler:
 _p_281:
@@ -46367,7 +46369,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2696]
 br x16
-.word 18350
+.word 18357
 	.no_dead_strip plt_UIKit_UIBarButtonItem__ctor_UIKit_UIView
 plt_UIKit_UIBarButtonItem__ctor_UIKit_UIView:
 _p_282:
@@ -46375,7 +46377,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2704]
 br x16
-.word 18353
+.word 18360
 	.no_dead_strip plt_UIKit_UINavigationItem_set_RightBarButtonItem_UIKit_UIBarButtonItem
 plt_UIKit_UINavigationItem_set_RightBarButtonItem_UIKit_UIBarButtonItem:
 _p_283:
@@ -46383,7 +46385,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2712]
 br x16
-.word 18358
+.word 18365
 	.no_dead_strip plt_UIKit_UIViewController_get_View
 plt_UIKit_UIViewController_get_View:
 _p_284:
@@ -46391,7 +46393,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2720]
 br x16
-.word 18363
+.word 18370
 	.no_dead_strip plt_UIKit_UIView_get_Bounds
 plt_UIKit_UIView_get_Bounds:
 _p_285:
@@ -46399,7 +46401,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2728]
 br x16
-.word 18368
+.word 18375
 	.no_dead_strip plt_UIKit_UIWebView__ctor_CoreGraphics_CGRect
 plt_UIKit_UIWebView__ctor_CoreGraphics_CGRect:
 _p_286:
@@ -46407,7 +46409,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2736]
 br x16
-.word 18373
+.word 18380
 	.no_dead_strip plt_UIKit_UIWebView_set_Delegate_UIKit_IUIWebViewDelegate
 plt_UIKit_UIWebView_set_Delegate_UIKit_IUIWebViewDelegate:
 _p_287:
@@ -46415,7 +46417,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2744]
 br x16
-.word 18378
+.word 18385
 	.no_dead_strip plt_UIKit_UIColor_get_Black
 plt_UIKit_UIColor_get_Black:
 _p_288:
@@ -46423,7 +46425,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2752]
 br x16
-.word 18383
+.word 18390
 	.no_dead_strip plt_Xamarin_Auth_WebAuthenticatorController_BeginLoadingInitialUrl
 plt_Xamarin_Auth_WebAuthenticatorController_BeginLoadingInitialUrl:
 _p_289:
@@ -46431,7 +46433,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2760]
 br x16
-.word 18388
+.word 18395
 	.no_dead_strip plt_System_Threading_Tasks_Task_1_System_Uri_ContinueWith_System_Action_1_System_Threading_Tasks_Task_1_System_Uri_System_Threading_Tasks_TaskScheduler
 plt_System_Threading_Tasks_Task_1_System_Uri_ContinueWith_System_Action_1_System_Threading_Tasks_Task_1_System_Uri_System_Threading_Tasks_TaskScheduler:
 _p_290:
@@ -46439,7 +46441,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2768]
 br x16
-.word 18391
+.word 18398
 	.no_dead_strip plt_UIKit_UIView_Transition_UIKit_UIView_UIKit_UIView_double_UIKit_UIViewAnimationOptions_System_Action
 plt_UIKit_UIView_Transition_UIKit_UIView_UIKit_UIView_double_UIKit_UIViewAnimationOptions_System_Action:
 _p_291:
@@ -46447,7 +46449,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2776]
 br x16
-.word 18402
+.word 18409
 	.no_dead_strip plt_Foundation_NSUrlRequest__ctor_Foundation_NSUrl
 plt_Foundation_NSUrlRequest__ctor_Foundation_NSUrl:
 _p_292:
@@ -46455,7 +46457,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2784]
 br x16
-.word 18407
+.word 18414
 	.no_dead_strip plt_Foundation_NSUrlCache_get_SharedCache
 plt_Foundation_NSUrlCache_get_SharedCache:
 _p_293:
@@ -46463,7 +46465,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2792]
 br x16
-.word 18412
+.word 18419
 	.no_dead_strip plt_Foundation_NSUrlCache_RemoveCachedResponse_Foundation_NSUrlRequest
 plt_Foundation_NSUrlCache_RemoveCachedResponse_Foundation_NSUrlRequest:
 _p_294:
@@ -46471,7 +46473,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2800]
 br x16
-.word 18417
+.word 18424
 	.no_dead_strip plt_UIKit_UIWebView_LoadRequest_Foundation_NSUrlRequest
 plt_UIKit_UIWebView_LoadRequest_Foundation_NSUrlRequest:
 _p_295:
@@ -46479,7 +46481,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2808]
 br x16
-.word 18422
+.word 18429
 	.no_dead_strip plt_UIKit_UIView_Add_UIKit_UIView
 plt_UIKit_UIView_Add_UIKit_UIView:
 _p_296:
@@ -46487,7 +46489,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2816]
 br x16
-.word 18427
+.word 18434
 	.no_dead_strip plt_UIKit_UIViewController_DismissViewControllerAsync_bool
 plt_UIKit_UIViewController_DismissViewControllerAsync_bool:
 _p_297:
@@ -46495,7 +46497,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2824]
 br x16
-.word 18432
+.word 18439
 	.no_dead_strip plt_Xamarin_Auth_WebAuthenticatorController_LoadInitialUrl_System_Uri
 plt_Xamarin_Auth_WebAuthenticatorController_LoadInitialUrl_System_Uri:
 _p_298:
@@ -46503,7 +46505,7 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2832]
 br x16
-.word 18437
+.word 18444
 	.no_dead_strip plt_UIKit_UIWebViewDelegate__ctor
 plt_UIKit_UIWebViewDelegate__ctor:
 _p_299:
@@ -46511,4731 +46513,4723 @@ adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2840]
 br x16
-.word 18440
-	.no_dead_strip plt_Foundation_NSUrlRequest_get_Url
-plt_Foundation_NSUrlRequest_get_Url:
+.word 18447
+	.no_dead_strip plt_Foundation_NSUrl_op_Inequality_Foundation_NSUrl_Foundation_NSUrl
+plt_Foundation_NSUrl_op_Inequality_Foundation_NSUrl_Foundation_NSUrl:
 _p_300:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2848]
 br x16
-.word 18445
-	.no_dead_strip plt_Foundation_NSUrl_op_Inequality_Foundation_NSUrl_Foundation_NSUrl
-plt_Foundation_NSUrl_op_Inequality_Foundation_NSUrl_Foundation_NSUrl:
+.word 18452
+	.no_dead_strip plt_Foundation_NSUrl_get_AbsoluteString
+plt_Foundation_NSUrl_get_AbsoluteString:
 _p_301:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2856]
 br x16
-.word 18450
-	.no_dead_strip plt_Foundation_NSUrl_get_AbsoluteString
-plt_Foundation_NSUrl_get_AbsoluteString:
+.word 18457
+	.no_dead_strip plt_System_Uri_TryCreate_string_System_UriKind_System_Uri_
+plt_System_Uri_TryCreate_string_System_UriKind_System_Uri_:
 _p_302:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2864]
 br x16
-.word 18455
-	.no_dead_strip plt_System_Uri_TryCreate_string_System_UriKind_System_Uri_
-plt_System_Uri_TryCreate_string_System_UriKind_System_Uri_:
+.word 18462
+	.no_dead_strip plt_string_ToLower
+plt_string_ToLower:
 _p_303:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2872]
 br x16
-.word 18460
-	.no_dead_strip plt_string_ToLower
-plt_string_ToLower:
+.word 18467
+	.no_dead_strip plt_System_Uri_get_Scheme
+plt_System_Uri_get_Scheme:
 _p_304:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2880]
 br x16
-.word 18465
-	.no_dead_strip plt_System_Uri_get_Scheme
-plt_System_Uri_get_Scheme:
+.word 18472
+	.no_dead_strip plt_UIKit_UIView_set_UserInteractionEnabled_bool
+plt_UIKit_UIView_set_UserInteractionEnabled_bool:
 _p_305:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2888]
 br x16
-.word 18470
-	.no_dead_strip plt_UIKit_UIView_set_UserInteractionEnabled_bool
-plt_UIKit_UIView_set_UserInteractionEnabled_bool:
+.word 18477
+	.no_dead_strip plt_Foundation_NSError_get_Domain
+plt_Foundation_NSError_get_Domain:
 _p_306:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2896]
 br x16
-.word 18475
-	.no_dead_strip plt_Foundation_NSError_get_Domain
-plt_Foundation_NSError_get_Domain:
+.word 18482
+	.no_dead_strip plt_Foundation_NSError_get_Code
+plt_Foundation_NSError_get_Code:
 _p_307:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2904]
 br x16
-.word 18480
-	.no_dead_strip plt_Foundation_NSError_get_Code
-plt_Foundation_NSError_get_Code:
+.word 18487
+	.no_dead_strip plt_Foundation_NSError_get_LocalizedDescription
+plt_Foundation_NSError_get_LocalizedDescription:
 _p_308:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2912]
 br x16
-.word 18485
-	.no_dead_strip plt_Foundation_NSError_get_LocalizedDescription
-plt_Foundation_NSError_get_LocalizedDescription:
+.word 18492
+	.no_dead_strip plt_UIKit_UIWebView_get_Request
+plt_UIKit_UIWebView_get_Request:
 _p_309:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2920]
 br x16
-.word 18490
-	.no_dead_strip plt_UIKit_UIWebView_get_Request
-plt_UIKit_UIWebView_get_Request:
+.word 18497
+	.no_dead_strip plt_Security_SecRecord__ctor_Security_SecKind
+plt_Security_SecRecord__ctor_Security_SecKind:
 _p_310:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2928]
 br x16
-.word 18495
-	.no_dead_strip plt_Security_SecRecord__ctor_Security_SecKind
-plt_Security_SecRecord__ctor_Security_SecKind:
+.word 18502
+	.no_dead_strip plt_Security_SecRecord_set_Service_string
+plt_Security_SecRecord_set_Service_string:
 _p_311:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2936]
 br x16
-.word 18500
-	.no_dead_strip plt_Security_SecRecord_set_Service_string
-plt_Security_SecRecord_set_Service_string:
+.word 18507
+	.no_dead_strip plt_System_Lazy_1_System_Reflection_MethodInfo_get_Value
+plt_System_Lazy_1_System_Reflection_MethodInfo_get_Value:
 _p_312:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2944]
 br x16
-.word 18505
-	.no_dead_strip plt_System_Lazy_1_System_Reflection_MethodInfo_get_Value
-plt_System_Lazy_1_System_Reflection_MethodInfo_get_Value:
+.word 18512
+	.no_dead_strip plt_System_Reflection_MethodBase_Invoke_object_object__
+plt_System_Reflection_MethodBase_Invoke_object_object__:
 _p_313:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2952]
 br x16
-.word 18510
-	.no_dead_strip plt_System_Reflection_MethodBase_Invoke_object_object__
-plt_System_Reflection_MethodBase_Invoke_object_object__:
+.word 18523
+	.no_dead_strip plt_System_Lazy_1_ObjCRuntime_INativeObject_get_Value
+plt_System_Lazy_1_ObjCRuntime_INativeObject_get_Value:
 _p_314:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2960]
 br x16
-.word 18521
-	.no_dead_strip plt_System_Lazy_1_ObjCRuntime_INativeObject_get_Value
-plt_System_Lazy_1_ObjCRuntime_INativeObject_get_Value:
+.word 18528
+	.no_dead_strip plt_System_Lazy_1_intptr_get_Value
+plt_System_Lazy_1_intptr_get_Value:
 _p_315:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2968]
 br x16
-.word 18526
-	.no_dead_strip plt_System_Lazy_1_intptr_get_Value
-plt_System_Lazy_1_intptr_get_Value:
+.word 18539
+	.no_dead_strip plt_Foundation_NSMutableDictionary_LowlevelSetObject_intptr_intptr
+plt_Foundation_NSMutableDictionary_LowlevelSetObject_intptr_intptr:
 _p_316:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2976]
 br x16
-.word 18537
-	.no_dead_strip plt_Foundation_NSMutableDictionary_LowlevelSetObject_intptr_intptr
-plt_Foundation_NSMutableDictionary_LowlevelSetObject_intptr_intptr:
+.word 18550
+	.no_dead_strip plt_Security_SecKeyChain_QueryAsRecord_Security_SecRecord_int_Security_SecStatusCode_
+plt_Security_SecKeyChain_QueryAsRecord_Security_SecRecord_int_Security_SecStatusCode_:
 _p_317:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2984]
 br x16
-.word 18548
-	.no_dead_strip plt_Security_SecKeyChain_QueryAsRecord_Security_SecRecord_int_Security_SecStatusCode_
-plt_Security_SecKeyChain_QueryAsRecord_Security_SecRecord_int_Security_SecStatusCode_:
+.word 18555
+	.no_dead_strip plt_Xamarin_Auth_AccountStoreException__ctor_string_System_Exception
+plt_Xamarin_Auth_AccountStoreException__ctor_string_System_Exception:
 _p_318:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2992]
 br x16
-.word 18553
-	.no_dead_strip plt_Xamarin_Auth_AccountStoreException__ctor_string_System_Exception
-plt_Xamarin_Auth_AccountStoreException__ctor_string_System_Exception:
+.word 18560
+	.no_dead_strip plt_System_Linq_Enumerable_Select_Security_SecRecord_Xamarin_Auth_Account_System_Collections_Generic_IEnumerable_1_Security_SecRecord_System_Func_2_Security_SecRecord_Xamarin_Auth_Account
+plt_System_Linq_Enumerable_Select_Security_SecRecord_Xamarin_Auth_Account_System_Collections_Generic_IEnumerable_1_Security_SecRecord_System_Func_2_Security_SecRecord_Xamarin_Auth_Account:
 _p_319:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3000]
 br x16
-.word 18558
-	.no_dead_strip plt_System_Linq_Enumerable_Select_Security_SecRecord_Xamarin_Auth_Account_System_Collections_Generic_IEnumerable_1_Security_SecRecord_System_Func_2_Security_SecRecord_Xamarin_Auth_Account
-plt_System_Linq_Enumerable_Select_Security_SecRecord_Xamarin_Auth_Account_System_Collections_Generic_IEnumerable_1_Security_SecRecord_System_Func_2_Security_SecRecord_Xamarin_Auth_Account:
+.word 18562
+	.no_dead_strip plt_System_Linq_Enumerable_Count_Xamarin_Auth_Account_System_Collections_Generic_IEnumerable_1_Xamarin_Auth_Account
+plt_System_Linq_Enumerable_Count_Xamarin_Auth_Account_System_Collections_Generic_IEnumerable_1_Xamarin_Auth_Account:
 _p_320:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3008]
 br x16
-.word 18560
-	.no_dead_strip plt_System_Linq_Enumerable_Count_Xamarin_Auth_Account_System_Collections_Generic_IEnumerable_1_Xamarin_Auth_Account
-plt_System_Linq_Enumerable_Count_Xamarin_Auth_Account_System_Collections_Generic_IEnumerable_1_Xamarin_Auth_Account:
+.word 18574
+	.no_dead_strip plt_System_Linq_Enumerable_LongCount_Xamarin_Auth_Account_System_Collections_Generic_IEnumerable_1_Xamarin_Auth_Account
+plt_System_Linq_Enumerable_LongCount_Xamarin_Auth_Account_System_Collections_Generic_IEnumerable_1_Xamarin_Auth_Account:
 _p_321:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3016]
 br x16
-.word 18572
-	.no_dead_strip plt_System_Linq_Enumerable_LongCount_Xamarin_Auth_Account_System_Collections_Generic_IEnumerable_1_Xamarin_Auth_Account
-plt_System_Linq_Enumerable_LongCount_Xamarin_Auth_Account_System_Collections_Generic_IEnumerable_1_Xamarin_Auth_Account:
+.word 18586
+	.no_dead_strip plt_System_Linq_Enumerable_ToList_Xamarin_Auth_Account_System_Collections_Generic_IEnumerable_1_Xamarin_Auth_Account
+plt_System_Linq_Enumerable_ToList_Xamarin_Auth_Account_System_Collections_Generic_IEnumerable_1_Xamarin_Auth_Account:
 _p_322:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3024]
 br x16
-.word 18584
-	.no_dead_strip plt_System_Linq_Enumerable_ToList_Xamarin_Auth_Account_System_Collections_Generic_IEnumerable_1_Xamarin_Auth_Account
-plt_System_Linq_Enumerable_ToList_Xamarin_Auth_Account_System_Collections_Generic_IEnumerable_1_Xamarin_Auth_Account:
+.word 18598
+	.no_dead_strip plt__jit_icall_mono_thread_get_undeniable_exception
+plt__jit_icall_mono_thread_get_undeniable_exception:
 _p_323:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3032]
 br x16
-.word 18596
-	.no_dead_strip plt__jit_icall_mono_thread_get_undeniable_exception
-plt__jit_icall_mono_thread_get_undeniable_exception:
+.word 18610
+	.no_dead_strip plt_System_Collections_Generic_List_1_Xamarin_Auth_Account__ctor_System_Collections_Generic_IEnumerable_1_Xamarin_Auth_Account
+plt_System_Collections_Generic_List_1_Xamarin_Auth_Account__ctor_System_Collections_Generic_IEnumerable_1_Xamarin_Auth_Account:
 _p_324:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3040]
 br x16
-.word 18608
-	.no_dead_strip plt_System_Collections_Generic_List_1_Xamarin_Auth_Account__ctor_System_Collections_Generic_IEnumerable_1_Xamarin_Auth_Account
-plt_System_Collections_Generic_List_1_Xamarin_Auth_Account__ctor_System_Collections_Generic_IEnumerable_1_Xamarin_Auth_Account:
+.word 18649
+	.no_dead_strip plt_System_Threading_Tasks_Task_FromResult_System_Collections_Generic_List_1_Xamarin_Auth_Account_System_Collections_Generic_List_1_Xamarin_Auth_Account
+plt_System_Threading_Tasks_Task_FromResult_System_Collections_Generic_List_1_Xamarin_Auth_Account_System_Collections_Generic_List_1_Xamarin_Auth_Account:
 _p_325:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3048]
 br x16
-.word 18647
-	.no_dead_strip plt_System_Threading_Tasks_Task_FromResult_System_Collections_Generic_List_1_Xamarin_Auth_Account_System_Collections_Generic_List_1_Xamarin_Auth_Account
-plt_System_Threading_Tasks_Task_FromResult_System_Collections_Generic_List_1_Xamarin_Auth_Account_System_Collections_Generic_List_1_Xamarin_Auth_Account:
+.word 18660
+	.no_dead_strip plt_Security_SecRecord_get_Generic
+plt_Security_SecRecord_get_Generic:
 _p_326:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3056]
 br x16
-.word 18658
-	.no_dead_strip plt_Security_SecRecord_get_Generic
-plt_Security_SecRecord_get_Generic:
+.word 18672
+	.no_dead_strip plt_Security_SecRecord_get_ValueData
+plt_Security_SecRecord_get_ValueData:
 _p_327:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3064]
 br x16
-.word 18670
-	.no_dead_strip plt_Security_SecRecord_get_ValueData
-plt_Security_SecRecord_get_ValueData:
+.word 18677
+	.no_dead_strip plt_Foundation_NSString_FromData_Foundation_NSData_Foundation_NSStringEncoding
+plt_Foundation_NSString_FromData_Foundation_NSData_Foundation_NSStringEncoding:
 _p_328:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3072]
 br x16
-.word 18675
-	.no_dead_strip plt_Foundation_NSString_FromData_Foundation_NSData_Foundation_NSStringEncoding
-plt_Foundation_NSString_FromData_Foundation_NSData_Foundation_NSStringEncoding:
+.word 18682
+	.no_dead_strip plt_Foundation_NSString_op_Implicit_Foundation_NSString
+plt_Foundation_NSString_op_Implicit_Foundation_NSString:
 _p_329:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3080]
 br x16
-.word 18680
-	.no_dead_strip plt_Foundation_NSString_op_Implicit_Foundation_NSString
-plt_Foundation_NSString_op_Implicit_Foundation_NSString:
+.word 18687
+	.no_dead_strip plt_Xamarin_Auth_Account_Deserialize_string
+plt_Xamarin_Auth_Account_Deserialize_string:
 _p_330:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3088]
 br x16
-.word 18685
-	.no_dead_strip plt_Xamarin_Auth_Account_Deserialize_string
-plt_Xamarin_Auth_Account_Deserialize_string:
+.word 18692
+	.no_dead_strip plt_Xamarin_Auth_AccountStoreException__ctor_string
+plt_Xamarin_Auth_AccountStoreException__ctor_string:
 _p_331:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3096]
 br x16
-.word 18690
-	.no_dead_strip plt_Xamarin_Auth_AccountStoreException__ctor_string
-plt_Xamarin_Auth_AccountStoreException__ctor_string:
+.word 18694
+	.no_dead_strip plt_Security_SecRecord_set_Account_string
+plt_Security_SecRecord_set_Account_string:
 _p_332:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3104]
 br x16
-.word 18692
-	.no_dead_strip plt_Security_SecRecord_set_Account_string
-plt_Security_SecRecord_set_Account_string:
+.word 18696
+	.no_dead_strip plt_Security_SecKeyChain_QueryAsRecord_Security_SecRecord_Security_SecStatusCode_
+plt_Security_SecKeyChain_QueryAsRecord_Security_SecRecord_Security_SecStatusCode_:
 _p_333:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3112]
 br x16
-.word 18694
-	.no_dead_strip plt_Security_SecKeyChain_QueryAsRecord_Security_SecRecord_Security_SecStatusCode_
-plt_Security_SecKeyChain_QueryAsRecord_Security_SecRecord_Security_SecStatusCode_:
+.word 18701
+	.no_dead_strip plt_Xamarin_Auth_KeyChainAccountStore_GetAccountFromRecord_Security_SecRecord
+plt_Xamarin_Auth_KeyChainAccountStore_GetAccountFromRecord_Security_SecRecord:
 _p_334:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3120]
 br x16
-.word 18699
-	.no_dead_strip plt_Xamarin_Auth_KeyChainAccountStore_GetAccountFromRecord_Security_SecRecord
-plt_Xamarin_Auth_KeyChainAccountStore_GetAccountFromRecord_Security_SecRecord:
+.word 18706
+	.no_dead_strip plt_Foundation_NSData_FromString_string_Foundation_NSStringEncoding
+plt_Foundation_NSData_FromString_string_Foundation_NSStringEncoding:
 _p_335:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3128]
 br x16
-.word 18704
-	.no_dead_strip plt_Foundation_NSData_FromString_string_Foundation_NSStringEncoding
-plt_Foundation_NSData_FromString_string_Foundation_NSStringEncoding:
+.word 18709
+	.no_dead_strip plt_Xamarin_Auth_KeyChainAccountStore_FindAccount_string_string
+plt_Xamarin_Auth_KeyChainAccountStore_FindAccount_string_string:
 _p_336:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3136]
 br x16
-.word 18707
-	.no_dead_strip plt_Xamarin_Auth_KeyChainAccountStore_FindAccount_string_string
-plt_Xamarin_Auth_KeyChainAccountStore_FindAccount_string_string:
+.word 18714
+	.no_dead_strip plt_Security_SecKeyChain_Remove_Security_SecRecord
+plt_Security_SecKeyChain_Remove_Security_SecRecord:
 _p_337:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3144]
 br x16
-.word 18712
-	.no_dead_strip plt_Security_SecKeyChain_Remove_Security_SecRecord
-plt_Security_SecKeyChain_Remove_Security_SecRecord:
+.word 18717
+	.no_dead_strip plt_string_Concat_object_object
+plt_string_Concat_object_object:
 _p_338:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3152]
 br x16
-.word 18715
-	.no_dead_strip plt_string_Concat_object_object
-plt_string_Concat_object_object:
+.word 18722
+	.no_dead_strip plt_Security_SecRecord_set_ValueData_Foundation_NSData
+plt_Security_SecRecord_set_ValueData_Foundation_NSData:
 _p_339:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3160]
 br x16
-.word 18720
-	.no_dead_strip plt_Security_SecRecord_set_ValueData_Foundation_NSData
-plt_Security_SecRecord_set_ValueData_Foundation_NSData:
+.word 18727
+	.no_dead_strip plt_Security_SecRecord_set_Accessible_Security_SecAccessible
+plt_Security_SecRecord_set_Accessible_Security_SecAccessible:
 _p_340:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3168]
 br x16
-.word 18725
-	.no_dead_strip plt_Security_SecRecord_set_Accessible_Security_SecAccessible
-plt_Security_SecRecord_set_Accessible_Security_SecAccessible:
+.word 18732
+	.no_dead_strip plt_Security_SecKeyChain_Add_Security_SecRecord
+plt_Security_SecKeyChain_Add_Security_SecRecord:
 _p_341:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3176]
 br x16
-.word 18730
-	.no_dead_strip plt_Security_SecKeyChain_Add_Security_SecRecord
-plt_Security_SecKeyChain_Add_Security_SecRecord:
+.word 18737
+	.no_dead_strip plt_System_Text_StringBuilder__ctor_string
+plt_System_Text_StringBuilder__ctor_string:
 _p_342:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3184]
 br x16
-.word 18735
-	.no_dead_strip plt_System_Text_StringBuilder__ctor_string
-plt_System_Text_StringBuilder__ctor_string:
+.word 18742
+	.no_dead_strip plt_System_Text_StringBuilder_AppendLine_string
+plt_System_Text_StringBuilder_AppendLine_string:
 _p_343:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3192]
 br x16
-.word 18740
-	.no_dead_strip plt_System_Text_StringBuilder_AppendLine_string
-plt_System_Text_StringBuilder_AppendLine_string:
+.word 18747
+	.no_dead_strip plt_System_Threading_Tasks_Task_FromResult_bool_bool
+plt_System_Threading_Tasks_Task_FromResult_bool_bool:
 _p_344:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3200]
 br x16
-.word 18745
-	.no_dead_strip plt_System_Threading_Tasks_Task_FromResult_bool_bool
-plt_System_Threading_Tasks_Task_FromResult_bool_bool:
+.word 18752
+	.no_dead_strip plt_System_Threading_Tasks_Task_1_System_Collections_Generic_List_1_Xamarin_Auth_Account_get_Result
+plt_System_Threading_Tasks_Task_1_System_Collections_Generic_List_1_Xamarin_Auth_Account_get_Result:
 _p_345:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3208]
 br x16
-.word 18750
-	.no_dead_strip plt_System_Threading_Tasks_Task_1_System_Collections_Generic_List_1_Xamarin_Auth_Account_get_Result
-plt_System_Threading_Tasks_Task_1_System_Collections_Generic_List_1_Xamarin_Auth_Account_get_Result:
+.word 18764
+	.no_dead_strip plt_System_Lazy_1_System_Reflection_MethodInfo__ctor_System_Func_1_System_Reflection_MethodInfo
+plt_System_Lazy_1_System_Reflection_MethodInfo__ctor_System_Func_1_System_Reflection_MethodInfo:
 _p_346:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3216]
 br x16
-.word 18762
-	.no_dead_strip plt_System_Lazy_1_System_Reflection_MethodInfo__ctor_System_Func_1_System_Reflection_MethodInfo
-plt_System_Lazy_1_System_Reflection_MethodInfo__ctor_System_Func_1_System_Reflection_MethodInfo:
+.word 18775
+	.no_dead_strip plt_System_Lazy_1_intptr__ctor_System_Func_1_intptr
+plt_System_Lazy_1_intptr__ctor_System_Func_1_intptr:
 _p_347:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3224]
 br x16
-.word 18773
-	.no_dead_strip plt_System_Lazy_1_intptr__ctor_System_Func_1_intptr
-plt_System_Lazy_1_intptr__ctor_System_Func_1_intptr:
+.word 18786
+	.no_dead_strip plt_System_Lazy_1_ObjCRuntime_INativeObject__ctor_System_Func_1_ObjCRuntime_INativeObject
+plt_System_Lazy_1_ObjCRuntime_INativeObject__ctor_System_Func_1_ObjCRuntime_INativeObject:
 _p_348:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3232]
 br x16
-.word 18784
-	.no_dead_strip plt_System_Lazy_1_ObjCRuntime_INativeObject__ctor_System_Func_1_ObjCRuntime_INativeObject
-plt_System_Lazy_1_ObjCRuntime_INativeObject__ctor_System_Func_1_ObjCRuntime_INativeObject:
+.word 18797
+	.no_dead_strip plt_System_Type_GetProperty_string_System_Reflection_BindingFlags
+plt_System_Type_GetProperty_string_System_Reflection_BindingFlags:
 _p_349:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3240]
 br x16
-.word 18795
-	.no_dead_strip plt_System_Type_GetProperty_string_System_Reflection_BindingFlags
-plt_System_Type_GetProperty_string_System_Reflection_BindingFlags:
+.word 18808
+	.no_dead_strip plt_System_Reflection_PropertyInfo_get_GetMethod
+plt_System_Reflection_PropertyInfo_get_GetMethod:
 _p_350:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3248]
 br x16
-.word 18806
-	.no_dead_strip plt_System_Reflection_PropertyInfo_get_GetMethod
-plt_System_Reflection_PropertyInfo_get_GetMethod:
+.word 18813
+	.no_dead_strip plt_System_Reflection_Assembly_GetTypes
+plt_System_Reflection_Assembly_GetTypes:
 _p_351:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3256]
 br x16
-.word 18811
-	.no_dead_strip plt_System_Reflection_Assembly_GetTypes
-plt_System_Reflection_Assembly_GetTypes:
+.word 18818
+	.no_dead_strip plt_System_Linq_Enumerable_First_System_Type_System_Collections_Generic_IEnumerable_1_System_Type_System_Func_2_System_Type_bool
+plt_System_Linq_Enumerable_First_System_Type_System_Collections_Generic_IEnumerable_1_System_Type_System_Func_2_System_Type_bool:
 _p_352:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3264]
 br x16
-.word 18816
-	.no_dead_strip plt_System_Linq_Enumerable_First_System_Type_System_Collections_Generic_IEnumerable_1_System_Type_System_Func_2_System_Type_bool
-plt_System_Linq_Enumerable_First_System_Type_System_Collections_Generic_IEnumerable_1_System_Type_System_Func_2_System_Type_bool:
+.word 18823
+	.no_dead_strip plt_System_Type_GetProperty_string
+plt_System_Type_GetProperty_string:
 _p_353:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3272]
 br x16
-.word 18821
-	.no_dead_strip plt_System_Type_GetProperty_string
-plt_System_Type_GetProperty_string:
+.word 18835
+	.no_dead_strip plt_System_Type_GetField_string
+plt_System_Type_GetField_string:
 _p_354:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3280]
 br x16
-.word 18833
-	.no_dead_strip plt_System_Type_GetField_string
-plt_System_Type_GetField_string:
+.word 18840
+	.no_dead_strip plt_Foundation_NSObject_BeginInvokeOnMainThread_System_Action
+plt_Foundation_NSObject_BeginInvokeOnMainThread_System_Action:
 _p_355:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3288]
 br x16
-.word 18838
-	.no_dead_strip plt_Foundation_NSObject_BeginInvokeOnMainThread_System_Action
-plt_Foundation_NSObject_BeginInvokeOnMainThread_System_Action:
+.word 18845
+	.no_dead_strip plt_SafariServices_SFSafariViewControllerDelegate__ctor
+plt_SafariServices_SFSafariViewControllerDelegate__ctor:
 _p_356:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3296]
 br x16
-.word 18843
-	.no_dead_strip plt_SafariServices_SFSafariViewControllerDelegate__ctor
-plt_SafariServices_SFSafariViewControllerDelegate__ctor:
+.word 18850
+	.no_dead_strip plt_System_Net_Http_FormUrlEncodedContent__ctor_System_Collections_Generic_IEnumerable_1_System_Collections_Generic_KeyValuePair_2_string_string
+plt_System_Net_Http_FormUrlEncodedContent__ctor_System_Collections_Generic_IEnumerable_1_System_Collections_Generic_KeyValuePair_2_string_string:
 _p_357:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3304]
 br x16
-.word 18848
-	.no_dead_strip plt_System_Net_Http_FormUrlEncodedContent__ctor_System_Collections_Generic_IEnumerable_1_System_Collections_Generic_KeyValuePair_2_string_string
-plt_System_Net_Http_FormUrlEncodedContent__ctor_System_Collections_Generic_IEnumerable_1_System_Collections_Generic_KeyValuePair_2_string_string:
+.word 18855
+	.no_dead_strip plt_System_Net_Http_HttpClient__ctor
+plt_System_Net_Http_HttpClient__ctor:
 _p_358:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3312]
 br x16
-.word 18853
-	.no_dead_strip plt_System_Net_Http_HttpClient__ctor
-plt_System_Net_Http_HttpClient__ctor:
+.word 18860
+	.no_dead_strip plt_System_Net_Http_HttpClient_PostAsync_System_Uri_System_Net_Http_HttpContent
+plt_System_Net_Http_HttpClient_PostAsync_System_Uri_System_Net_Http_HttpContent:
 _p_359:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3320]
 br x16
-.word 18858
-	.no_dead_strip plt_System_Net_Http_HttpClient_PostAsync_System_Uri_System_Net_Http_HttpContent
-plt_System_Net_Http_HttpClient_PostAsync_System_Uri_System_Net_Http_HttpContent:
+.word 18865
+	.no_dead_strip plt_System_Threading_Tasks_Task_1_System_Net_Http_HttpResponseMessage_ConfigureAwait_bool
+plt_System_Threading_Tasks_Task_1_System_Net_Http_HttpResponseMessage_ConfigureAwait_bool:
 _p_360:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3328]
 br x16
-.word 18863
-	.no_dead_strip plt_System_Threading_Tasks_Task_1_System_Net_Http_HttpResponseMessage_ConfigureAwait_bool
-plt_System_Threading_Tasks_Task_1_System_Net_Http_HttpResponseMessage_ConfigureAwait_bool:
+.word 18870
+	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Collections_Generic_IDictionary_2_string_string_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_ConfiguredTaskAwaitable_1_ConfiguredTaskAwaiter_System_Net_Http_HttpResponseMessage_Xamarin_Auth_OAuth2Authenticator__RequestAccessTokenAsyncc__async0_System_Runtime_CompilerServices_ConfiguredTaskAwaitable_1_ConfiguredTaskAwaiter_System_Net_Http_HttpResponseMessage__Xamarin_Auth_OAuth2Authenticator__RequestAccessTokenAsyncc__async0_
+plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Collections_Generic_IDictionary_2_string_string_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_ConfiguredTaskAwaitable_1_ConfiguredTaskAwaiter_System_Net_Http_HttpResponseMessage_Xamarin_Auth_OAuth2Authenticator__RequestAccessTokenAsyncc__async0_System_Runtime_CompilerServices_ConfiguredTaskAwaitable_1_ConfiguredTaskAwaiter_System_Net_Http_HttpResponseMessage__Xamarin_Auth_OAuth2Authenticator__RequestAccessTokenAsyncc__async0_:
 _p_361:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3336]
 br x16
-.word 18868
-	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Collections_Generic_IDictionary_2_string_string_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_ConfiguredTaskAwaitable_1_ConfiguredTaskAwaiter_System_Net_Http_HttpResponseMessage_Xamarin_Auth_OAuth2Authenticator__RequestAccessTokenAsyncc__async0_System_Runtime_CompilerServices_ConfiguredTaskAwaitable_1_ConfiguredTaskAwaiter_System_Net_Http_HttpResponseMessage__Xamarin_Auth_OAuth2Authenticator__RequestAccessTokenAsyncc__async0_
-plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Collections_Generic_IDictionary_2_string_string_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_ConfiguredTaskAwaitable_1_ConfiguredTaskAwaiter_System_Net_Http_HttpResponseMessage_Xamarin_Auth_OAuth2Authenticator__RequestAccessTokenAsyncc__async0_System_Runtime_CompilerServices_ConfiguredTaskAwaitable_1_ConfiguredTaskAwaiter_System_Net_Http_HttpResponseMessage__Xamarin_Auth_OAuth2Authenticator__RequestAccessTokenAsyncc__async0_:
+.word 18881
+	.no_dead_strip plt_System_Runtime_CompilerServices_ConfiguredTaskAwaitable_1_ConfiguredTaskAwaiter_System_Net_Http_HttpResponseMessage_GetResult
+plt_System_Runtime_CompilerServices_ConfiguredTaskAwaitable_1_ConfiguredTaskAwaiter_System_Net_Http_HttpResponseMessage_GetResult:
 _p_362:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3344]
 br x16
-.word 18879
-	.no_dead_strip plt_System_Runtime_CompilerServices_ConfiguredTaskAwaitable_1_ConfiguredTaskAwaiter_System_Net_Http_HttpResponseMessage_GetResult
-plt_System_Runtime_CompilerServices_ConfiguredTaskAwaitable_1_ConfiguredTaskAwaiter_System_Net_Http_HttpResponseMessage_GetResult:
+.word 18893
+	.no_dead_strip plt_System_Threading_Tasks_Task_1_string_ConfigureAwait_bool
+plt_System_Threading_Tasks_Task_1_string_ConfigureAwait_bool:
 _p_363:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3352]
 br x16
-.word 18891
-	.no_dead_strip plt_System_Threading_Tasks_Task_1_string_ConfigureAwait_bool
-plt_System_Threading_Tasks_Task_1_string_ConfigureAwait_bool:
+.word 18904
+	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Collections_Generic_IDictionary_2_string_string_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_ConfiguredTaskAwaitable_1_ConfiguredTaskAwaiter_string_Xamarin_Auth_OAuth2Authenticator__RequestAccessTokenAsyncc__async0_System_Runtime_CompilerServices_ConfiguredTaskAwaitable_1_ConfiguredTaskAwaiter_string__Xamarin_Auth_OAuth2Authenticator__RequestAccessTokenAsyncc__async0_
+plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Collections_Generic_IDictionary_2_string_string_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_ConfiguredTaskAwaitable_1_ConfiguredTaskAwaiter_string_Xamarin_Auth_OAuth2Authenticator__RequestAccessTokenAsyncc__async0_System_Runtime_CompilerServices_ConfiguredTaskAwaitable_1_ConfiguredTaskAwaiter_string__Xamarin_Auth_OAuth2Authenticator__RequestAccessTokenAsyncc__async0_:
 _p_364:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3360]
 br x16
-.word 18902
-	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Collections_Generic_IDictionary_2_string_string_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_ConfiguredTaskAwaitable_1_ConfiguredTaskAwaiter_string_Xamarin_Auth_OAuth2Authenticator__RequestAccessTokenAsyncc__async0_System_Runtime_CompilerServices_ConfiguredTaskAwaitable_1_ConfiguredTaskAwaiter_string__Xamarin_Auth_OAuth2Authenticator__RequestAccessTokenAsyncc__async0_
-plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Collections_Generic_IDictionary_2_string_string_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_ConfiguredTaskAwaitable_1_ConfiguredTaskAwaiter_string_Xamarin_Auth_OAuth2Authenticator__RequestAccessTokenAsyncc__async0_System_Runtime_CompilerServices_ConfiguredTaskAwaitable_1_ConfiguredTaskAwaiter_string__Xamarin_Auth_OAuth2Authenticator__RequestAccessTokenAsyncc__async0_:
+.word 18915
+	.no_dead_strip plt_System_Runtime_CompilerServices_ConfiguredTaskAwaitable_1_ConfiguredTaskAwaiter_string_GetResult
+plt_System_Runtime_CompilerServices_ConfiguredTaskAwaitable_1_ConfiguredTaskAwaiter_string_GetResult:
 _p_365:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3368]
 br x16
-.word 18913
-	.no_dead_strip plt_System_Runtime_CompilerServices_ConfiguredTaskAwaitable_1_ConfiguredTaskAwaiter_string_GetResult
-plt_System_Runtime_CompilerServices_ConfiguredTaskAwaitable_1_ConfiguredTaskAwaiter_string_GetResult:
+.word 18927
+	.no_dead_strip plt_Xamarin_Utilities_WebEx_JsonDecode_string
+plt_Xamarin_Utilities_WebEx_JsonDecode_string:
 _p_366:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3376]
 br x16
-.word 18925
-	.no_dead_strip plt_Xamarin_Utilities_WebEx_JsonDecode_string
-plt_Xamarin_Utilities_WebEx_JsonDecode_string:
+.word 18938
+	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Collections_Generic_IDictionary_2_string_string_SetException_System_Exception
+plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Collections_Generic_IDictionary_2_string_string_SetException_System_Exception:
 _p_367:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3384]
 br x16
-.word 18936
-	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Collections_Generic_IDictionary_2_string_string_SetException_System_Exception
-plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Collections_Generic_IDictionary_2_string_string_SetException_System_Exception:
+.word 18941
+	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Collections_Generic_IDictionary_2_string_string_SetResult_System_Collections_Generic_IDictionary_2_string_string
+plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Collections_Generic_IDictionary_2_string_string_SetResult_System_Collections_Generic_IDictionary_2_string_string:
 _p_368:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3392]
 br x16
-.word 18939
-	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Collections_Generic_IDictionary_2_string_string_SetResult_System_Collections_Generic_IDictionary_2_string_string
-plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Collections_Generic_IDictionary_2_string_string_SetResult_System_Collections_Generic_IDictionary_2_string_string:
+.word 18952
+	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Collections_Generic_IDictionary_2_string_string_SetStateMachine_System_Runtime_CompilerServices_IAsyncStateMachine
+plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Collections_Generic_IDictionary_2_string_string_SetStateMachine_System_Runtime_CompilerServices_IAsyncStateMachine:
 _p_369:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3400]
 br x16
-.word 18950
-	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Collections_Generic_IDictionary_2_string_string_SetStateMachine_System_Runtime_CompilerServices_IAsyncStateMachine
-plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Collections_Generic_IDictionary_2_string_string_SetStateMachine_System_Runtime_CompilerServices_IAsyncStateMachine:
+.word 18963
+	.no_dead_strip plt_System_Nullable_1_bool__ctor_bool
+plt_System_Nullable_1_bool__ctor_bool:
 _p_370:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3408]
 br x16
-.word 18961
-	.no_dead_strip plt_System_Nullable_1_bool__ctor_bool
-plt_System_Nullable_1_bool__ctor_bool:
+.word 18974
+	.no_dead_strip plt_System_Net_Http_Headers_HttpRequestHeaders_set_ExpectContinue_System_Nullable_1_bool
+plt_System_Net_Http_Headers_HttpRequestHeaders_set_ExpectContinue_System_Nullable_1_bool:
 _p_371:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3416]
 br x16
-.word 18972
-	.no_dead_strip plt_System_Net_Http_Headers_HttpRequestHeaders_set_ExpectContinue_System_Nullable_1_bool
-plt_System_Net_Http_Headers_HttpRequestHeaders_set_ExpectContinue_System_Nullable_1_bool:
+.word 18985
+	.no_dead_strip plt_System_Net_Http_MultipartFormDataContent__ctor_string
+plt_System_Net_Http_MultipartFormDataContent__ctor_string:
 _p_372:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3424]
 br x16
-.word 18983
-	.no_dead_strip plt_System_Net_Http_MultipartFormDataContent__ctor_string
-plt_System_Net_Http_MultipartFormDataContent__ctor_string:
+.word 18990
+	.no_dead_strip plt_System_Net_Http_StreamContent__ctor_System_IO_Stream
+plt_System_Net_Http_StreamContent__ctor_System_IO_Stream:
 _p_373:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3432]
 br x16
-.word 18988
-	.no_dead_strip plt_System_Net_Http_StreamContent__ctor_System_IO_Stream
-plt_System_Net_Http_StreamContent__ctor_System_IO_Stream:
+.word 18995
+	.no_dead_strip plt_System_Net_Http_HttpContent_get_Headers
+plt_System_Net_Http_HttpContent_get_Headers:
 _p_374:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3440]
 br x16
-.word 18993
-	.no_dead_strip plt_System_Net_Http_HttpContent_get_Headers
-plt_System_Net_Http_HttpContent_get_Headers:
+.word 19000
+	.no_dead_strip plt_System_Net_Http_Headers_ContentDispositionHeaderValue__ctor_string
+plt_System_Net_Http_Headers_ContentDispositionHeaderValue__ctor_string:
 _p_375:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3448]
 br x16
-.word 18998
-	.no_dead_strip plt_System_Net_Http_Headers_ContentDispositionHeaderValue__ctor_string
-plt_System_Net_Http_Headers_ContentDispositionHeaderValue__ctor_string:
+.word 19005
+	.no_dead_strip plt_System_Net_Http_Headers_HttpContentHeaders_set_ContentDisposition_System_Net_Http_Headers_ContentDispositionHeaderValue
+plt_System_Net_Http_Headers_HttpContentHeaders_set_ContentDisposition_System_Net_Http_Headers_ContentDispositionHeaderValue:
 _p_376:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3456]
 br x16
-.word 19003
-	.no_dead_strip plt_System_Net_Http_Headers_HttpContentHeaders_set_ContentDisposition_System_Net_Http_Headers_ContentDispositionHeaderValue
-plt_System_Net_Http_Headers_HttpContentHeaders_set_ContentDisposition_System_Net_Http_Headers_ContentDispositionHeaderValue:
+.word 19010
+	.no_dead_strip plt_System_Net_Http_Headers_HttpContentHeaders_get_ContentDisposition
+plt_System_Net_Http_Headers_HttpContentHeaders_get_ContentDisposition:
 _p_377:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3464]
 br x16
-.word 19008
-	.no_dead_strip plt_System_Net_Http_Headers_HttpContentHeaders_get_ContentDisposition
-plt_System_Net_Http_Headers_HttpContentHeaders_get_ContentDisposition:
+.word 19015
+	.no_dead_strip plt_System_Net_Http_Headers_ContentDispositionHeaderValue_set_FileName_string
+plt_System_Net_Http_Headers_ContentDispositionHeaderValue_set_FileName_string:
 _p_378:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3472]
 br x16
-.word 19013
-	.no_dead_strip plt_System_Net_Http_Headers_ContentDispositionHeaderValue_set_FileName_string
-plt_System_Net_Http_Headers_ContentDispositionHeaderValue_set_FileName_string:
+.word 19020
+	.no_dead_strip plt_System_Net_Http_Headers_MediaTypeHeaderValue__ctor_string
+plt_System_Net_Http_Headers_MediaTypeHeaderValue__ctor_string:
 _p_379:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3480]
 br x16
-.word 19018
-	.no_dead_strip plt_System_Net_Http_Headers_MediaTypeHeaderValue__ctor_string
-plt_System_Net_Http_Headers_MediaTypeHeaderValue__ctor_string:
+.word 19025
+	.no_dead_strip plt_System_Net_Http_Headers_HttpContentHeaders_set_ContentType_System_Net_Http_Headers_MediaTypeHeaderValue
+plt_System_Net_Http_Headers_HttpContentHeaders_set_ContentType_System_Net_Http_Headers_MediaTypeHeaderValue:
 _p_380:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3488]
 br x16
-.word 19023
-	.no_dead_strip plt_System_Net_Http_Headers_HttpContentHeaders_set_ContentType_System_Net_Http_Headers_MediaTypeHeaderValue
-plt_System_Net_Http_Headers_HttpContentHeaders_set_ContentType_System_Net_Http_Headers_MediaTypeHeaderValue:
+.word 19030
+	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_Xamarin_Auth_Response_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_ConfiguredTaskAwaitable_1_ConfiguredTaskAwaiter_System_Net_Http_HttpResponseMessage_Xamarin_Auth_Request__GetResponseAsyncc__async0_System_Runtime_CompilerServices_ConfiguredTaskAwaitable_1_ConfiguredTaskAwaiter_System_Net_Http_HttpResponseMessage__Xamarin_Auth_Request__GetResponseAsyncc__async0_
+plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_Xamarin_Auth_Response_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_ConfiguredTaskAwaitable_1_ConfiguredTaskAwaiter_System_Net_Http_HttpResponseMessage_Xamarin_Auth_Request__GetResponseAsyncc__async0_System_Runtime_CompilerServices_ConfiguredTaskAwaitable_1_ConfiguredTaskAwaiter_System_Net_Http_HttpResponseMessage__Xamarin_Auth_Request__GetResponseAsyncc__async0_:
 _p_381:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3496]
 br x16
-.word 19028
-	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_Xamarin_Auth_Response_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_ConfiguredTaskAwaitable_1_ConfiguredTaskAwaiter_System_Net_Http_HttpResponseMessage_Xamarin_Auth_Request__GetResponseAsyncc__async0_System_Runtime_CompilerServices_ConfiguredTaskAwaitable_1_ConfiguredTaskAwaiter_System_Net_Http_HttpResponseMessage__Xamarin_Auth_Request__GetResponseAsyncc__async0_
-plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_Xamarin_Auth_Response_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_ConfiguredTaskAwaitable_1_ConfiguredTaskAwaiter_System_Net_Http_HttpResponseMessage_Xamarin_Auth_Request__GetResponseAsyncc__async0_System_Runtime_CompilerServices_ConfiguredTaskAwaitable_1_ConfiguredTaskAwaiter_System_Net_Http_HttpResponseMessage__Xamarin_Auth_Request__GetResponseAsyncc__async0_:
+.word 19035
+	.no_dead_strip plt_Xamarin_Auth_Response__ctor_System_Net_Http_HttpResponseMessage
+plt_Xamarin_Auth_Response__ctor_System_Net_Http_HttpResponseMessage:
 _p_382:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3504]
 br x16
-.word 19033
-	.no_dead_strip plt_Xamarin_Auth_Response__ctor_System_Net_Http_HttpResponseMessage
-plt_Xamarin_Auth_Response__ctor_System_Net_Http_HttpResponseMessage:
+.word 19047
+	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_Xamarin_Auth_Response_SetException_System_Exception
+plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_Xamarin_Auth_Response_SetException_System_Exception:
 _p_383:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3512]
 br x16
-.word 19045
-	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_Xamarin_Auth_Response_SetException_System_Exception
-plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_Xamarin_Auth_Response_SetException_System_Exception:
+.word 19050
+	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_Xamarin_Auth_Response_SetResult_Xamarin_Auth_Response
+plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_Xamarin_Auth_Response_SetResult_Xamarin_Auth_Response:
 _p_384:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3520]
 br x16
-.word 19048
-	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_Xamarin_Auth_Response_SetResult_Xamarin_Auth_Response
-plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_Xamarin_Auth_Response_SetResult_Xamarin_Auth_Response:
+.word 19061
+	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_Xamarin_Auth_Response_SetStateMachine_System_Runtime_CompilerServices_IAsyncStateMachine
+plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_Xamarin_Auth_Response_SetStateMachine_System_Runtime_CompilerServices_IAsyncStateMachine:
 _p_385:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3528]
 br x16
-.word 19059
-	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_Xamarin_Auth_Response_SetStateMachine_System_Runtime_CompilerServices_IAsyncStateMachine
-plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_Xamarin_Auth_Response_SetStateMachine_System_Runtime_CompilerServices_IAsyncStateMachine:
+.word 19072
+	.no_dead_strip plt_UIKit_UITextField_get_Text
+plt_UIKit_UITextField_get_Text:
 _p_386:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3536]
 br x16
-.word 19070
-	.no_dead_strip plt_UIKit_UITextField_get_Text
-plt_UIKit_UITextField_get_Text:
+.word 19083
+	.no_dead_strip plt_Xamarin_Auth_FormAuthenticatorController_FieldCell__ctor_Xamarin_Auth_FormAuthenticatorField_System_nfloat_System_Action
+plt_Xamarin_Auth_FormAuthenticatorController_FieldCell__ctor_Xamarin_Auth_FormAuthenticatorField_System_nfloat_System_Action:
 _p_387:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3544]
 br x16
-.word 19081
-	.no_dead_strip plt_Xamarin_Auth_FormAuthenticatorController_FieldCell__ctor_Xamarin_Auth_FormAuthenticatorField_System_nfloat_System_Action
-plt_Xamarin_Auth_FormAuthenticatorController_FieldCell__ctor_Xamarin_Auth_FormAuthenticatorField_System_nfloat_System_Action:
+.word 19088
+	.no_dead_strip plt__jit_icall_mono_thread_interruption_checkpoint
+plt__jit_icall_mono_thread_interruption_checkpoint:
 _p_388:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3552]
 br x16
-.word 19086
-	.no_dead_strip plt__jit_icall_mono_thread_interruption_checkpoint
-plt__jit_icall_mono_thread_interruption_checkpoint:
+.word 19091
+	.no_dead_strip plt__rgctx_fetch_0
+plt__rgctx_fetch_0:
 _p_389:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3560]
 br x16
-.word 19089
-	.no_dead_strip plt__rgctx_fetch_0
-plt__rgctx_fetch_0:
+.word 19147
+	.no_dead_strip plt__rgctx_fetch_1
+plt__rgctx_fetch_1:
 _p_390:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3568]
 br x16
-.word 19145
-	.no_dead_strip plt__rgctx_fetch_1
-plt__rgctx_fetch_1:
+.word 19173
+	.no_dead_strip plt__rgctx_fetch_2
+plt__rgctx_fetch_2:
 _p_391:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3576]
 br x16
-.word 19171
-	.no_dead_strip plt__rgctx_fetch_2
-plt__rgctx_fetch_2:
+.word 19217
+	.no_dead_strip plt__rgctx_fetch_3
+plt__rgctx_fetch_3:
 _p_392:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3584]
 br x16
-.word 19215
-	.no_dead_strip plt__rgctx_fetch_3
-plt__rgctx_fetch_3:
+.word 19227
+	.no_dead_strip plt__rgctx_fetch_4
+plt__rgctx_fetch_4:
 _p_393:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3592]
 br x16
-.word 19225
-	.no_dead_strip plt__rgctx_fetch_4
-plt__rgctx_fetch_4:
+.word 19252
+	.no_dead_strip plt__rgctx_fetch_5
+plt__rgctx_fetch_5:
 _p_394:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3600]
 br x16
-.word 19250
-	.no_dead_strip plt__rgctx_fetch_5
-plt__rgctx_fetch_5:
+.word 19290
+	.no_dead_strip plt__rgctx_fetch_6
+plt__rgctx_fetch_6:
 _p_395:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3608]
 br x16
-.word 19288
-	.no_dead_strip plt__rgctx_fetch_6
-plt__rgctx_fetch_6:
+.word 19302
+	.no_dead_strip plt__rgctx_fetch_7
+plt__rgctx_fetch_7:
 _p_396:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3616]
 br x16
-.word 19300
-	.no_dead_strip plt__rgctx_fetch_7
-plt__rgctx_fetch_7:
+.word 19357
+	.no_dead_strip plt_System_Array_InternalEnumerator_1_T_REF__ctor_System_Array
+plt_System_Array_InternalEnumerator_1_T_REF__ctor_System_Array:
 _p_397:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3624]
 br x16
-.word 19355
-	.no_dead_strip plt_System_Array_InternalEnumerator_1_T_REF__ctor_System_Array
-plt_System_Array_InternalEnumerator_1_T_REF__ctor_System_Array:
+.word 19369
+	.no_dead_strip plt__rgctx_fetch_8
+plt__rgctx_fetch_8:
 _p_398:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3632]
 br x16
-.word 19367
-	.no_dead_strip plt__rgctx_fetch_8
-plt__rgctx_fetch_8:
+.word 19409
+	.no_dead_strip plt_Locale_GetText_string
+plt_Locale_GetText_string:
 _p_399:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3640]
 br x16
-.word 19407
-	.no_dead_strip plt_Locale_GetText_string
-plt_Locale_GetText_string:
+.word 19435
+	.no_dead_strip plt_System_Threading_Tasks_Task__ctor
+plt_System_Threading_Tasks_Task__ctor:
 _p_400:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3648]
 br x16
-.word 19433
-	.no_dead_strip plt_System_Threading_Tasks_Task__ctor
-plt_System_Threading_Tasks_Task__ctor:
+.word 19440
+	.no_dead_strip plt_System_Threading_Tasks_Task__ctor_object_System_Threading_Tasks_TaskCreationOptions_bool
+plt_System_Threading_Tasks_Task__ctor_object_System_Threading_Tasks_TaskCreationOptions_bool:
 _p_401:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3656]
 br x16
-.word 19438
-	.no_dead_strip plt_System_Threading_Tasks_Task__ctor_object_System_Threading_Tasks_TaskCreationOptions_bool
-plt_System_Threading_Tasks_Task__ctor_object_System_Threading_Tasks_TaskCreationOptions_bool:
+.word 19445
+	.no_dead_strip plt_System_Threading_Tasks_Task__ctor_bool_System_Threading_Tasks_TaskCreationOptions_System_Threading_CancellationToken
+plt_System_Threading_Tasks_Task__ctor_bool_System_Threading_Tasks_TaskCreationOptions_System_Threading_CancellationToken:
 _p_402:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3664]
 br x16
-.word 19443
-	.no_dead_strip plt_System_Threading_Tasks_Task__ctor_bool_System_Threading_Tasks_TaskCreationOptions_System_Threading_CancellationToken
-plt_System_Threading_Tasks_Task__ctor_bool_System_Threading_Tasks_TaskCreationOptions_System_Threading_CancellationToken:
+.word 19450
+	.no_dead_strip plt__rgctx_fetch_9
+plt__rgctx_fetch_9:
 _p_403:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3672]
 br x16
-.word 19448
-	.no_dead_strip plt__rgctx_fetch_9
-plt__rgctx_fetch_9:
+.word 19473
+	.no_dead_strip plt_System_Threading_Tasks_Task_PossiblyCaptureContext_System_Threading_StackCrawlMark_
+plt_System_Threading_Tasks_Task_PossiblyCaptureContext_System_Threading_StackCrawlMark_:
 _p_404:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3680]
 br x16
-.word 19471
-	.no_dead_strip plt_System_Threading_Tasks_Task_PossiblyCaptureContext_System_Threading_StackCrawlMark_
-plt_System_Threading_Tasks_Task_PossiblyCaptureContext_System_Threading_StackCrawlMark_:
+.word 19498
+	.no_dead_strip plt_System_Threading_Tasks_Task_InternalCurrentIfAttached_System_Threading_Tasks_TaskCreationOptions
+plt_System_Threading_Tasks_Task_InternalCurrentIfAttached_System_Threading_Tasks_TaskCreationOptions:
 _p_405:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3688]
 br x16
-.word 19496
-	.no_dead_strip plt_System_Threading_Tasks_Task_InternalCurrentIfAttached_System_Threading_Tasks_TaskCreationOptions
-plt_System_Threading_Tasks_Task_InternalCurrentIfAttached_System_Threading_Tasks_TaskCreationOptions:
+.word 19503
+	.no_dead_strip plt__rgctx_fetch_10
+plt__rgctx_fetch_10:
 _p_406:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3696]
 br x16
-.word 19501
-	.no_dead_strip plt__rgctx_fetch_10
-plt__rgctx_fetch_10:
+.word 19526
+	.no_dead_strip plt__rgctx_fetch_11
+plt__rgctx_fetch_11:
 _p_407:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3704]
 br x16
-.word 19524
-	.no_dead_strip plt__rgctx_fetch_11
-plt__rgctx_fetch_11:
+.word 19569
+	.no_dead_strip plt_System_Threading_Tasks_Task__ctor_System_Delegate_object_System_Threading_Tasks_Task_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_Tasks_TaskScheduler
+plt_System_Threading_Tasks_Task__ctor_System_Delegate_object_System_Threading_Tasks_Task_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_Tasks_TaskScheduler:
 _p_408:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3712]
 br x16
-.word 19567
-	.no_dead_strip plt_System_Threading_Tasks_Task__ctor_System_Delegate_object_System_Threading_Tasks_Task_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_Tasks_TaskScheduler
-plt_System_Threading_Tasks_Task__ctor_System_Delegate_object_System_Threading_Tasks_Task_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_Tasks_TaskScheduler:
+.word 19594
+	.no_dead_strip plt_System_Environment_GetResourceString_string
+plt_System_Environment_GetResourceString_string:
 _p_409:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3720]
 br x16
-.word 19592
-	.no_dead_strip plt_System_Environment_GetResourceString_string
-plt_System_Environment_GetResourceString_string:
+.word 19599
+	.no_dead_strip plt__rgctx_fetch_12
+plt__rgctx_fetch_12:
 _p_410:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3728]
 br x16
-.word 19597
-	.no_dead_strip plt__rgctx_fetch_12
-plt__rgctx_fetch_12:
+.word 19622
+	.no_dead_strip plt__rgctx_fetch_13
+plt__rgctx_fetch_13:
 _p_411:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3736]
 br x16
-.word 19620
-	.no_dead_strip plt__rgctx_fetch_13
-plt__rgctx_fetch_13:
+.word 19665
+	.no_dead_strip plt__rgctx_fetch_14
+plt__rgctx_fetch_14:
 _p_412:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3744]
 br x16
-.word 19663
-	.no_dead_strip plt__rgctx_fetch_14
-plt__rgctx_fetch_14:
+.word 19675
+	.no_dead_strip plt_System_Threading_Tasks_Task_ScheduleAndStart_bool
+plt_System_Threading_Tasks_Task_ScheduleAndStart_bool:
 _p_413:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3752]
 br x16
-.word 19673
-	.no_dead_strip plt_System_Threading_Tasks_Task_ScheduleAndStart_bool
-plt_System_Threading_Tasks_Task_ScheduleAndStart_bool:
+.word 19700
+	.no_dead_strip plt__rgctx_fetch_15
+plt__rgctx_fetch_15:
 _p_414:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3760]
 br x16
-.word 19698
-	.no_dead_strip plt__rgctx_fetch_15
-plt__rgctx_fetch_15:
+.word 19723
+	.no_dead_strip plt__rgctx_fetch_16
+plt__rgctx_fetch_16:
 _p_415:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3768]
 br x16
-.word 19721
-	.no_dead_strip plt__rgctx_fetch_16
-plt__rgctx_fetch_16:
+.word 19733
+	.no_dead_strip plt_System_Threading_Tasks_Task_get_IsCompleted
+plt_System_Threading_Tasks_Task_get_IsCompleted:
 _p_416:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3776]
 br x16
-.word 19731
-	.no_dead_strip plt_System_Threading_Tasks_Task_get_IsCompleted
-plt_System_Threading_Tasks_Task_get_IsCompleted:
+.word 19758
+	.no_dead_strip plt_System_Threading_Tasks_Task_AtomicStateUpdate_int_int
+plt_System_Threading_Tasks_Task_AtomicStateUpdate_int_int:
 _p_417:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3784]
 br x16
-.word 19756
-	.no_dead_strip plt_System_Threading_Tasks_Task_AtomicStateUpdate_int_int
-plt_System_Threading_Tasks_Task_AtomicStateUpdate_int_int:
+.word 19763
+	.no_dead_strip plt_System_Threading_Tasks_Task_ContingentProperties_SetCompleted
+plt_System_Threading_Tasks_Task_ContingentProperties_SetCompleted:
 _p_418:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3792]
 br x16
-.word 19761
-	.no_dead_strip plt_System_Threading_Tasks_Task_ContingentProperties_SetCompleted
-plt_System_Threading_Tasks_Task_ContingentProperties_SetCompleted:
+.word 19768
+	.no_dead_strip plt_System_Threading_Tasks_Task_FinishStageThree
+plt_System_Threading_Tasks_Task_FinishStageThree:
 _p_419:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3800]
 br x16
-.word 19766
-	.no_dead_strip plt_System_Threading_Tasks_Task_FinishStageThree
-plt_System_Threading_Tasks_Task_FinishStageThree:
+.word 19773
+	.no_dead_strip plt__rgctx_fetch_17
+plt__rgctx_fetch_17:
 _p_420:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3808]
 br x16
-.word 19771
-	.no_dead_strip plt__rgctx_fetch_17
-plt__rgctx_fetch_17:
+.word 19796
+	.no_dead_strip plt_System_Threading_Tasks_Task_get_IsWaitNotificationEnabledOrNotRanToCompletion
+plt_System_Threading_Tasks_Task_get_IsWaitNotificationEnabledOrNotRanToCompletion:
 _p_421:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3816]
 br x16
-.word 19794
-	.no_dead_strip plt_System_Threading_Tasks_Task_get_IsWaitNotificationEnabledOrNotRanToCompletion
-plt_System_Threading_Tasks_Task_get_IsWaitNotificationEnabledOrNotRanToCompletion:
+.word 19821
+	.no_dead_strip plt__rgctx_fetch_18
+plt__rgctx_fetch_18:
 _p_422:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3824]
 br x16
-.word 19819
-	.no_dead_strip plt__rgctx_fetch_18
-plt__rgctx_fetch_18:
+.word 19844
+	.no_dead_strip plt_System_Threading_Tasks_Task_InternalWait_int_System_Threading_CancellationToken
+plt_System_Threading_Tasks_Task_InternalWait_int_System_Threading_CancellationToken:
 _p_423:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3832]
 br x16
-.word 19842
-	.no_dead_strip plt_System_Threading_Tasks_Task_InternalWait_int_System_Threading_CancellationToken
-plt_System_Threading_Tasks_Task_InternalWait_int_System_Threading_CancellationToken:
+.word 19869
+	.no_dead_strip plt_System_Threading_Tasks_Task_NotifyDebuggerOfWaitCompletionIfNecessary
+plt_System_Threading_Tasks_Task_NotifyDebuggerOfWaitCompletionIfNecessary:
 _p_424:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3840]
 br x16
-.word 19867
-	.no_dead_strip plt_System_Threading_Tasks_Task_NotifyDebuggerOfWaitCompletionIfNecessary
-plt_System_Threading_Tasks_Task_NotifyDebuggerOfWaitCompletionIfNecessary:
+.word 19874
+	.no_dead_strip plt_System_Threading_Tasks_Task_get_IsRanToCompletion
+plt_System_Threading_Tasks_Task_get_IsRanToCompletion:
 _p_425:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3848]
 br x16
-.word 19872
-	.no_dead_strip plt_System_Threading_Tasks_Task_get_IsRanToCompletion
-plt_System_Threading_Tasks_Task_get_IsRanToCompletion:
+.word 19879
+	.no_dead_strip plt_System_Threading_Tasks_Task_ThrowIfExceptional_bool
+plt_System_Threading_Tasks_Task_ThrowIfExceptional_bool:
 _p_426:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3856]
 br x16
-.word 19877
-	.no_dead_strip plt_System_Threading_Tasks_Task_ThrowIfExceptional_bool
-plt_System_Threading_Tasks_Task_ThrowIfExceptional_bool:
+.word 19884
+	.no_dead_strip plt_System_Threading_Tasks_Task_EnsureContingentPropertiesInitialized_bool
+plt_System_Threading_Tasks_Task_EnsureContingentPropertiesInitialized_bool:
 _p_427:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3864]
 br x16
-.word 19882
-	.no_dead_strip plt_System_Threading_Tasks_Task_EnsureContingentPropertiesInitialized_bool
-plt_System_Threading_Tasks_Task_EnsureContingentPropertiesInitialized_bool:
+.word 19889
+	.no_dead_strip plt_System_Threading_Tasks_Task_AddException_object
+plt_System_Threading_Tasks_Task_AddException_object:
 _p_428:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3872]
 br x16
-.word 19887
-	.no_dead_strip plt_System_Threading_Tasks_Task_AddException_object
-plt_System_Threading_Tasks_Task_AddException_object:
+.word 19894
+	.no_dead_strip plt_System_Threading_Tasks_Task_Finish_bool
+plt_System_Threading_Tasks_Task_Finish_bool:
 _p_429:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3880]
 br x16
-.word 19892
-	.no_dead_strip plt_System_Threading_Tasks_Task_Finish_bool
-plt_System_Threading_Tasks_Task_Finish_bool:
+.word 19899
+	.no_dead_strip plt__rgctx_fetch_19
+plt__rgctx_fetch_19:
 _p_430:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3888]
 br x16
-.word 19897
-	.no_dead_strip plt__rgctx_fetch_19
-plt__rgctx_fetch_19:
+.word 19922
+	.no_dead_strip plt_System_Threading_Tasks_Task_RecordInternalCancellationRequest_System_Threading_CancellationToken_object
+plt_System_Threading_Tasks_Task_RecordInternalCancellationRequest_System_Threading_CancellationToken_object:
 _p_431:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3896]
 br x16
-.word 19920
-	.no_dead_strip plt_System_Threading_Tasks_Task_RecordInternalCancellationRequest_System_Threading_CancellationToken_object
-plt_System_Threading_Tasks_Task_RecordInternalCancellationRequest_System_Threading_CancellationToken_object:
+.word 19947
+	.no_dead_strip plt_System_Threading_Tasks_Task_CancellationCleanupLogic
+plt_System_Threading_Tasks_Task_CancellationCleanupLogic:
 _p_432:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3904]
 br x16
-.word 19945
-	.no_dead_strip plt_System_Threading_Tasks_Task_CancellationCleanupLogic
-plt_System_Threading_Tasks_Task_CancellationCleanupLogic:
+.word 19952
+	.no_dead_strip plt__rgctx_fetch_20
+plt__rgctx_fetch_20:
 _p_433:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3912]
 br x16
-.word 19950
-	.no_dead_strip plt__rgctx_fetch_20
-plt__rgctx_fetch_20:
+.word 19975
+	.no_dead_strip plt__rgctx_fetch_21
+plt__rgctx_fetch_21:
 _p_434:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3920]
 br x16
-.word 19973
-	.no_dead_strip plt__rgctx_fetch_21
-plt__rgctx_fetch_21:
+.word 19985
+	.no_dead_strip plt__rgctx_fetch_22
+plt__rgctx_fetch_22:
 _p_435:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3928]
 br x16
-.word 19983
-	.no_dead_strip plt__rgctx_fetch_22
-plt__rgctx_fetch_22:
+.word 20021
+	.no_dead_strip plt_wrapper_castclass_object___isinst_with_cache_object_intptr_intptr
+plt_wrapper_castclass_object___isinst_with_cache_object_intptr_intptr:
 _p_436:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3936]
 br x16
-.word 20019
-	.no_dead_strip plt_wrapper_castclass_object___isinst_with_cache_object_intptr_intptr
-plt_wrapper_castclass_object___isinst_with_cache_object_intptr_intptr:
+.word 20033
+	.no_dead_strip plt__rgctx_fetch_23
+plt__rgctx_fetch_23:
 _p_437:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3944]
 br x16
-.word 20031
-	.no_dead_strip plt__rgctx_fetch_23
-plt__rgctx_fetch_23:
+.word 20053
+	.no_dead_strip plt__rgctx_fetch_24
+plt__rgctx_fetch_24:
 _p_438:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3952]
 br x16
-.word 20051
-	.no_dead_strip plt__rgctx_fetch_24
-plt__rgctx_fetch_24:
+.word 20092
+	.no_dead_strip plt__rgctx_fetch_25
+plt__rgctx_fetch_25:
 _p_439:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3960]
 br x16
-.word 20090
-	.no_dead_strip plt__rgctx_fetch_25
-plt__rgctx_fetch_25:
+.word 20104
+	.no_dead_strip plt__rgctx_fetch_26
+plt__rgctx_fetch_26:
 _p_440:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3968]
 br x16
-.word 20102
-	.no_dead_strip plt__rgctx_fetch_26
-plt__rgctx_fetch_26:
+.word 20158
+	.no_dead_strip plt__rgctx_fetch_27
+plt__rgctx_fetch_27:
 _p_441:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3976]
 br x16
-.word 20156
-	.no_dead_strip plt__rgctx_fetch_27
-plt__rgctx_fetch_27:
+.word 20170
+	.no_dead_strip plt_System_Threading_Tasks_TaskScheduler_get_Current
+plt_System_Threading_Tasks_TaskScheduler_get_Current:
 _p_442:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3984]
 br x16
-.word 20168
-	.no_dead_strip plt_System_Threading_Tasks_TaskScheduler_get_Current
-plt_System_Threading_Tasks_TaskScheduler_get_Current:
+.word 20197
+	.no_dead_strip plt__rgctx_fetch_28
+plt__rgctx_fetch_28:
 _p_443:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3992]
 br x16
-.word 20195
-	.no_dead_strip plt__rgctx_fetch_28
-plt__rgctx_fetch_28:
+.word 20220
+	.no_dead_strip plt__rgctx_fetch_29
+plt__rgctx_fetch_29:
 _p_444:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #4000]
 br x16
-.word 20218
-	.no_dead_strip plt__rgctx_fetch_29
-plt__rgctx_fetch_29:
+.word 20263
+	.no_dead_strip plt__rgctx_fetch_30
+plt__rgctx_fetch_30:
 _p_445:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #4008]
 br x16
-.word 20261
-	.no_dead_strip plt__rgctx_fetch_30
-plt__rgctx_fetch_30:
+.word 20306
+	.no_dead_strip plt_System_Threading_Tasks_Task_CreationOptionsFromContinuationOptions_System_Threading_Tasks_TaskContinuationOptions_System_Threading_Tasks_TaskCreationOptions__System_Threading_Tasks_InternalTaskOptions_
+plt_System_Threading_Tasks_Task_CreationOptionsFromContinuationOptions_System_Threading_Tasks_TaskContinuationOptions_System_Threading_Tasks_TaskCreationOptions__System_Threading_Tasks_InternalTaskOptions_:
 _p_446:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #4016]
 br x16
-.word 20304
-	.no_dead_strip plt_System_Threading_Tasks_Task_CreationOptionsFromContinuationOptions_System_Threading_Tasks_TaskContinuationOptions_System_Threading_Tasks_TaskCreationOptions__System_Threading_Tasks_InternalTaskOptions_
-plt_System_Threading_Tasks_Task_CreationOptionsFromContinuationOptions_System_Threading_Tasks_TaskContinuationOptions_System_Threading_Tasks_TaskCreationOptions__System_Threading_Tasks_InternalTaskOptions_:
+.word 20331
+	.no_dead_strip plt__rgctx_fetch_31
+plt__rgctx_fetch_31:
 _p_447:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #4024]
 br x16
-.word 20329
-	.no_dead_strip plt__rgctx_fetch_31
-plt__rgctx_fetch_31:
+.word 20363
+	.no_dead_strip plt__rgctx_fetch_32
+plt__rgctx_fetch_32:
 _p_448:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #4032]
 br x16
-.word 20361
-	.no_dead_strip plt__rgctx_fetch_32
-plt__rgctx_fetch_32:
+.word 20375
+	.no_dead_strip plt_System_Threading_Tasks_Task_ContinueWithCore_System_Threading_Tasks_Task_System_Threading_Tasks_TaskScheduler_System_Threading_CancellationToken_System_Threading_Tasks_TaskContinuationOptions
+plt_System_Threading_Tasks_Task_ContinueWithCore_System_Threading_Tasks_Task_System_Threading_Tasks_TaskScheduler_System_Threading_CancellationToken_System_Threading_Tasks_TaskContinuationOptions:
 _p_449:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #4040]
 br x16
-.word 20373
-	.no_dead_strip plt_System_Threading_Tasks_Task_ContinueWithCore_System_Threading_Tasks_Task_System_Threading_Tasks_TaskScheduler_System_Threading_CancellationToken_System_Threading_Tasks_TaskContinuationOptions
-plt_System_Threading_Tasks_Task_ContinueWithCore_System_Threading_Tasks_Task_System_Threading_Tasks_TaskScheduler_System_Threading_CancellationToken_System_Threading_Tasks_TaskContinuationOptions:
+.word 20402
+	.no_dead_strip plt__rgctx_fetch_33
+plt__rgctx_fetch_33:
 _p_450:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #4048]
 br x16
-.word 20400
-	.no_dead_strip plt__rgctx_fetch_33
-plt__rgctx_fetch_33:
+.word 20434
+	.no_dead_strip plt__rgctx_fetch_34
+plt__rgctx_fetch_34:
 _p_451:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #4056]
 br x16
-.word 20432
-	.no_dead_strip plt__rgctx_fetch_34
-plt__rgctx_fetch_34:
+.word 20446
+	.no_dead_strip plt__rgctx_fetch_35
+plt__rgctx_fetch_35:
 _p_452:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #4064]
 br x16
-.word 20444
-	.no_dead_strip plt__rgctx_fetch_35
-plt__rgctx_fetch_35:
+.word 20473
+	.no_dead_strip plt__rgctx_fetch_36
+plt__rgctx_fetch_36:
 _p_453:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #4072]
 br x16
-.word 20471
-	.no_dead_strip plt__rgctx_fetch_36
-plt__rgctx_fetch_36:
+.word 20483
+	.no_dead_strip plt__jit_icall_mono_ldftn
+plt__jit_icall_mono_ldftn:
 _p_454:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #4080]
 br x16
-.word 20481
-	.no_dead_strip plt__jit_icall_mono_ldftn
-plt__jit_icall_mono_ldftn:
+.word 20508
+	.no_dead_strip plt__rgctx_fetch_37
+plt__rgctx_fetch_37:
 _p_455:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+4096
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #4088]
 br x16
-.word 20506
-	.no_dead_strip plt__rgctx_fetch_37
-plt__rgctx_fetch_37:
+.word 20532
+	.no_dead_strip plt_System_Func_2_System_Threading_Tasks_Task_1_System_Threading_Tasks_Task_System_Threading_Tasks_Task_1_TResult_BOOL__ctor_object_intptr
+plt_System_Func_2_System_Threading_Tasks_Task_1_System_Threading_Tasks_Task_System_Threading_Tasks_Task_1_TResult_BOOL__ctor_object_intptr:
 _p_456:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #0]
 br x16
-.word 20530
-	.no_dead_strip plt_System_Func_2_System_Threading_Tasks_Task_1_System_Threading_Tasks_Task_System_Threading_Tasks_Task_1_TResult_BOOL__ctor_object_intptr
-plt_System_Func_2_System_Threading_Tasks_Task_1_System_Threading_Tasks_Task_System_Threading_Tasks_Task_1_TResult_BOOL__ctor_object_intptr:
+.word 20544
+	.no_dead_strip plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_Task_get_Result
+plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_Task_get_Result:
 _p_457:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #8]
 br x16
-.word 20542
-	.no_dead_strip plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_Task_get_Result
-plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_Task_get_Result:
+.word 20568
+	.no_dead_strip plt__rgctx_fetch_38
+plt__rgctx_fetch_38:
 _p_458:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #16]
 br x16
-.word 20566
-	.no_dead_strip plt__rgctx_fetch_38
-plt__rgctx_fetch_38:
+.word 20606
+	.no_dead_strip plt__rgctx_fetch_39
+plt__rgctx_fetch_39:
 _p_459:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #24]
 br x16
-.word 20604
-	.no_dead_strip plt__rgctx_fetch_39
-plt__rgctx_fetch_39:
+.word 20634
+	.no_dead_strip plt_System_Threading_Tasks_TaskFactory_CheckMultiTaskContinuationOptions_System_Threading_Tasks_TaskContinuationOptions
+plt_System_Threading_Tasks_TaskFactory_CheckMultiTaskContinuationOptions_System_Threading_Tasks_TaskContinuationOptions:
 _p_460:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #32]
 br x16
-.word 20632
-	.no_dead_strip plt_System_Threading_Tasks_TaskFactory_CheckMultiTaskContinuationOptions_System_Threading_Tasks_TaskContinuationOptions
-plt_System_Threading_Tasks_TaskFactory_CheckMultiTaskContinuationOptions_System_Threading_Tasks_TaskContinuationOptions:
+.word 20659
+	.no_dead_strip plt_System_Threading_Tasks_TaskFactory_CheckCreationOptions_System_Threading_Tasks_TaskCreationOptions
+plt_System_Threading_Tasks_TaskFactory_CheckCreationOptions_System_Threading_Tasks_TaskCreationOptions:
 _p_461:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #40]
 br x16
-.word 20657
-	.no_dead_strip plt_System_Threading_Tasks_TaskFactory_CheckCreationOptions_System_Threading_Tasks_TaskCreationOptions
-plt_System_Threading_Tasks_TaskFactory_CheckCreationOptions_System_Threading_Tasks_TaskCreationOptions:
+.word 20664
+	.no_dead_strip plt__rgctx_fetch_40
+plt__rgctx_fetch_40:
 _p_462:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #48]
 br x16
-.word 20662
-	.no_dead_strip plt__rgctx_fetch_40
-plt__rgctx_fetch_40:
+.word 20696
+	.no_dead_strip plt__rgctx_fetch_41
+plt__rgctx_fetch_41:
 _p_463:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #56]
 br x16
-.word 20694
-	.no_dead_strip plt__rgctx_fetch_41
-plt__rgctx_fetch_41:
+.word 20708
+	.no_dead_strip plt__rgctx_fetch_42
+plt__rgctx_fetch_42:
 _p_464:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #64]
 br x16
-.word 20706
-	.no_dead_strip plt__rgctx_fetch_42
-plt__rgctx_fetch_42:
+.word 20753
+	.no_dead_strip plt__rgctx_fetch_43
+plt__rgctx_fetch_43:
 _p_465:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #72]
 br x16
-.word 20751
-	.no_dead_strip plt__rgctx_fetch_43
-plt__rgctx_fetch_43:
+.word 20765
+	.no_dead_strip plt_System_OperationCanceledException_get_CancellationToken
+plt_System_OperationCanceledException_get_CancellationToken:
 _p_466:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #80]
 br x16
-.word 20763
-	.no_dead_strip plt_System_OperationCanceledException_get_CancellationToken
-plt_System_OperationCanceledException_get_CancellationToken:
+.word 20792
+	.no_dead_strip plt__rgctx_fetch_44
+plt__rgctx_fetch_44:
 _p_467:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #88]
 br x16
-.word 20790
-	.no_dead_strip plt__rgctx_fetch_44
-plt__rgctx_fetch_44:
+.word 20815
+	.no_dead_strip plt__rgctx_fetch_45
+plt__rgctx_fetch_45:
 _p_468:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #96]
 br x16
-.word 20813
-	.no_dead_strip plt__rgctx_fetch_45
-plt__rgctx_fetch_45:
+.word 20827
+	.no_dead_strip plt__rgctx_fetch_46
+plt__rgctx_fetch_46:
 _p_469:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #104]
 br x16
-.word 20825
-	.no_dead_strip plt__rgctx_fetch_46
-plt__rgctx_fetch_46:
+.word 20854
+	.no_dead_strip plt_System_Threading_Tasks_TaskExceptionHolder_MarkAsHandled_bool
+plt_System_Threading_Tasks_TaskExceptionHolder_MarkAsHandled_bool:
 _p_470:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #112]
 br x16
-.word 20852
-	.no_dead_strip plt_System_Threading_Tasks_TaskExceptionHolder_MarkAsHandled_bool
-plt_System_Threading_Tasks_TaskExceptionHolder_MarkAsHandled_bool:
+.word 20881
+	.no_dead_strip plt_System_Threading_Tasks_AsyncCausalityTracer_get_LoggingOn
+plt_System_Threading_Tasks_AsyncCausalityTracer_get_LoggingOn:
 _p_471:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #120]
 br x16
-.word 20879
-	.no_dead_strip plt_System_Threading_Tasks_AsyncCausalityTracer_get_LoggingOn
-plt_System_Threading_Tasks_AsyncCausalityTracer_get_LoggingOn:
+.word 20886
+	.no_dead_strip plt_System_Threading_Tasks_Task_get_Id
+plt_System_Threading_Tasks_Task_get_Id:
 _p_472:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #128]
 br x16
-.word 20884
-	.no_dead_strip plt_System_Threading_Tasks_Task_get_Id
-plt_System_Threading_Tasks_Task_get_Id:
+.word 20891
+	.no_dead_strip plt_System_Threading_Tasks_AsyncCausalityTracer_TraceOperationCompletion_System_Threading_Tasks_CausalityTraceLevel_int_System_Threading_Tasks_AsyncCausalityStatus
+plt_System_Threading_Tasks_AsyncCausalityTracer_TraceOperationCompletion_System_Threading_Tasks_CausalityTraceLevel_int_System_Threading_Tasks_AsyncCausalityStatus:
 _p_473:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #136]
 br x16
-.word 20889
-	.no_dead_strip plt_System_Threading_Tasks_AsyncCausalityTracer_TraceOperationCompletion_System_Threading_Tasks_CausalityTraceLevel_int_System_Threading_Tasks_AsyncCausalityStatus
-plt_System_Threading_Tasks_AsyncCausalityTracer_TraceOperationCompletion_System_Threading_Tasks_CausalityTraceLevel_int_System_Threading_Tasks_AsyncCausalityStatus:
+.word 20896
+	.no_dead_strip plt_System_Threading_Tasks_Task_RemoveFromActiveTasks_int
+plt_System_Threading_Tasks_Task_RemoveFromActiveTasks_int:
 _p_474:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #144]
 br x16
-.word 20894
-	.no_dead_strip plt_System_Threading_Tasks_Task_RemoveFromActiveTasks_int
-plt_System_Threading_Tasks_Task_RemoveFromActiveTasks_int:
+.word 20901
+	.no_dead_strip plt__rgctx_fetch_47
+plt__rgctx_fetch_47:
 _p_475:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #152]
 br x16
-.word 20899
-	.no_dead_strip plt__rgctx_fetch_47
-plt__rgctx_fetch_47:
+.word 20906
+	.no_dead_strip plt__rgctx_fetch_48
+plt__rgctx_fetch_48:
 _p_476:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #160]
 br x16
-.word 20904
-	.no_dead_strip plt__rgctx_fetch_48
-plt__rgctx_fetch_48:
+.word 20933
+	.no_dead_strip plt__rgctx_fetch_49
+plt__rgctx_fetch_49:
 _p_477:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #168]
 br x16
-.word 20931
-	.no_dead_strip plt__rgctx_fetch_49
-plt__rgctx_fetch_49:
+.word 20978
+	.no_dead_strip plt__rgctx_fetch_50
+plt__rgctx_fetch_50:
 _p_478:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #176]
 br x16
-.word 20976
-	.no_dead_strip plt__rgctx_fetch_50
-plt__rgctx_fetch_50:
+.word 20988
+	.no_dead_strip plt__rgctx_fetch_51
+plt__rgctx_fetch_51:
 _p_479:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #184]
 br x16
-.word 20986
-	.no_dead_strip plt__rgctx_fetch_51
-plt__rgctx_fetch_51:
+.word 21040
+	.no_dead_strip plt__rgctx_fetch_52
+plt__rgctx_fetch_52:
 _p_480:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #192]
 br x16
-.word 21038
-	.no_dead_strip plt__rgctx_fetch_52
-plt__rgctx_fetch_52:
+.word 21052
+	.no_dead_strip plt_System_Threading_Tasks_TaskFactory_CheckFromAsyncOptions_System_Threading_Tasks_TaskCreationOptions_bool
+plt_System_Threading_Tasks_TaskFactory_CheckFromAsyncOptions_System_Threading_Tasks_TaskCreationOptions_bool:
 _p_481:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #200]
 br x16
-.word 21050
-	.no_dead_strip plt_System_Threading_Tasks_TaskFactory_CheckFromAsyncOptions_System_Threading_Tasks_TaskCreationOptions_bool
-plt_System_Threading_Tasks_TaskFactory_CheckFromAsyncOptions_System_Threading_Tasks_TaskCreationOptions_bool:
+.word 21079
+	.no_dead_strip plt__rgctx_fetch_53
+plt__rgctx_fetch_53:
 _p_482:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #208]
 br x16
-.word 21077
-	.no_dead_strip plt__rgctx_fetch_53
-plt__rgctx_fetch_53:
+.word 21084
+	.no_dead_strip plt__rgctx_fetch_54
+plt__rgctx_fetch_54:
 _p_483:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #216]
 br x16
-.word 21082
-	.no_dead_strip plt__rgctx_fetch_54
-plt__rgctx_fetch_54:
+.word 21096
+	.no_dead_strip plt_System_Delegate_get_Method
+plt_System_Delegate_get_Method:
 _p_484:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #224]
 br x16
-.word 21094
-	.no_dead_strip plt_System_Delegate_get_Method
-plt_System_Delegate_get_Method:
+.word 21123
+	.no_dead_strip plt_System_Threading_Tasks_AsyncCausalityTracer_TraceOperationCreation_System_Threading_Tasks_CausalityTraceLevel_int_string_ulong
+plt_System_Threading_Tasks_AsyncCausalityTracer_TraceOperationCreation_System_Threading_Tasks_CausalityTraceLevel_int_string_ulong:
 _p_485:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #232]
 br x16
-.word 21121
-	.no_dead_strip plt_System_Threading_Tasks_AsyncCausalityTracer_TraceOperationCreation_System_Threading_Tasks_CausalityTraceLevel_int_string_ulong
-plt_System_Threading_Tasks_AsyncCausalityTracer_TraceOperationCreation_System_Threading_Tasks_CausalityTraceLevel_int_string_ulong:
+.word 21128
+	.no_dead_strip plt_System_Threading_Tasks_Task_AddToActiveTasks_System_Threading_Tasks_Task
+plt_System_Threading_Tasks_Task_AddToActiveTasks_System_Threading_Tasks_Task:
 _p_486:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #240]
 br x16
-.word 21126
-	.no_dead_strip plt_System_Threading_Tasks_Task_AddToActiveTasks_System_Threading_Tasks_Task
-plt_System_Threading_Tasks_Task_AddToActiveTasks_System_Threading_Tasks_Task:
+.word 21133
+	.no_dead_strip plt__rgctx_fetch_55
+plt__rgctx_fetch_55:
 _p_487:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #248]
 br x16
-.word 21131
-	.no_dead_strip plt__rgctx_fetch_55
-plt__rgctx_fetch_55:
+.word 21147
+	.no_dead_strip plt__rgctx_fetch_56
+plt__rgctx_fetch_56:
 _p_488:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #256]
 br x16
-.word 21145
-	.no_dead_strip plt__rgctx_fetch_56
-plt__rgctx_fetch_56:
+.word 21159
+	.no_dead_strip plt_System_Threading_AtomicBoolean__ctor
+plt_System_Threading_AtomicBoolean__ctor:
 _p_489:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #264]
 br x16
-.word 21157
-	.no_dead_strip plt_System_Threading_AtomicBoolean__ctor
-plt_System_Threading_AtomicBoolean__ctor:
+.word 21186
+	.no_dead_strip plt__rgctx_fetch_57
+plt__rgctx_fetch_57:
 _p_490:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #272]
 br x16
-.word 21184
-	.no_dead_strip plt__rgctx_fetch_57
-plt__rgctx_fetch_57:
+.word 21191
+	.no_dead_strip plt__rgctx_fetch_58
+plt__rgctx_fetch_58:
 _p_491:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #280]
 br x16
-.word 21189
-	.no_dead_strip plt__rgctx_fetch_58
-plt__rgctx_fetch_58:
+.word 21218
+	.no_dead_strip plt_System_Threading_AtomicBoolean_TryRelaxedSet
+plt_System_Threading_AtomicBoolean_TryRelaxedSet:
 _p_492:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #288]
 br x16
-.word 21216
-	.no_dead_strip plt_System_Threading_AtomicBoolean_TryRelaxedSet
-plt_System_Threading_AtomicBoolean_TryRelaxedSet:
+.word 21245
+	.no_dead_strip plt__rgctx_fetch_59
+plt__rgctx_fetch_59:
 _p_493:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #296]
 br x16
-.word 21243
-	.no_dead_strip plt__rgctx_fetch_59
-plt__rgctx_fetch_59:
+.word 21250
+	.no_dead_strip plt__rgctx_fetch_60
+plt__rgctx_fetch_60:
 _p_494:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #304]
 br x16
-.word 21248
-	.no_dead_strip plt__rgctx_fetch_60
-plt__rgctx_fetch_60:
+.word 21260
+	.no_dead_strip plt__rgctx_fetch_61
+plt__rgctx_fetch_61:
 _p_495:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #312]
 br x16
-.word 21258
-	.no_dead_strip plt__rgctx_fetch_61
-plt__rgctx_fetch_61:
+.word 21285
+	.no_dead_strip plt__rgctx_fetch_62
+plt__rgctx_fetch_62:
 _p_496:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #320]
 br x16
-.word 21283
-	.no_dead_strip plt__rgctx_fetch_62
-plt__rgctx_fetch_62:
+.word 21312
+	.no_dead_strip plt__rgctx_fetch_63
+plt__rgctx_fetch_63:
 _p_497:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #328]
 br x16
-.word 21310
-	.no_dead_strip plt__rgctx_fetch_63
-plt__rgctx_fetch_63:
+.word 21339
+	.no_dead_strip plt__jit_icall_mono_arch_rethrow_exception
+plt__jit_icall_mono_arch_rethrow_exception:
 _p_498:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #336]
 br x16
-.word 21337
-	.no_dead_strip plt__jit_icall_mono_arch_rethrow_exception
-plt__jit_icall_mono_arch_rethrow_exception:
+.word 21366
+	.no_dead_strip plt__rgctx_fetch_64
+plt__rgctx_fetch_64:
 _p_499:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #344]
 br x16
-.word 21364
-	.no_dead_strip plt__rgctx_fetch_64
-plt__rgctx_fetch_64:
+.word 21414
+	.no_dead_strip plt__rgctx_fetch_65
+plt__rgctx_fetch_65:
 _p_500:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #352]
 br x16
-.word 21412
-	.no_dead_strip plt__rgctx_fetch_65
-plt__rgctx_fetch_65:
+.word 21457
+	.no_dead_strip plt__rgctx_fetch_66
+plt__rgctx_fetch_66:
 _p_501:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #360]
 br x16
-.word 21455
-	.no_dead_strip plt__rgctx_fetch_66
-plt__rgctx_fetch_66:
+.word 21500
+	.no_dead_strip plt__rgctx_fetch_67
+plt__rgctx_fetch_67:
 _p_502:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #368]
 br x16
-.word 21498
-	.no_dead_strip plt__rgctx_fetch_67
-plt__rgctx_fetch_67:
+.word 21543
+	.no_dead_strip plt__rgctx_fetch_68
+plt__rgctx_fetch_68:
 _p_503:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #376]
 br x16
-.word 21541
-	.no_dead_strip plt__rgctx_fetch_68
-plt__rgctx_fetch_68:
+.word 21586
+	.no_dead_strip plt__rgctx_fetch_69
+plt__rgctx_fetch_69:
 _p_504:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #384]
 br x16
-.word 21584
-	.no_dead_strip plt__rgctx_fetch_69
-plt__rgctx_fetch_69:
+.word 21596
+	.no_dead_strip plt__rgctx_fetch_70
+plt__rgctx_fetch_70:
 _p_505:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #392]
 br x16
-.word 21594
-	.no_dead_strip plt__rgctx_fetch_70
-plt__rgctx_fetch_70:
+.word 21639
+	.no_dead_strip plt__rgctx_fetch_71
+plt__rgctx_fetch_71:
 _p_506:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #400]
 br x16
-.word 21637
-	.no_dead_strip plt__rgctx_fetch_71
-plt__rgctx_fetch_71:
+.word 21649
+	.no_dead_strip plt__rgctx_fetch_72
+plt__rgctx_fetch_72:
 _p_507:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #408]
 br x16
-.word 21647
-	.no_dead_strip plt__rgctx_fetch_72
-plt__rgctx_fetch_72:
+.word 21692
+	.no_dead_strip plt__rgctx_fetch_73
+plt__rgctx_fetch_73:
 _p_508:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #416]
 br x16
-.word 21690
-	.no_dead_strip plt__rgctx_fetch_73
-plt__rgctx_fetch_73:
+.word 21735
+	.no_dead_strip plt__rgctx_fetch_74
+plt__rgctx_fetch_74:
 _p_509:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #424]
 br x16
-.word 21733
-	.no_dead_strip plt__rgctx_fetch_74
-plt__rgctx_fetch_74:
+.word 21778
+	.no_dead_strip plt__rgctx_fetch_75
+plt__rgctx_fetch_75:
 _p_510:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #432]
 br x16
-.word 21776
-	.no_dead_strip plt__rgctx_fetch_75
-plt__rgctx_fetch_75:
+.word 21821
+	.no_dead_strip plt__rgctx_fetch_76
+plt__rgctx_fetch_76:
 _p_511:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #440]
 br x16
-.word 21819
-	.no_dead_strip plt__rgctx_fetch_76
-plt__rgctx_fetch_76:
+.word 21831
+	.no_dead_strip plt__rgctx_fetch_77
+plt__rgctx_fetch_77:
 _p_512:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #448]
 br x16
-.word 21829
-	.no_dead_strip plt__rgctx_fetch_77
-plt__rgctx_fetch_77:
+.word 21867
+	.no_dead_strip plt__rgctx_fetch_78
+plt__rgctx_fetch_78:
 _p_513:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #456]
 br x16
-.word 21865
-	.no_dead_strip plt__rgctx_fetch_78
-plt__rgctx_fetch_78:
+.word 21891
+	.no_dead_strip plt__rgctx_fetch_79
+plt__rgctx_fetch_79:
 _p_514:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #464]
 br x16
-.word 21889
-	.no_dead_strip plt__rgctx_fetch_79
-plt__rgctx_fetch_79:
+.word 21930
+	.no_dead_strip plt__rgctx_fetch_80
+plt__rgctx_fetch_80:
 _p_515:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #472]
 br x16
-.word 21928
-	.no_dead_strip plt__rgctx_fetch_80
-plt__rgctx_fetch_80:
+.word 21942
+	.no_dead_strip plt__rgctx_fetch_81
+plt__rgctx_fetch_81:
 _p_516:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #480]
 br x16
-.word 21940
-	.no_dead_strip plt__rgctx_fetch_81
-plt__rgctx_fetch_81:
+.word 21996
+	.no_dead_strip plt__rgctx_fetch_82
+plt__rgctx_fetch_82:
 _p_517:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #488]
 br x16
-.word 21994
-	.no_dead_strip plt__rgctx_fetch_82
-plt__rgctx_fetch_82:
+.word 22008
+	.no_dead_strip plt__rgctx_fetch_83
+plt__rgctx_fetch_83:
 _p_518:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #496]
 br x16
-.word 22006
-	.no_dead_strip plt__rgctx_fetch_83
-plt__rgctx_fetch_83:
+.word 22053
+	.no_dead_strip plt__rgctx_fetch_84
+plt__rgctx_fetch_84:
 _p_519:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #504]
 br x16
-.word 22051
-	.no_dead_strip plt__rgctx_fetch_84
-plt__rgctx_fetch_84:
+.word 22096
+	.no_dead_strip plt__rgctx_fetch_85
+plt__rgctx_fetch_85:
 _p_520:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #512]
 br x16
-.word 22094
-	.no_dead_strip plt__rgctx_fetch_85
-plt__rgctx_fetch_85:
+.word 22139
+	.no_dead_strip plt__rgctx_fetch_86
+plt__rgctx_fetch_86:
 _p_521:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #520]
 br x16
-.word 22137
-	.no_dead_strip plt__rgctx_fetch_86
-plt__rgctx_fetch_86:
+.word 22191
+	.no_dead_strip plt__rgctx_fetch_87
+plt__rgctx_fetch_87:
 _p_522:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #528]
 br x16
-.word 22189
-	.no_dead_strip plt__rgctx_fetch_87
-plt__rgctx_fetch_87:
+.word 22203
+	.no_dead_strip plt__rgctx_fetch_88
+plt__rgctx_fetch_88:
 _p_523:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #536]
 br x16
-.word 22201
-	.no_dead_strip plt__rgctx_fetch_88
-plt__rgctx_fetch_88:
+.word 22257
+	.no_dead_strip plt__rgctx_fetch_89
+plt__rgctx_fetch_89:
 _p_524:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #544]
 br x16
-.word 22255
-	.no_dead_strip plt__rgctx_fetch_89
-plt__rgctx_fetch_89:
+.word 22269
+	.no_dead_strip plt__rgctx_fetch_90
+plt__rgctx_fetch_90:
 _p_525:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #552]
 br x16
-.word 22267
-	.no_dead_strip plt__rgctx_fetch_90
-plt__rgctx_fetch_90:
+.word 22296
+	.no_dead_strip plt__rgctx_fetch_91
+plt__rgctx_fetch_91:
 _p_526:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #560]
 br x16
-.word 22294
-	.no_dead_strip plt__rgctx_fetch_91
-plt__rgctx_fetch_91:
+.word 22306
+	.no_dead_strip plt__rgctx_fetch_92
+plt__rgctx_fetch_92:
 _p_527:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #568]
 br x16
-.word 22304
-	.no_dead_strip plt__rgctx_fetch_92
-plt__rgctx_fetch_92:
+.word 22342
+	.no_dead_strip plt_System_Func_2_System_Threading_Tasks_Task_1_System_Threading_Tasks_Task_System_Threading_Tasks_Task_1_TResult_INT__ctor_object_intptr
+plt_System_Func_2_System_Threading_Tasks_Task_1_System_Threading_Tasks_Task_System_Threading_Tasks_Task_1_TResult_INT__ctor_object_intptr:
 _p_528:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #576]
 br x16
-.word 22340
-	.no_dead_strip plt_System_Func_2_System_Threading_Tasks_Task_1_System_Threading_Tasks_Task_System_Threading_Tasks_Task_1_TResult_INT__ctor_object_intptr
-plt_System_Func_2_System_Threading_Tasks_Task_1_System_Threading_Tasks_Task_System_Threading_Tasks_Task_1_TResult_INT__ctor_object_intptr:
+.word 22354
+	.no_dead_strip plt__rgctx_fetch_93
+plt__rgctx_fetch_93:
 _p_529:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #584]
 br x16
-.word 22352
-	.no_dead_strip plt__rgctx_fetch_93
-plt__rgctx_fetch_93:
+.word 22396
+	.no_dead_strip plt__rgctx_fetch_94
+plt__rgctx_fetch_94:
 _p_530:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #592]
 br x16
-.word 22394
-	.no_dead_strip plt__rgctx_fetch_94
-plt__rgctx_fetch_94:
+.word 22424
+	.no_dead_strip plt__rgctx_fetch_95
+plt__rgctx_fetch_95:
 _p_531:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #600]
 br x16
-.word 22422
-	.no_dead_strip plt__rgctx_fetch_95
-plt__rgctx_fetch_95:
+.word 22476
+	.no_dead_strip plt__rgctx_fetch_96
+plt__rgctx_fetch_96:
 _p_532:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #608]
 br x16
-.word 22474
-	.no_dead_strip plt__rgctx_fetch_96
-plt__rgctx_fetch_96:
+.word 22488
+	.no_dead_strip plt__rgctx_fetch_97
+plt__rgctx_fetch_97:
 _p_533:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #616]
 br x16
-.word 22486
-	.no_dead_strip plt__rgctx_fetch_97
-plt__rgctx_fetch_97:
+.word 22533
+	.no_dead_strip plt__rgctx_fetch_98
+plt__rgctx_fetch_98:
 _p_534:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #624]
 br x16
-.word 22531
-	.no_dead_strip plt__rgctx_fetch_98
-plt__rgctx_fetch_98:
+.word 22545
+	.no_dead_strip plt__rgctx_fetch_99
+plt__rgctx_fetch_99:
 _p_535:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #632]
 br x16
-.word 22543
-	.no_dead_strip plt__rgctx_fetch_99
-plt__rgctx_fetch_99:
+.word 22590
+	.no_dead_strip plt__rgctx_fetch_100
+plt__rgctx_fetch_100:
 _p_536:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #640]
 br x16
-.word 22588
-	.no_dead_strip plt__rgctx_fetch_100
-plt__rgctx_fetch_100:
+.word 22602
+	.no_dead_strip plt__rgctx_fetch_101
+plt__rgctx_fetch_101:
 _p_537:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #648]
 br x16
-.word 22600
-	.no_dead_strip plt__rgctx_fetch_101
-plt__rgctx_fetch_101:
+.word 22629
+	.no_dead_strip plt__rgctx_fetch_102
+plt__rgctx_fetch_102:
 _p_538:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #656]
 br x16
-.word 22627
-	.no_dead_strip plt__rgctx_fetch_102
-plt__rgctx_fetch_102:
+.word 22656
+	.no_dead_strip plt__rgctx_fetch_103
+plt__rgctx_fetch_103:
 _p_539:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #664]
 br x16
-.word 22654
-	.no_dead_strip plt__rgctx_fetch_103
-plt__rgctx_fetch_103:
+.word 22683
+	.no_dead_strip plt__rgctx_fetch_104
+plt__rgctx_fetch_104:
 _p_540:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #672]
 br x16
-.word 22681
-	.no_dead_strip plt__rgctx_fetch_104
-plt__rgctx_fetch_104:
+.word 22728
+	.no_dead_strip plt__rgctx_fetch_105
+plt__rgctx_fetch_105:
 _p_541:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #680]
 br x16
-.word 22726
-	.no_dead_strip plt__rgctx_fetch_105
-plt__rgctx_fetch_105:
+.word 22738
+	.no_dead_strip plt__rgctx_fetch_106
+plt__rgctx_fetch_106:
 _p_542:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #688]
 br x16
-.word 22736
-	.no_dead_strip plt__rgctx_fetch_106
-plt__rgctx_fetch_106:
+.word 22790
+	.no_dead_strip plt__rgctx_fetch_107
+plt__rgctx_fetch_107:
 _p_543:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #696]
 br x16
-.word 22788
-	.no_dead_strip plt__rgctx_fetch_107
-plt__rgctx_fetch_107:
+.word 22802
+	.no_dead_strip plt__rgctx_fetch_108
+plt__rgctx_fetch_108:
 _p_544:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #704]
 br x16
-.word 22800
-	.no_dead_strip plt__rgctx_fetch_108
-plt__rgctx_fetch_108:
+.word 22829
+	.no_dead_strip plt__rgctx_fetch_109
+plt__rgctx_fetch_109:
 _p_545:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #712]
 br x16
-.word 22827
-	.no_dead_strip plt__rgctx_fetch_109
-plt__rgctx_fetch_109:
+.word 22841
+	.no_dead_strip plt__rgctx_fetch_110
+plt__rgctx_fetch_110:
 _p_546:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #720]
 br x16
-.word 22839
-	.no_dead_strip plt__rgctx_fetch_110
-plt__rgctx_fetch_110:
+.word 22877
+	.no_dead_strip plt__rgctx_fetch_111
+plt__rgctx_fetch_111:
 _p_547:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #728]
 br x16
-.word 22875
-	.no_dead_strip plt__rgctx_fetch_111
-plt__rgctx_fetch_111:
+.word 22889
+	.no_dead_strip plt__rgctx_fetch_112
+plt__rgctx_fetch_112:
 _p_548:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #736]
 br x16
-.word 22887
-	.no_dead_strip plt__rgctx_fetch_112
-plt__rgctx_fetch_112:
+.word 22916
+	.no_dead_strip plt__rgctx_fetch_113
+plt__rgctx_fetch_113:
 _p_549:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #744]
 br x16
-.word 22914
-	.no_dead_strip plt__rgctx_fetch_113
-plt__rgctx_fetch_113:
+.word 22943
+	.no_dead_strip plt__rgctx_fetch_114
+plt__rgctx_fetch_114:
 _p_550:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #752]
 br x16
-.word 22941
-	.no_dead_strip plt__rgctx_fetch_114
-plt__rgctx_fetch_114:
+.word 22970
+	.no_dead_strip plt__rgctx_fetch_115
+plt__rgctx_fetch_115:
 _p_551:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #760]
 br x16
-.word 22968
-	.no_dead_strip plt__rgctx_fetch_115
-plt__rgctx_fetch_115:
+.word 22980
+	.no_dead_strip plt__rgctx_fetch_116
+plt__rgctx_fetch_116:
 _p_552:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #768]
 br x16
-.word 22978
-	.no_dead_strip plt__rgctx_fetch_116
-plt__rgctx_fetch_116:
+.word 23005
+	.no_dead_strip plt__rgctx_fetch_117
+plt__rgctx_fetch_117:
 _p_553:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #776]
 br x16
-.word 23003
-	.no_dead_strip plt__rgctx_fetch_117
-plt__rgctx_fetch_117:
+.word 23032
+	.no_dead_strip plt__rgctx_fetch_118
+plt__rgctx_fetch_118:
 _p_554:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #784]
 br x16
-.word 23030
-	.no_dead_strip plt__rgctx_fetch_118
-plt__rgctx_fetch_118:
+.word 23059
+	.no_dead_strip plt__rgctx_fetch_119
+plt__rgctx_fetch_119:
 _p_555:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #792]
 br x16
-.word 23057
-	.no_dead_strip plt__rgctx_fetch_119
-plt__rgctx_fetch_119:
+.word 23105
+	.no_dead_strip plt__rgctx_fetch_120
+plt__rgctx_fetch_120:
 _p_556:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #800]
 br x16
-.word 23103
-	.no_dead_strip plt__rgctx_fetch_120
-plt__rgctx_fetch_120:
+.word 23131
+	.no_dead_strip plt__rgctx_fetch_121
+plt__rgctx_fetch_121:
 _p_557:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #808]
 br x16
-.word 23129
-	.no_dead_strip plt__rgctx_fetch_121
-plt__rgctx_fetch_121:
+.word 23141
+	.no_dead_strip plt__rgctx_fetch_122
+plt__rgctx_fetch_122:
 _p_558:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #816]
 br x16
-.word 23139
-	.no_dead_strip plt__rgctx_fetch_122
-plt__rgctx_fetch_122:
+.word 23157
+	.no_dead_strip plt__rgctx_fetch_123
+plt__rgctx_fetch_123:
 _p_559:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #824]
 br x16
-.word 23155
-	.no_dead_strip plt__rgctx_fetch_123
-plt__rgctx_fetch_123:
+.word 23194
+	.no_dead_strip plt__rgctx_fetch_124
+plt__rgctx_fetch_124:
 _p_560:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #832]
 br x16
-.word 23192
-	.no_dead_strip plt__rgctx_fetch_124
-plt__rgctx_fetch_124:
+.word 23243
+	.no_dead_strip plt__rgctx_fetch_125
+plt__rgctx_fetch_125:
 _p_561:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #840]
 br x16
-.word 23241
-	.no_dead_strip plt__rgctx_fetch_125
-plt__rgctx_fetch_125:
+.word 23292
+	.no_dead_strip plt_System_ThrowHelper_ThrowArgumentOutOfRangeException_System_ExceptionArgument
+plt_System_ThrowHelper_ThrowArgumentOutOfRangeException_System_ExceptionArgument:
 _p_562:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #848]
 br x16
-.word 23290
-	.no_dead_strip plt_System_ThrowHelper_ThrowArgumentOutOfRangeException_System_ExceptionArgument
-plt_System_ThrowHelper_ThrowArgumentOutOfRangeException_System_ExceptionArgument:
+.word 23320
+	.no_dead_strip plt__rgctx_fetch_126
+plt__rgctx_fetch_126:
 _p_563:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #856]
 br x16
-.word 23318
-	.no_dead_strip plt__rgctx_fetch_126
-plt__rgctx_fetch_126:
+.word 23346
+	.no_dead_strip plt__rgctx_fetch_127
+plt__rgctx_fetch_127:
 _p_564:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #864]
 br x16
-.word 23344
-	.no_dead_strip plt__rgctx_fetch_127
-plt__rgctx_fetch_127:
+.word 23383
+	.no_dead_strip plt_System_Collections_Generic_EqualityComparer_1_TKey_REF_get_Default
+plt_System_Collections_Generic_EqualityComparer_1_TKey_REF_get_Default:
 _p_565:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #872]
 br x16
-.word 23381
-	.no_dead_strip plt_System_Collections_Generic_EqualityComparer_1_TKey_REF_get_Default
-plt_System_Collections_Generic_EqualityComparer_1_TKey_REF_get_Default:
+.word 23395
+	.no_dead_strip plt__rgctx_fetch_128
+plt__rgctx_fetch_128:
 _p_566:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #880]
 br x16
-.word 23393
-	.no_dead_strip plt__rgctx_fetch_128
-plt__rgctx_fetch_128:
+.word 23437
+	.no_dead_strip plt__rgctx_fetch_129
+plt__rgctx_fetch_129:
 _p_567:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #888]
 br x16
-.word 23435
-	.no_dead_strip plt__rgctx_fetch_129
-plt__rgctx_fetch_129:
+.word 23509
+	.no_dead_strip plt__rgctx_fetch_130
+plt__rgctx_fetch_130:
 _p_568:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #896]
 br x16
-.word 23507
-	.no_dead_strip plt__rgctx_fetch_130
-plt__rgctx_fetch_130:
+.word 23538
+	.no_dead_strip plt_System_ThrowHelper_ThrowArgumentNullException_System_ExceptionArgument
+plt_System_ThrowHelper_ThrowArgumentNullException_System_ExceptionArgument:
 _p_569:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #904]
 br x16
-.word 23536
-	.no_dead_strip plt_System_ThrowHelper_ThrowArgumentNullException_System_ExceptionArgument
-plt_System_ThrowHelper_ThrowArgumentNullException_System_ExceptionArgument:
+.word 23566
+	.no_dead_strip plt__rgctx_fetch_131
+plt__rgctx_fetch_131:
 _p_570:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #912]
 br x16
-.word 23564
-	.no_dead_strip plt__rgctx_fetch_131
-plt__rgctx_fetch_131:
+.word 23582
+	.no_dead_strip plt__rgctx_fetch_132
+plt__rgctx_fetch_132:
 _p_571:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #920]
 br x16
-.word 23580
-	.no_dead_strip plt__rgctx_fetch_132
-plt__rgctx_fetch_132:
+.word 23622
+	.no_dead_strip plt__rgctx_fetch_133
+plt__rgctx_fetch_133:
 _p_572:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #928]
 br x16
-.word 23620
-	.no_dead_strip plt__rgctx_fetch_133
-plt__rgctx_fetch_133:
+.word 23651
+	.no_dead_strip plt__rgctx_fetch_134
+plt__rgctx_fetch_134:
 _p_573:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #936]
 br x16
-.word 23649
-	.no_dead_strip plt__rgctx_fetch_134
-plt__rgctx_fetch_134:
+.word 23663
+	.no_dead_strip plt__rgctx_fetch_135
+plt__rgctx_fetch_135:
 _p_574:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #944]
 br x16
-.word 23661
-	.no_dead_strip plt__rgctx_fetch_135
-plt__rgctx_fetch_135:
+.word 23693
+	.no_dead_strip plt__rgctx_fetch_136
+plt__rgctx_fetch_136:
 _p_575:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #952]
 br x16
-.word 23691
-	.no_dead_strip plt__rgctx_fetch_136
-plt__rgctx_fetch_136:
+.word 23723
+	.no_dead_strip plt_System_Collections_HashHelpers_get_SerializationInfoTable
+plt_System_Collections_HashHelpers_get_SerializationInfoTable:
 _p_576:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #960]
 br x16
-.word 23721
-	.no_dead_strip plt_System_Collections_HashHelpers_get_SerializationInfoTable
-plt_System_Collections_HashHelpers_get_SerializationInfoTable:
+.word 23751
+	.no_dead_strip plt_System_Runtime_CompilerServices_ConditionalWeakTable_2_object_System_Runtime_Serialization_SerializationInfo_Add_object_System_Runtime_Serialization_SerializationInfo
+plt_System_Runtime_CompilerServices_ConditionalWeakTable_2_object_System_Runtime_Serialization_SerializationInfo_Add_object_System_Runtime_Serialization_SerializationInfo:
 _p_577:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #968]
 br x16
-.word 23749
-	.no_dead_strip plt_System_Runtime_CompilerServices_ConditionalWeakTable_2_object_System_Runtime_Serialization_SerializationInfo_Add_object_System_Runtime_Serialization_SerializationInfo
-plt_System_Runtime_CompilerServices_ConditionalWeakTable_2_object_System_Runtime_Serialization_SerializationInfo_Add_object_System_Runtime_Serialization_SerializationInfo:
+.word 23770
+	.no_dead_strip plt__rgctx_fetch_137
+plt__rgctx_fetch_137:
 _p_578:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #976]
 br x16
-.word 23768
-	.no_dead_strip plt__rgctx_fetch_137
-plt__rgctx_fetch_137:
+.word 23829
+	.no_dead_strip plt__rgctx_fetch_138
+plt__rgctx_fetch_138:
 _p_579:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #984]
 br x16
-.word 23827
-	.no_dead_strip plt__rgctx_fetch_138
-plt__rgctx_fetch_138:
+.word 23841
+	.no_dead_strip plt__rgctx_fetch_139
+plt__rgctx_fetch_139:
 _p_580:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #992]
 br x16
-.word 23839
-	.no_dead_strip plt__rgctx_fetch_139
-plt__rgctx_fetch_139:
+.word 23892
+	.no_dead_strip plt__rgctx_fetch_140
+plt__rgctx_fetch_140:
 _p_581:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1000]
 br x16
-.word 23890
-	.no_dead_strip plt__rgctx_fetch_140
-plt__rgctx_fetch_140:
+.word 23904
+	.no_dead_strip plt__rgctx_fetch_141
+plt__rgctx_fetch_141:
 _p_582:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1008]
 br x16
-.word 23902
-	.no_dead_strip plt__rgctx_fetch_141
-plt__rgctx_fetch_141:
+.word 23955
+	.no_dead_strip plt__rgctx_fetch_142
+plt__rgctx_fetch_142:
 _p_583:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1016]
 br x16
-.word 23953
-	.no_dead_strip plt__rgctx_fetch_142
-plt__rgctx_fetch_142:
+.word 23967
+	.no_dead_strip plt__rgctx_fetch_143
+plt__rgctx_fetch_143:
 _p_584:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1024]
 br x16
-.word 23965
-	.no_dead_strip plt__rgctx_fetch_143
-plt__rgctx_fetch_143:
+.word 24030
+	.no_dead_strip plt__rgctx_fetch_144
+plt__rgctx_fetch_144:
 _p_585:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1032]
 br x16
-.word 24028
-	.no_dead_strip plt__rgctx_fetch_144
-plt__rgctx_fetch_144:
+.word 24042
+	.no_dead_strip plt__rgctx_fetch_145
+plt__rgctx_fetch_145:
 _p_586:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1040]
 br x16
-.word 24040
-	.no_dead_strip plt__rgctx_fetch_145
-plt__rgctx_fetch_145:
+.word 24093
+	.no_dead_strip plt__rgctx_fetch_146
+plt__rgctx_fetch_146:
 _p_587:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1048]
 br x16
-.word 24091
-	.no_dead_strip plt__rgctx_fetch_146
-plt__rgctx_fetch_146:
+.word 24105
+	.no_dead_strip plt__rgctx_fetch_147
+plt__rgctx_fetch_147:
 _p_588:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1056]
 br x16
-.word 24103
-	.no_dead_strip plt__rgctx_fetch_147
-plt__rgctx_fetch_147:
+.word 24156
+	.no_dead_strip plt__rgctx_fetch_148
+plt__rgctx_fetch_148:
 _p_589:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1064]
 br x16
-.word 24154
-	.no_dead_strip plt__rgctx_fetch_148
-plt__rgctx_fetch_148:
+.word 24168
+	.no_dead_strip plt__rgctx_fetch_149
+plt__rgctx_fetch_149:
 _p_590:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1072]
 br x16
-.word 24166
-	.no_dead_strip plt__rgctx_fetch_149
-plt__rgctx_fetch_149:
+.word 24219
+	.no_dead_strip plt_System_ThrowHelper_ThrowKeyNotFoundException
+plt_System_ThrowHelper_ThrowKeyNotFoundException:
 _p_591:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1080]
 br x16
-.word 24217
-	.no_dead_strip plt_System_ThrowHelper_ThrowKeyNotFoundException
-plt_System_ThrowHelper_ThrowKeyNotFoundException:
+.word 24247
+	.no_dead_strip plt__rgctx_fetch_150
+plt__rgctx_fetch_150:
 _p_592:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1088]
 br x16
-.word 24245
-	.no_dead_strip plt__rgctx_fetch_150
-plt__rgctx_fetch_150:
+.word 24273
+	.no_dead_strip plt__rgctx_fetch_151
+plt__rgctx_fetch_151:
 _p_593:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1096]
 br x16
-.word 24271
-	.no_dead_strip plt__rgctx_fetch_151
-plt__rgctx_fetch_151:
+.word 24322
+	.no_dead_strip plt__rgctx_fetch_152
+plt__rgctx_fetch_152:
 _p_594:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1104]
 br x16
-.word 24320
-	.no_dead_strip plt__rgctx_fetch_152
-plt__rgctx_fetch_152:
+.word 24371
+	.no_dead_strip plt__rgctx_fetch_153
+plt__rgctx_fetch_153:
 _p_595:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1112]
 br x16
-.word 24369
-	.no_dead_strip plt__rgctx_fetch_153
-plt__rgctx_fetch_153:
+.word 24383
+	.no_dead_strip plt__rgctx_fetch_154
+plt__rgctx_fetch_154:
 _p_596:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1120]
 br x16
-.word 24381
-	.no_dead_strip plt__rgctx_fetch_154
-plt__rgctx_fetch_154:
+.word 24413
+	.no_dead_strip plt__rgctx_fetch_155
+plt__rgctx_fetch_155:
 _p_597:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1128]
 br x16
-.word 24411
-	.no_dead_strip plt__rgctx_fetch_155
-plt__rgctx_fetch_155:
+.word 24443
+	.no_dead_strip plt__rgctx_fetch_156
+plt__rgctx_fetch_156:
 _p_598:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1136]
 br x16
-.word 24441
-	.no_dead_strip plt__rgctx_fetch_156
-plt__rgctx_fetch_156:
+.word 24492
+	.no_dead_strip plt__rgctx_fetch_157
+plt__rgctx_fetch_157:
 _p_599:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1144]
 br x16
-.word 24490
-	.no_dead_strip plt__rgctx_fetch_157
-plt__rgctx_fetch_157:
+.word 24504
+	.no_dead_strip plt__rgctx_fetch_158
+plt__rgctx_fetch_158:
 _p_600:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1152]
 br x16
-.word 24502
-	.no_dead_strip plt__rgctx_fetch_158
-plt__rgctx_fetch_158:
+.word 24534
+	.no_dead_strip plt__rgctx_fetch_159
+plt__rgctx_fetch_159:
 _p_601:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1160]
 br x16
-.word 24532
-	.no_dead_strip plt__rgctx_fetch_159
-plt__rgctx_fetch_159:
+.word 24571
+	.no_dead_strip plt__rgctx_fetch_160
+plt__rgctx_fetch_160:
 _p_602:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1168]
 br x16
-.word 24569
-	.no_dead_strip plt__rgctx_fetch_160
-plt__rgctx_fetch_160:
+.word 24583
+	.no_dead_strip plt__rgctx_fetch_161
+plt__rgctx_fetch_161:
 _p_603:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1176]
 br x16
-.word 24581
-	.no_dead_strip plt__rgctx_fetch_161
-plt__rgctx_fetch_161:
+.word 24610
+	.no_dead_strip plt__rgctx_fetch_162
+plt__rgctx_fetch_162:
 _p_604:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1184]
 br x16
-.word 24608
-	.no_dead_strip plt__rgctx_fetch_162
-plt__rgctx_fetch_162:
+.word 24661
+	.no_dead_strip plt__rgctx_fetch_163
+plt__rgctx_fetch_163:
 _p_605:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1192]
 br x16
-.word 24659
-	.no_dead_strip plt__rgctx_fetch_163
-plt__rgctx_fetch_163:
+.word 24673
+	.no_dead_strip plt__rgctx_fetch_164
+plt__rgctx_fetch_164:
 _p_606:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1200]
 br x16
-.word 24671
-	.no_dead_strip plt__rgctx_fetch_164
-plt__rgctx_fetch_164:
+.word 24703
+	.no_dead_strip plt__rgctx_fetch_165
+plt__rgctx_fetch_165:
 _p_607:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1208]
 br x16
-.word 24701
-	.no_dead_strip plt__rgctx_fetch_165
-plt__rgctx_fetch_165:
+.word 24731
+	.no_dead_strip plt__rgctx_fetch_166
+plt__rgctx_fetch_166:
 _p_608:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1216]
 br x16
-.word 24729
-	.no_dead_strip plt__rgctx_fetch_166
-plt__rgctx_fetch_166:
+.word 24743
+	.no_dead_strip plt__rgctx_fetch_167
+plt__rgctx_fetch_167:
 _p_609:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1224]
 br x16
-.word 24741
-	.no_dead_strip plt__rgctx_fetch_167
-plt__rgctx_fetch_167:
+.word 24770
+	.no_dead_strip plt__rgctx_fetch_168
+plt__rgctx_fetch_168:
 _p_610:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1232]
 br x16
-.word 24768
-	.no_dead_strip plt__rgctx_fetch_168
-plt__rgctx_fetch_168:
+.word 24800
+	.no_dead_strip plt_System_Array_Clear_System_Array_int_int
+plt_System_Array_Clear_System_Array_int_int:
 _p_611:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1240]
 br x16
-.word 24798
-	.no_dead_strip plt_System_Array_Clear_System_Array_int_int
-plt_System_Array_Clear_System_Array_int_int:
+.word 24828
+	.no_dead_strip plt__rgctx_fetch_169
+plt__rgctx_fetch_169:
 _p_612:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1248]
 br x16
-.word 24826
-	.no_dead_strip plt__rgctx_fetch_169
-plt__rgctx_fetch_169:
+.word 24854
+	.no_dead_strip plt__rgctx_fetch_170
+plt__rgctx_fetch_170:
 _p_613:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1256]
 br x16
-.word 24852
-	.no_dead_strip plt__rgctx_fetch_170
-plt__rgctx_fetch_170:
+.word 24903
+	.no_dead_strip plt__rgctx_fetch_171
+plt__rgctx_fetch_171:
 _p_614:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1264]
 br x16
-.word 24901
-	.no_dead_strip plt__rgctx_fetch_171
-plt__rgctx_fetch_171:
+.word 24915
+	.no_dead_strip plt_System_ThrowHelper_ThrowArgumentOutOfRangeException_System_ExceptionArgument_System_ExceptionResource
+plt_System_ThrowHelper_ThrowArgumentOutOfRangeException_System_ExceptionArgument_System_ExceptionResource:
 _p_615:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1272]
 br x16
-.word 24913
-	.no_dead_strip plt_System_ThrowHelper_ThrowArgumentOutOfRangeException_System_ExceptionArgument_System_ExceptionResource
-plt_System_ThrowHelper_ThrowArgumentOutOfRangeException_System_ExceptionArgument_System_ExceptionResource:
+.word 24942
+	.no_dead_strip plt__rgctx_fetch_172
+plt__rgctx_fetch_172:
 _p_616:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1280]
 br x16
-.word 24940
-	.no_dead_strip plt__rgctx_fetch_172
-plt__rgctx_fetch_172:
+.word 24968
+	.no_dead_strip plt_System_ThrowHelper_ThrowArgumentException_System_ExceptionResource
+plt_System_ThrowHelper_ThrowArgumentException_System_ExceptionResource:
 _p_617:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1288]
 br x16
-.word 24966
-	.no_dead_strip plt_System_ThrowHelper_ThrowArgumentException_System_ExceptionResource
-plt_System_ThrowHelper_ThrowArgumentException_System_ExceptionResource:
+.word 24996
+	.no_dead_strip plt__rgctx_fetch_173
+plt__rgctx_fetch_173:
 _p_618:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1296]
 br x16
-.word 24994
-	.no_dead_strip plt__rgctx_fetch_173
-plt__rgctx_fetch_173:
+.word 25001
+	.no_dead_strip plt__rgctx_fetch_174
+plt__rgctx_fetch_174:
 _p_619:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1304]
 br x16
-.word 24999
-	.no_dead_strip plt__rgctx_fetch_174
-plt__rgctx_fetch_174:
+.word 25013
+	.no_dead_strip plt__rgctx_fetch_175
+plt__rgctx_fetch_175:
 _p_620:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1312]
 br x16
-.word 25011
-	.no_dead_strip plt__rgctx_fetch_175
-plt__rgctx_fetch_175:
+.word 25076
+	.no_dead_strip plt__rgctx_fetch_176
+plt__rgctx_fetch_176:
 _p_621:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1320]
 br x16
-.word 25074
-	.no_dead_strip plt__rgctx_fetch_176
-plt__rgctx_fetch_176:
+.word 25088
+	.no_dead_strip plt__rgctx_fetch_177
+plt__rgctx_fetch_177:
 _p_622:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1328]
 br x16
-.word 25086
-	.no_dead_strip plt__rgctx_fetch_177
-plt__rgctx_fetch_177:
+.word 25139
+	.no_dead_strip plt__rgctx_fetch_178
+plt__rgctx_fetch_178:
 _p_623:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1336]
 br x16
-.word 25137
-	.no_dead_strip plt__rgctx_fetch_178
-plt__rgctx_fetch_178:
+.word 25151
+	.no_dead_strip plt_System_Runtime_Serialization_SerializationInfo_AddValue_string_int
+plt_System_Runtime_Serialization_SerializationInfo_AddValue_string_int:
 _p_624:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1344]
 br x16
-.word 25149
-	.no_dead_strip plt_System_Runtime_Serialization_SerializationInfo_AddValue_string_int
-plt_System_Runtime_Serialization_SerializationInfo_AddValue_string_int:
+.word 25181
+	.no_dead_strip plt__rgctx_fetch_179
+plt__rgctx_fetch_179:
 _p_625:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1352]
 br x16
-.word 25179
-	.no_dead_strip plt__rgctx_fetch_179
-plt__rgctx_fetch_179:
+.word 25216
+	.no_dead_strip plt_System_Runtime_Serialization_SerializationInfo_AddValue_string_object_System_Type
+plt_System_Runtime_Serialization_SerializationInfo_AddValue_string_object_System_Type:
 _p_626:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1360]
 br x16
-.word 25214
-	.no_dead_strip plt_System_Runtime_Serialization_SerializationInfo_AddValue_string_object_System_Type
-plt_System_Runtime_Serialization_SerializationInfo_AddValue_string_object_System_Type:
+.word 25228
+	.no_dead_strip plt__rgctx_fetch_180
+plt__rgctx_fetch_180:
 _p_627:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1368]
 br x16
-.word 25226
-	.no_dead_strip plt__rgctx_fetch_180
-plt__rgctx_fetch_180:
+.word 25233
+	.no_dead_strip plt__rgctx_fetch_181
+plt__rgctx_fetch_181:
 _p_628:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1376]
 br x16
-.word 25231
-	.no_dead_strip plt__rgctx_fetch_181
-plt__rgctx_fetch_181:
+.word 25261
+	.no_dead_strip plt__rgctx_fetch_182
+plt__rgctx_fetch_182:
 _p_629:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1384]
 br x16
-.word 25259
-	.no_dead_strip plt__rgctx_fetch_182
-plt__rgctx_fetch_182:
+.word 25275
+	.no_dead_strip plt__rgctx_fetch_183
+plt__rgctx_fetch_183:
 _p_630:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1392]
 br x16
-.word 25273
-	.no_dead_strip plt__rgctx_fetch_183
-plt__rgctx_fetch_183:
+.word 25303
+	.no_dead_strip plt__rgctx_fetch_184
+plt__rgctx_fetch_184:
 _p_631:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1400]
 br x16
-.word 25301
-	.no_dead_strip plt__rgctx_fetch_184
-plt__rgctx_fetch_184:
+.word 25338
+	.no_dead_strip plt__rgctx_fetch_185
+plt__rgctx_fetch_185:
 _p_632:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1408]
 br x16
-.word 25336
-	.no_dead_strip plt__rgctx_fetch_185
-plt__rgctx_fetch_185:
+.word 25365
+	.no_dead_strip plt_System_Collections_HashHelpers_GetPrime_int
+plt_System_Collections_HashHelpers_GetPrime_int:
 _p_633:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1416]
 br x16
-.word 25363
-	.no_dead_strip plt_System_Collections_HashHelpers_GetPrime_int
-plt_System_Collections_HashHelpers_GetPrime_int:
+.word 25392
+	.no_dead_strip plt__rgctx_fetch_186
+plt__rgctx_fetch_186:
 _p_634:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1424]
 br x16
-.word 25390
-	.no_dead_strip plt__rgctx_fetch_186
-plt__rgctx_fetch_186:
+.word 25430
+	.no_dead_strip plt__rgctx_fetch_187
+plt__rgctx_fetch_187:
 _p_635:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1432]
 br x16
-.word 25428
-	.no_dead_strip plt__rgctx_fetch_187
-plt__rgctx_fetch_187:
+.word 25465
+	.no_dead_strip plt__rgctx_fetch_188
+plt__rgctx_fetch_188:
 _p_636:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1440]
 br x16
-.word 25463
-	.no_dead_strip plt__rgctx_fetch_188
-plt__rgctx_fetch_188:
+.word 25493
+	.no_dead_strip plt__rgctx_fetch_189
+plt__rgctx_fetch_189:
 _p_637:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1448]
 br x16
-.word 25491
-	.no_dead_strip plt__rgctx_fetch_189
-plt__rgctx_fetch_189:
+.word 25520
+	.no_dead_strip plt__rgctx_fetch_190
+plt__rgctx_fetch_190:
 _p_638:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1456]
 br x16
-.word 25518
-	.no_dead_strip plt__rgctx_fetch_190
-plt__rgctx_fetch_190:
+.word 25547
+	.no_dead_strip plt_System_Runtime_CompilerServices_ConditionalWeakTable_2_object_System_Runtime_Serialization_SerializationInfo_TryGetValue_object_System_Runtime_Serialization_SerializationInfo_
+plt_System_Runtime_CompilerServices_ConditionalWeakTable_2_object_System_Runtime_Serialization_SerializationInfo_TryGetValue_object_System_Runtime_Serialization_SerializationInfo_:
 _p_639:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1464]
 br x16
-.word 25545
-	.no_dead_strip plt_System_Runtime_CompilerServices_ConditionalWeakTable_2_object_System_Runtime_Serialization_SerializationInfo_TryGetValue_object_System_Runtime_Serialization_SerializationInfo_
-plt_System_Runtime_CompilerServices_ConditionalWeakTable_2_object_System_Runtime_Serialization_SerializationInfo_TryGetValue_object_System_Runtime_Serialization_SerializationInfo_:
+.word 25575
+	.no_dead_strip plt_System_Runtime_Serialization_SerializationInfo_GetInt32_string
+plt_System_Runtime_Serialization_SerializationInfo_GetInt32_string:
 _p_640:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1472]
 br x16
-.word 25573
-	.no_dead_strip plt_System_Runtime_Serialization_SerializationInfo_GetInt32_string
-plt_System_Runtime_Serialization_SerializationInfo_GetInt32_string:
+.word 25601
+	.no_dead_strip plt__rgctx_fetch_191
+plt__rgctx_fetch_191:
 _p_641:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1480]
 br x16
-.word 25599
-	.no_dead_strip plt__rgctx_fetch_191
-plt__rgctx_fetch_191:
+.word 25627
+	.no_dead_strip plt_System_Runtime_Serialization_SerializationInfo_GetValue_string_System_Type
+plt_System_Runtime_Serialization_SerializationInfo_GetValue_string_System_Type:
 _p_642:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1488]
 br x16
-.word 25625
-	.no_dead_strip plt_System_Runtime_Serialization_SerializationInfo_GetValue_string_System_Type
-plt_System_Runtime_Serialization_SerializationInfo_GetValue_string_System_Type:
+.word 25639
+	.no_dead_strip plt__rgctx_fetch_192
+plt__rgctx_fetch_192:
 _p_643:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1496]
 br x16
-.word 25637
-	.no_dead_strip plt__rgctx_fetch_192
-plt__rgctx_fetch_192:
+.word 25644
+	.no_dead_strip plt_wrapper_castclass_object___castclass_with_cache_object_intptr_intptr
+plt_wrapper_castclass_object___castclass_with_cache_object_intptr_intptr:
 _p_644:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1504]
 br x16
-.word 25642
-	.no_dead_strip plt_wrapper_castclass_object___castclass_with_cache_object_intptr_intptr
-plt_wrapper_castclass_object___castclass_with_cache_object_intptr_intptr:
+.word 25656
+	.no_dead_strip plt__rgctx_fetch_193
+plt__rgctx_fetch_193:
 _p_645:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1512]
 br x16
-.word 25654
-	.no_dead_strip plt__rgctx_fetch_193
-plt__rgctx_fetch_193:
+.word 25664
+	.no_dead_strip plt__rgctx_fetch_194
+plt__rgctx_fetch_194:
 _p_646:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1520]
 br x16
-.word 25662
-	.no_dead_strip plt__rgctx_fetch_194
-plt__rgctx_fetch_194:
+.word 25678
+	.no_dead_strip plt__rgctx_fetch_195
+plt__rgctx_fetch_195:
 _p_647:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1528]
 br x16
-.word 25676
-	.no_dead_strip plt__rgctx_fetch_195
-plt__rgctx_fetch_195:
+.word 25692
+	.no_dead_strip plt_System_ThrowHelper_ThrowSerializationException_System_ExceptionResource
+plt_System_ThrowHelper_ThrowSerializationException_System_ExceptionResource:
 _p_648:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1536]
 br x16
-.word 25690
-	.no_dead_strip plt_System_ThrowHelper_ThrowSerializationException_System_ExceptionResource
-plt_System_ThrowHelper_ThrowSerializationException_System_ExceptionResource:
+.word 25706
+	.no_dead_strip plt__rgctx_fetch_196
+plt__rgctx_fetch_196:
 _p_649:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1544]
 br x16
-.word 25704
-	.no_dead_strip plt__rgctx_fetch_196
-plt__rgctx_fetch_196:
+.word 25711
+	.no_dead_strip plt__rgctx_fetch_197
+plt__rgctx_fetch_197:
 _p_650:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1552]
 br x16
-.word 25709
-	.no_dead_strip plt__rgctx_fetch_197
-plt__rgctx_fetch_197:
+.word 25723
+	.no_dead_strip plt__rgctx_fetch_198
+plt__rgctx_fetch_198:
 _p_651:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1560]
 br x16
-.word 25721
-	.no_dead_strip plt__rgctx_fetch_198
-plt__rgctx_fetch_198:
+.word 25753
+	.no_dead_strip plt__rgctx_fetch_199
+plt__rgctx_fetch_199:
 _p_652:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1568]
 br x16
-.word 25751
-	.no_dead_strip plt__rgctx_fetch_199
-plt__rgctx_fetch_199:
+.word 25783
+	.no_dead_strip plt_System_Runtime_CompilerServices_ConditionalWeakTable_2_object_System_Runtime_Serialization_SerializationInfo_Remove_object
+plt_System_Runtime_CompilerServices_ConditionalWeakTable_2_object_System_Runtime_Serialization_SerializationInfo_Remove_object:
 _p_653:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1576]
 br x16
-.word 25781
-	.no_dead_strip plt_System_Runtime_CompilerServices_ConditionalWeakTable_2_object_System_Runtime_Serialization_SerializationInfo_Remove_object
-plt_System_Runtime_CompilerServices_ConditionalWeakTable_2_object_System_Runtime_Serialization_SerializationInfo_Remove_object:
+.word 25811
+	.no_dead_strip plt_System_Collections_HashHelpers_ExpandPrime_int
+plt_System_Collections_HashHelpers_ExpandPrime_int:
 _p_654:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1584]
 br x16
-.word 25809
-	.no_dead_strip plt_System_Collections_HashHelpers_ExpandPrime_int
-plt_System_Collections_HashHelpers_ExpandPrime_int:
+.word 25837
+	.no_dead_strip plt__rgctx_fetch_200
+plt__rgctx_fetch_200:
 _p_655:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1592]
 br x16
-.word 25835
-	.no_dead_strip plt__rgctx_fetch_200
-plt__rgctx_fetch_200:
+.word 25863
+	.no_dead_strip plt__rgctx_fetch_201
+plt__rgctx_fetch_201:
 _p_656:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1600]
 br x16
-.word 25861
-	.no_dead_strip plt__rgctx_fetch_201
-plt__rgctx_fetch_201:
+.word 25912
+	.no_dead_strip plt__rgctx_fetch_202
+plt__rgctx_fetch_202:
 _p_657:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1608]
 br x16
-.word 25910
-	.no_dead_strip plt__rgctx_fetch_202
-plt__rgctx_fetch_202:
+.word 25926
+	.no_dead_strip plt__rgctx_fetch_203
+plt__rgctx_fetch_203:
 _p_658:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1616]
 br x16
-.word 25924
-	.no_dead_strip plt__rgctx_fetch_203
-plt__rgctx_fetch_203:
+.word 25974
+	.no_dead_strip plt__rgctx_fetch_204
+plt__rgctx_fetch_204:
 _p_659:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1624]
 br x16
-.word 25972
-	.no_dead_strip plt__rgctx_fetch_204
-plt__rgctx_fetch_204:
+.word 26001
+	.no_dead_strip plt__rgctx_fetch_205
+plt__rgctx_fetch_205:
 _p_660:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1632]
 br x16
-.word 25999
-	.no_dead_strip plt__rgctx_fetch_205
-plt__rgctx_fetch_205:
+.word 26049
+	.no_dead_strip plt__rgctx_fetch_206
+plt__rgctx_fetch_206:
 _p_661:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1640]
 br x16
-.word 26047
-	.no_dead_strip plt__rgctx_fetch_206
-plt__rgctx_fetch_206:
+.word 26098
+	.no_dead_strip plt__rgctx_fetch_207
+plt__rgctx_fetch_207:
 _p_662:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1648]
 br x16
-.word 26096
-	.no_dead_strip plt__rgctx_fetch_207
-plt__rgctx_fetch_207:
+.word 26147
+	.no_dead_strip plt__rgctx_fetch_208
+plt__rgctx_fetch_208:
 _p_663:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1656]
 br x16
-.word 26145
-	.no_dead_strip plt__rgctx_fetch_208
-plt__rgctx_fetch_208:
+.word 26175
+	.no_dead_strip plt__rgctx_fetch_209
+plt__rgctx_fetch_209:
 _p_664:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1664]
 br x16
-.word 26173
-	.no_dead_strip plt__rgctx_fetch_209
-plt__rgctx_fetch_209:
+.word 26189
+	.no_dead_strip plt__rgctx_fetch_210
+plt__rgctx_fetch_210:
 _p_665:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1672]
 br x16
-.word 26187
-	.no_dead_strip plt__rgctx_fetch_210
-plt__rgctx_fetch_210:
+.word 26217
+	.no_dead_strip plt_System_Collections_DictionaryEntry__ctor_object_object
+plt_System_Collections_DictionaryEntry__ctor_object_object:
 _p_666:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1680]
 br x16
-.word 26215
-	.no_dead_strip plt_System_Collections_DictionaryEntry__ctor_object_object
-plt_System_Collections_DictionaryEntry__ctor_object_object:
+.word 26227
+	.no_dead_strip plt__rgctx_fetch_211
+plt__rgctx_fetch_211:
 _p_667:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1688]
 br x16
-.word 26225
-	.no_dead_strip plt__rgctx_fetch_211
-plt__rgctx_fetch_211:
+.word 26232
+	.no_dead_strip plt__rgctx_fetch_212
+plt__rgctx_fetch_212:
 _p_668:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1696]
 br x16
-.word 26230
-	.no_dead_strip plt__rgctx_fetch_212
-plt__rgctx_fetch_212:
+.word 26244
+	.no_dead_strip plt__rgctx_fetch_213
+plt__rgctx_fetch_213:
 _p_669:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1704]
 br x16
-.word 26242
-	.no_dead_strip plt__rgctx_fetch_213
-plt__rgctx_fetch_213:
+.word 26295
+	.no_dead_strip plt__rgctx_fetch_214
+plt__rgctx_fetch_214:
 _p_670:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1712]
 br x16
-.word 26293
-	.no_dead_strip plt__rgctx_fetch_214
-plt__rgctx_fetch_214:
+.word 26307
+	.no_dead_strip plt_object__ctor
+plt_object__ctor:
 _p_671:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1720]
 br x16
-.word 26305
-	.no_dead_strip plt_object__ctor
-plt_object__ctor:
+.word 26337
+	.no_dead_strip plt__rgctx_fetch_215
+plt__rgctx_fetch_215:
 _p_672:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1728]
 br x16
-.word 26335
-	.no_dead_strip plt__rgctx_fetch_215
-plt__rgctx_fetch_215:
+.word 26363
+	.no_dead_strip plt__rgctx_fetch_216
+plt__rgctx_fetch_216:
 _p_673:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1736]
 br x16
-.word 26361
-	.no_dead_strip plt__rgctx_fetch_216
-plt__rgctx_fetch_216:
+.word 26412
+	.no_dead_strip plt__rgctx_fetch_217
+plt__rgctx_fetch_217:
 _p_674:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1744]
 br x16
-.word 26410
-	.no_dead_strip plt__rgctx_fetch_217
-plt__rgctx_fetch_217:
+.word 26461
+	.no_dead_strip plt__rgctx_fetch_218
+plt__rgctx_fetch_218:
 _p_675:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1752]
 br x16
-.word 26459
-	.no_dead_strip plt__rgctx_fetch_218
-plt__rgctx_fetch_218:
+.word 26471
+	.no_dead_strip plt__rgctx_fetch_219
+plt__rgctx_fetch_219:
 _p_676:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1760]
 br x16
-.word 26469
-	.no_dead_strip plt__rgctx_fetch_219
-plt__rgctx_fetch_219:
+.word 26499
+	.no_dead_strip plt__rgctx_fetch_220
+plt__rgctx_fetch_220:
 _p_677:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1768]
 br x16
-.word 26497
-	.no_dead_strip plt__rgctx_fetch_220
-plt__rgctx_fetch_220:
+.word 26509
+	.no_dead_strip plt__rgctx_fetch_221
+plt__rgctx_fetch_221:
 _p_678:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1776]
 br x16
-.word 26507
-	.no_dead_strip plt__rgctx_fetch_221
-plt__rgctx_fetch_221:
+.word 26537
+	.no_dead_strip plt__rgctx_fetch_222
+plt__rgctx_fetch_222:
 _p_679:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1784]
 br x16
-.word 26535
-	.no_dead_strip plt__rgctx_fetch_222
-plt__rgctx_fetch_222:
+.word 26568
+	.no_dead_strip plt__rgctx_fetch_223
+plt__rgctx_fetch_223:
 _p_680:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1792]
 br x16
-.word 26566
-	.no_dead_strip plt__rgctx_fetch_223
-plt__rgctx_fetch_223:
+.word 26594
+	.no_dead_strip plt__rgctx_fetch_224
+plt__rgctx_fetch_224:
 _p_681:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1800]
 br x16
-.word 26592
-	.no_dead_strip plt__rgctx_fetch_224
-plt__rgctx_fetch_224:
+.word 26620
+	.no_dead_strip plt__rgctx_fetch_225
+plt__rgctx_fetch_225:
 _p_682:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1808]
 br x16
-.word 26618
-	.no_dead_strip plt__rgctx_fetch_225
-plt__rgctx_fetch_225:
+.word 26630
+	.no_dead_strip plt__rgctx_fetch_226
+plt__rgctx_fetch_226:
 _p_683:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1816]
 br x16
-.word 26628
-	.no_dead_strip plt__rgctx_fetch_226
-plt__rgctx_fetch_226:
+.word 26640
+	.no_dead_strip plt__rgctx_fetch_227
+plt__rgctx_fetch_227:
 _p_684:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1824]
 br x16
-.word 26638
-	.no_dead_strip plt__rgctx_fetch_227
-plt__rgctx_fetch_227:
+.word 26668
+	.no_dead_strip plt_System_ThrowHelper_ThrowWrongValueTypeArgumentException_object_System_Type
+plt_System_ThrowHelper_ThrowWrongValueTypeArgumentException_object_System_Type:
 _p_685:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1832]
 br x16
-.word 26666
-	.no_dead_strip plt_System_ThrowHelper_ThrowWrongValueTypeArgumentException_object_System_Type
-plt_System_ThrowHelper_ThrowWrongValueTypeArgumentException_object_System_Type:
+.word 26678
+	.no_dead_strip plt__rgctx_fetch_228
+plt__rgctx_fetch_228:
 _p_686:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1840]
 br x16
-.word 26676
-	.no_dead_strip plt__rgctx_fetch_228
-plt__rgctx_fetch_228:
+.word 26683
+	.no_dead_strip plt_System_ThrowHelper_ThrowWrongKeyTypeArgumentException_object_System_Type
+plt_System_ThrowHelper_ThrowWrongKeyTypeArgumentException_object_System_Type:
 _p_687:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1848]
 br x16
-.word 26681
-	.no_dead_strip plt_System_ThrowHelper_ThrowWrongKeyTypeArgumentException_object_System_Type
-plt_System_ThrowHelper_ThrowWrongKeyTypeArgumentException_object_System_Type:
+.word 26693
+	.no_dead_strip plt__rgctx_fetch_229
+plt__rgctx_fetch_229:
 _p_688:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1856]
 br x16
-.word 26691
-	.no_dead_strip plt__rgctx_fetch_229
-plt__rgctx_fetch_229:
+.word 26719
+	.no_dead_strip plt__rgctx_fetch_230
+plt__rgctx_fetch_230:
 _p_689:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1864]
 br x16
-.word 26717
-	.no_dead_strip plt__rgctx_fetch_230
-plt__rgctx_fetch_230:
+.word 26750
+	.no_dead_strip plt__rgctx_fetch_231
+plt__rgctx_fetch_231:
 _p_690:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1872]
 br x16
-.word 26748
-	.no_dead_strip plt__rgctx_fetch_231
-plt__rgctx_fetch_231:
+.word 26776
+	.no_dead_strip plt__rgctx_fetch_232
+plt__rgctx_fetch_232:
 _p_691:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1880]
 br x16
-.word 26774
-	.no_dead_strip plt__rgctx_fetch_232
-plt__rgctx_fetch_232:
+.word 26802
+	.no_dead_strip plt__rgctx_fetch_233
+plt__rgctx_fetch_233:
 _p_692:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1888]
 br x16
-.word 26800
-	.no_dead_strip plt__rgctx_fetch_233
-plt__rgctx_fetch_233:
+.word 26812
+	.no_dead_strip plt__rgctx_fetch_234
+plt__rgctx_fetch_234:
 _p_693:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1896]
 br x16
-.word 26810
-	.no_dead_strip plt__rgctx_fetch_234
-plt__rgctx_fetch_234:
+.word 26822
+	.no_dead_strip plt__rgctx_fetch_235
+plt__rgctx_fetch_235:
 _p_694:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1904]
 br x16
-.word 26820
-	.no_dead_strip plt__rgctx_fetch_235
-plt__rgctx_fetch_235:
+.word 26850
+	.no_dead_strip plt__rgctx_fetch_236
+plt__rgctx_fetch_236:
 _p_695:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1912]
 br x16
-.word 26848
-	.no_dead_strip plt__rgctx_fetch_236
-plt__rgctx_fetch_236:
+.word 26860
+	.no_dead_strip plt__rgctx_fetch_237
+plt__rgctx_fetch_237:
 _p_696:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1920]
 br x16
-.word 26858
-	.no_dead_strip plt__rgctx_fetch_237
-plt__rgctx_fetch_237:
+.word 26891
+	.no_dead_strip plt__rgctx_fetch_238
+plt__rgctx_fetch_238:
 _p_697:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1928]
 br x16
-.word 26889
-	.no_dead_strip plt__rgctx_fetch_238
-plt__rgctx_fetch_238:
+.word 26901
+	.no_dead_strip plt__rgctx_fetch_239
+plt__rgctx_fetch_239:
 _p_698:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1936]
 br x16
-.word 26899
-	.no_dead_strip plt__rgctx_fetch_239
-plt__rgctx_fetch_239:
+.word 26929
+	.no_dead_strip plt__rgctx_fetch_240
+plt__rgctx_fetch_240:
 _p_699:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1944]
 br x16
-.word 26927
-	.no_dead_strip plt__rgctx_fetch_240
-plt__rgctx_fetch_240:
+.word 26939
+	.no_dead_strip plt__rgctx_fetch_241
+plt__rgctx_fetch_241:
 _p_700:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1952]
 br x16
-.word 26937
-	.no_dead_strip plt__rgctx_fetch_241
-plt__rgctx_fetch_241:
+.word 26988
+	.no_dead_strip plt__rgctx_fetch_242
+plt__rgctx_fetch_242:
 _p_701:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1960]
 br x16
-.word 26986
-	.no_dead_strip plt__rgctx_fetch_242
-plt__rgctx_fetch_242:
+.word 27000
+	.no_dead_strip plt__rgctx_fetch_243
+plt__rgctx_fetch_243:
 _p_702:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1968]
 br x16
-.word 26998
-	.no_dead_strip plt__rgctx_fetch_243
-plt__rgctx_fetch_243:
+.word 27051
+	.no_dead_strip plt__rgctx_fetch_244
+plt__rgctx_fetch_244:
 _p_703:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1976]
 br x16
-.word 27049
-	.no_dead_strip plt__rgctx_fetch_244
-plt__rgctx_fetch_244:
+.word 27061
+	.no_dead_strip plt__rgctx_fetch_245
+plt__rgctx_fetch_245:
 _p_704:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1984]
 br x16
-.word 27059
-	.no_dead_strip plt__rgctx_fetch_245
-plt__rgctx_fetch_245:
+.word 27089
+	.no_dead_strip plt__rgctx_fetch_246
+plt__rgctx_fetch_246:
 _p_705:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #1992]
 br x16
-.word 27087
-	.no_dead_strip plt__rgctx_fetch_246
-plt__rgctx_fetch_246:
+.word 27099
+	.no_dead_strip plt__rgctx_fetch_247
+plt__rgctx_fetch_247:
 _p_706:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2000]
 br x16
-.word 27097
-	.no_dead_strip plt__rgctx_fetch_247
-plt__rgctx_fetch_247:
+.word 27160
+	.no_dead_strip plt__rgctx_fetch_248
+plt__rgctx_fetch_248:
 _p_707:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2008]
 br x16
-.word 27158
-	.no_dead_strip plt__rgctx_fetch_248
-plt__rgctx_fetch_248:
+.word 27172
+	.no_dead_strip plt__rgctx_fetch_249
+plt__rgctx_fetch_249:
 _p_708:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2016]
 br x16
-.word 27170
-	.no_dead_strip plt__rgctx_fetch_249
-plt__rgctx_fetch_249:
+.word 27235
+	.no_dead_strip plt__rgctx_fetch_250
+plt__rgctx_fetch_250:
 _p_709:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2024]
 br x16
-.word 27233
-	.no_dead_strip plt__rgctx_fetch_250
-plt__rgctx_fetch_250:
+.word 27286
+	.no_dead_strip plt_System_ThrowHelper_ThrowNotSupportedException_System_ExceptionResource
+plt_System_ThrowHelper_ThrowNotSupportedException_System_ExceptionResource:
 _p_710:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2032]
 br x16
-.word 27284
-	.no_dead_strip plt_System_ThrowHelper_ThrowNotSupportedException_System_ExceptionResource
-plt_System_ThrowHelper_ThrowNotSupportedException_System_ExceptionResource:
+.word 27316
+	.no_dead_strip plt__rgctx_fetch_251
+plt__rgctx_fetch_251:
 _p_711:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2040]
 br x16
-.word 27314
-	.no_dead_strip plt__rgctx_fetch_251
-plt__rgctx_fetch_251:
+.word 27342
+	.no_dead_strip plt__rgctx_fetch_252
+plt__rgctx_fetch_252:
 _p_712:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2048]
 br x16
-.word 27340
-	.no_dead_strip plt__rgctx_fetch_252
-plt__rgctx_fetch_252:
+.word 27393
+	.no_dead_strip plt__rgctx_fetch_253
+plt__rgctx_fetch_253:
 _p_713:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2056]
 br x16
-.word 27391
-	.no_dead_strip plt__rgctx_fetch_253
-plt__rgctx_fetch_253:
+.word 27405
+	.no_dead_strip plt__rgctx_fetch_254
+plt__rgctx_fetch_254:
 _p_714:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2064]
 br x16
-.word 27403
-	.no_dead_strip plt__rgctx_fetch_254
-plt__rgctx_fetch_254:
+.word 27456
+	.no_dead_strip plt__rgctx_fetch_255
+plt__rgctx_fetch_255:
 _p_715:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2072]
 br x16
-.word 27454
-	.no_dead_strip plt__rgctx_fetch_255
-plt__rgctx_fetch_255:
+.word 27468
+	.no_dead_strip plt__rgctx_fetch_256
+plt__rgctx_fetch_256:
 _p_716:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2080]
 br x16
-.word 27466
-	.no_dead_strip plt__rgctx_fetch_256
-plt__rgctx_fetch_256:
+.word 27519
+	.no_dead_strip plt__rgctx_fetch_257
+plt__rgctx_fetch_257:
 _p_717:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2088]
 br x16
-.word 27517
-	.no_dead_strip plt__rgctx_fetch_257
-plt__rgctx_fetch_257:
+.word 27549
+	.no_dead_strip plt__rgctx_fetch_258
+plt__rgctx_fetch_258:
 _p_718:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2096]
 br x16
-.word 27547
-	.no_dead_strip plt__rgctx_fetch_258
-plt__rgctx_fetch_258:
+.word 27561
+	.no_dead_strip plt__rgctx_fetch_259
+plt__rgctx_fetch_259:
 _p_719:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2104]
 br x16
-.word 27559
-	.no_dead_strip plt__rgctx_fetch_259
-plt__rgctx_fetch_259:
+.word 27622
+	.no_dead_strip plt__rgctx_fetch_260
+plt__rgctx_fetch_260:
 _p_720:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2112]
 br x16
-.word 27620
-	.no_dead_strip plt__rgctx_fetch_260
-plt__rgctx_fetch_260:
+.word 27634
+	.no_dead_strip plt__rgctx_fetch_261
+plt__rgctx_fetch_261:
 _p_721:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2120]
 br x16
-.word 27632
-	.no_dead_strip plt__rgctx_fetch_261
-plt__rgctx_fetch_261:
+.word 27697
+	.no_dead_strip plt__rgctx_fetch_262
+plt__rgctx_fetch_262:
 _p_722:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2128]
 br x16
-.word 27695
-	.no_dead_strip plt__rgctx_fetch_262
-plt__rgctx_fetch_262:
+.word 27748
+	.no_dead_strip plt__rgctx_fetch_263
+plt__rgctx_fetch_263:
 _p_723:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2136]
 br x16
-.word 27746
-	.no_dead_strip plt__rgctx_fetch_263
-plt__rgctx_fetch_263:
+.word 27799
+	.no_dead_strip plt__rgctx_fetch_264
+plt__rgctx_fetch_264:
 _p_724:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2144]
 br x16
-.word 27797
-	.no_dead_strip plt__rgctx_fetch_264
-plt__rgctx_fetch_264:
+.word 27850
+	.no_dead_strip plt__rgctx_fetch_265
+plt__rgctx_fetch_265:
 _p_725:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2152]
 br x16
-.word 27848
-	.no_dead_strip plt__rgctx_fetch_265
-plt__rgctx_fetch_265:
+.word 27862
+	.no_dead_strip plt__rgctx_fetch_266
+plt__rgctx_fetch_266:
 _p_726:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2160]
 br x16
-.word 27860
-	.no_dead_strip plt__rgctx_fetch_266
-plt__rgctx_fetch_266:
+.word 27913
+	.no_dead_strip plt__rgctx_fetch_267
+plt__rgctx_fetch_267:
 _p_727:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2168]
 br x16
-.word 27911
-	.no_dead_strip plt__rgctx_fetch_267
-plt__rgctx_fetch_267:
+.word 27925
+	.no_dead_strip plt__rgctx_fetch_268
+plt__rgctx_fetch_268:
 _p_728:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2176]
 br x16
-.word 27923
-	.no_dead_strip plt__rgctx_fetch_268
-plt__rgctx_fetch_268:
+.word 27976
+	.no_dead_strip plt__rgctx_fetch_269
+plt__rgctx_fetch_269:
 _p_729:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2184]
 br x16
-.word 27974
-	.no_dead_strip plt__rgctx_fetch_269
-plt__rgctx_fetch_269:
+.word 28006
+	.no_dead_strip plt__rgctx_fetch_270
+plt__rgctx_fetch_270:
 _p_730:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2192]
 br x16
-.word 28004
-	.no_dead_strip plt__rgctx_fetch_270
-plt__rgctx_fetch_270:
+.word 28018
+	.no_dead_strip plt__rgctx_fetch_271
+plt__rgctx_fetch_271:
 _p_731:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2200]
 br x16
-.word 28016
-	.no_dead_strip plt__rgctx_fetch_271
-plt__rgctx_fetch_271:
+.word 28046
+	.no_dead_strip plt_System_Nullable_1_bool_Unbox_object
+plt_System_Nullable_1_bool_Unbox_object:
 _p_732:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2208]
 br x16
-.word 28044
-	.no_dead_strip plt_System_Nullable_1_bool_Unbox_object
-plt_System_Nullable_1_bool_Unbox_object:
+.word 28056
+	.no_dead_strip plt_System_Nullable_1_bool_Equals_System_Nullable_1_bool
+plt_System_Nullable_1_bool_Equals_System_Nullable_1_bool:
 _p_733:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2216]
 br x16
-.word 28054
-	.no_dead_strip plt_System_Nullable_1_bool_Equals_System_Nullable_1_bool
-plt_System_Nullable_1_bool_Equals_System_Nullable_1_bool:
+.word 28077
+	.no_dead_strip plt_bool_Equals_object
+plt_bool_Equals_object:
 _p_734:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2224]
 br x16
-.word 28075
-	.no_dead_strip plt_bool_Equals_object
-plt_bool_Equals_object:
+.word 28098
+	.no_dead_strip plt__rgctx_fetch_272
+plt__rgctx_fetch_272:
 _p_735:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2232]
 br x16
-.word 28096
-	.no_dead_strip plt__rgctx_fetch_272
-plt__rgctx_fetch_272:
+.word 28121
+	.no_dead_strip plt__rgctx_fetch_273
+plt__rgctx_fetch_273:
 _p_736:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2240]
 br x16
-.word 28119
-	.no_dead_strip plt__rgctx_fetch_273
-plt__rgctx_fetch_273:
+.word 28164
+	.no_dead_strip plt__rgctx_fetch_274
+plt__rgctx_fetch_274:
 _p_737:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2248]
 br x16
-.word 28162
-	.no_dead_strip plt__rgctx_fetch_274
-plt__rgctx_fetch_274:
+.word 28207
+	.no_dead_strip plt__rgctx_fetch_275
+plt__rgctx_fetch_275:
 _p_738:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2256]
 br x16
-.word 28205
-	.no_dead_strip plt__rgctx_fetch_275
-plt__rgctx_fetch_275:
+.word 28217
+	.no_dead_strip plt__rgctx_fetch_276
+plt__rgctx_fetch_276:
 _p_739:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2264]
 br x16
-.word 28215
-	.no_dead_strip plt__rgctx_fetch_276
-plt__rgctx_fetch_276:
+.word 28260
+	.no_dead_strip plt__rgctx_fetch_277
+plt__rgctx_fetch_277:
 _p_740:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2272]
 br x16
-.word 28258
-	.no_dead_strip plt__rgctx_fetch_277
-plt__rgctx_fetch_277:
+.word 28270
+	.no_dead_strip plt__rgctx_fetch_278
+plt__rgctx_fetch_278:
 _p_741:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2280]
 br x16
-.word 28268
-	.no_dead_strip plt__rgctx_fetch_278
-plt__rgctx_fetch_278:
+.word 28313
+	.no_dead_strip plt__rgctx_fetch_279
+plt__rgctx_fetch_279:
 _p_742:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2288]
 br x16
-.word 28311
-	.no_dead_strip plt__rgctx_fetch_279
-plt__rgctx_fetch_279:
+.word 28356
+	.no_dead_strip plt__rgctx_fetch_280
+plt__rgctx_fetch_280:
 _p_743:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2296]
 br x16
-.word 28354
-	.no_dead_strip plt__rgctx_fetch_280
-plt__rgctx_fetch_280:
+.word 28381
+	.no_dead_strip plt__rgctx_fetch_281
+plt__rgctx_fetch_281:
 _p_744:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2304]
 br x16
-.word 28379
-	.no_dead_strip plt__rgctx_fetch_281
-plt__rgctx_fetch_281:
+.word 28406
+	.no_dead_strip plt__rgctx_fetch_282
+plt__rgctx_fetch_282:
 _p_745:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2312]
 br x16
-.word 28404
-	.no_dead_strip plt__rgctx_fetch_282
-plt__rgctx_fetch_282:
+.word 28422
+	.no_dead_strip plt__rgctx_fetch_283
+plt__rgctx_fetch_283:
 _p_746:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2320]
 br x16
-.word 28420
-	.no_dead_strip plt__rgctx_fetch_283
-plt__rgctx_fetch_283:
+.word 28438
+	.no_dead_strip plt__rgctx_fetch_284
+plt__rgctx_fetch_284:
 _p_747:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2328]
 br x16
-.word 28436
-	.no_dead_strip plt__rgctx_fetch_284
-plt__rgctx_fetch_284:
+.word 28474
+	.no_dead_strip plt__rgctx_fetch_285
+plt__rgctx_fetch_285:
 _p_748:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2336]
 br x16
-.word 28472
-	.no_dead_strip plt__rgctx_fetch_285
-plt__rgctx_fetch_285:
+.word 28504
+	.no_dead_strip plt__rgctx_fetch_286
+plt__rgctx_fetch_286:
 _p_749:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2344]
 br x16
-.word 28502
-	.no_dead_strip plt__rgctx_fetch_286
-plt__rgctx_fetch_286:
+.word 28524
+	.no_dead_strip plt_System_Runtime_ExceptionServices_ExceptionDispatchInfo_Throw
+plt_System_Runtime_ExceptionServices_ExceptionDispatchInfo_Throw:
 _p_750:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2352]
 br x16
-.word 28522
-	.no_dead_strip plt_System_Runtime_ExceptionServices_ExceptionDispatchInfo_Throw
-plt_System_Runtime_ExceptionServices_ExceptionDispatchInfo_Throw:
+.word 28536
+	.no_dead_strip plt_System_Diagnostics_Debugger_NotifyOfCrossThreadDependency
+plt_System_Diagnostics_Debugger_NotifyOfCrossThreadDependency:
 _p_751:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2360]
 br x16
-.word 28534
-	.no_dead_strip plt_System_Diagnostics_Debugger_NotifyOfCrossThreadDependency
-plt_System_Diagnostics_Debugger_NotifyOfCrossThreadDependency:
+.word 28541
+	.no_dead_strip plt__rgctx_fetch_287
+plt__rgctx_fetch_287:
 _p_752:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2368]
 br x16
-.word 28539
-	.no_dead_strip plt__rgctx_fetch_287
-plt__rgctx_fetch_287:
+.word 28546
+	.no_dead_strip plt__rgctx_fetch_288
+plt__rgctx_fetch_288:
 _p_753:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2376]
 br x16
-.word 28544
-	.no_dead_strip plt__rgctx_fetch_288
-plt__rgctx_fetch_288:
+.word 28589
+	.no_dead_strip plt__rgctx_fetch_289
+plt__rgctx_fetch_289:
 _p_754:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2384]
 br x16
-.word 28587
-	.no_dead_strip plt__rgctx_fetch_289
-plt__rgctx_fetch_289:
+.word 28614
+	.no_dead_strip plt__rgctx_fetch_290
+plt__rgctx_fetch_290:
 _p_755:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2392]
 br x16
-.word 28612
-	.no_dead_strip plt__rgctx_fetch_290
-plt__rgctx_fetch_290:
+.word 28639
+	.no_dead_strip plt__rgctx_fetch_291
+plt__rgctx_fetch_291:
 _p_756:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2400]
 br x16
-.word 28637
-	.no_dead_strip plt__rgctx_fetch_291
-plt__rgctx_fetch_291:
+.word 28651
+	.no_dead_strip plt__rgctx_fetch_292
+plt__rgctx_fetch_292:
 _p_757:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2408]
 br x16
-.word 28649
-	.no_dead_strip plt__rgctx_fetch_292
-plt__rgctx_fetch_292:
+.word 28661
+	.no_dead_strip plt__jit_icall_mono_monitor_enter_v4
+plt__jit_icall_mono_monitor_enter_v4:
 _p_758:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2416]
 br x16
-.word 28659
-	.no_dead_strip plt__jit_icall_mono_monitor_enter_v4
-plt__jit_icall_mono_monitor_enter_v4:
+.word 28671
+	.no_dead_strip plt__rgctx_fetch_293
+plt__rgctx_fetch_293:
 _p_759:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2424]
 br x16
-.word 28669
-	.no_dead_strip plt__rgctx_fetch_293
-plt__rgctx_fetch_293:
+.word 28695
+	.no_dead_strip plt__rgctx_fetch_294
+plt__rgctx_fetch_294:
 _p_760:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2432]
 br x16
-.word 28693
-	.no_dead_strip plt__rgctx_fetch_294
-plt__rgctx_fetch_294:
+.word 28725
+	.no_dead_strip plt__rgctx_fetch_295
+plt__rgctx_fetch_295:
 _p_761:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2440]
 br x16
-.word 28723
-	.no_dead_strip plt__rgctx_fetch_295
-plt__rgctx_fetch_295:
+.word 28750
+	.no_dead_strip plt__rgctx_fetch_296
+plt__rgctx_fetch_296:
 _p_762:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2448]
 br x16
-.word 28748
-	.no_dead_strip plt__rgctx_fetch_296
-plt__rgctx_fetch_296:
+.word 28760
+	.no_dead_strip plt_System_Delegate_op_Equality_System_Delegate_System_Delegate
+plt_System_Delegate_op_Equality_System_Delegate_System_Delegate:
 _p_763:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2456]
 br x16
-.word 28758
-	.no_dead_strip plt_System_Delegate_op_Equality_System_Delegate_System_Delegate
-plt_System_Delegate_op_Equality_System_Delegate_System_Delegate:
+.word 28770
+	.no_dead_strip plt__rgctx_fetch_297
+plt__rgctx_fetch_297:
 _p_764:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2464]
 br x16
-.word 28768
-	.no_dead_strip plt__rgctx_fetch_297
-plt__rgctx_fetch_297:
+.word 28775
+	.no_dead_strip plt__rgctx_fetch_298
+plt__rgctx_fetch_298:
 _p_765:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2472]
 br x16
-.word 28773
-	.no_dead_strip plt__rgctx_fetch_298
-plt__rgctx_fetch_298:
+.word 28787
+	.no_dead_strip plt__rgctx_fetch_299
+plt__rgctx_fetch_299:
 _p_766:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2480]
 br x16
-.word 28785
-	.no_dead_strip plt__rgctx_fetch_299
-plt__rgctx_fetch_299:
+.word 28814
+	.no_dead_strip plt__rgctx_fetch_300
+plt__rgctx_fetch_300:
 _p_767:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2488]
 br x16
-.word 28812
-	.no_dead_strip plt__rgctx_fetch_300
-plt__rgctx_fetch_300:
+.word 28826
+	.no_dead_strip plt__rgctx_fetch_301
+plt__rgctx_fetch_301:
 _p_768:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2496]
 br x16
-.word 28824
-	.no_dead_strip plt__rgctx_fetch_301
-plt__rgctx_fetch_301:
+.word 28853
+	.no_dead_strip plt_System_Activator_CreateInstance_System_Type
+plt_System_Activator_CreateInstance_System_Type:
 _p_769:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2504]
 br x16
-.word 28851
-	.no_dead_strip plt_System_Activator_CreateInstance_System_Type
-plt_System_Activator_CreateInstance_System_Type:
+.word 28863
+	.no_dead_strip plt__rgctx_fetch_302
+plt__rgctx_fetch_302:
 _p_770:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2512]
 br x16
-.word 28861
-	.no_dead_strip plt__rgctx_fetch_302
-plt__rgctx_fetch_302:
+.word 28868
+	.no_dead_strip plt_System_MissingMemberException__ctor_string
+plt_System_MissingMemberException__ctor_string:
 _p_771:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2520]
 br x16
-.word 28866
-	.no_dead_strip plt_System_MissingMemberException__ctor_string
-plt_System_MissingMemberException__ctor_string:
+.word 28878
+	.no_dead_strip plt__rgctx_fetch_303
+plt__rgctx_fetch_303:
 _p_772:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2528]
 br x16
-.word 28876
-	.no_dead_strip plt__rgctx_fetch_303
-plt__rgctx_fetch_303:
+.word 28901
+	.no_dead_strip plt__rgctx_fetch_304
+plt__rgctx_fetch_304:
 _p_773:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2536]
 br x16
-.word 28899
-	.no_dead_strip plt__rgctx_fetch_304
-plt__rgctx_fetch_304:
+.word 28934
+	.no_dead_strip plt__rgctx_fetch_305
+plt__rgctx_fetch_305:
 _p_774:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2544]
 br x16
-.word 28932
-	.no_dead_strip plt__rgctx_fetch_305
-plt__rgctx_fetch_305:
+.word 28946
+	.no_dead_strip plt__rgctx_fetch_306
+plt__rgctx_fetch_306:
 _p_775:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2552]
 br x16
-.word 28944
-	.no_dead_strip plt__rgctx_fetch_306
-plt__rgctx_fetch_306:
+.word 28973
+	.no_dead_strip plt__rgctx_fetch_307
+plt__rgctx_fetch_307:
 _p_776:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2560]
 br x16
-.word 28971
-	.no_dead_strip plt__rgctx_fetch_307
-plt__rgctx_fetch_307:
+.word 29002
+	.no_dead_strip plt__rgctx_fetch_308
+plt__rgctx_fetch_308:
 _p_777:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2568]
 br x16
-.word 29000
-	.no_dead_strip plt__rgctx_fetch_308
-plt__rgctx_fetch_308:
+.word 29047
+	.no_dead_strip plt__rgctx_fetch_309
+plt__rgctx_fetch_309:
 _p_778:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2576]
 br x16
-.word 29045
-	.no_dead_strip plt__rgctx_fetch_309
-plt__rgctx_fetch_309:
+.word 29092
+	.no_dead_strip plt__jit_icall_mono_delegate_begin_invoke
+plt__jit_icall_mono_delegate_begin_invoke:
 _p_779:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2584]
 br x16
-.word 29090
-	.no_dead_strip plt__jit_icall_mono_delegate_begin_invoke
-plt__jit_icall_mono_delegate_begin_invoke:
+.word 29118
+	.no_dead_strip plt__jit_icall_mono_delegate_end_invoke
+plt__jit_icall_mono_delegate_end_invoke:
 _p_780:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2592]
 br x16
-.word 29116
-	.no_dead_strip plt__jit_icall_mono_delegate_end_invoke
-plt__jit_icall_mono_delegate_end_invoke:
+.word 29147
+	.no_dead_strip plt__rgctx_fetch_310
+plt__rgctx_fetch_310:
 _p_781:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2600]
 br x16
-.word 29145
-	.no_dead_strip plt__rgctx_fetch_310
-plt__rgctx_fetch_310:
+.word 29205
+	.no_dead_strip plt__rgctx_fetch_311
+plt__rgctx_fetch_311:
 _p_782:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2608]
 br x16
-.word 29203
-	.no_dead_strip plt__rgctx_fetch_311
-plt__rgctx_fetch_311:
+.word 29217
+	.no_dead_strip plt__rgctx_fetch_312
+plt__rgctx_fetch_312:
 _p_783:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2616]
 br x16
-.word 29215
-	.no_dead_strip plt__rgctx_fetch_312
-plt__rgctx_fetch_312:
+.word 29247
+	.no_dead_strip plt__rgctx_fetch_313
+plt__rgctx_fetch_313:
 _p_784:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2624]
 br x16
-.word 29245
-	.no_dead_strip plt__rgctx_fetch_313
-plt__rgctx_fetch_313:
+.word 29277
+	.no_dead_strip plt__rgctx_fetch_314
+plt__rgctx_fetch_314:
 _p_785:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2632]
 br x16
-.word 29275
-	.no_dead_strip plt__rgctx_fetch_314
-plt__rgctx_fetch_314:
+.word 29301
+	.no_dead_strip plt__rgctx_fetch_315
+plt__rgctx_fetch_315:
 _p_786:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2640]
 br x16
-.word 29299
-	.no_dead_strip plt__rgctx_fetch_315
-plt__rgctx_fetch_315:
+.word 29313
+	.no_dead_strip plt__rgctx_fetch_316
+plt__rgctx_fetch_316:
 _p_787:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2648]
 br x16
-.word 29311
-	.no_dead_strip plt__rgctx_fetch_316
-plt__rgctx_fetch_316:
+.word 29352
+	.no_dead_strip plt__rgctx_fetch_317
+plt__rgctx_fetch_317:
 _p_788:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2656]
 br x16
-.word 29350
-	.no_dead_strip plt__rgctx_fetch_317
-plt__rgctx_fetch_317:
+.word 29376
+	.no_dead_strip plt__rgctx_fetch_318
+plt__rgctx_fetch_318:
 _p_789:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2664]
 br x16
-.word 29374
-	.no_dead_strip plt__rgctx_fetch_318
-plt__rgctx_fetch_318:
+.word 29388
+	.no_dead_strip plt__rgctx_fetch_319
+plt__rgctx_fetch_319:
 _p_790:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2672]
 br x16
-.word 29386
-	.no_dead_strip plt__rgctx_fetch_319
-plt__rgctx_fetch_319:
+.word 29430
+	.no_dead_strip plt__rgctx_fetch_320
+plt__rgctx_fetch_320:
 _p_791:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2680]
 br x16
-.word 29428
-	.no_dead_strip plt__rgctx_fetch_320
-plt__rgctx_fetch_320:
+.word 29442
+	.no_dead_strip plt_System_Linq_Error_ArgumentNull_string
+plt_System_Linq_Error_ArgumentNull_string:
 _p_792:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2688]
 br x16
-.word 29440
-	.no_dead_strip plt_System_Linq_Error_ArgumentNull_string
-plt_System_Linq_Error_ArgumentNull_string:
+.word 29472
+	.no_dead_strip plt_string_memcpy_byte__byte__int
+plt_string_memcpy_byte__byte__int:
 _p_793:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2696]
 br x16
-.word 29470
-	.no_dead_strip plt_string_memcpy_byte__byte__int
-plt_string_memcpy_byte__byte__int:
+.word 29477
+	.no_dead_strip plt_System_Threading_ExecutionContext_EstablishCopyOnWriteScope_System_Threading_ExecutionContextSwitcher_
+plt_System_Threading_ExecutionContext_EstablishCopyOnWriteScope_System_Threading_ExecutionContextSwitcher_:
 _p_794:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2704]
 br x16
-.word 29475
-	.no_dead_strip plt_System_Threading_ExecutionContext_EstablishCopyOnWriteScope_System_Threading_ExecutionContextSwitcher_
-plt_System_Threading_ExecutionContext_EstablishCopyOnWriteScope_System_Threading_ExecutionContextSwitcher_:
+.word 29482
+	.no_dead_strip plt_Xamarin_Auth_OAuth2Authenticator__RequestAccessTokenAsyncc__async0_MoveNext
+plt_Xamarin_Auth_OAuth2Authenticator__RequestAccessTokenAsyncc__async0_MoveNext:
 _p_795:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2712]
 br x16
-.word 29480
-	.no_dead_strip plt_Xamarin_Auth_OAuth2Authenticator__RequestAccessTokenAsyncc__async0_MoveNext
-plt_Xamarin_Auth_OAuth2Authenticator__RequestAccessTokenAsyncc__async0_MoveNext:
+.word 29487
+	.no_dead_strip plt_System_Threading_ExecutionContextSwitcher_Undo
+plt_System_Threading_ExecutionContextSwitcher_Undo:
 _p_796:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2720]
 br x16
-.word 29485
-	.no_dead_strip plt_System_Threading_ExecutionContextSwitcher_Undo
-plt_System_Threading_ExecutionContextSwitcher_Undo:
+.word 29490
+	.no_dead_strip plt_Xamarin_Auth_Request__GetResponseAsyncc__async0_MoveNext
+plt_Xamarin_Auth_Request__GetResponseAsyncc__async0_MoveNext:
 _p_797:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2728]
 br x16
-.word 29488
-	.no_dead_strip plt_Xamarin_Auth_Request__GetResponseAsyncc__async0_MoveNext
-plt_Xamarin_Auth_Request__GetResponseAsyncc__async0_MoveNext:
+.word 29495
+	.no_dead_strip plt__rgctx_fetch_321
+plt__rgctx_fetch_321:
 _p_798:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2736]
 br x16
-.word 29493
-	.no_dead_strip plt__rgctx_fetch_321
-plt__rgctx_fetch_321:
+.word 29526
+	.no_dead_strip plt__rgctx_fetch_322
+plt__rgctx_fetch_322:
 _p_799:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2744]
 br x16
-.word 29524
-	.no_dead_strip plt__rgctx_fetch_322
-plt__rgctx_fetch_322:
+.word 29538
+	.no_dead_strip plt__rgctx_fetch_323
+plt__rgctx_fetch_323:
 _p_800:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2752]
 br x16
-.word 29536
-	.no_dead_strip plt__rgctx_fetch_323
-plt__rgctx_fetch_323:
+.word 29565
+	.no_dead_strip plt__rgctx_fetch_324
+plt__rgctx_fetch_324:
 _p_801:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2760]
 br x16
-.word 29563
-	.no_dead_strip plt__rgctx_fetch_324
-plt__rgctx_fetch_324:
+.word 29591
+	.no_dead_strip plt__rgctx_fetch_325
+plt__rgctx_fetch_325:
 _p_802:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2768]
 br x16
-.word 29589
-	.no_dead_strip plt__rgctx_fetch_325
-plt__rgctx_fetch_325:
+.word 29635
+	.no_dead_strip plt__rgctx_fetch_326
+plt__rgctx_fetch_326:
 _p_803:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2776]
 br x16
-.word 29633
-	.no_dead_strip plt__rgctx_fetch_326
-plt__rgctx_fetch_326:
+.word 29661
+	.no_dead_strip plt__rgctx_fetch_327
+plt__rgctx_fetch_327:
 _p_804:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2784]
 br x16
-.word 29659
-	.no_dead_strip plt__rgctx_fetch_327
-plt__rgctx_fetch_327:
+.word 29705
+	.no_dead_strip plt__rgctx_fetch_328
+plt__rgctx_fetch_328:
 _p_805:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2792]
 br x16
-.word 29703
-	.no_dead_strip plt__rgctx_fetch_328
-plt__rgctx_fetch_328:
+.word 29715
+	.no_dead_strip plt__rgctx_fetch_329
+plt__rgctx_fetch_329:
 _p_806:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2800]
 br x16
-.word 29713
-	.no_dead_strip plt__rgctx_fetch_329
-plt__rgctx_fetch_329:
+.word 29740
+	.no_dead_strip plt__rgctx_fetch_330
+plt__rgctx_fetch_330:
 _p_807:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2808]
 br x16
-.word 29738
-	.no_dead_strip plt__rgctx_fetch_330
-plt__rgctx_fetch_330:
+.word 29778
+	.no_dead_strip plt__rgctx_fetch_331
+plt__rgctx_fetch_331:
 _p_808:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2816]
 br x16
-.word 29776
-	.no_dead_strip plt__rgctx_fetch_331
-plt__rgctx_fetch_331:
+.word 29790
+	.no_dead_strip plt__rgctx_fetch_332
+plt__rgctx_fetch_332:
 _p_809:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2824]
 br x16
-.word 29788
-	.no_dead_strip plt__rgctx_fetch_332
-plt__rgctx_fetch_332:
+.word 29836
+	.no_dead_strip plt__rgctx_fetch_333
+plt__rgctx_fetch_333:
 _p_810:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2832]
 br x16
-.word 29834
-	.no_dead_strip plt__rgctx_fetch_333
-plt__rgctx_fetch_333:
+.word 29862
+	.no_dead_strip plt__rgctx_fetch_334
+plt__rgctx_fetch_334:
 _p_811:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2840]
 br x16
-.word 29860
-	.no_dead_strip plt__rgctx_fetch_334
-plt__rgctx_fetch_334:
+.word 29872
+	.no_dead_strip plt__rgctx_fetch_335
+plt__rgctx_fetch_335:
 _p_812:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2848]
 br x16
-.word 29870
-	.no_dead_strip plt__rgctx_fetch_335
-plt__rgctx_fetch_335:
+.word 29888
+	.no_dead_strip plt_System_Collections_Generic_Comparer_1_System_nfloat_get_Default
+plt_System_Collections_Generic_Comparer_1_System_nfloat_get_Default:
 _p_813:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2856]
 br x16
-.word 29886
-	.no_dead_strip plt_System_Collections_Generic_Comparer_1_System_nfloat_get_Default
-plt_System_Collections_Generic_Comparer_1_System_nfloat_get_Default:
+.word 29904
+	.no_dead_strip plt_System_Linq_Error_NoElements
+plt_System_Linq_Error_NoElements:
 _p_814:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2864]
 br x16
-.word 29902
-	.no_dead_strip plt_System_Linq_Error_NoElements
-plt_System_Linq_Error_NoElements:
+.word 29924
+	.no_dead_strip plt_System_Array_InternalArray__get_Item_System_nfloat_int
+plt_System_Array_InternalArray__get_Item_System_nfloat_int:
 _p_815:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2872]
 br x16
-.word 29922
-	.no_dead_strip plt_System_Array_InternalArray__get_Item_System_nfloat_int
-plt_System_Array_InternalArray__get_Item_System_nfloat_int:
+.word 29929
+	.no_dead_strip plt_System_Array_InternalEnumerator_1_System_nfloat_get_Current
+plt_System_Array_InternalEnumerator_1_System_nfloat_get_Current:
 _p_816:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2880]
 br x16
-.word 29927
-	.no_dead_strip plt_System_Array_InternalEnumerator_1_System_nfloat_get_Current
-plt_System_Array_InternalEnumerator_1_System_nfloat_get_Current:
+.word 29950
+	.no_dead_strip plt_System_Array_InternalEnumerator_1_System_nfloat__ctor_System_Array
+plt_System_Array_InternalEnumerator_1_System_nfloat__ctor_System_Array:
 _p_817:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2888]
 br x16
-.word 29948
-	.no_dead_strip plt_System_Array_InternalEnumerator_1_System_nfloat__ctor_System_Array
-plt_System_Array_InternalEnumerator_1_System_nfloat__ctor_System_Array:
+.word 29970
+	.no_dead_strip plt_System_Collections_Generic_Comparer_1_System_nfloat_CreateComparer
+plt_System_Collections_Generic_Comparer_1_System_nfloat_CreateComparer:
 _p_818:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2896]
 br x16
-.word 29968
-	.no_dead_strip plt_System_Collections_Generic_Comparer_1_System_nfloat_CreateComparer
-plt_System_Collections_Generic_Comparer_1_System_nfloat_CreateComparer:
+.word 29990
+	.no_dead_strip plt_System_RuntimeType_CreateInstanceForAnotherGenericParameter_System_Type_System_RuntimeType
+plt_System_RuntimeType_CreateInstanceForAnotherGenericParameter_System_Type_System_RuntimeType:
 _p_819:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2904]
 br x16
-.word 29988
-	.no_dead_strip plt_System_RuntimeType_CreateInstanceForAnotherGenericParameter_System_Type_System_RuntimeType
-plt_System_RuntimeType_CreateInstanceForAnotherGenericParameter_System_Type_System_RuntimeType:
+.word 30010
+	.no_dead_strip plt_System_nfloat_CompareTo_System_nfloat
+plt_System_nfloat_CompareTo_System_nfloat:
 _p_820:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2912]
 br x16
-.word 30008
-	.no_dead_strip plt_System_nfloat_CompareTo_System_nfloat
-plt_System_nfloat_CompareTo_System_nfloat:
+.word 30015
+	.no_dead_strip plt_System_Linq_Enumerable_WhereSelectArrayIterator_2_Xamarin_Auth_FormAuthenticatorField_System_nfloat__ctor_Xamarin_Auth_FormAuthenticatorField___System_Func_2_Xamarin_Auth_FormAuthenticatorField_bool_System_Func_2_Xamarin_Auth_FormAuthenticatorField_System_nfloat
+plt_System_Linq_Enumerable_WhereSelectArrayIterator_2_Xamarin_Auth_FormAuthenticatorField_System_nfloat__ctor_Xamarin_Auth_FormAuthenticatorField___System_Func_2_Xamarin_Auth_FormAuthenticatorField_bool_System_Func_2_Xamarin_Auth_FormAuthenticatorField_System_nfloat:
 _p_821:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2920]
 br x16
-.word 30013
-	.no_dead_strip plt_System_Linq_Enumerable_WhereSelectArrayIterator_2_Xamarin_Auth_FormAuthenticatorField_System_nfloat__ctor_Xamarin_Auth_FormAuthenticatorField___System_Func_2_Xamarin_Auth_FormAuthenticatorField_bool_System_Func_2_Xamarin_Auth_FormAuthenticatorField_System_nfloat
-plt_System_Linq_Enumerable_WhereSelectArrayIterator_2_Xamarin_Auth_FormAuthenticatorField_System_nfloat__ctor_Xamarin_Auth_FormAuthenticatorField___System_Func_2_Xamarin_Auth_FormAuthenticatorField_bool_System_Func_2_Xamarin_Auth_FormAuthenticatorField_System_nfloat:
+.word 30020
+	.no_dead_strip plt_System_Linq_Enumerable_WhereSelectListIterator_2_Xamarin_Auth_FormAuthenticatorField_System_nfloat__ctor_System_Collections_Generic_List_1_Xamarin_Auth_FormAuthenticatorField_System_Func_2_Xamarin_Auth_FormAuthenticatorField_bool_System_Func_2_Xamarin_Auth_FormAuthenticatorField_System_nfloat
+plt_System_Linq_Enumerable_WhereSelectListIterator_2_Xamarin_Auth_FormAuthenticatorField_System_nfloat__ctor_System_Collections_Generic_List_1_Xamarin_Auth_FormAuthenticatorField_System_Func_2_Xamarin_Auth_FormAuthenticatorField_bool_System_Func_2_Xamarin_Auth_FormAuthenticatorField_System_nfloat:
 _p_822:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2928]
 br x16
-.word 30018
-	.no_dead_strip plt_System_Linq_Enumerable_WhereSelectListIterator_2_Xamarin_Auth_FormAuthenticatorField_System_nfloat__ctor_System_Collections_Generic_List_1_Xamarin_Auth_FormAuthenticatorField_System_Func_2_Xamarin_Auth_FormAuthenticatorField_bool_System_Func_2_Xamarin_Auth_FormAuthenticatorField_System_nfloat
-plt_System_Linq_Enumerable_WhereSelectListIterator_2_Xamarin_Auth_FormAuthenticatorField_System_nfloat__ctor_System_Collections_Generic_List_1_Xamarin_Auth_FormAuthenticatorField_System_Func_2_Xamarin_Auth_FormAuthenticatorField_bool_System_Func_2_Xamarin_Auth_FormAuthenticatorField_System_nfloat:
+.word 30042
+	.no_dead_strip plt_System_Linq_Enumerable_WhereSelectEnumerableIterator_2_Xamarin_Auth_FormAuthenticatorField_System_nfloat__ctor_System_Collections_Generic_IEnumerable_1_Xamarin_Auth_FormAuthenticatorField_System_Func_2_Xamarin_Auth_FormAuthenticatorField_bool_System_Func_2_Xamarin_Auth_FormAuthenticatorField_System_nfloat
+plt_System_Linq_Enumerable_WhereSelectEnumerableIterator_2_Xamarin_Auth_FormAuthenticatorField_System_nfloat__ctor_System_Collections_Generic_IEnumerable_1_Xamarin_Auth_FormAuthenticatorField_System_Func_2_Xamarin_Auth_FormAuthenticatorField_bool_System_Func_2_Xamarin_Auth_FormAuthenticatorField_System_nfloat:
 _p_823:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2936]
 br x16
-.word 30040
-	.no_dead_strip plt_System_Linq_Enumerable_WhereSelectEnumerableIterator_2_Xamarin_Auth_FormAuthenticatorField_System_nfloat__ctor_System_Collections_Generic_IEnumerable_1_Xamarin_Auth_FormAuthenticatorField_System_Func_2_Xamarin_Auth_FormAuthenticatorField_bool_System_Func_2_Xamarin_Auth_FormAuthenticatorField_System_nfloat
-plt_System_Linq_Enumerable_WhereSelectEnumerableIterator_2_Xamarin_Auth_FormAuthenticatorField_System_nfloat__ctor_System_Collections_Generic_IEnumerable_1_Xamarin_Auth_FormAuthenticatorField_System_Func_2_Xamarin_Auth_FormAuthenticatorField_bool_System_Func_2_Xamarin_Auth_FormAuthenticatorField_System_nfloat:
+.word 30064
+	.no_dead_strip plt_System_Runtime_ExceptionServices_ExceptionDispatchInfo_Capture_System_Exception
+plt_System_Runtime_ExceptionServices_ExceptionDispatchInfo_Capture_System_Exception:
 _p_824:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2944]
 br x16
-.word 30062
-	.no_dead_strip plt_System_Runtime_ExceptionServices_ExceptionDispatchInfo_Capture_System_Exception
-plt_System_Runtime_ExceptionServices_ExceptionDispatchInfo_Capture_System_Exception:
+.word 30086
+	.no_dead_strip plt__rgctx_fetch_336
+plt__rgctx_fetch_336:
 _p_825:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2952]
 br x16
-.word 30084
-	.no_dead_strip plt__rgctx_fetch_336
-plt__rgctx_fetch_336:
+.word 30119
+	.no_dead_strip plt__rgctx_fetch_337
+plt__rgctx_fetch_337:
 _p_826:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2960]
 br x16
-.word 30117
-	.no_dead_strip plt__rgctx_fetch_337
-plt__rgctx_fetch_337:
+.word 30131
+	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncMethodBuilderCore_GetCompletionAction_System_Threading_Tasks_Task_System_Runtime_CompilerServices_AsyncMethodBuilderCore_MoveNextRunner_
+plt_System_Runtime_CompilerServices_AsyncMethodBuilderCore_GetCompletionAction_System_Threading_Tasks_Task_System_Runtime_CompilerServices_AsyncMethodBuilderCore_MoveNextRunner_:
 _p_827:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2968]
 br x16
-.word 30129
-	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncMethodBuilderCore_GetCompletionAction_System_Threading_Tasks_Task_System_Runtime_CompilerServices_AsyncMethodBuilderCore_MoveNextRunner_
-plt_System_Runtime_CompilerServices_AsyncMethodBuilderCore_GetCompletionAction_System_Threading_Tasks_Task_System_Runtime_CompilerServices_AsyncMethodBuilderCore_MoveNextRunner_:
+.word 30158
+	.no_dead_strip plt__jit_icall_mono_gc_wbarrier_value_copy_bitmap
+plt__jit_icall_mono_gc_wbarrier_value_copy_bitmap:
 _p_828:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2976]
 br x16
-.word 30156
-	.no_dead_strip plt__jit_icall_mono_gc_wbarrier_value_copy_bitmap
-plt__jit_icall_mono_gc_wbarrier_value_copy_bitmap:
+.word 30163
+	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncMethodBuilderCore_PostBoxInitialization_System_Runtime_CompilerServices_IAsyncStateMachine_System_Runtime_CompilerServices_AsyncMethodBuilderCore_MoveNextRunner_System_Threading_Tasks_Task
+plt_System_Runtime_CompilerServices_AsyncMethodBuilderCore_PostBoxInitialization_System_Runtime_CompilerServices_IAsyncStateMachine_System_Runtime_CompilerServices_AsyncMethodBuilderCore_MoveNextRunner_System_Threading_Tasks_Task:
 _p_829:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2984]
 br x16
-.word 30161
-	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncMethodBuilderCore_PostBoxInitialization_System_Runtime_CompilerServices_IAsyncStateMachine_System_Runtime_CompilerServices_AsyncMethodBuilderCore_MoveNextRunner_System_Threading_Tasks_Task
-plt_System_Runtime_CompilerServices_AsyncMethodBuilderCore_PostBoxInitialization_System_Runtime_CompilerServices_IAsyncStateMachine_System_Runtime_CompilerServices_AsyncMethodBuilderCore_MoveNextRunner_System_Threading_Tasks_Task:
+.word 30200
+	.no_dead_strip plt_System_Runtime_CompilerServices_ConfiguredTaskAwaitable_1_ConfiguredTaskAwaiter_string_UnsafeOnCompleted_System_Action
+plt_System_Runtime_CompilerServices_ConfiguredTaskAwaitable_1_ConfiguredTaskAwaiter_string_UnsafeOnCompleted_System_Action:
 _p_830:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #2992]
 br x16
-.word 30198
-	.no_dead_strip plt_System_Runtime_CompilerServices_ConfiguredTaskAwaitable_1_ConfiguredTaskAwaiter_string_UnsafeOnCompleted_System_Action
-plt_System_Runtime_CompilerServices_ConfiguredTaskAwaitable_1_ConfiguredTaskAwaiter_string_UnsafeOnCompleted_System_Action:
+.word 30205
+	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncMethodBuilderCore_ThrowAsync_System_Exception_System_Threading_SynchronizationContext
+plt_System_Runtime_CompilerServices_AsyncMethodBuilderCore_ThrowAsync_System_Exception_System_Threading_SynchronizationContext:
 _p_831:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3000]
 br x16
-.word 30203
-	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncMethodBuilderCore_ThrowAsync_System_Exception_System_Threading_SynchronizationContext
-plt_System_Runtime_CompilerServices_AsyncMethodBuilderCore_ThrowAsync_System_Exception_System_Threading_SynchronizationContext:
+.word 30227
+	.no_dead_strip plt_System_Runtime_CompilerServices_ConfiguredTaskAwaitable_1_ConfiguredTaskAwaiter_System_Net_Http_HttpResponseMessage_UnsafeOnCompleted_System_Action
+plt_System_Runtime_CompilerServices_ConfiguredTaskAwaitable_1_ConfiguredTaskAwaiter_System_Net_Http_HttpResponseMessage_UnsafeOnCompleted_System_Action:
 _p_832:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3008]
 br x16
-.word 30225
-	.no_dead_strip plt_System_Runtime_CompilerServices_ConfiguredTaskAwaitable_1_ConfiguredTaskAwaiter_System_Net_Http_HttpResponseMessage_UnsafeOnCompleted_System_Action
-plt_System_Runtime_CompilerServices_ConfiguredTaskAwaitable_1_ConfiguredTaskAwaiter_System_Net_Http_HttpResponseMessage_UnsafeOnCompleted_System_Action:
+.word 30232
+	.no_dead_strip plt__rgctx_fetch_338
+plt__rgctx_fetch_338:
 _p_833:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3016]
 br x16
-.word 30230
-	.no_dead_strip plt__rgctx_fetch_338
-plt__rgctx_fetch_338:
+.word 30272
+	.no_dead_strip plt__rgctx_fetch_339
+plt__rgctx_fetch_339:
 _p_834:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3024]
 br x16
-.word 30270
-	.no_dead_strip plt__rgctx_fetch_339
-plt__rgctx_fetch_339:
+.word 30325
+	.no_dead_strip plt__rgctx_fetch_340
+plt__rgctx_fetch_340:
 _p_835:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3032]
 br x16
-.word 30323
-	.no_dead_strip plt__rgctx_fetch_340
-plt__rgctx_fetch_340:
+.word 30337
+	.no_dead_strip plt__rgctx_fetch_341
+plt__rgctx_fetch_341:
 _p_836:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3040]
 br x16
-.word 30335
-	.no_dead_strip plt__rgctx_fetch_341
-plt__rgctx_fetch_341:
+.word 30391
+	.no_dead_strip plt__rgctx_fetch_342
+plt__rgctx_fetch_342:
 _p_837:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3048]
 br x16
-.word 30389
-	.no_dead_strip plt__rgctx_fetch_342
-plt__rgctx_fetch_342:
+.word 30403
+	.no_dead_strip plt__rgctx_fetch_343
+plt__rgctx_fetch_343:
 _p_838:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3056]
 br x16
-.word 30401
-	.no_dead_strip plt__rgctx_fetch_343
-plt__rgctx_fetch_343:
+.word 30448
+	.no_dead_strip plt__rgctx_fetch_344
+plt__rgctx_fetch_344:
 _p_839:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3064]
 br x16
-.word 30446
-	.no_dead_strip plt__rgctx_fetch_344
-plt__rgctx_fetch_344:
+.word 30458
+	.no_dead_strip plt_System_Collections_Generic_EqualityComparer_1_T_REF_CreateComparer
+plt_System_Collections_Generic_EqualityComparer_1_T_REF_CreateComparer:
 _p_840:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3072]
 br x16
-.word 30456
-	.no_dead_strip plt_System_Collections_Generic_EqualityComparer_1_T_REF_CreateComparer
-plt_System_Collections_Generic_EqualityComparer_1_T_REF_CreateComparer:
+.word 30468
+	.no_dead_strip plt__rgctx_fetch_345
+plt__rgctx_fetch_345:
 _p_841:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3080]
 br x16
-.word 30466
-	.no_dead_strip plt__rgctx_fetch_345
-plt__rgctx_fetch_345:
+.word 30505
+	.no_dead_strip plt__rgctx_fetch_346
+plt__rgctx_fetch_346:
 _p_842:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3088]
 br x16
-.word 30503
-	.no_dead_strip plt__rgctx_fetch_346
-plt__rgctx_fetch_346:
+.word 30515
+	.no_dead_strip plt__rgctx_fetch_347
+plt__rgctx_fetch_347:
 _p_843:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3096]
 br x16
-.word 30513
-	.no_dead_strip plt__rgctx_fetch_347
-plt__rgctx_fetch_347:
+.word 30525
+	.no_dead_strip plt_System_Linq_Enumerable_Iterator_1_TResult_REF__ctor
+plt_System_Linq_Enumerable_Iterator_1_TResult_REF__ctor:
 _p_844:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3104]
 br x16
-.word 30523
-	.no_dead_strip plt_System_Linq_Enumerable_Iterator_1_TResult_REF__ctor
-plt_System_Linq_Enumerable_Iterator_1_TResult_REF__ctor:
+.word 30559
+	.no_dead_strip plt_System_Linq_Enumerable_Iterator_1_TResult_REF__ctor_0
+plt_System_Linq_Enumerable_Iterator_1_TResult_REF__ctor_0:
 _p_845:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3112]
 br x16
-.word 30557
-	.no_dead_strip plt_System_Linq_Enumerable_Iterator_1_TResult_REF__ctor_0
-plt_System_Linq_Enumerable_Iterator_1_TResult_REF__ctor_0:
+.word 30589
+	.no_dead_strip plt_System_Linq_Enumerable_Iterator_1_TResult_REF__ctor_1
+plt_System_Linq_Enumerable_Iterator_1_TResult_REF__ctor_1:
 _p_846:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3120]
 br x16
-.word 30587
-	.no_dead_strip plt_System_Linq_Enumerable_Iterator_1_TResult_REF__ctor_1
-plt_System_Linq_Enumerable_Iterator_1_TResult_REF__ctor_1:
+.word 30619
+	.no_dead_strip plt__rgctx_fetch_348
+plt__rgctx_fetch_348:
 _p_847:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3128]
 br x16
-.word 30617
-	.no_dead_strip plt__rgctx_fetch_348
-plt__rgctx_fetch_348:
+.word 30668
+	.no_dead_strip plt__rgctx_fetch_349
+plt__rgctx_fetch_349:
 _p_848:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3136]
 br x16
-.word 30666
-	.no_dead_strip plt__rgctx_fetch_349
-plt__rgctx_fetch_349:
+.word 30680
+	.no_dead_strip plt__rgctx_fetch_350
+plt__rgctx_fetch_350:
 _p_849:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3144]
 br x16
-.word 30678
-	.no_dead_strip plt__rgctx_fetch_350
-plt__rgctx_fetch_350:
+.word 30716
+	.no_dead_strip plt__rgctx_fetch_351
+plt__rgctx_fetch_351:
 _p_850:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3152]
 br x16
-.word 30714
-	.no_dead_strip plt__rgctx_fetch_351
-plt__rgctx_fetch_351:
+.word 30752
+	.no_dead_strip plt__rgctx_fetch_352
+plt__rgctx_fetch_352:
 _p_851:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3160]
 br x16
-.word 30750
-	.no_dead_strip plt__rgctx_fetch_352
-plt__rgctx_fetch_352:
+.word 30788
+	.no_dead_strip plt__rgctx_fetch_353
+plt__rgctx_fetch_353:
 _p_852:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3168]
 br x16
-.word 30786
-	.no_dead_strip plt__rgctx_fetch_353
-plt__rgctx_fetch_353:
+.word 30834
+	.no_dead_strip plt_System_Collections_Comparer_Compare_object_object
+plt_System_Collections_Comparer_Compare_object_object:
 _p_853:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3176]
 br x16
-.word 30832
-	.no_dead_strip plt_System_Collections_Comparer_Compare_object_object
-plt_System_Collections_Comparer_Compare_object_object:
+.word 30860
+	.no_dead_strip plt_System_Linq_Enumerable_Iterator_1_System_nfloat__ctor
+plt_System_Linq_Enumerable_Iterator_1_System_nfloat__ctor:
 _p_854:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3184]
 br x16
-.word 30858
-	.no_dead_strip plt_System_Linq_Enumerable_Iterator_1_System_nfloat__ctor
-plt_System_Linq_Enumerable_Iterator_1_System_nfloat__ctor:
+.word 30865
+	.no_dead_strip plt_System_Linq_Enumerable_Iterator_1_System_nfloat_Dispose
+plt_System_Linq_Enumerable_Iterator_1_System_nfloat_Dispose:
 _p_855:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3192]
 br x16
-.word 30863
-	.no_dead_strip plt_System_Linq_Enumerable_Iterator_1_System_nfloat_Dispose
-plt_System_Linq_Enumerable_Iterator_1_System_nfloat_Dispose:
+.word 30885
+	.no_dead_strip plt_System_Linq_Enumerable_WhereEnumerableIterator_1_System_nfloat__ctor_System_Collections_Generic_IEnumerable_1_System_nfloat_System_Func_2_System_nfloat_bool
+plt_System_Linq_Enumerable_WhereEnumerableIterator_1_System_nfloat__ctor_System_Collections_Generic_IEnumerable_1_System_nfloat_System_Func_2_System_nfloat_bool:
 _p_856:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3200]
 br x16
-.word 30883
-	.no_dead_strip plt_System_Linq_Enumerable_WhereEnumerableIterator_1_System_nfloat__ctor_System_Collections_Generic_IEnumerable_1_System_nfloat_System_Func_2_System_nfloat_bool
-plt_System_Linq_Enumerable_WhereEnumerableIterator_1_System_nfloat__ctor_System_Collections_Generic_IEnumerable_1_System_nfloat_System_Func_2_System_nfloat_bool:
+.word 30905
+	.no_dead_strip plt_System_Threading_Thread_get_CurrentThread
+plt_System_Threading_Thread_get_CurrentThread:
 _p_857:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3208]
 br x16
-.word 30903
-	.no_dead_strip plt_System_Threading_Thread_get_CurrentThread
-plt_System_Threading_Thread_get_CurrentThread:
+.word 30925
+	.no_dead_strip plt_System_Threading_Thread_get_ManagedThreadId
+plt_System_Threading_Thread_get_ManagedThreadId:
 _p_858:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3216]
 br x16
-.word 30923
-	.no_dead_strip plt_System_Threading_Thread_get_ManagedThreadId
-plt_System_Threading_Thread_get_ManagedThreadId:
+.word 30930
+	.no_dead_strip plt_System_Linq_Enumerable_Iterator_1_System_nfloat_GetEnumerator
+plt_System_Linq_Enumerable_Iterator_1_System_nfloat_GetEnumerator:
 _p_859:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3224]
 br x16
-.word 30928
-	.no_dead_strip plt_System_Linq_Enumerable_Iterator_1_System_nfloat_GetEnumerator
-plt_System_Linq_Enumerable_Iterator_1_System_nfloat_GetEnumerator:
+.word 30935
+	.no_dead_strip plt_System_Collections_Generic_List_1_Xamarin_Auth_FormAuthenticatorField_GetEnumerator
+plt_System_Collections_Generic_List_1_Xamarin_Auth_FormAuthenticatorField_GetEnumerator:
 _p_860:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3232]
 br x16
-.word 30933
-	.no_dead_strip plt_System_Collections_Generic_List_1_Xamarin_Auth_FormAuthenticatorField_GetEnumerator
-plt_System_Collections_Generic_List_1_Xamarin_Auth_FormAuthenticatorField_GetEnumerator:
+.word 30955
+	.no_dead_strip plt_System_Collections_Generic_List_1_Enumerator_Xamarin_Auth_FormAuthenticatorField_MoveNext
+plt_System_Collections_Generic_List_1_Enumerator_Xamarin_Auth_FormAuthenticatorField_MoveNext:
 _p_861:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3240]
 br x16
-.word 30953
-	.no_dead_strip plt_System_Collections_Generic_List_1_Enumerator_Xamarin_Auth_FormAuthenticatorField_MoveNext
-plt_System_Collections_Generic_List_1_Enumerator_Xamarin_Auth_FormAuthenticatorField_MoveNext:
+.word 30975
+	.no_dead_strip plt__rgctx_fetch_354
+plt__rgctx_fetch_354:
 _p_862:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3248]
 br x16
-.word 30973
-	.no_dead_strip plt__rgctx_fetch_354
-plt__rgctx_fetch_354:
+.word 31011
+	.no_dead_strip plt_System_Type_op_Equality_System_Type_System_Type
+plt_System_Type_op_Equality_System_Type_System_Type:
 _p_863:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3256]
 br x16
-.word 31009
-	.no_dead_strip plt_System_Type_op_Equality_System_Type_System_Type
-plt_System_Type_op_Equality_System_Type_System_Type:
+.word 31021
+	.no_dead_strip plt_System_Collections_Generic_ByteEqualityComparer__ctor
+plt_System_Collections_Generic_ByteEqualityComparer__ctor:
 _p_864:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3264]
 br x16
-.word 31019
-	.no_dead_strip plt_System_Collections_Generic_ByteEqualityComparer__ctor
-plt_System_Collections_Generic_ByteEqualityComparer__ctor:
+.word 31026
+	.no_dead_strip plt__rgctx_fetch_355
+plt__rgctx_fetch_355:
 _p_865:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3272]
 br x16
-.word 31024
-	.no_dead_strip plt__rgctx_fetch_355
-plt__rgctx_fetch_355:
+.word 31031
+	.no_dead_strip plt_System_Collections_Generic_InternalStringComparer__ctor
+plt_System_Collections_Generic_InternalStringComparer__ctor:
 _p_866:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3280]
 br x16
-.word 31029
-	.no_dead_strip plt_System_Collections_Generic_InternalStringComparer__ctor
-plt_System_Collections_Generic_InternalStringComparer__ctor:
+.word 31041
+	.no_dead_strip plt__rgctx_fetch_356
+plt__rgctx_fetch_356:
 _p_867:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3288]
 br x16
-.word 31039
-	.no_dead_strip plt__rgctx_fetch_356
-plt__rgctx_fetch_356:
+.word 31055
+	.no_dead_strip plt_System_Enum_GetUnderlyingType_System_Type
+plt_System_Enum_GetUnderlyingType_System_Type:
 _p_868:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3296]
 br x16
-.word 31053
-	.no_dead_strip plt_System_Enum_GetUnderlyingType_System_Type
-plt_System_Enum_GetUnderlyingType_System_Type:
+.word 31067
+	.no_dead_strip plt_System_Type_GetTypeCode_System_Type
+plt_System_Type_GetTypeCode_System_Type:
 _p_869:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3304]
 br x16
-.word 31065
-	.no_dead_strip plt_System_Type_GetTypeCode_System_Type
-plt_System_Type_GetTypeCode_System_Type:
+.word 31072
+	.no_dead_strip plt__rgctx_fetch_357
+plt__rgctx_fetch_357:
 _p_870:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3312]
 br x16
-.word 31070
-	.no_dead_strip plt__rgctx_fetch_357
-plt__rgctx_fetch_357:
+.word 31086
+	.no_dead_strip plt_System_Collections_Generic_ObjectEqualityComparer_1_T_REF__ctor
+plt_System_Collections_Generic_ObjectEqualityComparer_1_T_REF__ctor:
 _p_871:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3320]
 br x16
-.word 31084
-	.no_dead_strip plt_System_Collections_Generic_ObjectEqualityComparer_1_T_REF__ctor
-plt_System_Collections_Generic_ObjectEqualityComparer_1_T_REF__ctor:
+.word 31098
+	.no_dead_strip plt__rgctx_fetch_358
+plt__rgctx_fetch_358:
 _p_872:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3328]
 br x16
-.word 31096
-	.no_dead_strip plt__rgctx_fetch_358
-plt__rgctx_fetch_358:
+.word 31137
+	.no_dead_strip plt__rgctx_fetch_359
+plt__rgctx_fetch_359:
 _p_873:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3336]
 br x16
-.word 31135
-	.no_dead_strip plt__rgctx_fetch_359
-plt__rgctx_fetch_359:
+.word 31147
+	.no_dead_strip plt__rgctx_fetch_360
+plt__rgctx_fetch_360:
 _p_874:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3344]
 br x16
-.word 31145
-	.no_dead_strip plt__rgctx_fetch_360
-plt__rgctx_fetch_360:
+.word 31166
+	.no_dead_strip plt__rgctx_fetch_361
+plt__rgctx_fetch_361:
 _p_875:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3352]
 br x16
-.word 31164
-	.no_dead_strip plt__rgctx_fetch_361
-plt__rgctx_fetch_361:
+.word 31187
+	.no_dead_strip plt__rgctx_fetch_362
+plt__rgctx_fetch_362:
 _p_876:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3360]
 br x16
-.word 31185
-	.no_dead_strip plt__rgctx_fetch_362
-plt__rgctx_fetch_362:
+.word 31199
+	.no_dead_strip plt__rgctx_fetch_363
+plt__rgctx_fetch_363:
 _p_877:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3368]
 br x16
-.word 31197
-	.no_dead_strip plt__rgctx_fetch_363
-plt__rgctx_fetch_363:
+.word 31244
+	.no_dead_strip plt__rgctx_fetch_364
+plt__rgctx_fetch_364:
 _p_878:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3376]
 br x16
-.word 31242
-	.no_dead_strip plt__rgctx_fetch_364
-plt__rgctx_fetch_364:
+.word 31254
+	.no_dead_strip plt__rgctx_fetch_365
+plt__rgctx_fetch_365:
 _p_879:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3384]
 br x16
-.word 31252
-	.no_dead_strip plt__rgctx_fetch_365
-plt__rgctx_fetch_365:
+.word 31264
+	.no_dead_strip plt_System_Linq_Enumerable_CombinePredicates_System_nfloat_System_Func_2_System_nfloat_bool_System_Func_2_System_nfloat_bool
+plt_System_Linq_Enumerable_CombinePredicates_System_nfloat_System_Func_2_System_nfloat_bool_System_Func_2_System_nfloat_bool:
 _p_880:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3392]
 br x16
-.word 31262
-	.no_dead_strip plt_System_Linq_Enumerable_CombinePredicates_System_nfloat_System_Func_2_System_nfloat_bool_System_Func_2_System_nfloat_bool
-plt_System_Linq_Enumerable_CombinePredicates_System_nfloat_System_Func_2_System_nfloat_bool_System_Func_2_System_nfloat_bool:
+.word 31289
+	.no_dead_strip plt_System_Collections_Generic_EqualityComparer_1_T_REF__ctor
+plt_System_Collections_Generic_EqualityComparer_1_T_REF__ctor:
 _p_881:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3400]
 br x16
-.word 31287
-	.no_dead_strip plt_System_Collections_Generic_EqualityComparer_1_T_REF__ctor
-plt_System_Collections_Generic_EqualityComparer_1_T_REF__ctor:
+.word 31319
+	.no_dead_strip plt__rgctx_fetch_366
+plt__rgctx_fetch_366:
 _p_882:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3408]
 br x16
-.word 31317
-	.no_dead_strip plt__rgctx_fetch_366
-plt__rgctx_fetch_366:
+.word 31367
+	.no_dead_strip plt__rgctx_fetch_367
+plt__rgctx_fetch_367:
 _p_883:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3416]
 br x16
-.word 31365
-	.no_dead_strip plt__rgctx_fetch_367
-plt__rgctx_fetch_367:
+.word 31412
+	.no_dead_strip plt__rgctx_fetch_368
+plt__rgctx_fetch_368:
 _p_884:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3424]
 br x16
-.word 31410
-	.no_dead_strip plt__rgctx_fetch_368
-plt__rgctx_fetch_368:
+.word 31422
+	.no_dead_strip plt__rgctx_fetch_369
+plt__rgctx_fetch_369:
 _p_885:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3432]
 br x16
-.word 31420
-	.no_dead_strip plt__rgctx_fetch_369
-plt__rgctx_fetch_369:
+.word 31441
+	.no_dead_strip plt__rgctx_fetch_370
+plt__rgctx_fetch_370:
 _p_886:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3440]
 br x16
-.word 31439
-	.no_dead_strip plt__rgctx_fetch_370
-plt__rgctx_fetch_370:
+.word 31462
+	.no_dead_strip plt__rgctx_fetch_371
+plt__rgctx_fetch_371:
 _p_887:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3448]
 br x16
-.word 31460
-	.no_dead_strip plt__rgctx_fetch_371
-plt__rgctx_fetch_371:
+.word 31474
+	.no_dead_strip plt__rgctx_fetch_372
+plt__rgctx_fetch_372:
 _p_888:
 adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
 add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
 ldr x16, [x16, #3456]
 br x16
-.word 31472
-	.no_dead_strip plt__rgctx_fetch_372
-plt__rgctx_fetch_372:
-_p_889:
-adrp x16, mono_aot_Xamarin_Auth_got@PAGE+8192
-add x16, x16, mono_aot_Xamarin_Auth_got@PAGEOFF
-ldr x16, [x16, #3464]
-br x16
-.word 31526
+.word 31528
 plt_end:
 .section __DATA, __bss
 	.align 3
-.lcomm mono_aot_Xamarin_Auth_got, 11664
+.lcomm mono_aot_Xamarin_Auth_got, 11656
 got_end:
 .section __TEXT, __const
 	.align 3
@@ -51343,13 +51337,13 @@ _mono_aot_file_info:
 	.align 3
 	.quad unbox_trampoline_addresses
 
-	.long 568,11664,890,799,66,923871743,0,45024
+	.long 568,11656,889,799,66,923871743,0,45026
 	.long 128,8,8,10,0,15,64912,19880
 	.long 19176,16456,0,17696,19056,16936,0,12848
 	.long 1160,0,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0
-	.byte 153,94,14,240,253,94,3,118,114,15,51,33,235,9,124,240
+	.byte 139,145,149,57,197,85,37,116,239,204,115,86,253,178,36,1
 	.globl _mono_aot_module_Xamarin_Auth_info
 	.align 3
 _mono_aot_module_Xamarin_Auth_info:

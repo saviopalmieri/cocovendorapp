@@ -32,6 +32,8 @@ namespace CocoVendorApp
 			InfoLido.chair_price = prezzoSdraio;
 			InfoLido.cabana_price = prezzoCabine;
 
+			InfoLido.cabana_note = txtDescrizionePacchetti.Text;
+
 			await Navigation.PushAsync(new Setup6Page(InfoLido));
 		}
 	}

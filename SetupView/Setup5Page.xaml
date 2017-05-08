@@ -121,7 +121,7 @@
 						<Label TextColor="#717171" Text="DESCRIZIONE PACCHETTI" FontSize="14" Margin="10,10,10,5"
 							HorizontalOptions="Start" HorizontalTextAlignment="Start" VerticalOptions="Start"/>
 
-						<Entry Placeholder="Es: il pacchetto prevede un ombrellone e due lettini." HeightRequest="70" HorizontalOptions="FillAndExpand" VerticalOptions="Start" 
+						<Entry Placeholder="Es: il pacchetto prevede un ombrellone e due lettini." HeightRequest="60" HorizontalOptions="FillAndExpand" VerticalOptions="Start" 
 							HorizontalTextAlignment="Start" TextColor="Black" x:Name="txtDescrizionePacchetti" Margin="10,0,10,0" />
 
 						<Label TextColor="#717171" Text="La Descrizione dei Pacchetti è indicata nel caso di vendita di pacchetti predefiniti (es: ombrellone + 2 lettini)." FontSize="14" Margin="10,5,10,5"

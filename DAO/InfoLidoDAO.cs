@@ -215,6 +215,7 @@ namespace CocoVendorApp
 				open_season_date = mInfoLido.open_season_date.ToString("yyyyMMdd"),
 				close_season_date = mInfoLido.close_season_date.ToString("yyyyMMdd"),
 				mInfoLido.cabana_qty,
+				mInfoLido.cabana_note,
 				lido_zone_array = (from x in mInfoLido.lido_zone_array
 															   select new
 															   {
@@ -277,6 +278,7 @@ namespace CocoVendorApp
 			listParam.Add(new KeyValuePair<string, string>("sun_bed_price", mInfoLido.sun_bed_price.ToString()));
 			listParam.Add(new KeyValuePair<string, string>("umbrella_price", mInfoLido.umbrella_price.ToString()));
 			listParam.Add(new KeyValuePair<string, string>("chair_price", mInfoLido.chair_price.ToString()));
+			listParam.Add(new KeyValuePair<string, string>("cabana_note", mInfoLido.cabana_note));
 
 			Task<HttpResponseMessage> response = null;
 			response = ExecuteRequest(ConnectionHelper.WebServiceCallType.Post, listParam, url, apikey);
@@ -328,6 +330,7 @@ namespace CocoVendorApp
 			var json = JsonConvert.SerializeObject(new
 			{
 				cabana_qty = mInfoLido.cabana_qty,
+				//cabana_note = mInfoLido.cabana_note,
 				lido_zone_array = (from x in mInfoLido.lido_zone_array
 								   select new
 								   {
@@ -520,7 +523,7 @@ namespace CocoVendorApp
 			return JsonConvert.DeserializeObject<WebServiceResponseDTO<IList<DisponibilitaDTO>>>(ctn.Result);
 		}
 
-		public WebServiceResponseDTO<object> AggiornaDisponibilitaLido(string apikey, string email, DisponibilitaDTO disp)
+		public WebServiceResponseDTO<object> AggiornaDisponibilitaLido(string apikey, string email, DisponibilitaDTO disp, int firstzone = 0)
 		{
 			string url = "vendor/booking/insert-fake";
 			//long idLido = GetIdLido(email, apikey);
@@ -536,7 +539,7 @@ namespace CocoVendorApp
 									 zone_id = x.lido_zone.id,
 									 umbrella_qty = x.umbrella_availability,
 									 sun_bed_qty = x.sun_bed_availability,
-									 cabana_qty = disp.cabana_availability,
+									 cabana_qty = (disp.lido_zone_availability_array.IndexOf(x) == 0 ? disp.cabana_availability : 0),
 									 chair_qty = x.chair_availability,
 									 date = x.start_date
 								 }).ToList()
@@ -547,7 +550,7 @@ namespace CocoVendorApp
 				{
 					//id_lido = (int)idLido,
 					//id_utente = (int)idUtenteLido,
-					zone_id = 0,
+					zone_id = firstzone,
 					umbrella_qty = 0,
 					sun_bed_qty = 0,
 					cabana_qty = disp.cabana_availability,

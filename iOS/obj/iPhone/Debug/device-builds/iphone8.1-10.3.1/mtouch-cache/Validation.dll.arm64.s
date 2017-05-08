@@ -10142,7 +10142,7 @@ _mono_aot_file_info:
 	.long 144,0,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0
-	.byte 149,127,65,80,254,26,109,17,5,39,129,205,215,23,207,180
+	.byte 234,156,6,245,144,138,169,54,42,166,209,100,46,63,72,6
 	.globl _mono_aot_module_Validation_info
 	.align 3
 _mono_aot_module_Validation_info:

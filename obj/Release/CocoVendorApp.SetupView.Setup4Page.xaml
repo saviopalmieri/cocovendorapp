@@ -37,7 +37,7 @@
 					<Label TextColor="#3d83f5" Text="Disponibilità" FontSize="22" Margin="10,5,10,5"
 					HorizontalOptions="Center" VerticalOptions="Start"/>
 
-				<Label TextColor="#717171" Text="Inserisci il numero di lettini, ombrelloni, sdraio e cabine che vuoi rendere disponibili alla prenotazione su COCO." FontSize="14" Margin="10,5,10,5"
+				<Label TextColor="#717171" Text="Inserisci il numero di lettini, ombrelloni e sdraio che vuoi rendere disponibili alla prenotazione su COCO." FontSize="14" Margin="10,5,10,5"
 					HorizontalOptions="Center" HorizontalTextAlignment="Start" VerticalOptions="Start"/>
 
 				<Grid HorizontalOptions="FillAndExpand" VerticalOptions="Start" ColumnSpacing="0">
@@ -136,21 +136,21 @@
 
 				<StackLayout Orientation="Vertical" VerticalOptions="Start" HorizontalOptions="FillAndExpand">
 
-					<Label Text="Hai un servizio cabine?" HorizontalOptions="FillAndExpand"  
+					<Label Text="Vendi pacchetti predefiniti?" HorizontalOptions="FillAndExpand"  
 						HorizontalTextAlignment="Center" VerticalTextAlignment="Center"
 						TextColor="#717171" FontSize="14"
 						 Margin="20,5,20,5" >
 					</Label>
 					
 					<StackLayout Orientation="Horizontal" BackgroundColor="White" VerticalOptions="Start" HorizontalOptions="FillAndExpand" >
-						<Label TextColor="#000" Text="Servizio Cabine" FontSize="14" Margin="20,5,5,5"
+						<Label TextColor="#000" Text="Vendita Pacchetti" FontSize="14" Margin="20,5,5,5"
 						HorizontalOptions="StartAndExpand" HorizontalTextAlignment="Start" VerticalOptions="Center"/>
 					
 						<Switch x:Name="switchCabine" HorizontalOptions="EndAndExpand" VerticalOptions="CenterAndExpand" Margin="5,5,20,5" Toggled="Handle_Toggled"></Switch>
 					</StackLayout>
 
 					<StackLayout Orientation="Horizontal" VerticalOptions="Start" BackgroundColor="White" IsVisible="false" HorizontalOptions="FillAndExpand" x:Name="layoutCabine" >
-						<Label TextColor="#000" Text="Numero Cabine" FontSize="14" Margin="20,5,5,5"
+						<Label TextColor="#000" Text="Numero Pacchetti" FontSize="14" Margin="20,5,5,5"
 							HorizontalOptions="StartAndExpand" HorizontalTextAlignment="Start" VerticalOptions="Center"/>
 
 						<Entry HorizontalOptions="EndAndExpand" VerticalOptions="CenterAndExpand" Keyboard="Numeric" Margin="5,5,20,5"

@@ -23,6 +23,8 @@ namespace CocoVendorApp
 			txtPassword.Text = ConnectionHelper.RetrieveUserInfo().password;
 			txtNome.Text = InfoLido.user_name_surname;
 			txtTelefono.Text = InfoLido.telephone;
+
+			txtNome.IsEnabled = false;
 		}
 
 		async void Handle_Clicked(object sender, System.EventArgs e)
@@ -36,8 +38,8 @@ namespace CocoVendorApp
 				return;
 			}
 
-			var nome = txtNome.Text.Split(' ')[0];
-			var cognome = txtNome.Text.Split(' ')[1];
+			//var nome = txtNome.Text.Split(' ')[0];
+			//var cognome = txtNome.Text.Split(' ')[1];
 
 			var result = InfoLidoDAO.Instance.SetInfoLido(ConnectionHelper.RetrieveUserInfo().apiKey, ConnectionHelper.RetrieveUserInfo().mail, InfoLido);
 			if (result.error)

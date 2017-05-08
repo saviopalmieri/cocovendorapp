@@ -192,9 +192,10 @@ namespace CocoVendorApp
 												}).ToList()
 			};
 
-			if ((listDisp != null && listDisp.lido_zone_availability_array.Count > 0) || int.Parse(txtDispCabana.Text) <= int.Parse(lblDisponibCabine.Text))
+			if ((listDisp != null && listDisp.lido_zone_availability_array.Count > 0) || (int.Parse(txtDispCabana.Text) <= int.Parse(lblDisponibCabine.Text) && int.Parse(txtDispCabana.Text) > 0))
 			{
-				var result = InfoLidoDAO.Instance.AggiornaDisponibilitaLido(ConnectionHelper.RetrieveUserInfo().apiKey, ConnectionHelper.RetrieveUserInfo().mail, listDisp);
+				var result = InfoLidoDAO.Instance.AggiornaDisponibilitaLido(ConnectionHelper.RetrieveUserInfo().apiKey, ConnectionHelper.RetrieveUserInfo().mail,
+																			listDisp, ((listDisp == null || listDisp.lido_zone_availability_array.Count <= 0) ? InfoLido.lido_zone_array.FirstOrDefault().id : 0));
 				if (result != null)
 				{
 					if (result.error)
@@ -227,6 +228,9 @@ namespace CocoVendorApp
 			{
 				dateChoosen.Focus();
 			}));
+
+			dateChoosen.MinimumDate = InfoLido.open_season_date;
+			dateChoosen.MaximumDate = InfoLido.close_season_date;
 		}
 	}
 }

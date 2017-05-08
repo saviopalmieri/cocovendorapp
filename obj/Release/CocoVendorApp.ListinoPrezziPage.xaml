@@ -84,7 +84,7 @@
 					<Image Source="cabina.png" Margin="10,10,10,10" Aspect="AspectFit" WidthRequest="35"
 						HorizontalOptions="Start" VerticalOptions="Center" ></Image>
 
-					<Label TextColor="#000" Text="Cabine" FontSize="Medium" Margin="10,5,10,5"
+					<Label TextColor="#000" Text="Pacchetti" FontSize="Medium" Margin="10,5,10,5"
 						HorizontalOptions="Start" HorizontalTextAlignment="Start" VerticalOptions="CenterAndExpand"/>
 
 					<BoxView Color="White" HorizontalOptions="CenterAndExpand" />
@@ -97,6 +97,15 @@
 							Keyboard="Numeric" TextColor="Black" x:Name="txtPrezzoCabine" Margin="0,5,20,5" />
 					</StackLayout>
 				</StackLayout>
+
+				<Label TextColor="#717171" Text="DESCRIZIONE PACCHETTI" FontSize="14" Margin="10,10,10,5"
+					HorizontalOptions="Start" HorizontalTextAlignment="Start" VerticalOptions="Start"/>
+
+				<Entry Placeholder="Es: il pacchetto prevede un ombrellone e due lettini." HeightRequest="80" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" 
+					HorizontalTextAlignment="Start" TextColor="Black" x:Name="txtDescrizionePacchetti" Margin="10,0,10,0" />
+
+				<Label TextColor="#717171" Text="La Descrizione dei Pacchetti è indicata nel caso di vendita di pacchetti predefiniti (es: ombrellone + 2 lettini)." FontSize="14" Margin="10,5,10,5"
+					HorizontalOptions="Start" HorizontalTextAlignment="Start" VerticalOptions="Start"/>
 				
 			</StackLayout>
 

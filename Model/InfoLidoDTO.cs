@@ -159,6 +159,7 @@ namespace CocoVendorApp
 		public IList<BookingDTO> booking_array { get; set;}
 
 		public int cabana_qty { get; set; }
+		public string cabana_note { get; set; }
 
 		public decimal umbrella_price { get; set; }
 		public decimal sun_bed_price { get; set; }

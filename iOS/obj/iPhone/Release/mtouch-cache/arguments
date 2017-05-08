@@ -15,7 +15,7 @@
 	--targetver \
 	8.0 \
 	--aot-options=-O=float32 \
-	--http-message-handler=HttpClientHandler \
+	--http-message-handler=NSUrlSessionHandler \
 	"--abi=armv7,arm64" \
 	--symbollist \
 	/Users/saviopalmieri/OneDrive/Documenti/Lavoro/SavioPalmieriTeam/Coco/Vendor/CocoVendorApp/iOS/obj/iPhone/Release/mtouch-symbols.list \

@@ -39855,7 +39855,7 @@ _mono_aot_file_info:
 	.long 400,0,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0
-	.byte 248,255,27,33,249,15,254,189,204,114,250,245,160,72,63,144
+	.byte 176,38,218,20,108,21,174,30,23,216,227,234,47,66,54,98
 	.globl _mono_aot_module_Plugin_Media_info
 	.align 3
 _mono_aot_module_Plugin_Media_info:

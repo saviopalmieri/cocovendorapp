@@ -121,6 +121,8 @@ jit_code_start:
 	.align 2
 	.no_dead_strip CocoVendorApp_iOS_Application__ctor
 CocoVendorApp_iOS_Application__ctor:
+.file 1 "<unknown>"
+.loc 1 1 0
 
 	.byte 128,64,45,233,13,112,160,225,0,1,45,233,3,223,77,226,0,0,141,229,3,223,141,226,0,1,189,232,128,128,189,232
 
@@ -129,8 +131,7 @@ Lme_0:
 	.align 2
 	.no_dead_strip CocoVendorApp_iOS_Application_Main_string__
 CocoVendorApp_iOS_Application_Main_string__:
-.file 1 "/Users/saviopalmieri/OneDrive/Documenti/Lavoro/SavioPalmieriTeam/Coco/Vendor/CocoVendorApp/iOS/Main.cs"
-.loc 1 17 0 prologue_end
+.loc 1 1 0
 
 	.byte 128,64,45,233,13,112,160,225,0,1,45,233,3,223,77,226,0,0,141,229,0,32,159,229,0,0,0,234
 	.long mono_aot_CocoVendorApp_iOS_got - . + 48
@@ -144,6 +145,7 @@ Lme_1:
 	.align 2
 	.no_dead_strip CocoVendorApp_iOS_AppDelegate__ctor
 CocoVendorApp_iOS_AppDelegate__ctor:
+.loc 1 1 0
 
 	.byte 128,64,45,233,13,112,160,225,0,1,45,233,3,223,77,226,0,0,141,229,0,0,157,229
 bl _p_2
@@ -155,16 +157,12 @@ Lme_2:
 	.align 2
 	.no_dead_strip CocoVendorApp_iOS_AppDelegate_FinishedLaunching_UIKit_UIApplication_Foundation_NSDictionary
 CocoVendorApp_iOS_AppDelegate_FinishedLaunching_UIKit_UIApplication_Foundation_NSDictionary:
-.file 2 "/Users/saviopalmieri/OneDrive/Documenti/Lavoro/SavioPalmieriTeam/Coco/Vendor/CocoVendorApp/iOS/AppDelegate.cs"
-.loc 2 15 0 prologue_end
+.loc 1 1 0
 
 	.byte 128,64,45,233,13,112,160,225,0,1,45,233,7,223,77,226,0,0,141,229,4,16,141,229,8,32,141,229
 bl _p_3
-.loc 2 17 0
 bl _p_4
-.loc 2 19 0
 bl _p_5
-.loc 2 21 0
 
 	.byte 0,0,159,229,0,0,0,234
 	.long mono_aot_CocoVendorApp_iOS_got - . + 52
@@ -176,7 +174,6 @@ bl _p_7
 
 	.byte 16,16,157,229,0,0,157,229
 bl _p_8
-.loc 2 23 0
 
 	.byte 0,0,157,229,4,16,157,229,8,32,157,229
 bl _p_9
@@ -304,7 +301,7 @@ runtime_version:
 .section __TEXT, __const
 	.align 2
 assembly_guid:
-	.asciz "8BAD2ED1-819A-42D7-B69A-B529E2A6EB72"
+	.asciz "6415C86B-2562-4C43-A8B8-9303235B6AB9"
 .section __TEXT, __const
 	.align 2
 assembly_name:
@@ -387,7 +384,7 @@ _mono_aot_file_info:
 	.long 32,0,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0
-	.byte 254,237,12,83,152,119,153,41,122,6,102,197,132,40,133,243
+	.byte 13,211,131,168,108,177,7,223,220,255,64,228,182,163,12,233
 	.globl _mono_aot_module_CocoVendorApp_iOS_info
 	.align 2
 _mono_aot_module_CocoVendorApp_iOS_info:
@@ -474,7 +471,7 @@ Lfde0_end:
 	.asciz "CocoVendorApp.iOS.Application:Main"
 	.asciz "CocoVendorApp_iOS_Application_Main_string__"
 
-	.byte 1,17
+	.byte 0,0
 	.long CocoVendorApp_iOS_Application_Main_string__
 	.long Lme_1
 
@@ -5138,7 +5135,7 @@ LDIFF_SYM841=LTDIE_134 - Ldebug_info_start
 	.asciz "CocoVendorApp.iOS.AppDelegate:FinishedLaunching"
 	.asciz "CocoVendorApp_iOS_AppDelegate_FinishedLaunching_UIKit_UIApplication_Foundation_NSDictionary"
 
-	.byte 2,15
+	.byte 0,0
 	.long CocoVendorApp_iOS_AppDelegate_FinishedLaunching_UIKit_UIApplication_Foundation_NSDictionary
 	.long Lme_3
 

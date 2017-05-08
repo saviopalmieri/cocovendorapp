@@ -32,20 +32,21 @@
 					<RowDefinition Height="0.8*" />
 				</Grid.RowDefinitions>
 
-				<StackLayout Orientation="Vertical" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Grid.Row="0" Grid.Column="0">
+				<ScrollView HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Orientation="Vertical" Grid.Row="0" Grid.Column="0">
+				<StackLayout Orientation="Vertical" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" >
 
 					<Label TextColor="#3d83f5" Text="Informazioni Generali" FontSize="22" Margin="20,5,20,10"
 					HorizontalOptions="Center" VerticalOptions="Start"/>
 
 					<StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" BackgroundColor="White" VerticalOptions="Start" >
-						<Label Text="Nome Lido *" HorizontalOptions="End"  
+						<Label Text="Nome Lido *" HorizontalOptions="FillAndExpand"  
 							HorizontalTextAlignment="Start" VerticalTextAlignment="Center"
 							TextColor="Black" FontSize="Medium"
 							 Margin="20,5,20,5" >
 						</Label>
 
-						<Entry Placeholder="Obbligatorio" HorizontalOptions="FillAndExpand"
-							x:Name="txtNomeLido" WidthRequest="150"
+						<Entry Placeholder="Obbligatorio" HorizontalOptions="End"
+							x:Name="txtNomeLido" WidthRequest="160"
 							HorizontalTextAlignment="Center" 
 							TextColor="Black" FontSize="Medium"
 							Margin="20,5,20,5"  >
@@ -57,6 +58,36 @@
 					
 					<Label TextColor="#717171" Text="ATTENZIONE: una volta inserito il nome, non sarà possibile modificarlo. Assicurati che sia corretto." FontSize="16" Margin="20,5,5,10"
 						HorizontalOptions="Center" HorizontalTextAlignment="Start" VerticalOptions="Start"/>
+
+					<StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" BackgroundColor="White" VerticalOptions="Start" >
+						<Label Text="Nome Utente *" HorizontalOptions="FillAndExpand"  
+							HorizontalTextAlignment="Start" VerticalTextAlignment="Center"
+							TextColor="Black" FontSize="Medium"
+							 Margin="20,5,5,5" >
+						</Label>
+
+						<Entry Placeholder="Nome e Cognome" HorizontalOptions="End"
+							x:Name="txtNome" WidthRequest="160"
+							HorizontalTextAlignment="Center" 
+							TextColor="Black" FontSize="Medium"
+							Margin="5,5,20,5"  >
+						</Entry>
+					</StackLayout>
+
+					<StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" BackgroundColor="White" VerticalOptions="Start" Margin="0,0,0,20" >
+						<Label Text="Telefono *" HorizontalOptions="FillAndExpand"  
+							HorizontalTextAlignment="Start" VerticalTextAlignment="Center"
+							TextColor="Black" FontSize="Medium"
+							 Margin="20,5,20,5" >
+						</Label>
+
+						<Entry Placeholder="Telefono" HorizontalOptions="End"
+							x:Name="txtTelefono" WidthRequest="160" Keyboard="Telephone"
+							HorizontalTextAlignment="Center" 
+							TextColor="Black" FontSize="Medium"
+							Margin="20,5,20,5"  >
+						</Entry>
+					</StackLayout>
 
 					<StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" BackgroundColor="White" VerticalOptions="Start" >
 						<Label Text="Data di Apertura" HorizontalOptions="FillAndExpand"  
@@ -85,7 +116,8 @@
 						HorizontalOptions="Center" HorizontalTextAlignment="Start" VerticalOptions="Start"/>
 					
 				</StackLayout>
-
+				</ScrollView>
+					
 				<BoxView Color="White" Grid.Row="1" Grid.Column="0" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" />
 				
 				<Button Text="Prosegui" x:Name="btnIniziaSetup" HorizontalOptions="FillAndExpand"
@@ -96,7 +128,6 @@
 			</Grid>
 			
 		</StackLayout>
-
 		
 	</ContentPage.Content>
 </ContentPage>

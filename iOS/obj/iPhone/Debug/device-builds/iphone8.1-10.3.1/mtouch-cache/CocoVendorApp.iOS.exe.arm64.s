@@ -499,7 +499,7 @@ runtime_version:
 .section __TEXT, __const
 	.align 2
 assembly_guid:
-	.asciz "542FE4A0-4896-43B0-997C-F2B3DA7D0D88"
+	.asciz "211539C7-E396-47A7-81A5-75E93E919D4D"
 .section __TEXT, __const
 	.align 2
 assembly_name:
@@ -582,7 +582,7 @@ _mono_aot_file_info:
 	.long 32,0,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0
-	.byte 61,226,178,70,169,128,188,163,172,68,85,110,79,102,44,245
+	.byte 172,2,40,75,74,169,185,97,231,63,211,150,131,28,164,63
 	.globl _mono_aot_module_CocoVendorApp_iOS_info
 	.align 3
 _mono_aot_module_CocoVendorApp_iOS_info:

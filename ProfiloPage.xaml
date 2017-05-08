@@ -71,7 +71,7 @@
 					<Label Text="Nome Utente" HorizontalOptions="StartAndExpand"  
 						HorizontalTextAlignment="Start" VerticalTextAlignment="Center"
 						TextColor="Black" FontSize="Medium"
-						 Margin="20,5,20,5" >
+						 Margin="20,5,5,5" >
 					</Label>
 
 					<Label Text="A" HorizontalOptions="StartAndExpand"  
@@ -84,7 +84,7 @@
 						x:Name="txtNome" Keyboard="Telephone"
 						HorizontalTextAlignment="Center" WidthRequest="150"
 						TextColor="Black" FontSize="Medium"
-						Margin="20,5,20,5"  >
+						Margin="5,5,20,5"  >
 					</Entry>
 				</StackLayout>
 

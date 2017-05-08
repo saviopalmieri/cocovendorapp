@@ -47,14 +47,14 @@
 						<Label Text="Indirizzo PayPal" HorizontalOptions="FillAndExpand"  
 							HorizontalTextAlignment="Start" VerticalTextAlignment="Center"
 							TextColor="Black" FontSize="Medium"
-							 Margin="20,5,20,5" >
+							 Margin="20,5,5,5" >
 						</Label>
 
 						<Entry Placeholder="Obbligatorio" HorizontalOptions="FillAndExpand"
 							x:Name="txtMailPayPal" Keyboard="Email"
 							HorizontalTextAlignment="Center" WidthRequest="150"
 							TextColor="Black" FontSize="Medium"
-							Margin="20,5,20,5"  >
+							Margin="5,5,20,5"  >
 						</Entry>
 					</StackLayout>
 

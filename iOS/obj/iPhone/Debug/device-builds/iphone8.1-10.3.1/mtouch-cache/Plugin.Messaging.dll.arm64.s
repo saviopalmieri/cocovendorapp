@@ -11052,7 +11052,7 @@ _mono_aot_file_info:
 	.long 152,0,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0
-	.byte 164,106,196,50,18,33,83,252,236,107,201,140,244,223,245,146
+	.byte 231,93,93,201,92,185,177,133,124,22,102,43,104,62,193,69
 	.globl _mono_aot_module_Plugin_Messaging_info
 	.align 3
 _mono_aot_module_Plugin_Messaging_info:

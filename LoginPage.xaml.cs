@@ -57,6 +57,20 @@ namespace CocoVendorApp
 					if (response.data.lido != null)
 						//InfoLidoDAO.Instance.GetSlimInfoLido(ConnectionHelper.RetrieveUserInfo().mail, ConnectionHelper.RetrieveUserInfo().apiKey)
 					{
+
+						response.data.lido.user = new UserWebServiceDTO()
+						{
+							api_key = response.data.api_key,
+							avatar = response.data.avatar,
+							email = response.data.email,
+							id = response.data.id,
+							from_facebook = response.data.from_facebook,
+							name = response.data.name,
+							surname = response.data.surname,
+							telephone = response.data.telephone,
+							vendor = response.data.vendor
+						};
+
 						response.data.lido.booking_array = response.data.booking_array;
 
 						Application.Current.MainPage = new NavigationPage(new HomePage(response.data.lido));

@@ -1,16 +1,14 @@
 ﻿<Properties StartupConfiguration="{2B68B9E6-9DE3-4C2E-9C00-E33A6FD6782B}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="HomePage.xaml.cs">
+  <MonoDevelop.Ide.Workbench>
     <Files>
-      <File FileName="SetupView/Setup5Page.xaml" Line="1" Column="1" />
-      <File FileName="ListinoPrezziPage.xaml" Line="1" Column="1" />
-      <File FileName="RiepilogoPage.xaml" Line="1" Column="1" />
-      <File FileName="RiepilogoPage.xaml.cs" Line="195" Column="1" />
-      <File FileName="DAO/InfoLidoDAO.cs" Line="562" Column="1" />
-      <File FileName="Helper/ConnectionHelper.cs" Line="77" Column="1" />
-      <File FileName="HomePage.xaml.cs" Line="42" Column="17" />
+      <File FileName="RiepilogoPage.xaml.cs" Line="196" Column="5" />
+      <File FileName="LoginOrRegisterPage.xaml" Line="25" Column="43" />
+      <File FileName="LoginPage.xaml.cs" Line="63" Column="18" />
+      <File FileName="App.xaml.cs" Line="24" Column="6" />
+      <File FileName="Droid/Properties/AndroidManifest.xml" Line="24" Column="12" />
     </Files>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
   <MonoDevelop.Ide.ItemProperties.CocoVendorApp.Droid PreferredExecutionTarget="Android.81HEBMC25D5N" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />

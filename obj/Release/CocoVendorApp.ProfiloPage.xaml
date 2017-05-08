@@ -68,10 +68,10 @@
 				
 				<StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="Start"
 					BackgroundColor="White">
-					<Label Text="Nome Lido" HorizontalOptions="StartAndExpand"  
+					<Label Text="Nome Utente" HorizontalOptions="StartAndExpand"  
 						HorizontalTextAlignment="Start" VerticalTextAlignment="Center"
 						TextColor="Black" FontSize="Medium"
-						 Margin="20,5,20,5" >
+						 Margin="20,5,5,5" >
 					</Label>
 
 					<Label Text="A" HorizontalOptions="StartAndExpand"  
@@ -80,11 +80,12 @@
 						 Margin="0,5,0,5" >
 					</Label>
 
-					<Label Text="" x:Name="lblNomeCompleto" HorizontalOptions="EndAndExpand"  
-						HorizontalTextAlignment="End" VerticalTextAlignment="Center"
+					<Entry Placeholder="Obbligatorio" HorizontalOptions="EndAndExpand"
+						x:Name="txtNome" Keyboard="Telephone"
+						HorizontalTextAlignment="Center" WidthRequest="150"
 						TextColor="Black" FontSize="Medium"
-						 Margin="20,5,20,5" >
-					</Label>
+						Margin="5,5,20,5"  >
+					</Entry>
 				</StackLayout>
 
 				<StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="Start"
