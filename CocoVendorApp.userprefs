@@ -1,19 +1,20 @@
 ﻿<Properties StartupConfiguration="{2B68B9E6-9DE3-4C2E-9C00-E33A6FD6782B}|Default">
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="SetupView/Setup1Page.xaml">
     <Files>
       <File FileName="RiepilogoPage.xaml.cs" Line="196" Column="5" />
-      <File FileName="LoginOrRegisterPage.xaml" Line="25" Column="43" />
+      <File FileName="LoginOrRegisterPage.xaml" Line="1" Column="1" />
       <File FileName="LoginPage.xaml.cs" Line="63" Column="18" />
-      <File FileName="App.xaml.cs" Line="24" Column="6" />
+      <File FileName="App.xaml.cs" Line="20" Column="5" />
       <File FileName="Droid/Properties/AndroidManifest.xml" Line="24" Column="12" />
+      <File FileName="SetupView/Setup1Page.xaml" Line="54" Column="12" />
     </Files>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release|iPhoneSimulator" />
   <MonoDevelop.Ide.ItemProperties.CocoVendorApp.Droid PreferredExecutionTarget="Android.81HEBMC25D5N" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.CocoVendorApp.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.0df9b9062d5ab0f4941c25d1c473d832d632f235" />
+  <MonoDevelop.Ide.ItemProperties.CocoVendorApp.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.DC2A6E3F-2101-4294-9C15-4499A8303184" />
   <MultiItemStartupConfigurations />
 </Properties>
