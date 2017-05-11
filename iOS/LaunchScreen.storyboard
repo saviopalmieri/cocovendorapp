@@ -1,27 +1,102 @@
-﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
-	<dependencies>
-		<deployment identifier="iOS" />
-		<plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530" />
-	</dependencies>
-	<scenes>
-		<!--View Controller-->
-		<scene sceneID="EHf-IW-A2E">
-			<objects>
-				<viewController id="01J-lp-oVM" sceneMemberID="viewController">
-					<layoutGuides>
-						<viewControllerLayoutGuide type="top" id="Llm-lL-Icb" />
-						<viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok" />
-					</layoutGuides>
-					<view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-						<rect key="frame" x="0.0" y="0.0" width="600" height="600" />
-						<autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" />
-						<color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite" />
-					</view>
-				</viewController>
-				<placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder" />
-			</objects>
-			<point key="canvasLocation" x="53" y="375" />
-		</scene>
-	</scenes>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="3" translatesAutoresizingMaskIntoConstraints="NO" image="Default-Portrait.png" misplaced="YES">
+                                <rect key="frame" x="76" y="76" width="448" height="448"/>
+                                <constraints>
+                                    <constraint id="21" firstAttribute="width" constant="400"/>
+                                    <constraint id="22" firstAttribute="height" constant="400"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint id="19" firstItem="3" firstAttribute="centerXWithinMargins" secondItem="Ze5-6b-2t3" secondAttribute="centerXWithinMargins"/>
+                            <constraint id="20" firstItem="Ze5-6b-2t3" firstAttribute="centerY" secondItem="3" secondAttribute="centerYWithinMargins"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logo_coco.png" width="719" height="604"/>
+        <image name="cabina.png" width="500" height="500"/>
+        <image name="ombrellone.png" width="500" height="500"/>
+        <image name="sdraio.png" width="500" height="500"/>
+        <image name="arrow.png" width="128" height="128"/>
+        <image name="launchimage.png" width="1242" height="2208"/>
+        <image name="carousel1.png" width="1010" height="1607"/>
+        <image name="carousel2.png" width="1010" height="1607"/>
+        <image name="carousel3.png" width="1010" height="1607"/>
+        <image name="Icon-App-20x20.png" width="20" height="20"/>
+        <image name="Icon-App-29x29.png" width="29" height="29"/>
+        <image name="Icon-App-40x40.png" width="40" height="40"/>
+        <image name="Icon-App-57x57.png" width="57" height="57"/>
+        <image name="Icon-App-60x60.png" width="60" height="60"/>
+        <image name="Icon-App-72x72.png" width="72" height="72"/>
+        <image name="Icon-App-76x76.png" width="76" height="76"/>
+        <image name="Icon-App-83.5x83.5.png" width="83.5" height="83.5"/>
+        <image name="Icon-Small-50x50.png" width="50" height="50"/>
+        <image name="lettino.png" width="500" height="500"/>
+        <image name="cabinaicon.png" width="20" height="20"/>
+        <image name="checkin.png" width="40" height="40"/>
+        <image name="home.png" width="40" height="40"/>
+        <image name="settings.png" width="40" height="40"/>
+        <image name="calendario.png" width="30" height="29"/>
+        <image name="user.png" width="40" height="40"/>
+        <image name="gallery.jpg" width="169" height="152"/>
+        <image name="qrcode.png" width="128" height="126"/>
+        <image name="servizio1.png" width="500" height="500"/>
+        <image name="servizio2.png" width="500" height="500"/>
+        <image name="servizio3.png" width="500" height="500"/>
+        <image name="servizio4.png" width="500" height="500"/>
+        <image name="servizio5.png" width="500" height="500"/>
+        <image name="servizio6.png" width="500" height="500"/>
+        <image name="servizio7.png" width="500" height="500"/>
+        <image name="servizio8.png" width="500" height="500"/>
+        <image name="servizio9.png" width="500" height="500"/>
+        <image name="servizio10.png" width="500" height="500"/>
+        <image name="servizio11.png" width="500" height="500"/>
+        <image name="servizio12.png" width="500" height="500"/>
+        <image name="servizio13.png" width="500" height="500"/>
+        <image name="servizio14.png" width="500" height="500"/>
+        <image name="servizio15.png" width="500" height="500"/>
+        <image name="servizio16.png" width="500" height="500"/>
+        <image name="servizio17.png" width="500" height="500"/>
+        <image name="servizio18.png" width="500" height="500"/>
+        <image name="servizio19.png" width="500" height="500"/>
+        <image name="servizio20.png" width="500" height="500"/>
+        <image name="servizio21.png" width="500" height="500"/>
+        <image name="servizio22.png" width="500" height="500"/>
+        <image name="servizio23.png" width="500" height="500"/>
+        <image name="circlefull.png" width="100" height="100"/>
+        <image name="circlewhite.png" width="100" height="100"/>
+        <image name="apptitle.png" width="111" height="40"/>
+        <image name="Default-667h.png" width="375" height="667"/>
+        <image name="Default-Landscape-736h.png" width="736" height="414"/>
+        <image name="Default-Portrait-736h.png" width="414" height="736"/>
+        <image name="Default-568h.png" width="320" height="568"/>
+        <image name="Default-Landscape.png" width="1024" height="768"/>
+        <image name="Default-Portrait.png" width="768" height="1024"/>
+        <image name="Default.png" width="320" height="480"/>
+    </resources>
 </document>

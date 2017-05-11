@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="CocoVendorApp.Setup2Page" 
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+		x:Class="CocoVendorApp.Setup2Page" 
+		xmlns:maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps"
 		Title="4 passaggi per pubblicare" BackgroundColor="#EDEDF7">
 	<ContentPage.Content>
 
@@ -27,7 +29,8 @@
 					<ColumnDefinition Width="*" />
 				</Grid.ColumnDefinitions>
 				<Grid.RowDefinitions>
-					<RowDefinition Height="6.2*" />
+					<RowDefinition Height="2*" />
+					<RowDefinition Height="4.2*" />
 					<RowDefinition Height="0.8*" />
 				</Grid.RowDefinitions>
 
@@ -38,14 +41,18 @@
 					<Label TextColor="#717171" Text="Inserisci l'indirizzo esatto del tuo lido/bagno per localizzarlo sulla mappa." FontSize="16" Margin="10,5,10,5"
 						HorizontalOptions="Center" HorizontalTextAlignment="Start" VerticalOptions="Start"/>
 					
-					<StackLayout x:Name="stackMaps" Orientation="Vertical" VerticalOptions="StartAndExpand" HorizontalOptions="CenterAndExpand">
+					<StackLayout x:Name="stackMaps" Orientation="Vertical" VerticalOptions="Start" HorizontalOptions="CenterAndExpand">
 					</StackLayout>
+
+
 				</StackLayout>
 
-				<BoxView Color="White" Grid.Row="1" Grid.Column="0" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" />
+				<maps:Map Grid.Row="1" Grid.Column="0" HeightRequest="400" WidthRequest="960" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" x:Name="map" MapType="Street" IsShowingUser="true" />        
+				
+				<BoxView Color="White" Grid.Row="2" Grid.Column="0" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" />
 
 				<Button Text="Prosegui" x:Name="btnProsegui" HorizontalOptions="FillAndExpand"
-					VerticalOptions="Center" Clicked="Handle_Clicked" HeightRequest="45" Grid.Row="1" Grid.Column="0"
+					VerticalOptions="Center" Clicked="Handle_Clicked" HeightRequest="45" Grid.Row="2" Grid.Column="0"
 					TextColor="White" BackgroundColor="#3d83f5" FontSize="17"
 					BorderRadius="3" Margin="20,0,20,0" >
 				</Button>

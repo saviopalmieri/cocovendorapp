@@ -107,3 +107,13 @@
 /Users/saviopalmieri/OneDrive/Documenti/Lavoro/SavioPalmieriTeam/Coco/Vendor/CocoVendorApp/iOS/obj/iPhone/Release/optimized/apptitle@2x.png
 /Users/saviopalmieri/OneDrive/Documenti/Lavoro/SavioPalmieriTeam/Coco/Vendor/CocoVendorApp/iOS/obj/iPhone/Release/optimized/user@2x.png
 /Users/saviopalmieri/OneDrive/Documenti/Lavoro/SavioPalmieriTeam/Coco/Vendor/CocoVendorApp/iOS/obj/iPhone/Release/optimized/calendario@2x.png
+/Users/saviopalmieri/OneDrive/Documenti/Lavoro/SavioPalmieriTeam/Coco/Vendor/CocoVendorApp/iOS/obj/iPhone/Release/optimized/Default-Landscape-736h@3x.png
+/Users/saviopalmieri/OneDrive/Documenti/Lavoro/SavioPalmieriTeam/Coco/Vendor/CocoVendorApp/iOS/obj/iPhone/Release/optimized/Default-Portrait-736h@3x.png
+/Users/saviopalmieri/OneDrive/Documenti/Lavoro/SavioPalmieriTeam/Coco/Vendor/CocoVendorApp/iOS/obj/iPhone/Release/optimized/Default-Landscape.png
+/Users/saviopalmieri/OneDrive/Documenti/Lavoro/SavioPalmieriTeam/Coco/Vendor/CocoVendorApp/iOS/obj/iPhone/Release/optimized/Default-Landscape@2x.png
+/Users/saviopalmieri/OneDrive/Documenti/Lavoro/SavioPalmieriTeam/Coco/Vendor/CocoVendorApp/iOS/obj/iPhone/Release/optimized/Default-Portrait.png
+/Users/saviopalmieri/OneDrive/Documenti/Lavoro/SavioPalmieriTeam/Coco/Vendor/CocoVendorApp/iOS/obj/iPhone/Release/optimized/Default-Portrait@2x.png
+/Users/saviopalmieri/OneDrive/Documenti/Lavoro/SavioPalmieriTeam/Coco/Vendor/CocoVendorApp/iOS/obj/iPhone/Release/optimized/checkin@2x.png
+/Users/saviopalmieri/OneDrive/Documenti/Lavoro/SavioPalmieriTeam/Coco/Vendor/CocoVendorApp/iOS/obj/iPhone/Release/optimized/home@2x.png
+/Users/saviopalmieri/OneDrive/Documenti/Lavoro/SavioPalmieriTeam/Coco/Vendor/CocoVendorApp/iOS/obj/iPhone/Release/optimized/settings@2x.png
+/Users/saviopalmieri/OneDrive/Documenti/Lavoro/SavioPalmieriTeam/Coco/Vendor/CocoVendorApp/iOS/bin/iPhone/Release/KeyboardOverlap.Forms.Plugin.iOSUnified.dll

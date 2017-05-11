@@ -48,7 +48,7 @@
 
 				<StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="Start"
 					BackgroundColor="White">
-					<Label Text="Data di Apertura" HorizontalOptions="FillAndExpand"  
+					<Label Text="Data inizio offerta" HorizontalOptions="FillAndExpand"  
 						HorizontalTextAlignment="Start" VerticalTextAlignment="Center"
 						TextColor="Black" FontSize="Medium"
 						 Margin="20,5,20,5" >
@@ -60,7 +60,7 @@
 
 				<StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="Start"
 					BackgroundColor="White">
-					<Label Text="Data di Chiusura" HorizontalOptions="FillAndExpand"  
+					<Label Text="Data fine offerta" HorizontalOptions="FillAndExpand"  
 						HorizontalTextAlignment="Start" VerticalTextAlignment="Center"
 						TextColor="Black" FontSize="Medium"
 						 Margin="20,5,20,5" >

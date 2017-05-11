@@ -49,11 +49,12 @@ namespace CocoVendorApp
 			Grid gridInput = new Grid
 			{
 				HorizontalOptions = LayoutOptions.FillAndExpand,
-				VerticalOptions = LayoutOptions.Start,
+				VerticalOptions = LayoutOptions.FillAndExpand,
 				ColumnSpacing = 5,
 				Margin = new Thickness { Left = 10, Top = 5, Bottom = 5, Right = 10 }
 			};
-			gridInput.RowDefinitions.Add(new RowDefinition { Height = new GridLength(1, GridUnitType.Star) });
+			gridInput.RowDefinitions.Add(new RowDefinition { Height = GridLength.Auto });
+			//gridInput.RowDefinitions.Add(new RowDefinition { Height = new GridLength(1, GridUnitType.Star) });
 			gridInput.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(2, GridUnitType.Star) });
 			gridInput.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(1, GridUnitType.Star) });
 			gridInput.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(1, GridUnitType.Star) });
@@ -63,15 +64,17 @@ namespace CocoVendorApp
 			gridInput.Children.Add(buttonGo, 2,0);
 
 			//InitializeComponent();
-			var map = new Map(
-			MapSpan.FromCenterAndRadius(
-					new Position(37, -122), Distance.FromMiles(0.3)))
-			{
-				IsShowingUser = true,
-				HeightRequest = 300,
-				WidthRequest = 960,
-				VerticalOptions = LayoutOptions.FillAndExpand
-			};
+			//var map = new Map(
+			//MapSpan.FromCenterAndRadius(
+			//		new Position(37, -122), Distance.FromMiles(0.3)))
+			//{
+			//	IsShowingUser = true,
+			//	HeightRequest = 300,
+			//	WidthRequest = 960,
+			//	MapType = MapType.Street,
+			//	HorizontalOptions = LayoutOptions.FillAndExpand,
+			//	VerticalOptions = LayoutOptions.FillAndExpand
+			//};
 
 			buttonGo.Clicked += async (sender, e) =>
 			{
@@ -103,15 +106,39 @@ namespace CocoVendorApp
 				}
 			};
 
-			stackMaps.Children.Add(gridInput);
-			stackMaps.Children.Add(map);
+			//StackLayout mapContainer = new StackLayout
+			//{
+			//	HorizontalOptions = LayoutOptions.FillAndExpand,
+			//	VerticalOptions = LayoutOptions.FillAndExpand
+			//};
 
+			//gridInput.Children.Add(mapContainer, 0, 1);
+			//Grid.SetColumnSpan(mapContainer, 3);
+
+			//mapContainer.Children.Add(map);
+
+			stackMaps.Children.Add(gridInput);
+
+			RefreshMapPosition();
+		}
+
+		async void RefreshMapPosition()
+		{
+			var currPos = await GetCurrentPosition();
+
+			map.MoveToRegion(MapSpan.FromCenterAndRadius(new Position(currPos.Latitude, currPos.Longitude), Distance.FromMiles(1)));
 		}
 
 		async void Handle_Clicked(object sender, System.EventArgs e)
 		{
 			var address = entryAddress.Text;
 			var city = entryCity.Text;
+
+			if (string.IsNullOrEmpty(InfoLido.lat) || string.IsNullOrEmpty(InfoLido.lng))
+			{
+				await DisplayAlert("Errore", "Prima di proseguire cerca la posizione del tuo lido sulla mappa!", "Chiudi");
+				return;
+			}
 
 			if (!string.IsNullOrEmpty(address) && 
 			    !string.IsNullOrEmpty(city))
@@ -130,7 +157,13 @@ namespace CocoVendorApp
 		private async System.Threading.Tasks.Task<Plugin.Geolocator.Abstractions.Position> GetCurrentPosition()
 		{
 			var locator = CrossGeolocator.Current;
-			locator.AllowsBackgroundUpdates = true;
+			locator.DesiredAccuracy = 50;
+
+			if (!locator.IsListening)
+			{
+				var result = await locator.StartListeningAsync(1, 1);
+			}
+
 			return (await locator.GetPositionAsync(timeoutMilliseconds: 1000));
 		}
 

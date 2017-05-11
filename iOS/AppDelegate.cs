@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 
 using Foundation;
+using KeyboardOverlap.Forms.Plugin.iOSUnified;
 using UIKit;
 
 namespace CocoVendorApp.iOS
@@ -15,6 +16,8 @@ namespace CocoVendorApp.iOS
 			global::Xamarin.Forms.Forms.Init();
 
 			Xamarin.FormsMaps.Init();
+
+			KeyboardOverlapRenderer.Init();
 
 			ZXing.Net.Mobile.Forms.iOS.Platform.Init();
 
