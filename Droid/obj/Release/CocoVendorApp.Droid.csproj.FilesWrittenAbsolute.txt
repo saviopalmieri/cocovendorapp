@@ -98,3 +98,5 @@
 /Users/saviopalmieri/OneDrive/Documenti/Lavoro/SavioPalmieriTeam/Coco/Vendor/CocoVendorApp/Droid/bin/Release/Plugin.Messaging.Abstractions.dll
 /Users/saviopalmieri/OneDrive/Documenti/Lavoro/SavioPalmieriTeam/Coco/Vendor/CocoVendorApp/Droid/bin/Release/Plugin.Messaging.dll
 /Users/saviopalmieri/OneDrive/Documenti/Lavoro/SavioPalmieriTeam/Coco/Vendor/CocoVendorApp/Droid/bin/Release/CocoVendorApp.dll
+/Users/saviopalmieri/OneDrive/Documenti/Lavoro/SavioPalmieriTeam/Coco/Vendor/CocoVendorApp/Droid/bin/Release/CocoVendorApp.Droid.pdb
+/Users/saviopalmieri/OneDrive/Documenti/Lavoro/SavioPalmieriTeam/Coco/Vendor/CocoVendorApp/Droid/obj/Release/CocoVendorApp.Droid.pdb

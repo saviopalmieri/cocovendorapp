@@ -121,7 +121,7 @@
 							TextColor="#717171" FontSize="14"></Label>
 						<Label Text="Dai la possibilità ai tuoi clienti di poter scegliere la propria fila." HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Start" VerticalTextAlignment="Center"
 							TextColor="#717171" FontSize="14"></Label>
-						<Label Text="Qualora non indicata il1posizionamento in spiaggia sarà a tua discrezione." HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Start" VerticalTextAlignment="Center"
+						<Label Text="Qualora non indicata il posizionamento in spiaggia sarà a tua discrezione." HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Start" VerticalTextAlignment="Center"
 							TextColor="#717171" FontSize="14"></Label>
 					</StackLayout>
 				</StackLayout>

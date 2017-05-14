@@ -110,6 +110,9 @@
     <EmbeddedResource Include="PosizionePage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Include="ErrorPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App.xaml.cs">
@@ -202,6 +205,9 @@
     </Compile>
     <Compile Include="PosizionePage.xaml.cs">
       <DependentUpon>PosizionePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ErrorPage.xaml.cs">
+      <DependentUpon>ErrorPage.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

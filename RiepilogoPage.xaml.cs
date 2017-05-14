@@ -80,51 +80,66 @@ namespace CocoVendorApp
 
 		public void RebindListFile()
 		{
-			var result = InfoLidoDAO.Instance.GetDisponibilitaLido(ConnectionHelper.RetrieveUserInfo().apiKey, ConnectionHelper.RetrieveUserInfo().mail, dateChoosen.Date, dateChoosen.Date);
-
-			if (result != null)
+			try
 			{
-				var listDisponibilita = new List<InfoFilaDTO>();
-				var cabanaDisp = 0;
+				var result = InfoLidoDAO.Instance.GetDisponibilitaLido(ConnectionHelper.RetrieveUserInfo().apiKey, ConnectionHelper.RetrieveUserInfo().mail, dateChoosen.Date, dateChoosen.Date);
 
-				foreach (var item in result.data)
+				if (result != null)
 				{
-					cabanaDisp += item.cabana_availability;
-					foreach (var zone in item.lido_zone_availability_array)
+					var listDisponibilita = new List<InfoFilaDTO>();
+					var cabanaDisp = 0;
+
+					foreach (var item in result.data)
 					{
-						var currZone = listDisponibilita.FirstOrDefault(x => x.IdFila == zone.lido_zone.name);
-						if (currZone == null)
+						cabanaDisp += item.cabana_availability;
+						foreach (var zone in item.lido_zone_availability_array)
 						{
-							listDisponibilita.Add(new InfoFilaDTO
+							var currZone = listDisponibilita.FirstOrDefault(x => x.IdFila == zone.lido_zone.name);
+							if (currZone == null)
 							{
-								id = zone.lido_zone.id,
-								name = zone.lido_zone.name,
-								NomeFila = (InfoLido.lido_zone_array.Count > 1 ? "Fila " + zone.lido_zone.name : "Zona Unica"),
-								chair_qty = 0,
-								max_chair_qty = zone.chair_availability,
-								sun_bed_qty = 0,
-								max_sun_bed_qty = zone.sun_bed_availability,
-								umbrella_qty = 0,
-								max_umbrella_qty = zone.umbrella_availability
-							});
-						}
-            	        else
-						{
-							//currZone.chair_qty += zone.chair_availability;
-							currZone.max_chair_qty += zone.chair_availability;
-							//currZone.sun_bed_qty += zone.sun_bed_availability;
-							currZone.max_sun_bed_qty += zone.chair_availability;
-							//currZone.umbrella_qty += zone.umbrella_availability;
-							currZone.max_umbrella_qty += zone.umbrella_availability;
+								listDisponibilita.Add(new InfoFilaDTO
+								{
+									id = zone.lido_zone.id,
+									name = zone.lido_zone.name,
+									NomeFila = (InfoLido.lido_zone_array.Count > 1 ? "Fila " + zone.lido_zone.name : "Zona Unica"),
+									chair_qty = 0,
+									max_chair_qty = zone.chair_availability,
+									sun_bed_qty = 0,
+									max_sun_bed_qty = zone.sun_bed_availability,
+									umbrella_qty = 0,
+									max_umbrella_qty = zone.umbrella_availability
+								});
+							}
+	            	        else
+							{
+								//currZone.chair_qty += zone.chair_availability;
+								currZone.max_chair_qty += zone.chair_availability;
+								//currZone.sun_bed_qty += zone.sun_bed_availability;
+								currZone.max_sun_bed_qty += zone.chair_availability;
+								//currZone.umbrella_qty += zone.umbrella_availability;
+								currZone.max_umbrella_qty += zone.umbrella_availability;
+							}
 						}
 					}
+					FileItems = new ObservableCollection<InfoFilaDTO>(listDisponibilita);
+
+					FileListView.ItemsSource = FileItems;
+
+					txtDispCabana.Text = "0";
+					lblDisponibCabine.Text = cabanaDisp.ToString();
 				}
-				FileItems = new ObservableCollection<InfoFilaDTO>(listDisponibilita);
-
-				FileListView.ItemsSource = FileItems;
-
-				txtDispCabana.Text = "0";
-				lblDisponibCabine.Text = cabanaDisp.ToString();
+			}
+			catch (System.Net.WebException ex)
+			{
+				DisplayAlert("Errore aggiornamento disponibilità", "Stiamo riscontrando problemi con la tua connessione Internet. Controlla la tua connessione e riprova.", "Chiudi");
+			}
+			catch (System.Net.Http.HttpRequestException ex)
+			{
+				DisplayAlert("Errore aggiornamento disponibilità", "Si è verificato un errore nella comunicazione con i nostri server. Controlla la tua connessione e riprova.", "Chiudi");
+			}
+			catch (Newtonsoft.Json.JsonException ex)
+			{
+				DisplayAlert("Errore aggiornamento disponibilità", "I nostri server hanno riscontrato degli errori. Controlla i dati o riprova più tardi.", "Chiudi");
 			}
 		}
 
@@ -173,51 +188,70 @@ namespace CocoVendorApp
 
 		async void Handle_Clicked(object sender, System.EventArgs e)
 		{
-			var listDisp = new DisponibilitaDTO
+			try
 			{
-				start_date = dateChoosen.Date.ToString("yyyyMMdd"),
-				end_date = dateChoosen.Date.ToString("yyyyMMdd"),
-				cabana_availability = int.Parse(txtDispCabana.Text),
-				lido_zone_availability_array = (from x in FileItems
-												where (x.chair_qty > 0 || x.sun_bed_qty > 0 || x.umbrella_qty > 0) &&
-												(x.chair_qty <= x.max_chair_qty && x.sun_bed_qty <= x.max_sun_bed_qty && x.umbrella_qty <= x.max_umbrella_qty)
-												select new LidoZoneAvailabilityDTO
-												{
-													sun_bed_availability = x.sun_bed_qty,
-													umbrella_availability = x.umbrella_qty,
-													chair_availability = x.chair_qty,
-													lido_zone = x,
-													start_date = dateChoosen.Date.ToString("yyyyMMdd"),
-													end_date = dateChoosen.Date.ToString("yyyyMMdd")
-												}).ToList()
-			};
-
-			if ((listDisp != null && listDisp.lido_zone_availability_array.Count > 0) || (int.Parse(txtDispCabana.Text) <= int.Parse(lblDisponibCabine.Text) && int.Parse(txtDispCabana.Text) > 0))
-			{
-				var result = InfoLidoDAO.Instance.AggiornaDisponibilitaLido(ConnectionHelper.RetrieveUserInfo().apiKey, ConnectionHelper.RetrieveUserInfo().mail,
-																			listDisp, ((listDisp == null || listDisp.lido_zone_availability_array.Count <= 0) ? InfoLido.lido_zone_array.FirstOrDefault().id : 0));
-				if (result != null)
+				var listDisp = new DisponibilitaDTO
 				{
-					if (result.error)
+					start_date = dateChoosen.Date.ToString("yyyyMMdd"),
+					end_date = dateChoosen.Date.ToString("yyyyMMdd"),
+					cabana_availability = int.Parse(txtDispCabana.Text),
+					lido_zone_availability_array = (from x in FileItems
+													where (x.chair_qty > 0 || x.sun_bed_qty > 0 || x.umbrella_qty > 0) &&
+													(x.chair_qty <= x.max_chair_qty && x.sun_bed_qty <= x.max_sun_bed_qty && x.umbrella_qty <= x.max_umbrella_qty)
+													select new LidoZoneAvailabilityDTO
+													{
+														sun_bed_availability = x.sun_bed_qty,
+														umbrella_availability = x.umbrella_qty,
+														chair_availability = x.chair_qty,
+														lido_zone = x,
+														start_date = dateChoosen.Date.ToString("yyyyMMdd"),
+														end_date = dateChoosen.Date.ToString("yyyyMMdd")
+													}).ToList()
+				};
+
+				if ((listDisp != null && listDisp.lido_zone_availability_array.Count > 0) || (int.Parse(txtDispCabana.Text) <= int.Parse(lblDisponibCabine.Text) && int.Parse(txtDispCabana.Text) > 0))
+				{
+					var result = InfoLidoDAO.Instance.AggiornaDisponibilitaLido(ConnectionHelper.RetrieveUserInfo().apiKey, ConnectionHelper.RetrieveUserInfo().mail,
+																				listDisp, ((listDisp == null || listDisp.lido_zone_availability_array.Count <= 0) ? InfoLido.lido_zone_array.FirstOrDefault().id : 0));
+					if (result != null)
 					{
-						await DisplayAlert("Errore", result.message, "Chiudi");
+						if (result.error)
+						{
+							await DisplayAlert("Errore", result.message, "Chiudi");
+						}
+						else
+						{
+							await DisplayAlert("Aggiornamento disponibilità avvenuto con successo!", result.message, "Chiudi");
+							//await Navigation.PopAsync();
+							RefhreshDisponibilita();
+							//RebindListFile();
+						}
 					}
 					else
 					{
-						await DisplayAlert("Aggiornamento disponibilità avvenuto con successo!", result.message, "Chiudi");
-						//await Navigation.PopAsync();
-						RefhreshDisponibilita();
-						//RebindListFile();
+						await DisplayAlert("Errore", "Errore contattando il servizio!", "Chiudi");
 					}
 				}
 				else
 				{
-					await DisplayAlert("Errore", "Errore contattando il servizio!", "Chiudi");
+					await DisplayAlert("Errore", "Hai tentato di ridurre di un numero superiore alle disponibilità o il lido è già pieno per la data selezionata!", "Chiudi");
 				}
 			}
-			else
+			catch (System.Net.WebException ex)
 			{
-				await DisplayAlert("Errore", "Hai tentato di ridurre di un numero superiore alle disponibilità o il lido è già pieno per la data selezionata!", "Chiudi");
+				await DisplayAlert("Errore riduzione disponibilità", "Stiamo riscontrando problemi con la tua connessione Internet. Controlla la tua connessione e riprova.", "Chiudi");
+			}
+			catch (System.Net.Http.HttpRequestException ex)
+			{
+				await DisplayAlert("Errore riduzione disponibilità", "Si è verificato un errore nella comunicazione con i nostri server. Controlla la tua connessione e riprova.", "Chiudi");
+			}
+			catch (Newtonsoft.Json.JsonException ex)
+			{
+				await DisplayAlert("Errore riduzione disponibilità", "I nostri server hanno riscontrato degli errori. Controlla i dati o riprova più tardi.", "Chiudi");
+			}
+			finally
+			{
+				RefhreshDisponibilita();
 			}
 		}
 

@@ -78,3 +78,5 @@
 /Users/saviopalmieri/OneDrive/Documenti/Lavoro/SavioPalmieriTeam/Coco/Vendor/CocoVendorApp/bin/Release/ZXing.Net.Mobile.Forms.dll
 /Users/saviopalmieri/OneDrive/Documenti/Lavoro/SavioPalmieriTeam/Coco/Vendor/CocoVendorApp/bin/Release/Plugin.Messaging.Abstractions.dll
 /Users/saviopalmieri/OneDrive/Documenti/Lavoro/SavioPalmieriTeam/Coco/Vendor/CocoVendorApp/bin/Release/Plugin.Messaging.dll
+/Users/saviopalmieri/OneDrive/Documenti/Lavoro/SavioPalmieriTeam/Coco/Vendor/CocoVendorApp/obj/Release/CocoVendorApp.ErrorPage.xaml
+/Users/saviopalmieri/OneDrive/Documenti/Lavoro/SavioPalmieriTeam/Coco/Vendor/CocoVendorApp/obj/Release/CocoVendorApp.ErrorPage.xaml.g.cs

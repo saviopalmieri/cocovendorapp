@@ -9590,7 +9590,7 @@ _mono_aot_file_info:
 	.long 488,0,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0
-	.byte 50,143,239,221,58,41,244,225,119,252,214,134,98,69,127,249
+	.byte 206,15,60,242,2,253,249,128,83,19,197,40,55,238,108,41
 	.globl _mono_aot_module_Xamarin_Forms_Maps_iOS_info
 	.align 2
 _mono_aot_module_Xamarin_Forms_Maps_iOS_info:

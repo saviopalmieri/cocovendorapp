@@ -46,27 +46,27 @@
 					</Label>
 				</StackLayout>
 
-				<StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="Start"
-					BackgroundColor="White">
+				<StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" BackgroundColor="White" VerticalOptions="Start" >
 					<Label Text="Data inizio offerta" HorizontalOptions="FillAndExpand"  
 						HorizontalTextAlignment="Start" VerticalTextAlignment="Center"
 						TextColor="Black" FontSize="Medium"
 						 Margin="20,5,20,5" >
 					</Label>
 
-					<DatePicker x:Name="dateOpening" HorizontalOptions="FillAndExpand" WidthRequest="105" Margin="20,5,20,5" >
+					<DatePicker x:Name="dateOpening" HorizontalOptions="End" WidthRequest="105"
+						Grid.Row="2" Grid.Column="1" Margin="20,5,20,5" >
 					</DatePicker>
 				</StackLayout>
 
-				<StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="Start"
-					BackgroundColor="White">
+				<StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" BackgroundColor="White" VerticalOptions="Start" >
 					<Label Text="Data fine offerta" HorizontalOptions="FillAndExpand"  
 						HorizontalTextAlignment="Start" VerticalTextAlignment="Center"
 						TextColor="Black" FontSize="Medium"
 						 Margin="20,5,20,5" >
 					</Label>
 
-					<DatePicker x:Name="dateClosing" HorizontalOptions="FillAndExpand" WidthRequest="105" Margin="20,5,20,5" ></DatePicker>
+					<DatePicker x:Name="dateClosing" HorizontalOptions="End" WidthRequest="105"
+						Grid.Row="3" Grid.Column="1" Margin="20,5,20,5" ></DatePicker>
 				</StackLayout>
 
 				<Grid HorizontalOptions="FillAndExpand" VerticalOptions="Start" BackgroundColor="White" Margin="0,20,0,0">

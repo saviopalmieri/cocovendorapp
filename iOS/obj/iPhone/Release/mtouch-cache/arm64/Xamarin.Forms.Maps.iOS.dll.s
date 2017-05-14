@@ -18157,7 +18157,7 @@ _mono_aot_file_info:
 	.long 488,0,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0
-	.byte 29,149,2,131,122,58,238,182,78,33,104,110,148,7,221,150
+	.byte 173,173,168,84,231,54,223,98,165,0,163,147,61,31,95,141
 	.globl _mono_aot_module_Xamarin_Forms_Maps_iOS_info
 	.align 3
 _mono_aot_module_Xamarin_Forms_Maps_iOS_info:

@@ -8209,7 +8209,7 @@ _mono_aot_file_info:
 	.long 192,0,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0
-	.byte 130,226,83,209,143,214,14,86,189,195,93,136,113,70,150,250
+	.byte 180,233,29,9,98,110,116,68,216,168,169,75,172,105,119,173
 	.globl _mono_aot_module_System_Numerics_info
 	.align 2
 _mono_aot_module_System_Numerics_info:
