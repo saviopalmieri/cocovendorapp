@@ -49,6 +49,10 @@ namespace CocoVendorApp
 				{
 					MainPage = new NavigationPage(new ErrorPage());
 				}
+                catch(System.Net.WebException ex)
+                {
+                    MainPage = new NavigationPage(new ErrorPage());
+                }
 			}
 			else
 			{

@@ -31,107 +31,14 @@ namespace CocoVendorApp
 
 		async void Handle_Clicked(object sender, System.EventArgs e)
 		{
-			//InfoLido.telephone = "0";
+            //InfoLido.telephone = "0";
 
-			try
-			{
-				loadingPanel.IsVisible = true;
-				loadingPanel.IsEnabled = true;
-				btnIniziaSetup.Text = "Pubblicazione in corso....";
-				btnIniziaSetup.IsEnabled = false;
+            if (imagestream != null)
+            {
+                InfoLido.ImgLidoStream = imagestream;
+            }
 
-				var result = InfoLidoDAO.Instance.SetupCompletoLido(ConnectionHelper.RetrieveUserInfo().apiKey, ConnectionHelper.RetrieveUserInfo().mail, InfoLido);
-				//var result = InfoLidoDAO.Instance.SetInfoLido(ConnectionHelper.RetrieveUserInfo().apiKey, ConnectionHelper.RetrieveUserInfo().mail, InfoLido);
-				//var result = InfoLidoDAO.Instance.GetInfoLido(ConnectionHelper.RetrieveUserInfo().mail, ConnectionHelper.RetrieveUserInfo().apiKey);
-
-				if (result != null)
-				{
-					if (result.error)
-					{
-						loadingPanel.IsVisible = false;
-						loadingPanel.IsEnabled = false;
-						btnIniziaSetup.Text = "Pubblica";
-						btnIniziaSetup.IsEnabled = true;
-						await DisplayAlert("Errore", result.message, "Chiudi");
-					}
-					else
-					{
-						//result = InfoLidoDAO.Instance.SetServiziLido(ConnectionHelper.RetrieveUserInfo().apiKey, ConnectionHelper.RetrieveUserInfo().mail,InfoLido);
-						//result = InfoLidoDAO.Instance.SetFileLido(ConnectionHelper.RetrieveUserInfo().apiKey, ConnectionHelper.RetrieveUserInfo().mail, InfoLido);
-						//if (InfoLido.cabana_qty > 0)
-						//{
-						//	result = InfoLidoDAO.Instance.SetNCabine(ConnectionHelper.RetrieveUserInfo().apiKey, ConnectionHelper.RetrieveUserInfo().mail, InfoLido);
-						//}
-						//result = InfoLidoDAO.Instance.SetListinoPrezzi(ConnectionHelper.RetrieveUserInfo().apiKey, InfoLido);
-						//result = InfoLidoDAO.Instance.SetMailPaypal(ConnectionHelper.RetrieveUserInfo().apiKey, ConnectionHelper.RetrieveUserInfo().mail, InfoLido);
-						try
-						{
-							if (imagestream != null)
-							{
-								btnIniziaSetup.Text = "Upload immagine in corso...";
-								var response = InfoLidoDAO.Instance.SetImageLido(ConnectionHelper.RetrieveUserInfo().apiKey, ConnectionHelper.RetrieveUserInfo().mail, imagestream);
-								if (response != null && response.data != null && response.data.image != null)
-								{
-									InfoLido.image = response.data.image;
-								}
-							}
-						}
-						catch (System.Net.WebException ex)
-						{
-							await DisplayAlert("Errore upload immagine", "Stiamo riscontrando problemi con la tua connessione Internet. Controlla la tua connessione e riprova.", "Chiudi");
-						}
-						catch (System.Net.Http.HttpRequestException ex)
-						{
-							await DisplayAlert("Errore upload immagine", "Si è verificato un errore nella comunicazione con i nostri server. Controlla la tua connessione e riprova.", "Chiudi");
-						}
-						catch (Newtonsoft.Json.JsonException ex)
-						{ 
-							await DisplayAlert("Errore upload immagine", "I nostri server hanno riscontrato degli errori. Controlla i dati o riprova più tardi.", "Chiudi");
-						}
-
-						//result.data.lido.booking_array = result.data.booking_array;
-
-						if (InfoLido.image != null)
-						{
-							result.data.image = InfoLido.image;
-						}
-
-						InfoLido = result.data;
-
-						loadingPanel.IsVisible = false;
-						loadingPanel.IsEnabled = false;
-						btnIniziaSetup.Text = "Pubblica";
-						btnIniziaSetup.IsEnabled = true;
-						await DisplayAlert("Complimenti!", "Pubblicazione avvenuta con successo!", "Chiudi");
-						Application.Current.MainPage = new NavigationPage(new HomePage(InfoLido));
-					}
-				}
-				else
-				{
-					loadingPanel.IsVisible = false;
-					loadingPanel.IsEnabled = false;
-					btnIniziaSetup.Text = "Pubblica";
-					btnIniziaSetup.IsEnabled = true;
-					await DisplayAlert("Errore", "Errore contattando il servizio!", "Chiudi");
-				}
-			}
-			catch (System.Net.WebException ex)
-			{
-				await DisplayAlert("Errore pubblicazione", "Stiamo riscontrando problemi con la tua connessione Internet. Controlla la tua connessione e riprova.", "Chiudi");
-			}
-			catch (System.Net.Http.HttpRequestException ex)
-			{
-				await DisplayAlert("Errore pubblicazione", "Si è verificato un errore nella comunicazione con i nostri server. Controlla la tua connessione e riprova.", "Chiudi");
-			}
-			catch (Newtonsoft.Json.JsonException ex)
-			{ 
-				await DisplayAlert("Errore pubblicazione", "I nostri server hanno riscontrato degli errori. Controlla i dati o riprova più tardi.", "Chiudi");
-			}
-
-			loadingPanel.IsVisible = false;
-			loadingPanel.IsEnabled = false;
-			btnIniziaSetup.Text = "Pubblica";
-			btnIniziaSetup.IsEnabled = true;
+            await Navigation.PushAsync(new SetupLoadingPage(InfoLido));
 		}
 
 		async void Handle_Clicked1(object sender, System.EventArgs e)

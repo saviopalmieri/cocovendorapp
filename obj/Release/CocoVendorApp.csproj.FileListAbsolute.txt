@@ -81,3 +81,5 @@
 /Users/saviopalmieri/OneDrive/Documenti/Lavoro/SavioPalmieriTeam/Coco/Vendor/CocoVendorApp/obj/Release/CocoVendorApp.AboutPage.xaml.g.cs
 /Users/saviopalmieri/OneDrive/Documenti/Lavoro/SavioPalmieriTeam/Coco/Vendor/CocoVendorApp/obj/Release/CocoVendorApp.PosizionePage.xaml.g.cs
 /Users/saviopalmieri/OneDrive/Documenti/Lavoro/SavioPalmieriTeam/Coco/Vendor/CocoVendorApp/obj/Release/CocoVendorApp.dll
+/Users/saviopalmieri/OneDrive/Documenti/Lavoro/SavioPalmieriTeam/Coco/Vendor/CocoVendorApp/obj/Release/CocoVendorApp.ErrorPage.xaml.g.cs
+/Users/saviopalmieri/OneDrive/Documenti/Lavoro/SavioPalmieriTeam/Coco/Vendor/CocoVendorApp/obj/Release/CocoVendorApp.SetupLoadingPage.xaml.g.cs

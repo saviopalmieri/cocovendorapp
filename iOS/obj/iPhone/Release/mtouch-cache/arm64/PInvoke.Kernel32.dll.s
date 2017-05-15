@@ -9653,7 +9653,7 @@ _mono_aot_file_info:
 	.long 296,0,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0
-	.byte 40,79,28,131,194,227,61,81,224,17,165,182,178,154,76,91
+	.byte 203,58,185,188,52,57,177,173,150,142,249,33,192,52,1,236
 	.globl _mono_aot_module_PInvoke_Kernel32_info
 	.align 3
 _mono_aot_module_PInvoke_Kernel32_info:

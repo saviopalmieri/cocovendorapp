@@ -243,6 +243,7 @@
     <AndroidResource Include="Resources\drawable\circlefull.png" />
     <AndroidResource Include="Resources\drawable\circlewhite.png" />
     <AndroidResource Include="Resources\drawable\apptitle.png" />
+    <AndroidResource Include="Resources\drawable\logo_coco_sm.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\layout\" />

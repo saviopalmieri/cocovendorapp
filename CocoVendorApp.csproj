@@ -113,6 +113,9 @@
     <EmbeddedResource Include="ErrorPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Include="SetupLoadingPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App.xaml.cs">
@@ -208,6 +211,9 @@
     </Compile>
     <Compile Include="ErrorPage.xaml.cs">
       <DependentUpon>ErrorPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SetupLoadingPage.xaml.cs">
+      <DependentUpon>SetupLoadingPage.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

@@ -3069,7 +3069,7 @@ _mono_aot_file_info:
 	.long 144,0,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0
-	.byte 136,119,45,119,18,254,115,148,102,210,198,85,37,213,112,248
+	.byte 62,191,244,105,34,143,38,235,54,129,163,191,220,136,117,168
 	.globl _mono_aot_module_Validation_info
 	.align 2
 _mono_aot_module_Validation_info:

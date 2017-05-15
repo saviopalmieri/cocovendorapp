@@ -50,7 +50,6 @@
 /Users/saviopalmieri/OneDrive/Documenti/Lavoro/SavioPalmieriTeam/Coco/Vendor/CocoVendorApp/bin/Debug/Plugin.Messaging.pdb
 /Users/saviopalmieri/OneDrive/Documenti/Lavoro/SavioPalmieriTeam/Coco/Vendor/CocoVendorApp/bin/Debug/Plugin.Messaging.xml
 /Users/saviopalmieri/OneDrive/Documenti/Lavoro/SavioPalmieriTeam/Coco/Vendor/CocoVendorApp/obj/Debug/CocoVendorApp.csproj.App.config
-/Users/saviopalmieri/OneDrive/Documenti/Lavoro/SavioPalmieriTeam/Coco/Vendor/CocoVendorApp/obj/Debug/CocoVendorApp.csprojResolveAssemblyReference.cache
 /Users/saviopalmieri/OneDrive/Documenti/Lavoro/SavioPalmieriTeam/Coco/Vendor/CocoVendorApp/obj/Debug/CocoVendorApp.Resources.resources
 /Users/saviopalmieri/OneDrive/Documenti/Lavoro/SavioPalmieriTeam/Coco/Vendor/CocoVendorApp/obj/Debug/CocoVendorApp.csproj.GenerateResource.Cache
 /Users/saviopalmieri/OneDrive/Documenti/Lavoro/SavioPalmieriTeam/Coco/Vendor/CocoVendorApp/obj/Debug/CocoVendorApp.csproj.CoreCompileInputs.cache
@@ -81,5 +80,7 @@
 /Users/saviopalmieri/OneDrive/Documenti/Lavoro/SavioPalmieriTeam/Coco/Vendor/CocoVendorApp/obj/Debug/CocoVendorApp.RiepilogoOrdiniPage.xaml.g.cs
 /Users/saviopalmieri/OneDrive/Documenti/Lavoro/SavioPalmieriTeam/Coco/Vendor/CocoVendorApp/obj/Debug/CocoVendorApp.AboutPage.xaml.g.cs
 /Users/saviopalmieri/OneDrive/Documenti/Lavoro/SavioPalmieriTeam/Coco/Vendor/CocoVendorApp/obj/Debug/CocoVendorApp.PosizionePage.xaml.g.cs
+/Users/saviopalmieri/OneDrive/Documenti/Lavoro/SavioPalmieriTeam/Coco/Vendor/CocoVendorApp/obj/Debug/CocoVendorApp.ErrorPage.xaml.g.cs
+/Users/saviopalmieri/OneDrive/Documenti/Lavoro/SavioPalmieriTeam/Coco/Vendor/CocoVendorApp/obj/Debug/CocoVendorApp.SetupLoadingPage.xaml.g.cs
 /Users/saviopalmieri/OneDrive/Documenti/Lavoro/SavioPalmieriTeam/Coco/Vendor/CocoVendorApp/obj/Debug/CocoVendorApp.dll
 /Users/saviopalmieri/OneDrive/Documenti/Lavoro/SavioPalmieriTeam/Coco/Vendor/CocoVendorApp/obj/Debug/CocoVendorApp.pdb

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="CocoVendorApp.SetupLoadingPage">
+	<ContentPage.Content>
+
+		<StackLayout Orientation="Vertical" VerticalOptions="FillAndExpand" HorizontalOptions="Center">
+
+			<Image Aspect="AspectFit" Source="logo_coco.png" Margin="40,20,40,20" />
+
+			<Label TextColor="Black" Text="Attendi qualche secondo... " FontSize="16" Margin="20,10,20,10"
+				HorizontalOptions="Center" VerticalOptions="Start"/>
+
+			<Label TextColor="Black" Text="Stiamo pubblicando le informazioni del tuo lido" FontSize="16" Margin="20,10,20,10"
+				HorizontalOptions="Center" VerticalOptions="Start"/>
+
+			<ActivityIndicator IsEnabled="true" IsVisible="true" IsRunning="true" />
+			
+		</StackLayout>
+		
+	</ContentPage.Content>
+</ContentPage>

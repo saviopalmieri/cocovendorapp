@@ -186,7 +186,7 @@ namespace CocoVendorApp
 		}
 
 		public string telephone { get; set; }
-		public byte[] ImgLidoStream { get; set; }
+		public Stream ImgLidoStream { get; set; }
 		public string ImgLidoPath
 		{
 			get

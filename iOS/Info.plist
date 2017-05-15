@@ -7,7 +7,7 @@
 	<key>CFBundleShortVersionString</key>
 	<string>1.5</string>
 	<key>CFBundleVersion</key>
-	<string>1.9</string>
+	<string>1.10</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>MinimumOSVersion</key>
@@ -36,8 +36,6 @@
 	<string>Assets.xcassets/AppIcon.appiconset</string>
 	<key>UIRequiresFullScreen</key>
 	<true/>
-	<key>XSLaunchImageAssets</key>
-	<string>Assets.xcassets/LaunchImage-2.launchimage</string>
 	<key>NSLocationAlwaysUsageDescription</key>
 	<string>COCO vorrebbe usare la tua posizione</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
